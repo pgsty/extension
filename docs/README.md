@@ -2,16 +2,36 @@
 
 [![Webite: ext.pigsty.io](https://img.shields.io/badge/website-ext.pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://ext.pigsty.io)
 [![Extensions: 345](https://img.shields.io/badge/extensions-345-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
-[![Postgres: 12-17](https://img.shields.io/badge/PostgreSQL-12~17-%233E668F?style=flat&logo=postgresql&labelColor=3E668F&logoColor=white)](https://pigsty.io/docs/pgsql)
 
-The supplementary [APT](#apt-repo) and [YUM](#yum-repo) software repo for PostgreSQL extension ecosystem, maintained and used by [Pigsty](https://pigsty.io)
+The supplementary [APT](#apt-repo) and [YUM](#yum-repo) software repo for PostgreSQL extension ecosystem, maintained and
+used by [Pigsty](https://pigsty.io)
 
 Contains 150+ PG extensions for PostgreSQL 12 - 17 in addition to the official PGDG apt/yum repo.
 
+Why extension matters to PostgreSQL? check the post: "[PostgreSQL is eating the database world!](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
 
 -------
 
 ## Get Started
+
+All rpm/deb packages are signed with GPG key `B9BD8B20` (`9592A7BC7A682E7333376E09E7935D8DB9BD8B20` ).
+
+### APT Repo
+
+[![Linux](https://img.shields.io/badge/Linux-x86_64-%23FCC624?style=flat&logo=linux&labelColor=FCC624&logoColor=black)](https://pigsty.io/docs/node)
+[![Ubuntu Support: 22](https://img.shields.io/badge/Ubuntu-22-%23E95420?style=flat&logo=ubuntu&logoColor=%23E95420)](https://pigsty.io/docs/pgext/list/deb/)
+[![Debian Support: 12](https://img.shields.io/badge/Debian-12-%23A81D33?style=flat&logo=debian&logoColor=%23A81D33)](https://pigsty.io/docs/reference/compatibility/)
+
+For Ubuntu 22.04 & Debian 12 or any compatible platforms, use the following commands to add the APT repo:
+
+```bash
+curl -fsSL https://repo.pigsty.io/key | sudo gpg --dearmor -o /etc/apt/keyrings/pigsty.gpg
+sudo tee /etc/apt/sources.list.d/pigsty-io.list > /dev/null <<EOF
+deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/infra generic main 
+deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/pgsql/$(lsb_release -cs) $(lsb_release -cs) main
+EOF
+sudo apt update
+```
 
 ### YUM Repo
 
@@ -31,72 +51,21 @@ curl -fsSL https://repo.pigsty.io/yum/repo | sudo tee /etc/yum.repos.d/pigsty.re
 sudo yum makecache
 ```
 
-All RPMs are signed with the GPG key fingerprint `9592A7BC7A682E7333376E09E7935D8DB9BD8B20` (`B9BD8B20`).
-
-<details><summary>More Details</summary><br>
-
-```bash
-sudo tee /etc/yum.repos.d/pigsty-io.repo > /dev/null <<-'EOF'
-[pigsty-infra]
-name=Pigsty Infra for $basearch
-baseurl=https://repo.pigsty.io/yum/infra/$basearch
-skip_if_unavailable = 1
-enabled = 1
-priority = 1
-gpgcheck = 1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty
-module_hotfixes=1
-
-[pigsty-pgsql]
-name=Pigsty PGSQL For el$releasever.$basearch
-baseurl=https://repo.pigsty.io/yum/pgsql/el$releasever.$basearch
-skip_if_unavailable = 1
-enabled = 1
-priority = 1
-gpgcheck = 1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty
-module_hotfixes=1
-EOF
-sudo yum makecache;
-```
-
-</details>
-
-
-### APT Repo
-
-[![Linux](https://img.shields.io/badge/Linux-x86_64-%23FCC624?style=flat&logo=linux&labelColor=FCC624&logoColor=black)](https://pigsty.io/docs/node)
-[![Ubuntu Support: 22](https://img.shields.io/badge/Ubuntu-22-%23E95420?style=flat&logo=ubuntu&logoColor=%23E95420)](https://pigsty.io/docs/pgext/list/deb/)
-[![Debian Support: 12](https://img.shields.io/badge/Debian-12-%23A81D33?style=flat&logo=debian&logoColor=%23A81D33)](https://pigsty.io/docs/reference/compatibility/)
-
-For Ubuntu 22.04 & Debian 12 or any compatible platforms, use the following commands to add the APT repo:
-
-```bash
-curl -fsSL https://repo.pigsty.io/key | sudo gpg --dearmor -o /etc/apt/keyrings/pigsty.gpg
-sudo tee /etc/apt/sources.list.d/pigsty-io.list > /dev/null <<EOF
-deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/infra generic main 
-deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/pgsql/$(lsb_release -cs) $(lsb_release -cs) main
-EOF
-sudo apt update
-```
-
-All DEBs are signed with the GPG key fingerprint `9592A7BC7A682E7333376E09E7935D8DB9BD8B20` (`B9BD8B20`).
-
 
 -------
 
 ## What's Inside
 
-[![Postgres: 12-17](https://img.shields.io/badge/PostgreSQL-12~17-%233E668F?style=flat&logo=postgresql&labelColor=3E668F&logoColor=white)](https://pigsty.io/docs/pgsql)
-[![Linux](https://img.shields.io/badge/Linux-x86_64-%23FCC624?style=flat&logo=linux&labelColor=FCC624&logoColor=black)](https://pigsty.io/docs/node)
-[![Ubuntu Support: 20/22](https://img.shields.io/badge/Ubuntu-20/22-%23E95420?style=flat&logo=ubuntu&logoColor=%23E95420)](https://pigsty.io/docs/pgext/list/deb/)
-[![Debian Support: 11/12](https://img.shields.io/badge/Debian-11/12-%23A81D33?style=flat&logo=debian&logoColor=%23A81D33)](https://pigsty.io/docs/reference/compatibility/)
-[![EL Support: 7/8/9](https://img.shields.io/badge/EL-7/8/9-red?style=flat&logo=redhat&logoColor=red)](https://pigsty.io/docs/pgext/list/rpm/)
-[![CentOS](https://img.shields.io/badge/CentOS-slategray?style=flat&logo=centos&logoColor=%23262577)](https://almalinux.org/)
-[![Rocky](https://img.shields.io/badge/Rocky-slategray?style=flat&logo=rockylinux&logoColor=%2310B981)](https://almalinux.org/)
-[![Alma](https://img.shields.io/badge/Alma-slategray?style=flat&logo=almalinux&logoColor=black)](https://almalinux.org/)
+Linux x86_64/amd64 Extension packages for PostgreSQL 12 - 17, on El8, EL9, Ubuntu 22.04 and Debian 12.
 
-Extension packages for PostgreSQL 12 - 17, on El8, EL9, Ubuntu 22.04 and Debian 12, Linux `x86_64/amd64`.
+|  Statistics   | All | PGDG | PIGSTY | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:-------------:|:---:|:----:|:------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| EL Extension  | 338 | 134  |  130   |  4   |  7   | 298  | 334  | 336  | 328  | 319  | 310  |
+| Deb Extension | 326 | 109  |  143   |  74  |  19  | 290  | 322  | 324  | 316  | 307  | 300  |
+|  RPM Package  | 313 | 122  |  129   |  4   |  6   | 275  | 309  | 311  | 303  | 294  | 285  |
+|  DEB Package  | 298 |  93  |  142   |  64  |  19  | 264  | 294  | 296  | 288  | 279  | 272  |
+
+> Note: One single rpm/deb package may contain more than one extension
 
 ```
 timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background pg_timetable postgis pgrouting pointcloud pg_h3 q3c ogr_fdw pg_polyline geoip pg_geohash #mobilitydb

@@ -56,6 +56,13 @@ sudo apt update
 
 针对 Linux x86_64 内核架构，PostgreSQL 12 - 17 预编译打包的扩展 RPM / DEB 包。
 
+|  Statistics   | All | PGDG | PIGSTY | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:-------------:|:---:|:----:|:------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| EL Extension  | 338 | 134  |  130   |  4   |  7   | 298  | 334  | 336  | 328  | 319  | 310  |
+| Deb Extension | 326 | 109  |  143   |  74  |  19  | 290  | 322  | 324  | 316  | 307  | 300  |
+|  RPM Package  | 313 | 122  |  129   |  4   |  6   | 275  | 309  | 311  | 303  | 294  | 285  |
+|  DEB Package  | 298 |  93  |  142   |  64  |  19  | 264  | 294  | 296  | 288  | 279  | 272  |
+
 ```
 timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background pg_timetable postgis pgrouting pointcloud pg_h3 q3c ogr_fdw pg_polyline geoip pg_geohash #mobilitydb
 pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pgml pg4ml pg_search pg_bigm zhparser hunspell hydra pg_analytics pg_parquet pg_duckdb duckdb_fdw pg_fkpart pg_partman plproxy pg_strom citus
