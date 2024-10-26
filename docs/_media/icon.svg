@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="23.73934 15.223623 51.55272 53.403553" width="51.55272" height="53.403553">
+  <defs/>
+  <g id="icon" stroke="none" stroke-opacity="1" fill="none" fill-opacity="1" stroke-dasharray="none">
+    <title>icon</title>
+    <g id="icon_layer">
+      <title>layer</title>
+      <g id="Group_21">
+        <g id="Graphic_15">
+          <path d="M 39.550878 41.88833 L 44.54582 33.236842 L 54.5357 33.236842 L 59.53064 41.88833 L 54.5357 50.53982 L 44.54582 50.53982 Z" fill="#bbb" fill-opacity=".9526367"/>
+          <path d="M 39.550878 41.88833 L 44.54582 33.236842 L 54.5357 33.236842 L 59.53064 41.88833 L 54.5357 50.53982 L 44.54582 50.53982 Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5527536"/>
+        </g>
+        <g id="Graphic_14">
+          <path d="M 39.550878 59.19931 L 44.54582 50.547825 L 54.5357 50.547825 L 59.53064 59.19931 L 54.5357 67.8508 L 44.54582 67.8508 Z" fill="#de372c" fill-opacity=".8545852"/>
+          <path d="M 39.550878 59.19931 L 44.54582 50.547825 L 54.5357 50.547825 L 59.53064 59.19931 L 54.5357 67.8508 L 44.54582 67.8508 Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5527536"/>
+        </g>
+        <g id="Graphic_13">
+          <path d="M 54.53592 50.60872 L 59.53086 41.957235 L 69.52074 41.957235 L 74.51568 50.60872 L 69.52074 59.26021 L 59.53086 59.26021 Z" fill="#424242" fill-opacity=".9016462"/>
+          <path d="M 54.53592 50.60872 L 59.53086 41.957235 L 69.52074 41.957235 L 74.51568 50.60872 L 69.52074 59.26021 L 59.53086 59.26021 Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5527536"/>
+        </g>
+        <g id="Graphic_12">
+          <path d="M 54.53592 33.247623 L 59.53086 24.596135 L 69.52074 24.596135 L 74.51568 33.247623 L 69.52074 41.89911 L 59.53086 41.89911 Z" fill="#ffa269" fill-opacity=".8975772"/>
+          <path d="M 54.53592 33.247623 L 59.53086 24.596135 L 69.52074 24.596135 L 74.51568 33.247623 L 69.52074 41.89911 L 59.53086 41.89911 Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5527536"/>
+        </g>
+        <g id="Graphic_11">
+          <path d="M 39.550878 24.651487 L 44.54582 16 L 54.5357 16 L 59.53064 24.651487 L 54.5357 33.302975 L 44.54582 33.302975 Z" fill="#419edb" fill-opacity=".8979957"/>
+          <path d="M 39.550878 24.651487 L 44.54582 16 L 54.5357 16 L 59.53064 24.651487 L 54.5357 33.302975 L 44.54582 33.302975 Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5527536"/>
+        </g>
+        <g id="Graphic_10">
+          <path d="M 24.515717 33.247623 L 29.510658 24.596135 L 39.50054 24.596135 L 44.49548 33.247623 L 39.50054 41.89911 L 29.510658 41.89911 Z" fill="#2f6793" fill-opacity=".9002511"/>
+          <path d="M 24.515717 33.247623 L 29.510658 24.596135 L 39.50054 24.596135 L 44.49548 33.247623 L 39.50054 41.89911 L 29.510658 41.89911 Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5527536"/>
+        </g>
+        <g id="Graphic_9">
+          <path d="M 24.591612 50.58527 L 29.586553 41.933783 L 39.576435 41.933783 L 44.571376 50.58527 L 39.576435 59.23676 L 29.586553 59.23676 Z" fill="#53ac79" fill-opacity=".9"/>
+          <path d="M 24.591612 50.58527 L 29.586553 41.933783 L 39.576435 41.933783 L 44.571376 50.58527 L 39.576435 59.23676 L 29.586553 59.23676 Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5527536"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

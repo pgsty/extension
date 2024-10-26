@@ -1,0 +1,12 @@
+#!/bin/bash
+
+APP_NAME="$(basename $0))"
+APP_DIR="$(cd $(dirname $0) && pwd)"
+cd ${APP_DIR}
+
+if command -v docsify; then
+    NODE_NO_WARNINGS=1 docsify serve
+else
+    python -m SimpleHTTPServer 3001
+    echo "open http://localhost:3001 with your browser"
+fi
