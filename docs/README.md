@@ -9,9 +9,6 @@ Contains 150+ PG extensions for PostgreSQL 12 - 17 in addition to the official P
 
 Why extension matters to PostgreSQL? check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
 
-[:fa fa-download fa-fw :Download](https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip ':class=button-rounded')
-
-:fa fa-solid fa-circle-exclamation:
 
 -------
 
