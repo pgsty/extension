@@ -3,12 +3,15 @@
 [![Webite: ext.pigsty.io](https://img.shields.io/badge/website-ext.pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://ext.pigsty.io)
 [![Extensions: 345](https://img.shields.io/badge/extensions-345-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
 
-The supplementary [APT](#apt-repo) and [YUM](#yum-repo) software repo for PostgreSQL extension ecosystem, maintained and
-used by [Pigsty](https://pigsty.io)
+The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://pigsty.io)
 
 Contains 150+ PG extensions for PostgreSQL 12 - 17 in addition to the official PGDG apt/yum repo.
 
-Why extension matters to PostgreSQL? check the post: "[PostgreSQL is eating the database world!](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
+Why extension matters to PostgreSQL? check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
+
+[:fa fa-download fa-fw :Download](https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip ':class=button-rounded')
+
+:fa fa-solid fa-circle-exclamation:
 
 -------
 
