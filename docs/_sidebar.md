@@ -6,7 +6,7 @@
   - [DEB Package](/deb)
   - [PG Contribs](/contrib)
 
-- **Category**
+- [**Category**](/list)
 
   - [Category: TIME](/time)
   - [Category: GIS](/gis)

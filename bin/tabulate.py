@@ -647,6 +647,20 @@ def cate_index_tabulate():
     return '\n'.join(cates)
 
 
+def cate_index_tabulate2():
+    header = '| Category | Extensions |'
+    align =  '|:--------:|------------|'
+    cates = [header, align]
+    for cate in CATE:
+        cat = '[**%s**](/%s)' % (cate, cate.lower())
+        exts = []
+        for ext in DATA:
+            if ext['category'] == cate:
+                exts.append(getcol("ext4", ext))
+        cates.append('|  %s  |  %s  |' % (cat,' '.join(exts)))
+    return '\n'.join(cates)
+
+
 generate_all_list()
 generate_rpm_list()
 generate_deb_list()
