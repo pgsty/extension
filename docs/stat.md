@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 34 available extensions in this category
+There are 34 available extensions in this category:
+
+[`pg_profile`](/pg_profile) [`pg_show_plans`](/pg_show_plans) [`pg_stat_kcache`](/pg_stat_kcache) [`pg_stat_monitor`](/pg_stat_monitor) [`pg_qualstats`](/pg_qualstats) [`pg_store_plans`](/pg_store_plans) [`pg_track_settings`](/pg_track_settings) [`pg_wait_sampling`](/pg_wait_sampling) [`system_stats`](/system_stats) [`meta`](/meta) [`pgnodemx`](/pgnodemx) [`pg_proctab`](/pg_proctab) [`pg_sqlog`](/pg_sqlog) [`bgw_replstatus`](/bgw_replstatus) [`pgmeminfo`](/pgmeminfo) [`toastinfo`](/toastinfo) [`explain_ui`](/explain_ui) [`pg_relusage`](/pg_relusage) [`pg_mon`](/pg_mon) [`pg_statviz`](/pg_statviz) [`pgexporter_ext`](/pgexporter_ext) [`pg_top`](/pg_top) [`pagevis`](/pagevis) [`powa`](/powa) [`pageinspect`](/pageinspect) [`pgrowlocks`](/pgrowlocks) [`sslinfo`](/sslinfo) [`pg_buffercache`](/pg_buffercache) [`pg_walinspect`](/pg_walinspect) [`pg_freespacemap`](/pg_freespacemap) [`pg_visibility`](/pg_visibility) [`pgstattuple`](/pgstattuple) [`auto_explain`](/auto_explain) [`pg_stat_statements`](/pg_stat_statements)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -164,3 +166,140 @@ pg12: pg_profile_12* pg_show_plans_12* pg_stat_kcache_12* pg_stat_monitor_12* pg
 
 
 
+--------
+
+## pg_profile
+
+[`pg_profile`](/pg_profile): PostgreSQL load profile repository and report builder
+
+## pg_show_plans
+
+[`pg_show_plans`](/pg_show_plans): show query plans of all currently running SQL statements
+
+## pg_stat_kcache
+
+[`pg_stat_kcache`](/pg_stat_kcache): Kernel statistics gathering
+
+## pg_stat_monitor
+
+[`pg_stat_monitor`](/pg_stat_monitor): The pg_stat_monitor is a PostgreSQL Query Performance Monitoring tool, based on PostgreSQL contrib module pg_stat_statements. pg_stat_monitor provides aggregated statistics, client information, plan details including plan, and histogram information.
+
+## pg_qualstats
+
+[`pg_qualstats`](/pg_qualstats): An extension collecting statistics about quals
+
+## pg_store_plans
+
+[`pg_store_plans`](/pg_store_plans): track plan statistics of all SQL statements executed
+
+## pg_track_settings
+
+[`pg_track_settings`](/pg_track_settings): Track settings changes
+
+## pg_wait_sampling
+
+[`pg_wait_sampling`](/pg_wait_sampling): sampling based statistics of wait events
+
+## system_stats
+
+[`system_stats`](/system_stats): EnterpriseDB system statistics for PostgreSQL
+
+## meta
+
+[`meta`](/meta): (package alias: `pg_meta`) Normalized, friendlier system catalog for PostgreSQL
+
+## pgnodemx
+
+[`pgnodemx`](/pgnodemx): Capture node OS metrics via SQL queries
+
+## pg_proctab
+
+[`pg_proctab`](/pg_proctab): (package alias: `pgnodemx`) PostgreSQL extension to access the OS process table
+
+## pg_sqlog
+
+[`pg_sqlog`](/pg_sqlog): Provide SQL interface to logs
+
+## bgw_replstatus
+
+[`bgw_replstatus`](/bgw_replstatus): Small PostgreSQL background worker to report whether a node is a replication master or standby
+
+## pgmeminfo
+
+[`pgmeminfo`](/pgmeminfo): show memory usage
+
+## toastinfo
+
+[`toastinfo`](/toastinfo): show details on toasted datums
+
+## explain_ui
+
+[`explain_ui`](/explain_ui): (package alias: `pg_explain_ui`) easily jump into a visual plan UI for any SQL query
+
+## pg_relusage
+
+[`pg_relusage`](/pg_relusage): Log all the queries that reference a particular column
+
+## pg_mon
+
+[`pg_mon`](/pg_mon): PostgreSQL extension to enhance query monitoring
+
+## pg_statviz
+
+[`pg_statviz`](/pg_statviz): stats visualization and time series analysis
+
+## pgexporter_ext
+
+[`pgexporter_ext`](/pgexporter_ext): pgexporter extension for extra metrics
+
+## pg_top
+
+[`pg_top`](/pg_top): Monitor PostgreSQL processes similar to unix top
+
+## pagevis
+
+[`pagevis`](/pagevis): Visualise database pages in ascii code
+
+## powa
+
+[`powa`](/powa): PostgreSQL Workload Analyser-core
+
+## pageinspect
+
+[`pageinspect`](/pageinspect): inspect the contents of database pages at a low level
+
+## pgrowlocks
+
+[`pgrowlocks`](/pgrowlocks): show row-level locking information
+
+## sslinfo
+
+[`sslinfo`](/sslinfo): information about SSL certificates
+
+## pg_buffercache
+
+[`pg_buffercache`](/pg_buffercache): examine the shared buffer cache
+
+## pg_walinspect
+
+[`pg_walinspect`](/pg_walinspect): functions to inspect contents of PostgreSQL Write-Ahead Log
+
+## pg_freespacemap
+
+[`pg_freespacemap`](/pg_freespacemap): examine the free space map (FSM)
+
+## pg_visibility
+
+[`pg_visibility`](/pg_visibility): examine the visibility map (VM) and page-level visibility info
+
+## pgstattuple
+
+[`pgstattuple`](/pgstattuple): show tuple-level statistics
+
+## auto_explain
+
+[`auto_explain`](/auto_explain): Provides a means for logging execution plans of slow statements automatically
+
+## pg_stat_statements
+
+[`pg_stat_statements`](/pg_stat_statements): track planning and execution statistics of all SQL statements executed

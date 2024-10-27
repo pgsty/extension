@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 56 available extensions in this category
+There are 56 available extensions in this category:
+
+[`topn`](/topn) [`gzip`](/gzip) [`zstd`](/zstd) [`http`](/http) [`pg_net`](/pg_net) [`pg_html5_email_address`](/pg_html5_email_address) [`pgsql_tweaks`](/pgsql_tweaks) [`pg_extra_time`](/pg_extra_time) [`timeit`](/timeit) [`count_distinct`](/count_distinct) [`extra_window_functions`](/extra_window_functions) [`first_last_agg`](/first_last_agg) [`tdigest`](/tdigest) [`aggs_for_vecs`](/aggs_for_vecs) [`aggs_for_arrays`](/aggs_for_arrays) [`arraymath`](/arraymath) [`quantile`](/quantile) [`lower_quantile`](/lower_quantile) [`pg_idkit`](/pg_idkit) [`pg_uuidv7`](/pg_uuidv7) [`permuteseq`](/permuteseq) [`pg_hashids`](/pg_hashids) [`sequential_uuids`](/sequential_uuids) [`pg_math`](/pg_math) [`random`](/random) [`base36`](/base36) [`base62`](/base62) [`pg_base58`](/pg_base58) [`floatvec`](/floatvec) [`financial`](/financial) [`pgjwt`](/pgjwt) [`pg_hashlib`](/pg_hashlib) [`shacrypt`](/shacrypt) [`cryptint`](/cryptint) [`pguecc`](/pguecc) [`pgpcre`](/pgpcre) [`icu_ext`](/icu_ext) [`pgqr`](/pgqr) [`envvar`](/envvar) [`pg_protobuf`](/pg_protobuf) [`url_encode`](/url_encode) [`refint`](/refint) [`autoinc`](/autoinc) [`insert_username`](/insert_username) [`moddatetime`](/moddatetime) [`tsm_system_time`](/tsm_system_time) [`dict_xsyn`](/dict_xsyn) [`tsm_system_rows`](/tsm_system_rows) [`tcn`](/tcn) [`uuid-ossp`](/uuid-ossp) [`btree_gist`](/btree_gist) [`btree_gin`](/btree_gin) [`intarray`](/intarray) [`intagg`](/intagg) [`dict_int`](/dict_int) [`unaccent`](/unaccent)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -234,3 +236,228 @@ pg12: topn_12* pgsql_gzip_12* pg_zstd_12* pgsql_http_12* pg_net_12* pg_html5_ema
 
 
 
+--------
+
+## topn
+
+[`topn`](/topn): type for top-n JSONB
+
+## gzip
+
+[`gzip`](/gzip): (package alias: `pg_gzip`) gzip and gunzip functions.
+
+## zstd
+
+[`zstd`](/zstd): (package alias: `pg_zstd`) Zstandard compression algorithm implementation in PostgreSQL
+
+## http
+
+[`http`](/http): (package alias: `pg_http`) HTTP client for PostgreSQL, allows web page retrieval inside the database.
+
+## pg_net
+
+[`pg_net`](/pg_net): Async HTTP Requests
+
+## pg_html5_email_address
+
+[`pg_html5_email_address`](/pg_html5_email_address): PostgreSQL email validation that is consistent with the HTML5 spec
+
+## pgsql_tweaks
+
+[`pgsql_tweaks`](/pgsql_tweaks): Some functions and views for daily usage
+
+## pg_extra_time
+
+[`pg_extra_time`](/pg_extra_time): Some date time functions and operators that,
+
+## timeit
+
+[`timeit`](/timeit): (package alias: `pg_timeit`) High-accuracy timing of SQL expressions
+
+## count_distinct
+
+[`count_distinct`](/count_distinct): An alternative to COUNT(DISTINCT …) aggregate, usable with HashAggregate
+
+## extra_window_functions
+
+[`extra_window_functions`](/extra_window_functions): Extra Window Functions for PostgreSQL
+
+## first_last_agg
+
+[`first_last_agg`](/first_last_agg): first() and last() aggregate functions
+
+## tdigest
+
+[`tdigest`](/tdigest): Provides tdigest aggregate function.
+
+## aggs_for_vecs
+
+[`aggs_for_vecs`](/aggs_for_vecs): Aggregate functions for array inputs
+
+## aggs_for_arrays
+
+[`aggs_for_arrays`](/aggs_for_arrays): Various functions for computing statistics on arrays of numbers
+
+## arraymath
+
+[`arraymath`](/arraymath): (package alias: `pg_arraymath`) Array math and operators that work element by element on the contents of arrays
+
+## quantile
+
+[`quantile`](/quantile): Quantile aggregation function
+
+## lower_quantile
+
+[`lower_quantile`](/lower_quantile): Lower quantile aggregate function
+
+## pg_idkit
+
+[`pg_idkit`](/pg_idkit): multi-tool for generating new/niche universally unique identifiers (ex. UUIDv6, ULID, KSUID)
+
+## pg_uuidv7
+
+[`pg_uuidv7`](/pg_uuidv7): pg_uuidv7: create UUIDv7 values in postgres
+
+## permuteseq
+
+[`permuteseq`](/permuteseq): Pseudo-randomly permute sequences with a format-preserving encryption on elements
+
+## pg_hashids
+
+[`pg_hashids`](/pg_hashids): Short unique id generator for PostgreSQL, using hashids
+
+## sequential_uuids
+
+[`sequential_uuids`](/sequential_uuids): generator of sequential UUIDs
+
+## pg_math
+
+[`pg_math`](/pg_math): GSL statistical functions for postgresql
+
+## random
+
+[`random`](/random): (package alias: `pg_random`) random data generator
+
+## base36
+
+[`base36`](/base36): (package alias: `pg_base36`) Integer Base36 types
+
+## base62
+
+[`base62`](/base62): (package alias: `pg_base62`) Base62 extension for PostgreSQL
+
+## pg_base58
+
+[`pg_base58`](/pg_base58): Base58 Encoder/Decoder Extension for PostgreSQL
+
+## floatvec
+
+[`floatvec`](/floatvec): Math for vectors (arrays) of numbers
+
+## financial
+
+[`financial`](/financial): (package alias: `pg_financial`) Financial aggregate functions
+
+## pgjwt
+
+[`pgjwt`](/pgjwt): JSON Web Token API for Postgresql
+
+## pg_hashlib
+
+[`pg_hashlib`](/pg_hashlib): Stable hash functions for Postgres
+
+## shacrypt
+
+[`shacrypt`](/shacrypt): Implements SHA256-CRYPT and SHA512-CRYPT password encryption schemes
+
+## cryptint
+
+[`cryptint`](/cryptint): Encryption functions for int and bigint values
+
+## pguecc
+
+[`pguecc`](/pguecc): (package alias: `pg_ecdsa`) uECC bindings for Postgres
+
+## pgpcre
+
+[`pgpcre`](/pgpcre): Perl Compatible Regular Expression functions
+
+## icu_ext
+
+[`icu_ext`](/icu_ext): Access ICU functions
+
+## pgqr
+
+[`pgqr`](/pgqr): QR Code generator from PostgreSQL
+
+## envvar
+
+[`envvar`](/envvar): Fetch the value of an environment variable
+
+## pg_protobuf
+
+[`pg_protobuf`](/pg_protobuf): Protobuf support for PostgreSQL
+
+## url_encode
+
+[`url_encode`](/url_encode): url_encode, url_decode functions
+
+## refint
+
+[`refint`](/refint): functions for implementing referential integrity (obsolete)
+
+## autoinc
+
+[`autoinc`](/autoinc): functions for autoincrementing fields
+
+## insert_username
+
+[`insert_username`](/insert_username): functions for tracking who changed a table
+
+## moddatetime
+
+[`moddatetime`](/moddatetime): functions for tracking last modification time
+
+## tsm_system_time
+
+[`tsm_system_time`](/tsm_system_time): TABLESAMPLE method which accepts time in milliseconds as a limit
+
+## dict_xsyn
+
+[`dict_xsyn`](/dict_xsyn): text search dictionary template for extended synonym processing
+
+## tsm_system_rows
+
+[`tsm_system_rows`](/tsm_system_rows): TABLESAMPLE method which accepts number of rows as a limit
+
+## tcn
+
+[`tcn`](/tcn): Triggered change notifications
+
+## uuid-ossp
+
+[`uuid-ossp`](/uuid-ossp): generate universally unique identifiers (UUIDs)
+
+## btree_gist
+
+[`btree_gist`](/btree_gist): support for indexing common datatypes in GiST
+
+## btree_gin
+
+[`btree_gin`](/btree_gin): support for indexing common datatypes in GIN
+
+## intarray
+
+[`intarray`](/intarray): functions, operators, and index support for 1-D arrays of integers
+
+## intagg
+
+[`intagg`](/intagg): integer aggregator and enumerator (obsolete)
+
+## dict_int
+
+[`dict_int`](/dict_int): text search dictionary template for integers
+
+## unaccent
+
+[`unaccent`](/unaccent): text search dictionary that removes accents

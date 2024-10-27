@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 12 available extensions in this category
+There are 12 available extensions in this category:
+
+[`orafce`](/orafce) [`pgtt`](/pgtt) [`session_variable`](/session_variable) [`pg_statement_rollback`](/pg_statement_rollback) [`pg_dbms_metadata`](/pg_dbms_metadata) [`pg_dbms_lock`](/pg_dbms_lock) [`pg_dbms_job`](/pg_dbms_job) [`babelfishpg_common`](/babelfishpg_common) [`babelfishpg_tsql`](/babelfishpg_tsql) [`babelfishpg_tds`](/babelfishpg_tds) [`babelfishpg_money`](/babelfishpg_money) [`pgmemcache`](/pgmemcache)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -99,3 +101,52 @@ pg12: orafce_12* pgtt_12* session_variable_12* pg_statement_rollback_12* pg_dbms
 
 
 
+--------
+
+## orafce
+
+[`orafce`](/orafce): Functions and operators that emulate a subset of functions and packages from the Oracle RDBMS
+
+## pgtt
+
+[`pgtt`](/pgtt): Extension to add Global Temporary Tables feature to PostgreSQL
+
+## session_variable
+
+[`session_variable`](/session_variable): Registration and manipulation of session variables and constants
+
+## pg_statement_rollback
+
+[`pg_statement_rollback`](/pg_statement_rollback): Server side rollback at statement level for PostgreSQL like Oracle or DB2
+
+## pg_dbms_metadata
+
+[`pg_dbms_metadata`](/pg_dbms_metadata): Extension to add Oracle DBMS_METADATA compatibility to PostgreSQL
+
+## pg_dbms_lock
+
+[`pg_dbms_lock`](/pg_dbms_lock): Extension to add Oracle DBMS_LOCK full compatibility to PostgreSQL
+
+## pg_dbms_job
+
+[`pg_dbms_job`](/pg_dbms_job): Extension to add Oracle DBMS_JOB full compatibility to PostgreSQL
+
+## babelfishpg_common
+
+[`babelfishpg_common`](/babelfishpg_common): SQL Server Transact SQL Datatype Support
+
+## babelfishpg_tsql
+
+[`babelfishpg_tsql`](/babelfishpg_tsql): SQL Server Transact SQL compatibility
+
+## babelfishpg_tds
+
+[`babelfishpg_tds`](/babelfishpg_tds): SQL Server TDS protocol extension
+
+## babelfishpg_money
+
+[`babelfishpg_money`](/babelfishpg_money): SQL Server Money Data Type
+
+## pgmemcache
+
+[`pgmemcache`](/pgmemcache): memcached interface

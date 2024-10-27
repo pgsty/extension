@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 10 available extensions in this category
+There are 10 available extensions in this category:
+
+[`timescaledb`](/timescaledb) [`timeseries`](/timeseries) [`periods`](/periods) [`temporal_tables`](/temporal_tables) [`emaj`](/emaj) [`table_version`](/table_version) [`pg_cron`](/pg_cron) [`pg_later`](/pg_later) [`pg_background`](/pg_background) [`pg_timetable`](/pg_timetable)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -96,3 +98,44 @@ pg12: timescaledb-2-postgresql-12* pg_timeseries_12 periods_12* temporal_tables_
 
 
 
+--------
+
+## timescaledb
+
+[`timescaledb`](/timescaledb): Enables scalable inserts and complex queries for time-series data (Apache 2 Edition)
+
+## timeseries
+
+[`timeseries`](/timeseries): (package alias: `pg_timeseries`) Convenience API for Tembo time series stack
+
+## periods
+
+[`periods`](/periods): Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING
+
+## temporal_tables
+
+[`temporal_tables`](/temporal_tables): temporal tables
+
+## emaj
+
+[`emaj`](/emaj): Enables fine-grained write logging and time travel on subsets of the database.
+
+## table_version
+
+[`table_version`](/table_version): PostgreSQL table versioning extension
+
+## pg_cron
+
+[`pg_cron`](/pg_cron): Job scheduler for PostgreSQL
+
+## pg_later
+
+[`pg_later`](/pg_later): pg_later: Run queries now and get results later
+
+## pg_background
+
+[`pg_background`](/pg_background): Run SQL queries in the background
+
+## pg_timetable
+
+[`pg_timetable`](/pg_timetable): Advanced scheduling for PostgreSQL

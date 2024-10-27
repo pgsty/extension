@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 19 available extensions in this category
+There are 19 available extensions in this category:
+
+[`postgis`](/postgis) [`postgis_topology`](/postgis_topology) [`postgis_raster`](/postgis_raster) [`postgis_sfcgal`](/postgis_sfcgal) [`postgis_tiger_geocoder`](/postgis_tiger_geocoder) [`address_standardizer`](/address_standardizer) [`address_standardizer_data_us`](/address_standardizer_data_us) [`pgrouting`](/pgrouting) [`pointcloud`](/pointcloud) [`pointcloud_postgis`](/pointcloud_postgis) [`h3`](/h3) [`h3_postgis`](/h3_postgis) [`q3c`](/q3c) [`ogr_fdw`](/ogr_fdw) [`geoip`](/geoip) [`pg_polyline`](/pg_polyline) [`pg_geohash`](/pg_geohash) [`mobilitydb`](/mobilitydb) [`earthdistance`](/earthdistance)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -106,3 +108,80 @@ pg12: postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* g
 
 
 
+--------
+
+## postgis
+
+[`postgis`](/postgis): PostGIS geometry and geography spatial types and functions
+
+## postgis_topology
+
+[`postgis_topology`](/postgis_topology): (package alias: `postgis`) PostGIS topology spatial types and functions
+
+## postgis_raster
+
+[`postgis_raster`](/postgis_raster): (package alias: `postgis`) PostGIS raster types and functions
+
+## postgis_sfcgal
+
+[`postgis_sfcgal`](/postgis_sfcgal): (package alias: `postgis`) PostGIS SFCGAL functions
+
+## postgis_tiger_geocoder
+
+[`postgis_tiger_geocoder`](/postgis_tiger_geocoder): (package alias: `postgis`) PostGIS tiger geocoder and reverse geocoder
+
+## address_standardizer
+
+[`address_standardizer`](/address_standardizer): (package alias: `postgis`) Used to parse an address into constituent elements. Generally used to support geocoding address normalization step.
+
+## address_standardizer_data_us
+
+[`address_standardizer_data_us`](/address_standardizer_data_us): (package alias: `postgis`) Address Standardizer US dataset example
+
+## pgrouting
+
+[`pgrouting`](/pgrouting): pgRouting Extension
+
+## pointcloud
+
+[`pointcloud`](/pointcloud): data type for lidar point clouds
+
+## pointcloud_postgis
+
+[`pointcloud_postgis`](/pointcloud_postgis): (package alias: `pointcloud`) integration for pointcloud LIDAR data and PostGIS geometry data
+
+## h3
+
+[`h3`](/h3): (package alias: `pg_h3`) H3 bindings for PostgreSQL
+
+## h3_postgis
+
+[`h3_postgis`](/h3_postgis): (package alias: `pg_h3`) H3 PostGIS integration
+
+## q3c
+
+[`q3c`](/q3c): q3c sky indexing plugin
+
+## ogr_fdw
+
+[`ogr_fdw`](/ogr_fdw): foreign-data wrapper for GIS data access
+
+## geoip
+
+[`geoip`](/geoip): IP-based geolocation query
+
+## pg_polyline
+
+[`pg_polyline`](/pg_polyline): Fast Google Encoded Polyline encoding & decoding for postgres
+
+## pg_geohash
+
+[`pg_geohash`](/pg_geohash): Handle geohash based functionality for spatial coordinates
+
+## mobilitydb
+
+[`mobilitydb`](/mobilitydb): MobilityDB geospatial trajectory data management & analysis platform
+
+## earthdistance
+
+[`earthdistance`](/earthdistance): calculate great-circle distances on the surface of the Earth

@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 9 available extensions in this category
+There are 9 available extensions in this category:
+
+[`vector`](/vector) [`vectorscale`](/vectorscale) [`vectorize`](/vectorize) [`pg_similarity`](/pg_similarity) [`smlar`](/smlar) [`pg_summarize`](/pg_summarize) [`pg_tiktoken`](/pg_tiktoken) [`pgml`](/pgml) [`pg4ml`](/pg4ml)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -93,3 +95,40 @@ pg12: pgvector_12* pg_similarity_12* pg_summarize_12 pg_tiktoken_12 pg4ml_12 #pg
 
 
 
+--------
+
+## vector
+
+[`vector`](/vector): (package alias: `pgvector`) vector data type and ivfflat and hnsw access methods
+
+## vectorscale
+
+[`vectorscale`](/vectorscale): (package alias: `pgvectorscale`) pgvectorscale:  Advanced indexing for vector data
+
+## vectorize
+
+[`vectorize`](/vectorize): (package alias: `pg_vectorize`) The simplest way to do vector search on Postgres
+
+## pg_similarity
+
+[`pg_similarity`](/pg_similarity): support similarity queries
+
+## smlar
+
+[`smlar`](/smlar): Effective similarity search
+
+## pg_summarize
+
+[`pg_summarize`](/pg_summarize): Text Summarization using LLMs. Built using pgrx
+
+## pg_tiktoken
+
+[`pg_tiktoken`](/pg_tiktoken): pg_tictoken: tiktoken tokenizer for use with OpenAI models in postgres
+
+## pgml
+
+[`pgml`](/pgml): PostgresML: Run AL/ML workloads with SQL interface
+
+## pg4ml
+
+[`pg4ml`](/pg4ml): Machine learning framework for PostgreSQL

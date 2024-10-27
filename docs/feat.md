@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 17 available extensions in this category
+There are 17 available extensions in this category:
+
+[`age`](/age) [`hll`](/hll) [`rum`](/rum) [`pg_graphql`](/pg_graphql) [`pg_jsonschema`](/pg_jsonschema) [`jsquery`](/jsquery) [`pg_hint_plan`](/pg_hint_plan) [`hypopg`](/hypopg) [`index_advisor`](/index_advisor) [`plan_filter`](/plan_filter) [`imgsmlr`](/imgsmlr) [`pg_ivm`](/pg_ivm) [`pgmq`](/pgmq) [`pgq`](/pgq) [`pg_cardano`](/pg_cardano) [`rdkit`](/rdkit) [`bloom`](/bloom)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -116,3 +118,72 @@ pg12: apache-age_12* hll_12* rum_12 pg_jsonschema_12 jsquery_12* pg_hint_plan_12
 
 
 
+--------
+
+## age
+
+[`age`](/age): AGE graph database extension
+
+## hll
+
+[`hll`](/hll): type for storing hyperloglog data
+
+## rum
+
+[`rum`](/rum): RUM index access method
+
+## pg_graphql
+
+[`pg_graphql`](/pg_graphql): pg_graphql: GraphQL support
+
+## pg_jsonschema
+
+[`pg_jsonschema`](/pg_jsonschema): PostgreSQL extension providing JSON Schema validation
+
+## jsquery
+
+[`jsquery`](/jsquery): data type for jsonb inspection
+
+## pg_hint_plan
+
+[`pg_hint_plan`](/pg_hint_plan): Give PostgreSQL ability to manually force some decisions in execution plans.
+
+## hypopg
+
+[`hypopg`](/hypopg): Hypothetical indexes for PostgreSQL
+
+## index_advisor
+
+[`index_advisor`](/index_advisor): Query index advisor
+
+## plan_filter
+
+[`plan_filter`](/plan_filter): (package alias: `pg_plan_filter`) filter statements by their execution plans.
+
+## imgsmlr
+
+[`imgsmlr`](/imgsmlr): Image similarity with haar
+
+## pg_ivm
+
+[`pg_ivm`](/pg_ivm): incremental view maintenance on PostgreSQL
+
+## pgmq
+
+[`pgmq`](/pgmq): A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.
+
+## pgq
+
+[`pgq`](/pgq): Generic queue for PostgreSQL
+
+## pg_cardano
+
+[`pg_cardano`](/pg_cardano): A suite of Cardano-related tools
+
+## rdkit
+
+[`rdkit`](/rdkit): Cheminformatics functionality for PostgreSQL.
+
+## bloom
+
+[`bloom`](/bloom): bloom access method - signature file based index

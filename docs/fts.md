@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 15 available extensions in this category
+There are 15 available extensions in this category:
+
+[`pg_search`](/pg_search) [`pg_bigm`](/pg_bigm) [`zhparser`](/zhparser) [`hunspell_cs_cz`](/hunspell_cs_cz) [`hunspell_de_de`](/hunspell_de_de) [`hunspell_en_us`](/hunspell_en_us) [`hunspell_fr`](/hunspell_fr) [`hunspell_ne_np`](/hunspell_ne_np) [`hunspell_nl_nl`](/hunspell_nl_nl) [`hunspell_nn_no`](/hunspell_nn_no) [`hunspell_pt_pt`](/hunspell_pt_pt) [`hunspell_ru_ru`](/hunspell_ru_ru) [`hunspell_ru_ru_aot`](/hunspell_ru_ru_aot) [`fuzzystrmatch`](/fuzzystrmatch) [`pg_trgm`](/pg_trgm)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -111,3 +113,64 @@ pg12: pg_bigm_12* zhparser_12* hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_u
 
 
 
+--------
+
+## pg_search
+
+[`pg_search`](/pg_search): pg_search: Full text search for PostgreSQL using BM25
+
+## pg_bigm
+
+[`pg_bigm`](/pg_bigm): create 2-gram (bigram) index for faster full text search.
+
+## zhparser
+
+[`zhparser`](/zhparser): a parser for full-text search of Chinese
+
+## hunspell_cs_cz
+
+[`hunspell_cs_cz`](/hunspell_cs_cz): Czech Hunspell Dictionary
+
+## hunspell_de_de
+
+[`hunspell_de_de`](/hunspell_de_de): German Hunspell Dictionary
+
+## hunspell_en_us
+
+[`hunspell_en_us`](/hunspell_en_us): en_US Hunspell Dictionary
+
+## hunspell_fr
+
+[`hunspell_fr`](/hunspell_fr): French Hunspell Dictionary
+
+## hunspell_ne_np
+
+[`hunspell_ne_np`](/hunspell_ne_np): Nepali Hunspell Dictionary
+
+## hunspell_nl_nl
+
+[`hunspell_nl_nl`](/hunspell_nl_nl): Dutch Hunspell Dictionary
+
+## hunspell_nn_no
+
+[`hunspell_nn_no`](/hunspell_nn_no): Norwegian (norsk) Hunspell Dictionary
+
+## hunspell_pt_pt
+
+[`hunspell_pt_pt`](/hunspell_pt_pt): Portuguese Hunspell Dictionary
+
+## hunspell_ru_ru
+
+[`hunspell_ru_ru`](/hunspell_ru_ru): Russian Hunspell Dictionary
+
+## hunspell_ru_ru_aot
+
+[`hunspell_ru_ru_aot`](/hunspell_ru_ru_aot): Russian Hunspell Dictionary (from AOT.ru group)
+
+## fuzzystrmatch
+
+[`fuzzystrmatch`](/fuzzystrmatch): determine similarities and distance between strings
+
+## pg_trgm
+
+[`pg_trgm`](/pg_trgm): text similarity measurement and index searching based on trigrams

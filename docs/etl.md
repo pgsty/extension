@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 19 available extensions in this category
+There are 19 available extensions in this category:
+
+[`pglogical`](/pglogical) [`pglogical_origin`](/pglogical_origin) [`pglogical_ticker`](/pglogical_ticker) [`pgl_ddl_deploy`](/pgl_ddl_deploy) [`pg_failover_slots`](/pg_failover_slots) [`wal2json`](/wal2json) [`wal2mongo`](/wal2mongo) [`decoderbufs`](/decoderbufs) [`decoder_raw`](/decoder_raw) [`test_decoding`](/test_decoding) [`mimeo`](/mimeo) [`repmgr`](/repmgr) [`pgcopydb`](/pgcopydb) [`pgloader`](/pgloader) [`pg_fact_loader`](/pg_fact_loader) [`pg_bulkload`](/pg_bulkload) [`pg_comparator`](/pg_comparator) [`pgimportdoc`](/pgimportdoc) [`pgexportdoc`](/pgexportdoc)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -116,3 +118,80 @@ pg12: pglogical_12* pgl_ddl_deploy_12* pg_failover_slots_12* wal2json_12* postgr
 
 
 
+--------
+
+## pglogical
+
+[`pglogical`](/pglogical): PostgreSQL Logical Replication
+
+## pglogical_origin
+
+[`pglogical_origin`](/pglogical_origin): (package alias: `pglogical`) Dummy extension for compatibility when upgrading from Postgres 9.4
+
+## pglogical_ticker
+
+[`pglogical_ticker`](/pglogical_ticker): (package alias: `pglogical`) Have an accurate view on pglogical replication delay
+
+## pgl_ddl_deploy
+
+[`pgl_ddl_deploy`](/pgl_ddl_deploy): automated ddl deployment using pglogical
+
+## pg_failover_slots
+
+[`pg_failover_slots`](/pg_failover_slots): PG Failover Slots extension
+
+## wal2json
+
+[`wal2json`](/wal2json): Changing data capture in JSON format
+
+## wal2mongo
+
+[`wal2mongo`](/wal2mongo): PostgreSQL logical decoding output plugin for MongoDB
+
+## decoderbufs
+
+[`decoderbufs`](/decoderbufs): Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format
+
+## decoder_raw
+
+[`decoder_raw`](/decoder_raw): Output plugin for logical replication in Raw SQL format
+
+## test_decoding
+
+[`test_decoding`](/test_decoding): SQL-based test/example module for WAL logical decoding
+
+## mimeo
+
+[`mimeo`](/mimeo): Extension for specialized, per-table replication between PostgreSQL instances
+
+## repmgr
+
+[`repmgr`](/repmgr): Replication manager for PostgreSQL
+
+## pgcopydb
+
+[`pgcopydb`](/pgcopydb): Copy a Postgres database to a target Postgres server
+
+## pgloader
+
+[`pgloader`](/pgloader): Migrate to PostgreSQL in a single command!
+
+## pg_fact_loader
+
+[`pg_fact_loader`](/pg_fact_loader): build fact tables with Postgres
+
+## pg_bulkload
+
+[`pg_bulkload`](/pg_bulkload): pg_bulkload is a high speed data loading utility for PostgreSQL
+
+## pg_comparator
+
+[`pg_comparator`](/pg_comparator): Comparation of testing and production services PostgreSQL databases.
+
+## pgimportdoc
+
+[`pgimportdoc`](/pgimportdoc): command line utility for importing XML, JSON, BYTEA document to PostgreSQL
+
+## pgexportdoc
+
+[`pgexportdoc`](/pgexportdoc): export XML, JSON and BYTEA documents from PostgreSQL

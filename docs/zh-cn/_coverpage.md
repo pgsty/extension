@@ -2,7 +2,7 @@
 
 # PostgreSQL 扩展仓库 <small>by Pigsty</small>
 
-[`ext.pigsty.io`](https://pgexp.pigsty.io)
+### [`ext.pigsty.io`](https://ext.pigsty.io)
 
 <br>
 

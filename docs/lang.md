@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 31 available extensions in this category
+There are 31 available extensions in this category:
+
+[`pg_tle`](/pg_tle) [`plv8`](/plv8) [`pllua`](/pllua) [`hstore_pllua`](/hstore_pllua) [`plluau`](/plluau) [`hstore_plluau`](/hstore_plluau) [`plprql`](/plprql) [`pldbgapi`](/pldbgapi) [`plpgsql_check`](/plpgsql_check) [`plprofiler`](/plprofiler) [`plsh`](/plsh) [`pljava`](/pljava) [`plr`](/plr) [`pgtap`](/pgtap) [`faker`](/faker) [`dbt2`](/dbt2) [`pltcl`](/pltcl) [`pltclu`](/pltclu) [`plperl`](/plperl) [`bool_plperl`](/bool_plperl) [`hstore_plperl`](/hstore_plperl) [`jsonb_plperl`](/jsonb_plperl) [`plperlu`](/plperlu) [`bool_plperlu`](/bool_plperlu) [`jsonb_plperlu`](/jsonb_plperlu) [`hstore_plperlu`](/hstore_plperlu) [`plpgsql`](/plpgsql) [`plpython3u`](/plpython3u) [`jsonb_plpython3u`](/jsonb_plpython3u) [`ltree_plpython3u`](/ltree_plpython3u) [`hstore_plpython3u`](/hstore_plpython3u)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -131,3 +133,128 @@ pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* p
 
 
 
+--------
+
+## pg_tle
+
+[`pg_tle`](/pg_tle): Trusted Language Extensions for PostgreSQL
+
+## plv8
+
+[`plv8`](/plv8): PL/JavaScript (v8) trusted procedural language
+
+## pllua
+
+[`pllua`](/pllua): Lua as a procedural language
+
+## hstore_pllua
+
+[`hstore_pllua`](/hstore_pllua): (package alias: `pllua`) Hstore transform for Lua
+
+## plluau
+
+[`plluau`](/plluau): (package alias: `pllua`) Lua as an untrusted procedural language
+
+## hstore_plluau
+
+[`hstore_plluau`](/hstore_plluau): (package alias: `pllua`) Hstore transform for untrusted Lua
+
+## plprql
+
+[`plprql`](/plprql): Use PRQL in PostgreSQL - Pipelined Relational Query Language
+
+## pldbgapi
+
+[`pldbgapi`](/pldbgapi): (package alias: `pldebugger`) server-side support for debugging PL/pgSQL functions
+
+## plpgsql_check
+
+[`plpgsql_check`](/plpgsql_check): extended check for plpgsql functions
+
+## plprofiler
+
+[`plprofiler`](/plprofiler): server-side support for profiling PL/pgSQL functions
+
+## plsh
+
+[`plsh`](/plsh): PL/sh procedural language
+
+## pljava
+
+[`pljava`](/pljava): PL/Java procedural language (https://tada.github.io/pljava/)
+
+## plr
+
+[`plr`](/plr): load R interpreter and execute R script from within a database
+
+## pgtap
+
+[`pgtap`](/pgtap): Unit testing for PostgreSQL
+
+## faker
+
+[`faker`](/faker): Wrapper for the Faker Python library
+
+## dbt2
+
+[`dbt2`](/dbt2): OSDL-DBT-2 test kit
+
+## pltcl
+
+[`pltcl`](/pltcl): PL/Tcl procedural language
+
+## pltclu
+
+[`pltclu`](/pltclu): (package alias: `pltcl`) PL/TclU untrusted procedural language
+
+## plperl
+
+[`plperl`](/plperl): PL/Perl procedural language
+
+## bool_plperl
+
+[`bool_plperl`](/bool_plperl): (package alias: `plperl`) transform between bool and plperl
+
+## hstore_plperl
+
+[`hstore_plperl`](/hstore_plperl): (package alias: `plperl`) transform between hstore and plperl
+
+## jsonb_plperl
+
+[`jsonb_plperl`](/jsonb_plperl): (package alias: `plperl`) transform between jsonb and plperl
+
+## plperlu
+
+[`plperlu`](/plperlu): PL/PerlU untrusted procedural language
+
+## bool_plperlu
+
+[`bool_plperlu`](/bool_plperlu): (package alias: `plperlu`) transform between bool and plperlu
+
+## jsonb_plperlu
+
+[`jsonb_plperlu`](/jsonb_plperlu): (package alias: `plperlu`) transform between jsonb and plperlu
+
+## hstore_plperlu
+
+[`hstore_plperlu`](/hstore_plperlu): (package alias: `plperlu`) transform between hstore and plperlu
+
+## plpgsql
+
+[`plpgsql`](/plpgsql): PL/pgSQL procedural language
+
+## plpython3u
+
+[`plpython3u`](/plpython3u): PL/Python3U untrusted procedural language
+
+## jsonb_plpython3u
+
+[`jsonb_plpython3u`](/jsonb_plpython3u): (package alias: `plpython3u`) transform between jsonb and plpython3u
+
+## ltree_plpython3u
+
+[`ltree_plpython3u`](/ltree_plpython3u): (package alias: `plpython3u`) transform between ltree and plpython3u
+
+## hstore_plpython3u
+
+[`hstore_plpython3u`](/hstore_plpython3u): (package alias: `plpython3u`) transform between hstore and plpython3u

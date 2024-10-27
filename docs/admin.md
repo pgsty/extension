@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 35 available extensions in this category
+There are 35 available extensions in this category:
+
+[`pg_repack`](/pg_repack) [`pg_squeeze`](/pg_squeeze) [`pg_dirtyread`](/pg_dirtyread) [`pgfincore`](/pgfincore) [`pgdd`](/pgdd) [`ddlx`](/ddlx) [`prioritize`](/prioritize) [`pg_checksums`](/pg_checksums) [`pg_readonly`](/pg_readonly) [`safeupdate`](/safeupdate) [`pg_permissions`](/pg_permissions) [`pgautofailover`](/pgautofailover) [`pg_catcheck`](/pg_catcheck) [`pre_prepare`](/pre_prepare) [`pgcozy`](/pgcozy) [`pg_orphaned`](/pg_orphaned) [`pg_crash`](/pg_crash) [`pg_cheat_funcs`](/pg_cheat_funcs) [`pg_savior`](/pg_savior) [`table_log`](/table_log) [`pg_fio`](/pg_fio) [`pgpool_adm`](/pgpool_adm) [`pgpool_recovery`](/pgpool_recovery) [`pgpool_regclass`](/pgpool_regclass) [`pgagent`](/pgagent) [`vacuumlo`](/vacuumlo) [`pg_prewarm`](/pg_prewarm) [`oid2name`](/oid2name) [`lo`](/lo) [`basic_archive`](/basic_archive) [`basebackup_to_shell`](/basebackup_to_shell) [`old_snapshot`](/old_snapshot) [`adminpack`](/adminpack) [`amcheck`](/amcheck) [`pg_surgery`](/pg_surgery)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -167,3 +169,144 @@ pg12: pg_repack_12* pg_squeeze_12* pg_dirtyread_12* pgfincore_12* pgdd_12 ddlx_1
 
 
 
+--------
+
+## pg_repack
+
+[`pg_repack`](/pg_repack): Reorganize tables in PostgreSQL databases with minimal locks
+
+## pg_squeeze
+
+[`pg_squeeze`](/pg_squeeze): A tool to remove unused space from a relation.
+
+## pg_dirtyread
+
+[`pg_dirtyread`](/pg_dirtyread): Read dead but unvacuumed rows from table
+
+## pgfincore
+
+[`pgfincore`](/pgfincore): examine and manage the os buffer cache
+
+## pgdd
+
+[`pgdd`](/pgdd): An in-database data dictionary providing database introspection via standard SQL query syntax. Developed using pgx (https://github.com/zombodb/pgx).
+
+## ddlx
+
+[`ddlx`](/ddlx): DDL eXtractor functions
+
+## prioritize
+
+[`prioritize`](/prioritize): (package alias: `pg_prioritize`) get and set the priority of PostgreSQL backends
+
+## pg_checksums
+
+[`pg_checksums`](/pg_checksums): Activate/deactivate/verify checksums in offline Postgres clusters
+
+## pg_readonly
+
+[`pg_readonly`](/pg_readonly): cluster database read only
+
+## safeupdate
+
+[`safeupdate`](/safeupdate): Require criteria for UPDATE and DELETE
+
+## pg_permissions
+
+[`pg_permissions`](/pg_permissions): view object permissions and compare them with the desired state
+
+## pgautofailover
+
+[`pgautofailover`](/pgautofailover): pg_auto_failover
+
+## pg_catcheck
+
+[`pg_catcheck`](/pg_catcheck): Diagnosing system catalog corruption
+
+## pre_prepare
+
+[`pre_prepare`](/pre_prepare): (package alias: `preprepare`) Pre Prepare your Statement server side
+
+## pgcozy
+
+[`pgcozy`](/pgcozy): Pre-warming shared buffers according to previous pg_buffercache snapshots for PostgreSQL.
+
+## pg_orphaned
+
+[`pg_orphaned`](/pg_orphaned): Deal with orphaned files
+
+## pg_crash
+
+[`pg_crash`](/pg_crash): Send random signals to random processes
+
+## pg_cheat_funcs
+
+[`pg_cheat_funcs`](/pg_cheat_funcs): Provides cheat (but useful) functions
+
+## pg_savior
+
+[`pg_savior`](/pg_savior): Postgres extension to save OOPS mistakes
+
+## table_log
+
+[`table_log`](/table_log): record table modification logs and PITR for table/row
+
+## pg_fio
+
+[`pg_fio`](/pg_fio): PostgreSQL File I/O Functions
+
+## pgpool_adm
+
+[`pgpool_adm`](/pgpool_adm): (package alias: `pgpool`) Administrative functions for pgPool
+
+## pgpool_recovery
+
+[`pgpool_recovery`](/pgpool_recovery): (package alias: `pgpool`) recovery functions for pgpool-II for V4.3
+
+## pgpool_regclass
+
+[`pgpool_regclass`](/pgpool_regclass): (package alias: `pgpool`) replacement for regclass
+
+## pgagent
+
+[`pgagent`](/pgagent): A PostgreSQL job scheduler
+
+## vacuumlo
+
+[`vacuumlo`](/vacuumlo): utility program that will remove any orphaned large objects from a PostgreSQL database
+
+## pg_prewarm
+
+[`pg_prewarm`](/pg_prewarm): prewarm relation data
+
+## oid2name
+
+[`oid2name`](/oid2name): utility program that helps administrators to examine the file structure used by PostgreSQL
+
+## lo
+
+[`lo`](/lo): Large Object maintenance
+
+## basic_archive
+
+[`basic_archive`](/basic_archive): an example of an archive module
+
+## basebackup_to_shell
+
+[`basebackup_to_shell`](/basebackup_to_shell): adds a custom basebackup target called shell
+
+## old_snapshot
+
+[`old_snapshot`](/old_snapshot): utilities in support of old_snapshot_threshold
+
+## adminpack
+
+[`adminpack`](/adminpack): administrative functions for PostgreSQL
+
+## amcheck
+
+[`amcheck`](/amcheck): functions for verifying relation integrity
+
+## pg_surgery
+
+[`pg_surgery`](/pg_surgery): extension to perform surgery on a damaged relation

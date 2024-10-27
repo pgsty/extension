@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 25 available extensions in this category
+There are 25 available extensions in this category:
+
+[`passwordcheck_cracklib`](/passwordcheck_cracklib) [`supautils`](/supautils) [`pgsodium`](/pgsodium) [`supabase_vault`](/supabase_vault) [`anon`](/anon) [`pg_tde`](/pg_tde) [`pgsmcrypto`](/pgsmcrypto) [`pgaudit`](/pgaudit) [`pgauditlogtofile`](/pgauditlogtofile) [`pg_auth_mon`](/pg_auth_mon) [`credcheck`](/credcheck) [`pgcryptokey`](/pgcryptokey) [`pg_jobmon`](/pg_jobmon) [`logerrors`](/logerrors) [`login_hook`](/login_hook) [`set_user`](/set_user) [`pg_snakeoil`](/pg_snakeoil) [`pgextwlist`](/pgextwlist) [`pg_auditor`](/pg_auditor) [`sslutils`](/sslutils) [`noset`](/noset) [`sepgsql`](/sepgsql) [`auth_delay`](/auth_delay) [`pgcrypto`](/pgcrypto) [`passwordcheck`](/passwordcheck)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -139,3 +141,104 @@ pg12: passwordcheck_cracklib_12* pgsodium_12* vault_12* postgresql_anonymizer_12
 
 
 
+--------
+
+## passwordcheck_cracklib
+
+[`passwordcheck_cracklib`](/passwordcheck_cracklib): (package alias: `passwordcheck`) Strengthen PostgreSQL user password checks with cracklib
+
+## supautils
+
+[`supautils`](/supautils): Extension that secures a cluster on a cloud environment
+
+## pgsodium
+
+[`pgsodium`](/pgsodium): Postgres extension for libsodium functions
+
+## supabase_vault
+
+[`supabase_vault`](/supabase_vault): (package alias: `pg_vault`) Supabase Vault Extension
+
+## anon
+
+[`anon`](/anon): (package alias: `anonymizer`) Data anonymization tools
+
+## pg_tde
+
+[`pg_tde`](/pg_tde): pg_tde access method
+
+## pgsmcrypto
+
+[`pgsmcrypto`](/pgsmcrypto): PostgreSQL SM Algorithm Extension
+
+## pgaudit
+
+[`pgaudit`](/pgaudit): provides auditing functionality
+
+## pgauditlogtofile
+
+[`pgauditlogtofile`](/pgauditlogtofile): pgAudit addon to redirect audit log to an independent file
+
+## pg_auth_mon
+
+[`pg_auth_mon`](/pg_auth_mon): monitor connection attempts per user
+
+## credcheck
+
+[`credcheck`](/credcheck): credcheck - postgresql plain text credential checker
+
+## pgcryptokey
+
+[`pgcryptokey`](/pgcryptokey): cryptographic key management
+
+## pg_jobmon
+
+[`pg_jobmon`](/pg_jobmon): Extension for logging and monitoring functions in PostgreSQL
+
+## logerrors
+
+[`logerrors`](/logerrors): Function for collecting statistics about messages in logfile
+
+## login_hook
+
+[`login_hook`](/login_hook): login_hook - hook to execute login_hook.login() at login time
+
+## set_user
+
+[`set_user`](/set_user): similar to SET ROLE but with added logging
+
+## pg_snakeoil
+
+[`pg_snakeoil`](/pg_snakeoil): The PostgreSQL Antivirus
+
+## pgextwlist
+
+[`pgextwlist`](/pgextwlist): PostgreSQL Extension Whitelisting
+
+## pg_auditor
+
+[`pg_auditor`](/pg_auditor): Audit data changes and provide flashback ability
+
+## sslutils
+
+[`sslutils`](/sslutils): A Postgres extension for managing SSL certificates through SQL
+
+## noset
+
+[`noset`](/noset): Module for blocking SET variables for non-super users.
+
+## sepgsql
+
+[`sepgsql`](/sepgsql): label-based mandatory access control (MAC) based on SELinux security policy.
+
+## auth_delay
+
+[`auth_delay`](/auth_delay): pause briefly before reporting authentication failure
+
+## pgcrypto
+
+[`pgcrypto`](/pgcrypto): cryptographic functions
+
+## passwordcheck
+
+[`passwordcheck`](/passwordcheck): checks user passwords and reject weak password

@@ -2,8 +2,7 @@
 
 # PostgreSQL Extension Repo <small>by Pigsty</small>
 
-### [`ext.pigsty.io`](https://pgexp.pigsty.io)
-
+### [`ext.pigsty.io`](https://ext.pigsty.io)
 
 - 345 extensions!
 - As Binary Packages

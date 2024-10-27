@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 21 available extensions in this category
+There are 21 available extensions in this category:
+
+[`wrappers`](/wrappers) [`multicorn`](/multicorn) [`odbc_fdw`](/odbc_fdw) [`jdbc_fdw`](/jdbc_fdw) [`mysql_fdw`](/mysql_fdw) [`oracle_fdw`](/oracle_fdw) [`tds_fdw`](/tds_fdw) [`db2_fdw`](/db2_fdw) [`sqlite_fdw`](/sqlite_fdw) [`pgbouncer_fdw`](/pgbouncer_fdw) [`mongo_fdw`](/mongo_fdw) [`redis_fdw`](/redis_fdw) [`redis`](/redis) [`kafka_fdw`](/kafka_fdw) [`hdfs_fdw`](/hdfs_fdw) [`firebird_fdw`](/firebird_fdw) [`aws_s3`](/aws_s3) [`log_fdw`](/log_fdw) [`dblink`](/dblink) [`file_fdw`](/file_fdw) [`postgres_fdw`](/postgres_fdw)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -121,3 +123,88 @@ pg12: multicorn2_12* mysql_fdw_12* tds_fdw_12* sqlite_fdw_12* pgbouncer_fdw_12* 
 
 
 
+--------
+
+## wrappers
+
+[`wrappers`](/wrappers): Foreign data wrappers developed by Supabase
+
+## multicorn
+
+[`multicorn`](/multicorn): Fetch foreign data in Python in your PostgreSQL server.
+
+## odbc_fdw
+
+[`odbc_fdw`](/odbc_fdw): Foreign data wrapper for accessing remote databases using ODBC
+
+## jdbc_fdw
+
+[`jdbc_fdw`](/jdbc_fdw): foreign-data wrapper for remote servers available over JDBC
+
+## mysql_fdw
+
+[`mysql_fdw`](/mysql_fdw): Foreign data wrapper for querying a MySQL server
+
+## oracle_fdw
+
+[`oracle_fdw`](/oracle_fdw): foreign data wrapper for Oracle access
+
+## tds_fdw
+
+[`tds_fdw`](/tds_fdw): Foreign data wrapper for querying a TDS database (Sybase or Microsoft SQL Server)
+
+## db2_fdw
+
+[`db2_fdw`](/db2_fdw): foreign data wrapper for DB2 access
+
+## sqlite_fdw
+
+[`sqlite_fdw`](/sqlite_fdw): SQLite Foreign Data Wrapper
+
+## pgbouncer_fdw
+
+[`pgbouncer_fdw`](/pgbouncer_fdw): Extension for querying PgBouncer stats from normal SQL views & running pgbouncer commands from normal SQL functions
+
+## mongo_fdw
+
+[`mongo_fdw`](/mongo_fdw): foreign data wrapper for MongoDB access
+
+## redis_fdw
+
+[`redis_fdw`](/redis_fdw): Foreign data wrapper for querying a Redis server
+
+## redis
+
+[`redis`](/redis): (package alias: `pg_redis_pubsub`) Send redis pub/sub messages to Redis from PostgreSQL Directly
+
+## kafka_fdw
+
+[`kafka_fdw`](/kafka_fdw): kafka Foreign Data Wrapper for CSV formated messages
+
+## hdfs_fdw
+
+[`hdfs_fdw`](/hdfs_fdw): foreign-data wrapper for remote hdfs servers
+
+## firebird_fdw
+
+[`firebird_fdw`](/firebird_fdw): Foreign data wrapper for Firebird
+
+## aws_s3
+
+[`aws_s3`](/aws_s3): aws_s3 postgres extension to import/export data from/to s3
+
+## log_fdw
+
+[`log_fdw`](/log_fdw): foreign-data wrapper for Postgres log file access
+
+## dblink
+
+[`dblink`](/dblink): connect to other PostgreSQL databases from within a database
+
+## file_fdw
+
+[`file_fdw`](/file_fdw): foreign-data wrapper for flat file access
+
+## postgres_fdw
+
+[`postgres_fdw`](/postgres_fdw): foreign-data wrapper for remote PostgreSQL servers

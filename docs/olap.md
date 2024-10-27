@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 12 available extensions in this category
+There are 12 available extensions in this category:
+
+[`citus`](/citus) [`citus_columnar`](/citus_columnar) [`columnar`](/columnar) [`pg_analytics`](/pg_analytics) [`pg_duckdb`](/pg_duckdb) [`duckdb_fdw`](/duckdb_fdw) [`pg_parquet`](/pg_parquet) [`pg_fkpart`](/pg_fkpart) [`pg_partman`](/pg_partman) [`plproxy`](/plproxy) [`pg_strom`](/pg_strom) [`tablefunc`](/tablefunc)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -99,3 +101,52 @@ pg12: citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* pg_strom
 
 
 
+--------
+
+## citus
+
+[`citus`](/citus): Distributed PostgreSQL as an extension
+
+## citus_columnar
+
+[`citus_columnar`](/citus_columnar): (package alias: `citus`) Citus columnar storage engine
+
+## columnar
+
+[`columnar`](/columnar): (package alias: `hydra`) Hydra Columnar extension
+
+## pg_analytics
+
+[`pg_analytics`](/pg_analytics): Postgres for analytics, powered by DuckDB
+
+## pg_duckdb
+
+[`pg_duckdb`](/pg_duckdb): DuckDB Embedded in Postgres
+
+## duckdb_fdw
+
+[`duckdb_fdw`](/duckdb_fdw): DuckDB Foreign Data Wrapper
+
+## pg_parquet
+
+[`pg_parquet`](/pg_parquet): copy data between Postgres and Parquet
+
+## pg_fkpart
+
+[`pg_fkpart`](/pg_fkpart): Table partitioning by foreign key utility
+
+## pg_partman
+
+[`pg_partman`](/pg_partman): Extension to manage partitioned tables by time or ID
+
+## plproxy
+
+[`plproxy`](/plproxy): Database partitioning implemented as procedural language
+
+## pg_strom
+
+[`pg_strom`](/pg_strom): PG-Strom - big-data processing acceleration using GPU and NVME
+
+## tablefunc
+
+[`tablefunc`](/tablefunc): functions that manipulate whole tables, including crosstab

@@ -5,7 +5,9 @@
 ## Extensions
 
 
-There are 30 available extensions in this category
+There are 30 available extensions in this category:
+
+[`prefix`](/prefix) [`semver`](/semver) [`unit`](/unit) [`md5hash`](/md5hash) [`asn1oid`](/asn1oid) [`roaringbitmap`](/roaringbitmap) [`pgfaceting`](/pgfaceting) [`pg_sphere`](/pg_sphere) [`country`](/country) [`currency`](/currency) [`pgmp`](/pgmp) [`numeral`](/numeral) [`pg_rational`](/pg_rational) [`uint`](/uint) [`uint128`](/uint128) [`ip4r`](/ip4r) [`uri`](/uri) [`pgemailaddr`](/pgemailaddr) [`acl`](/acl) [`debversion`](/debversion) [`pg_rrule`](/pg_rrule) [`timestamp9`](/timestamp9) [`chkpass`](/chkpass) [`isn`](/isn) [`seg`](/seg) [`cube`](/cube) [`ltree`](/ltree) [`hstore`](/hstore) [`citext`](/citext) [`xml2`](/xml2)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -154,3 +156,124 @@ pg12: prefix_12* semver_12* postgresql-unit_12* md5hash_12* asn1oid_12* pg_roari
 
 
 
+--------
+
+## prefix
+
+[`prefix`](/prefix): Prefix Range module for PostgreSQL
+
+## semver
+
+[`semver`](/semver): Semantic version data type
+
+## unit
+
+[`unit`](/unit): (package alias: `pgunit`) SI units extension
+
+## md5hash
+
+[`md5hash`](/md5hash): type for storing 128-bit binary data inline
+
+## asn1oid
+
+[`asn1oid`](/asn1oid): asn1oid extension
+
+## roaringbitmap
+
+[`roaringbitmap`](/roaringbitmap): support for Roaring Bitmaps
+
+## pgfaceting
+
+[`pgfaceting`](/pgfaceting): fast faceting queries using an inverted index
+
+## pg_sphere
+
+[`pg_sphere`](/pg_sphere): (package alias: `pgsphere`) spherical objects with useful functions, operators and index support
+
+## country
+
+[`country`](/country): (package alias: `pg_country`) Country data type, ISO 3166-1
+
+## currency
+
+[`currency`](/currency): (package alias: `pg_currency`) Custom PostgreSQL currency type in 1Byte
+
+## pgmp
+
+[`pgmp`](/pgmp): Multiple Precision Arithmetic extension
+
+## numeral
+
+[`numeral`](/numeral): numeral datatypes extension
+
+## pg_rational
+
+[`pg_rational`](/pg_rational): bigint fractions
+
+## uint
+
+[`uint`](/uint): (package alias: `pguint`) unsigned integer types
+
+## uint128
+
+[`uint128`](/uint128): (package alias: `pg_uint128`) Native uint128 type
+
+## ip4r
+
+[`ip4r`](/ip4r): IPv4/v6 and IPv4/v6 range index type for PostgreSQL
+
+## uri
+
+[`uri`](/uri): (package alias: `pg_uri`) URI Data type for PostgreSQL
+
+## pgemailaddr
+
+[`pgemailaddr`](/pgemailaddr): Email address type for PostgreSQL
+
+## acl
+
+[`acl`](/acl): ACL Data type
+
+## debversion
+
+[`debversion`](/debversion): Debian version number data type
+
+## pg_rrule
+
+[`pg_rrule`](/pg_rrule): RRULE field type for PostgreSQL
+
+## timestamp9
+
+[`timestamp9`](/timestamp9): timestamp nanosecond resolution
+
+## chkpass
+
+[`chkpass`](/chkpass): data type for auto-encrypted passwords
+
+## isn
+
+[`isn`](/isn): data types for international product numbering standards
+
+## seg
+
+[`seg`](/seg): data type for representing line segments or floating-point intervals
+
+## cube
+
+[`cube`](/cube): data type for multidimensional cubes
+
+## ltree
+
+[`ltree`](/ltree): data type for hierarchical tree-like structures
+
+## hstore
+
+[`hstore`](/hstore): data type for storing sets of (key, value) pairs
+
+## citext
+
+[`citext`](/citext): data type for case-insensitive character strings
+
+## xml2
+
+[`xml2`](/xml2): XPath querying and XSLT
