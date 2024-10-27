@@ -105,7 +105,7 @@ COLS = {
     "ver":        {'header': 'Version'    ,"center": True,  "func": lambda row: row['version'] },
     "rpmver":     {'header': 'Version'    ,"center": False, "func": lambda row: row['rpm_ver'] },
     "debver":     {'header': 'Version'    ,"center": False, "func": lambda row: row['deb_ver'] },
-    "cat":        {'header': 'Category'   ,"center": True,  "func": lambda row: "[%s](/%s/)" % (row['category'], row['category']) },
+    "cat":        {'header': 'Category'   ,"center": True,  "func": lambda row: "[%s](/%s/)" % (row['category'], row['category'].lower()) },
     "lic":        {'header': 'License'    ,"center": True,  "func": lambda row: LICENSE_MAP.get(row['license'], row['license']) },
     "rpmrepo":    {'header': 'RPM'        ,"center": True,  "func": lambda row: REPO_MAP.get(row['rpm_repo'], row['rpm_repo']) },
     "rpmrepo2":   {'header': 'REPO'       ,"center": True,  "func": lambda row: REPO_MAP.get(row['rpm_repo'], row['rpm_repo']) },

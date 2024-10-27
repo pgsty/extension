@@ -8,21 +8,21 @@
 
 - **Category**
 
-  - [Category: TIME](/TIME/)
-  - [Category: GIS](/GIS/)
-  - [Category: RAG](/RAG/)
-  - [Category: FTS](/FTS/)
-  - [Category: OLAP](/OLAP/)
-  - [Category: FEAT](/FEAT/)
-  - [Category: LANG](/LANG/)
-  - [Category: TYPE](/TYPE/)
-  - [Category: FUNC](/FUNC/)
-  - [Category: ADMIN](/ADMIN/)
-  - [Category: STAT](/STAT/)
-  - [Category: SEC](/SEC/)
-  - [Category: FDW](/FDW/)
-  - [Category: SIM](/SIM/)
-  - [Category: ETL](/ETL/)
+  - [Category: TIME](/time/)
+  - [Category: GIS](/gis/)
+  - [Category: RAG](/rag/)
+  - [Category: FTS](/fts/)
+  - [Category: OLAP](/olap/)
+  - [Category: FEAT](/feat/)
+  - [Category: LANG](/lang/)
+  - [Category: TYPE](/type/)
+  - [Category: FUNC](/func/)
+  - [Category: ADMIN](/admin/)
+  - [Category: STAT](/stat/)
+  - [Category: SEC](/sec/)
+  - [Category: FDW](/fdw/)
+  - [Category: SIM](/sim/)
+  - [Category: ETL](/etl/)
 
 <br>
 
