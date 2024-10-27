@@ -5,6 +5,7 @@
   - [RPM Package](/rpm)
   - [DEB Package](/deb)
   - [PG Contribs](/contrib)
+  - [Repo Usage](/usage)
 
 - [**Category**](/list)
 
