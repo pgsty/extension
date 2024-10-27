@@ -98,9 +98,9 @@ COLS = {
 
     "ext":        {'header': 'Extension'  ,'center': False, 'func': lambda row: "[%s](%s)" % (row["name"], row["url"])  },
     "ext2":       {'header': 'Extension'  ,'center': False, 'func': lambda row: row["name"] },
-    "ext3":       {'header': 'Extension'  ,'center': False, 'func': lambda row: "[%s](/%s/%s)" % (row["name"], row['category'].lower(), row['name'])  },
+    "ext3":       {'header': 'Extension'  ,'center': False, 'func': lambda row: "[%s](/%s)" % (row["name"], row['name'])  },
     "link":       {'header': 'Website'    ,'center': True,  'func': lambda row: "[LINK](%s)" % row["url"]  },
-    "pkg":        {'header': 'Package'    ,'center': False, 'func': lambda row: "[%s](/%s/%s)" % (row['alias'], row['category'].lower(), row['name'])  },
+    "pkg":        {'header': 'Package'    ,'center': False, 'func': lambda row: "[%s](/%s)" % (row['alias'], row['name'])  },
     "pkg2":       {'header': 'Package'    ,'center': False, 'func': lambda row: "[%s](/%s)" % (row['alias'], row['url'])  },
     "ver":        {'header': 'Version'    ,"center": True,  "func": lambda row: row['version'] },
     "rpmver":     {'header': 'Version'    ,"center": False, "func": lambda row: row['rpm_ver'] },
@@ -130,7 +130,7 @@ COLS = {
     "reloc":      {'header': '`RELOC`'    ,"center": True,  "func": lambda row: '' if row['relocatable'] is None else (BLUE_CHECK if row['relocatable'] else WARN_CROSS) },
     "dylib":      {'header': '`DYLIB`'    ,"center": True,  "func": lambda row: '' if row['has_solib'  ] is None else (BLUE_CHECK if row['has_solib'  ] else WARN_CROSS) },
     "distro":     {'header': 'OS'         ,"center": True,  "func": lambda row: 'Distro-' + row['name'] },
-    "req":        {'header': 'Requires'   ,'center': False, 'func': lambda row: ', '.join([ '[`%s`](%s)'%(e,NAME_MAP.get(e,'.')) for e in row['requires'] ])  },
+    "req":        {'header': 'Requires'   ,'center': False, 'func': lambda row: ', '.join([ '[`%s`](%s)'%(e,e) for e in row['requires'] ])  },
     "tag":        {'header': 'Tags'       ,'center': False, 'func': lambda row: ', '.join([ '`%s`'%e for e in row['tags'] ])  },
     "schema":     {'header': 'Schemas'    ,'center': False, 'func': lambda row: ', '.join([ '`%s`'%e for e in row['schemas'] ])  },
     "rpmdep":     {'header': 'Dependency' ,'center': False, 'func': lambda row: ', '.join([ '`%s`'%e for e in row['rpm_deps'] ])  },
@@ -269,7 +269,6 @@ def stat_data(data):
 DATA = load_data()
 STAT = stat_data(DATA)
 CATE = list(dict.fromkeys([i['category'] for i in DATA]))
-NAME_MAP = {i['name']: '/%s/%s' %( i['category'].lower(), i['name']) for i in DATA}
 
 
 def tabulate_stats(todolist):
@@ -550,7 +549,7 @@ def generate_extension():
 
     for ext in DATA:
         name, alias, category = ext['name'], ext['alias'], ext['category']
-        ext_path = os.path.join(DOCS_PATH, category.lower(), name + '.md')
+        ext_path = os.path.join(DOCS_PATH, name + '.md')
 
         # part 1: extension table
         ext_table = tabulate(
