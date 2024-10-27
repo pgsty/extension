@@ -9,9 +9,15 @@
 ## Extension
 
 
-| ID | Extension | Version | License | RPM | DEB | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|:--:|-----------|:-------:|:-------:|:---:|:---:|:------:|:-------:|:-----:|:-------:|:-------:|
-| 1050 | [table_version](https://github.com/linz/postgresql-tableversion) | 1.10.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [table_version](https://github.com/linz/postgresql-tableversion) | 1.10.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Package | Tags | Schemas | Requires | Required by | Comment | Description |
+|---------|------|---------|----------|-------------|:-------:|-------------|
+| [table_version](/table_version) |  | `table_version` | [`plpgsql`](plpgsql) |  |  | PostgreSQL table versioning extension |
 
 
 
@@ -21,16 +27,14 @@
 CREATE EXTENSION table_version CASCADE;
 ```
 
-- **Requires**: [`plpgsql`](plpgsql)
-
 -----------
 
 
 ## Packages
 
 
-| OS | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
 | [RPM](/rpm) | 1.10.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `table_version_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
 | [DEB](/deb) | 1.10.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-tableversion` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
 

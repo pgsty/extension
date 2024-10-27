@@ -111,9 +111,12 @@ COLS = {
     "lan":        {'header': 'PL'         ,'center': True,  'func': lambda row: '' if not row['lang'] else '`%s`' % row['lang'] },
     "rpmrepo":    {'header': 'RPM'        ,"center": True,  "func": lambda row: REPO_MAP.get(row['rpm_repo'], row['rpm_repo']) },
     "rpmrepo2":   {'header': 'REPO'       ,"center": True,  "func": lambda row: REPO_MAP.get(row['rpm_repo'], row['rpm_repo']) },
-    "debrepo":    {'header': 'DEB'        ,"center": True,  "func": lambda row: REPO_MAP.get(row['deb_repo'], row['rpm_repo']) },
+    "debrepo":    {'header': 'DEB'        ,"center": True,  "func": lambda row: REPO_MAP.get(row['deb_repo'], row['deb_repo']) },
+    "debrepo2":   {'header': 'REPO'       ,"center": True,  "func": lambda row: REPO_MAP.get(row['deb_repo'], row['deb_repo']) },
     "rpmpkg":     {'header': 'RPM Package',"center": False, "func": lambda row: '`%s`' % row['rpm_pkg'] },
     "debpkg":     {'header': 'DEB Package',"center": False, "func": lambda row: '`%s`' % row['deb_pkg'] },
+    "rpmpkg2":    {'header': 'Package Pattern',"center": False, "func": lambda row: '`%s`' % row['rpm_pkg'] },
+    "debpkg2":    {'header': 'Package Pattern',"center": False, "func": lambda row: '`%s`' % row['deb_pkg'] },
     "r17":        {'header': '17'         ,"center": True,  "func": lambda row: BLUE_CHECK if '17' in row['rpm_pg'] else '' },
     "r16":        {'header': '16'         ,"center": True,  "func": lambda row: BLUE_CHECK if '16' in row['rpm_pg'] else '' },
     "r15":        {'header': '15'         ,"center": True,  "func": lambda row: BLUE_CHECK if '15' in row['rpm_pg'] else '' },
@@ -133,6 +136,8 @@ COLS = {
     "dylib":      {'header': '`DYLIB`'    ,"center": True,  "func": lambda row: '' if row['has_solib'  ] is None else (BLUE_CHECK if row['has_solib'  ] else WARN_CROSS) },
     "distro":     {'header': 'OS'         ,"center": True,  "func": lambda row: 'Distro-' + row['name'] },
     "req":        {'header': 'Requires'   ,'center': False, 'func': lambda row: ', '.join([ '[`%s`](%s)'%(e,e) for e in row['requires'] ])  },
+    "reqd":       {'header': 'Required by','center': False, 'func': lambda row: ', '.join ([ '[`%s`](/%s)'%(i,i) for i in DEP_MAP[row['name']]]) if row['name'] in DEP_MAP else ''  },
+
     "tag":        {'header': 'Tags'       ,'center': False, 'func': lambda row: ', '.join([ '`%s`'%e for e in row['tags'] ])  },
     "schema":     {'header': 'Schemas'    ,'center': False, 'func': lambda row: ', '.join([ '`%s`'%e for e in row['schemas'] ])  },
     "rpmdep":     {'header': 'Dependency' ,'center': False, 'func': lambda row: ', '.join([ '`%s`'%e for e in row['rpm_deps'] ])  },
@@ -549,7 +554,7 @@ def generate_category():
 
 EXTENSION_TEMPLATE = """# %s\n\n\n> %s: %s\n\n\n-------\n
 ## Extension\n\n
-%s\n\n%s\n%s\n%s\n%s\n
+%s\n\n%s
 -----------\n\n
 ## Packages\n\n
 %s\n\n%s
@@ -579,29 +584,27 @@ def generate_extension():
 
         # part 1: extension table
         ext_table = tabulate(
-            Columns(["id", "ext", "ver", "lic", "rpmrepo", "debrepo", "load", "dylib", "ddl", "trust", "reloc"]),
+            Columns(["ext", "ver", "lic", "rpmrepo", "debrepo", "lan", "load", "dylib", "ddl", "trust", "reloc"]),
             lambda row: row['name'] == name
         )
-        comment = ''
-        if ext['comment']: comment = '> **Comment**: ' + ext['comment']
-        create_ddl = ''
-        if ext['need_ddl']: create_ddl = """\n```sql\nCREATE EXTENSION %s%s;\n```\n""" % ('"' + name + '"' if '-' in name else name , ' CASCADE' if ext['requires'] else '')
-        config_ini= ''
+
+        t2_cols = [ "pkg", "tag", "schema", "req", "reqd", "comment", "en_desc"]
+        ext_table_extra = tabulate(Columns(t2_cols),lambda row: row['name'] == name)
+        ext_table = ext_table + '\n\n\n' + ext_table_extra
+
+        tags,comment,schemas,config_ini,create_ddl,requires = '','','','','',''
         if ext['need_load']: config_ini = """\n```bash\nshared_preload_libraries = '%s'; # add this extension to postgresql.conf\n```\n""" % name
-        requires = ''
-        if ext['requires']: requires = '- **Requires**: ' + getcol('req', ext)
-        if name in DEP_MAP:
-            requires += '\n- **Required By**: ' + ', '.join ([ '[`%s`](/%s)'%(i,i) for i in DEP_MAP[name]])
-
-
+        if ext['need_ddl']: create_ddl = """\n```sql\nCREATE EXTENSION %s%s;\n```\n""" % ('"' + name + '"' if '-' in name else name , ' CASCADE' if ext['requires'] else '')
+        if ext['comment']: comment = '> **Comment**: ' + ext['comment']
+        ext_additional = config_ini + '\n\n' + create_ddl + comment #, requires + '\n' + schemas + '\n' + tags + '\n' + config_ini + '\n' + create_ddl + comment
 
         # part 2: package table
         rpm_table = tabulate(
-            Columns(["distro", "rpmver", "lic", "rpmrepo", "rpmpkg", "r17", "r16", "r15", "r14", "r13", "r12", "rpmdep"]),
+            Columns(["distro", "rpmver", "lic", "rpmrepo2", "rpmpkg2", "r17", "r16", "r15", "r14", "r13", "r12", "rpmdep"]),
             lambda row: row['has_rpm'] and row['lead'] and row['alias'] == alias
         )
         deb_table = tabulate(
-            Columns(["distro", "debver", "lic", "debrepo", "debpkg", "r17", "r16", "r15", "r14", "r13", "r12", "debdep"]),
+            Columns(["distro", "debver", "lic", "debrepo2", "debpkg2", "r17", "r16", "r15", "r14", "r13", "r12", "debdep"]),
             lambda row: row['has_deb'] and row['lead'] and row['alias'] == alias
         )
         rpm_table = rpm_table.replace('Distro-'+name, '[RPM](/rpm)')
@@ -626,7 +629,7 @@ def generate_extension():
 
         content = EXTENSION_TEMPLATE % (
             ext['alias'], getcol('pkg2', ext ) , ext['en_desc'],
-            ext_table, comment, config_ini, create_ddl, requires,
+            ext_table, ext_additional,
             pkg_table, install_tmpl,
             category, sib_table
         )
@@ -661,9 +664,9 @@ def cate_index_tabulate2():
     return '\n'.join(cates)
 
 
-generate_all_list()
-generate_rpm_list()
-generate_deb_list()
-generate_contrib_list()
-generate_category()
+# generate_all_list()
+# generate_rpm_list()
+# generate_deb_list()
+# generate_contrib_list()
+# generate_category()
 generate_extension()

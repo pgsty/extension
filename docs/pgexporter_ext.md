@@ -9,9 +9,15 @@
 ## Extension
 
 
-| ID | Extension | Version | License | RPM | DEB | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|:--:|-----------|:-------:|:-------:|:---:|:---:|:------:|:-------:|:-----:|:-------:|:-------:|
-| 6210 | [pgexporter_ext](https://github.com/pgexporter/pgexporter_ext) | 0.2.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | PGDG |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pgexporter_ext](https://github.com/pgexporter/pgexporter_ext) | 0.2.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Package | Tags | Schemas | Requires | Required by | Comment | Description |
+|---------|------|---------|----------|-------------|:-------:|-------------|
+| [pgexporter_ext](/pgexporter_ext) | `not-used` |  |  |  |  | pgexporter extension for extra metrics |
 
 
 
@@ -21,16 +27,14 @@
 CREATE EXTENSION pgexporter_ext;
 ```
 
-
-
 -----------
 
 
 ## Packages
 
 
-| OS | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
 | [RPM](/rpm) | 0.2.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pgexporter_ext_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
 
 
@@ -82,8 +86,8 @@ dnf install pgexporter_ext_12;
 | 6180 | [pg_relusage](/pg_relusage) | 0.0.1 | [pg_relusage](/pg_relusage) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  |  |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
 | 6190 | [pg_mon](/pg_mon) | 1.0 | [pg_mon](/pg_mon) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
 | 6200 | [pg_statviz](/pg_statviz) | 0.6 | [pg_statviz](/pg_statviz) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `Python` | `not-used` |  |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
-| 6210 | [pgexporter_ext](/pgexporter_ext) | 0.2.3 | [pgexporter_ext](/pgexporter_ext) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | PGDG | `C` | `not-used` |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
-| 6220 | [pg_top](/pg_top) | 3.7.0 | [pg_top](/pg_top) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | PGDG | `C` |  |  |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+| 6210 | [pgexporter_ext](/pgexporter_ext) | 0.2.3 | [pgexporter_ext](/pgexporter_ext) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | `C` | `not-used` |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| 6220 | [pg_top](/pg_top) | 3.7.0 | [pg_top](/pg_top) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |  |  |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
 | 6230 | [pagevis](/pagevis) | 0.1 | [pagevis](/pagevis) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |  |  |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
 | 6240 | [powa](/powa) | 4.2.2 | [powa](/powa) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  | `public` | [`plpgsql`](plpgsql), [`pg_stat_statements`](pg_stat_statements), [`btree_gist`](btree_gist) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
 | 6900 | [pageinspect](/pageinspect) | 1.12 | [pageinspect](/pageinspect) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | `C` |  |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |

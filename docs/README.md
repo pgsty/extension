@@ -86,6 +86,16 @@ Linux x86_64/amd64 [Extension](/list) packages for PostgreSQL 12 - 17, on El8, E
 
 ----------------
 
+## Contrib
+
+You can edit the [`pigsty.csv`](https://github.com/pgsty/extension/blob/main/data/pigsty.csv) raw data and create a pull request to update the metadata in case of any error.
+
+If you have any suggestions on including new extensions or bumping to new versions, PR or [Issue](https://github.com/pgsty/extension/issues/new) are always welcome!
+
+
+
+----------------
+
 ## About
 
 [![Github: pgsty/extensions](https://img.shields.io/badge/GitHub-pgsty/extensions-slategray?style=flat&logo=github&logoColor=black)](https://github.com/pgsty/extensions)

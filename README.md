@@ -5,7 +5,7 @@
 
 The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://pigsty.io)
 
-Contains 150+ PG extensions [RPM](/docs/rpm) / [DEB](/docs/deb) for PostgreSQL **12** - **17** in addition to the official PGDG repo.
+Contains 150+ PG extensions [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **12** - **17** in addition to the official PGDG repo.
 
 **Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
 
@@ -67,6 +67,14 @@ Linux x86_64/amd64 [Extension](/list) packages for PostgreSQL 12 - 17, on El8, E
 
 > Note: One single rpm/deb package may contain more than one extension
 
+
+----------------
+
+## Contrib
+
+If you have any suggestions on including new extensions or bumping to new versions, or find any mistake about metadata, PR or [Issue](https://github.com/pgsty/extension/issues/new) are welcome!
+
+You can edit the [`pigsty.csv`](https://github.com/pgsty/extension/blob/main/data/pigsty.csv) raw data and create a pull request to update the metadata.
 
 
 ----------------
