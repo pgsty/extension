@@ -9,6 +9,8 @@ Contains 150+ PG extensions [RPM](/rpm) / [DEB](/deb) for PostgreSQL **12** - **
 
 **Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
 
+[![PostgreSQL Extension Ecosystem](https://pigsty.io/img/pigsty/ecosystem.jpg)](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)
+
 
 -------
 

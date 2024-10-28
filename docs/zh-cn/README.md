@@ -8,6 +8,10 @@
 
 在 PGDG 官方仓库的基础上提供了 **143** 个额外的 EL 扩展包，与 **130** 个额外的 DEB 扩展包，针对 PostgreSQL 12 - 17 与四大操作系统发行版大版本提供。
 
+为什么插件与扩展对 PostgreSQL 非常重要？请看《[*PostgreSQL 正在吞噬数据库世界*](https://pigsty.cc/zh/blog/pg/pg-eat-db-world/)》
+
+[![PostgreSQL扩展生态](https://pigsty.cc/img/pigsty/ecosystem.jpg)](https://pigsty.cc/zh/blog/pg/pg-eat-db-world/)
+
 
 -------
 
