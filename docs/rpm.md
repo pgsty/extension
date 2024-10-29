@@ -2,15 +2,15 @@
 
 There are **338** extensions available on EL compatible systems, **7** of them are EL exclusive, and missing **7** Debian exclusive extensions.
 
-There are **70** built-in [**contrib**](contrib) extensions, in addition to **134** rpm extensions provided by PGDG YUM repository, and **130** extensions provided by Pigsty.
+There are **70** built-in [**contrib**](contrib) extensions, in addition to **133** rpm extensions provided by PGDG YUM repository, and **130** extensions provided by Pigsty.
 
 There are **333** extensions available in the current major version PostgreSQL 16, and **297** ready for the latest PostgreSQL 17.
 
 
-|Entry / Filter | All | PGDG | PIGSTY | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 338 | 134 | 130 | 4 | 7 | 297 | 333 | 336 | 328 | 319 | 310 |
-| RPM Package | 313 | 122 | 129 | 4 | 6 | 274 | 308 | 311 | 303 | 294 | 285 |
+|Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| RPM Extension | 338 | 133 | 130 | 70 | 4 | 7 | 297 | 333 | 336 | 328 | 319 | 310 |
+| RPM Package | 255 | 121 | 129 | 1 | 4 | 1 | 216 | 250 | 253 | 248 | 241 | 232 |
 
 
 
@@ -24,7 +24,7 @@ There are **333** extensions available in the current major version PostgreSQL 1
 
 | Category | Package | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | 12 | Description |
 |:--------:|---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|-------------|
-| [TIME](/time) | [timescaledb](/timescaledb) | 2.17.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tccyan">PGDG</span>** | `timescaledb-2-postgresql-$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data (Apache 2 Edition) |
+| [TIME](/time) | [timescaledb](/timescaledb) | 2.17.1 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-2-postgresql-$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data (Apache 2 Edition) |
 | [TIME](/time) | [pg_timeseries](/timeseries) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_timeseries_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Convenience API for Tembo time series stack |
 | [TIME](/time) | [periods](/periods) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `periods_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |
 | [TIME](/time) | [temporal_tables](/temporal_tables) | 1.2.2 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `temporal_tables_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | temporal tables |
@@ -257,10 +257,10 @@ There are **333** extensions available in the current major version PostgreSQL 1
 | [SIM](/sim) | [pg_dbms_metadata](/pg_dbms_metadata) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_dbms_metadata_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to add Oracle DBMS_METADATA compatibility to PostgreSQL |
 | [SIM](/sim) | [pg_dbms_lock](/pg_dbms_lock) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_dbms_lock_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to add Oracle DBMS_LOCK full compatibility to PostgreSQL |
 | [SIM](/sim) | [pg_dbms_job](/pg_dbms_job) | 1.5.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_dbms_job_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to add Oracle DBMS_JOB full compatibility to PostgreSQL |
-| [SIM](/sim) | [babelfishpg_common](/babelfishpg_common) | 3.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | `babelfishpg-common*` |  |  | <span class="tcblue">✔</span> |  |  |  | SQL Server Transact SQL Datatype Support |
-| [SIM](/sim) | [babelfishpg_tsql](/babelfishpg_tsql) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | `babelfishpg-tsql*` |  |  | <span class="tcblue">✔</span> |  |  |  | SQL Server Transact SQL compatibility |
-| [SIM](/sim) | [babelfishpg_tds](/babelfishpg_tds) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | `babelfishpg-tds*` |  |  | <span class="tcblue">✔</span> |  |  |  | SQL Server TDS protocol extension |
-| [SIM](/sim) | [babelfishpg_money](/babelfishpg_money) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | `babelfishpg-money*` |  |  | <span class="tcblue">✔</span> |  |  |  | SQL Server Money Data Type |
+| [SIM](/sim) | [babelfishpg_common](/babelfishpg_common) | 3.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-common*` |  |  | <span class="tcblue">✔</span> |  |  |  | SQL Server Transact SQL Datatype Support |
+| [SIM](/sim) | [babelfishpg_tsql](/babelfishpg_tsql) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tsql*` |  |  | <span class="tcblue">✔</span> |  |  |  | SQL Server Transact SQL compatibility |
+| [SIM](/sim) | [babelfishpg_tds](/babelfishpg_tds) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tds*` |  |  | <span class="tcblue">✔</span> |  |  |  | SQL Server TDS protocol extension |
+| [SIM](/sim) | [babelfishpg_money](/babelfishpg_money) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-money*` |  |  | <span class="tcblue">✔</span> |  |  |  | SQL Server Money Data Type |
 | [SIM](/sim) | [pgmemcache](/pgmemcache) | 2.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgmemcache_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | memcached interface |
 | [ETL](/etl) | [pglogical](/pglogical) | 2.4.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pglogical_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL Logical Replication |
 | [ETL](/etl) | [pgl_ddl_deploy](/pgl_ddl_deploy) | 2.2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgl_ddl_deploy_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | automated ddl deployment using pglogical |

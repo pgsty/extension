@@ -3,11 +3,14 @@
 [![Webite: ext.pigsty.io](https://img.shields.io/badge/website-ext.pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://ext.pigsty.io)
 [![Extensions: 345](https://img.shields.io/badge/extensions-345-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
 
-The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://pigsty.io)
+The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used
+by [Pigsty](https://pigsty.io)
 
-Contains 150+ PG extensions [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **12** - **17** in addition to the official PGDG repo.
+Contains 150+ PG extensions [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **12
+** - **17** in addition to the official PGDG repo.
 
-**Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
+**Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!
+***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
 
 [![PostgreSQL Extension Ecosystem](https://pigsty.io/img/pigsty/ecosystem.jpg)](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)
 
@@ -53,19 +56,18 @@ curl -fsSL https://repo.pigsty.io/yum/repo | sudo tee /etc/yum.repos.d/pigsty.re
 sudo yum makecache
 ```
 
-
 -------
 
 ## What's Inside
 
 Linux x86_64/amd64 [Extension](/list) packages for PostgreSQL 12 - 17, on El8, EL9, Ubuntu 22.04 and Debian 12.
 
-|  Statistics   | All | PGDG | PIGSTY | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:-------------:|:---:|:----:|:------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| EL Extension  | 338 | 134  |  130   |  4   |  7   | 298  | 334  | 336  | 328  | 319  | 310  |
-| Deb Extension | 326 | 109  |  143   |  74  |  19  | 290  | 322  | 324  | 316  | 307  | 300  |
-|  RPM Package  | 313 | 122  |  129   |  4   |  6   | 275  | 309  | 311  | 303  | 294  | 285  |
-|  DEB Package  | 298 |  93  |  142   |  64  |  19  | 264  | 294  | 296  | 288  | 279  | 272  |
+| Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:--------------:|:---:|:----:|:------:|:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| RPM Extension  | 338 | 133  |  130   |   70    |  4   |  7   | 297  | 333  | 336  | 328  | 319  | 310  |
+| DEB Extension  | 326 | 106  |  143   |   70    |  4   |  19  | 290  | 322  | 324  | 316  | 307  | 300  |
+|  RPM Package   | 255 | 121  |  129   |    1    |  4   |  1   | 216  | 250  | 253  | 248  | 241  | 232  |
+|  DEB Package   | 240 |  91  |  142   |    1    |  4   |  1   | 206  | 236  | 238  | 233  | 226  | 219  |
 
 > Note: One single rpm/deb package may contain more than one extension
 
@@ -74,9 +76,11 @@ Linux x86_64/amd64 [Extension](/list) packages for PostgreSQL 12 - 17, on El8, E
 
 ## Contrib
 
-If you have any suggestions on including new extensions or bumping to new versions, or find any mistake about metadata, PR or [Issue](https://github.com/pgsty/extension/issues/new) are welcome!
+If you have any suggestions on including new extensions or bumping to new versions, or find any mistake about metadata,
+PR or [Issue](https://github.com/pgsty/extension/issues/new) are welcome!
 
-You can edit the [`pigsty.csv`](https://github.com/pgsty/extension/blob/main/data/pigsty.csv) raw data and create a pull request to update the metadata.
+You can edit the [`pigsty.csv`](https://github.com/pgsty/extension/blob/main/data/pigsty.csv) raw data and create a pull
+request to update the metadata.
 
 
 ----------------

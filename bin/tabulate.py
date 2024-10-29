@@ -36,7 +36,9 @@ REPO_MAP = {
     "PGDG": '**<span class="tccyan">PGDG</span>**',
     "PIGSTY": '**<span class="tcwarn">PIGSTY</span>**',
     "CONTRIB": '**<span class="tcblue">CONTRIB</span>**',
-    "WILTON": '**<span class="tcorange">WILTON</span>**',
+    "WILTON": '**<span class="tcpurple">WILTON</span>**',
+    "CITUS": '**<span class="tcgreen">CITUS</span>**',
+    "TIMESCALE": '**<span class="tcwarn">TIMESCALE</span>**'
 }
 
 BLUE_CHECK = '<span class="tcblue">✔</span>'
@@ -206,11 +208,11 @@ def load_data(filepath=DATA_PATH):
             row['contrib'] = True if row['repo'] == 'CONTRIB' else False
             row['rpm_pgdg'] = True if row['has_rpm'] and row['rpm_repo'] == 'PGDG' else False
             row['rpm_pigsty'] = True if row['has_rpm'] and row['rpm_repo'] == 'PIGSTY' else False
-            row['rpm_misc'] = True if row['has_rpm'] and (row['rpm_repo'] not in ('PGDG', 'PIGSTY', 'CONTRIB', '')) else False
+            row['rpm_misc'] = True if row['has_rpm'] and (row['rpm_repo'] not in ('PGDG', 'PIGSTY', 'TIMESCALE', 'CITUS','CONTRIB','')) else False
 
             row['deb_pgdg'] = True if row['has_deb'] and row['deb_repo'] == 'PGDG' else False
             row['deb_pigsty'] = True if row['has_deb'] and row['deb_repo'] == 'PIGSTY' else False
-            row['deb_misc'] = True if row['has_deb'] and (row['deb_repo'] != 'PGDG' and row['deb_repo'] != 'PIGSTY' and row['deb_repo'] != '') else False
+            row['deb_misc'] = True if row['has_deb'] and (row['deb_repo'] not in ('PGDG', 'PIGSTY', 'TIMESCALE', 'CITUS','CONTRIB','')) else False
             data.append(row)
     return data
 
@@ -226,12 +228,13 @@ def stat_data(data):
     res["stat"]["non-contrib"] =  len([i for i in data ]) - len([i for i in data if i['contrib']])
 
     res["rpm_ext"]["all"] = len([i for i in data if i['has_rpm']])
-    res["rpm_pkg"]["all"] = len(set([i['alias'] for i in data if i['has_rpm']]))
+    res["rpm_pkg"]["all"] = len(set([i['rpm_pkg'] for i in data if i['has_rpm']]))
     res["deb_ext"]["all"] = len([i for i in data if i['has_deb']])
-    res["deb_pkg"]["all"] = len(set([i['alias'] for i in data if i['has_deb']]))
+    res["deb_pkg"]["all"] = len(set([i['deb_pkg'] for i in data if i['has_deb']]))
 
     res["rpm_ext"]["pgdg"]   = len([i['name'] for i in data if i['has_rpm'] and i['rpm_pgdg'] ])
     res["rpm_ext"]["pigsty"] = len([i['name'] for i in data if i['has_rpm'] and i['rpm_pigsty']])
+    res["rpm_ext"]["contrib"]= len([i['name'] for i in data if i['contrib'] ])
     res["rpm_ext"]["misc"]   = len([i['name'] for i in data if i['has_rpm'] and i['rpm_misc']])
     res["rpm_ext"]["miss"]   = len([i['name'] for i in data if not i['has_rpm']])
     res["rpm_ext"]["pg12"]   = len([i['name'] for i in data if i['has_rpm'] and '12' in i['rpm_pg'] ])
@@ -241,19 +244,21 @@ def stat_data(data):
     res["rpm_ext"]["pg16"]   = len([i['name'] for i in data if i['has_rpm'] and '16' in i['rpm_pg'] ])
     res["rpm_ext"]["pg17"]   = len([i['name'] for i in data if i['has_rpm'] and '17' in i['rpm_pg'] ])
 
-    res["rpm_pkg"]["pgdg"]   = len(set([i['alias'] for i in data if i['has_rpm'] and i['rpm_pgdg'] ]))
-    res["rpm_pkg"]["pigsty"] = len(set([i['alias'] for i in data if i['has_rpm'] and i['rpm_pigsty']]))
-    res["rpm_pkg"]["misc"]   = len(set([i['alias'] for i in data if i['has_rpm'] and i['rpm_misc']]))
-    res["rpm_pkg"]["miss"]   = len(set([i['alias'] for i in data if not i['has_rpm']]))
-    res["rpm_pkg"]["pg12"]   = len(set([i['alias'] for i in data if i['has_rpm'] and '12' in i['rpm_pg']]))
-    res["rpm_pkg"]["pg13"]   = len(set([i['alias'] for i in data if i['has_rpm'] and '13' in i['rpm_pg']]))
-    res["rpm_pkg"]["pg14"]   = len(set([i['alias'] for i in data if i['has_rpm'] and '14' in i['rpm_pg']]))
-    res["rpm_pkg"]["pg15"]   = len(set([i['alias'] for i in data if i['has_rpm'] and '15' in i['rpm_pg']]))
-    res["rpm_pkg"]["pg16"]   = len(set([i['alias'] for i in data if i['has_rpm'] and '16' in i['rpm_pg']]))
-    res["rpm_pkg"]["pg17"]   = len(set([i['alias'] for i in data if i['has_rpm'] and '17' in i['rpm_pg']]))
+    res["rpm_pkg"]["pgdg"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and i['rpm_pgdg'] ]))
+    res["rpm_pkg"]["pigsty"] = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and i['rpm_pigsty']]))
+    res["rpm_pkg"]["contrib"]= 1
+    res["rpm_pkg"]["misc"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and i['rpm_misc']]))
+    res["rpm_pkg"]["miss"]   = len(set([i['rpm_pkg'] for i in data if not i['has_rpm']]))
+    res["rpm_pkg"]["pg12"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and '12' in i['rpm_pg']]))
+    res["rpm_pkg"]["pg13"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and '13' in i['rpm_pg']]))
+    res["rpm_pkg"]["pg14"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and '14' in i['rpm_pg']]))
+    res["rpm_pkg"]["pg15"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and '15' in i['rpm_pg']]))
+    res["rpm_pkg"]["pg16"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and '16' in i['rpm_pg']]))
+    res["rpm_pkg"]["pg17"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and '17' in i['rpm_pg']]))
 
     res["deb_ext"]["pgdg"]   = len([i['name'] for i in data if i['has_deb'] and i['deb_pgdg'] ])
     res["deb_ext"]["pigsty"] = len([i['name'] for i in data if i['has_deb'] and i['deb_pigsty']])
+    res["deb_ext"]["contrib"]= len([i['name'] for i in data if i['contrib'] ])
     res["deb_ext"]["misc"]   = len([i['name'] for i in data if i['has_deb'] and i['deb_misc']])
     res["deb_ext"]["miss"]   = len([i['name'] for i in data if not i['has_deb']])
     res["deb_ext"]["pg12"]   = len([i['name'] for i in data if i['has_deb'] and '12' in i['deb_pg']])
@@ -263,16 +268,17 @@ def stat_data(data):
     res["deb_ext"]["pg16"]   = len([i['name'] for i in data if i['has_deb'] and '16' in i['deb_pg']])
     res["deb_ext"]["pg17"]   = len([i['name'] for i in data if i['has_deb'] and '17' in i['deb_pg']])
 
-    res["deb_pkg"]["pgdg"]   = len(set([i['alias'] for i in data if i['has_deb'] and i['deb_pgdg'] ]))
-    res["deb_pkg"]["pigsty"] = len(set([i['alias'] for i in data if i['has_deb'] and i['deb_pigsty']]))
-    res["deb_pkg"]["misc"]   = len(set([i['alias'] for i in data if i['has_deb'] and i['deb_misc']]))
-    res["deb_pkg"]["miss"]   = len(set([i['alias'] for i in data if not i['has_deb']]))
-    res["deb_pkg"]["pg12"]   = len(set([i['alias'] for i in data if i['has_deb'] and '12' in i['deb_pg'] ]))
-    res["deb_pkg"]["pg13"]   = len(set([i['alias'] for i in data if i['has_deb'] and '13' in i['deb_pg'] ]))
-    res["deb_pkg"]["pg14"]   = len(set([i['alias'] for i in data if i['has_deb'] and '14' in i['deb_pg'] ]))
-    res["deb_pkg"]["pg15"]   = len(set([i['alias'] for i in data if i['has_deb'] and '15' in i['deb_pg'] ]))
-    res["deb_pkg"]["pg16"]   = len(set([i['alias'] for i in data if i['has_deb'] and '16' in i['deb_pg'] ]))
-    res["deb_pkg"]["pg17"]   = len(set([i['alias'] for i in data if i['has_deb'] and '17' in i['deb_pg'] ]))
+    res["deb_pkg"]["pgdg"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and i['deb_pgdg'] ]))
+    res["deb_pkg"]["pigsty"] = len(set([i['deb_pkg'] for i in data if i['has_deb'] and i['deb_pigsty']]))
+    res["deb_pkg"]["contrib"]= 1
+    res["deb_pkg"]["misc"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and i['deb_misc']]))
+    res["deb_pkg"]["miss"]   = len(set([i['deb_pkg'] for i in data if not i['has_deb']]))
+    res["deb_pkg"]["pg12"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and '12' in i['deb_pg'] ]))
+    res["deb_pkg"]["pg13"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and '13' in i['deb_pg'] ]))
+    res["deb_pkg"]["pg14"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and '14' in i['deb_pg'] ]))
+    res["deb_pkg"]["pg15"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and '15' in i['deb_pg'] ]))
+    res["deb_pkg"]["pg16"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and '16' in i['deb_pg'] ]))
+    res["deb_pkg"]["pg17"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and '17' in i['deb_pg'] ]))
 
     return res
 
@@ -289,8 +295,8 @@ def tabulate_stats(todolist):
         'rpm_pkg': 'RPM Package',
         'deb_pkg': 'DEB Package'
     }
-    filters = ['all', 'pgdg', 'pigsty', 'misc', 'miss', 'pg17', 'pg16', 'pg15', 'pg14', 'pg13', 'pg12']
-    headers = ['Entry / Filter', 'All', 'PGDG', 'PIGSTY', 'MISC', 'MISS', 'PG17', 'PG16', 'PG15', 'PG14', 'PG13', 'PG12']
+    filters = ['all', 'pgdg', 'pigsty', 'contrib', 'misc', 'miss', 'pg17', 'pg16', 'pg15', 'pg14', 'pg13', 'pg12']
+    headers = ['Entry / Filter', 'All', 'PGDG', 'PIGSTY', 'CONTRIB', 'MISC', 'MISS', 'PG17', 'PG16', 'PG15', 'PG14', 'PG13', 'PG12']
     markdown = '|' + ' | '.join(headers) + '|\n'
     markdown += '|' + '|'.join([':----:' for _ in headers]) + '|\n'
     for key in todolist:
@@ -393,7 +399,7 @@ def generate_all_list():
     f.write(LIST_TEMPLATE % (
         STAT["stat"]["all"],STAT["stat"]["rpm"],STAT["stat"]["deb"],
         STAT["stat"]["contrib"],STAT["stat"]["non-contrib"],
-        tabulate_stats(['rpm_ext', 'deb_ext']),
+        tabulate_stats(['rpm_ext', 'deb_ext','rpm_pkg', 'deb_pkg']),
         ext_table,
         '\n'.join(ver_sections)
     ))
@@ -682,3 +688,5 @@ generate_deb_list()
 generate_contrib_list()
 generate_category()
 generate_extension()
+
+print(tabulate_stats(['rpm_ext', 'deb_ext', 'rpm_pkg', 'deb_pkg']))
