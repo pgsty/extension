@@ -10,42 +10,42 @@ There are 34 available extensions in this category:
 [`pg_profile`](/pg_profile) [`pg_show_plans`](/pg_show_plans) [`pg_stat_kcache`](/pg_stat_kcache) [`pg_stat_monitor`](/pg_stat_monitor) [`pg_qualstats`](/pg_qualstats) [`pg_store_plans`](/pg_store_plans) [`pg_track_settings`](/pg_track_settings) [`pg_wait_sampling`](/pg_wait_sampling) [`system_stats`](/system_stats) [`meta`](/meta) [`pgnodemx`](/pgnodemx) [`pg_proctab`](/pg_proctab) [`pg_sqlog`](/pg_sqlog) [`bgw_replstatus`](/bgw_replstatus) [`pgmeminfo`](/pgmeminfo) [`toastinfo`](/toastinfo) [`explain_ui`](/explain_ui) [`pg_relusage`](/pg_relusage) [`pg_mon`](/pg_mon) [`pg_statviz`](/pg_statviz) [`pgexporter_ext`](/pgexporter_ext) [`pg_top`](/pg_top) [`pagevis`](/pagevis) [`powa`](/powa) [`pageinspect`](/pageinspect) [`pgrowlocks`](/pgrowlocks) [`sslinfo`](/sslinfo) [`pg_buffercache`](/pg_buffercache) [`pg_walinspect`](/pg_walinspect) [`pg_freespacemap`](/pg_freespacemap) [`pg_visibility`](/pg_visibility) [`pgstattuple`](/pgstattuple) [`auto_explain`](/auto_explain) [`pg_stat_statements`](/pg_stat_statements)
 
 
-| ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
-|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:------:|:-------:|:-----:|-------------|
-| 6000 | [pg_profile](/pg_profile) | 4.7 | [pg_profile](/pg_profile) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/zubkov-andrei/pg_profile) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL load profile repository and report builder |
-| 6010 | [pg_show_plans](/pg_show_plans) | 2.1 | [pg_show_plans](/pg_show_plans) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/cybertec-postgresql/pg_show_plans) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show query plans of all currently running SQL statements |
-| 6020 | [pg_stat_kcache](/pg_stat_kcache) | 2.3.0 | [pg_stat_kcache](/pg_stat_kcache) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/powa-team/pg_stat_kcache) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Kernel statistics gathering |
-| 6030 | [pg_stat_monitor](/pg_stat_monitor) | 2.1 | [pg_stat_monitor](/pg_stat_monitor) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/percona/pg_stat_monitor) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | The pg_stat_monitor is a PostgreSQL Query Performance Monitoring tool, based on PostgreSQL contrib module pg_stat_statements. pg_stat_monitor provides aggregated statistics, client information, plan details including plan, and histogram information. |
-| 6040 | [pg_qualstats](/pg_qualstats) | 2.1.1 | [pg_qualstats](/pg_qualstats) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/powa-team/pg_qualstats) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | An extension collecting statistics about quals |
-| 6050 | [pg_store_plans](/pg_store_plans) | 1.8 | [pg_store_plans](/pg_store_plans) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/ossc-db/pg_store_plans) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | track plan statistics of all SQL statements executed |
-| 6060 | [pg_track_settings](/pg_track_settings) | 2.1.2 | [pg_track_settings](/pg_track_settings) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/rjuju/pg_track_settings) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Track settings changes |
-| 6070 | [pg_wait_sampling](/pg_wait_sampling) | 1.1 | [pg_wait_sampling](/pg_wait_sampling) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/postgrespro/pg_wait_sampling) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | sampling based statistics of wait events |
-| 6080 | [system_stats](/system_stats) | 3.0 | [system_stats](/system_stats) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/EnterpriseDB/system_stats) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | EnterpriseDB system statistics for PostgreSQL |
-| 6090 | [meta](/meta) | 0.4.0 | [pg_meta](/meta) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/aquameta/meta) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Normalized, friendlier system catalog for PostgreSQL |
-| 6100 | [pgnodemx](/pgnodemx) | 1.7 | [pgnodemx](/pgnodemx) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/CrunchyData/pgnodemx) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Capture node OS metrics via SQL queries |
-| 6120 | [pg_proctab](/pg_proctab) | 0.0.10-compat | [pgnodemx](/pg_proctab) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/markwkm/pg_proctab) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL extension to access the OS process table |
-| 6130 | [pg_sqlog](/pg_sqlog) | 1.6 | [pg_sqlog](/pg_sqlog) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/kouber/pg_sqlog) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provide SQL interface to logs |
-| 6140 | [bgw_replstatus](/bgw_replstatus) | 1.0.6 | [bgw_replstatus](/bgw_replstatus) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/mhagander/bgw_replstatus) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Small PostgreSQL background worker to report whether a node is a replication master or standby |
-| 6150 | [pgmeminfo](/pgmeminfo) | 1.0 | [pgmeminfo](/pgmeminfo) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/okbob/pgmeminfo) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show memory usage |
-| 6160 | [toastinfo](/toastinfo) | 1 | [toastinfo](/toastinfo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/credativ/toastinfo) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show details on toasted datums |
-| 6170 | [explain_ui](/explain_ui) | 0.0.1 | [pg_explain_ui](/explain_ui) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/davidgomes/pg-explain-ui) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | easily jump into a visual plan UI for any SQL query |
-| 6180 | [pg_relusage](/pg_relusage) | 0.0.1 | [pg_relusage](/pg_relusage) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adept/pg_relusage) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Log all the queries that reference a particular column |
-| 6190 | [pg_mon](/pg_mon) | 1.0 | [pg_mon](/pg_mon) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/RafiaSabih/pg_mon) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL extension to enhance query monitoring |
-| 6200 | [pg_statviz](/pg_statviz) | 0.6 | [pg_statviz](/pg_statviz) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/vyruss/pg_statviz) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | stats visualization and time series analysis |
-| 6210 | [pgexporter_ext](/pgexporter_ext) | 0.2.3 | [pgexporter_ext](/pgexporter_ext) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | PGDG | [LINK](https://github.com/pgexporter/pgexporter_ext) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pgexporter extension for extra metrics |
-| 6220 | [pg_top](/pg_top) | 3.7.0 | [pg_top](/pg_top) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | PGDG | [LINK](https://gitlab.com/pg_top/pg_top) |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Monitor PostgreSQL processes similar to unix top |
-| 6230 | [pagevis](/pagevis) | 0.1 | [pagevis](/pagevis) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/hollobon/pagevis) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Visualise database pages in ascii code |
-| 6240 | [powa](/powa) | 4.2.2 | [powa](/powa) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/powa-team/powa) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL Workload Analyser-core |
-| 6900 | [pageinspect](/pageinspect) | 1.12 | [pageinspect](/pageinspect) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pageinspect.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | inspect the contents of database pages at a low level |
-| 6910 | [pgrowlocks](/pgrowlocks) | 1.2 | [pgrowlocks](/pgrowlocks) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgrowlocks.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show row-level locking information |
-| 6920 | [sslinfo](/sslinfo) | 1.2 | [sslinfo](/sslinfo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/sslinfo.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | information about SSL certificates |
-| 6930 | [pg_buffercache](/pg_buffercache) | 1.4 | [pg_buffercache](/pg_buffercache) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgbuffercache.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | examine the shared buffer cache |
-| 6940 | [pg_walinspect](/pg_walinspect) | 1.1 | [pg_walinspect](/pg_walinspect) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgwalinspect.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions to inspect contents of PostgreSQL Write-Ahead Log |
-| 6950 | [pg_freespacemap](/pg_freespacemap) | 1.2 | [pg_freespacemap](/pg_freespacemap) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgfreespacemap.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | examine the free space map (FSM) |
-| 6960 | [pg_visibility](/pg_visibility) | 1.2 | [pg_visibility](/pg_visibility) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgvisibility.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | examine the visibility map (VM) and page-level visibility info |
-| 6970 | [pgstattuple](/pgstattuple) | 1.5 | [pgstattuple](/pgstattuple) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgstattuple.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show tuple-level statistics |
-| 6980 | [auto_explain](/auto_explain) | - | [auto_explain](/auto_explain) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/auto-explain.html) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Provides a means for logging execution plans of slow statements automatically |
-| 6990 | [pg_stat_statements](/pg_stat_statements) | 1.10 | [pg_stat_statements](/pg_stat_statements) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgstatstatements.html) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | track planning and execution statistics of all SQL statements executed |
+| ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
+|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
+| 6000 | [pg_profile](/pg_profile) | 4.7 | [pg_profile](/pg_profile) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/zubkov-andrei/pg_profile) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL load profile repository and report builder |
+| 6010 | [pg_show_plans](/pg_show_plans) | 2.1 | [pg_show_plans](/pg_show_plans) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/cybertec-postgresql/pg_show_plans) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show query plans of all currently running SQL statements |
+| 6020 | [pg_stat_kcache](/pg_stat_kcache) | 2.3.0 | [pg_stat_kcache](/pg_stat_kcache) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/powa-team/pg_stat_kcache) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Kernel statistics gathering |
+| 6030 | [pg_stat_monitor](/pg_stat_monitor) | 2.1 | [pg_stat_monitor](/pg_stat_monitor) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/percona/pg_stat_monitor) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | The pg_stat_monitor is a PostgreSQL Query Performance Monitoring tool, based on PostgreSQL contrib module pg_stat_statements. pg_stat_monitor provides aggregated statistics, client information, plan details including plan, and histogram information. |
+| 6040 | [pg_qualstats](/pg_qualstats) | 2.1.1 | [pg_qualstats](/pg_qualstats) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/powa-team/pg_qualstats) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | An extension collecting statistics about quals |
+| 6050 | [pg_store_plans](/pg_store_plans) | 1.8 | [pg_store_plans](/pg_store_plans) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/ossc-db/pg_store_plans) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | track plan statistics of all SQL statements executed |
+| 6060 | [pg_track_settings](/pg_track_settings) | 2.1.2 | [pg_track_settings](/pg_track_settings) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/rjuju/pg_track_settings) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Track settings changes |
+| 6070 | [pg_wait_sampling](/pg_wait_sampling) | 1.1 | [pg_wait_sampling](/pg_wait_sampling) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/postgrespro/pg_wait_sampling) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | sampling based statistics of wait events |
+| 6080 | [system_stats](/system_stats) | 3.0 | [system_stats](/system_stats) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/EnterpriseDB/system_stats) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | EnterpriseDB system statistics for PostgreSQL |
+| 6090 | [meta](/meta) | 0.4.0 | [pg_meta](/meta) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/aquameta/meta) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Normalized, friendlier system catalog for PostgreSQL |
+| 6100 | [pgnodemx](/pgnodemx) | 1.7 | [pgnodemx](/pgnodemx) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/CrunchyData/pgnodemx) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Capture node OS metrics via SQL queries |
+| 6120 | [pg_proctab](/pg_proctab) | 0.0.10-compat | [pgnodemx](/pg_proctab) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/markwkm/pg_proctab) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL extension to access the OS process table |
+| 6130 | [pg_sqlog](/pg_sqlog) | 1.6 | [pg_sqlog](/pg_sqlog) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/kouber/pg_sqlog) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provide SQL interface to logs |
+| 6140 | [bgw_replstatus](/bgw_replstatus) | 1.0.6 | [bgw_replstatus](/bgw_replstatus) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/mhagander/bgw_replstatus) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Small PostgreSQL background worker to report whether a node is a replication master or standby |
+| 6150 | [pgmeminfo](/pgmeminfo) | 1.0 | [pgmeminfo](/pgmeminfo) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/okbob/pgmeminfo) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show memory usage |
+| 6160 | [toastinfo](/toastinfo) | 1 | [toastinfo](/toastinfo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/credativ/toastinfo) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show details on toasted datums |
+| 6170 | [explain_ui](/explain_ui) | 0.0.1 | [pg_explain_ui](/explain_ui) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/davidgomes/pg-explain-ui) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | easily jump into a visual plan UI for any SQL query |
+| 6180 | [pg_relusage](/pg_relusage) | 0.0.1 | [pg_relusage](/pg_relusage) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adept/pg_relusage) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Log all the queries that reference a particular column |
+| 6190 | [pg_mon](/pg_mon) | 1.0 | [pg_mon](/pg_mon) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/RafiaSabih/pg_mon) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL extension to enhance query monitoring |
+| 6200 | [pg_statviz](/pg_statviz) | 0.6 | [pg_statviz](/pg_statviz) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/vyruss/pg_statviz) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | stats visualization and time series analysis |
+| 6210 | [pgexporter_ext](/pgexporter_ext) | 0.2.3 | [pgexporter_ext](/pgexporter_ext) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/pgexporter/pgexporter_ext) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pgexporter extension for extra metrics |
+| 6220 | [pg_top](/pg_top) | 3.7.0 | [pg_top](/pg_top) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://gitlab.com/pg_top/pg_top) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Monitor PostgreSQL processes similar to unix top |
+| 6230 | [pagevis](/pagevis) | 0.1 | [pagevis](/pagevis) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/hollobon/pagevis) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Visualise database pages in ascii code |
+| 6240 | [powa](/powa) | 4.2.2 | [powa](/powa) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/powa-team/powa) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL Workload Analyser-core |
+| 6900 | [pageinspect](/pageinspect) | 1.12 | [pageinspect](/pageinspect) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pageinspect.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | inspect the contents of database pages at a low level |
+| 6910 | [pgrowlocks](/pgrowlocks) | 1.2 | [pgrowlocks](/pgrowlocks) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgrowlocks.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show row-level locking information |
+| 6920 | [sslinfo](/sslinfo) | 1.2 | [sslinfo](/sslinfo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/sslinfo.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | information about SSL certificates |
+| 6930 | [pg_buffercache](/pg_buffercache) | 1.4 | [pg_buffercache](/pg_buffercache) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgbuffercache.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | examine the shared buffer cache |
+| 6940 | [pg_walinspect](/pg_walinspect) | 1.1 | [pg_walinspect](/pg_walinspect) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgwalinspect.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions to inspect contents of PostgreSQL Write-Ahead Log |
+| 6950 | [pg_freespacemap](/pg_freespacemap) | 1.2 | [pg_freespacemap](/pg_freespacemap) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgfreespacemap.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | examine the free space map (FSM) |
+| 6960 | [pg_visibility](/pg_visibility) | 1.2 | [pg_visibility](/pg_visibility) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgvisibility.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | examine the visibility map (VM) and page-level visibility info |
+| 6970 | [pgstattuple](/pgstattuple) | 1.5 | [pgstattuple](/pgstattuple) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgstattuple.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show tuple-level statistics |
+| 6980 | [auto_explain](/auto_explain) | - | [auto_explain](/auto_explain) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/auto-explain.html) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Provides a means for logging execution plans of slow statements automatically |
+| 6990 | [pg_stat_statements](/pg_stat_statements) | 1.10 | [pg_stat_statements](/pg_stat_statements) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgstatstatements.html) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | track planning and execution statistics of all SQL statements executed |
 
 
 
@@ -98,7 +98,7 @@ pg12: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_st
 | [pg_freespacemap](/pg_freespacemap) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | examine the free space map (FSM) |
 | [pg_visibility](/pg_visibility) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | examine the visibility map (VM) and page-level visibility info |
 | [pgstattuple](/pgstattuple) | 1.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show tuple-level statistics |
-| [auto_explain](/auto_explain) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provides a means for logging execution plans of slow statements automatically |
+| [auto_explain](/auto_explain) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provides a means for logging execution plans of slow statements automatically |
 | [pg_stat_statements](/pg_stat_statements) | 1.10 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | track planning and execution statistics of all SQL statements executed |
 
 
@@ -150,7 +150,7 @@ pg12: pg_profile_12* pg_show_plans_12* pg_stat_kcache_12* pg_stat_monitor_12* pg
 | [pg_freespacemap](/pg_freespacemap) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | examine the free space map (FSM) |
 | [pg_visibility](/pg_visibility) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | examine the visibility map (VM) and page-level visibility info |
 | [pgstattuple](/pgstattuple) | 1.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show tuple-level statistics |
-| [auto_explain](/auto_explain) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provides a means for logging execution plans of slow statements automatically |
+| [auto_explain](/auto_explain) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provides a means for logging execution plans of slow statements automatically |
 | [pg_stat_statements](/pg_stat_statements) | 1.10 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | track planning and execution statistics of all SQL statements executed |
 
 
@@ -168,138 +168,3 @@ pg12: pg_profile_12* pg_show_plans_12* pg_stat_kcache_12* pg_stat_monitor_12* pg
 
 --------
 
-## pg_profile
-
-[`pg_profile`](/pg_profile): PostgreSQL load profile repository and report builder
-
-## pg_show_plans
-
-[`pg_show_plans`](/pg_show_plans): show query plans of all currently running SQL statements
-
-## pg_stat_kcache
-
-[`pg_stat_kcache`](/pg_stat_kcache): Kernel statistics gathering
-
-## pg_stat_monitor
-
-[`pg_stat_monitor`](/pg_stat_monitor): The pg_stat_monitor is a PostgreSQL Query Performance Monitoring tool, based on PostgreSQL contrib module pg_stat_statements. pg_stat_monitor provides aggregated statistics, client information, plan details including plan, and histogram information.
-
-## pg_qualstats
-
-[`pg_qualstats`](/pg_qualstats): An extension collecting statistics about quals
-
-## pg_store_plans
-
-[`pg_store_plans`](/pg_store_plans): track plan statistics of all SQL statements executed
-
-## pg_track_settings
-
-[`pg_track_settings`](/pg_track_settings): Track settings changes
-
-## pg_wait_sampling
-
-[`pg_wait_sampling`](/pg_wait_sampling): sampling based statistics of wait events
-
-## system_stats
-
-[`system_stats`](/system_stats): EnterpriseDB system statistics for PostgreSQL
-
-## meta
-
-[`meta`](/meta): (package alias: `pg_meta`) Normalized, friendlier system catalog for PostgreSQL
-
-## pgnodemx
-
-[`pgnodemx`](/pgnodemx): Capture node OS metrics via SQL queries
-
-## pg_proctab
-
-[`pg_proctab`](/pg_proctab): (package alias: `pgnodemx`) PostgreSQL extension to access the OS process table
-
-## pg_sqlog
-
-[`pg_sqlog`](/pg_sqlog): Provide SQL interface to logs
-
-## bgw_replstatus
-
-[`bgw_replstatus`](/bgw_replstatus): Small PostgreSQL background worker to report whether a node is a replication master or standby
-
-## pgmeminfo
-
-[`pgmeminfo`](/pgmeminfo): show memory usage
-
-## toastinfo
-
-[`toastinfo`](/toastinfo): show details on toasted datums
-
-## explain_ui
-
-[`explain_ui`](/explain_ui): (package alias: `pg_explain_ui`) easily jump into a visual plan UI for any SQL query
-
-## pg_relusage
-
-[`pg_relusage`](/pg_relusage): Log all the queries that reference a particular column
-
-## pg_mon
-
-[`pg_mon`](/pg_mon): PostgreSQL extension to enhance query monitoring
-
-## pg_statviz
-
-[`pg_statviz`](/pg_statviz): stats visualization and time series analysis
-
-## pgexporter_ext
-
-[`pgexporter_ext`](/pgexporter_ext): pgexporter extension for extra metrics
-
-## pg_top
-
-[`pg_top`](/pg_top): Monitor PostgreSQL processes similar to unix top
-
-## pagevis
-
-[`pagevis`](/pagevis): Visualise database pages in ascii code
-
-## powa
-
-[`powa`](/powa): PostgreSQL Workload Analyser-core
-
-## pageinspect
-
-[`pageinspect`](/pageinspect): inspect the contents of database pages at a low level
-
-## pgrowlocks
-
-[`pgrowlocks`](/pgrowlocks): show row-level locking information
-
-## sslinfo
-
-[`sslinfo`](/sslinfo): information about SSL certificates
-
-## pg_buffercache
-
-[`pg_buffercache`](/pg_buffercache): examine the shared buffer cache
-
-## pg_walinspect
-
-[`pg_walinspect`](/pg_walinspect): functions to inspect contents of PostgreSQL Write-Ahead Log
-
-## pg_freespacemap
-
-[`pg_freespacemap`](/pg_freespacemap): examine the free space map (FSM)
-
-## pg_visibility
-
-[`pg_visibility`](/pg_visibility): examine the visibility map (VM) and page-level visibility info
-
-## pgstattuple
-
-[`pgstattuple`](/pgstattuple): show tuple-level statistics
-
-## auto_explain
-
-[`auto_explain`](/auto_explain): Provides a means for logging execution plans of slow statements automatically
-
-## pg_stat_statements
-
-[`pg_stat_statements`](/pg_stat_statements): track planning and execution statistics of all SQL statements executed

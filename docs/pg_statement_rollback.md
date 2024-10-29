@@ -1,17 +1,20 @@
 # pg_statement_rollback
 
 
-> [pg_statement_rollback](/https://github.com/lzlabs/pg_statement_rollback): Server side rollback at statement level for PostgreSQL like Oracle or DB2
+> [pg_statement_rollback](https://github.com/lzlabs/pg_statement_rollback): Server side rollback at statement level for PostgreSQL like Oracle or DB2
+>
+> https://github.com/lzlabs/pg_statement_rollback
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_statement_rollback](https://github.com/lzlabs/pg_statement_rollback) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pg_statement_rollback](https://github.com/lzlabs/pg_statement_rollback) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
 
 
 

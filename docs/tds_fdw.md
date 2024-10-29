@@ -1,17 +1,20 @@
 # tds_fdw
 
 
-> [tds_fdw](/https://github.com/tds-fdw/tds_fdw): Foreign data wrapper for querying a TDS database (Sybase or Microsoft SQL Server)
+> [tds_fdw](https://github.com/tds-fdw/tds_fdw): Foreign data wrapper for querying a TDS database (Sybase or Microsoft SQL Server)
+>
+> https://github.com/tds-fdw/tds_fdw
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [tds_fdw](https://github.com/tds-fdw/tds_fdw) | 2.0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [tds_fdw](https://github.com/tds-fdw/tds_fdw) | 2.0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 

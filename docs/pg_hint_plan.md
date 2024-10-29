@@ -1,17 +1,20 @@
 # pg_hint_plan
 
 
-> [pg_hint_plan](/https://github.com/ossc-db/pg_hint_plan): Give PostgreSQL ability to manually force some decisions in execution plans.
+> [pg_hint_plan](https://github.com/ossc-db/pg_hint_plan): Give PostgreSQL ability to manually force some decisions in execution plans.
+>
+> https://github.com/ossc-db/pg_hint_plan
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_hint_plan](https://github.com/ossc-db/pg_hint_plan) | 1.6.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pg_hint_plan](https://github.com/ossc-db/pg_hint_plan) | 1.6.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
 
 
 

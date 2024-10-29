@@ -1,17 +1,20 @@
 # pg_stat_statements
 
 
-> [pg_stat_statements](/https://www.postgresql.org/docs/current/pgstatstatements.html): track planning and execution statistics of all SQL statements executed
+> [pg_stat_statements](https://www.postgresql.org/docs/current/pgstatstatements.html): track planning and execution statistics of all SQL statements executed
+>
+> https://www.postgresql.org/docs/current/pgstatstatements.html
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_stat_statements](https://www.postgresql.org/docs/current/pgstatstatements.html) | 1.10 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | `C` | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pg_stat_statements](https://www.postgresql.org/docs/current/pgstatstatements.html) | 1.10 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | `C` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
 
 
 

@@ -1,17 +1,20 @@
 # babelfishpg_money
 
 
-> [babelfishpg_money](/https://babelfishpg.org/): SQL Server Money Data Type
+> [babelfishpg_money](https://babelfishpg.org/): SQL Server Money Data Type
+>
+> https://babelfishpg.org/
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [babelfishpg_money](https://babelfishpg.org/) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [babelfishpg_money](https://babelfishpg.org/) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
 
 
 
@@ -50,7 +53,7 @@ Install `babelfishpg_money` via [Pigsty](https://pigsty.cc/docs/pgext/usage/inst
 Install `babelfishpg_money` [RPM](/rpm) from the **<span class="tcorange">WILTON</span>** **YUM** repo:
 
 ```bash
-dnf install babelfishpg-money*;
+dnf instsall babelfishpg-money*;
 ```
 
 

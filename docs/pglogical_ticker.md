@@ -1,17 +1,20 @@
 # pglogical
 
 
-> [pglogical](/https://github.com/2ndQuadrant/pglogical): Have an accurate view on pglogical replication delay
+> [pglogical](https://github.com/2ndQuadrant/pglogical): Have an accurate view on pglogical replication delay
+>
+> https://github.com/2ndQuadrant/pglogical
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pglogical_ticker](https://github.com/2ndQuadrant/pglogical) | 1.4 | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tccyan">PGDG</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pglogical_ticker](https://github.com/2ndQuadrant/pglogical) | 1.4 | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
 
 
 
@@ -50,12 +53,7 @@ Install `pglogical` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pl
 Install `pglogical` [DEB](/deb) from the  **APT** repo:
 
 ```bash
-apt install postgresql-17-pglogical*;
-apt install postgresql-16-pglogical*;
-apt install postgresql-15-pglogical*;
-apt install postgresql-14-pglogical*;
-apt install postgresql-13-pglogical*;
-apt install postgresql-12-pglogical*;
+apt install postgresql-$v-pglogical*;
 ```
 
 

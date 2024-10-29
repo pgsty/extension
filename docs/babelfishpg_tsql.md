@@ -1,17 +1,20 @@
 # babelfishpg_tsql
 
 
-> [babelfishpg_tsql](/https://babelfishpg.org/): SQL Server Transact SQL compatibility
+> [babelfishpg_tsql](https://babelfishpg.org/): SQL Server Transact SQL compatibility
+>
+> https://babelfishpg.org/
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [babelfishpg_tsql](https://babelfishpg.org/) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [babelfishpg_tsql](https://babelfishpg.org/) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** |  |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -54,7 +57,7 @@ Install `babelfishpg_tsql` via [Pigsty](https://pigsty.cc/docs/pgext/usage/insta
 Install `babelfishpg_tsql` [RPM](/rpm) from the **<span class="tcorange">WILTON</span>** **YUM** repo:
 
 ```bash
-dnf install babelfishpg-tsql*;
+dnf instsall babelfishpg-tsql*;
 ```
 
 

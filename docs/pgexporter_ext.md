@@ -1,17 +1,20 @@
 # pgexporter_ext
 
 
-> [pgexporter_ext](/https://github.com/pgexporter/pgexporter_ext): pgexporter extension for extra metrics
+> [pgexporter_ext](https://github.com/pgexporter/pgexporter_ext): pgexporter extension for extra metrics
+>
+> https://github.com/pgexporter/pgexporter_ext
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgexporter_ext](https://github.com/pgexporter/pgexporter_ext) | 0.2.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pgexporter_ext](https://github.com/pgexporter/pgexporter_ext) | 0.2.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
 
 
 

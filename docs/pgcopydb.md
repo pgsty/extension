@@ -1,17 +1,20 @@
 # pgcopydb
 
 
-> [pgcopydb](/https://github.com/dimitri/pgcopydb): Copy a Postgres database to a target Postgres server
+> [pgcopydb](https://github.com/dimitri/pgcopydb): Copy a Postgres database to a target Postgres server
+>
+> https://github.com/dimitri/pgcopydb
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgcopydb](https://github.com/dimitri/pgcopydb) | 0.15 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pgcopydb](https://github.com/dimitri/pgcopydb) | 0.15 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` | <span class="tcblue">✔</span> |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
 
 
 
@@ -46,23 +49,13 @@ Install `pgcopydb` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pla
 Install `pgcopydb` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pgcopydb;
-dnf install pgcopydb;
-dnf install pgcopydb;
-dnf install pgcopydb;
-dnf install pgcopydb;
-dnf install pgcopydb;
+dnf instsall pgcopydb;
 ```
 
 
 Install `pgcopydb` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
-apt install pgcopydb;
-apt install pgcopydb;
-apt install pgcopydb;
-apt install pgcopydb;
-apt install pgcopydb;
 apt install pgcopydb;
 ```
 

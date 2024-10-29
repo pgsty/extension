@@ -10,38 +10,38 @@ There are 30 available extensions in this category:
 [`prefix`](/prefix) [`semver`](/semver) [`unit`](/unit) [`md5hash`](/md5hash) [`asn1oid`](/asn1oid) [`roaringbitmap`](/roaringbitmap) [`pgfaceting`](/pgfaceting) [`pg_sphere`](/pg_sphere) [`country`](/country) [`currency`](/currency) [`pgmp`](/pgmp) [`numeral`](/numeral) [`pg_rational`](/pg_rational) [`uint`](/uint) [`uint128`](/uint128) [`ip4r`](/ip4r) [`uri`](/uri) [`pgemailaddr`](/pgemailaddr) [`acl`](/acl) [`debversion`](/debversion) [`pg_rrule`](/pg_rrule) [`timestamp9`](/timestamp9) [`chkpass`](/chkpass) [`isn`](/isn) [`seg`](/seg) [`cube`](/cube) [`ltree`](/ltree) [`hstore`](/hstore) [`citext`](/citext) [`xml2`](/xml2)
 
 
-| ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
-|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:------:|:-------:|:-----:|-------------|
-| 2500 | [prefix](/prefix) | 1.2.0 | [prefix](/prefix) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/dimitri/prefix) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Prefix Range module for PostgreSQL |
-| 2510 | [semver](/semver) | 0.32.1 | [semver](/semver) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/theory/pg-semver) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Semantic version data type |
-| 2520 | [unit](/unit) | 7 | [pgunit](/unit) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/df7cb/postgresql-unit) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SI units extension |
-| 2530 | [md5hash](/md5hash) | 1.0.1 | [md5hash](/md5hash) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/md5hash) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | type for storing 128-bit binary data inline |
-| 2540 | [asn1oid](/asn1oid) | 1 | [asn1oid](/asn1oid) | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/df7cb/pgsql-asn1oid) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | asn1oid extension |
-| 2550 | [roaringbitmap](/roaringbitmap) | 0.5 | [roaringbitmap](/roaringbitmap) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ChenHuajun/pg_roaringbitmap) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | support for Roaring Bitmaps |
-| 2560 | [pgfaceting](/pgfaceting) | 0.2.0 | [pgfaceting](/pgfaceting) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/cybertec-postgresql/pgfaceting) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | fast faceting queries using an inverted index |
-| 2570 | [pg_sphere](/pg_sphere) | 1.5.1 | [pgsphere](/pg_sphere) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/postgrespro/pgsphere) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | spherical objects with useful functions, operators and index support |
-| 2580 | [country](/country) | 0.0.3 | [pg_country](/country) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/pg-country) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Country data type, ISO 3166-1 |
-| 2590 | [currency](/currency) | 0.0.3 | [pg_currency](/currency) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/pg-currency) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Custom PostgreSQL currency type in 1Byte |
-| 2600 | [pgmp](/pgmp) | 1.1 | [pgmp](/pgmp) | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/dvarrazzo/pgmp/) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Multiple Precision Arithmetic extension |
-| 2610 | [numeral](/numeral) | 1 | [numeral](/numeral) | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/df7cb/postgresql-numeral) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | numeral datatypes extension |
-| 2620 | [pg_rational](/pg_rational) | 0.0.2 | [pg_rational](/pg_rational) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/begriffs/pg_rational) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | bigint fractions |
-| 2630 | [uint](/uint) | 0 | [pguint](/uint) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/petere/pguint) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | unsigned integer types |
-| 2640 | [uint128](/uint128) | 1.0.0 | [pg_uint128](/uint128) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pg-uint/pg-uint128) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Native uint128 type |
-| 2650 | [ip4r](/ip4r) | 2.4 | [ip4r](/ip4r) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/RhodiumToad/ip4r) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | IPv4/v6 and IPv4/v6 range index type for PostgreSQL |
-| 2840 | [uri](/uri) | 1 | [pg_uri](/uri) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/petere/pguri) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | URI Data type for PostgreSQL |
-| 2850 | [pgemailaddr](/pgemailaddr) | 0 | [pgemailaddr](/pgemailaddr) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/petere/pgemailaddr) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Email address type for PostgreSQL |
-| 2860 | [acl](/acl) | 1.0.4 | [acl](/acl) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/arkhipov/acl) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | ACL Data type |
-| 2870 | [debversion](/debversion) | 1.2 | [debversion](/debversion) | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ATIX-AG/postgresql-debversion-evr) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Debian version number data type |
-| 2880 | [pg_rrule](/pg_rrule) | 0.2.0 | [pg_rrule](/pg_rrule) | **<span class="tcblue">MIT</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/petropavel13/pg_rrule) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | RRULE field type for PostgreSQL |
-| 2890 | [timestamp9](/timestamp9) | 1.4.0 | [timestamp9](/timestamp9) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/optiver/timestamp9) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | timestamp nanosecond resolution |
-| 2920 | [chkpass](/chkpass) | 1.0 | [chkpass](/chkpass) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/lacanoid/chkpass) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for auto-encrypted passwords |
-| 2930 | [isn](/isn) | 1.2 | [isn](/isn) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/isn.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data types for international product numbering standards |
-| 2940 | [seg](/seg) | 1.4 | [seg](/seg) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/seg.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for representing line segments or floating-point intervals |
-| 2950 | [cube](/cube) | 1.5 | [cube](/cube) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/cube.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for multidimensional cubes |
-| 2960 | [ltree](/ltree) | 1.2 | [ltree](/ltree) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/ltree.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for hierarchical tree-like structures |
-| 2970 | [hstore](/hstore) | 1.8 | [hstore](/hstore) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/hstore.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for storing sets of (key, value) pairs |
-| 2980 | [citext](/citext) | 1.6 | [citext](/citext) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/citext.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for case-insensitive character strings |
-| 2990 | [xml2](/xml2) | 1.1 | [xml2](/xml2) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/xml2.html) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | XPath querying and XSLT |
+| ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
+|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
+| 2500 | [prefix](/prefix) | 1.2.0 | [prefix](/prefix) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/dimitri/prefix) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Prefix Range module for PostgreSQL |
+| 2510 | [semver](/semver) | 0.32.1 | [semver](/semver) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/theory/pg-semver) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Semantic version data type |
+| 2520 | [unit](/unit) | 7 | [pgunit](/unit) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/df7cb/postgresql-unit) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SI units extension |
+| 2530 | [md5hash](/md5hash) | 1.0.1 | [md5hash](/md5hash) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/md5hash) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | type for storing 128-bit binary data inline |
+| 2540 | [asn1oid](/asn1oid) | 1 | [asn1oid](/asn1oid) | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/df7cb/pgsql-asn1oid) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | asn1oid extension |
+| 2550 | [roaringbitmap](/roaringbitmap) | 0.5 | [roaringbitmap](/roaringbitmap) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ChenHuajun/pg_roaringbitmap) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | support for Roaring Bitmaps |
+| 2560 | [pgfaceting](/pgfaceting) | 0.2.0 | [pgfaceting](/pgfaceting) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/cybertec-postgresql/pgfaceting) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | fast faceting queries using an inverted index |
+| 2570 | [pg_sphere](/pg_sphere) | 1.5.1 | [pgsphere](/pg_sphere) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/postgrespro/pgsphere) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | spherical objects with useful functions, operators and index support |
+| 2580 | [country](/country) | 0.0.3 | [pg_country](/country) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/pg-country) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Country data type, ISO 3166-1 |
+| 2590 | [currency](/currency) | 0.0.3 | [pg_currency](/currency) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/pg-currency) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Custom PostgreSQL currency type in 1Byte |
+| 2600 | [pgmp](/pgmp) | 1.1 | [pgmp](/pgmp) | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/dvarrazzo/pgmp/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Multiple Precision Arithmetic extension |
+| 2610 | [numeral](/numeral) | 1 | [numeral](/numeral) | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/df7cb/postgresql-numeral) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | numeral datatypes extension |
+| 2620 | [pg_rational](/pg_rational) | 0.0.2 | [pg_rational](/pg_rational) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/begriffs/pg_rational) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | bigint fractions |
+| 2630 | [uint](/uint) | 0 | [pguint](/uint) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/petere/pguint) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | unsigned integer types |
+| 2640 | [uint128](/uint128) | 1.0.0 | [pg_uint128](/uint128) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pg-uint/pg-uint128) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Native uint128 type |
+| 2650 | [ip4r](/ip4r) | 2.4 | [ip4r](/ip4r) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/RhodiumToad/ip4r) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | IPv4/v6 and IPv4/v6 range index type for PostgreSQL |
+| 2840 | [uri](/uri) | 1 | [pg_uri](/uri) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/petere/pguri) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | URI Data type for PostgreSQL |
+| 2850 | [pgemailaddr](/pgemailaddr) | 0 | [pgemailaddr](/pgemailaddr) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/petere/pgemailaddr) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Email address type for PostgreSQL |
+| 2860 | [acl](/acl) | 1.0.4 | [acl](/acl) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/arkhipov/acl) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | ACL Data type |
+| 2870 | [debversion](/debversion) | 1.2 | [debversion](/debversion) | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ATIX-AG/postgresql-debversion-evr) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Debian version number data type |
+| 2880 | [pg_rrule](/pg_rrule) | 0.2.0 | [pg_rrule](/pg_rrule) | **<span class="tcblue">MIT</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/petropavel13/pg_rrule) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | RRULE field type for PostgreSQL |
+| 2890 | [timestamp9](/timestamp9) | 1.4.0 | [timestamp9](/timestamp9) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/optiver/timestamp9) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | timestamp nanosecond resolution |
+| 2920 | [chkpass](/chkpass) | 1.0 | [chkpass](/chkpass) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/lacanoid/chkpass) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for auto-encrypted passwords |
+| 2930 | [isn](/isn) | 1.2 | [isn](/isn) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/isn.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data types for international product numbering standards |
+| 2940 | [seg](/seg) | 1.4 | [seg](/seg) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/seg.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for representing line segments or floating-point intervals |
+| 2950 | [cube](/cube) | 1.5 | [cube](/cube) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/cube.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for multidimensional cubes |
+| 2960 | [ltree](/ltree) | 1.2 | [ltree](/ltree) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/ltree.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for hierarchical tree-like structures |
+| 2970 | [hstore](/hstore) | 1.8 | [hstore](/hstore) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/hstore.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for storing sets of (key, value) pairs |
+| 2980 | [citext](/citext) | 1.6 | [citext](/citext) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/citext.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for case-insensitive character strings |
+| 2990 | [xml2](/xml2) | 1.1 | [xml2](/xml2) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/xml2.html) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | XPath querying and XSLT |
 
 
 
@@ -158,122 +158,3 @@ pg12: prefix_12* semver_12* postgresql-unit_12* md5hash_12* asn1oid_12* pg_roari
 
 --------
 
-## prefix
-
-[`prefix`](/prefix): Prefix Range module for PostgreSQL
-
-## semver
-
-[`semver`](/semver): Semantic version data type
-
-## unit
-
-[`unit`](/unit): (package alias: `pgunit`) SI units extension
-
-## md5hash
-
-[`md5hash`](/md5hash): type for storing 128-bit binary data inline
-
-## asn1oid
-
-[`asn1oid`](/asn1oid): asn1oid extension
-
-## roaringbitmap
-
-[`roaringbitmap`](/roaringbitmap): support for Roaring Bitmaps
-
-## pgfaceting
-
-[`pgfaceting`](/pgfaceting): fast faceting queries using an inverted index
-
-## pg_sphere
-
-[`pg_sphere`](/pg_sphere): (package alias: `pgsphere`) spherical objects with useful functions, operators and index support
-
-## country
-
-[`country`](/country): (package alias: `pg_country`) Country data type, ISO 3166-1
-
-## currency
-
-[`currency`](/currency): (package alias: `pg_currency`) Custom PostgreSQL currency type in 1Byte
-
-## pgmp
-
-[`pgmp`](/pgmp): Multiple Precision Arithmetic extension
-
-## numeral
-
-[`numeral`](/numeral): numeral datatypes extension
-
-## pg_rational
-
-[`pg_rational`](/pg_rational): bigint fractions
-
-## uint
-
-[`uint`](/uint): (package alias: `pguint`) unsigned integer types
-
-## uint128
-
-[`uint128`](/uint128): (package alias: `pg_uint128`) Native uint128 type
-
-## ip4r
-
-[`ip4r`](/ip4r): IPv4/v6 and IPv4/v6 range index type for PostgreSQL
-
-## uri
-
-[`uri`](/uri): (package alias: `pg_uri`) URI Data type for PostgreSQL
-
-## pgemailaddr
-
-[`pgemailaddr`](/pgemailaddr): Email address type for PostgreSQL
-
-## acl
-
-[`acl`](/acl): ACL Data type
-
-## debversion
-
-[`debversion`](/debversion): Debian version number data type
-
-## pg_rrule
-
-[`pg_rrule`](/pg_rrule): RRULE field type for PostgreSQL
-
-## timestamp9
-
-[`timestamp9`](/timestamp9): timestamp nanosecond resolution
-
-## chkpass
-
-[`chkpass`](/chkpass): data type for auto-encrypted passwords
-
-## isn
-
-[`isn`](/isn): data types for international product numbering standards
-
-## seg
-
-[`seg`](/seg): data type for representing line segments or floating-point intervals
-
-## cube
-
-[`cube`](/cube): data type for multidimensional cubes
-
-## ltree
-
-[`ltree`](/ltree): data type for hierarchical tree-like structures
-
-## hstore
-
-[`hstore`](/hstore): data type for storing sets of (key, value) pairs
-
-## citext
-
-[`citext`](/citext): data type for case-insensitive character strings
-
-## xml2
-
-[`xml2`](/xml2): XPath querying and XSLT

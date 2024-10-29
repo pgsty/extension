@@ -1,17 +1,20 @@
 # count_distinct
 
 
-> [count_distinct](/https://github.com/tvondra/count_distinct): An alternative to COUNT(DISTINCT …) aggregate, usable with HashAggregate
+> [count_distinct](https://github.com/tvondra/count_distinct): An alternative to COUNT(DISTINCT …) aggregate, usable with HashAggregate
+>
+> https://github.com/tvondra/count_distinct
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [count_distinct](https://github.com/tvondra/count_distinct) | 3.0.1 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [count_distinct](https://github.com/tvondra/count_distinct) | 3.0.1 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 

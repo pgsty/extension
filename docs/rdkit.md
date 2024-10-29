@@ -1,17 +1,20 @@
 # rdkit
 
 
-> [rdkit](/https://github.com/rdkit/rdkit): Cheminformatics functionality for PostgreSQL.
+> [rdkit](https://github.com/rdkit/rdkit): Cheminformatics functionality for PostgreSQL.
+>
+> https://github.com/rdkit/rdkit
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [rdkit](https://github.com/rdkit/rdkit) | 4.3.0 | **<span class="tcblue">BSD-3</span>** |  | **<span class="tccyan">PGDG</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [rdkit](https://github.com/rdkit/rdkit) | 4.3.0 | **<span class="tcblue">BSD-3</span>** |  | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -49,11 +52,7 @@ Install `rdkit` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbo
 Install `rdkit` [DEB](/deb) from the  **APT** repo:
 
 ```bash
-apt install postgresql-16-rdkit;
-apt install postgresql-15-rdkit;
-apt install postgresql-14-rdkit;
-apt install postgresql-13-rdkit;
-apt install postgresql-12-rdkit;
+apt install postgresql-$v-rdkit;
 ```
 
 

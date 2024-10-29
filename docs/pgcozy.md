@@ -1,17 +1,20 @@
 # pgcozy
 
 
-> [pgcozy](/https://github.com/vventirozos/pgcozy): Pre-warming shared buffers according to previous pg_buffercache snapshots for PostgreSQL.
+> [pgcozy](https://github.com/vventirozos/pgcozy): Pre-warming shared buffers according to previous pg_buffercache snapshots for PostgreSQL.
+>
+> https://github.com/vventirozos/pgcozy
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgcozy](https://github.com/vventirozos/pgcozy) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |  |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pgcozy](https://github.com/vventirozos/pgcozy) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |  |  |
 
 
 

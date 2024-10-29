@@ -1,17 +1,20 @@
 # babelfishpg_tds
 
 
-> [babelfishpg_tds](/https://babelfishpg.org/): SQL Server TDS protocol extension
+> [babelfishpg_tds](https://babelfishpg.org/): SQL Server TDS protocol extension
+>
+> https://babelfishpg.org/
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [babelfishpg_tds](https://babelfishpg.org/) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [babelfishpg_tds](https://babelfishpg.org/) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -50,7 +53,7 @@ Install `babelfishpg_tds` via [Pigsty](https://pigsty.cc/docs/pgext/usage/instal
 Install `babelfishpg_tds` [RPM](/rpm) from the **<span class="tcorange">WILTON</span>** **YUM** repo:
 
 ```bash
-dnf install babelfishpg-tds*;
+dnf instsall babelfishpg-tds*;
 ```
 
 

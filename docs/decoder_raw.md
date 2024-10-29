@@ -1,17 +1,20 @@
 # decoder_raw
 
 
-> [decoder_raw](/https://github.com/michaelpq/pg_plugins/blob/main/decoder_raw/): Output plugin for logical replication in Raw SQL format
+> [decoder_raw](https://github.com/michaelpq/pg_plugins/blob/main/decoder_raw/): Output plugin for logical replication in Raw SQL format
+>
+> https://github.com/michaelpq/pg_plugins/blob/main/decoder_raw/
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [decoder_raw](https://github.com/michaelpq/pg_plugins/blob/main/decoder_raw/) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [decoder_raw](https://github.com/michaelpq/pg_plugins/blob/main/decoder_raw/) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  | <span class="tcwarn">✘</span> |
 
 
 

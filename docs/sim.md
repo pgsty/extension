@@ -10,20 +10,20 @@ There are 12 available extensions in this category:
 [`orafce`](/orafce) [`pgtt`](/pgtt) [`session_variable`](/session_variable) [`pg_statement_rollback`](/pg_statement_rollback) [`pg_dbms_metadata`](/pg_dbms_metadata) [`pg_dbms_lock`](/pg_dbms_lock) [`pg_dbms_job`](/pg_dbms_job) [`babelfishpg_common`](/babelfishpg_common) [`babelfishpg_tsql`](/babelfishpg_tsql) [`babelfishpg_tds`](/babelfishpg_tds) [`babelfishpg_money`](/babelfishpg_money) [`pgmemcache`](/pgmemcache)
 
 
-| ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
-|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:------:|:-------:|:-----:|-------------|
-| 9000 | [orafce](/orafce) | 4.13 | [orafce](/orafce) | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/orafce/orafce) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Functions and operators that emulate a subset of functions and packages from the Oracle RDBMS |
-| 9010 | [pgtt](/pgtt) | 4.0.0 | [pgtt](/pgtt) | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/darold/pgtt) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to add Global Temporary Tables feature to PostgreSQL |
-| 9020 | [session_variable](/session_variable) | 3.4 | [session_variable](/session_variable) | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/splendiddata/session_variable) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Registration and manipulation of session variables and constants |
-| 9030 | [pg_statement_rollback](/pg_statement_rollback) | 1.4 | [pg_statement_rollback](/pg_statement_rollback) | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/lzlabs/pg_statement_rollback) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Server side rollback at statement level for PostgreSQL like Oracle or DB2 |
-| 9040 | [pg_dbms_metadata](/pg_dbms_metadata) | 1.0.0 | [pg_dbms_metadata](/pg_dbms_metadata) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | PGDG | [LINK](https://github.com/HexaCluster/pg_dbms_metadata) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to add Oracle DBMS_METADATA compatibility to PostgreSQL |
-| 9050 | [pg_dbms_lock](/pg_dbms_lock) | 1.0.0 | [pg_dbms_lock](/pg_dbms_lock) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | PGDG | [LINK](https://github.com/HexaCluster/pg_dbms_lock) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to add Oracle DBMS_LOCK full compatibility to PostgreSQL |
-| 9060 | [pg_dbms_job](/pg_dbms_job) | 1.5.0 | [pg_dbms_job](/pg_dbms_job) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | PGDG | [LINK](https://github.com/MigOpsRepos/pg_dbms_job) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to add Oracle DBMS_JOB full compatibility to PostgreSQL |
-| 9100 | [babelfishpg_common](/babelfishpg_common) | 3.3.3 | [babelfishpg_common](/babelfishpg_common) | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** | [LINK](https://babelfishpg.org/) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL Server Transact SQL Datatype Support |
-| 9110 | [babelfishpg_tsql](/babelfishpg_tsql) | 3.3.1 | [babelfishpg_tsql](/babelfishpg_tsql) | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** | [LINK](https://babelfishpg.org/) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL Server Transact SQL compatibility |
-| 9120 | [babelfishpg_tds](/babelfishpg_tds) | 1.0.0 | [babelfishpg_tds](/babelfishpg_tds) | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** | [LINK](https://babelfishpg.org/) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL Server TDS protocol extension |
-| 9130 | [babelfishpg_money](/babelfishpg_money) | 1.1.0 | [babelfishpg_money](/babelfishpg_money) | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** | [LINK](https://babelfishpg.org/) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL Server Money Data Type |
-| 9200 | [pgmemcache](/pgmemcache) | 2.3.0 | [pgmemcache](/pgmemcache) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ohmu/pgmemcache) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | memcached interface |
+| ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
+|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
+| 9000 | [orafce](/orafce) | 4.13 | [orafce](/orafce) | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/orafce/orafce) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Functions and operators that emulate a subset of functions and packages from the Oracle RDBMS |
+| 9010 | [pgtt](/pgtt) | 4.0.0 | [pgtt](/pgtt) | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/darold/pgtt) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to add Global Temporary Tables feature to PostgreSQL |
+| 9020 | [session_variable](/session_variable) | 3.4 | [session_variable](/session_variable) | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/splendiddata/session_variable) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Registration and manipulation of session variables and constants |
+| 9030 | [pg_statement_rollback](/pg_statement_rollback) | 1.4 | [pg_statement_rollback](/pg_statement_rollback) | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/lzlabs/pg_statement_rollback) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Server side rollback at statement level for PostgreSQL like Oracle or DB2 |
+| 9040 | [pg_dbms_metadata](/pg_dbms_metadata) | 1.0.0 | [pg_dbms_metadata](/pg_dbms_metadata) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/HexaCluster/pg_dbms_metadata) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to add Oracle DBMS_METADATA compatibility to PostgreSQL |
+| 9050 | [pg_dbms_lock](/pg_dbms_lock) | 1.0.0 | [pg_dbms_lock](/pg_dbms_lock) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/HexaCluster/pg_dbms_lock) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to add Oracle DBMS_LOCK full compatibility to PostgreSQL |
+| 9060 | [pg_dbms_job](/pg_dbms_job) | 1.5.0 | [pg_dbms_job](/pg_dbms_job) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/MigOpsRepos/pg_dbms_job) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to add Oracle DBMS_JOB full compatibility to PostgreSQL |
+| 9100 | [babelfishpg_common](/babelfishpg_common) | 3.3.3 | [babelfishpg_common](/babelfishpg_common) | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** | [LINK](https://babelfishpg.org/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL Server Transact SQL Datatype Support |
+| 9110 | [babelfishpg_tsql](/babelfishpg_tsql) | 3.3.1 | [babelfishpg_tsql](/babelfishpg_tsql) | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** | [LINK](https://babelfishpg.org/) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL Server Transact SQL compatibility |
+| 9120 | [babelfishpg_tds](/babelfishpg_tds) | 1.0.0 | [babelfishpg_tds](/babelfishpg_tds) | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** | [LINK](https://babelfishpg.org/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL Server TDS protocol extension |
+| 9130 | [babelfishpg_money](/babelfishpg_money) | 1.1.0 | [babelfishpg_money](/babelfishpg_money) | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** | [LINK](https://babelfishpg.org/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL Server Money Data Type |
+| 9200 | [pgmemcache](/pgmemcache) | 2.3.0 | [pgmemcache](/pgmemcache) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ohmu/pgmemcache) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | memcached interface |
 
 
 
@@ -103,50 +103,3 @@ pg12: orafce_12* pgtt_12* session_variable_12* pg_statement_rollback_12* pg_dbms
 
 --------
 
-## orafce
-
-[`orafce`](/orafce): Functions and operators that emulate a subset of functions and packages from the Oracle RDBMS
-
-## pgtt
-
-[`pgtt`](/pgtt): Extension to add Global Temporary Tables feature to PostgreSQL
-
-## session_variable
-
-[`session_variable`](/session_variable): Registration and manipulation of session variables and constants
-
-## pg_statement_rollback
-
-[`pg_statement_rollback`](/pg_statement_rollback): Server side rollback at statement level for PostgreSQL like Oracle or DB2
-
-## pg_dbms_metadata
-
-[`pg_dbms_metadata`](/pg_dbms_metadata): Extension to add Oracle DBMS_METADATA compatibility to PostgreSQL
-
-## pg_dbms_lock
-
-[`pg_dbms_lock`](/pg_dbms_lock): Extension to add Oracle DBMS_LOCK full compatibility to PostgreSQL
-
-## pg_dbms_job
-
-[`pg_dbms_job`](/pg_dbms_job): Extension to add Oracle DBMS_JOB full compatibility to PostgreSQL
-
-## babelfishpg_common
-
-[`babelfishpg_common`](/babelfishpg_common): SQL Server Transact SQL Datatype Support
-
-## babelfishpg_tsql
-
-[`babelfishpg_tsql`](/babelfishpg_tsql): SQL Server Transact SQL compatibility
-
-## babelfishpg_tds
-
-[`babelfishpg_tds`](/babelfishpg_tds): SQL Server TDS protocol extension
-
-## babelfishpg_money
-
-[`babelfishpg_money`](/babelfishpg_money): SQL Server Money Data Type
-
-## pgmemcache
-
-[`pgmemcache`](/pgmemcache): memcached interface

@@ -1,17 +1,20 @@
 # aggs_for_vecs
 
 
-> [aggs_for_vecs](/https://github.com/pjungwir/aggs_for_vecs): Aggregate functions for array inputs
+> [aggs_for_vecs](https://github.com/pjungwir/aggs_for_vecs): Aggregate functions for array inputs
+>
+> https://github.com/pjungwir/aggs_for_vecs
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [aggs_for_vecs](https://github.com/pjungwir/aggs_for_vecs) | 1.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [aggs_for_vecs](https://github.com/pjungwir/aggs_for_vecs) | 1.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
 
 
 

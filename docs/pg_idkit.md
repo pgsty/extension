@@ -1,17 +1,20 @@
 # pg_idkit
 
 
-> [pg_idkit](/https://github.com/VADOSWARE/pg_idkit): multi-tool for generating new/niche universally unique identifiers (ex. UUIDv6, ULID, KSUID)
+> [pg_idkit](https://github.com/VADOSWARE/pg_idkit): multi-tool for generating new/niche universally unique identifiers (ex. UUIDv6, ULID, KSUID)
+>
+> https://github.com/VADOSWARE/pg_idkit
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_idkit](https://github.com/VADOSWARE/pg_idkit) | 0.2.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pg_idkit](https://github.com/VADOSWARE/pg_idkit) | 0.2.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
 
 
 

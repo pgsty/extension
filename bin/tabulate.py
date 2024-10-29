@@ -76,6 +76,8 @@ COLS = {
     "version":    {'header': 'version'    ,'center': True,  'func': lambda row: str(row['version'])    },
     "repo":       {'header': 'repo'       ,'center': True,  'func': lambda row: str(row['repo'])       },
     "lang":       {'header': 'lang'       ,'center': True,  'func': lambda row: str(row['lang'])       },
+    "utility":    {'header': 'utility'    ,'center': True,  'func': lambda row: str(row['utility'])    },
+    "lead":       {'header': 'lead'       ,'center': True,  'func': lambda row: str(row['lead'])       },
     "has_solib":  {'header': 'has_solib'  ,'center': True,  'func': lambda row: str(row['has_solib'])  },
     "need_ddl":   {'header': 'need_ddl'   ,'center': True,  'func': lambda row: str(row['need_ddl'])   },
     "need_load":  {'header': 'need_load'  ,'center': True,  'func': lambda row: str(row['need_load'])  },
@@ -102,7 +104,7 @@ COLS = {
     "ext4":       {'header': 'Extension'  ,'center': False, 'func': lambda row: "[`%s`](/%s)" % (row["name"], row['name'])  },
     "link":       {'header': 'Website'    ,'center': True,  'func': lambda row: "[LINK](%s)" % row["url"]  },
     "pkg":        {'header': 'Package'    ,'center': False, 'func': lambda row: "[%s](/%s)" % (row['alias'], row['name'])  },
-    "pkg2":       {'header': 'Package'    ,'center': False, 'func': lambda row: "[%s](/%s)" % (row['alias'], row['url'])  },
+    "pkg2":       {'header': 'Package'    ,'center': False, 'func': lambda row: "[%s](%s)" % (row['alias'], row['url'])  },
     "ver":        {'header': 'Version'    ,"center": True,  "func": lambda row: row['version'] },
     "rpmver":     {'header': 'Version'    ,"center": False, "func": lambda row: row['rpm_ver'] },
     "debver":     {'header': 'Version'    ,"center": False, "func": lambda row: row['deb_ver'] },
@@ -129,6 +131,7 @@ COLS = {
     "d14":        {'header': '14'         ,"center": True,  "func": lambda row: BLUE_CHECK if '14' in row['deb_pg'] else '' },
     "d13":        {'header': '13'         ,"center": True,  "func": lambda row: BLUE_CHECK if '13' in row['deb_pg'] else '' },
     "d12":        {'header': '12'         ,"center": True,  "func": lambda row: BLUE_CHECK if '12' in row['deb_pg'] else '' },
+    "bin":        {'header': '`Bin`'      ,'center': True,  'func': lambda row: BLUE_CHECK if row['utility'] else ''   },
     "load":       {'header': '`LOAD`'     ,"center": True,  "func": lambda row: '' if row['need_load'] is None else (RED_EXCLAM if row['need_load'] else '' ) },
     "ddl":        {'header': '`DDL`'      ,"center": True,  "func": lambda row: '' if row['need_ddl' ] is None else (BLUE_CHECK if row['need_ddl' ] else WARN_CROSS) },
     "trust":      {'header': '`TRUST`'    ,"center": True,  "func": lambda row: '' if row['trusted'  ] is None else (BLUE_CHECK if row['trusted'  ] else WARN_CROSS) },
@@ -182,6 +185,7 @@ def load_data(filepath=DATA_PATH):
             if row['rpm_pg']: row['rpm_pg'] = parse_array(row['rpm_pg'])
             if row['deb_pg']: row['deb_pg'] = parse_array(row['deb_pg'])
 
+            row['utility']     =  True if row['utility']   == 't'  else False if row['utility'] == 'f'  else None
             row['lead']        =  True if row['lead']   == 't'  else False if row['lead'] == 'f'  else None
             row['has_solib']   =  True if row['has_solib']   == 't'  else False if row['has_solib'] == 'f'  else None
             row['need_ddl']    =  True if row['need_ddl']    == 't'  else False if row['need_ddl'] == 'f'  else None
@@ -377,7 +381,7 @@ There are **%d** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 
 def generate_all_list():
     ext_table = tabulate(
-        Columns(["cat", "id", "ext3", "ver", "pkg", "lic", "rpmrepo", "debrepo", "link", "load", "dylib", "ddl", "en_desc"]),
+        Columns(["cat", "id", "ext3", "ver", "pkg", "lic", "rpmrepo", "debrepo", "link", "bin", "load", "dylib", "ddl", "en_desc"]),
         lambda row: True
     )
     ver_sections = []
@@ -477,7 +481,7 @@ There are **%d** built-in [**contrib**](contrib) extensions which are shipping a
 
 def generate_contrib_list():
     contrib_table = tabulate(
-        Columns(["cat", "id", "ext2", "ver", "pkg", "r17", "r16", "r15", "r14", "r13", "r12", "load", "dylib", "ddl","trust", "reloc", "en_desc"]),
+        Columns(["cat", "id", "ext2", "ver", "pkg", "r17", "r16", "r15", "r14", "r13", "r12","bin", "load", "dylib", "ddl","trust", "reloc", "en_desc"]),
         lambda row: row['repo'] == 'CONTRIB'
     )
     f = openw('contrib.md')
@@ -511,7 +515,7 @@ def generate_category():
         ext_links = [ getcol("ext4", ext) for ext in exts ]
 
         ext_table = tabulate(
-            Columns(["id", "ext3", "ver", "pkg", "lic", "rpmrepo", "debrepo", "link", "load", "dylib", "ddl", "en_desc"]),
+            Columns(["id", "ext3", "ver", "pkg", "lic", "rpmrepo", "debrepo", "link", "bin", "load", "dylib", "ddl", "en_desc"]),
             lambda row: row['category'] == cate
         )
         rpm_table = tabulate(
@@ -531,10 +535,11 @@ def generate_category():
             rpm_list.append('pg%s: %s'% (ver, rpm_repo_str))
             deb_list.append('pg%s: %s'% (ver, deb_repo_str))
 
-        ext_detail_tmpl = """\n## %s\n\n[`%s`](/%s): %s%s"""
-        ext_details = [ ext_detail_tmpl % (ext['name'], ext['name'], ext['name'],
-                                           '(package alias: `%s`) ' % ext['alias'] if ext['name'] != ext['alias'] else '',
-                                           ext['en_desc']) for ext in exts ]
+        ext_details = []
+        #ext_detail_tmpl = """\n## %s\n\n[`%s`](/%s): %s%s"""
+        #ext_details = [ ext_detail_tmpl % (ext['name'], ext['name'], ext['name'],
+        #                                   '(package alias: `%s`) ' % ext['alias'] if ext['name'] != ext['alias'] else '',
+        #                                   ext['en_desc']) for ext in exts ]
 
 
         with open(cate_index, 'w') as f:
@@ -552,7 +557,7 @@ def generate_category():
 
 
 
-EXTENSION_TEMPLATE = """# %s\n\n\n> %s: %s\n\n\n-------\n
+EXTENSION_TEMPLATE = """%s\n\n
 ## Extension\n\n
 %s\n\n%s
 -----------\n\n
@@ -582,9 +587,10 @@ def generate_extension():
         name, alias, category = ext['name'], ext['alias'], ext['category']
         ext_path = os.path.join(DOCS_PATH, name + '.md')
 
+        header = """# %s\n\n\n> %s: %s\n>\n> %s\n\n\n-------""" % (ext['alias'], getcol('pkg2', ext ) ,ext['en_desc'],  ext['url'])
         # part 1: extension table
         ext_table = tabulate(
-            Columns(["ext", "ver", "lic", "rpmrepo", "debrepo", "lan", "load", "dylib", "ddl", "trust", "reloc"]),
+            Columns(["ext", "ver", "lic", "rpmrepo", "debrepo", "lan", "bin", "load", "dylib", "ddl", "trust", "reloc"]),
             lambda row: row['name'] == name
         )
 
@@ -615,9 +621,15 @@ def generate_extension():
         pigsty_install_preface = '\nInstall `%s` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:\n\n' % getcol("alias", ext)
         pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["%s"]}'\n```\n\n""" % alias
         yum_install_preface = '\nInstall `%s` [RPM](/rpm) from the %s **YUM** repo:\n\n' % (getcol("alias", ext), getcol("rpmrepo", ext))
-        yum_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'dnf install ' + ext['rpm_pkg'].replace('$v', ver) + ';' for ver in ext['rpm_pg'] ])
+        if '$v' not in ext['rpm_pkg']:
+            yum_install_tmpl = """```bash\ndnf instsall %s;\n```\n\n""" % ext['rpm_pkg']
+        else:
+            yum_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'dnf install ' + ext['rpm_pkg'].replace('$v', ver) + ';' for ver in ext['rpm_pg'] ])
         apt_install_preface = '\nInstall `%s` [DEB](/deb) from the %s **APT** repo:\n\n' % (getcol("alias", ext), getcol("rpmrepo", ext))
-        apt_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'apt install ' + ext['deb_pkg'].replace('$v', ver) + ';' for ver in ext['deb_pg'] ])
+        if '$v' not in ext['rpm_pkg']:
+            apt_install_tmpl = """```bash\napt install %s;\n```\n\n""" % ext['deb_pkg']
+        else:
+            apt_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'apt install ' + ext['deb_pkg'].replace('$v', ver) + ';' for ver in ext['deb_pg'] ])
         install_tmpl = pigsty_install_preface + pigsty_install_cmd
         if ext['has_rpm']: install_tmpl = install_tmpl + yum_install_preface + yum_install_tmpl
         if ext['has_deb']: install_tmpl = install_tmpl + apt_install_preface + apt_install_tmpl
@@ -628,7 +640,7 @@ def generate_extension():
         )
 
         content = EXTENSION_TEMPLATE % (
-            ext['alias'], getcol('pkg2', ext ) , ext['en_desc'],
+            header,
             ext_table, ext_additional,
             pkg_table, install_tmpl,
             category, sib_table
@@ -664,9 +676,9 @@ def cate_index_tabulate2():
     return '\n'.join(cates)
 
 
-# generate_all_list()
-# generate_rpm_list()
-# generate_deb_list()
-# generate_contrib_list()
-# generate_category()
+generate_all_list()
+generate_rpm_list()
+generate_deb_list()
+generate_contrib_list()
+generate_category()
 generate_extension()

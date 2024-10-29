@@ -1,17 +1,20 @@
 # pgimportdoc
 
 
-> [pgimportdoc](/https://github.com/okbob/pgimportdoc): command line utility for importing XML, JSON, BYTEA document to PostgreSQL
+> [pgimportdoc](https://github.com/okbob/pgimportdoc): command line utility for importing XML, JSON, BYTEA document to PostgreSQL
+>
+> https://github.com/okbob/pgimportdoc
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgimportdoc](https://github.com/okbob/pgimportdoc) | 0.1.4 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pgimportdoc](https://github.com/okbob/pgimportdoc) | 0.1.4 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** |  | `C` | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
 
 
 

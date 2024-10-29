@@ -1,17 +1,20 @@
 # aggs_for_arrays
 
 
-> [aggs_for_arrays](/https://github.com/pjungwir/aggs_for_arrays): Various functions for computing statistics on arrays of numbers
+> [aggs_for_arrays](https://github.com/pjungwir/aggs_for_arrays): Various functions for computing statistics on arrays of numbers
+>
+> https://github.com/pjungwir/aggs_for_arrays
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [aggs_for_arrays](https://github.com/pjungwir/aggs_for_arrays) | 1.3.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [aggs_for_arrays](https://github.com/pjungwir/aggs_for_arrays) | 1.3.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
 
 
 

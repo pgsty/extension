@@ -1,17 +1,20 @@
 # bgw_replstatus
 
 
-> [bgw_replstatus](/https://github.com/mhagander/bgw_replstatus): Small PostgreSQL background worker to report whether a node is a replication master or standby
+> [bgw_replstatus](https://github.com/mhagander/bgw_replstatus): Small PostgreSQL background worker to report whether a node is a replication master or standby
+>
+> https://github.com/mhagander/bgw_replstatus
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [bgw_replstatus](https://github.com/mhagander/bgw_replstatus) | 1.0.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [bgw_replstatus](https://github.com/mhagander/bgw_replstatus) | 1.0.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
 
 
 

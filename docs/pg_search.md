@@ -1,17 +1,20 @@
 # pg_search
 
 
-> [pg_search](/https://github.com/paradedb/paradedb/tree/dev/pg_search): pg_search: Full text search for PostgreSQL using BM25
+> [pg_search](https://github.com/paradedb/paradedb/tree/dev/pg_search): pg_search: Full text search for PostgreSQL using BM25
+>
+> https://github.com/paradedb/paradedb/tree/dev/pg_search
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_search](https://github.com/paradedb/paradedb/tree/dev/pg_search) | 0.11.1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pg_search](https://github.com/paradedb/paradedb/tree/dev/pg_search) | 0.11.1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
 
 
 

@@ -1,17 +1,20 @@
 # pllua
 
 
-> [pllua](/https://github.com/pllua/pllua): Hstore transform for Lua
+> [pllua](https://github.com/pllua/pllua): Hstore transform for Lua
+>
+> https://github.com/pllua/pllua
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [hstore_pllua](https://github.com/pllua/pllua) | 1.0 | **<span class="tcblue">MIT</span>** |  | **<span class="tccyan">PGDG</span>** | `C` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [hstore_pllua](https://github.com/pllua/pllua) | 1.0 | **<span class="tcblue">MIT</span>** |  | **<span class="tccyan">PGDG</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -50,12 +53,7 @@ Install `pllua` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbo
 Install `pllua` [DEB](/deb) from the  **APT** repo:
 
 ```bash
-apt install postgresql-17-pllua;
-apt install postgresql-16-pllua;
-apt install postgresql-15-pllua;
-apt install postgresql-14-pllua;
-apt install postgresql-13-pllua;
-apt install postgresql-12-pllua;
+apt install postgresql-$v-pllua;
 ```
 
 

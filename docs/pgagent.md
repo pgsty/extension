@@ -1,17 +1,20 @@
 # pgagent
 
 
-> [pgagent](/https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html): A PostgreSQL job scheduler
+> [pgagent](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html): A PostgreSQL job scheduler
+>
+> https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgagent](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html) | 4.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pgagent](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html) | 4.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
 
 
 

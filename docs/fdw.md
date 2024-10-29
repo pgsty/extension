@@ -10,29 +10,29 @@ There are 21 available extensions in this category:
 [`wrappers`](/wrappers) [`multicorn`](/multicorn) [`odbc_fdw`](/odbc_fdw) [`jdbc_fdw`](/jdbc_fdw) [`mysql_fdw`](/mysql_fdw) [`oracle_fdw`](/oracle_fdw) [`tds_fdw`](/tds_fdw) [`db2_fdw`](/db2_fdw) [`sqlite_fdw`](/sqlite_fdw) [`pgbouncer_fdw`](/pgbouncer_fdw) [`mongo_fdw`](/mongo_fdw) [`redis_fdw`](/redis_fdw) [`redis`](/redis) [`kafka_fdw`](/kafka_fdw) [`hdfs_fdw`](/hdfs_fdw) [`firebird_fdw`](/firebird_fdw) [`aws_s3`](/aws_s3) [`log_fdw`](/log_fdw) [`dblink`](/dblink) [`file_fdw`](/file_fdw) [`postgres_fdw`](/postgres_fdw)
 
 
-| ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
-|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:------:|:-------:|:-----:|-------------|
-| 8500 | [wrappers](/wrappers) | 0.4.3 | [wrappers](/wrappers) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/wrappers) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrappers developed by Supabase |
-| 8510 | [multicorn](/multicorn) | 3.0 | [multicorn](/multicorn) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | PGDG | [LINK](https://github.com/pgsql-io/multicorn2) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Fetch foreign data in Python in your PostgreSQL server. |
-| 8520 | [odbc_fdw](/odbc_fdw) | 0.5.1 | [odbc_fdw](/odbc_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | PGDG | [LINK](https://github.com/CartoDB/odbc_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for accessing remote databases using ODBC |
-| 8530 | [jdbc_fdw](/jdbc_fdw) | 1.2 | [jdbc_fdw](/jdbc_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | PGDG | [LINK](https://github.com/pgspider/jdbc_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for remote servers available over JDBC |
-| 8600 | [mysql_fdw](/mysql_fdw) | 1.2 | [mysql_fdw](/mysql_fdw) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/EnterpriseDB/mysql_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for querying a MySQL server |
-| 8610 | [oracle_fdw](/oracle_fdw) | 1.2 | [oracle_fdw](/oracle_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/laurenz/oracle_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign data wrapper for Oracle access |
-| 8620 | [tds_fdw](/tds_fdw) | 2.0.4 | [tds_fdw](/tds_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/tds-fdw/tds_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for querying a TDS database (Sybase or Microsoft SQL Server) |
-| 8630 | [db2_fdw](/db2_fdw) | 6.0.1 | [db2_fdw](/db2_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | PGDG | [LINK](https://github.com/wolfgangbrandl/db2_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign data wrapper for DB2 access |
-| 8640 | [sqlite_fdw](/sqlite_fdw) | 1.1 | [sqlite_fdw](/sqlite_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgspider/sqlite_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQLite Foreign Data Wrapper |
-| 8650 | [pgbouncer_fdw](/pgbouncer_fdw) | 1.2.0 | [pgbouncer_fdw](/pgbouncer_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | PGDG | [LINK](https://github.com/CrunchyData/pgbouncer_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension for querying PgBouncer stats from normal SQL views & running pgbouncer commands from normal SQL functions |
-| 8700 | [mongo_fdw](/mongo_fdw) | 1.1 | [mongo_fdw](/mongo_fdw) | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | PGDG | [LINK](https://github.com/EnterpriseDB/mongo_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign data wrapper for MongoDB access |
-| 8710 | [redis_fdw](/redis_fdw) | 1.0 | [redis_fdw](/redis_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pg-redis-fdw/redis_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for querying a Redis server |
-| 8720 | [redis](/redis) | 0.0.1 | [pg_redis_pubsub](/redis) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/brettlaforge/pg_redis_pubsub) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Send redis pub/sub messages to Redis from PostgreSQL Directly |
-| 8730 | [kafka_fdw](/kafka_fdw) | 0.0.3 | [kafka_fdw](/kafka_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/kafka_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | kafka Foreign Data Wrapper for CSV formated messages |
-| 8740 | [hdfs_fdw](/hdfs_fdw) | 2.0.5 | [hdfs_fdw](/hdfs_fdw) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | PGDG | [LINK](https://github.com/EnterpriseDB/hdfs_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for remote hdfs servers |
-| 8750 | [firebird_fdw](/firebird_fdw) | 1.4.0 | [firebird_fdw](/firebird_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | PIGSTY | [LINK](https://github.com/ibarwick/firebird_fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for Firebird |
-| 8800 | [aws_s3](/aws_s3) | 0.0.1 | [aws_s3](/aws_s3) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/chimpler/postgres-aws-s3) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | aws_s3 postgres extension to import/export data from/to s3 |
-| 8810 | [log_fdw](/log_fdw) | 1.4 | [log_fdw](/log_fdw) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/aws/postgresql-logfdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for Postgres log file access |
-| 8970 | [dblink](/dblink) | 1.2 | [dblink](/dblink) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/dblink.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | connect to other PostgreSQL databases from within a database |
-| 8980 | [file_fdw](/file_fdw) | 1.0 | [file_fdw](/file_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/file-fdw.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for flat file access |
-| 8990 | [postgres_fdw](/postgres_fdw) | 1.1 | [postgres_fdw](/postgres_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/postgres-fdw.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for remote PostgreSQL servers |
+| ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
+|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
+| 8500 | [wrappers](/wrappers) | 0.4.3 | [wrappers](/wrappers) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/wrappers) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrappers developed by Supabase |
+| 8510 | [multicorn](/multicorn) | 3.0 | [multicorn](/multicorn) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/pgsql-io/multicorn2) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Fetch foreign data in Python in your PostgreSQL server. |
+| 8520 | [odbc_fdw](/odbc_fdw) | 0.5.1 | [odbc_fdw](/odbc_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/CartoDB/odbc_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for accessing remote databases using ODBC |
+| 8530 | [jdbc_fdw](/jdbc_fdw) | 1.2 | [jdbc_fdw](/jdbc_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/pgspider/jdbc_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for remote servers available over JDBC |
+| 8600 | [mysql_fdw](/mysql_fdw) | 1.2 | [mysql_fdw](/mysql_fdw) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/EnterpriseDB/mysql_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for querying a MySQL server |
+| 8610 | [oracle_fdw](/oracle_fdw) | 1.2 | [oracle_fdw](/oracle_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/laurenz/oracle_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign data wrapper for Oracle access |
+| 8620 | [tds_fdw](/tds_fdw) | 2.0.4 | [tds_fdw](/tds_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/tds-fdw/tds_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for querying a TDS database (Sybase or Microsoft SQL Server) |
+| 8630 | [db2_fdw](/db2_fdw) | 6.0.1 | [db2_fdw](/db2_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/wolfgangbrandl/db2_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign data wrapper for DB2 access |
+| 8640 | [sqlite_fdw](/sqlite_fdw) | 1.1 | [sqlite_fdw](/sqlite_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgspider/sqlite_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQLite Foreign Data Wrapper |
+| 8650 | [pgbouncer_fdw](/pgbouncer_fdw) | 1.2.0 | [pgbouncer_fdw](/pgbouncer_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/CrunchyData/pgbouncer_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension for querying PgBouncer stats from normal SQL views & running pgbouncer commands from normal SQL functions |
+| 8700 | [mongo_fdw](/mongo_fdw) | 1.1 | [mongo_fdw](/mongo_fdw) | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/EnterpriseDB/mongo_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign data wrapper for MongoDB access |
+| 8710 | [redis_fdw](/redis_fdw) | 1.0 | [redis_fdw](/redis_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pg-redis-fdw/redis_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for querying a Redis server |
+| 8720 | [redis](/redis) | 0.0.1 | [pg_redis_pubsub](/redis) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/brettlaforge/pg_redis_pubsub) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Send redis pub/sub messages to Redis from PostgreSQL Directly |
+| 8730 | [kafka_fdw](/kafka_fdw) | 0.0.3 | [kafka_fdw](/kafka_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/kafka_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | kafka Foreign Data Wrapper for CSV formated messages |
+| 8740 | [hdfs_fdw](/hdfs_fdw) | 2.0.5 | [hdfs_fdw](/hdfs_fdw) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/EnterpriseDB/hdfs_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for remote hdfs servers |
+| 8750 | [firebird_fdw](/firebird_fdw) | 1.4.0 | [firebird_fdw](/firebird_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** |  | [LINK](https://github.com/ibarwick/firebird_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for Firebird |
+| 8800 | [aws_s3](/aws_s3) | 0.0.1 | [aws_s3](/aws_s3) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/chimpler/postgres-aws-s3) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | aws_s3 postgres extension to import/export data from/to s3 |
+| 8810 | [log_fdw](/log_fdw) | 1.4 | [log_fdw](/log_fdw) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/aws/postgresql-logfdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for Postgres log file access |
+| 8970 | [dblink](/dblink) | 1.2 | [dblink](/dblink) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/dblink.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | connect to other PostgreSQL databases from within a database |
+| 8980 | [file_fdw](/file_fdw) | 1.0 | [file_fdw](/file_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/file-fdw.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for flat file access |
+| 8990 | [postgres_fdw](/postgres_fdw) | 1.1 | [postgres_fdw](/postgres_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/postgres-fdw.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for remote PostgreSQL servers |
 
 
 
@@ -125,86 +125,3 @@ pg12: multicorn2_12* mysql_fdw_12* tds_fdw_12* sqlite_fdw_12* pgbouncer_fdw_12* 
 
 --------
 
-## wrappers
-
-[`wrappers`](/wrappers): Foreign data wrappers developed by Supabase
-
-## multicorn
-
-[`multicorn`](/multicorn): Fetch foreign data in Python in your PostgreSQL server.
-
-## odbc_fdw
-
-[`odbc_fdw`](/odbc_fdw): Foreign data wrapper for accessing remote databases using ODBC
-
-## jdbc_fdw
-
-[`jdbc_fdw`](/jdbc_fdw): foreign-data wrapper for remote servers available over JDBC
-
-## mysql_fdw
-
-[`mysql_fdw`](/mysql_fdw): Foreign data wrapper for querying a MySQL server
-
-## oracle_fdw
-
-[`oracle_fdw`](/oracle_fdw): foreign data wrapper for Oracle access
-
-## tds_fdw
-
-[`tds_fdw`](/tds_fdw): Foreign data wrapper for querying a TDS database (Sybase or Microsoft SQL Server)
-
-## db2_fdw
-
-[`db2_fdw`](/db2_fdw): foreign data wrapper for DB2 access
-
-## sqlite_fdw
-
-[`sqlite_fdw`](/sqlite_fdw): SQLite Foreign Data Wrapper
-
-## pgbouncer_fdw
-
-[`pgbouncer_fdw`](/pgbouncer_fdw): Extension for querying PgBouncer stats from normal SQL views & running pgbouncer commands from normal SQL functions
-
-## mongo_fdw
-
-[`mongo_fdw`](/mongo_fdw): foreign data wrapper for MongoDB access
-
-## redis_fdw
-
-[`redis_fdw`](/redis_fdw): Foreign data wrapper for querying a Redis server
-
-## redis
-
-[`redis`](/redis): (package alias: `pg_redis_pubsub`) Send redis pub/sub messages to Redis from PostgreSQL Directly
-
-## kafka_fdw
-
-[`kafka_fdw`](/kafka_fdw): kafka Foreign Data Wrapper for CSV formated messages
-
-## hdfs_fdw
-
-[`hdfs_fdw`](/hdfs_fdw): foreign-data wrapper for remote hdfs servers
-
-## firebird_fdw
-
-[`firebird_fdw`](/firebird_fdw): Foreign data wrapper for Firebird
-
-## aws_s3
-
-[`aws_s3`](/aws_s3): aws_s3 postgres extension to import/export data from/to s3
-
-## log_fdw
-
-[`log_fdw`](/log_fdw): foreign-data wrapper for Postgres log file access
-
-## dblink
-
-[`dblink`](/dblink): connect to other PostgreSQL databases from within a database
-
-## file_fdw
-
-[`file_fdw`](/file_fdw): foreign-data wrapper for flat file access
-
-## postgres_fdw
-
-[`postgres_fdw`](/postgres_fdw): foreign-data wrapper for remote PostgreSQL servers

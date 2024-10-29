@@ -1,17 +1,20 @@
 # pg_redis_pubsub
 
 
-> [pg_redis_pubsub](/https://github.com/brettlaforge/pg_redis_pubsub): Send redis pub/sub messages to Redis from PostgreSQL Directly
+> [pg_redis_pubsub](https://github.com/brettlaforge/pg_redis_pubsub): Send redis pub/sub messages to Redis from PostgreSQL Directly
+>
+> https://github.com/brettlaforge/pg_redis_pubsub
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [redis](https://github.com/brettlaforge/pg_redis_pubsub) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [redis](https://github.com/brettlaforge/pg_redis_pubsub) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
 
 
 

@@ -1,17 +1,20 @@
 # passwordcheck
 
 
-> [passwordcheck](/https://github.com/devrimgunduz/passwordcheck_cracklib): Strengthen PostgreSQL user password checks with cracklib
+> [passwordcheck](https://github.com/devrimgunduz/passwordcheck_cracklib): Strengthen PostgreSQL user password checks with cracklib
+>
+> https://github.com/devrimgunduz/passwordcheck_cracklib
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [passwordcheck_cracklib](https://github.com/devrimgunduz/passwordcheck_cracklib) | 3.0.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [passwordcheck_cracklib](https://github.com/devrimgunduz/passwordcheck_cracklib) | 3.0.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
 
 
 

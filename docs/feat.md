@@ -10,25 +10,25 @@ There are 17 available extensions in this category:
 [`age`](/age) [`hll`](/hll) [`rum`](/rum) [`pg_graphql`](/pg_graphql) [`pg_jsonschema`](/pg_jsonschema) [`jsquery`](/jsquery) [`pg_hint_plan`](/pg_hint_plan) [`hypopg`](/hypopg) [`index_advisor`](/index_advisor) [`plan_filter`](/plan_filter) [`imgsmlr`](/imgsmlr) [`pg_ivm`](/pg_ivm) [`pgmq`](/pgmq) [`pgq`](/pgq) [`pg_cardano`](/pg_cardano) [`rdkit`](/rdkit) [`bloom`](/bloom)
 
 
-| ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
-|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:------:|:-------:|:-----:|-------------|
-| 1700 | [age](/age) | 1.5.0 | [age](/age) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/apache/age) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | AGE graph database extension |
-| 1710 | [hll](/hll) | 2.18 | [hll](/hll) | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/citusdata/postgresql-hll) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | type for storing hyperloglog data |
-| 1720 | [rum](/rum) | 1.3 | [rum](/rum) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/postgrespro/rum) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | RUM index access method |
-| 1730 | [pg_graphql](/pg_graphql) | 1.5.9 | [pg_graphql](/pg_graphql) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/pg_graphql) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_graphql: GraphQL support |
-| 1750 | [pg_jsonschema](/pg_jsonschema) | 0.3.3 | [pg_jsonschema](/pg_jsonschema) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/pg_jsonschema) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | PostgreSQL extension providing JSON Schema validation |
-| 1760 | [jsquery](/jsquery) | 1.1 | [jsquery](/jsquery) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/postgrespro/jsquery) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for jsonb inspection |
-| 1770 | [pg_hint_plan](/pg_hint_plan) | 1.6.1 | [pg_hint_plan](/pg_hint_plan) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ossc-db/pg_hint_plan) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Give PostgreSQL ability to manually force some decisions in execution plans. |
-| 1780 | [hypopg](/hypopg) | 1.4.1 | [hypopg](/hypopg) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/HypoPG/hypopg) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Hypothetical indexes for PostgreSQL |
-| 1790 | [index_advisor](/index_advisor) | 0.2.0 | [index_advisor](/index_advisor) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/index_advisor) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Query index advisor |
-| 1791 | [plan_filter](/plan_filter) | 0.0.1 | [pg_plan_filter](/plan_filter) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgexperts/pg_plan_filter) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | filter statements by their execution plans. |
-| 1800 | [imgsmlr](/imgsmlr) | 1.0 | [imgsmlr](/imgsmlr) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/postgrespro/imgsmlr) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Image similarity with haar |
-| 1810 | [pg_ivm](/pg_ivm) | 1.8 | [pg_ivm](/pg_ivm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/sraoss/pg_ivm) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | incremental view maintenance on PostgreSQL |
-| 1820 | [pgmq](/pgmq) | 1.4.4 | [pgmq](/pgmq) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pgmq) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A lightweight message queue. Like AWS SQS and RSMQ but on Postgres. |
-| 1830 | [pgq](/pgq) | 3.5.1 | [pgq](/pgq) | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgq/pgq) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Generic queue for PostgreSQL |
-| 1840 | [pg_cardano](/pg_cardano) | 1.0.2 | [pg_cardano](/pg_cardano) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/Fell-x27/pg_cardano) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A suite of Cardano-related tools |
-| 1850 | [rdkit](/rdkit) | 4.3.0 | [rdkit](/rdkit) | **<span class="tcblue">BSD-3</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/rdkit/rdkit) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Cheminformatics functionality for PostgreSQL. |
-| 1990 | [bloom](/bloom) | 1.0 | [bloom](/bloom) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/bloom.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | bloom access method - signature file based index |
+| ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
+|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
+| 1700 | [age](/age) | 1.5.0 | [age](/age) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/apache/age) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | AGE graph database extension |
+| 1710 | [hll](/hll) | 2.18 | [hll](/hll) | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/citusdata/postgresql-hll) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | type for storing hyperloglog data |
+| 1720 | [rum](/rum) | 1.3 | [rum](/rum) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/postgrespro/rum) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | RUM index access method |
+| 1730 | [pg_graphql](/pg_graphql) | 1.5.9 | [pg_graphql](/pg_graphql) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/pg_graphql) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_graphql: GraphQL support |
+| 1750 | [pg_jsonschema](/pg_jsonschema) | 0.3.3 | [pg_jsonschema](/pg_jsonschema) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/pg_jsonschema) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | PostgreSQL extension providing JSON Schema validation |
+| 1760 | [jsquery](/jsquery) | 1.1 | [jsquery](/jsquery) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/postgrespro/jsquery) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for jsonb inspection |
+| 1770 | [pg_hint_plan](/pg_hint_plan) | 1.6.1 | [pg_hint_plan](/pg_hint_plan) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ossc-db/pg_hint_plan) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Give PostgreSQL ability to manually force some decisions in execution plans. |
+| 1780 | [hypopg](/hypopg) | 1.4.1 | [hypopg](/hypopg) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/HypoPG/hypopg) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Hypothetical indexes for PostgreSQL |
+| 1790 | [index_advisor](/index_advisor) | 0.2.0 | [index_advisor](/index_advisor) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/index_advisor) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Query index advisor |
+| 1791 | [plan_filter](/plan_filter) | 0.0.1 | [pg_plan_filter](/plan_filter) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgexperts/pg_plan_filter) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | filter statements by their execution plans. |
+| 1800 | [imgsmlr](/imgsmlr) | 1.0 | [imgsmlr](/imgsmlr) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/postgrespro/imgsmlr) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Image similarity with haar |
+| 1810 | [pg_ivm](/pg_ivm) | 1.8 | [pg_ivm](/pg_ivm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/sraoss/pg_ivm) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | incremental view maintenance on PostgreSQL |
+| 1820 | [pgmq](/pgmq) | 1.4.4 | [pgmq](/pgmq) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pgmq) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A lightweight message queue. Like AWS SQS and RSMQ but on Postgres. |
+| 1830 | [pgq](/pgq) | 3.5.1 | [pgq](/pgq) | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgq/pgq) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Generic queue for PostgreSQL |
+| 1840 | [pg_cardano](/pg_cardano) | 1.0.2 | [pg_cardano](/pg_cardano) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/Fell-x27/pg_cardano) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A suite of Cardano-related tools |
+| 1850 | [rdkit](/rdkit) | 4.3.0 | [rdkit](/rdkit) | **<span class="tcblue">BSD-3</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/rdkit/rdkit) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Cheminformatics functionality for PostgreSQL. |
+| 1990 | [bloom](/bloom) | 1.0 | [bloom](/bloom) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/bloom.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | bloom access method - signature file based index |
 
 
 
@@ -120,70 +120,3 @@ pg12: apache-age_12* hll_12* rum_12 pg_jsonschema_12 jsquery_12* pg_hint_plan_12
 
 --------
 
-## age
-
-[`age`](/age): AGE graph database extension
-
-## hll
-
-[`hll`](/hll): type for storing hyperloglog data
-
-## rum
-
-[`rum`](/rum): RUM index access method
-
-## pg_graphql
-
-[`pg_graphql`](/pg_graphql): pg_graphql: GraphQL support
-
-## pg_jsonschema
-
-[`pg_jsonschema`](/pg_jsonschema): PostgreSQL extension providing JSON Schema validation
-
-## jsquery
-
-[`jsquery`](/jsquery): data type for jsonb inspection
-
-## pg_hint_plan
-
-[`pg_hint_plan`](/pg_hint_plan): Give PostgreSQL ability to manually force some decisions in execution plans.
-
-## hypopg
-
-[`hypopg`](/hypopg): Hypothetical indexes for PostgreSQL
-
-## index_advisor
-
-[`index_advisor`](/index_advisor): Query index advisor
-
-## plan_filter
-
-[`plan_filter`](/plan_filter): (package alias: `pg_plan_filter`) filter statements by their execution plans.
-
-## imgsmlr
-
-[`imgsmlr`](/imgsmlr): Image similarity with haar
-
-## pg_ivm
-
-[`pg_ivm`](/pg_ivm): incremental view maintenance on PostgreSQL
-
-## pgmq
-
-[`pgmq`](/pgmq): A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.
-
-## pgq
-
-[`pgq`](/pgq): Generic queue for PostgreSQL
-
-## pg_cardano
-
-[`pg_cardano`](/pg_cardano): A suite of Cardano-related tools
-
-## rdkit
-
-[`rdkit`](/rdkit): Cheminformatics functionality for PostgreSQL.
-
-## bloom
-
-[`bloom`](/bloom): bloom access method - signature file based index

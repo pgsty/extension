@@ -1,17 +1,20 @@
 # pg_timetable
 
 
-> [pg_timetable](/https://github.com/cybertec-postgresql/pg_timetable): Advanced scheduling for PostgreSQL
+> [pg_timetable](https://github.com/cybertec-postgresql/pg_timetable): Advanced scheduling for PostgreSQL
+>
+> https://github.com/cybertec-postgresql/pg_timetable
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_timetable](https://github.com/cybertec-postgresql/pg_timetable) | 5.9.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Go` |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pg_timetable](https://github.com/cybertec-postgresql/pg_timetable) | 5.9.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Go` | <span class="tcblue">✔</span> |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
 
 
 
@@ -46,23 +49,13 @@ Install `pg_timetable` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/)
 Install `pg_timetable` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_timetable;
-dnf install pg_timetable;
-dnf install pg_timetable;
-dnf install pg_timetable;
-dnf install pg_timetable;
-dnf install pg_timetable;
+dnf instsall pg_timetable;
 ```
 
 
 Install `pg_timetable` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install pg-timetable;
-apt install pg-timetable;
-apt install pg-timetable;
-apt install pg-timetable;
-apt install pg-timetable;
 apt install pg-timetable;
 ```
 

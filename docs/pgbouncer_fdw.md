@@ -1,17 +1,20 @@
 # pgbouncer_fdw
 
 
-> [pgbouncer_fdw](/https://github.com/CrunchyData/pgbouncer_fdw): Extension for querying PgBouncer stats from normal SQL views & running pgbouncer commands from normal SQL functions
+> [pgbouncer_fdw](https://github.com/CrunchyData/pgbouncer_fdw): Extension for querying PgBouncer stats from normal SQL views & running pgbouncer commands from normal SQL functions
+>
+> https://github.com/CrunchyData/pgbouncer_fdw
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgbouncer_fdw](https://github.com/CrunchyData/pgbouncer_fdw) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pgbouncer_fdw](https://github.com/CrunchyData/pgbouncer_fdw) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
 
 
 

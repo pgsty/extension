@@ -10,43 +10,43 @@ There are 35 available extensions in this category:
 [`pg_repack`](/pg_repack) [`pg_squeeze`](/pg_squeeze) [`pg_dirtyread`](/pg_dirtyread) [`pgfincore`](/pgfincore) [`pgdd`](/pgdd) [`ddlx`](/ddlx) [`prioritize`](/prioritize) [`pg_checksums`](/pg_checksums) [`pg_readonly`](/pg_readonly) [`safeupdate`](/safeupdate) [`pg_permissions`](/pg_permissions) [`pgautofailover`](/pgautofailover) [`pg_catcheck`](/pg_catcheck) [`pre_prepare`](/pre_prepare) [`pgcozy`](/pgcozy) [`pg_orphaned`](/pg_orphaned) [`pg_crash`](/pg_crash) [`pg_cheat_funcs`](/pg_cheat_funcs) [`pg_savior`](/pg_savior) [`table_log`](/table_log) [`pg_fio`](/pg_fio) [`pgpool_adm`](/pgpool_adm) [`pgpool_recovery`](/pgpool_recovery) [`pgpool_regclass`](/pgpool_regclass) [`pgagent`](/pgagent) [`vacuumlo`](/vacuumlo) [`pg_prewarm`](/pg_prewarm) [`oid2name`](/oid2name) [`lo`](/lo) [`basic_archive`](/basic_archive) [`basebackup_to_shell`](/basebackup_to_shell) [`old_snapshot`](/old_snapshot) [`adminpack`](/adminpack) [`amcheck`](/amcheck) [`pg_surgery`](/pg_surgery)
 
 
-| ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
-|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:------:|:-------:|:-----:|-------------|
-| 5010 | [pg_repack](/pg_repack) | 1.5.0 | [pg_repack](/pg_repack) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/reorg/pg_repack) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Reorganize tables in PostgreSQL databases with minimal locks |
-| 5020 | [pg_squeeze](/pg_squeeze) | 1.7 | [pg_squeeze](/pg_squeeze) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/cybertec-postgresql/pg_squeeze) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A tool to remove unused space from a relation. |
-| 5030 | [pg_dirtyread](/pg_dirtyread) | 2 | [pg_dirtyread](/pg_dirtyread) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/df7cb/pg_dirtyread) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Read dead but unvacuumed rows from table |
-| 5040 | [pgfincore](/pgfincore) | 1.3.1 | [pgfincore](/pgfincore) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/klando/pgfincore) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | examine and manage the os buffer cache |
-| 5050 | [pgdd](/pgdd) | 0.5.2 | [pgdd](/pgdd) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/rustprooflabs/pgdd) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | An in-database data dictionary providing database introspection via standard SQL query syntax. Developed using pgx (https://github.com/zombodb/pgx). |
-| 5060 | [ddlx](/ddlx) | 0.27 | [ddlx](/ddlx) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/lacanoid/pgddl) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | DDL eXtractor functions |
-| 5070 | [prioritize](/prioritize) | 1.0 | [pg_prioritize](/prioritize) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/schmiddy/pg_prioritize) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | get and set the priority of PostgreSQL backends |
-| 5080 | [pg_checksums](/pg_checksums) | 1.1 | [pg_checksums](/pg_checksums) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/credativ/pg_checksums) |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Activate/deactivate/verify checksums in offline Postgres clusters |
-| 5090 | [pg_readonly](/pg_readonly) | 1.0.0 | [pg_readonly](/pg_readonly) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pierreforstmann/pg_readonly) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | cluster database read only |
-| 5100 | [safeupdate](/safeupdate) | 1.4 | [safeupdate](/safeupdate) | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/eradman/pg-safeupdate) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Require criteria for UPDATE and DELETE |
-| 5110 | [pg_permissions](/pg_permissions) | 1.3 | [pg_permissions](/pg_permissions) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/cybertec-postgresql/pg_permissions) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | view object permissions and compare them with the desired state |
-| 5120 | [pgautofailover](/pgautofailover) | 2.1 | [pgautofailover](/pgautofailover) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/hapostgres/pg_auto_failover) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_auto_failover |
-| 5130 | [pg_catcheck](/pg_catcheck) | 1.4.0 | [pg_catcheck](/pg_catcheck) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/EnterpriseDB/pg_catcheck) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Diagnosing system catalog corruption |
-| 5140 | [pre_prepare](/pre_prepare) | 0.4 | [preprepare](/pre_prepare) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/dimitri/preprepare) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Pre Prepare your Statement server side |
-| 5170 | [pgcozy](/pgcozy) | 1.0 | [pgcozy](/pgcozy) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/vventirozos/pgcozy) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Pre-warming shared buffers according to previous pg_buffercache snapshots for PostgreSQL. |
-| 5180 | [pg_orphaned](/pg_orphaned) | 1.0 | [pg_orphaned](/pg_orphaned) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/bdrouvot/pg_orphaned) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Deal with orphaned files |
-| 5190 | [pg_crash](/pg_crash) | 1.0 | [pg_crash](/pg_crash) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/cybertec-postgresql/pg_crash) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Send random signals to random processes |
-| 5200 | [pg_cheat_funcs](/pg_cheat_funcs) | 1.0 | [pg_cheat_funcs](/pg_cheat_funcs) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/MasaoFujii/pg_cheat_funcs) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provides cheat (but useful) functions |
-| 5210 | [pg_savior](/pg_savior) | 0.0.1 | [pg_savior](/pg_savior) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/viggy28/pg_savior) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Postgres extension to save OOPS mistakes |
-| 5220 | [table_log](/table_log) | 0.6.1 | [table_log](/table_log) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/df7cb/table_log) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | record table modification logs and PITR for table/row |
-| 5230 | [pg_fio](/pg_fio) | 1.0 | [pg_fio](/pg_fio) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/csimsek/pgsql-fio) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL File I/O Functions |
-| 5300 | [pgpool_adm](/pgpool_adm) | 1.5 | [pgpool](/pgpool_adm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://pgpool.net/) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Administrative functions for pgPool |
-| 5301 | [pgpool_recovery](/pgpool_recovery) | 1.4 | [pgpool](/pgpool_recovery) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://pgpool.net/) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | recovery functions for pgpool-II for V4.3 |
-| 5302 | [pgpool_regclass](/pgpool_regclass) | 1.0 | [pgpool](/pgpool_regclass) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://pgpool.net/) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | replacement for regclass |
-| 5310 | [pgagent](/pgagent) | 4.2 | [pgagent](/pgagent) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A PostgreSQL job scheduler |
-| 5900 | [vacuumlo](/vacuumlo) | - | [vacuumlo](/vacuumlo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/vacuumlo.html) |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | utility program that will remove any orphaned large objects from a PostgreSQL database |
-| 5910 | [pg_prewarm](/pg_prewarm) | 1.2 | [pg_prewarm](/pg_prewarm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgprewarm.html) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | prewarm relation data |
-| 5920 | [oid2name](/oid2name) | - | [oid2name](/oid2name) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/oid2name.html) |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | utility program that helps administrators to examine the file structure used by PostgreSQL |
-| 5930 | [lo](/lo) | 1.1 | [lo](/lo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/lo.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Large Object maintenance |
-| 5940 | [basic_archive](/basic_archive) | - | [basic_archive](/basic_archive) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/basic-archive.html) |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | an example of an archive module |
-| 5950 | [basebackup_to_shell](/basebackup_to_shell) | - | [basebackup_to_shell](/basebackup_to_shell) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/basebackup-to-shell.html) |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | adds a custom basebackup target called shell |
-| 5960 | [old_snapshot](/old_snapshot) | 1.0 | [old_snapshot](/old_snapshot) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/oldsnapshot.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | utilities in support of old_snapshot_threshold |
-| 5970 | [adminpack](/adminpack) | 2.1 | [adminpack](/adminpack) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/adminpack.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | administrative functions for PostgreSQL |
-| 5980 | [amcheck](/amcheck) | 1.3 | [amcheck](/amcheck) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/amcheck.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for verifying relation integrity |
-| 5990 | [pg_surgery](/pg_surgery) | 1.0 | [pg_surgery](/pg_surgery) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgsurgery.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | extension to perform surgery on a damaged relation |
+| ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
+|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
+| 5010 | [pg_repack](/pg_repack) | 1.5.0 | [pg_repack](/pg_repack) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/reorg/pg_repack) | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Reorganize tables in PostgreSQL databases with minimal locks |
+| 5020 | [pg_squeeze](/pg_squeeze) | 1.7 | [pg_squeeze](/pg_squeeze) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/cybertec-postgresql/pg_squeeze) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A tool to remove unused space from a relation. |
+| 5030 | [pg_dirtyread](/pg_dirtyread) | 2 | [pg_dirtyread](/pg_dirtyread) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/df7cb/pg_dirtyread) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Read dead but unvacuumed rows from table |
+| 5040 | [pgfincore](/pgfincore) | 1.3.1 | [pgfincore](/pgfincore) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/klando/pgfincore) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | examine and manage the os buffer cache |
+| 5050 | [pgdd](/pgdd) | 0.5.2 | [pgdd](/pgdd) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/rustprooflabs/pgdd) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | An in-database data dictionary providing database introspection via standard SQL query syntax. Developed using pgx (https://github.com/zombodb/pgx). |
+| 5060 | [ddlx](/ddlx) | 0.27 | [ddlx](/ddlx) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/lacanoid/pgddl) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | DDL eXtractor functions |
+| 5070 | [prioritize](/prioritize) | 1.0 | [pg_prioritize](/prioritize) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/schmiddy/pg_prioritize) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | get and set the priority of PostgreSQL backends |
+| 5080 | [pg_checksums](/pg_checksums) | 1.1 | [pg_checksums](/pg_checksums) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/credativ/pg_checksums) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Activate/deactivate/verify checksums in offline Postgres clusters |
+| 5090 | [pg_readonly](/pg_readonly) | 1.0.0 | [pg_readonly](/pg_readonly) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pierreforstmann/pg_readonly) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | cluster database read only |
+| 5100 | [safeupdate](/safeupdate) | 1.4 | [safeupdate](/safeupdate) | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/eradman/pg-safeupdate) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Require criteria for UPDATE and DELETE |
+| 5110 | [pg_permissions](/pg_permissions) | 1.3 | [pg_permissions](/pg_permissions) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/cybertec-postgresql/pg_permissions) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | view object permissions and compare them with the desired state |
+| 5120 | [pgautofailover](/pgautofailover) | 2.1 | [pgautofailover](/pgautofailover) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/hapostgres/pg_auto_failover) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_auto_failover |
+| 5130 | [pg_catcheck](/pg_catcheck) | 1.4.0 | [pg_catcheck](/pg_catcheck) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/EnterpriseDB/pg_catcheck) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Diagnosing system catalog corruption |
+| 5140 | [pre_prepare](/pre_prepare) | 0.4 | [preprepare](/pre_prepare) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/dimitri/preprepare) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Pre Prepare your Statement server side |
+| 5170 | [pgcozy](/pgcozy) | 1.0 | [pgcozy](/pgcozy) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/vventirozos/pgcozy) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Pre-warming shared buffers according to previous pg_buffercache snapshots for PostgreSQL. |
+| 5180 | [pg_orphaned](/pg_orphaned) | 1.0 | [pg_orphaned](/pg_orphaned) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/bdrouvot/pg_orphaned) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Deal with orphaned files |
+| 5190 | [pg_crash](/pg_crash) | 1.0 | [pg_crash](/pg_crash) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/cybertec-postgresql/pg_crash) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Send random signals to random processes |
+| 5200 | [pg_cheat_funcs](/pg_cheat_funcs) | 1.0 | [pg_cheat_funcs](/pg_cheat_funcs) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/MasaoFujii/pg_cheat_funcs) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provides cheat (but useful) functions |
+| 5210 | [pg_savior](/pg_savior) | 0.0.1 | [pg_savior](/pg_savior) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/viggy28/pg_savior) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Postgres extension to save OOPS mistakes |
+| 5220 | [table_log](/table_log) | 0.6.1 | [table_log](/table_log) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/df7cb/table_log) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | record table modification logs and PITR for table/row |
+| 5230 | [pg_fio](/pg_fio) | 1.0 | [pg_fio](/pg_fio) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/csimsek/pgsql-fio) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL File I/O Functions |
+| 5300 | [pgpool_adm](/pgpool_adm) | 1.5 | [pgpool](/pgpool_adm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://pgpool.net/) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Administrative functions for pgPool |
+| 5301 | [pgpool_recovery](/pgpool_recovery) | 1.4 | [pgpool](/pgpool_recovery) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://pgpool.net/) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | recovery functions for pgpool-II for V4.3 |
+| 5302 | [pgpool_regclass](/pgpool_regclass) | 1.0 | [pgpool](/pgpool_regclass) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://pgpool.net/) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | replacement for regclass |
+| 5310 | [pgagent](/pgagent) | 4.2 | [pgagent](/pgagent) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A PostgreSQL job scheduler |
+| 5900 | [vacuumlo](/vacuumlo) | - | [vacuumlo](/vacuumlo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/vacuumlo.html) | <span class="tcblue">✔</span> |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | utility program that will remove any orphaned large objects from a PostgreSQL database |
+| 5910 | [pg_prewarm](/pg_prewarm) | 1.2 | [pg_prewarm](/pg_prewarm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgprewarm.html) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | prewarm relation data |
+| 5920 | [oid2name](/oid2name) | - | [oid2name](/oid2name) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/oid2name.html) | <span class="tcblue">✔</span> |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | utility program that helps administrators to examine the file structure used by PostgreSQL |
+| 5930 | [lo](/lo) | 1.1 | [lo](/lo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/lo.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Large Object maintenance |
+| 5940 | [basic_archive](/basic_archive) | - | [basic_archive](/basic_archive) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/basic-archive.html) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | an example of an archive module |
+| 5950 | [basebackup_to_shell](/basebackup_to_shell) | - | [basebackup_to_shell](/basebackup_to_shell) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/basebackup-to-shell.html) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | adds a custom basebackup target called shell |
+| 5960 | [old_snapshot](/old_snapshot) | 1.0 | [old_snapshot](/old_snapshot) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/oldsnapshot.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | utilities in support of old_snapshot_threshold |
+| 5970 | [adminpack](/adminpack) | 2.1 | [adminpack](/adminpack) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/adminpack.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | administrative functions for PostgreSQL |
+| 5980 | [amcheck](/amcheck) | 1.3 | [amcheck](/amcheck) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/amcheck.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for verifying relation integrity |
+| 5990 | [pg_surgery](/pg_surgery) | 1.0 | [pg_surgery](/pg_surgery) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgsurgery.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | extension to perform surgery on a damaged relation |
 
 
 
@@ -91,12 +91,12 @@ pg12: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_che
 | [pg_fio](/pg_fio) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_fio_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL File I/O Functions |
 | [pgpool](/pgpool_adm) | 1.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgpool-II-pg$v-extensions` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Administrative functions for pgPool |
 | [pgagent](/pgagent) | 4.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgagent_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A PostgreSQL job scheduler |
-| [vacuumlo](/vacuumlo) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | utility program that will remove any orphaned large objects from a PostgreSQL database |
+| [vacuumlo](/vacuumlo) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | utility program that will remove any orphaned large objects from a PostgreSQL database |
 | [pg_prewarm](/pg_prewarm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | prewarm relation data |
-| [oid2name](/oid2name) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | utility program that helps administrators to examine the file structure used by PostgreSQL |
+| [oid2name](/oid2name) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | utility program that helps administrators to examine the file structure used by PostgreSQL |
 | [lo](/lo) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Large Object maintenance |
-| [basic_archive](/basic_archive) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | an example of an archive module |
-| [basebackup_to_shell](/basebackup_to_shell) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | adds a custom basebackup target called shell |
+| [basic_archive](/basic_archive) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | an example of an archive module |
+| [basebackup_to_shell](/basebackup_to_shell) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | adds a custom basebackup target called shell |
 | [old_snapshot](/old_snapshot) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | utilities in support of old_snapshot_threshold |
 | [adminpack](/adminpack) | 2.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | administrative functions for PostgreSQL |
 | [amcheck](/amcheck) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for verifying relation integrity |
@@ -145,12 +145,12 @@ pg12: pg_repack_12* pg_squeeze_12* pg_dirtyread_12* pgfincore_12* pgdd_12 ddlx_1
 | [pg_fio](/pg_fio) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-fio` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL File I/O Functions |
 | [pgpool](/pgpool_adm) | 1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgpool2` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Administrative functions for pgPool |
 | [pgagent](/pgagent) | 4.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgagent` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A PostgreSQL job scheduler |
-| [vacuumlo](/vacuumlo) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | utility program that will remove any orphaned large objects from a PostgreSQL database |
+| [vacuumlo](/vacuumlo) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | utility program that will remove any orphaned large objects from a PostgreSQL database |
 | [pg_prewarm](/pg_prewarm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | prewarm relation data |
-| [oid2name](/oid2name) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | utility program that helps administrators to examine the file structure used by PostgreSQL |
+| [oid2name](/oid2name) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | utility program that helps administrators to examine the file structure used by PostgreSQL |
 | [lo](/lo) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Large Object maintenance |
-| [basic_archive](/basic_archive) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | an example of an archive module |
-| [basebackup_to_shell](/basebackup_to_shell) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | adds a custom basebackup target called shell |
+| [basic_archive](/basic_archive) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | an example of an archive module |
+| [basebackup_to_shell](/basebackup_to_shell) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | adds a custom basebackup target called shell |
 | [old_snapshot](/old_snapshot) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | utilities in support of old_snapshot_threshold |
 | [adminpack](/adminpack) | 2.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | administrative functions for PostgreSQL |
 | [amcheck](/amcheck) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for verifying relation integrity |
@@ -171,142 +171,3 @@ pg12: pg_repack_12* pg_squeeze_12* pg_dirtyread_12* pgfincore_12* pgdd_12 ddlx_1
 
 --------
 
-## pg_repack
-
-[`pg_repack`](/pg_repack): Reorganize tables in PostgreSQL databases with minimal locks
-
-## pg_squeeze
-
-[`pg_squeeze`](/pg_squeeze): A tool to remove unused space from a relation.
-
-## pg_dirtyread
-
-[`pg_dirtyread`](/pg_dirtyread): Read dead but unvacuumed rows from table
-
-## pgfincore
-
-[`pgfincore`](/pgfincore): examine and manage the os buffer cache
-
-## pgdd
-
-[`pgdd`](/pgdd): An in-database data dictionary providing database introspection via standard SQL query syntax. Developed using pgx (https://github.com/zombodb/pgx).
-
-## ddlx
-
-[`ddlx`](/ddlx): DDL eXtractor functions
-
-## prioritize
-
-[`prioritize`](/prioritize): (package alias: `pg_prioritize`) get and set the priority of PostgreSQL backends
-
-## pg_checksums
-
-[`pg_checksums`](/pg_checksums): Activate/deactivate/verify checksums in offline Postgres clusters
-
-## pg_readonly
-
-[`pg_readonly`](/pg_readonly): cluster database read only
-
-## safeupdate
-
-[`safeupdate`](/safeupdate): Require criteria for UPDATE and DELETE
-
-## pg_permissions
-
-[`pg_permissions`](/pg_permissions): view object permissions and compare them with the desired state
-
-## pgautofailover
-
-[`pgautofailover`](/pgautofailover): pg_auto_failover
-
-## pg_catcheck
-
-[`pg_catcheck`](/pg_catcheck): Diagnosing system catalog corruption
-
-## pre_prepare
-
-[`pre_prepare`](/pre_prepare): (package alias: `preprepare`) Pre Prepare your Statement server side
-
-## pgcozy
-
-[`pgcozy`](/pgcozy): Pre-warming shared buffers according to previous pg_buffercache snapshots for PostgreSQL.
-
-## pg_orphaned
-
-[`pg_orphaned`](/pg_orphaned): Deal with orphaned files
-
-## pg_crash
-
-[`pg_crash`](/pg_crash): Send random signals to random processes
-
-## pg_cheat_funcs
-
-[`pg_cheat_funcs`](/pg_cheat_funcs): Provides cheat (but useful) functions
-
-## pg_savior
-
-[`pg_savior`](/pg_savior): Postgres extension to save OOPS mistakes
-
-## table_log
-
-[`table_log`](/table_log): record table modification logs and PITR for table/row
-
-## pg_fio
-
-[`pg_fio`](/pg_fio): PostgreSQL File I/O Functions
-
-## pgpool_adm
-
-[`pgpool_adm`](/pgpool_adm): (package alias: `pgpool`) Administrative functions for pgPool
-
-## pgpool_recovery
-
-[`pgpool_recovery`](/pgpool_recovery): (package alias: `pgpool`) recovery functions for pgpool-II for V4.3
-
-## pgpool_regclass
-
-[`pgpool_regclass`](/pgpool_regclass): (package alias: `pgpool`) replacement for regclass
-
-## pgagent
-
-[`pgagent`](/pgagent): A PostgreSQL job scheduler
-
-## vacuumlo
-
-[`vacuumlo`](/vacuumlo): utility program that will remove any orphaned large objects from a PostgreSQL database
-
-## pg_prewarm
-
-[`pg_prewarm`](/pg_prewarm): prewarm relation data
-
-## oid2name
-
-[`oid2name`](/oid2name): utility program that helps administrators to examine the file structure used by PostgreSQL
-
-## lo
-
-[`lo`](/lo): Large Object maintenance
-
-## basic_archive
-
-[`basic_archive`](/basic_archive): an example of an archive module
-
-## basebackup_to_shell
-
-[`basebackup_to_shell`](/basebackup_to_shell): adds a custom basebackup target called shell
-
-## old_snapshot
-
-[`old_snapshot`](/old_snapshot): utilities in support of old_snapshot_threshold
-
-## adminpack
-
-[`adminpack`](/adminpack): administrative functions for PostgreSQL
-
-## amcheck
-
-[`amcheck`](/amcheck): functions for verifying relation integrity
-
-## pg_surgery
-
-[`pg_surgery`](/pg_surgery): extension to perform surgery on a damaged relation

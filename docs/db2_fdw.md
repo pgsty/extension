@@ -1,17 +1,20 @@
 # db2_fdw
 
 
-> [db2_fdw](/https://github.com/wolfgangbrandl/db2_fdw): foreign data wrapper for DB2 access
+> [db2_fdw](https://github.com/wolfgangbrandl/db2_fdw): foreign data wrapper for DB2 access
+>
+> https://github.com/wolfgangbrandl/db2_fdw
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [db2_fdw](https://github.com/wolfgangbrandl/db2_fdw) | 6.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [db2_fdw](https://github.com/wolfgangbrandl/db2_fdw) | 6.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
 
 
 

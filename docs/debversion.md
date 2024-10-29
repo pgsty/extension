@@ -1,17 +1,20 @@
 # debversion
 
 
-> [debversion](/https://github.com/ATIX-AG/postgresql-debversion-evr): Debian version number data type
+> [debversion](https://github.com/ATIX-AG/postgresql-debversion-evr): Debian version number data type
+>
+> https://github.com/ATIX-AG/postgresql-debversion-evr
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [debversion](https://github.com/ATIX-AG/postgresql-debversion-evr) | 1.2 | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tccyan">PGDG</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [debversion](https://github.com/ATIX-AG/postgresql-debversion-evr) | 1.2 | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -49,12 +52,7 @@ Install `debversion` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) p
 Install `debversion` [DEB](/deb) from the  **APT** repo:
 
 ```bash
-apt install postgresql-17-debversion;
-apt install postgresql-16-debversion;
-apt install postgresql-15-debversion;
-apt install postgresql-14-debversion;
-apt install postgresql-13-debversion;
-apt install postgresql-12-debversion;
+apt install postgresql-$v-debversion;
 ```
 
 

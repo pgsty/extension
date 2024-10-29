@@ -1,17 +1,20 @@
 # pg_dbms_lock
 
 
-> [pg_dbms_lock](/https://github.com/HexaCluster/pg_dbms_lock): Extension to add Oracle DBMS_LOCK full compatibility to PostgreSQL
+> [pg_dbms_lock](https://github.com/HexaCluster/pg_dbms_lock): Extension to add Oracle DBMS_LOCK full compatibility to PostgreSQL
+>
+> https://github.com/HexaCluster/pg_dbms_lock
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_dbms_lock](https://github.com/HexaCluster/pg_dbms_lock) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pg_dbms_lock](https://github.com/HexaCluster/pg_dbms_lock) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
 
 
 

@@ -1,17 +1,20 @@
 # pg_rrule
 
 
-> [pg_rrule](/https://github.com/petropavel13/pg_rrule): RRULE field type for PostgreSQL
+> [pg_rrule](https://github.com/petropavel13/pg_rrule): RRULE field type for PostgreSQL
+>
+> https://github.com/petropavel13/pg_rrule
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_rrule](https://github.com/petropavel13/pg_rrule) | 0.2.0 | **<span class="tcblue">MIT</span>** |  | **<span class="tccyan">PGDG</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pg_rrule](https://github.com/petropavel13/pg_rrule) | 0.2.0 | **<span class="tcblue">MIT</span>** |  | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -49,12 +52,7 @@ Install `pg_rrule` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pla
 Install `pg_rrule` [DEB](/deb) from the  **APT** repo:
 
 ```bash
-apt install postgresql-17-pg-rrule;
-apt install postgresql-16-pg-rrule;
-apt install postgresql-15-pg-rrule;
-apt install postgresql-14-pg-rrule;
-apt install postgresql-13-pg-rrule;
-apt install postgresql-12-pg-rrule;
+apt install postgresql-$v-pg-rrule;
 ```
 
 

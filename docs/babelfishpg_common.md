@@ -1,17 +1,20 @@
 # babelfishpg_common
 
 
-> [babelfishpg_common](/https://babelfishpg.org/): SQL Server Transact SQL Datatype Support
+> [babelfishpg_common](https://babelfishpg.org/): SQL Server Transact SQL Datatype Support
+>
+> https://babelfishpg.org/
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [babelfishpg_common](https://babelfishpg.org/) | 3.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [babelfishpg_common](https://babelfishpg.org/) | 3.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcorange">WILTON</span>** | **<span class="tcorange">WILTON</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -50,7 +53,7 @@ Install `babelfishpg_common` via [Pigsty](https://pigsty.cc/docs/pgext/usage/ins
 Install `babelfishpg_common` [RPM](/rpm) from the **<span class="tcorange">WILTON</span>** **YUM** repo:
 
 ```bash
-dnf install babelfishpg-common*;
+dnf instsall babelfishpg-common*;
 ```
 
 

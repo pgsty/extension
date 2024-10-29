@@ -1,17 +1,20 @@
 # mongo_fdw
 
 
-> [mongo_fdw](/https://github.com/EnterpriseDB/mongo_fdw): foreign data wrapper for MongoDB access
+> [mongo_fdw](https://github.com/EnterpriseDB/mongo_fdw): foreign data wrapper for MongoDB access
+>
+> https://github.com/EnterpriseDB/mongo_fdw
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [mongo_fdw](https://github.com/EnterpriseDB/mongo_fdw) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [mongo_fdw](https://github.com/EnterpriseDB/mongo_fdw) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** |  |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
 
 
 

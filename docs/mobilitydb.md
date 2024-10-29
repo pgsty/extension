@@ -1,17 +1,20 @@
 # mobilitydb
 
 
-> [mobilitydb](/https://github.com/MobilityDB/MobilityDB): MobilityDB geospatial trajectory data management & analysis platform
+> [mobilitydb](https://github.com/MobilityDB/MobilityDB): MobilityDB geospatial trajectory data management & analysis platform
+>
+> https://github.com/MobilityDB/MobilityDB
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [mobilitydb](https://github.com/MobilityDB/MobilityDB) | 1.1.1 | **<span class="tcwarn">GPLv3</span>** |  | **<span class="tccyan">PGDG</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [mobilitydb](https://github.com/MobilityDB/MobilityDB) | 1.1.1 | **<span class="tcwarn">GPLv3</span>** |  | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -49,11 +52,7 @@ Install `mobilitydb` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) p
 Install `mobilitydb` [DEB](/deb) from the  **APT** repo:
 
 ```bash
-apt install postgresql-16-mobilitydb;
-apt install postgresql-15-mobilitydb;
-apt install postgresql-14-mobilitydb;
-apt install postgresql-13-mobilitydb;
-apt install postgresql-12-mobilitydb;
+apt install postgresql-$v-mobilitydb;
 ```
 
 

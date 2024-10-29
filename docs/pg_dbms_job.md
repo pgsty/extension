@@ -1,17 +1,20 @@
 # pg_dbms_job
 
 
-> [pg_dbms_job](/https://github.com/MigOpsRepos/pg_dbms_job): Extension to add Oracle DBMS_JOB full compatibility to PostgreSQL
+> [pg_dbms_job](https://github.com/MigOpsRepos/pg_dbms_job): Extension to add Oracle DBMS_JOB full compatibility to PostgreSQL
+>
+> https://github.com/MigOpsRepos/pg_dbms_job
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_dbms_job](https://github.com/MigOpsRepos/pg_dbms_job) | 1.5.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pg_dbms_job](https://github.com/MigOpsRepos/pg_dbms_job) | 1.5.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
 
 
 

@@ -10,33 +10,33 @@ There are 25 available extensions in this category:
 [`passwordcheck_cracklib`](/passwordcheck_cracklib) [`supautils`](/supautils) [`pgsodium`](/pgsodium) [`supabase_vault`](/supabase_vault) [`anon`](/anon) [`pg_tde`](/pg_tde) [`pgsmcrypto`](/pgsmcrypto) [`pgaudit`](/pgaudit) [`pgauditlogtofile`](/pgauditlogtofile) [`pg_auth_mon`](/pg_auth_mon) [`credcheck`](/credcheck) [`pgcryptokey`](/pgcryptokey) [`pg_jobmon`](/pg_jobmon) [`logerrors`](/logerrors) [`login_hook`](/login_hook) [`set_user`](/set_user) [`pg_snakeoil`](/pg_snakeoil) [`pgextwlist`](/pgextwlist) [`pg_auditor`](/pg_auditor) [`sslutils`](/sslutils) [`noset`](/noset) [`sepgsql`](/sepgsql) [`auth_delay`](/auth_delay) [`pgcrypto`](/pgcrypto) [`passwordcheck`](/passwordcheck)
 
 
-| ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
-|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:------:|:-------:|:-----:|-------------|
-| 7000 | [passwordcheck_cracklib](/passwordcheck_cracklib) | 3.0.0 | [passwordcheck](/passwordcheck_cracklib) | **<span class="tcwarn">LGPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/devrimgunduz/passwordcheck_cracklib) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Strengthen PostgreSQL user password checks with cracklib |
-| 7010 | [supautils](/supautils) | 2.5.0 | [supautils](/supautils) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/supautils) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Extension that secures a cluster on a cloud environment |
-| 7020 | [pgsodium](/pgsodium) | 3.1.9 | [pgsodium](/pgsodium) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/michelp/pgsodium) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Postgres extension for libsodium functions |
-| 7030 | [supabase_vault](/supabase_vault) | 0.2.8 | [pg_vault](/supabase_vault) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/vault) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Supabase Vault Extension |
-| 7040 | [anon](/anon) | 1.3.2 | [anonymizer](/anon) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://postgresql-anonymizer.readthedocs.io/en/stable/) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Data anonymization tools |
-| 7050 | [pg_tde](/pg_tde) | 1.0 | [pg_tde](/pg_tde) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/Percona-Lab/pg_tde) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_tde access method |
-| 7060 | [pgsmcrypto](/pgsmcrypto) | 0.1.0 | [pgsmcrypto](/pgsmcrypto) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/zhuobie/pgsmcrypto) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL SM Algorithm Extension |
-| 7070 | [pgaudit](/pgaudit) | 16.0 | [pgaudit](/pgaudit) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgaudit/pgaudit) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | provides auditing functionality |
-| 7080 | [pgauditlogtofile](/pgauditlogtofile) | 1.6 | [pgauditlogtofile](/pgauditlogtofile) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/fmbiete/pgauditlogtofile) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pgAudit addon to redirect audit log to an independent file |
-| 7090 | [pg_auth_mon](/pg_auth_mon) | 1.1 | [pg_auth_mon](/pg_auth_mon) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/RafiaSabih/pg_auth_mon) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | monitor connection attempts per user |
-| 7100 | [credcheck](/credcheck) | 2.7.0 | [credcheck](/credcheck) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/MigOpsRepos/credcheck) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | credcheck - postgresql plain text credential checker |
-| 7110 | [pgcryptokey](/pgcryptokey) | 1.0 | [pgcryptokey](/pgcryptokey) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://momjian.us/download/pgcryptokey/) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | cryptographic key management |
-| 7120 | [pg_jobmon](/pg_jobmon) | 1.4.1 | [pg_jobmon](/pg_jobmon) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/omniti-labs/pg_jobmon) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension for logging and monitoring functions in PostgreSQL |
-| 7130 | [logerrors](/logerrors) | 2.1 | [logerrors](/logerrors) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/munakoiso/logerrors) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Function for collecting statistics about messages in logfile |
-| 7140 | [login_hook](/login_hook) | 1.6 | [login_hook](/login_hook) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/splendiddata/login_hook) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | login_hook - hook to execute login_hook.login() at login time |
-| 7150 | [set_user](/set_user) | 4.1.0 | [set_user](/set_user) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgaudit/set_user) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | similar to SET ROLE but with added logging |
-| 7170 | [pg_snakeoil](/pg_snakeoil) | 1 | [pg_snakeoil](/pg_snakeoil) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/credativ/pg_snakeoil) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | The PostgreSQL Antivirus |
-| 7180 | [pgextwlist](/pgextwlist) | 1.17 | [pgextwlist](/pgextwlist) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/dimitri/pgextwlist) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | PostgreSQL Extension Whitelisting |
-| 7190 | [pg_auditor](/pg_auditor) | 0.2 | [pg_auditor](/pg_auditor) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/kouber/pg_auditor) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Audit data changes and provide flashback ability |
-| 7200 | [sslutils](/sslutils) | 1.3 | [sslutils](/sslutils) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/EnterpriseDB/sslutils) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A Postgres extension for managing SSL certificates through SQL |
-| 7210 | [noset](/noset) | 0.3.0 | [noset](/noset) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://gitlab.com/ongresinc/extensions/noset) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Module for blocking SET variables for non-super users. |
-| 7960 | [sepgsql](/sepgsql) | - | [sepgsql](/sepgsql) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/sepgsql.html) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | label-based mandatory access control (MAC) based on SELinux security policy. |
-| 7970 | [auth_delay](/auth_delay) | - | [auth_delay](/auth_delay) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/auth-delay.html) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | pause briefly before reporting authentication failure |
-| 7980 | [pgcrypto](/pgcrypto) | 1.3 | [pgcrypto](/pgcrypto) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgcrypto.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | cryptographic functions |
-| 7990 | [passwordcheck](/passwordcheck) | - | [passwordcheck](/passwordcheck) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/passwordcheck.html) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | checks user passwords and reject weak password |
+| ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
+|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
+| 7000 | [passwordcheck_cracklib](/passwordcheck_cracklib) | 3.0.0 | [passwordcheck](/passwordcheck_cracklib) | **<span class="tcwarn">LGPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/devrimgunduz/passwordcheck_cracklib) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Strengthen PostgreSQL user password checks with cracklib |
+| 7010 | [supautils](/supautils) | 2.5.0 | [supautils](/supautils) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/supautils) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Extension that secures a cluster on a cloud environment |
+| 7020 | [pgsodium](/pgsodium) | 3.1.9 | [pgsodium](/pgsodium) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/michelp/pgsodium) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Postgres extension for libsodium functions |
+| 7030 | [supabase_vault](/supabase_vault) | 0.2.8 | [pg_vault](/supabase_vault) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/vault) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Supabase Vault Extension |
+| 7040 | [anon](/anon) | 1.3.2 | [anonymizer](/anon) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://postgresql-anonymizer.readthedocs.io/en/stable/) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Data anonymization tools |
+| 7050 | [pg_tde](/pg_tde) | 1.0 | [pg_tde](/pg_tde) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/Percona-Lab/pg_tde) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_tde access method |
+| 7060 | [pgsmcrypto](/pgsmcrypto) | 0.1.0 | [pgsmcrypto](/pgsmcrypto) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/zhuobie/pgsmcrypto) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL SM Algorithm Extension |
+| 7070 | [pgaudit](/pgaudit) | 16.0 | [pgaudit](/pgaudit) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgaudit/pgaudit) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | provides auditing functionality |
+| 7080 | [pgauditlogtofile](/pgauditlogtofile) | 1.6 | [pgauditlogtofile](/pgauditlogtofile) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/fmbiete/pgauditlogtofile) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pgAudit addon to redirect audit log to an independent file |
+| 7090 | [pg_auth_mon](/pg_auth_mon) | 1.1 | [pg_auth_mon](/pg_auth_mon) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/RafiaSabih/pg_auth_mon) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | monitor connection attempts per user |
+| 7100 | [credcheck](/credcheck) | 2.7.0 | [credcheck](/credcheck) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/MigOpsRepos/credcheck) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | credcheck - postgresql plain text credential checker |
+| 7110 | [pgcryptokey](/pgcryptokey) | 1.0 | [pgcryptokey](/pgcryptokey) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://momjian.us/download/pgcryptokey/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | cryptographic key management |
+| 7120 | [pg_jobmon](/pg_jobmon) | 1.4.1 | [pg_jobmon](/pg_jobmon) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/omniti-labs/pg_jobmon) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension for logging and monitoring functions in PostgreSQL |
+| 7130 | [logerrors](/logerrors) | 2.1 | [logerrors](/logerrors) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/munakoiso/logerrors) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Function for collecting statistics about messages in logfile |
+| 7140 | [login_hook](/login_hook) | 1.6 | [login_hook](/login_hook) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/splendiddata/login_hook) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | login_hook - hook to execute login_hook.login() at login time |
+| 7150 | [set_user](/set_user) | 4.1.0 | [set_user](/set_user) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgaudit/set_user) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | similar to SET ROLE but with added logging |
+| 7170 | [pg_snakeoil](/pg_snakeoil) | 1 | [pg_snakeoil](/pg_snakeoil) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/credativ/pg_snakeoil) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | The PostgreSQL Antivirus |
+| 7180 | [pgextwlist](/pgextwlist) | 1.17 | [pgextwlist](/pgextwlist) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/dimitri/pgextwlist) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | PostgreSQL Extension Whitelisting |
+| 7190 | [pg_auditor](/pg_auditor) | 0.2 | [pg_auditor](/pg_auditor) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/kouber/pg_auditor) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Audit data changes and provide flashback ability |
+| 7200 | [sslutils](/sslutils) | 1.3 | [sslutils](/sslutils) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/EnterpriseDB/sslutils) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A Postgres extension for managing SSL certificates through SQL |
+| 7210 | [noset](/noset) | 0.3.0 | [noset](/noset) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://gitlab.com/ongresinc/extensions/noset) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Module for blocking SET variables for non-super users. |
+| 7960 | [sepgsql](/sepgsql) | - | [sepgsql](/sepgsql) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/sepgsql.html) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | label-based mandatory access control (MAC) based on SELinux security policy. |
+| 7970 | [auth_delay](/auth_delay) | - | [auth_delay](/auth_delay) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/auth-delay.html) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | pause briefly before reporting authentication failure |
+| 7980 | [pgcrypto](/pgcrypto) | 1.3 | [pgcrypto](/pgcrypto) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgcrypto.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | cryptographic functions |
+| 7990 | [passwordcheck](/passwordcheck) | - | [passwordcheck](/passwordcheck) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/passwordcheck.html) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | checks user passwords and reject weak password |
 
 
 
@@ -79,8 +79,8 @@ pg12: passwordcheck pgsodium pg_vault anonymizer pgsmcrypto pgaudit pgauditlogto
 | [pg_auditor](/pg_auditor) | 0.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_auditor_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Audit data changes and provide flashback ability |
 | [sslutils](/sslutils) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `sslutils_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A Postgres extension for managing SSL certificates through SQL |
 | [noset](/noset) | 0.3.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `noset_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Module for blocking SET variables for non-super users. |
-| [sepgsql](/sepgsql) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | label-based mandatory access control (MAC) based on SELinux security policy. |
-| [auth_delay](/auth_delay) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pause briefly before reporting authentication failure |
+| [sepgsql](/sepgsql) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | label-based mandatory access control (MAC) based on SELinux security policy. |
+| [auth_delay](/auth_delay) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pause briefly before reporting authentication failure |
 | [pgcrypto](/pgcrypto) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | cryptographic functions |
 
 
@@ -124,8 +124,8 @@ pg12: passwordcheck_cracklib_12* pgsodium_12* vault_12* postgresql_anonymizer_12
 | [pg_auditor](/pg_auditor) | 0.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-auditor` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Audit data changes and provide flashback ability |
 | [sslutils](/sslutils) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-sslutils` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A Postgres extension for managing SSL certificates through SQL |
 | [noset](/noset) | 0.3.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-noset` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Module for blocking SET variables for non-super users. |
-| [sepgsql](/sepgsql) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | label-based mandatory access control (MAC) based on SELinux security policy. |
-| [auth_delay](/auth_delay) | 16.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pause briefly before reporting authentication failure |
+| [sepgsql](/sepgsql) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | label-based mandatory access control (MAC) based on SELinux security policy. |
+| [auth_delay](/auth_delay) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pause briefly before reporting authentication failure |
 | [pgcrypto](/pgcrypto) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | cryptographic functions |
 
 
@@ -143,102 +143,3 @@ pg12: passwordcheck_cracklib_12* pgsodium_12* vault_12* postgresql_anonymizer_12
 
 --------
 
-## passwordcheck_cracklib
-
-[`passwordcheck_cracklib`](/passwordcheck_cracklib): (package alias: `passwordcheck`) Strengthen PostgreSQL user password checks with cracklib
-
-## supautils
-
-[`supautils`](/supautils): Extension that secures a cluster on a cloud environment
-
-## pgsodium
-
-[`pgsodium`](/pgsodium): Postgres extension for libsodium functions
-
-## supabase_vault
-
-[`supabase_vault`](/supabase_vault): (package alias: `pg_vault`) Supabase Vault Extension
-
-## anon
-
-[`anon`](/anon): (package alias: `anonymizer`) Data anonymization tools
-
-## pg_tde
-
-[`pg_tde`](/pg_tde): pg_tde access method
-
-## pgsmcrypto
-
-[`pgsmcrypto`](/pgsmcrypto): PostgreSQL SM Algorithm Extension
-
-## pgaudit
-
-[`pgaudit`](/pgaudit): provides auditing functionality
-
-## pgauditlogtofile
-
-[`pgauditlogtofile`](/pgauditlogtofile): pgAudit addon to redirect audit log to an independent file
-
-## pg_auth_mon
-
-[`pg_auth_mon`](/pg_auth_mon): monitor connection attempts per user
-
-## credcheck
-
-[`credcheck`](/credcheck): credcheck - postgresql plain text credential checker
-
-## pgcryptokey
-
-[`pgcryptokey`](/pgcryptokey): cryptographic key management
-
-## pg_jobmon
-
-[`pg_jobmon`](/pg_jobmon): Extension for logging and monitoring functions in PostgreSQL
-
-## logerrors
-
-[`logerrors`](/logerrors): Function for collecting statistics about messages in logfile
-
-## login_hook
-
-[`login_hook`](/login_hook): login_hook - hook to execute login_hook.login() at login time
-
-## set_user
-
-[`set_user`](/set_user): similar to SET ROLE but with added logging
-
-## pg_snakeoil
-
-[`pg_snakeoil`](/pg_snakeoil): The PostgreSQL Antivirus
-
-## pgextwlist
-
-[`pgextwlist`](/pgextwlist): PostgreSQL Extension Whitelisting
-
-## pg_auditor
-
-[`pg_auditor`](/pg_auditor): Audit data changes and provide flashback ability
-
-## sslutils
-
-[`sslutils`](/sslutils): A Postgres extension for managing SSL certificates through SQL
-
-## noset
-
-[`noset`](/noset): Module for blocking SET variables for non-super users.
-
-## sepgsql
-
-[`sepgsql`](/sepgsql): label-based mandatory access control (MAC) based on SELinux security policy.
-
-## auth_delay
-
-[`auth_delay`](/auth_delay): pause briefly before reporting authentication failure
-
-## pgcrypto
-
-[`pgcrypto`](/pgcrypto): cryptographic functions
-
-## passwordcheck
-
-[`passwordcheck`](/passwordcheck): checks user passwords and reject weak password

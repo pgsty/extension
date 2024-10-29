@@ -1,17 +1,20 @@
 # pgloader
 
 
-> [pgloader](/https://github.com/dimitri/pgloader): Migrate to PostgreSQL in a single command!
+> [pgloader](https://github.com/dimitri/pgloader): Migrate to PostgreSQL in a single command!
+>
+> https://github.com/dimitri/pgloader
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgloader](https://github.com/dimitri/pgloader) | 3.6.10 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `Lisp` |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pgloader](https://github.com/dimitri/pgloader) | 3.6.10 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `Lisp` |  |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
 
 
 
@@ -46,23 +49,13 @@ Install `pgloader` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pla
 Install `pgloader` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pgloader;
-dnf install pgloader;
-dnf install pgloader;
-dnf install pgloader;
-dnf install pgloader;
-dnf install pgloader;
+dnf instsall pgloader;
 ```
 
 
 Install `pgloader` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
-apt install pgloader;
-apt install pgloader;
-apt install pgloader;
-apt install pgloader;
-apt install pgloader;
 apt install pgloader;
 ```
 

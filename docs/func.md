@@ -10,64 +10,64 @@ There are 56 available extensions in this category:
 [`topn`](/topn) [`gzip`](/gzip) [`zstd`](/zstd) [`http`](/http) [`pg_net`](/pg_net) [`pg_html5_email_address`](/pg_html5_email_address) [`pgsql_tweaks`](/pgsql_tweaks) [`pg_extra_time`](/pg_extra_time) [`timeit`](/timeit) [`count_distinct`](/count_distinct) [`extra_window_functions`](/extra_window_functions) [`first_last_agg`](/first_last_agg) [`tdigest`](/tdigest) [`aggs_for_vecs`](/aggs_for_vecs) [`aggs_for_arrays`](/aggs_for_arrays) [`arraymath`](/arraymath) [`quantile`](/quantile) [`lower_quantile`](/lower_quantile) [`pg_idkit`](/pg_idkit) [`pg_uuidv7`](/pg_uuidv7) [`permuteseq`](/permuteseq) [`pg_hashids`](/pg_hashids) [`sequential_uuids`](/sequential_uuids) [`pg_math`](/pg_math) [`random`](/random) [`base36`](/base36) [`base62`](/base62) [`pg_base58`](/pg_base58) [`floatvec`](/floatvec) [`financial`](/financial) [`pgjwt`](/pgjwt) [`pg_hashlib`](/pg_hashlib) [`shacrypt`](/shacrypt) [`cryptint`](/cryptint) [`pguecc`](/pguecc) [`pgpcre`](/pgpcre) [`icu_ext`](/icu_ext) [`pgqr`](/pgqr) [`envvar`](/envvar) [`pg_protobuf`](/pg_protobuf) [`url_encode`](/url_encode) [`refint`](/refint) [`autoinc`](/autoinc) [`insert_username`](/insert_username) [`moddatetime`](/moddatetime) [`tsm_system_time`](/tsm_system_time) [`dict_xsyn`](/dict_xsyn) [`tsm_system_rows`](/tsm_system_rows) [`tcn`](/tcn) [`uuid-ossp`](/uuid-ossp) [`btree_gist`](/btree_gist) [`btree_gin`](/btree_gin) [`intarray`](/intarray) [`intagg`](/intagg) [`dict_int`](/dict_int) [`unaccent`](/unaccent)
 
 
-| ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
-|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:------:|:-------:|:-----:|-------------|
-| 3000 | [topn](/topn) | 2.6.0 | [topn](/topn) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/citusdata/postgresql-topn) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | type for top-n JSONB |
-| 3010 | [gzip](/gzip) | 1.0 | [pg_gzip](/gzip) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pramsey/pgsql-gzip) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | gzip and gunzip functions. |
-| 3020 | [zstd](/zstd) | 1.1.0 | [pg_zstd](/zstd) | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/grahamedgecombe/pgzstd) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Zstandard compression algorithm implementation in PostgreSQL |
-| 3030 | [http](/http) | 1.6 | [pg_http](/http) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pramsey/pgsql-http) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | HTTP client for PostgreSQL, allows web page retrieval inside the database. |
-| 3040 | [pg_net](/pg_net) | 0.9.2 | [pg_net](/pg_net) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/pg_net) | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Async HTTP Requests |
-| 3050 | [pg_html5_email_address](/pg_html5_email_address) | 1.2.3 | [pg_html5_email_address](/pg_html5_email_address) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/bigsmoke/pg_html5_email_address) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | PostgreSQL email validation that is consistent with the HTML5 spec |
-| 3060 | [pgsql_tweaks](/pgsql_tweaks) | 0.10.6 | [pgsql_tweaks](/pgsql_tweaks) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/sjstoelting/pgsql-tweaks) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Some functions and views for daily usage |
-| 3070 | [pg_extra_time](/pg_extra_time) | 1.1.3 | [pg_extra_time](/pg_extra_time) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/bigsmoke/pg_extra_time) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Some date time functions and operators that, |
-| 3080 | [timeit](/timeit) | 1.0 | [pg_timeit](/timeit) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/joelonsql/pg-timeit) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | High-accuracy timing of SQL expressions |
-| 3100 | [count_distinct](/count_distinct) | 3.0.1 | [count_distinct](/count_distinct) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/count_distinct) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | An alternative to COUNT(DISTINCT …) aggregate, usable with HashAggregate |
-| 3110 | [extra_window_functions](/extra_window_functions) | 1.0 | [extra_window_functions](/extra_window_functions) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/xocolatl/extra_window_functions) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extra Window Functions for PostgreSQL |
-| 3120 | [first_last_agg](/first_last_agg) | 0.1.4 | [first_last_agg](/first_last_agg) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/wulczer/first_last_agg) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | first() and last() aggregate functions |
-| 3130 | [tdigest](/tdigest) | 1.4.1 | [tdigest](/tdigest) | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/tdunning/t-digest) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provides tdigest aggregate function. |
-| 3140 | [aggs_for_vecs](/aggs_for_vecs) | 1.3.0 | [aggs_for_vecs](/aggs_for_vecs) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pjungwir/aggs_for_vecs) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Aggregate functions for array inputs |
-| 3150 | [aggs_for_arrays](/aggs_for_arrays) | 1.3.2 | [aggs_for_arrays](/aggs_for_arrays) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pjungwir/aggs_for_arrays) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Various functions for computing statistics on arrays of numbers |
-| 3160 | [arraymath](/arraymath) | 1.1 | [pg_arraymath](/arraymath) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pramsey/pgsql-arraymath) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Array math and operators that work element by element on the contents of arrays |
-| 3170 | [quantile](/quantile) | 1.1.7 | [quantile](/quantile) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/quantile) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Quantile aggregation function |
-| 3180 | [lower_quantile](/lower_quantile) | 1.0.0 | [lower_quantile](/lower_quantile) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/lower_quantile) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Lower quantile aggregate function |
-| 3200 | [pg_idkit](/pg_idkit) | 0.2.4 | [pg_idkit](/pg_idkit) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/VADOSWARE/pg_idkit) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | multi-tool for generating new/niche universally unique identifiers (ex. UUIDv6, ULID, KSUID) |
-| 3210 | [pg_uuidv7](/pg_uuidv7) | 1.6 | [pg_uuidv7](/pg_uuidv7) | **<span class="tccyan">MPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/fboulnois/pg_uuidv7) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_uuidv7: create UUIDv7 values in postgres |
-| 3220 | [permuteseq](/permuteseq) | 1.2 | [permuteseq](/permuteseq) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/dverite/permuteseq) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Pseudo-randomly permute sequences with a format-preserving encryption on elements |
-| 3230 | [pg_hashids](/pg_hashids) | 1.3 | [pg_hashids](/pg_hashids) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/iCyberon/pg_hashids) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Short unique id generator for PostgreSQL, using hashids |
-| 3240 | [sequential_uuids](/sequential_uuids) | 1.0.2 | [sequential_uuids](/sequential_uuids) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/sequential-uuids) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | generator of sequential UUIDs |
-| 3300 | [pg_math](/pg_math) | 1.0 | [pg_math](/pg_math) | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/chanukyasds/pg_math) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | GSL statistical functions for postgresql |
-| 3310 | [random](/random) | 2.0.0-dev | [pg_random](/random) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/random) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | random data generator |
-| 3320 | [base36](/base36) | 1.0.0 | [pg_base36](/base36) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/pg-base36) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Integer Base36 types |
-| 3330 | [base62](/base62) | 0.0.1 | [pg_base62](/base62) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/pg-base62) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Base62 extension for PostgreSQL |
-| 3340 | [pg_base58](/pg_base58) | 0.0.1 | [pg_base58](/pg_base58) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/Fell-x27/pg_base58) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Base58 Encoder/Decoder Extension for PostgreSQL |
-| 3350 | [floatvec](/floatvec) | 1.0.1 | [floatvec](/floatvec) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pjungwir/floatvec) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Math for vectors (arrays) of numbers |
-| 3360 | [financial](/financial) | 1.0.1 | [pg_financial](/financial) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/intgr/pg_financial) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Financial aggregate functions |
-| 3400 | [pgjwt](/pgjwt) | 0.2.0 | [pgjwt](/pgjwt) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/michelp/pgjwt) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | JSON Web Token API for Postgresql |
-| 3410 | [pg_hashlib](/pg_hashlib) | 1.1 | [pg_hashlib](/pg_hashlib) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/markokr/pghashlib) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Stable hash functions for Postgres |
-| 3420 | [shacrypt](/shacrypt) | 1.1 | [shacrypt](/shacrypt) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/dverite/postgres-shacrypt) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Implements SHA256-CRYPT and SHA512-CRYPT password encryption schemes |
-| 3430 | [cryptint](/cryptint) | 1.0.0 | [cryptint](/cryptint) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/dverite/cryptint) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Encryption functions for int and bigint values |
-| 3440 | [pguecc](/pguecc) | 1.0 | [pg_ecdsa](/pguecc) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/ameensol/pg-ecdsa) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | uECC bindings for Postgres |
-| 3500 | [pgpcre](/pgpcre) | 1 | [pgpcre](/pgpcre) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/petere/pgpcre) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Perl Compatible Regular Expression functions |
-| 3510 | [icu_ext](/icu_ext) | 1.9 | [icu_ext](/icu_ext) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/dverite/icu_ext) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Access ICU functions |
-| 3520 | [pgqr](/pgqr) | 1.0 | [pgqr](/pgqr) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/AbdulYadi/pgqr) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | QR Code generator from PostgreSQL |
-| 3530 | [envvar](/envvar) | 1.0.0 | [envvar](/envvar) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/theory/pg-envvar) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Fetch the value of an environment variable |
-| 3540 | [pg_protobuf](/pg_protobuf) | 1.0 | [pg_protobuf](/pg_protobuf) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/afiskon/pg_protobuf) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Protobuf support for PostgreSQL |
-| 3550 | [url_encode](/url_encode) | 1.2 | [url_encode](/url_encode) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/okbob/url_encode) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | url_encode, url_decode functions |
-| 3840 | [refint](/refint) | 1.0 | [refint](/refint) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/contrib-spi.html#CONTRIB-SPI-REFINT) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for implementing referential integrity (obsolete) |
-| 3841 | [autoinc](/autoinc) | 1.0 | [autoinc](/autoinc) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/contrib-spi.html#CONTRIB-SPI-AUTOINC) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for autoincrementing fields |
-| 3842 | [insert_username](/insert_username) | 1.0 | [insert_username](/insert_username) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/contrib-spi.html#CONTRIB-SPI-INSERT-USERNAME) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for tracking who changed a table |
-| 3843 | [moddatetime](/moddatetime) | 1.0 | [moddatetime](/moddatetime) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/contrib-spi.html#CONTRIB-SPI-MODDATETIME) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for tracking last modification time |
-| 3850 | [tsm_system_time](/tsm_system_time) | 1.0 | [tsm_system_time](/tsm_system_time) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/tsm-system-time.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | TABLESAMPLE method which accepts time in milliseconds as a limit |
-| 3870 | [dict_xsyn](/dict_xsyn) | 1.0 | [dict_xsyn](/dict_xsyn) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/dict-xsyn.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | text search dictionary template for extended synonym processing |
-| 3880 | [tsm_system_rows](/tsm_system_rows) | 1.0 | [tsm_system_rows](/tsm_system_rows) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/tsm-system-rows.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | TABLESAMPLE method which accepts number of rows as a limit |
-| 3890 | [tcn](/tcn) | 1.0 | [tcn](/tcn) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/tcn.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Triggered change notifications |
-| 3900 | [uuid-ossp](/uuid-ossp) | 1.1 | [uuid-ossp](/uuid-ossp) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/uuid-ossp.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | generate universally unique identifiers (UUIDs) |
-| 3910 | [btree_gist](/btree_gist) | 1.7 | [btree_gist](/btree_gist) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/btree-gist.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | support for indexing common datatypes in GiST |
-| 3920 | [btree_gin](/btree_gin) | 1.3 | [btree_gin](/btree_gin) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/btree-gin.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | support for indexing common datatypes in GIN |
-| 3930 | [intarray](/intarray) | 1.5 | [intarray](/intarray) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/intarray.html) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | functions, operators, and index support for 1-D arrays of integers |
-| 3950 | [intagg](/intagg) | 1.1 | [intagg](/intagg) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/intagg.html) |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | integer aggregator and enumerator (obsolete) |
-| 3960 | [dict_int](/dict_int) | 1.0 | [dict_int](/dict_int) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/dict-int.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | text search dictionary template for integers |
-| 3990 | [unaccent](/unaccent) | 1.1 | [unaccent](/unaccent) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/unaccent.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | text search dictionary that removes accents |
+| ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
+|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
+| 3000 | [topn](/topn) | 2.6.0 | [topn](/topn) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/citusdata/postgresql-topn) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | type for top-n JSONB |
+| 3010 | [gzip](/gzip) | 1.0 | [pg_gzip](/gzip) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pramsey/pgsql-gzip) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | gzip and gunzip functions. |
+| 3020 | [zstd](/zstd) | 1.1.0 | [pg_zstd](/zstd) | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/grahamedgecombe/pgzstd) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Zstandard compression algorithm implementation in PostgreSQL |
+| 3030 | [http](/http) | 1.6 | [pg_http](/http) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pramsey/pgsql-http) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | HTTP client for PostgreSQL, allows web page retrieval inside the database. |
+| 3040 | [pg_net](/pg_net) | 0.9.2 | [pg_net](/pg_net) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/pg_net) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Async HTTP Requests |
+| 3050 | [pg_html5_email_address](/pg_html5_email_address) | 1.2.3 | [pg_html5_email_address](/pg_html5_email_address) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/bigsmoke/pg_html5_email_address) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | PostgreSQL email validation that is consistent with the HTML5 spec |
+| 3060 | [pgsql_tweaks](/pgsql_tweaks) | 0.10.6 | [pgsql_tweaks](/pgsql_tweaks) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/sjstoelting/pgsql-tweaks) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Some functions and views for daily usage |
+| 3070 | [pg_extra_time](/pg_extra_time) | 1.1.3 | [pg_extra_time](/pg_extra_time) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/bigsmoke/pg_extra_time) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Some date time functions and operators that, |
+| 3080 | [timeit](/timeit) | 1.0 | [pg_timeit](/timeit) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/joelonsql/pg-timeit) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | High-accuracy timing of SQL expressions |
+| 3100 | [count_distinct](/count_distinct) | 3.0.1 | [count_distinct](/count_distinct) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/count_distinct) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | An alternative to COUNT(DISTINCT …) aggregate, usable with HashAggregate |
+| 3110 | [extra_window_functions](/extra_window_functions) | 1.0 | [extra_window_functions](/extra_window_functions) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/xocolatl/extra_window_functions) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extra Window Functions for PostgreSQL |
+| 3120 | [first_last_agg](/first_last_agg) | 0.1.4 | [first_last_agg](/first_last_agg) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/wulczer/first_last_agg) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | first() and last() aggregate functions |
+| 3130 | [tdigest](/tdigest) | 1.4.1 | [tdigest](/tdigest) | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/tdunning/t-digest) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provides tdigest aggregate function. |
+| 3140 | [aggs_for_vecs](/aggs_for_vecs) | 1.3.0 | [aggs_for_vecs](/aggs_for_vecs) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pjungwir/aggs_for_vecs) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Aggregate functions for array inputs |
+| 3150 | [aggs_for_arrays](/aggs_for_arrays) | 1.3.2 | [aggs_for_arrays](/aggs_for_arrays) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pjungwir/aggs_for_arrays) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Various functions for computing statistics on arrays of numbers |
+| 3160 | [arraymath](/arraymath) | 1.1 | [pg_arraymath](/arraymath) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pramsey/pgsql-arraymath) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Array math and operators that work element by element on the contents of arrays |
+| 3170 | [quantile](/quantile) | 1.1.7 | [quantile](/quantile) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/quantile) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Quantile aggregation function |
+| 3180 | [lower_quantile](/lower_quantile) | 1.0.0 | [lower_quantile](/lower_quantile) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/lower_quantile) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Lower quantile aggregate function |
+| 3200 | [pg_idkit](/pg_idkit) | 0.2.4 | [pg_idkit](/pg_idkit) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/VADOSWARE/pg_idkit) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | multi-tool for generating new/niche universally unique identifiers (ex. UUIDv6, ULID, KSUID) |
+| 3210 | [pg_uuidv7](/pg_uuidv7) | 1.6 | [pg_uuidv7](/pg_uuidv7) | **<span class="tccyan">MPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/fboulnois/pg_uuidv7) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_uuidv7: create UUIDv7 values in postgres |
+| 3220 | [permuteseq](/permuteseq) | 1.2 | [permuteseq](/permuteseq) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/dverite/permuteseq) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Pseudo-randomly permute sequences with a format-preserving encryption on elements |
+| 3230 | [pg_hashids](/pg_hashids) | 1.3 | [pg_hashids](/pg_hashids) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/iCyberon/pg_hashids) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Short unique id generator for PostgreSQL, using hashids |
+| 3240 | [sequential_uuids](/sequential_uuids) | 1.0.2 | [sequential_uuids](/sequential_uuids) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/sequential-uuids) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | generator of sequential UUIDs |
+| 3300 | [pg_math](/pg_math) | 1.0 | [pg_math](/pg_math) | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/chanukyasds/pg_math) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | GSL statistical functions for postgresql |
+| 3310 | [random](/random) | 2.0.0-dev | [pg_random](/random) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/random) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | random data generator |
+| 3320 | [base36](/base36) | 1.0.0 | [pg_base36](/base36) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/pg-base36) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Integer Base36 types |
+| 3330 | [base62](/base62) | 0.0.1 | [pg_base62](/base62) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/pg-base62) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Base62 extension for PostgreSQL |
+| 3340 | [pg_base58](/pg_base58) | 0.0.1 | [pg_base58](/pg_base58) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/Fell-x27/pg_base58) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Base58 Encoder/Decoder Extension for PostgreSQL |
+| 3350 | [floatvec](/floatvec) | 1.0.1 | [floatvec](/floatvec) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pjungwir/floatvec) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Math for vectors (arrays) of numbers |
+| 3360 | [financial](/financial) | 1.0.1 | [pg_financial](/financial) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/intgr/pg_financial) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Financial aggregate functions |
+| 3400 | [pgjwt](/pgjwt) | 0.2.0 | [pgjwt](/pgjwt) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/michelp/pgjwt) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | JSON Web Token API for Postgresql |
+| 3410 | [pg_hashlib](/pg_hashlib) | 1.1 | [pg_hashlib](/pg_hashlib) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/markokr/pghashlib) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Stable hash functions for Postgres |
+| 3420 | [shacrypt](/shacrypt) | 1.1 | [shacrypt](/shacrypt) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/dverite/postgres-shacrypt) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Implements SHA256-CRYPT and SHA512-CRYPT password encryption schemes |
+| 3430 | [cryptint](/cryptint) | 1.0.0 | [cryptint](/cryptint) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/dverite/cryptint) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Encryption functions for int and bigint values |
+| 3440 | [pguecc](/pguecc) | 1.0 | [pg_ecdsa](/pguecc) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/ameensol/pg-ecdsa) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | uECC bindings for Postgres |
+| 3500 | [pgpcre](/pgpcre) | 1 | [pgpcre](/pgpcre) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/petere/pgpcre) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Perl Compatible Regular Expression functions |
+| 3510 | [icu_ext](/icu_ext) | 1.9 | [icu_ext](/icu_ext) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/dverite/icu_ext) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Access ICU functions |
+| 3520 | [pgqr](/pgqr) | 1.0 | [pgqr](/pgqr) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/AbdulYadi/pgqr) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | QR Code generator from PostgreSQL |
+| 3530 | [envvar](/envvar) | 1.0.0 | [envvar](/envvar) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/theory/pg-envvar) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Fetch the value of an environment variable |
+| 3540 | [pg_protobuf](/pg_protobuf) | 1.0 | [pg_protobuf](/pg_protobuf) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/afiskon/pg_protobuf) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Protobuf support for PostgreSQL |
+| 3550 | [url_encode](/url_encode) | 1.2 | [url_encode](/url_encode) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/okbob/url_encode) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | url_encode, url_decode functions |
+| 3840 | [refint](/refint) | 1.0 | [refint](/refint) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/contrib-spi.html#CONTRIB-SPI-REFINT) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for implementing referential integrity (obsolete) |
+| 3841 | [autoinc](/autoinc) | 1.0 | [autoinc](/autoinc) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/contrib-spi.html#CONTRIB-SPI-AUTOINC) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for autoincrementing fields |
+| 3842 | [insert_username](/insert_username) | 1.0 | [insert_username](/insert_username) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/contrib-spi.html#CONTRIB-SPI-INSERT-USERNAME) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for tracking who changed a table |
+| 3843 | [moddatetime](/moddatetime) | 1.0 | [moddatetime](/moddatetime) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/contrib-spi.html#CONTRIB-SPI-MODDATETIME) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for tracking last modification time |
+| 3850 | [tsm_system_time](/tsm_system_time) | 1.0 | [tsm_system_time](/tsm_system_time) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/tsm-system-time.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | TABLESAMPLE method which accepts time in milliseconds as a limit |
+| 3870 | [dict_xsyn](/dict_xsyn) | 1.0 | [dict_xsyn](/dict_xsyn) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/dict-xsyn.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | text search dictionary template for extended synonym processing |
+| 3880 | [tsm_system_rows](/tsm_system_rows) | 1.0 | [tsm_system_rows](/tsm_system_rows) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/tsm-system-rows.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | TABLESAMPLE method which accepts number of rows as a limit |
+| 3890 | [tcn](/tcn) | 1.0 | [tcn](/tcn) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/tcn.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Triggered change notifications |
+| 3900 | [uuid-ossp](/uuid-ossp) | 1.1 | [uuid-ossp](/uuid-ossp) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/uuid-ossp.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | generate universally unique identifiers (UUIDs) |
+| 3910 | [btree_gist](/btree_gist) | 1.7 | [btree_gist](/btree_gist) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/btree-gist.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | support for indexing common datatypes in GiST |
+| 3920 | [btree_gin](/btree_gin) | 1.3 | [btree_gin](/btree_gin) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/btree-gin.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | support for indexing common datatypes in GIN |
+| 3930 | [intarray](/intarray) | 1.5 | [intarray](/intarray) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/intarray.html) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | functions, operators, and index support for 1-D arrays of integers |
+| 3950 | [intagg](/intagg) | 1.1 | [intagg](/intagg) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/intagg.html) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | integer aggregator and enumerator (obsolete) |
+| 3960 | [dict_int](/dict_int) | 1.0 | [dict_int](/dict_int) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/dict-int.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | text search dictionary template for integers |
+| 3990 | [unaccent](/unaccent) | 1.1 | [unaccent](/unaccent) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/unaccent.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | text search dictionary that removes accents |
 
 
 
@@ -238,226 +238,3 @@ pg12: topn_12* pgsql_gzip_12* pg_zstd_12* pgsql_http_12* pg_net_12* pg_html5_ema
 
 --------
 
-## topn
-
-[`topn`](/topn): type for top-n JSONB
-
-## gzip
-
-[`gzip`](/gzip): (package alias: `pg_gzip`) gzip and gunzip functions.
-
-## zstd
-
-[`zstd`](/zstd): (package alias: `pg_zstd`) Zstandard compression algorithm implementation in PostgreSQL
-
-## http
-
-[`http`](/http): (package alias: `pg_http`) HTTP client for PostgreSQL, allows web page retrieval inside the database.
-
-## pg_net
-
-[`pg_net`](/pg_net): Async HTTP Requests
-
-## pg_html5_email_address
-
-[`pg_html5_email_address`](/pg_html5_email_address): PostgreSQL email validation that is consistent with the HTML5 spec
-
-## pgsql_tweaks
-
-[`pgsql_tweaks`](/pgsql_tweaks): Some functions and views for daily usage
-
-## pg_extra_time
-
-[`pg_extra_time`](/pg_extra_time): Some date time functions and operators that,
-
-## timeit
-
-[`timeit`](/timeit): (package alias: `pg_timeit`) High-accuracy timing of SQL expressions
-
-## count_distinct
-
-[`count_distinct`](/count_distinct): An alternative to COUNT(DISTINCT …) aggregate, usable with HashAggregate
-
-## extra_window_functions
-
-[`extra_window_functions`](/extra_window_functions): Extra Window Functions for PostgreSQL
-
-## first_last_agg
-
-[`first_last_agg`](/first_last_agg): first() and last() aggregate functions
-
-## tdigest
-
-[`tdigest`](/tdigest): Provides tdigest aggregate function.
-
-## aggs_for_vecs
-
-[`aggs_for_vecs`](/aggs_for_vecs): Aggregate functions for array inputs
-
-## aggs_for_arrays
-
-[`aggs_for_arrays`](/aggs_for_arrays): Various functions for computing statistics on arrays of numbers
-
-## arraymath
-
-[`arraymath`](/arraymath): (package alias: `pg_arraymath`) Array math and operators that work element by element on the contents of arrays
-
-## quantile
-
-[`quantile`](/quantile): Quantile aggregation function
-
-## lower_quantile
-
-[`lower_quantile`](/lower_quantile): Lower quantile aggregate function
-
-## pg_idkit
-
-[`pg_idkit`](/pg_idkit): multi-tool for generating new/niche universally unique identifiers (ex. UUIDv6, ULID, KSUID)
-
-## pg_uuidv7
-
-[`pg_uuidv7`](/pg_uuidv7): pg_uuidv7: create UUIDv7 values in postgres
-
-## permuteseq
-
-[`permuteseq`](/permuteseq): Pseudo-randomly permute sequences with a format-preserving encryption on elements
-
-## pg_hashids
-
-[`pg_hashids`](/pg_hashids): Short unique id generator for PostgreSQL, using hashids
-
-## sequential_uuids
-
-[`sequential_uuids`](/sequential_uuids): generator of sequential UUIDs
-
-## pg_math
-
-[`pg_math`](/pg_math): GSL statistical functions for postgresql
-
-## random
-
-[`random`](/random): (package alias: `pg_random`) random data generator
-
-## base36
-
-[`base36`](/base36): (package alias: `pg_base36`) Integer Base36 types
-
-## base62
-
-[`base62`](/base62): (package alias: `pg_base62`) Base62 extension for PostgreSQL
-
-## pg_base58
-
-[`pg_base58`](/pg_base58): Base58 Encoder/Decoder Extension for PostgreSQL
-
-## floatvec
-
-[`floatvec`](/floatvec): Math for vectors (arrays) of numbers
-
-## financial
-
-[`financial`](/financial): (package alias: `pg_financial`) Financial aggregate functions
-
-## pgjwt
-
-[`pgjwt`](/pgjwt): JSON Web Token API for Postgresql
-
-## pg_hashlib
-
-[`pg_hashlib`](/pg_hashlib): Stable hash functions for Postgres
-
-## shacrypt
-
-[`shacrypt`](/shacrypt): Implements SHA256-CRYPT and SHA512-CRYPT password encryption schemes
-
-## cryptint
-
-[`cryptint`](/cryptint): Encryption functions for int and bigint values
-
-## pguecc
-
-[`pguecc`](/pguecc): (package alias: `pg_ecdsa`) uECC bindings for Postgres
-
-## pgpcre
-
-[`pgpcre`](/pgpcre): Perl Compatible Regular Expression functions
-
-## icu_ext
-
-[`icu_ext`](/icu_ext): Access ICU functions
-
-## pgqr
-
-[`pgqr`](/pgqr): QR Code generator from PostgreSQL
-
-## envvar
-
-[`envvar`](/envvar): Fetch the value of an environment variable
-
-## pg_protobuf
-
-[`pg_protobuf`](/pg_protobuf): Protobuf support for PostgreSQL
-
-## url_encode
-
-[`url_encode`](/url_encode): url_encode, url_decode functions
-
-## refint
-
-[`refint`](/refint): functions for implementing referential integrity (obsolete)
-
-## autoinc
-
-[`autoinc`](/autoinc): functions for autoincrementing fields
-
-## insert_username
-
-[`insert_username`](/insert_username): functions for tracking who changed a table
-
-## moddatetime
-
-[`moddatetime`](/moddatetime): functions for tracking last modification time
-
-## tsm_system_time
-
-[`tsm_system_time`](/tsm_system_time): TABLESAMPLE method which accepts time in milliseconds as a limit
-
-## dict_xsyn
-
-[`dict_xsyn`](/dict_xsyn): text search dictionary template for extended synonym processing
-
-## tsm_system_rows
-
-[`tsm_system_rows`](/tsm_system_rows): TABLESAMPLE method which accepts number of rows as a limit
-
-## tcn
-
-[`tcn`](/tcn): Triggered change notifications
-
-## uuid-ossp
-
-[`uuid-ossp`](/uuid-ossp): generate universally unique identifiers (UUIDs)
-
-## btree_gist
-
-[`btree_gist`](/btree_gist): support for indexing common datatypes in GiST
-
-## btree_gin
-
-[`btree_gin`](/btree_gin): support for indexing common datatypes in GIN
-
-## intarray
-
-[`intarray`](/intarray): functions, operators, and index support for 1-D arrays of integers
-
-## intagg
-
-[`intagg`](/intagg): integer aggregator and enumerator (obsolete)
-
-## dict_int
-
-[`dict_int`](/dict_int): text search dictionary template for integers
-
-## unaccent
-
-[`unaccent`](/unaccent): text search dictionary that removes accents

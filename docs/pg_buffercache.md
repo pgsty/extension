@@ -1,17 +1,20 @@
 # pg_buffercache
 
 
-> [pg_buffercache](/https://www.postgresql.org/docs/current/pgbuffercache.html): examine the shared buffer cache
+> [pg_buffercache](https://www.postgresql.org/docs/current/pgbuffercache.html): examine the shared buffer cache
+>
+> https://www.postgresql.org/docs/current/pgbuffercache.html
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_buffercache](https://www.postgresql.org/docs/current/pgbuffercache.html) | 1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | `C` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pg_buffercache](https://www.postgresql.org/docs/current/pgbuffercache.html) | 1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
 
 
 

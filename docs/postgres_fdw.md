@@ -1,17 +1,20 @@
 # postgres_fdw
 
 
-> [postgres_fdw](/https://www.postgresql.org/docs/current/postgres-fdw.html): foreign-data wrapper for remote PostgreSQL servers
+> [postgres_fdw](https://www.postgresql.org/docs/current/postgres-fdw.html): foreign-data wrapper for remote PostgreSQL servers
+>
+> https://www.postgresql.org/docs/current/postgres-fdw.html
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [postgres_fdw](https://www.postgresql.org/docs/current/postgres-fdw.html) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | `C` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [postgres_fdw](https://www.postgresql.org/docs/current/postgres-fdw.html) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
 
 
 

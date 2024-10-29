@@ -10,27 +10,27 @@ There are 19 available extensions in this category:
 [`postgis`](/postgis) [`postgis_topology`](/postgis_topology) [`postgis_raster`](/postgis_raster) [`postgis_sfcgal`](/postgis_sfcgal) [`postgis_tiger_geocoder`](/postgis_tiger_geocoder) [`address_standardizer`](/address_standardizer) [`address_standardizer_data_us`](/address_standardizer_data_us) [`pgrouting`](/pgrouting) [`pointcloud`](/pointcloud) [`pointcloud_postgis`](/pointcloud_postgis) [`h3`](/h3) [`h3_postgis`](/h3_postgis) [`q3c`](/q3c) [`ogr_fdw`](/ogr_fdw) [`geoip`](/geoip) [`pg_polyline`](/pg_polyline) [`pg_geohash`](/pg_geohash) [`mobilitydb`](/mobilitydb) [`earthdistance`](/earthdistance)
 
 
-| ID | Extension | Version | Package | License | RPM | DEB | Website | `LOAD` | `DYLIB` | `DDL` | Description |
-|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:------:|:-------:|:-----:|-------------|
-| 1100 | [postgis](/postgis) | 3.5.0 | [postgis](/postgis) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS geometry and geography spatial types and functions |
-| 1101 | [postgis_topology](/postgis_topology) | 3.5.0 | [postgis](/postgis_topology) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS topology spatial types and functions |
-| 1102 | [postgis_raster](/postgis_raster) | 3.5.0 | [postgis](/postgis_raster) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS raster types and functions |
-| 1103 | [postgis_sfcgal](/postgis_sfcgal) | 3.5.0 | [postgis](/postgis_sfcgal) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS SFCGAL functions |
-| 1104 | [postgis_tiger_geocoder](/postgis_tiger_geocoder) | 3.5.0 | [postgis](/postgis_tiger_geocoder) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS tiger geocoder and reverse geocoder |
-| 1105 | [address_standardizer](/address_standardizer) | 3.5.0 | [postgis](/address_standardizer) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Used to parse an address into constituent elements. Generally used to support geocoding address normalization step. |
-| 1106 | [address_standardizer_data_us](/address_standardizer_data_us) | 3.5.0 | [postgis](/address_standardizer_data_us) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Address Standardizer US dataset example |
-| 1110 | [pgrouting](/pgrouting) | 3.6.0 | [pgrouting](/pgrouting) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgRouting/pgrouting) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pgRouting Extension |
-| 1120 | [pointcloud](/pointcloud) | 1.2.5 | [pointcloud](/pointcloud) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgpointcloud/pointcloud) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for lidar point clouds |
-| 1121 | [pointcloud_postgis](/pointcloud_postgis) | 1.2.5 | [pointcloud](/pointcloud_postgis) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgpointcloud/pointcloud) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | integration for pointcloud LIDAR data and PostGIS geometry data |
-| 1130 | [h3](/h3) | 4.1.3 | [pg_h3](/h3) | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/zachasme/h3-pg) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | H3 bindings for PostgreSQL |
-| 1131 | [h3_postgis](/h3_postgis) | 4.1.3 | [pg_h3](/h3_postgis) | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/zachasme/h3-pg) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | H3 PostGIS integration |
-| 1140 | [q3c](/q3c) | 2.0.1 | [q3c](/q3c) | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/segasai/q3c) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | q3c sky indexing plugin |
-| 1150 | [ogr_fdw](/ogr_fdw) | 1.1 | [ogr_fdw](/ogr_fdw) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pramsey/pgsql-ogr-fdw) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for GIS data access |
-| 1155 | [geoip](/geoip) | 0.3.0 | [geoip](/geoip) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/geoip) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | IP-based geolocation query |
-| 1160 | [pg_polyline](/pg_polyline) | 0.0.0 | [pg_polyline](/pg_polyline) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/yihong0618/pg_polyline) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Fast Google Encoded Polyline encoding & decoding for postgres |
-| 1170 | [pg_geohash](/pg_geohash) | 1.0 | [pg_geohash](/pg_geohash) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/jistok/pg_geohash) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Handle geohash based functionality for spatial coordinates |
-| 1180 | [mobilitydb](/mobilitydb) | 1.1.1 | [mobilitydb](/mobilitydb) | **<span class="tcwarn">GPLv3</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/MobilityDB/MobilityDB) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | MobilityDB geospatial trajectory data management & analysis platform |
-| 1190 | [earthdistance](/earthdistance) | 1.1 | [earthdistance](/earthdistance) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/earthdistance.html) |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | calculate great-circle distances on the surface of the Earth |
+| ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
+|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
+| 1100 | [postgis](/postgis) | 3.5.0 | [postgis](/postgis) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS geometry and geography spatial types and functions |
+| 1101 | [postgis_topology](/postgis_topology) | 3.5.0 | [postgis](/postgis_topology) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS topology spatial types and functions |
+| 1102 | [postgis_raster](/postgis_raster) | 3.5.0 | [postgis](/postgis_raster) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS raster types and functions |
+| 1103 | [postgis_sfcgal](/postgis_sfcgal) | 3.5.0 | [postgis](/postgis_sfcgal) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS SFCGAL functions |
+| 1104 | [postgis_tiger_geocoder](/postgis_tiger_geocoder) | 3.5.0 | [postgis](/postgis_tiger_geocoder) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS tiger geocoder and reverse geocoder |
+| 1105 | [address_standardizer](/address_standardizer) | 3.5.0 | [postgis](/address_standardizer) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Used to parse an address into constituent elements. Generally used to support geocoding address normalization step. |
+| 1106 | [address_standardizer_data_us](/address_standardizer_data_us) | 3.5.0 | [postgis](/address_standardizer_data_us) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Address Standardizer US dataset example |
+| 1110 | [pgrouting](/pgrouting) | 3.6.0 | [pgrouting](/pgrouting) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgRouting/pgrouting) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pgRouting Extension |
+| 1120 | [pointcloud](/pointcloud) | 1.2.5 | [pointcloud](/pointcloud) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgpointcloud/pointcloud) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for lidar point clouds |
+| 1121 | [pointcloud_postgis](/pointcloud_postgis) | 1.2.5 | [pointcloud](/pointcloud_postgis) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgpointcloud/pointcloud) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | integration for pointcloud LIDAR data and PostGIS geometry data |
+| 1130 | [h3](/h3) | 4.1.3 | [pg_h3](/h3) | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/zachasme/h3-pg) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | H3 bindings for PostgreSQL |
+| 1131 | [h3_postgis](/h3_postgis) | 4.1.3 | [pg_h3](/h3_postgis) | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/zachasme/h3-pg) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | H3 PostGIS integration |
+| 1140 | [q3c](/q3c) | 2.0.1 | [q3c](/q3c) | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/segasai/q3c) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | q3c sky indexing plugin |
+| 1150 | [ogr_fdw](/ogr_fdw) | 1.1 | [ogr_fdw](/ogr_fdw) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pramsey/pgsql-ogr-fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for GIS data access |
+| 1155 | [geoip](/geoip) | 0.3.0 | [geoip](/geoip) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/geoip) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | IP-based geolocation query |
+| 1160 | [pg_polyline](/pg_polyline) | 0.0.0 | [pg_polyline](/pg_polyline) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/yihong0618/pg_polyline) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Fast Google Encoded Polyline encoding & decoding for postgres |
+| 1170 | [pg_geohash](/pg_geohash) | 1.0 | [pg_geohash](/pg_geohash) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/jistok/pg_geohash) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Handle geohash based functionality for spatial coordinates |
+| 1180 | [mobilitydb](/mobilitydb) | 1.1.1 | [mobilitydb](/mobilitydb) | **<span class="tcwarn">GPLv3</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/MobilityDB/MobilityDB) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | MobilityDB geospatial trajectory data management & analysis platform |
+| 1190 | [earthdistance](/earthdistance) | 1.1 | [earthdistance](/earthdistance) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/earthdistance.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | calculate great-circle distances on the surface of the Earth |
 
 
 
@@ -110,78 +110,3 @@ pg12: postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* g
 
 --------
 
-## postgis
-
-[`postgis`](/postgis): PostGIS geometry and geography spatial types and functions
-
-## postgis_topology
-
-[`postgis_topology`](/postgis_topology): (package alias: `postgis`) PostGIS topology spatial types and functions
-
-## postgis_raster
-
-[`postgis_raster`](/postgis_raster): (package alias: `postgis`) PostGIS raster types and functions
-
-## postgis_sfcgal
-
-[`postgis_sfcgal`](/postgis_sfcgal): (package alias: `postgis`) PostGIS SFCGAL functions
-
-## postgis_tiger_geocoder
-
-[`postgis_tiger_geocoder`](/postgis_tiger_geocoder): (package alias: `postgis`) PostGIS tiger geocoder and reverse geocoder
-
-## address_standardizer
-
-[`address_standardizer`](/address_standardizer): (package alias: `postgis`) Used to parse an address into constituent elements. Generally used to support geocoding address normalization step.
-
-## address_standardizer_data_us
-
-[`address_standardizer_data_us`](/address_standardizer_data_us): (package alias: `postgis`) Address Standardizer US dataset example
-
-## pgrouting
-
-[`pgrouting`](/pgrouting): pgRouting Extension
-
-## pointcloud
-
-[`pointcloud`](/pointcloud): data type for lidar point clouds
-
-## pointcloud_postgis
-
-[`pointcloud_postgis`](/pointcloud_postgis): (package alias: `pointcloud`) integration for pointcloud LIDAR data and PostGIS geometry data
-
-## h3
-
-[`h3`](/h3): (package alias: `pg_h3`) H3 bindings for PostgreSQL
-
-## h3_postgis
-
-[`h3_postgis`](/h3_postgis): (package alias: `pg_h3`) H3 PostGIS integration
-
-## q3c
-
-[`q3c`](/q3c): q3c sky indexing plugin
-
-## ogr_fdw
-
-[`ogr_fdw`](/ogr_fdw): foreign-data wrapper for GIS data access
-
-## geoip
-
-[`geoip`](/geoip): IP-based geolocation query
-
-## pg_polyline
-
-[`pg_polyline`](/pg_polyline): Fast Google Encoded Polyline encoding & decoding for postgres
-
-## pg_geohash
-
-[`pg_geohash`](/pg_geohash): Handle geohash based functionality for spatial coordinates
-
-## mobilitydb
-
-[`mobilitydb`](/mobilitydb): MobilityDB geospatial trajectory data management & analysis platform
-
-## earthdistance
-
-[`earthdistance`](/earthdistance): calculate great-circle distances on the surface of the Earth

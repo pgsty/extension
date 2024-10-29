@@ -1,17 +1,20 @@
 # pg_uuidv7
 
 
-> [pg_uuidv7](/https://github.com/fboulnois/pg_uuidv7): pg_uuidv7: create UUIDv7 values in postgres
+> [pg_uuidv7](https://github.com/fboulnois/pg_uuidv7): pg_uuidv7: create UUIDv7 values in postgres
+>
+> https://github.com/fboulnois/pg_uuidv7
 
 
 -------
 
+
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_uuidv7](https://github.com/fboulnois/pg_uuidv7) | 1.6 | **<span class="tccyan">MPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+| [pg_uuidv7](https://github.com/fboulnois/pg_uuidv7) | 1.6 | **<span class="tccyan">MPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 
