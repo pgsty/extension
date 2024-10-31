@@ -42,8 +42,8 @@ CREATE EXTENSION pg_parquet;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_parquet_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |  |
-| [DEB](/deb) | 0.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-parquet` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |  |
+| [RPM](/rpm) | 0.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_parquet_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |
+| [DEB](/deb) | 0.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-parquet` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |
 
 
 
@@ -59,6 +59,8 @@ Install `pg_parquet` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>**
 ```bash
 dnf install pg_parquet_17;
 dnf install pg_parquet_16;
+dnf install pg_parquet_15;
+dnf install pg_parquet_14;
 ```
 
 
@@ -67,6 +69,8 @@ Install `pg_parquet` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>**
 ```bash
 apt install postgresql-17-pg-parquet;
 apt install postgresql-16-pg-parquet;
+apt install postgresql-15-pg-parquet;
+apt install postgresql-14-pg-parquet;
 ```
 
 

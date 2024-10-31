@@ -1,9 +1,9 @@
-# shacrypt
+# pg_smtp_client
 
 
-> [shacrypt](https://github.com/dverite/postgres-shacrypt): Implements SHA256-CRYPT and SHA512-CRYPT password encryption schemes
+> [pg_smtp_client](https://github.com/brianpursley/pg_smtp_client): PostgreSQL extension to send email using SMTP
 >
-> https://github.com/dverite/postgres-shacrypt
+> https://github.com/brianpursley/pg_smtp_client
 
 
 -------
@@ -14,20 +14,20 @@
 
 | Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [shacrypt](https://github.com/dverite/postgres-shacrypt) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| [pg_smtp_client](https://github.com/brianpursley/pg_smtp_client) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
 
 
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [shacrypt](/shacrypt) |  |  |  |  |  | Implements SHA256-CRYPT and SHA512-CRYPT password encryption schemes |
+| [pg_smtp_client](/pg_smtp_client) | `pgrx` | `smtp_client` |  |  |  | PostgreSQL extension to send email using SMTP |
 
 
 
 
 
 ```sql
-CREATE EXTENSION shacrypt;
+CREATE EXTENSION pg_smtp_client;
 ```
 
 -----------
@@ -38,39 +38,33 @@ CREATE EXTENSION shacrypt;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgres_shacrypt_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-shacrypt` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_smtp_client_$v` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |
+| [DEB](/deb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-smtp-client` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |
 
 
 
-Install `shacrypt` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_smtp_client` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["shacrypt"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_smtp_client"]}'
 ```
 
 
-Install `shacrypt` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
+Install `pg_smtp_client` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install postgres_shacrypt_17*;
-dnf install postgres_shacrypt_16*;
-dnf install postgres_shacrypt_15*;
-dnf install postgres_shacrypt_14*;
-dnf install postgres_shacrypt_13*;
-dnf install postgres_shacrypt_12*;
+dnf install pg_smtp_client_16;
+dnf install pg_smtp_client_15;
+dnf install pg_smtp_client_14;
 ```
 
 
-Install `shacrypt` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+Install `pg_smtp_client` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-shacrypt;
-apt install postgresql-16-shacrypt;
-apt install postgresql-15-shacrypt;
-apt install postgresql-14-shacrypt;
-apt install postgresql-13-shacrypt;
-apt install postgresql-12-shacrypt;
+apt install postgresql-16-pg-smtp-client;
+apt install postgresql-15-pg-smtp-client;
+apt install postgresql-14-pg-smtp-client;
 ```
 
 

@@ -6,7 +6,8 @@
 The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used
 by [Pigsty](https://pigsty.io)
 
-Contains 150+ PG extensions [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **12** - **17** in addition to the official PGDG repo.
+Contains 150+ PG extensions [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **12
+** - **17** in addition to the official PGDG repo.
 
 **Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!
 ***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
@@ -63,10 +64,10 @@ Linux x86_64/amd64 [Extension](/list) packages for PostgreSQL 12 - 17, on El8, E
 
 | Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:--------------:|:---:|:----:|:------:|:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension  | 338 | 133  |  130   |   70    |  4   |  7   | 297  | 333  | 336  | 328  | 319  | 310  |
-| DEB Extension  | 326 | 106  |  143   |   70    |  4   |  19  | 290  | 322  | 324  | 316  | 307  | 300  |
-|  RPM Package   | 255 | 121  |  129   |    1    |  4   |  1   | 216  | 250  | 253  | 248  | 241  | 232  |
-|  DEB Package   | 240 |  91  |  142   |    1    |  4   |  1   | 206  | 236  | 238  | 233  | 226  | 219  |
+| RPM Extension  | 332 | 128  |  129   |   70    |  4   |  7   | 294  | 328  | 331  | 323  | 313  | 304  |
+| DEB Extension  | 324 | 105  |  141   |   70    |  5   |  15  | 289  | 320  | 323  | 315  | 305  | 298  |
+|  RPM Package   | 248 | 116  |  127   |    1    |  4   |  1   | 212  | 244  | 247  | 242  | 234  | 225  |
+|  DEB Package   | 237 |  90  |  139   |    1    |  5   |  1   | 204  | 233  | 236  | 231  | 223  | 216  |
 
 > Note: One single rpm/deb package may contain more than one extension
 

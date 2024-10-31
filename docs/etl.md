@@ -5,9 +5,9 @@
 ## Extensions
 
 
-There are 19 available extensions in this category:
+There are 14 available extensions in this category:
 
-[`pglogical`](/pglogical) [`pglogical_origin`](/pglogical_origin) [`pglogical_ticker`](/pglogical_ticker) [`pgl_ddl_deploy`](/pgl_ddl_deploy) [`pg_failover_slots`](/pg_failover_slots) [`wal2json`](/wal2json) [`wal2mongo`](/wal2mongo) [`decoderbufs`](/decoderbufs) [`decoder_raw`](/decoder_raw) [`test_decoding`](/test_decoding) [`mimeo`](/mimeo) [`repmgr`](/repmgr) [`pgcopydb`](/pgcopydb) [`pgloader`](/pgloader) [`pg_fact_loader`](/pg_fact_loader) [`pg_bulkload`](/pg_bulkload) [`pg_comparator`](/pg_comparator) [`pgimportdoc`](/pgimportdoc) [`pgexportdoc`](/pgexportdoc)
+[`pglogical`](/pglogical) [`pglogical_origin`](/pglogical_origin) [`pglogical_ticker`](/pglogical_ticker) [`pgl_ddl_deploy`](/pgl_ddl_deploy) [`pg_failover_slots`](/pg_failover_slots) [`wal2json`](/wal2json) [`wal2mongo`](/wal2mongo) [`decoderbufs`](/decoderbufs) [`decoder_raw`](/decoder_raw) [`test_decoding`](/test_decoding) [`mimeo`](/mimeo) [`repmgr`](/repmgr) [`pg_fact_loader`](/pg_fact_loader) [`pg_bulkload`](/pg_bulkload)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -24,23 +24,18 @@ There are 19 available extensions in this category:
 | 9690 | [test_decoding](/test_decoding) | - | [test_decoding](/test_decoding) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/test-decoding.html) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | SQL-based test/example module for WAL logical decoding |
 | 9700 | [mimeo](/mimeo) | 1.5.1 | [mimeo](/mimeo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/omniti-labs/mimeo) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Extension for specialized, per-table replication between PostgreSQL instances |
 | 9710 | [repmgr](/repmgr) | 5.4 | [repmgr](/repmgr) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/EnterpriseDB/repmgr) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Replication manager for PostgreSQL |
-| 9800 | [pgcopydb](/pgcopydb) | 0.15 | [pgcopydb](/pgcopydb) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/dimitri/pgcopydb) | <span class="tcblue">✔</span> |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | Copy a Postgres database to a target Postgres server |
-| 9810 | [pgloader](/pgloader) | 3.6.10 | [pgloader](/pgloader) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/dimitri/pgloader) | <span class="tcblue">✔</span> |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | Migrate to PostgreSQL in a single command! |
 | 9820 | [pg_fact_loader](/pg_fact_loader) | 2.0 | [pg_fact_loader](/pg_fact_loader) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/enova/pg_fact_loader) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | build fact tables with Postgres |
 | 9830 | [pg_bulkload](/pg_bulkload) | 3.1.21 | [pg_bulkload](/pg_bulkload) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/ossc-db/pg_bulkload) | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_bulkload is a high speed data loading utility for PostgreSQL |
-| 9840 | [pg_comparator](/pg_comparator) | 2.2.5 | [pg_comparator](/pg_comparator) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://www.postgresql.org/ftp/projects/pgFoundry/pg-comparator/pg_comparator/2.2.1/) | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Comparation of testing and production services PostgreSQL databases. |
-| 9850 | [pgimportdoc](/pgimportdoc) | 0.1.4 | [pgimportdoc](/pgimportdoc) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/okbob/pgimportdoc) | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | command line utility for importing XML, JSON, BYTEA document to PostgreSQL |
-| 9860 | [pgexportdoc](/pgexportdoc) | 0.1.4 | [pgexportdoc](/pgexportdoc) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/okbob/pgexportdoc) | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | export XML, JSON and BYTEA documents from PostgreSQL |
 
 
 
 ```yaml
-pg17: pglogical pgl_ddl_deploy pg_failover_slots wal2json decoder_raw mimeo pgcopydb pgloader pg_fact_loader #pglogical #wal2mongo #decoderbufs #repmgr #pg_bulkload #pg_comparator #pgimportdoc #pgexportdoc
-pg16: pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pgcopydb pgloader pg_fact_loader pg_bulkload #pglogical #repmgr #pg_comparator #pgimportdoc #pgexportdoc
-pg15: pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pgcopydb pgloader pg_fact_loader pg_bulkload #pglogical #repmgr #pg_comparator #pgimportdoc #pgexportdoc
-pg14: pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pgcopydb pgloader pg_fact_loader pg_bulkload #pglogical #repmgr #pg_comparator #pgimportdoc #pgexportdoc
-pg13: pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pgcopydb pgloader pg_fact_loader pg_bulkload #pglogical #repmgr #pg_comparator #pgimportdoc #pgexportdoc
-pg12: pglogical pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pgcopydb pgloader pg_fact_loader pg_bulkload #pglogical #wal2mongo #repmgr #pg_comparator #pgimportdoc #pgexportdoc
+pg17: pglogical pgl_ddl_deploy pg_failover_slots wal2json decoder_raw mimeo pg_fact_loader #pglogical #wal2mongo #decoderbufs #repmgr #pg_bulkload
+pg16: pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical #repmgr
+pg15: pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical #repmgr
+pg14: pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical #repmgr
+pg13: pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical #repmgr
+pg12: pglogical pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical #wal2mongo #repmgr
 ```
 
 
@@ -62,23 +57,18 @@ pg12: pglogical pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_ra
 | [test_decoding](/test_decoding) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL-based test/example module for WAL logical decoding |
 | [mimeo](/mimeo) | 1.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `mimeo_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension for specialized, per-table replication between PostgreSQL instances |
 | [repmgr](/repmgr) | 5.4 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `repmgr_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Replication manager for PostgreSQL |
-| [pgcopydb](/pgcopydb) | 0.15 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgcopydb` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Copy a Postgres database to a target Postgres server |
-| [pgloader](/pgloader) | 3.6.10 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgloader` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Migrate to PostgreSQL in a single command! |
 | [pg_fact_loader](/pg_fact_loader) | 2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pg_fact_loader_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | build fact tables with Postgres |
 | [pg_bulkload](/pg_bulkload) | 3.1.21 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_bulkload_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_bulkload is a high speed data loading utility for PostgreSQL |
-| [pg_comparator](/pg_comparator) | 2.2.5 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_comparator_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Comparation of testing and production services PostgreSQL databases. |
-| [pgimportdoc](/pgimportdoc) | 0.1.4 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `pgimportdoc_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | command line utility for importing XML, JSON, BYTEA document to PostgreSQL |
-| [pgexportdoc](/pgexportdoc) | 0.1.4 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `pgexportdoc_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | export XML, JSON and BYTEA documents from PostgreSQL |
 
 
 
 ```yaml
-pg17: pglogical_17* pgl_ddl_deploy_17* pg_failover_slots_17* wal2json_17* decoder_raw_17* mimeo_17 pgcopydb pgloader pg_fact_loader_17* pgimportdoc_17* pgexportdoc_17* # #wal2mongo_17* #postgres-decoderbufs_17* #repmgr_17* #pg_bulkload_17* #pg_comparator_17*
-pg16: pglogical_16* pgl_ddl_deploy_16* pg_failover_slots_16* wal2json_16* wal2mongo_16* postgres-decoderbufs_16* decoder_raw_16* mimeo_16 pgcopydb pgloader pg_fact_loader_16* pg_bulkload_16* pg_comparator_16* pgimportdoc_16* pgexportdoc_16* # #repmgr_16*
-pg15: pglogical_15* pgl_ddl_deploy_15* pg_failover_slots_15* wal2json_15* wal2mongo_15* postgres-decoderbufs_15* decoder_raw_15* mimeo_15 pgcopydb pgloader pg_fact_loader_15* pg_bulkload_15* pg_comparator_15* pgimportdoc_15* pgexportdoc_15* # #repmgr_15*
-pg14: pglogical_14* pgl_ddl_deploy_14* pg_failover_slots_14* wal2json_14* wal2mongo_14* postgres-decoderbufs_14* decoder_raw_14* mimeo_14 pgcopydb pgloader pg_fact_loader_14* pg_bulkload_14* pg_comparator_14* pgimportdoc_14* pgexportdoc_14* # #repmgr_14*
-pg13: pglogical_13* pgl_ddl_deploy_13* pg_failover_slots_13* wal2json_13* wal2mongo_13* postgres-decoderbufs_13* decoder_raw_13* mimeo_13 pgcopydb pgloader pg_fact_loader_13* pg_bulkload_13* pg_comparator_13* pgimportdoc_13* pgexportdoc_13* # #repmgr_13*
-pg12: pglogical_12* pgl_ddl_deploy_12* pg_failover_slots_12* wal2json_12* postgres-decoderbufs_12* decoder_raw_12* mimeo_12 pgcopydb pgloader pg_fact_loader_12* pg_bulkload_12* pg_comparator_12* pgimportdoc_12* pgexportdoc_12* # #wal2mongo_12* #repmgr_12*
+pg17: pglogical_17* pgl_ddl_deploy_17* pg_failover_slots_17* wal2json_17* decoder_raw_17* mimeo_17 pg_fact_loader_17* # #wal2mongo_17* #postgres-decoderbufs_17* #repmgr_17* #pg_bulkload_17*
+pg16: pglogical_16* pgl_ddl_deploy_16* pg_failover_slots_16* wal2json_16* wal2mongo_16* postgres-decoderbufs_16* decoder_raw_16* mimeo_16 pg_fact_loader_16* pg_bulkload_16* # #repmgr_16*
+pg15: pglogical_15* pgl_ddl_deploy_15* pg_failover_slots_15* wal2json_15* wal2mongo_15* postgres-decoderbufs_15* decoder_raw_15* mimeo_15 pg_fact_loader_15* pg_bulkload_15* # #repmgr_15*
+pg14: pglogical_14* pgl_ddl_deploy_14* pg_failover_slots_14* wal2json_14* wal2mongo_14* postgres-decoderbufs_14* decoder_raw_14* mimeo_14 pg_fact_loader_14* pg_bulkload_14* # #repmgr_14*
+pg13: pglogical_13* pgl_ddl_deploy_13* pg_failover_slots_13* wal2json_13* wal2mongo_13* postgres-decoderbufs_13* decoder_raw_13* mimeo_13 pg_fact_loader_13* pg_bulkload_13* # #repmgr_13*
+pg12: pglogical_12* pgl_ddl_deploy_12* pg_failover_slots_12* wal2json_12* postgres-decoderbufs_12* decoder_raw_12* mimeo_12 pg_fact_loader_12* pg_bulkload_12* # #wal2mongo_12* #repmgr_12*
 ```
 
 
@@ -100,20 +90,18 @@ pg12: pglogical_12* pgl_ddl_deploy_12* pg_failover_slots_12* wal2json_12* postgr
 | [test_decoding](/test_decoding) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL-based test/example module for WAL logical decoding |
 | [mimeo](/mimeo) | 1.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-mimeo` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension for specialized, per-table replication between PostgreSQL instances |
 | [repmgr](/repmgr) | 5.4 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-repmgr` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Replication manager for PostgreSQL |
-| [pgcopydb](/pgcopydb) | 0.15 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgcopydb` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Copy a Postgres database to a target Postgres server |
-| [pgloader](/pgloader) | 3.6.10 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgloader` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Migrate to PostgreSQL in a single command! |
 | [pg_fact_loader](/pg_fact_loader) | 2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-fact-loader` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | build fact tables with Postgres |
 | [pg_bulkload](/pg_bulkload) | 3.1.21 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-bulkload` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_bulkload is a high speed data loading utility for PostgreSQL |
 
 
 
 ```yaml
-pg17: pglogical_17* pgl_ddl_deploy_17* pg_failover_slots_17* wal2json_17* decoder_raw_17* mimeo_17 pgcopydb pgloader pg_fact_loader_17* pgimportdoc_17* pgexportdoc_17* # #wal2mongo_17* #postgres-decoderbufs_17* #repmgr_17* #pg_bulkload_17* #pg_comparator_17*
-pg16: pglogical_16* pgl_ddl_deploy_16* pg_failover_slots_16* wal2json_16* wal2mongo_16* postgres-decoderbufs_16* decoder_raw_16* mimeo_16 pgcopydb pgloader pg_fact_loader_16* pg_bulkload_16* pg_comparator_16* pgimportdoc_16* pgexportdoc_16* # #repmgr_16*
-pg15: pglogical_15* pgl_ddl_deploy_15* pg_failover_slots_15* wal2json_15* wal2mongo_15* postgres-decoderbufs_15* decoder_raw_15* mimeo_15 pgcopydb pgloader pg_fact_loader_15* pg_bulkload_15* pg_comparator_15* pgimportdoc_15* pgexportdoc_15* # #repmgr_15*
-pg14: pglogical_14* pgl_ddl_deploy_14* pg_failover_slots_14* wal2json_14* wal2mongo_14* postgres-decoderbufs_14* decoder_raw_14* mimeo_14 pgcopydb pgloader pg_fact_loader_14* pg_bulkload_14* pg_comparator_14* pgimportdoc_14* pgexportdoc_14* # #repmgr_14*
-pg13: pglogical_13* pgl_ddl_deploy_13* pg_failover_slots_13* wal2json_13* wal2mongo_13* postgres-decoderbufs_13* decoder_raw_13* mimeo_13 pgcopydb pgloader pg_fact_loader_13* pg_bulkload_13* pg_comparator_13* pgimportdoc_13* pgexportdoc_13* # #repmgr_13*
-pg12: pglogical_12* pgl_ddl_deploy_12* pg_failover_slots_12* wal2json_12* postgres-decoderbufs_12* decoder_raw_12* mimeo_12 pgcopydb pgloader pg_fact_loader_12* pg_bulkload_12* pg_comparator_12* pgimportdoc_12* pgexportdoc_12* # #wal2mongo_12* #repmgr_12*
+pg17: pglogical_17* pgl_ddl_deploy_17* pg_failover_slots_17* wal2json_17* decoder_raw_17* mimeo_17 pg_fact_loader_17* # #wal2mongo_17* #postgres-decoderbufs_17* #repmgr_17* #pg_bulkload_17*
+pg16: pglogical_16* pgl_ddl_deploy_16* pg_failover_slots_16* wal2json_16* wal2mongo_16* postgres-decoderbufs_16* decoder_raw_16* mimeo_16 pg_fact_loader_16* pg_bulkload_16* # #repmgr_16*
+pg15: pglogical_15* pgl_ddl_deploy_15* pg_failover_slots_15* wal2json_15* wal2mongo_15* postgres-decoderbufs_15* decoder_raw_15* mimeo_15 pg_fact_loader_15* pg_bulkload_15* # #repmgr_15*
+pg14: pglogical_14* pgl_ddl_deploy_14* pg_failover_slots_14* wal2json_14* wal2mongo_14* postgres-decoderbufs_14* decoder_raw_14* mimeo_14 pg_fact_loader_14* pg_bulkload_14* # #repmgr_14*
+pg13: pglogical_13* pgl_ddl_deploy_13* pg_failover_slots_13* wal2json_13* wal2mongo_13* postgres-decoderbufs_13* decoder_raw_13* mimeo_13 pg_fact_loader_13* pg_bulkload_13* # #repmgr_13*
+pg12: pglogical_12* pgl_ddl_deploy_12* pg_failover_slots_12* wal2json_12* postgres-decoderbufs_12* decoder_raw_12* mimeo_12 pg_fact_loader_12* pg_bulkload_12* # #wal2mongo_12* #repmgr_12*
 ```
 
 

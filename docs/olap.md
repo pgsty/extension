@@ -30,8 +30,8 @@ There are 12 available extensions in this category:
 ```yaml
 pg17: pg_analytics pg_duckdb pg_parquet pg_fkpart pg_partman plproxy #citus #hydra #duckdb_fdw #pg_strom
 pg16: citus hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_strom
-pg15: citus hydra pg_analytics pg_duckdb duckdb_fdw pg_fkpart pg_partman plproxy #pg_parquet #pg_strom
-pg14: citus hydra pg_analytics duckdb_fdw pg_fkpart pg_partman plproxy #pg_duckdb #pg_parquet #pg_strom
+pg15: citus hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_strom
+pg14: citus hydra pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_duckdb #pg_strom
 pg13: citus hydra duckdb_fdw pg_fkpart pg_partman plproxy #pg_analytics #pg_duckdb #pg_parquet #pg_strom
 pg12: citus duckdb_fdw pg_fkpart pg_partman plproxy #hydra #pg_analytics #pg_duckdb #pg_parquet #pg_strom
 ```
@@ -50,7 +50,7 @@ pg12: citus duckdb_fdw pg_fkpart pg_partman plproxy #hydra #pg_analytics #pg_duc
 | [pg_analytics](/pg_analytics) | 0.2.1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_analytics_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | Postgres for analytics, powered by DuckDB |
 | [pg_duckdb](/pg_duckdb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_duckdb_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | DuckDB Embedded in Postgres |
 | [duckdb_fdw](/duckdb_fdw) | 1.0.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `duckdb_fdw_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | DuckDB Foreign Data Wrapper |
-| [pg_parquet](/pg_parquet) | 0.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_parquet_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  | copy data between Postgres and Parquet |
+| [pg_parquet](/pg_parquet) | 0.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_parquet_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | copy data between Postgres and Parquet |
 | [pg_fkpart](/pg_fkpart) | 1.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `pg_fkpart_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Table partitioning by foreign key utility |
 | [pg_partman](/pg_partman) | 5.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_partman_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to manage partitioned tables by time or ID |
 | [plproxy](/plproxy) | 2.11.0 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | `plproxy_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Database partitioning implemented as procedural language |
@@ -62,8 +62,8 @@ pg12: citus duckdb_fdw pg_fkpart pg_partman plproxy #hydra #pg_analytics #pg_duc
 ```yaml
 pg17: pg_analytics_17 pg_duckdb_17* pg_parquet_17 pg_fkpart_17* pg_partman_17* plproxy_17* pg_strom_17* #citus_17* #hydra_17* #duckdb_fdw_17*
 pg16: citus_16* hydra_16* pg_analytics_16 pg_duckdb_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16* pg_partman_16* plproxy_16* pg_strom_16* 
-pg15: citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* duckdb_fdw_15* pg_fkpart_15* pg_partman_15* plproxy_15* pg_strom_15* #pg_parquet_15
-pg14: citus_14* hydra_14* pg_analytics_14 duckdb_fdw_14* pg_fkpart_14* pg_partman_14* plproxy_14* pg_strom_14* #pg_duckdb_14* #pg_parquet_14
+pg15: citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15* pg_partman_15* plproxy_15* pg_strom_15* 
+pg14: citus_14* hydra_14* pg_analytics_14 duckdb_fdw_14* pg_parquet_14 pg_fkpart_14* pg_partman_14* plproxy_14* pg_strom_14* #pg_duckdb_14*
 pg13: citus_13* hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* pg_strom_13* #pg_analytics_13 #pg_duckdb_13* #pg_parquet_13
 pg12: citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* pg_strom_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_parquet_12
 ```
@@ -82,7 +82,7 @@ pg12: citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* pg_strom
 | [pg_analytics](/pg_analytics) | 0.2.1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-analytics` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | Postgres for analytics, powered by DuckDB |
 | [pg_duckdb](/pg_duckdb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-duckdb` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | DuckDB Embedded in Postgres |
 | [duckdb_fdw](/duckdb_fdw) | 1.0.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-duckdb-fdw` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | DuckDB Foreign Data Wrapper |
-| [pg_parquet](/pg_parquet) | 0.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-parquet` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  | copy data between Postgres and Parquet |
+| [pg_parquet](/pg_parquet) | 0.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-parquet` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | copy data between Postgres and Parquet |
 | [pg_fkpart](/pg_fkpart) | 1.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-fkpart` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Table partitioning by foreign key utility |
 | [pg_partman](/pg_partman) | 5.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-partman` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to manage partitioned tables by time or ID |
 | [plproxy](/plproxy) | 2.11.0 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plproxy` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Database partitioning implemented as procedural language |
@@ -93,8 +93,8 @@ pg12: citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* pg_strom
 ```yaml
 pg17: pg_analytics_17 pg_duckdb_17* pg_parquet_17 pg_fkpart_17* pg_partman_17* plproxy_17* pg_strom_17* #citus_17* #hydra_17* #duckdb_fdw_17*
 pg16: citus_16* hydra_16* pg_analytics_16 pg_duckdb_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16* pg_partman_16* plproxy_16* pg_strom_16* 
-pg15: citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* duckdb_fdw_15* pg_fkpart_15* pg_partman_15* plproxy_15* pg_strom_15* #pg_parquet_15
-pg14: citus_14* hydra_14* pg_analytics_14 duckdb_fdw_14* pg_fkpart_14* pg_partman_14* plproxy_14* pg_strom_14* #pg_duckdb_14* #pg_parquet_14
+pg15: citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15* pg_partman_15* plproxy_15* pg_strom_15* 
+pg14: citus_14* hydra_14* pg_analytics_14 duckdb_fdw_14* pg_parquet_14 pg_fkpart_14* pg_partman_14* plproxy_14* pg_strom_14* #pg_duckdb_14*
 pg13: citus_13* hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* pg_strom_13* #pg_analytics_13 #pg_duckdb_13* #pg_parquet_13
 pg12: citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* pg_strom_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_parquet_12
 ```

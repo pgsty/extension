@@ -14,7 +14,7 @@ There are 9 available extensions in this category:
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
 | 1200 | [vector](/vector) | 0.7.4 | [pgvector](/vector) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgvector/pgvector) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | vector data type and ivfflat and hnsw access methods |
 | 1210 | [vectorscale](/vectorscale) | 0.4.0 | [pgvectorscale](/vectorscale) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/pgvectorscale) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pgvectorscale:  Advanced indexing for vector data |
-| 1220 | [vectorize](/vectorize) | 0.18.3 | [pg_vectorize](/vectorize) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pg_vectorize) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | The simplest way to do vector search on Postgres |
+| 1220 | [vectorize](/vectorize) | 0.20.0 | [pg_vectorize](/vectorize) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | 14} | [LINK](https://github.com/tembo-io/pg_vectorize) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | The simplest way to do vector search on Postgres |
 | 1230 | [pg_similarity](/pg_similarity) | 1.0 | [pg_similarity](/pg_similarity) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/eulerto/pg_similarity) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | support similarity queries |
 | 1240 | [smlar](/smlar) | 1.0 | [smlar](/smlar) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/jirutka/smlar) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Effective similarity search |
 | 1250 | [pg_summarize](/pg_summarize) | 0.0.0 | [pg_summarize](/pg_summarize) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/HexaCluster/pg_summarize) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Text Summarization using LLMs. Built using pgrx |
@@ -25,7 +25,7 @@ There are 9 available extensions in this category:
 
 
 ```yaml
-pg17: pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pg_vectorize #pgml
+pg17: pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 pg16: pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pgml pg4ml 
 pg15: pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pgml pg4ml 
 pg14: pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pgml pg4ml 
@@ -44,7 +44,7 @@ pg12: pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #pgvectorscale #pg_v
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|-------------|
 | [pgvector](/vector) | 0.7.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgvector_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | vector data type and ivfflat and hnsw access methods |
 | [pgvectorscale](/vectorscale) | 0.4.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgvectorscale_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | pgvectorscale:  Advanced indexing for vector data |
-| [pg_vectorize](/vectorize) | 0.18.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_vectorize_$v` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | The simplest way to do vector search on Postgres |
+| [pg_vectorize](/vectorize) | 0.20.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_vectorize_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | The simplest way to do vector search on Postgres |
 | [pg_similarity](/pg_similarity) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_similarity_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | support similarity queries |
 | [smlar](/smlar) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `smlar_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | Effective similarity search |
 | [pg_summarize](/pg_summarize) | 0.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_summarize_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Text Summarization using LLMs. Built using pgrx |
@@ -55,7 +55,7 @@ pg12: pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #pgvectorscale #pg_v
 
 
 ```yaml
-pg17: pgvector_17* pgvectorscale_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pg_vectorize_17 #pgml_17
+pg17: pgvector_17* pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pgml_17
 pg16: pgvector_16* pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pgml_16 pg4ml_16 
 pg15: pgvector_15* pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pgml_15 pg4ml_15 
 pg14: pgvector_14* pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pgml_14 pg4ml_14 
@@ -74,7 +74,7 @@ pg12: pgvector_12* pg_similarity_12* pg_summarize_12 pg_tiktoken_12 pg4ml_12 #pg
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|-------------|
 | [pgvector](/vector) | 0.7.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgvector` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | vector data type and ivfflat and hnsw access methods |
 | [pgvectorscale](/vectorscale) | 0.4.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgvectorscale` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | pgvectorscale:  Advanced indexing for vector data |
-| [pg_vectorize](/vectorize) | 0.18.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-vectorize` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | The simplest way to do vector search on Postgres |
+| [pg_vectorize](/vectorize) | 15 | **<span class="tcblue">PostgreSQL</span>** | 14} | `postgresql-$v-pg-vectorize` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | The simplest way to do vector search on Postgres |
 | [pg_similarity](/pg_similarity) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-similarity` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | support similarity queries |
 | [smlar](/smlar) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-smlar` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | Effective similarity search |
 | [pg_summarize](/pg_summarize) | 0.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-summarize` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Text Summarization using LLMs. Built using pgrx |
@@ -85,7 +85,7 @@ pg12: pgvector_12* pg_similarity_12* pg_summarize_12 pg_tiktoken_12 pg4ml_12 #pg
 
 
 ```yaml
-pg17: pgvector_17* pgvectorscale_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pg_vectorize_17 #pgml_17
+pg17: pgvector_17* pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pgml_17
 pg16: pgvector_16* pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pgml_16 pg4ml_16 
 pg15: pgvector_15* pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pgml_15 pg4ml_15 
 pg14: pgvector_14* pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pgml_14 pg4ml_14 

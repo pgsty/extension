@@ -690,3 +690,5 @@ generate_category()
 generate_extension()
 
 print(tabulate_stats(['rpm_ext', 'deb_ext', 'rpm_pkg', 'deb_pkg']))
+
+#print(cate_index_tabulate())
