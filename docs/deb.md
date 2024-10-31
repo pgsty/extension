@@ -2,15 +2,15 @@
 
 There are **324** extensions available on Debian/Ubuntu compatible systems, **15** of them are Debian exclusive, and missing **15** EL exclusive extensions.
 
-There are **70** built-in [**contrib**](contrib) extensions, in addition to **105** deb extensions provided by PGDG YUM repository, and **141** extensions provided by Pigsty.
+There are **70** built-in [**contrib**](contrib) extensions, in addition to **105** deb extensions provided by PGDG YUM repository, and **143** extensions provided by Pigsty.
 
 There are **320** extensions available in the current major version PostgreSQL 16, and **289** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| DEB Extension | 324 | 105 | 141 | 70 | 5 | 15 | 289 | 320 | 323 | 315 | 304 | 297 |
-| DEB Package | 238 | 90 | 140 | 1 | 5 | 1 | 205 | 234 | 237 | 232 | 223 | 216 |
+| DEB Extension | 324 | 105 | 143 | 70 | 5 | 15 | 289 | 320 | 323 | 315 | 303 | 296 |
+| DEB Package | 238 | 90 | 142 | 1 | 5 | 1 | 205 | 234 | 237 | 232 | 223 | 216 |
 
 
 
@@ -24,7 +24,7 @@ There are **320** extensions available in the current major version PostgreSQL 1
 
 | Category | Package | Version | License | DEB | DEB Package | 17 | 16 | 15 | 14 | 13 | 12 | Description |
 |:--------:|---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|-------------|
-| [TIME](/time) | [timescaledb](/timescaledb) | 2.17.1 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-2-postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data (Apache 2 Edition) |
+| [TIME](/time) | [timescaledb](/timescaledb) | 2.17.1 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-2-postgresql-$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data (Apache 2 Edition) |
 | [TIME](/time) | [pg_timeseries](/timeseries) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-timeseries` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Convenience API for Tembo time series stack |
 | [TIME](/time) | [periods](/periods) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-periods` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |
 | [TIME](/time) | [temporal_tables](/temporal_tables) | 1.2.2 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-temporal-tables` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | temporal tables |
@@ -65,7 +65,7 @@ There are **320** extensions available in the current major version PostgreSQL 1
 | [FTS](/fts) | [hunspell_pt_pt](/hunspell_pt_pt) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-hunspell-pt-pt` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Portuguese Hunspell Dictionary |
 | [FTS](/fts) | [hunspell_ru_ru](/hunspell_ru_ru) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-hunspell-ru-ru` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Russian Hunspell Dictionary |
 | [FTS](/fts) | [hunspell_ru_ru_aot](/hunspell_ru_ru_aot) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-hunspell-ru-ru-aot` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Russian Hunspell Dictionary (from AOT.ru group) |
-| [OLAP](/olap) | [citus](/citus) | 12.1-1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcgreen">CITUS</span>** | `postgresql-$v-citus-12.1` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Distributed PostgreSQL as an extension |
+| [OLAP](/olap) | [citus](/citus) | 12.1-1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-citus-12.1` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Distributed PostgreSQL as an extension |
 | [OLAP](/olap) | [hydra](/columnar) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-hydra` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | Hydra Columnar extension |
 | [OLAP](/olap) | [pg_analytics](/pg_analytics) | 0.2.1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-analytics` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | Postgres for analytics, powered by DuckDB |
 | [OLAP](/olap) | [pg_duckdb](/pg_duckdb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-duckdb` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | DuckDB Embedded in Postgres |
@@ -444,7 +444,7 @@ repo_packages:
   - postgresql-13-postgis-3* postgresql-13-pgrouting* postgresql-13-pointcloud postgresql-13-h3 postgresql-13-q3c postgresql-13-ogr-fdw postgresql-13-geoip postgresql-13-pg-polyline postgresql-13-pg-geohash postgresql-13-mobilitydb 
   - postgresql-13-pgvector postgresql-13-pgvectorscale postgresql-13-similarity postgresql-13-smlar postgresql-13-pg-summarize postgresql-13-pg-tiktoken postgresql-13-pg4ml #postgresql-13-pg-vectorize #postgresql-13-pgml
   - postgresql-13-pg-bigm postgresql-13-zhparser postgresql-13-hunspell-cs-cz postgresql-13-hunspell-de-de postgresql-13-hunspell-en-us postgresql-13-hunspell-fr postgresql-13-hunspell-ne-np postgresql-13-hunspell-nl-nl postgresql-13-hunspell-nn-no postgresql-13-hunspell-pt-pt postgresql-13-hunspell-ru-ru postgresql-13-hunspell-ru-ru-aot #postgresql-13-pg-search
-  - postgresql-13-citus-12.1 postgresql-13-hydra postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postgresql-13-partman postgresql-13-plproxy #postgresql-13-pg-analytics #postgresql-13-pg-duckdb #postgresql-13-pg-parquet #
+  - postgresql-13-citus-12.1 postgresql-13-hydra postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postgresql-13-partman postgresql-13-plproxy #postgresql-13-citus-12.1 #postgresql-13-pg-analytics #postgresql-13-pg-duckdb #postgresql-13-pg-parquet #
   - postgresql-13-age postgresql-13-hll postgresql-13-rum postgresql-13-pg-jsonschema postgresql-13-jsquery postgresql-13-pg-hint-plan postgresql-13-hypopg postgresql-13-index-advisor postgresql-13-pg-plan-filter postgresql-13-imgsmlr postgresql-13-pg-ivm postgresql-13-pgmq postgresql-13-pgq3 postgresql-13-pg-cardano postgresql-13-rdkit #postgresql-13-pg-graphql
   - postgresql-13-pg-tle postgresql-13-plv8 postgresql-13-pllua postgresql-13-plprql postgresql-13-pldebugger postgresql-13-plpgsql-check postgresql-13-plprofiler postgresql-13-plsh #postgresql-13-pljava #postgresql-13-plr #postgresql-13-pgtap #
   - postgresql-13-prefix postgresql-13-semver postgresql-13-unit postgresql-13-md5hash postgresql-13-asn1oid postgresql-13-roaringbitmap postgresql-13-pgfaceting postgresql-13-pgsphere postgresql-13-pg-country postgresql-13-pg-currency postgresql-13-pgmp postgresql-13-numeral postgresql-13-rational postgresql-13-pguint postgresql-13-pg-uint128 postgresql-13-ip4r postgresql-13-pg-uri postgresql-1313-pg-emailaddr postgresql-13-acl postgresql-13-debversion postgresql-13-pg-rrule postgresql-13-timestamp9 postgresql-13-chkpass 
@@ -461,7 +461,7 @@ pg_extensions:
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb 
   - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pg_vectorize #pgml
   - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot #pg_search
-  - citus hydra duckdb_fdw pg_fkpart pg_partman plproxy #pg_analytics #pg_duckdb #pg_parquet #pg_strom
+  - citus hydra duckdb_fdw pg_fkpart pg_partman plproxy #citus #pg_analytics #pg_duckdb #pg_parquet #pg_strom
   - age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit #pg_graphql
   - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass 
@@ -486,7 +486,7 @@ repo_packages:
   - postgresql-12-postgis-3* postgresql-12-pgrouting* postgresql-12-pointcloud postgresql-12-h3 postgresql-12-q3c postgresql-12-ogr-fdw postgresql-12-geoip postgresql-12-pg-polyline postgresql-12-pg-geohash postgresql-12-mobilitydb 
   - postgresql-12-pgvector postgresql-12-similarity postgresql-12-pg-summarize postgresql-12-pg-tiktoken postgresql-12-pg4ml #postgresql-12-pgvectorscale #postgresql-12-pg-vectorize #postgresql-12-smlar #postgresql-12-pgml
   - postgresql-12-pg-bigm postgresql-12-zhparser postgresql-12-hunspell-cs-cz postgresql-12-hunspell-de-de postgresql-12-hunspell-en-us postgresql-12-hunspell-fr postgresql-12-hunspell-ne-np postgresql-12-hunspell-nl-nl postgresql-12-hunspell-nn-no postgresql-12-hunspell-pt-pt postgresql-12-hunspell-ru-ru postgresql-12-hunspell-ru-ru-aot #postgresql-12-pg-search
-  - postgresql-12-citus-12.1 postgresql-12-duckdb-fdw postgresql-12-pg-fkpart postgresql-12-partman postgresql-12-plproxy #postgresql-12-hydra #postgresql-12-pg-analytics #postgresql-12-pg-duckdb #postgresql-12-pg-parquet #
+  - postgresql-12-citus-12.1 postgresql-12-duckdb-fdw postgresql-12-pg-fkpart postgresql-12-partman postgresql-12-plproxy #postgresql-12-citus-12.1 #postgresql-12-hydra #postgresql-12-pg-analytics #postgresql-12-pg-duckdb #postgresql-12-pg-parquet #
   - postgresql-12-age postgresql-12-hll postgresql-12-rum postgresql-12-pg-jsonschema postgresql-12-jsquery postgresql-12-pg-hint-plan postgresql-12-hypopg postgresql-12-index-advisor postgresql-12-pg-plan-filter postgresql-12-imgsmlr postgresql-12-pg-ivm postgresql-12-pgmq postgresql-12-pgq3 postgresql-12-pg-cardano postgresql-12-rdkit #postgresql-12-pg-graphql
   - postgresql-12-pg-tle postgresql-12-plv8 postgresql-12-pllua postgresql-12-plprql postgresql-12-pldebugger postgresql-12-plpgsql-check postgresql-12-plprofiler postgresql-12-plsh #postgresql-12-pljava #postgresql-12-plr #postgresql-12-pgtap #
   - postgresql-12-prefix postgresql-12-semver postgresql-12-unit postgresql-12-md5hash postgresql-12-asn1oid postgresql-12-roaringbitmap postgresql-12-pgfaceting postgresql-12-pgsphere postgresql-12-pg-country postgresql-12-pg-currency postgresql-12-pgmp postgresql-12-numeral postgresql-12-rational postgresql-12-pguint postgresql-12-pg-uint128 postgresql-12-ip4r postgresql-12-pg-uri postgresql-1212-pg-emailaddr postgresql-12-acl postgresql-12-debversion postgresql-12-pg-rrule postgresql-12-timestamp9 postgresql-12-chkpass 
@@ -503,7 +503,7 @@ pg_extensions:
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb 
   - pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #pgvectorscale #pg_vectorize #smlar #pgml
   - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot #pg_search
-  - citus duckdb_fdw pg_fkpart pg_partman plproxy #hydra #pg_analytics #pg_duckdb #pg_parquet #pg_strom
+  - citus duckdb_fdw pg_fkpart pg_partman plproxy #citus #hydra #pg_analytics #pg_duckdb #pg_parquet #pg_strom
   - age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit #pg_graphql
   - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass 

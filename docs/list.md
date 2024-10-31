@@ -7,10 +7,10 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 332 | 128 | 129 | 70 | 4 | 7 | 295 | 328 | 331 | 323 | 312 | 303 |
-| DEB Extension | 324 | 105 | 141 | 70 | 5 | 15 | 289 | 320 | 323 | 315 | 304 | 297 |
+| RPM Extension | 332 | 128 | 129 | 70 | 4 | 7 | 295 | 328 | 331 | 323 | 311 | 302 |
+| DEB Extension | 324 | 105 | 143 | 70 | 5 | 15 | 289 | 320 | 323 | 315 | 303 | 296 |
 | RPM Package | 249 | 116 | 128 | 1 | 4 | 1 | 214 | 245 | 248 | 243 | 234 | 225 |
-| DEB Package | 238 | 90 | 140 | 1 | 5 | 1 | 205 | 234 | 237 | 232 | 223 | 216 |
+| DEB Package | 238 | 90 | 142 | 1 | 5 | 1 | 205 | 234 | 237 | 232 | 223 | 216 |
 
 
 
@@ -24,7 +24,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
   
 | Category | ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
 |:--------:|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
-| [TIME](/time) | 1000 | [timescaledb](/timescaledb) | 2.17.0 | [timescaledb](/timescaledb) | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | **<span class="tcwarn">TIMESCALE</span>** | [LINK](https://github.com/timescale/timescaledb) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data (Apache 2 Edition) |
+| [TIME](/time) | 1000 | [timescaledb](/timescaledb) | 2.17.0 | [timescaledb](/timescaledb) | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/timescaledb) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data (Apache 2 Edition) |
 | [TIME](/time) | 1010 | [timeseries](/timeseries) | 0.1.6 | [pg_timeseries](/timeseries) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pg_timeseries) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Convenience API for Tembo time series stack |
 | [TIME](/time) | 1020 | [periods](/periods) | 1.2 | [periods](/periods) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/xocolatl/periods) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |
 | [TIME](/time) | 1030 | [temporal_tables](/temporal_tables) | 1.2.2 | [temporal_tables](/temporal_tables) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://pgxn.org/dist/temporal_tables/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | temporal tables |
@@ -76,7 +76,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [FTS](/fts) | 1339 | [hunspell_ru_ru_aot](/hunspell_ru_ru_aot) | 1.0 | [hunspell_ru_ru_aot](/hunspell_ru_ru_aot) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/postgrespro/hunspell_dicts) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Russian Hunspell Dictionary (from AOT.ru group) |
 | [FTS](/fts) | 1380 | [fuzzystrmatch](/fuzzystrmatch) | 1.2 | [fuzzystrmatch](/fuzzystrmatch) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/fuzzystrmatch.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | determine similarities and distance between strings |
 | [FTS](/fts) | 1390 | [pg_trgm](/pg_trgm) | 1.6 | [pg_trgm](/pg_trgm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgtrgm.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | text similarity measurement and index searching based on trigrams |
-| [OLAP](/olap) | 1500 | [citus](/citus) | 12.1-1 | [citus](/citus) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcgreen">CITUS</span>** | [LINK](https://github.com/citusdata/citus) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Distributed PostgreSQL as an extension |
+| [OLAP](/olap) | 1500 | [citus](/citus) | 12.1-1 | [citus](/citus) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/citusdata/citus) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Distributed PostgreSQL as an extension |
 | [OLAP](/olap) | 1501 | [citus_columnar](/citus_columnar) | 11.3-1 | [citus](/citus_columnar) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcgreen">CITUS</span>** | [LINK](https://github.com/citusdata/citus) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Citus columnar storage engine |
 | [OLAP](/olap) | 1510 | [columnar](/columnar) | 11.1-11 | [hydra](/columnar) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/hydradatabase/hydra) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Hydra Columnar extension |
 | [OLAP](/olap) | 1520 | [pg_analytics](/pg_analytics) | 0.2.1 | [pg_analytics](/pg_analytics) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/paradedb/pg_analytics) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Postgres for analytics, powered by DuckDB |
@@ -491,7 +491,7 @@ pg_extensions:
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pg_vectorize #pgml
   - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot #pg_search
-  - citus hydra duckdb_fdw pg_fkpart pg_partman plproxy #pg_analytics #pg_duckdb #pg_parquet #pg_strom
+  - citus hydra duckdb_fdw pg_fkpart pg_partman plproxy #citus #pg_analytics #pg_duckdb #pg_parquet #pg_strom
   - age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #pg_graphql #rdkit
   - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pllua #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
@@ -518,7 +518,7 @@ pg_extensions:
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #pgvectorscale #pg_vectorize #smlar #pgml
   - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot #pg_search
-  - citus duckdb_fdw pg_fkpart pg_partman plproxy #hydra #pg_analytics #pg_duckdb #pg_parquet #pg_strom
+  - citus duckdb_fdw pg_fkpart pg_partman plproxy #citus #hydra #pg_analytics #pg_duckdb #pg_parquet #pg_strom
   - age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #pg_graphql #rdkit
   - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pllua #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule

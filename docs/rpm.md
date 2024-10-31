@@ -9,7 +9,7 @@ There are **328** extensions available in the current major version PostgreSQL 1
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 332 | 128 | 129 | 70 | 4 | 7 | 295 | 328 | 331 | 323 | 312 | 303 |
+| RPM Extension | 332 | 128 | 129 | 70 | 4 | 7 | 295 | 328 | 331 | 323 | 311 | 302 |
 | RPM Package | 249 | 116 | 128 | 1 | 4 | 1 | 214 | 245 | 248 | 243 | 234 | 225 |
 
 
@@ -455,7 +455,7 @@ repo_packages:
   - postgis34_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13* #
   - pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #pg_vectorize_13 #pgml_13
   - pg_bigm_13* zhparser_13* hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13
-  - citus_13* hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* pg_strom_13* #pg_analytics_13 #pg_duckdb_13* #pg_parquet_13
+  - citus_13* hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* pg_strom_13* #citus_13* #pg_analytics_13 #pg_duckdb_13* #pg_parquet_13
   - apache-age_13* hll_13* rum_13 pg_jsonschema_13 jsquery_13* pg_hint_plan_13* hypopg_13* index_advisor_13 pg_plan_filter_13* imgsmlr_13* pg_ivm_13* pgmq_13 pgq_13* pg_cardano_13 #pg_graphql_13 #
   - pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* # #pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
   - prefix_13* semver_13* postgresql-unit_13* md5hash_13* asn1oid_13* pg_roaringbitmap_13* pgfaceting_13 pgsphere_13* pg_country_13* pg_currency_13* pgmp_13* numeral_13* pg_rational_13* pguint_13* pg_uint128_13* ip4r_13* pg_uri_13* pg_emailaddr_13* acl_13* timestamp9_13* chkpass_13* #
@@ -472,7 +472,7 @@ pg_extensions:
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pg_vectorize #pgml
   - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot #pg_search
-  - citus hydra duckdb_fdw pg_fkpart pg_partman plproxy pg_strom #pg_analytics #pg_duckdb #pg_parquet
+  - citus hydra duckdb_fdw pg_fkpart pg_partman plproxy pg_strom #citus #pg_analytics #pg_duckdb #pg_parquet
   - age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #pg_graphql #rdkit
   - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pllua #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
@@ -497,7 +497,7 @@ repo_packages:
   - postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12* #
   - pgvector_12* pg_similarity_12* pg_summarize_12 pg_tiktoken_12 pg4ml_12 #pgvectorscale_12 #pg_vectorize_12 #smlar_12* #pgml_12
   - pg_bigm_12* zhparser_12* hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12
-  - citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* pg_strom_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_parquet_12
+  - citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* pg_strom_12* #citus_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_parquet_12
   - apache-age_12* hll_12* rum_12 pg_jsonschema_12 jsquery_12* pg_hint_plan_12* hypopg_12* index_advisor_12 pg_plan_filter_12* imgsmlr_12* pg_ivm_12* pgmq_12 pgq_12* pg_cardano_12 #pg_graphql_12 #
   - pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* # #pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
   - prefix_12* semver_12* postgresql-unit_12* md5hash_12* asn1oid_12* pg_roaringbitmap_12* pgfaceting_12 pgsphere_12* pg_country_12* pg_currency_12* pgmp_12* numeral_12* pg_rational_12* pguint_12* pg_uint128_12* ip4r_12* pg_uri_12* pg_emailaddr_12* acl_12* timestamp9_12* chkpass_12* #
@@ -514,7 +514,7 @@ pg_extensions:
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #pgvectorscale #pg_vectorize #smlar #pgml
   - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot #pg_search
-  - citus duckdb_fdw pg_fkpart pg_partman plproxy pg_strom #hydra #pg_analytics #pg_duckdb #pg_parquet
+  - citus duckdb_fdw pg_fkpart pg_partman plproxy pg_strom #citus #hydra #pg_analytics #pg_duckdb #pg_parquet
   - age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #pg_graphql #rdkit
   - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pllua #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
