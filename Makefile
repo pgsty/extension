@@ -1,6 +1,6 @@
 #==============================================================#
 # File      :   Makefile
-# Ctime     :   2024-10-29
+# Ctime     :   2024-10-30
 # Desc      :   Makefile shortcuts
 # Path      :   Makefile
 # Copyright (C) 2019-2020 Ruohang Feng
@@ -18,6 +18,7 @@ run:
 gen:
 	bin/tabulate.py
 
+dump: save
 save:
 	psql $(PGURL) -c "COPY (SELECT * FROM ext.pigsty ORDER BY id) TO '/Users/vonng/pgsty/extension/data/pigsty.csv' CSV HEADER;"
 
@@ -25,4 +26,4 @@ load:
 	psql $(PGURL) -c "TRUNCATE ext.pigsty; COPY ext.pigsty FROM '/Users/vonng/pgsty/extension/data/pigsty.csv' CSV HEADER;"
 
 
-.PHONY: default doc
+.PHONY: default run gen dump save load
