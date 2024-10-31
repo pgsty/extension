@@ -4,13 +4,13 @@ There are **332** extensions available on EL compatible systems, **7** of them a
 
 There are **70** built-in [**contrib**](contrib) extensions, in addition to **128** rpm extensions provided by PGDG YUM repository, and **129** extensions provided by Pigsty.
 
-There are **328** extensions available in the current major version PostgreSQL 16, and **294** ready for the latest PostgreSQL 17.
+There are **328** extensions available in the current major version PostgreSQL 16, and **295** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 332 | 128 | 129 | 70 | 4 | 7 | 294 | 328 | 331 | 323 | 312 | 303 |
-| RPM Package | 249 | 116 | 128 | 1 | 4 | 1 | 213 | 245 | 248 | 243 | 234 | 225 |
+| RPM Extension | 332 | 128 | 129 | 70 | 4 | 7 | 295 | 328 | 331 | 323 | 312 | 303 |
+| RPM Package | 249 | 116 | 128 | 1 | 4 | 1 | 214 | 245 | 248 | 243 | 234 | 225 |
 
 
 
@@ -97,7 +97,7 @@ There are **328** extensions available in the current major version PostgreSQL 1
 | [LANG](/lang) | [plpgsql_check](/plpgsql_check) | 2.7 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `plpgsql_check_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | extended check for plpgsql functions |
 | [LANG](/lang) | [plprofiler](/plprofiler) | 4.2 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `plprofiler_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | server-side support for profiling PL/pgSQL functions |
 | [LANG](/lang) | [plsh](/plsh) | 2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `plsh_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PL/sh procedural language |
-| [LANG](/lang) | [pljava](/pljava) | 1.6.6 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pljava_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PL/Java procedural language (https://tada.github.io/pljava/) |
+| [LANG](/lang) | [pljava](/pljava) | 1.6.6 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pljava_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PL/Java procedural language (https://tada.github.io/pljava/) |
 | [LANG](/lang) | [plr](/plr) | 8.4.6 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `plr_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | load R interpreter and execute R script from within a database |
 | [LANG](/lang) | [pgtap](/pgtap) | 1.3.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgtap_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Unit testing for PostgreSQL |
 | [LANG](/lang) | [faker](/faker) | 0.5.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql_faker_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Wrapper for the Faker Python library |
