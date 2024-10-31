@@ -1,9 +1,9 @@
-# supautils
+# pg_session_jwt
 
 
-> [supautils](https://github.com/supabase/supautils): Extension that secures a cluster on a cloud environment
+> [pg_session_jwt](https://github.com/neondatabase/pg_session_jwt): Manage authentication sessions using JWTs
 >
-> https://github.com/supabase/supautils
+> https://github.com/neondatabase/pg_session_jwt
 
 
 -------
@@ -14,21 +14,21 @@
 
 | Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [supautils](https://github.com/supabase/supautils) | 2.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+| [pg_session_jwt](https://github.com/neondatabase/pg_session_jwt) | 0.1.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
 
 
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [supautils](/supautils) | `supabase` |  |  |  |  | Extension that secures a cluster on a cloud environment |
+| [pg_session_jwt](/pg_session_jwt) | `neon` | `auth` |  |  |  | Manage authentication sessions using JWTs |
 
 
 
-```bash
-shared_preload_libraries = 'supautils'; # add this extension to postgresql.conf
+
+
+```sql
+CREATE EXTENSION pg_session_jwt;
 ```
-
-
 
 -----------
 
@@ -38,37 +38,35 @@ shared_preload_libraries = 'supautils'; # add this extension to postgresql.conf
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `supautils_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
-| [DEB](/deb) | 2.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-supautils` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
+| [RPM](/rpm) | 0.1.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_session_jwt_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |
+| [DEB](/deb) | 0.1.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-session-jwt` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |
 
 
 
-Install `supautils` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_session_jwt` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["supautils"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_session_jwt"]}'
 ```
 
 
-Install `supautils` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
+Install `pg_session_jwt` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install supautils_17*;
-dnf install supautils_16*;
-dnf install supautils_15*;
-dnf install supautils_14*;
-dnf install supautils_13*;
+dnf install pg_session_jwt_17;
+dnf install pg_session_jwt_16;
+dnf install pg_session_jwt_15;
+dnf install pg_session_jwt_14;
 ```
 
 
-Install `supautils` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+Install `pg_session_jwt` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-supautils;
-apt install postgresql-16-supautils;
-apt install postgresql-15-supautils;
-apt install postgresql-14-supautils;
-apt install postgresql-13-supautils;
+apt install postgresql-17-pg-session-jwt;
+apt install postgresql-16-pg-session-jwt;
+apt install postgresql-15-pg-session-jwt;
+apt install postgresql-14-pg-session-jwt;
 ```
 
 

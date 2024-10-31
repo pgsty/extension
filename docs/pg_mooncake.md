@@ -1,9 +1,9 @@
-# pg_strom
+# pg_mooncake
 
 
-> [pg_strom](https://github.com/heterodb/pg-strom): PG-Strom - big-data processing acceleration using GPU and NVME
+> [pg_mooncake](https://github.com/Mooncake-Labs/pg_mooncake): Columnstore Table in Postgres
 >
-> https://github.com/heterodb/pg-strom
+> https://github.com/Mooncake-Labs/pg_mooncake
 
 
 -------
@@ -14,20 +14,24 @@
 
 | Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_strom](https://github.com/heterodb/pg-strom) | 5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| [pg_mooncake](https://github.com/Mooncake-Labs/pg_mooncake) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C++` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
 
 
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_strom](/pg_strom) | `non-free` |  |  |  |  | PG-Strom - big-data processing acceleration using GPU and NVME |
+| [pg_mooncake](/pg_mooncake) |  |  |  |  |  | Columnstore Table in Postgres |
 
 
+
+```bash
+shared_preload_libraries = 'pg_mooncake'; # add this extension to postgresql.conf
+```
 
 
 
 ```sql
-CREATE EXTENSION pg_strom;
+CREATE EXTENSION pg_mooncake;
 ```
 
 -----------
@@ -38,26 +42,33 @@ CREATE EXTENSION pg_strom;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_strom_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_mooncake_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
+| [DEB](/deb) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-mooncake` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
 
 
 
-Install `pg_strom` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_mooncake` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_strom"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_mooncake"]}'
 ```
 
 
-Install `pg_strom` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
+Install `pg_mooncake` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_strom_17*;
-dnf install pg_strom_16*;
-dnf install pg_strom_15*;
-dnf install pg_strom_14*;
-dnf install pg_strom_13*;
-dnf install pg_strom_12*;
+dnf install pg_mooncake_17*;
+dnf install pg_mooncake_16*;
+dnf install pg_mooncake_15*;
+```
+
+
+Install `pg_mooncake` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+
+```bash
+apt install postgresql-17-pg-mooncake;
+apt install postgresql-16-pg-mooncake;
+apt install postgresql-15-pg-mooncake;
 ```
 
 

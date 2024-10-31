@@ -1,7 +1,7 @@
 # PostgreSQL Extension Repo
 
 [![Webite: ext.pigsty.io](https://img.shields.io/badge/website-ext.pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://ext.pigsty.io)
-[![Extensions: 339](https://img.shields.io/badge/extensions-339-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
+[![Extensions: 341](https://img.shields.io/badge/extensions-341-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
 
 The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://pigsty.io)
 
@@ -61,10 +61,11 @@ Linux x86_64/amd64 [Extension](/list) packages for PostgreSQL 12 - 17, on El8, E
 
 | Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:--------------:|:---:|:----:|:------:|:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension  | 332 | 128  |  129   |   70    |  4   |  7   | 294  | 328  | 331  | 323  | 312  | 303  |
-| DEB Extension  | 324 | 105  |  141   |   70    |  5   |  15  | 289  | 320  | 323  | 315  | 304  | 297  |
-|  RPM Package   | 249 | 116  |  128   |    1    |  4   |  1   | 213  | 245  | 248  | 243  | 234  | 225  |
-|  DEB Package   | 238 |  90  |  140   |    1    |  5   |  1   | 205  | 234  | 237  | 232  | 223  | 216  |
+| RPM Extension  | 334 | 128  |  131   |   70    |  4   |  7   | 297  | 330  | 333  | 324  | 311  | 302  |
+| DEB Extension  | 326 | 105  |  145   |   70    |  5   |  15  | 291  | 322  | 325  | 316  | 303  | 296  |
+|  RPM Package   | 251 | 116  |  130   |    1    |  4   |  1   | 216  | 247  | 250  | 244  | 234  | 225  |
+|  DEB Package   | 240 |  90  |  144   |    1    |  5   |  1   | 207  | 236  | 239  | 233  | 223  | 216  |
+
 
 > Note: One single rpm/deb package may contain more than one extension
 
