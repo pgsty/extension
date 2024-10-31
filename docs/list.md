@@ -7,10 +7,10 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 332 | 128 | 129 | 70 | 4 | 7 | 293 | 328 | 331 | 323 | 312 | 303 |
-| DEB Extension | 324 | 105 | 141 | 70 | 5 | 15 | 288 | 320 | 323 | 315 | 304 | 297 |
-| RPM Package | 249 | 116 | 128 | 1 | 4 | 1 | 212 | 245 | 248 | 243 | 234 | 225 |
-| DEB Package | 238 | 90 | 140 | 1 | 5 | 1 | 204 | 234 | 237 | 232 | 223 | 216 |
+| RPM Extension | 332 | 128 | 129 | 70 | 4 | 7 | 294 | 328 | 331 | 323 | 312 | 303 |
+| DEB Extension | 324 | 105 | 141 | 70 | 5 | 15 | 289 | 320 | 323 | 315 | 304 | 297 |
+| RPM Package | 249 | 116 | 128 | 1 | 4 | 1 | 213 | 245 | 248 | 243 | 234 | 225 |
+| DEB Package | 238 | 90 | 140 | 1 | 5 | 1 | 205 | 234 | 237 | 232 | 223 | 216 |
 
 
 
@@ -31,8 +31,8 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [TIME](/time) | 1040 | [emaj](/emaj) | 4.5.0 | [emaj](/emaj) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/dalibo/emaj) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables fine-grained write logging and time travel on subsets of the database. |
 | [TIME](/time) | 1050 | [table_version](/table_version) | 1.10.3 | [table_version](/table_version) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/linz/postgresql-tableversion) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL table versioning extension |
 | [TIME](/time) | 1060 | [pg_cron](/pg_cron) | 1.6 | [pg_cron](/pg_cron) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/citusdata/pg_cron) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Job scheduler for PostgreSQL |
-| [TIME](/time) | 1070 | [pg_later](/pg_later) | 0.1.1 | [pg_later](/pg_later) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pg_later) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_later: Run queries now and get results later |
-| [TIME](/time) | 1080 | [pg_background](/pg_background) | 1.0 | [pg_background](/pg_background) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/vibhorkum/pg_background) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Run SQL queries in the background |
+| [TIME](/time) | 1070 | [pg_later](/pg_later) | 0.2.0 | [pg_later](/pg_later) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pg_later) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_later: Run queries now and get results later |
+| [TIME](/time) | 1080 | [pg_background](/pg_background) | 1.3 | [pg_background](/pg_background) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/vibhorkum/pg_background) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Run SQL queries in the background |
 | [GIS](/gis) | 1100 | [postgis](/postgis) | 3.5.0 | [postgis](/postgis) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS geometry and geography spatial types and functions |
 | [GIS](/gis) | 1101 | [postgis_topology](/postgis_topology) | 3.5.0 | [postgis](/postgis_topology) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS topology spatial types and functions |
 | [GIS](/gis) | 1102 | [postgis_raster](/postgis_raster) | 3.5.0 | [postgis](/postgis_raster) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS raster types and functions |
@@ -379,7 +379,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ```yaml
 pg_version: 17
 pg_extensions:
-  - timescaledb pg_timeseries periods table_version pg_cron pg_background #temporal_tables #emaj #pg_later
+  - timescaledb pg_timeseries periods table_version pg_cron pg_later pg_background #temporal_tables #emaj
   - postgis pgrouting pointcloud q3c geoip pg_polyline pg_geohash #pg_h3 #ogr_fdw #mobilitydb
   - pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
   - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot 

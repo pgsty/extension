@@ -4,13 +4,13 @@ There are **332** extensions available on EL compatible systems, **7** of them a
 
 There are **70** built-in [**contrib**](contrib) extensions, in addition to **128** rpm extensions provided by PGDG YUM repository, and **129** extensions provided by Pigsty.
 
-There are **328** extensions available in the current major version PostgreSQL 16, and **293** ready for the latest PostgreSQL 17.
+There are **328** extensions available in the current major version PostgreSQL 16, and **294** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 332 | 128 | 129 | 70 | 4 | 7 | 293 | 328 | 331 | 323 | 312 | 303 |
-| RPM Package | 249 | 116 | 128 | 1 | 4 | 1 | 212 | 245 | 248 | 243 | 234 | 225 |
+| RPM Extension | 332 | 128 | 129 | 70 | 4 | 7 | 294 | 328 | 331 | 323 | 312 | 303 |
+| RPM Package | 249 | 116 | 128 | 1 | 4 | 1 | 213 | 245 | 248 | 243 | 234 | 225 |
 
 
 
@@ -31,8 +31,8 @@ There are **328** extensions available in the current major version PostgreSQL 1
 | [TIME](/time) | [emaj](/emaj) | 4.5.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `e-maj_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables fine-grained write logging and time travel on subsets of the database. |
 | [TIME](/time) | [table_version](/table_version) | 1.10.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `table_version_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL table versioning extension |
 | [TIME](/time) | [pg_cron](/pg_cron) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_cron_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Job scheduler for PostgreSQL |
-| [TIME](/time) | [pg_later](/pg_later) | 0.1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_later_$v` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | pg_later: Run queries now and get results later |
-| [TIME](/time) | [pg_background](/pg_background) | 1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pg_background_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Run SQL queries in the background |
+| [TIME](/time) | [pg_later](/pg_later) | 0.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_later_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | pg_later: Run queries now and get results later |
+| [TIME](/time) | [pg_background](/pg_background) | 1.3 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pg_background_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Run SQL queries in the background |
 | [GIS](/gis) | [postgis](/postgis) | 3.5.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgis34_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS geometry and geography spatial types and functions |
 | [GIS](/gis) | [pgrouting](/pgrouting) | 3.6.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `pgrouting_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pgRouting Extension |
 | [GIS](/gis) | [pointcloud](/pointcloud) | 1.2.5 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pointcloud_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for lidar point clouds |
@@ -283,7 +283,7 @@ There are **328** extensions available in the current major version PostgreSQL 1
 pg_version: 17
 repo_packages:
   - postgresql17*
-  - timescaledb-2-postgresql-17* pg_timeseries_17 periods_17* table_version_17* pg_cron_17* pg_background_17* #temporal_tables_17* #e-maj_17* #pg_later_17
+  - timescaledb-2-postgresql-17* pg_timeseries_17 periods_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #temporal_tables_17* #e-maj_17*
   - postgis34_17* pgrouting_17* pointcloud_17* q3c_17* geoip_17* pg_polyline_17 pg_geohash_17* #h3-pg_17* #ogr_fdw_17* #
   - pgvector_17* pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pgml_17
   - pg_search_17 pg_bigm_17* zhparser_17* hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17 
@@ -300,7 +300,7 @@ repo_packages:
   - pglogical_17* pgl_ddl_deploy_17* pg_failover_slots_17* wal2json_17* decoder_raw_17* mimeo_17 pg_fact_loader_17* # #wal2mongo_17* #postgres-decoderbufs_17* #repmgr_17* #pg_bulkload_17*
 
 pg_extensions:
-  - timescaledb pg_timeseries periods table_version pg_cron pg_background #temporal_tables #emaj #pg_later
+  - timescaledb pg_timeseries periods table_version pg_cron pg_later pg_background #temporal_tables #emaj
   - postgis pgrouting pointcloud q3c geoip pg_polyline pg_geohash #pg_h3 #ogr_fdw #mobilitydb
   - pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
   - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot 

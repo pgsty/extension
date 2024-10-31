@@ -1,16 +1,13 @@
 # PostgreSQL Extension Repo
 
 [![Webite: ext.pigsty.io](https://img.shields.io/badge/website-ext.pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://ext.pigsty.io)
-[![Extensions: 345](https://img.shields.io/badge/extensions-345-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
+[![Extensions: 339](https://img.shields.io/badge/extensions-339-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
 
-The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used
-by [Pigsty](https://pigsty.io)
+The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://pigsty.io)
 
-Contains 150+ PG extensions [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **12
-** - **17** in addition to the official PGDG repo.
+Contains 150+ PG extensions [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **12** - **17** in addition to the official PGDG repo.
 
-**Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!
-***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
+**Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
 
 [![PostgreSQL Extension Ecosystem](https://pigsty.io/img/pigsty/ecosystem.jpg)](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)
 
@@ -64,10 +61,10 @@ Linux x86_64/amd64 [Extension](/list) packages for PostgreSQL 12 - 17, on El8, E
 
 | Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:--------------:|:---:|:----:|:------:|:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension  | 332 | 128  |  129   |   70    |  4   |  7   | 294  | 328  | 331  | 323  | 313  | 304  |
-| DEB Extension  | 324 | 105  |  141   |   70    |  5   |  15  | 289  | 320  | 323  | 315  | 305  | 298  |
-|  RPM Package   | 248 | 116  |  127   |    1    |  4   |  1   | 212  | 244  | 247  | 242  | 234  | 225  |
-|  DEB Package   | 237 |  90  |  139   |    1    |  5   |  1   | 204  | 233  | 236  | 231  | 223  | 216  |
+| RPM Extension  | 332 | 128  |  129   |   70    |  4   |  7   | 294  | 328  | 331  | 323  | 312  | 303  |
+| DEB Extension  | 324 | 105  |  141   |   70    |  5   |  15  | 289  | 320  | 323  | 315  | 304  | 297  |
+|  RPM Package   | 249 | 116  |  128   |    1    |  4   |  1   | 213  | 245  | 248  | 243  | 234  | 225  |
+|  DEB Package   | 238 |  90  |  140   |    1    |  5   |  1   | 205  | 234  | 237  | 232  | 223  | 216  |
 
 > Note: One single rpm/deb package may contain more than one extension
 

@@ -19,13 +19,13 @@ There are 9 available extensions in this category:
 | 1040 | [emaj](/emaj) | 4.5.0 | [emaj](/emaj) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/dalibo/emaj) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables fine-grained write logging and time travel on subsets of the database. |
 | 1050 | [table_version](/table_version) | 1.10.3 | [table_version](/table_version) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/linz/postgresql-tableversion) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL table versioning extension |
 | 1060 | [pg_cron](/pg_cron) | 1.6 | [pg_cron](/pg_cron) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/citusdata/pg_cron) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Job scheduler for PostgreSQL |
-| 1070 | [pg_later](/pg_later) | 0.1.1 | [pg_later](/pg_later) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pg_later) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_later: Run queries now and get results later |
-| 1080 | [pg_background](/pg_background) | 1.0 | [pg_background](/pg_background) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/vibhorkum/pg_background) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Run SQL queries in the background |
+| 1070 | [pg_later](/pg_later) | 0.2.0 | [pg_later](/pg_later) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pg_later) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_later: Run queries now and get results later |
+| 1080 | [pg_background](/pg_background) | 1.3 | [pg_background](/pg_background) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/vibhorkum/pg_background) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Run SQL queries in the background |
 
 
 
 ```yaml
-pg17: timescaledb pg_timeseries periods table_version pg_cron pg_background #temporal_tables #emaj #pg_later
+pg17: timescaledb pg_timeseries periods table_version pg_cron pg_later pg_background #temporal_tables #emaj
 pg16: timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
 pg15: timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
 pg14: timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
@@ -49,13 +49,13 @@ pg12: timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cr
 | [emaj](/emaj) | 4.5.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `e-maj_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables fine-grained write logging and time travel on subsets of the database. |
 | [table_version](/table_version) | 1.10.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `table_version_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL table versioning extension |
 | [pg_cron](/pg_cron) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_cron_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Job scheduler for PostgreSQL |
-| [pg_later](/pg_later) | 0.1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_later_$v` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | pg_later: Run queries now and get results later |
-| [pg_background](/pg_background) | 1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pg_background_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Run SQL queries in the background |
+| [pg_later](/pg_later) | 0.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_later_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | pg_later: Run queries now and get results later |
+| [pg_background](/pg_background) | 1.3 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pg_background_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Run SQL queries in the background |
 
 
 
 ```yaml
-pg17: timescaledb-2-postgresql-17* pg_timeseries_17 periods_17* table_version_17* pg_cron_17* pg_background_17* #temporal_tables_17* #e-maj_17* #pg_later_17
+pg17: timescaledb-2-postgresql-17* pg_timeseries_17 periods_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #temporal_tables_17* #e-maj_17*
 pg16: timescaledb-2-postgresql-16* pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16* 
 pg15: timescaledb-2-postgresql-15* pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15* 
 pg14: timescaledb-2-postgresql-14* pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14* 
@@ -79,13 +79,13 @@ pg12: timescaledb-2-postgresql-12* pg_timeseries_12 periods_12* temporal_tables_
 | [emaj](/emaj) | devel | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-emaj` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables fine-grained write logging and time travel on subsets of the database. |
 | [table_version](/table_version) | 1.10.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-tableversion` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL table versioning extension |
 | [pg_cron](/pg_cron) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-cron` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Job scheduler for PostgreSQL |
-| [pg_later](/pg_later) | 0.1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-later` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | pg_later: Run queries now and get results later |
-| [pg_background](/pg_background) | 1.2 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-background` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Run SQL queries in the background |
+| [pg_later](/pg_later) | 0.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-later` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | pg_later: Run queries now and get results later |
+| [pg_background](/pg_background) | 1.3 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-background` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Run SQL queries in the background |
 
 
 
 ```yaml
-pg17: timescaledb-2-postgresql-17* pg_timeseries_17 periods_17* table_version_17* pg_cron_17* pg_background_17* #temporal_tables_17* #e-maj_17* #pg_later_17
+pg17: timescaledb-2-postgresql-17* pg_timeseries_17 periods_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #temporal_tables_17* #e-maj_17*
 pg16: timescaledb-2-postgresql-16* pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16* 
 pg15: timescaledb-2-postgresql-15* pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15* 
 pg14: timescaledb-2-postgresql-14* pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14* 

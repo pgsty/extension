@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pgml](/pgml) | `pgrx` | `pgml` |  |  | require python3 venv | PostgresML: Run AL/ML workloads with SQL interface |
+| [pgml](/pgml) | `pgrx` | `pgml` |  |  | missing noble u24 packages | PostgresML: Run AL/ML workloads with SQL interface |
 
 
 
@@ -33,7 +33,7 @@ shared_preload_libraries = 'pgml'; # add this extension to postgresql.conf
 ```sql
 CREATE EXTENSION pgml;
 ```
-> **Comment**: require python3 venv
+> **Comment**: missing noble u24 packages
 -----------
 
 

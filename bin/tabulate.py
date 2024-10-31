@@ -515,7 +515,7 @@ def generate_category():
         extensions = [row for row in DATA if row['category'] == cate]
         cate_dir = os.path.join(DOCS_PATH, cate.lower())
         cate_index = os.path.join(DOCS_PATH, cate.lower() + '.md')
-        if not os.path.exists(cate_dir): os.mkdir(cate_dir)
+        #if not os.path.exists(cate_dir): os.mkdir(cate_dir)
 
         exts = [ext for ext in DATA if ext['category'] == cate ]
         ext_links = [ getcol("ext4", ext) for ext in exts ]
@@ -689,6 +689,6 @@ generate_contrib_list()
 generate_category()
 generate_extension()
 
-print(tabulate_stats(['rpm_ext', 'deb_ext', 'rpm_pkg', 'deb_pkg']))
+print("\n" + tabulate_stats(['rpm_ext', 'deb_ext', 'rpm_pkg', 'deb_pkg']))
 
 #print(cate_index_tabulate())
