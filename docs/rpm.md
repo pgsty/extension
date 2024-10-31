@@ -9,8 +9,8 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 334 | 128 | 131 | 70 | 4 | 7 | 297 | 330 | 333 | 324 | 311 | 302 |
-| RPM Package | 251 | 116 | 130 | 1 | 4 | 1 | 216 | 247 | 250 | 244 | 234 | 225 |
+| RPM Extension | 334 | 128 | 131 | 70 | 4 | 7 | 297 | 330 | 333 | 324 | 312 | 302 |
+| RPM Package | 251 | 116 | 130 | 1 | 4 | 1 | 216 | 247 | 250 | 244 | 235 | 225 |
 
 
 
@@ -66,7 +66,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 | [FTS](/fts) | [hunspell_ru_ru_aot](/hunspell_ru_ru_aot) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `hunspell_ru_ru_aot_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Russian Hunspell Dictionary (from AOT.ru group) |
 | [OLAP](/olap) | [citus](/citus) | 12.1-1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `citus_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Distributed PostgreSQL as an extension |
 | [OLAP](/olap) | [hydra](/columnar) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `hydra_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | Hydra Columnar extension |
-| [OLAP](/olap) | [pg_analytics](/pg_analytics) | 0.2.1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_analytics_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | Postgres for analytics, powered by DuckDB |
+| [OLAP](/olap) | [pg_analytics](/pg_analytics) | 0.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_analytics_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | Postgres for analytics, powered by DuckDB |
 | [OLAP](/olap) | [pg_duckdb](/pg_duckdb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_duckdb_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | DuckDB Embedded in Postgres |
 | [OLAP](/olap) | [pg_mooncake](/pg_mooncake) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_mooncake_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | Columnstore Table in Postgres |
 | [OLAP](/olap) | [duckdb_fdw](/duckdb_fdw) | 1.0.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `duckdb_fdw_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | DuckDB Foreign Data Wrapper |
@@ -129,7 +129,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 | [FUNC](/func) | [pg_zstd](/zstd) | 1.1.0 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_zstd_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Zstandard compression algorithm implementation in PostgreSQL |
 | [FUNC](/func) | [pg_http](/http) | 1.6 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgsql_http_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | HTTP client for PostgreSQL, allows web page retrieval inside the database. |
 | [FUNC](/func) | [pg_net](/pg_net) | 0.9.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_net_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Async HTTP Requests |
-| [FUNC](/func) | [pg_smtp_client](/pg_smtp_client) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_smtp_client_$v` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | PostgreSQL extension to send email using SMTP |
+| [FUNC](/func) | [pg_smtp_client](/pg_smtp_client) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_smtp_client_$v` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | PostgreSQL extension to send email using SMTP |
 | [FUNC](/func) | [pg_html5_email_address](/pg_html5_email_address) | 1.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_html5_email_address_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL email validation that is consistent with the HTML5 spec |
 | [FUNC](/func) | [pgsql_tweaks](/pgsql_tweaks) | 0.10.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgsql_tweaks_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Some functions and views for daily usage |
 | [FUNC](/func) | [pg_extra_time](/pg_extra_time) | 1.1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_extra_time_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Some date time functions and operators that, |
@@ -457,7 +457,7 @@ repo_packages:
   - postgis34_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13* #
   - pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #pg_vectorize_13 #pgml_13
   - pg_bigm_13* zhparser_13* hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13
-  - citus_13* hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* pg_strom_13* #citus_13* #pg_analytics_13 #pg_duckdb_13* #pg_mooncake_13* #pg_parquet_13
+  - citus_13* hydra_13* pg_analytics_13 duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* pg_strom_13* #citus_13* #pg_duckdb_13* #pg_mooncake_13* #pg_parquet_13
   - apache-age_13* hll_13* rum_13 pg_jsonschema_13 jsquery_13* pg_hint_plan_13* hypopg_13* index_advisor_13 pg_plan_filter_13* imgsmlr_13* pg_ivm_13* pgmq_13 pgq_13* pg_cardano_13 #pg_graphql_13 #
   - pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* # #pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
   - prefix_13* semver_13* postgresql-unit_13* md5hash_13* asn1oid_13* pg_roaringbitmap_13* pgfaceting_13 pgsphere_13* pg_country_13* pg_currency_13* pgmp_13* numeral_13* pg_rational_13* pguint_13* pg_uint128_13* ip4r_13* pg_uri_13* pg_emailaddr_13* acl_13* timestamp9_13* chkpass_13* #
@@ -474,7 +474,7 @@ pg_extensions:
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pg_vectorize #pgml
   - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot #pg_search
-  - citus hydra duckdb_fdw pg_fkpart pg_partman plproxy pg_strom #citus #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet
+  - citus hydra pg_analytics duckdb_fdw pg_fkpart pg_partman plproxy pg_strom #citus #pg_duckdb #pg_mooncake #pg_parquet
   - age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #pg_graphql #rdkit
   - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pllua #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule

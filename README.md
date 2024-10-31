@@ -61,10 +61,10 @@ Linux x86_64/amd64 [Extension](/list) packages for PostgreSQL 12 - 17, on El8, E
 
 | Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:--------------:|:---:|:----:|:------:|:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension  | 334 | 128  |  131   |   70    |  4   |  7   | 297  | 330  | 333  | 324  | 311  | 302  |
-| DEB Extension  | 326 | 105  |  145   |   70    |  5   |  15  | 291  | 322  | 325  | 316  | 303  | 296  |
-|  RPM Package   | 251 | 116  |  130   |    1    |  4   |  1   | 216  | 247  | 250  | 244  | 234  | 225  |
-|  DEB Package   | 240 |  90  |  144   |    1    |  5   |  1   | 207  | 236  | 239  | 233  | 223  | 216  |
+| RPM Extension  | 334 | 128  |  131   |   70    |  4   |  7   | 297  | 330  | 333  | 324  | 312  | 302  |
+| DEB Extension  | 326 | 105  |  145   |   70    |  5   |  15  | 292  | 322  | 325  | 316  | 304  | 296  |
+|  RPM Package   | 251 | 116  |  130   |    1    |  4   |  1   | 216  | 247  | 250  | 244  | 235  | 225  |
+|  DEB Package   | 240 |  90  |  144   |    1    |  5   |  1   | 208  | 236  | 239  | 233  | 224  | 216  |
 
 
 > Note: One single rpm/deb package may contain more than one extension
