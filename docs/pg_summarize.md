@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_summarize](/pg_summarize) | `pgrx` |  |  |  | +pgrx 0.12.6 | Text Summarization using LLMs. Built using pgrx |
+| [pg_summarize](/pg_summarize) | `pgrx` |  |  |  |  | Text Summarization using LLMs. Built using pgrx |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pg_summarize;
 ```
-> **Comment**: +pgrx 0.12.6
+
 -----------
 
 

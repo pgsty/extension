@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [citus](/citus) |  | `pg_catalog` |  |  | no pg17, no noble, no arm64, pg12=10.2, pg13=11.3 | Distributed PostgreSQL as an extension |
+| [citus](/citus) |  | `pg_catalog` |  |  | conflict with hydra, no pg17, no noble, no arm64, pg12=10.2, pg13=11.3 | Distributed PostgreSQL as an extension |
 
 
 
@@ -33,7 +33,7 @@ shared_preload_libraries = 'citus'; # add this extension to postgresql.conf
 ```sql
 CREATE EXTENSION citus;
 ```
-> **Comment**: no pg17, no noble, no arm64, pg12=10.2, pg13=11.3
+> **Comment**: conflict with hydra, no pg17, no noble, no arm64, pg12=10.2, pg13=11.3
 -----------
 
 

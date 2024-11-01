@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [babelfishpg_tds](/babelfishpg_tds) | `mssql` |  | [`babelfishpg_tsql`](babelfishpg_tsql) |  | works on wiltondb fork | SQL Server TDS protocol extension |
+| [babelfishpg_tds](/babelfishpg_tds) | `mssql` |  | [`babelfishpg_tsql`](babelfishpg_tsql) |  | works on wiltondb kernel fork | SQL Server TDS protocol extension |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION babelfishpg_tds CASCADE;
 ```
-> **Comment**: works on wiltondb fork
+> **Comment**: works on wiltondb kernel fork
 -----------
 
 

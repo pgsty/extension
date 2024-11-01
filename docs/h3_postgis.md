@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_h3](/h3_postgis) |  |  | [`h3`](h3), [`postgis`](postgis), [`postgis_raster`](postgis_raster) |  |  | H3 PostGIS integration |
+| [pg_h3](/h3_postgis) |  |  | [`h3`](h3), [`postgis`](postgis), [`postgis_raster`](postgis_raster) |  | pg17 on el8/9 not ready yet | H3 PostGIS integration |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION h3_postgis CASCADE;
 ```
-
+> **Comment**: pg17 on el8/9 not ready yet
 -----------
 
 
@@ -64,6 +64,7 @@ dnf install h3-pg_12*;
 Install `pg_h3` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-h3;
 apt install postgresql-16-h3;
 apt install postgresql-15-h3;
 apt install postgresql-14-h3;

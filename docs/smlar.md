@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [smlar](/smlar) | `nil-lic` |  |  |  | math.abs, gist pointer | Effective similarity search |
+| [smlar](/smlar) | `nil-lic` |  |  |  | fix math.abs, gist pointer problem | Effective similarity search |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION smlar;
 ```
-> **Comment**: math.abs, gist pointer
+> **Comment**: fix math.abs, gist pointer problem
 -----------
 
 

@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pgrouting](/pgrouting) |  |  | [`postgis`](postgis) |  | miss deb | pgRouting Extension |
+| [pgrouting](/pgrouting) |  |  | [`postgis`](postgis) |  | pg17 on deb not ready | pgRouting Extension |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pgrouting CASCADE;
 ```
-> **Comment**: miss deb
+> **Comment**: pg17 on deb not ready
 -----------
 
 

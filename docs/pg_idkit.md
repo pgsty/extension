@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_idkit](/pg_idkit) | `pgrx` |  |  |  | +pgrx 0.12.6 | multi-tool for generating new/niche universally unique identifiers (ex. UUIDv6, ULID, KSUID) |
+| [pg_idkit](/pg_idkit) | `pgrx` |  |  |  |  | multi-tool for generating new/niche universally unique identifiers (ex. UUIDv6, ULID, KSUID) |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pg_idkit;
 ```
-> **Comment**: +pgrx 0.12.6
+
 -----------
 
 

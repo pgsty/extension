@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [babelfishpg_common](/babelfishpg_common) | `mssql` |  |  | [`babelfishpg_tsql`](/babelfishpg_tsql) | works on wiltondb fork | SQL Server Transact SQL Datatype Support |
+| [babelfishpg_common](/babelfishpg_common) | `mssql` |  |  | [`babelfishpg_tsql`](/babelfishpg_tsql) | works on wiltondb kernel fork | SQL Server Transact SQL Datatype Support |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION babelfishpg_common;
 ```
-> **Comment**: works on wiltondb fork
+> **Comment**: works on wiltondb kernel fork
 -----------
 
 

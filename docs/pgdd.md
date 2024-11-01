@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pgdd](/pgdd) | `pgrx` | `dd` |  |  | broken 17 | An in-database data dictionary providing database introspection via standard SQL query syntax. Developed using pgx (https://github.com/zombodb/pgx). |
+| [pgdd](/pgdd) | `pgrx` | `dd` |  |  | building failed on pg17 | An in-database data dictionary providing database introspection via standard SQL query syntax. Developed using pgx (https://github.com/zombodb/pgx). |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pgdd;
 ```
-> **Comment**: broken 17
+> **Comment**: building failed on pg17
 -----------
 
 

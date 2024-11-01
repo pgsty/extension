@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pgtap](/pgtap) | `test` |  |  |  | miss el9 | Unit testing for PostgreSQL |
+| [pgtap](/pgtap) | `test` |  |  |  | break perl deps on el | Unit testing for PostgreSQL |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pgtap;
 ```
-> **Comment**: miss el9
+> **Comment**: break perl deps on el
 -----------
 
 

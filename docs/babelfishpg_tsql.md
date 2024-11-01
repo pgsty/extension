@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [babelfishpg_tsql](/babelfishpg_tsql) | `mssql` |  | [`babelfishpg_common`](babelfishpg_common), [`uuid-ossp`](uuid-ossp) | [`babelfishpg_tds`](/babelfishpg_tds) | works on wiltondb fork | SQL Server Transact SQL compatibility |
+| [babelfishpg_tsql](/babelfishpg_tsql) | `mssql` |  | [`babelfishpg_common`](babelfishpg_common), [`uuid-ossp`](uuid-ossp) | [`babelfishpg_tds`](/babelfishpg_tds) | works on wiltondb kernel fork | SQL Server Transact SQL compatibility |
 
 
 
@@ -33,7 +33,7 @@ shared_preload_libraries = 'babelfishpg_tsql'; # add this extension to postgresq
 ```sql
 CREATE EXTENSION babelfishpg_tsql CASCADE;
 ```
-> **Comment**: works on wiltondb fork
+> **Comment**: works on wiltondb kernel fork
 -----------
 
 

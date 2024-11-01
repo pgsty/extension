@@ -1,16 +1,16 @@
 # RPM Extension Packages
 
-There are **334** extensions available on EL compatible systems, **7** of them are EL exclusive, and missing **7** Debian exclusive extensions.
+There are **335** extensions available on EL compatible systems, **7** of them are EL exclusive, and missing **7** Debian exclusive extensions.
 
 There are **70** built-in [**contrib**](contrib) extensions, in addition to **128** rpm extensions provided by PGDG YUM repository, and **131** extensions provided by Pigsty.
 
-There are **330** extensions available in the current major version PostgreSQL 16, and **297** ready for the latest PostgreSQL 17.
+There are **331** extensions available in the current major version PostgreSQL 16, and **297** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 334 | 128 | 131 | 70 | 4 | 7 | 297 | 330 | 333 | 324 | 312 | 302 |
-| RPM Package | 251 | 116 | 130 | 1 | 4 | 1 | 216 | 247 | 250 | 244 | 235 | 225 |
+| RPM Extension | 335 | 128 | 131 | 70 | 4 | 7 | 297 | 331 | 334 | 325 | 313 | 303 |
+| RPM Package | 252 | 116 | 130 | 1 | 4 | 1 | 216 | 248 | 251 | 245 | 236 | 226 |
 
 
 
@@ -24,7 +24,8 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 | Category | Package | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | 12 | Description |
 |:--------:|---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|-------------|
-| [TIME](/time) | [timescaledb](/timescaledb) | 2.17.1 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-2-postgresql-$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data (Apache 2 Edition) |
+| [TIME](/time) | [timescaledb](/timescaledb) | 2.17.1 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-2-postgresql-$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data |
+| [TIME](/time) | [timescaledb_toolkit](/timescaledb_toolkit) | 1.18.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-toolkit-postgresql-$v` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Library of analytical hyperfunctions, time-series pipelining, and other SQL utilities |
 | [TIME](/time) | [pg_timeseries](/timeseries) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_timeseries_$v` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Convenience API for Tembo time series stack |
 | [TIME](/time) | [periods](/periods) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `periods_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |
 | [TIME](/time) | [temporal_tables](/temporal_tables) | 1.2.2 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `temporal_tables_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | temporal tables |
@@ -285,7 +286,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 pg_version: 17
 repo_packages:
   - postgresql17*
-  - timescaledb-2-postgresql-17* pg_timeseries_17 periods_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #temporal_tables_17* #e-maj_17*
+  - timescaledb-2-postgresql-17* pg_timeseries_17 periods_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #timescaledb-toolkit-postgresql-17 #temporal_tables_17* #e-maj_17*
   - postgis34_17* pgrouting_17* pointcloud_17* q3c_17* geoip_17* pg_polyline_17 pg_geohash_17* #h3-pg_17* #ogr_fdw_17* #
   - pgvector_17* pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pgml_17
   - pg_search_17 pg_bigm_17* zhparser_17* hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17 
@@ -302,7 +303,7 @@ repo_packages:
   - pglogical_17* pgl_ddl_deploy_17* pg_failover_slots_17* wal2json_17* decoder_raw_17* mimeo_17 pg_fact_loader_17* # #wal2mongo_17* #postgres-decoderbufs_17* #repmgr_17* #pg_bulkload_17*
 
 pg_extensions:
-  - timescaledb pg_timeseries periods table_version pg_cron pg_later pg_background #temporal_tables #emaj
+  - timescaledb pg_timeseries periods table_version pg_cron pg_later pg_background #timescaledb_toolkit #temporal_tables #emaj
   - postgis pgrouting pointcloud q3c geoip pg_polyline pg_geohash #pg_h3 #ogr_fdw #mobilitydb
   - pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
   - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot 
@@ -327,7 +328,7 @@ pg_extensions:
 pg_version: 16
 repo_packages:
   - postgresql16*
-  - timescaledb-2-postgresql-16* pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16* 
+  - timescaledb-2-postgresql-16* timescaledb-toolkit-postgresql-16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16* 
   - postgis34_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* geoip_16* pg_polyline_16 pg_geohash_16* #
   - pgvector_16* pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pgml_16 pg4ml_16 
   - pg_search_16 pg_bigm_16* zhparser_16* hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16 
@@ -344,7 +345,7 @@ repo_packages:
   - pglogical_16* pgl_ddl_deploy_16* pg_failover_slots_16* wal2json_16* wal2mongo_16* postgres-decoderbufs_16* decoder_raw_16* mimeo_16 pg_fact_loader_16* pg_bulkload_16* # #repmgr_16*
 
 pg_extensions:
-  - timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
+  - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pgml pg4ml 
   - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot 
@@ -369,7 +370,7 @@ pg_extensions:
 pg_version: 15
 repo_packages:
   - postgresql15*
-  - timescaledb-2-postgresql-15* pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15* 
+  - timescaledb-2-postgresql-15* timescaledb-toolkit-postgresql-15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15* 
   - postgis34_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15* pg_polyline_15 pg_geohash_15* #
   - pgvector_15* pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pgml_15 pg4ml_15 
   - pg_search_15 pg_bigm_15* zhparser_15* hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15 
@@ -386,7 +387,7 @@ repo_packages:
   - pglogical_15* pgl_ddl_deploy_15* pg_failover_slots_15* wal2json_15* wal2mongo_15* postgres-decoderbufs_15* decoder_raw_15* mimeo_15 pg_fact_loader_15* pg_bulkload_15* # #repmgr_15*
 
 pg_extensions:
-  - timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
+  - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pgml pg4ml 
   - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot 
@@ -411,7 +412,7 @@ pg_extensions:
 pg_version: 14
 repo_packages:
   - postgresql14*
-  - timescaledb-2-postgresql-14* pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14* 
+  - timescaledb-2-postgresql-14* timescaledb-toolkit-postgresql-14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14* 
   - postgis34_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14* pg_polyline_14 pg_geohash_14* #
   - pgvector_14* pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pgml_14 pg4ml_14 
   - pg_search_14 pg_bigm_14* zhparser_14* hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14 
@@ -428,7 +429,7 @@ repo_packages:
   - pglogical_14* pgl_ddl_deploy_14* pg_failover_slots_14* wal2json_14* wal2mongo_14* postgres-decoderbufs_14* decoder_raw_14* mimeo_14 pg_fact_loader_14* pg_bulkload_14* # #repmgr_14*
 
 pg_extensions:
-  - timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
+  - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pgml pg4ml 
   - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot 
@@ -453,7 +454,7 @@ pg_extensions:
 pg_version: 13
 repo_packages:
   - postgresql13*
-  - timescaledb-2-postgresql-13* pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_later_13 pg_background_13* 
+  - timescaledb-2-postgresql-13* timescaledb-toolkit-postgresql-13 pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_later_13 pg_background_13* 
   - postgis34_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13* #
   - pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #pg_vectorize_13 #pgml_13
   - pg_bigm_13* zhparser_13* hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13
@@ -470,7 +471,7 @@ repo_packages:
   - pglogical_13* pgl_ddl_deploy_13* pg_failover_slots_13* wal2json_13* wal2mongo_13* postgres-decoderbufs_13* decoder_raw_13* mimeo_13 pg_fact_loader_13* pg_bulkload_13* # #repmgr_13*
 
 pg_extensions:
-  - timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
+  - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pg_vectorize #pgml
   - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot #pg_search
@@ -495,7 +496,7 @@ pg_extensions:
 pg_version: 12
 repo_packages:
   - postgresql12*
-  - timescaledb-2-postgresql-12* pg_timeseries_12 periods_12* temporal_tables_12* e-maj_12* table_version_12* pg_cron_12* pg_background_12* #pg_later_12
+  - timescaledb-2-postgresql-12* timescaledb-toolkit-postgresql-12 pg_timeseries_12 periods_12* temporal_tables_12* e-maj_12* table_version_12* pg_cron_12* pg_background_12* #pg_later_12
   - postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12* #
   - pgvector_12* pg_similarity_12* pg_summarize_12 pg_tiktoken_12 pg4ml_12 #pgvectorscale_12 #pg_vectorize_12 #smlar_12* #pgml_12
   - pg_bigm_12* zhparser_12* hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12
@@ -512,7 +513,7 @@ repo_packages:
   - pglogical_12* pgl_ddl_deploy_12* pg_failover_slots_12* wal2json_12* postgres-decoderbufs_12* decoder_raw_12* mimeo_12 pg_fact_loader_12* pg_bulkload_12* # #wal2mongo_12* #repmgr_12*
 
 pg_extensions:
-  - timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #pg_later
+  - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #pg_later
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #pgvectorscale #pg_vectorize #smlar #pgml
   - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot #pg_search

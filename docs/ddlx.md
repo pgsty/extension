@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [ddlx](/ddlx) |  |  |  |  | miss pg17@el | DDL eXtractor functions |
+| [ddlx](/ddlx) |  |  |  |  |  | DDL eXtractor functions |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION ddlx;
 ```
-> **Comment**: miss pg17@el
+
 -----------
 
 

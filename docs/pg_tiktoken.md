@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_tiktoken](/pg_tiktoken) | `pgrx` |  |  |  | +pgrx 0.12.6 | pg_tictoken: tiktoken tokenizer for use with OpenAI models in postgres |
+| [pg_tiktoken](/pg_tiktoken) | `pgrx` |  |  |  |  | pg_tictoken: tiktoken tokenizer for use with OpenAI models in postgres |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pg_tiktoken;
 ```
-> **Comment**: +pgrx 0.12.6
+
 -----------
 
 

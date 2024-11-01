@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [hydra](/columnar) |  |  |  | [`timeseries`](/timeseries) |  | Hydra Columnar extension |
+| [hydra](/columnar) |  |  |  | [`timeseries`](/timeseries) | conflict with citus columnar | Hydra Columnar extension |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION columnar;
 ```
-
+> **Comment**: conflict with citus columnar
 -----------
 
 

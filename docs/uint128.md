@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_uint128](/uint128) |  |  |  |  | +el8 __has_builtin marco | Native uint128 type |
+| [pg_uint128](/uint128) |  |  |  |  | fix el8 build problem by adding __has_builtin marco | Native uint128 type |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION uint128;
 ```
-> **Comment**: +el8 __has_builtin marco
+> **Comment**: fix el8 build problem by adding __has_builtin marco
 -----------
 
 

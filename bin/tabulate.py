@@ -11,6 +11,7 @@ import json
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'data', 'pigsty.csv'))
 DOCS_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'docs'))
+STUB_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'stub'))
 
 
 LICENSE_MAP = {
@@ -664,7 +665,7 @@ def cate_index_tabulate():
         for ext in DATA:
             if ext['category'] == cate:
                 exts.append(getcol("ext4", ext))
-        cates.append('- ' + cat + ': ' + ' '.join(exts))
+        cates.append(cat + ': ' + ' '.join(exts))
     return '\n'.join(cates)
 
 
@@ -682,6 +683,20 @@ def cate_index_tabulate2():
     return '\n'.join(cates)
 
 
+
+def generate_readme():
+    with open(os.path.join(STUB_PATH, 'README.md'), 'r') as src:
+        readme_tmpl = src.read()
+    ext_num = len(DATA)
+    f = openw('README.md')
+    f.write(readme_tmpl% (ext_num,ext_num,ext_num,
+                          tabulate_stats(['rpm_ext', 'deb_ext', 'rpm_pkg', 'deb_pkg']),
+                          cate_index_tabulate()
+                          ))
+    f.close()
+
+
+generate_readme()
 generate_all_list()
 generate_rpm_list()
 generate_deb_list()
@@ -690,5 +705,3 @@ generate_category()
 generate_extension()
 
 print("\n" + tabulate_stats(['rpm_ext', 'deb_ext', 'rpm_pkg', 'deb_pkg']))
-
-print(cate_index_tabulate())

@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [citus](/citus_columnar) |  | `pg_catalog` |  |  |  | Citus columnar storage engine |
+| [citus](/citus_columnar) |  | `pg_catalog` |  |  | conflict with hydra columnar | Citus columnar storage engine |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION citus_columnar;
 ```
-
+> **Comment**: conflict with hydra columnar
 -----------
 
 

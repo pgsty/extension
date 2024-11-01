@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [babelfishpg_money](/babelfishpg_money) | `mssql` |  |  |  | works on wiltondb fork | SQL Server Money Data Type |
+| [babelfishpg_money](/babelfishpg_money) | `mssql` |  |  |  | works on wiltondb kernel fork | SQL Server Money Data Type |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION babelfishpg_money;
 ```
-> **Comment**: works on wiltondb fork
+> **Comment**: works on wiltondb kernel fork
 -----------
 
 

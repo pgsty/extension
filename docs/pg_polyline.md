@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_polyline](/pg_polyline) | `pgrx` |  |  |  | +pgrx 0.12.6 | Fast Google Encoded Polyline encoding & decoding for postgres |
+| [pg_polyline](/pg_polyline) | `pgrx` |  |  |  |  | Fast Google Encoded Polyline encoding & decoding for postgres |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pg_polyline;
 ```
-> **Comment**: +pgrx 0.12.6
+
 -----------
 
 
