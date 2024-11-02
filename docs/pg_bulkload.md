@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_bulkload](/pg_bulkload) |  |  |  |  |  | pg_bulkload is a high speed data loading utility for PostgreSQL |
+| [pg_bulkload](/pg_bulkload) |  |  |  |  | pg17 not ready yet | pg_bulkload is a high speed data loading utility for PostgreSQL |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pg_bulkload;
 ```
-
+> **Comment**: pg17 not ready yet
 -----------
 
 

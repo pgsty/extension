@@ -20,7 +20,7 @@ There are 13 available extensions in this category:
 | 1540 | [pg_mooncake](/pg_mooncake) | 0.0.1 | [pg_mooncake](/pg_mooncake) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/Mooncake-Labs/pg_mooncake) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Columnstore Table in Postgres |
 | 1550 | [duckdb_fdw](/duckdb_fdw) | 1.0.0 | [duckdb_fdw](/duckdb_fdw) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/alitrack/duckdb_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | DuckDB Foreign Data Wrapper |
 | 1560 | [pg_parquet](/pg_parquet) | 0.1.0 | [pg_parquet](/pg_parquet) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/CrunchyData/pg_parquet/) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | copy data between Postgres and Parquet |
-| 1600 | [pg_fkpart](/pg_fkpart) | 1.7 | [pg_fkpart](/pg_fkpart) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/lemoineat/pg_fkpart) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Table partitioning by foreign key utility |
+| 1600 | [pg_fkpart](/pg_fkpart) | 1.7 | [pg_fkpart](/pg_fkpart) | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/lemoineat/pg_fkpart) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Table partitioning by foreign key utility |
 | 1610 | [pg_partman](/pg_partman) | 5.1.0 | [pg_partman](/pg_partman) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgpartman/pg_partman) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to manage partitioned tables by time or ID |
 | 1620 | [plproxy](/plproxy) | 2.11.0 | [plproxy](/plproxy) | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/plproxy/plproxy) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Database partitioning implemented as procedural language |
 | 1630 | [pg_strom](/pg_strom) | 5.1 | [pg_strom](/pg_strom) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/heterodb/pg-strom) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PG-Strom - big-data processing acceleration using GPU and NVME |
@@ -33,8 +33,8 @@ pg17: pg_analytics pg_duckdb pg_mooncake pg_parquet pg_fkpart plproxy #citus #hy
 pg16: citus hydra pg_analytics pg_duckdb pg_mooncake duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_strom
 pg15: citus hydra pg_analytics pg_duckdb pg_mooncake duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_strom
 pg14: citus hydra pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_mooncake #pg_strom
-pg13: citus hydra pg_analytics duckdb_fdw pg_partman plproxy #citus #pg_duckdb #pg_mooncake #pg_parquet #pg_fkpart #pg_strom
-pg12: citus duckdb_fdw pg_partman plproxy #citus #hydra #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_fkpart #pg_strom
+pg13: citus hydra pg_analytics duckdb_fdw pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
+pg12: citus duckdb_fdw pg_fkpart pg_partman plproxy #citus #hydra #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
 ```
 
 
@@ -53,7 +53,7 @@ pg12: citus duckdb_fdw pg_partman plproxy #citus #hydra #pg_analytics #pg_duckdb
 | [pg_mooncake](/pg_mooncake) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_mooncake_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  | Columnstore Table in Postgres |
 | [duckdb_fdw](/duckdb_fdw) | 1.0.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `duckdb_fdw_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | DuckDB Foreign Data Wrapper |
 | [pg_parquet](/pg_parquet) | 0.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_parquet_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | copy data between Postgres and Parquet |
-| [pg_fkpart](/pg_fkpart) | 1.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `pg_fkpart_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  | Table partitioning by foreign key utility |
+| [pg_fkpart](/pg_fkpart) | 1.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_fkpart_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Table partitioning by foreign key utility |
 | [pg_partman](/pg_partman) | 5.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_partman_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Extension to manage partitioned tables by time or ID |
 | [plproxy](/plproxy) | 2.11.0 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | `plproxy_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Database partitioning implemented as procedural language |
 | [pg_strom](/pg_strom) | 5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_strom_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PG-Strom - big-data processing acceleration using GPU and NVME |
@@ -66,8 +66,8 @@ pg17: pg_analytics_17 pg_duckdb_17* pg_mooncake_17* pg_parquet_17 pg_fkpart_17* 
 pg16: citus_16* hydra_16* pg_analytics_16 pg_duckdb_16* pg_mooncake_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16* pg_partman_16* plproxy_16* #citus_16* #pg_strom_16*
 pg15: citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* pg_mooncake_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15* pg_partman_15* plproxy_15* #citus_15* #pg_strom_15*
 pg14: citus_14* hydra_14* pg_analytics_14 duckdb_fdw_14* pg_parquet_14 pg_fkpart_14* pg_partman_14* plproxy_14* #citus_14* #pg_duckdb_14* #pg_mooncake_14* #pg_strom_14*
-pg13: citus_13* hydra_13* pg_analytics_13 duckdb_fdw_13* pg_partman_13* plproxy_13* #citus_13* #pg_duckdb_13* #pg_mooncake_13* #pg_parquet_13 #pg_fkpart_13* #pg_strom_13*
-pg12: citus_12* duckdb_fdw_12* pg_partman_12* plproxy_12* #citus_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_mooncake_12* #pg_parquet_12 #pg_fkpart_12* #pg_strom_12*
+pg13: citus_13* hydra_13* pg_analytics_13 duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* #citus_13* #pg_duckdb_13* #pg_mooncake_13* #pg_parquet_13 #pg_strom_13*
+pg12: citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* #citus_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_mooncake_12* #pg_parquet_12 #pg_strom_12*
 ```
 
 
@@ -98,8 +98,8 @@ pg17: pg_analytics_17 pg_duckdb_17* pg_mooncake_17* pg_parquet_17 pg_fkpart_17* 
 pg16: citus_16* hydra_16* pg_analytics_16 pg_duckdb_16* pg_mooncake_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16* pg_partman_16* plproxy_16* #citus_16* #pg_strom_16*
 pg15: citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* pg_mooncake_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15* pg_partman_15* plproxy_15* #citus_15* #pg_strom_15*
 pg14: citus_14* hydra_14* pg_analytics_14 duckdb_fdw_14* pg_parquet_14 pg_fkpart_14* pg_partman_14* plproxy_14* #citus_14* #pg_duckdb_14* #pg_mooncake_14* #pg_strom_14*
-pg13: citus_13* hydra_13* pg_analytics_13 duckdb_fdw_13* pg_partman_13* plproxy_13* #citus_13* #pg_duckdb_13* #pg_mooncake_13* #pg_parquet_13 #pg_fkpart_13* #pg_strom_13*
-pg12: citus_12* duckdb_fdw_12* pg_partman_12* plproxy_12* #citus_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_mooncake_12* #pg_parquet_12 #pg_fkpart_12* #pg_strom_12*
+pg13: citus_13* hydra_13* pg_analytics_13 duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* #citus_13* #pg_duckdb_13* #pg_mooncake_13* #pg_parquet_13 #pg_strom_13*
+pg12: citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* #citus_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_mooncake_12* #pg_parquet_12 #pg_strom_12*
 ```
 
 

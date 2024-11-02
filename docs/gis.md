@@ -26,7 +26,7 @@ There are 19 available extensions in this category:
 | 1131 | [h3_postgis](/h3_postgis) | 4.1.3 | [pg_h3](/h3_postgis) | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/zachasme/h3-pg) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | H3 PostGIS integration |
 | 1140 | [q3c](/q3c) | 2.0.1 | [q3c](/q3c) | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/segasai/q3c) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | q3c sky indexing plugin |
 | 1150 | [ogr_fdw](/ogr_fdw) | 1.1 | [ogr_fdw](/ogr_fdw) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pramsey/pgsql-ogr-fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for GIS data access |
-| 1155 | [geoip](/geoip) | 0.3.0 | [geoip](/geoip) | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/geoip) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | IP-based geolocation query |
+| 1155 | [geoip](/geoip) | 0.3.0 | [geoip](/geoip) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tvondra/geoip) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | IP-based geolocation query |
 | 1160 | [pg_polyline](/pg_polyline) | 0.0.0 | [pg_polyline](/pg_polyline) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/yihong0618/pg_polyline) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Fast Google Encoded Polyline encoding & decoding for postgres |
 | 1170 | [pg_geohash](/pg_geohash) | 1.0 | [pg_geohash](/pg_geohash) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/jistok/pg_geohash) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Handle geohash based functionality for spatial coordinates |
 | 1180 | [mobilitydb](/mobilitydb) | 1.1.1 | [mobilitydb](/mobilitydb) | **<span class="tcwarn">GPLv3</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/MobilityDB/MobilityDB) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | MobilityDB geospatial trajectory data management & analysis platform |
@@ -39,8 +39,8 @@ pg17: postgis pgrouting pointcloud q3c geoip pg_polyline pg_geohash #postgis #po
 pg16: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #postgis #pointcloud #pg_h3 #mobilitydb
 pg15: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #postgis #pointcloud #pg_h3 #mobilitydb
 pg14: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #postgis #pointcloud #pg_h3 #mobilitydb
-pg13: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw pg_polyline pg_geohash #postgis #pointcloud #pg_h3 #geoip #mobilitydb
-pg12: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw pg_polyline pg_geohash #postgis #pointcloud #pg_h3 #geoip #mobilitydb
+pg13: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #postgis #pointcloud #pg_h3 #mobilitydb
+pg12: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #postgis #pointcloud #pg_h3 #mobilitydb
 ```
 
 
@@ -58,7 +58,7 @@ pg12: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw pg_polyline pg_geohash #pos
 | [pg_h3](/h3) | 4.1.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `h3-pg_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | H3 bindings for PostgreSQL |
 | [q3c](/q3c) | 2.0.1 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `q3c_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | q3c sky indexing plugin |
 | [ogr_fdw](/ogr_fdw) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `ogr_fdw_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | foreign-data wrapper for GIS data access |
-| [geoip](/geoip) | 0.3.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `geoip_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  | IP-based geolocation query |
+| [geoip](/geoip) | 0.3.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `geoip_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | IP-based geolocation query |
 | [pg_polyline](/pg_polyline) | 0.0.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_polyline_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Fast Google Encoded Polyline encoding & decoding for postgres |
 | [pg_geohash](/pg_geohash) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_geohash_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Handle geohash based functionality for spatial coordinates |
 | [earthdistance](/earthdistance) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | calculate great-circle distances on the surface of the Earth |
@@ -70,8 +70,8 @@ pg17: postgis34_17* pgrouting_17* pointcloud_17* q3c_17* geoip_17* pg_polyline_1
 pg16: postgis34_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* geoip_16* pg_polyline_16 pg_geohash_16* #postgis34_16* #pointcloud_16* #h3-pg_16* #
 pg15: postgis34_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15* pg_polyline_15 pg_geohash_15* #postgis34_15* #pointcloud_15* #h3-pg_15* #
 pg14: postgis34_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14* pg_polyline_14 pg_geohash_14* #postgis34_14* #pointcloud_14* #h3-pg_14* #
-pg13: postgis34_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* pg_polyline_13 pg_geohash_13* #postgis34_13* #pointcloud_13* #h3-pg_13* #geoip_13* #
-pg12: postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* pg_polyline_12 pg_geohash_12* #postgis34_12* #pointcloud_12* #h3-pg_12* #geoip_12* #
+pg13: postgis34_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13* #postgis34_13* #pointcloud_13* #h3-pg_13* #
+pg12: postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12* #postgis34_12* #pointcloud_12* #h3-pg_12* #
 ```
 
 
@@ -102,8 +102,8 @@ pg17: postgis34_17* pgrouting_17* pointcloud_17* q3c_17* geoip_17* pg_polyline_1
 pg16: postgis34_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* geoip_16* pg_polyline_16 pg_geohash_16* #postgis34_16* #pointcloud_16* #h3-pg_16* #
 pg15: postgis34_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15* pg_polyline_15 pg_geohash_15* #postgis34_15* #pointcloud_15* #h3-pg_15* #
 pg14: postgis34_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14* pg_polyline_14 pg_geohash_14* #postgis34_14* #pointcloud_14* #h3-pg_14* #
-pg13: postgis34_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* pg_polyline_13 pg_geohash_13* #postgis34_13* #pointcloud_13* #h3-pg_13* #geoip_13* #
-pg12: postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* pg_polyline_12 pg_geohash_12* #postgis34_12* #pointcloud_12* #h3-pg_12* #geoip_12* #
+pg13: postgis34_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13* #postgis34_13* #pointcloud_13* #h3-pg_13* #
+pg12: postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12* #postgis34_12* #pointcloud_12* #h3-pg_12* #
 ```
 
 

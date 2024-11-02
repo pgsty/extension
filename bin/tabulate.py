@@ -747,9 +747,10 @@ def generate_readme():
 def generate_distro_repo_packages(distro):
     for ver in PG_VERS:
         repo_list, ext_list = pg_ext_list(ver, distro)
-        print(repo_list.replace('repo_packages:', '  '))
+        print(repo_list.replace('repo_packages:', '"pg%s:all":'%ver))
 
-#generate_distro_repo_packages("u24")
+#generate_distro_repo_packages("rpm")
+#generate_distro_repo_packages("deb")
 
 
 generate_readme()
