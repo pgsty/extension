@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pguint](/uint) |  |  |  |  |  | unsigned integer types |
+| [pguint](/uint) |  |  |  |  | no pg14 for el8/el9 pgdg repo | unsigned integer types |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION uint;
 ```
-
+> **Comment**: no pg14 for el8/el9 pgdg repo
 -----------
 
 
@@ -38,8 +38,8 @@ CREATE EXTENSION uint;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pguint_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pguint` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pguint_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [DEB](/deb) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pguint` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
 
 
 
@@ -56,7 +56,6 @@ Install `pguint` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM
 dnf install pguint_17*;
 dnf install pguint_16*;
 dnf install pguint_15*;
-dnf install pguint_14*;
 dnf install pguint_13*;
 dnf install pguint_12*;
 ```

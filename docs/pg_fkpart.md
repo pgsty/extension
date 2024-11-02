@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_fkpart](/pg_fkpart) |  | `pgfkpart` |  |  |  | Table partitioning by foreign key utility |
+| [pg_fkpart](/pg_fkpart) |  | `pgfkpart` |  |  | no pg13,12 on el8 pgdg repo | Table partitioning by foreign key utility |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pg_fkpart;
 ```
-
+> **Comment**: no pg13,12 on el8 pgdg repo
 -----------
 
 
@@ -38,8 +38,8 @@ CREATE EXTENSION pg_fkpart;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `pg_fkpart_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 1.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-fkpart` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 1.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `pg_fkpart_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |
+| [DEB](/deb) | 1.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-fkpart` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |
 
 
 
@@ -57,8 +57,6 @@ dnf install pg_fkpart_17*;
 dnf install pg_fkpart_16*;
 dnf install pg_fkpart_15*;
 dnf install pg_fkpart_14*;
-dnf install pg_fkpart_13*;
-dnf install pg_fkpart_12*;
 ```
 
 

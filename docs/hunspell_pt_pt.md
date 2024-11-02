@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [hunspell_pt_pt](/hunspell_pt_pt) | `broken` |  |  |  |  | Portuguese Hunspell Dictionary |
+| [hunspell_pt_pt](/hunspell_pt_pt) | `broken` |  |  |  | WARNING, conflict with pg built-in dict file, not recommended | Portuguese Hunspell Dictionary |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION hunspell_pt_pt;
 ```
-
+> **Comment**: WARNING, conflict with pg built-in dict file, not recommended
 -----------
 
 

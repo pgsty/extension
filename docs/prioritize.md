@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_prioritize](/prioritize) |  |  |  |  |  | get and set the priority of PostgreSQL backends |
+| [pg_prioritize](/prioritize) |  |  |  |  | no pg 14,13,12 on el9 | get and set the priority of PostgreSQL backends |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION prioritize;
 ```
-
+> **Comment**: no pg 14,13,12 on el9
 -----------
 
 
@@ -38,8 +38,8 @@ CREATE EXTENSION prioritize;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_prioritize_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-16-prioritize` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_prioritize_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-16-prioritize` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
 
 
 
@@ -56,9 +56,6 @@ Install `pg_prioritize` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>*
 dnf install pg_prioritize_17*;
 dnf install pg_prioritize_16*;
 dnf install pg_prioritize_15*;
-dnf install pg_prioritize_14*;
-dnf install pg_prioritize_13*;
-dnf install pg_prioritize_12*;
 ```
 
 

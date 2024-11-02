@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pgcryptokey](/pgcryptokey) |  |  | [`pgcrypto`](pgcrypto) |  |  | cryptographic key management |
+| [pgcryptokey](/pgcryptokey) |  |  | [`pgcrypto`](pgcrypto) |  | missing 14,13,12 on el pgdg repo | cryptographic key management |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pgcryptokey CASCADE;
 ```
-
+> **Comment**: missing 14,13,12 on el pgdg repo
 -----------
 
 
@@ -38,8 +38,8 @@ CREATE EXTENSION pgcryptokey CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgcryptokey_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgcryptokey` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgcryptokey_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgcryptokey` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
 
 
 
@@ -56,9 +56,6 @@ Install `pgcryptokey` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** 
 dnf install pgcryptokey_17*;
 dnf install pgcryptokey_16*;
 dnf install pgcryptokey_15*;
-dnf install pgcryptokey_14*;
-dnf install pgcryptokey_13*;
-dnf install pgcryptokey_12*;
 ```
 
 

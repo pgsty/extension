@@ -31,9 +31,9 @@ There are 12 available extensions in this category:
 pg17: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
 pg16: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
 pg15: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
-pg14: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
-pg13: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
-pg12: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
+pg14: orafce pgtt session_variable pg_statement_rollback #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money #pgmemcache
+pg13: orafce pgtt session_variable pg_statement_rollback #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money #pgmemcache
+pg12: orafce pgtt session_variable pg_statement_rollback #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money #pgmemcache
 ```
 
 
@@ -56,7 +56,7 @@ pg12: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_met
 | [babelfishpg_tsql](/babelfishpg_tsql) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tsql*` |  |  | <span class="tcblue">✔</span> |  |  |  | SQL Server Transact SQL compatibility |
 | [babelfishpg_tds](/babelfishpg_tds) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tds*` |  |  | <span class="tcblue">✔</span> |  |  |  | SQL Server TDS protocol extension |
 | [babelfishpg_money](/babelfishpg_money) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-money*` |  |  | <span class="tcblue">✔</span> |  |  |  | SQL Server Money Data Type |
-| [pgmemcache](/pgmemcache) | 2.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgmemcache_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | memcached interface |
+| [pgmemcache](/pgmemcache) | 2.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgmemcache_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  | memcached interface |
 
 
 
@@ -64,9 +64,9 @@ pg12: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_met
 pg17: orafce_17* pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17* pg_dbms_lock_17* pgmemcache_17* #pg_dbms_job_17* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money*
 pg16: orafce_16* pgtt_16* session_variable_16* pg_statement_rollback_16* pg_dbms_metadata_16* pg_dbms_lock_16* pgmemcache_16* #pg_dbms_job_16* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money*
 pg15: orafce_15* pgtt_15* session_variable_15* pg_statement_rollback_15* pg_dbms_metadata_15* pg_dbms_lock_15* pgmemcache_15* #pg_dbms_job_15* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money*
-pg14: orafce_14* pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14* pg_dbms_lock_14* pgmemcache_14* #pg_dbms_job_14* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money*
-pg13: orafce_13* pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13* pg_dbms_lock_13* pgmemcache_13* #pg_dbms_job_13* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money*
-pg12: orafce_12* pgtt_12* session_variable_12* pg_statement_rollback_12* pg_dbms_metadata_12* pg_dbms_lock_12* pgmemcache_12* #pg_dbms_job_12* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money*
+pg14: orafce_14* pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14* pg_dbms_lock_14* #pg_dbms_job_14* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money* #pgmemcache_14*
+pg13: orafce_13* pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13* pg_dbms_lock_13* #pg_dbms_job_13* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money* #pgmemcache_13*
+pg12: orafce_12* pgtt_12* session_variable_12* pg_statement_rollback_12* pg_dbms_metadata_12* pg_dbms_lock_12* #pg_dbms_job_12* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money* #pgmemcache_12*
 ```
 
 
@@ -94,9 +94,9 @@ pg12: orafce_12* pgtt_12* session_variable_12* pg_statement_rollback_12* pg_dbms
 pg17: orafce_17* pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17* pg_dbms_lock_17* pgmemcache_17* #pg_dbms_job_17* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money*
 pg16: orafce_16* pgtt_16* session_variable_16* pg_statement_rollback_16* pg_dbms_metadata_16* pg_dbms_lock_16* pgmemcache_16* #pg_dbms_job_16* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money*
 pg15: orafce_15* pgtt_15* session_variable_15* pg_statement_rollback_15* pg_dbms_metadata_15* pg_dbms_lock_15* pgmemcache_15* #pg_dbms_job_15* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money*
-pg14: orafce_14* pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14* pg_dbms_lock_14* pgmemcache_14* #pg_dbms_job_14* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money*
-pg13: orafce_13* pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13* pg_dbms_lock_13* pgmemcache_13* #pg_dbms_job_13* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money*
-pg12: orafce_12* pgtt_12* session_variable_12* pg_statement_rollback_12* pg_dbms_metadata_12* pg_dbms_lock_12* pgmemcache_12* #pg_dbms_job_12* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money*
+pg14: orafce_14* pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14* pg_dbms_lock_14* #pg_dbms_job_14* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money* #pgmemcache_14*
+pg13: orafce_13* pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13* pg_dbms_lock_13* #pg_dbms_job_13* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money* #pgmemcache_13*
+pg12: orafce_12* pgtt_12* session_variable_12* pg_statement_rollback_12* pg_dbms_metadata_12* pg_dbms_lock_12* #pg_dbms_job_12* #babelfishpg-common* #babelfishpg-tsql* #babelfishpg-tds* #babelfishpg-money* #pgmemcache_12*
 ```
 
 

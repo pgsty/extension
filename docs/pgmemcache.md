@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pgmemcache](/pgmemcache) |  |  |  |  |  | memcached interface |
+| [pgmemcache](/pgmemcache) |  |  |  |  | missing 14,13,12 on el pgdg | memcached interface |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pgmemcache;
 ```
-
+> **Comment**: missing 14,13,12 on el pgdg
 -----------
 
 
@@ -38,8 +38,8 @@ CREATE EXTENSION pgmemcache;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgmemcache_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 2.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgmemcache` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 2.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgmemcache_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
+| [DEB](/deb) | 2.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgmemcache` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
 
 
 
@@ -56,9 +56,6 @@ Install `pgmemcache` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** *
 dnf install pgmemcache_17*;
 dnf install pgmemcache_16*;
 dnf install pgmemcache_15*;
-dnf install pgmemcache_14*;
-dnf install pgmemcache_13*;
-dnf install pgmemcache_12*;
 ```
 
 

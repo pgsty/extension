@@ -20,12 +20,12 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_top](/pg_top) |  |  |  |  |  | Monitor PostgreSQL processes similar to unix top |
+| [pg_top](/pg_top) |  |  |  |  | no pg12 on el8/9 pgdg repo | Monitor PostgreSQL processes similar to unix top |
 
 
 
 
-
+> **Comment**: no pg12 on el8/9 pgdg repo
 -----------
 
 
@@ -34,7 +34,7 @@
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.7.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_top_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 3.7.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_top_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
 
 
 
@@ -52,7 +52,6 @@ dnf install pg_top_16*;
 dnf install pg_top_15*;
 dnf install pg_top_14*;
 dnf install pg_top_13*;
-dnf install pg_top_12*;
 ```
 
 

@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [sslutils](/sslutils) |  |  |  |  |  | A Postgres extension for managing SSL certificates through SQL |
+| [sslutils](/sslutils) |  |  |  |  | no pg15 on el9, no pg12 on el8 | A Postgres extension for managing SSL certificates through SQL |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION sslutils;
 ```
-
+> **Comment**: no pg15 on el9, no pg12 on el8
 -----------
 
 

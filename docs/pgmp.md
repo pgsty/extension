@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pgmp](/pgmp) |  |  |  |  |  | Multiple Precision Arithmetic extension |
+| [pgmp](/pgmp) |  |  |  |  | missing pg14,13,12 on el pgdg repo | Multiple Precision Arithmetic extension |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pgmp;
 ```
-
+> **Comment**: missing pg14,13,12 on el pgdg repo
 -----------
 
 
@@ -38,8 +38,8 @@ CREATE EXTENSION pgmp;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pgmp_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgmp` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pgmp_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
+| [DEB](/deb) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgmp` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
 
 
 
@@ -56,9 +56,6 @@ Install `pgmp` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM**
 dnf install pgmp_17*;
 dnf install pgmp_16*;
 dnf install pgmp_15*;
-dnf install pgmp_14*;
-dnf install pgmp_13*;
-dnf install pgmp_12*;
 ```
 
 

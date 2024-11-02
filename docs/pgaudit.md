@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pgaudit](/pgaudit) |  |  |  |  |  | provides auditing functionality |
+| [pgaudit](/pgaudit) |  |  |  |  | pg15=pgaudit17, pg14=pgaudit16 pg13=pgaudit15 pg12=pgaudit14 | provides auditing functionality |
 
 
 
@@ -33,7 +33,7 @@ shared_preload_libraries = 'pgaudit'; # add this extension to postgresql.conf
 ```sql
 CREATE EXTENSION pgaudit;
 ```
-
+> **Comment**: pg15=pgaudit17, pg14=pgaudit16 pg13=pgaudit15 pg12=pgaudit14
 -----------
 
 

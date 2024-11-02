@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_auditor](/pg_auditor) |  |  |  |  |  | Audit data changes and provide flashback ability |
+| [pg_auditor](/pg_auditor) |  |  |  |  | pg15 rpm pkg name is pgaudit17_$v* | Audit data changes and provide flashback ability |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pg_auditor;
 ```
-
+> **Comment**: pg15 rpm pkg name is pgaudit17_$v*
 -----------
 
 

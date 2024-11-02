@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [geoip](/geoip) |  | `geoip` | [`ip4r`](ip4r) |  |  | IP-based geolocation query |
+| [geoip](/geoip) |  | `geoip` | [`ip4r`](ip4r) |  | no pg17 on el9 | IP-based geolocation query |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION geoip CASCADE;
 ```
-
+> **Comment**: no pg17 on el9
 -----------
 
 
@@ -38,8 +38,8 @@ CREATE EXTENSION geoip CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.3.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `geoip_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 0.3.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-geoip` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 0.3.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `geoip_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
+| [DEB](/deb) | 0.3.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-geoip` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
 
 
 
@@ -58,7 +58,6 @@ dnf install geoip_16*;
 dnf install geoip_15*;
 dnf install geoip_14*;
 dnf install geoip_13*;
-dnf install geoip_12*;
 ```
 
 

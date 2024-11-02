@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [extra_window_functions](/extra_window_functions) |  |  |  |  |  | Extra Window Functions for PostgreSQL |
+| [extra_window_functions](/extra_window_functions) |  |  |  |  | no pg14,13,12 on el8/9 | Extra Window Functions for PostgreSQL |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION extra_window_functions;
 ```
-
+> **Comment**: no pg14,13,12 on el8/9
 -----------
 
 
@@ -38,8 +38,8 @@ CREATE EXTENSION extra_window_functions;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `extra_window_functions_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-extra-window-functions` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `extra_window_functions_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-extra-window-functions` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
 
 
 
@@ -56,9 +56,6 @@ Install `extra_window_functions` [RPM](/rpm) from the **<span class="tccyan">PGD
 dnf install extra_window_functions_17*;
 dnf install extra_window_functions_16*;
 dnf install extra_window_functions_15*;
-dnf install extra_window_functions_14*;
-dnf install extra_window_functions_13*;
-dnf install extra_window_functions_12*;
 ```
 
 

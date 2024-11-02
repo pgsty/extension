@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pg_ivm](/pg_ivm) |  | `pg_catalog` |  | [`timeseries`](/timeseries) |  | incremental view maintenance on PostgreSQL |
+| [pg_ivm](/pg_ivm) |  | `pg_catalog` |  | [`timeseries`](/timeseries) | no pg12 on el8/9 pgdg repo | incremental view maintenance on PostgreSQL |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pg_ivm;
 ```
-
+> **Comment**: no pg12 on el8/9 pgdg repo
 -----------
 
 
@@ -38,8 +38,8 @@ CREATE EXTENSION pg_ivm;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.8 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_ivm_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 1.9 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-ivm` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 1.8 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_ivm_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
+| [DEB](/deb) | 1.9 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-ivm` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
 
 
 
@@ -58,7 +58,6 @@ dnf install pg_ivm_16*;
 dnf install pg_ivm_15*;
 dnf install pg_ivm_14*;
 dnf install pg_ivm_13*;
-dnf install pg_ivm_12*;
 ```
 
 
@@ -70,7 +69,6 @@ apt install postgresql-16-pg-ivm;
 apt install postgresql-15-pg-ivm;
 apt install postgresql-14-pg-ivm;
 apt install postgresql-13-pg-ivm;
-apt install postgresql-12-pg-ivm;
 ```
 
 

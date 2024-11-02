@@ -69,8 +69,6 @@ apt install postgresql-17-pg-safeupdate;
 apt install postgresql-16-pg-safeupdate;
 apt install postgresql-15-pg-safeupdate;
 apt install postgresql-14-pg-safeupdate;
-apt install postgresql-13-pg-safeupdate;
-apt install postgresql-12-pg-safeupdate;
 ```
 
 

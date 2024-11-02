@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pgmeminfo](/pgmeminfo) |  |  |  |  |  | show memory usage |
+| [pgmeminfo](/pgmeminfo) |  |  |  |  | no pg14,13,12 on el8/9 pgdg repo | show memory usage |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pgmeminfo;
 ```
-
+> **Comment**: no pg14,13,12 on el8/9 pgdg repo
 -----------
 
 
@@ -38,8 +38,8 @@ CREATE EXTENSION pgmeminfo;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgmeminfo_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgmeminfo` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgmeminfo_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgmeminfo` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |  |  |
 
 
 
@@ -56,9 +56,6 @@ Install `pgmeminfo` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **
 dnf install pgmeminfo_17*;
 dnf install pgmeminfo_16*;
 dnf install pgmeminfo_15*;
-dnf install pgmeminfo_14*;
-dnf install pgmeminfo_13*;
-dnf install pgmeminfo_12*;
 ```
 
 

@@ -69,8 +69,6 @@ apt install postgresql-17-pgfaceting;
 apt install postgresql-16-pgfaceting;
 apt install postgresql-15-pgfaceting;
 apt install postgresql-14-pgfaceting;
-apt install postgresql-13-pgfaceting;
-apt install postgresql-12-pgfaceting;
 ```
 
 
