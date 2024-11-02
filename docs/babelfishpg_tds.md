@@ -38,8 +38,8 @@ CREATE EXTENSION babelfishpg_tds CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tds*` |  |  | <span class="tcblue">✔</span> |  |  |  |  |
-| [DEB](/deb) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tds` |  |  | <span class="tcblue">✔</span> |  |  |  |  |
+| [RPM](/rpm) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tds*` |  |  | **<span class="tcpurple">✔</span>** |  |  |  |  |
+| [DEB](/deb) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tds` |  |  | **<span class="tcpurple">✔</span>** |  |  |  |  |
 
 
 

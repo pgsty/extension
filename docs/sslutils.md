@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [sslutils](/sslutils) |  |  |  |  | no pg15 on el9, no pg12 on el8 | A Postgres extension for managing SSL certificates through SQL |
+| [sslutils](/sslutils) |  |  |  |  | no pg15,14,13,12 on el9, no pg12 on el8 | A Postgres extension for managing SSL certificates through SQL |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION sslutils;
 ```
-> **Comment**: no pg15 on el9, no pg12 on el8
+> **Comment**: no pg15,14,13,12 on el9, no pg12 on el8
 -----------
 
 
@@ -38,8 +38,8 @@ CREATE EXTENSION sslutils;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `sslutils_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-sslutils` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [RPM](/rpm) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `sslutils_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |  |  |
+| [DEB](/deb) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-sslutils` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |  |  |
 
 
 
@@ -55,10 +55,6 @@ Install `sslutils` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** *
 ```bash
 dnf install sslutils_17*;
 dnf install sslutils_16*;
-dnf install sslutils_15*;
-dnf install sslutils_14*;
-dnf install sslutils_13*;
-dnf install sslutils_12*;
 ```
 
 

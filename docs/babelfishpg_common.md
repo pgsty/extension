@@ -38,8 +38,8 @@ CREATE EXTENSION babelfishpg_common;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-common*` |  |  | <span class="tcblue">✔</span> |  |  |  |  |
-| [DEB](/deb) | 3.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-common` |  |  | <span class="tcblue">✔</span> |  |  |  |  |
+| [RPM](/rpm) | 3.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-common*` |  |  | **<span class="tcpurple">✔</span>** |  |  |  |  |
+| [DEB](/deb) | 3.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-common` |  |  | **<span class="tcpurple">✔</span>** |  |  |  |  |
 
 
 

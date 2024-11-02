@@ -42,8 +42,8 @@ CREATE EXTENSION babelfishpg_tsql CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tsql*` |  |  | <span class="tcblue">✔</span> |  |  |  |  |
-| [DEB](/deb) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tsql` |  |  | <span class="tcblue">✔</span> |  |  |  |  |
+| [RPM](/rpm) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tsql*` |  |  | **<span class="tcpurple">✔</span>** |  |  |  |  |
+| [DEB](/deb) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tsql` |  |  | **<span class="tcpurple">✔</span>** |  |  |  |  |
 
 
 

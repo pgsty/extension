@@ -42,14 +42,38 @@ REPO_MAP = {
     "TIMESCALE": '**<span class="tcwarn">TIMESCALE</span>**'
 }
 
+REPO_CHECK_COLOR = {
+    "PGDG": '**<span class="tccyan">✔</span>**',
+    "PIGSTY": '**<span class="tcwarn">✔</span>**',
+    "CONTRIB": '**<span class="tcblue">✔</span>**',
+    "WILTON": '**<span class="tcpurple">✔</span>**',
+    "CITUS": '**<span class="tcgreen">✔</span>**',
+    "TIMESCALE": '**<span class="tcwarn">✔</span>**'
+}
+
 BLUE_CHECK = '<span class="tcblue">✔</span>'
 WARN_CROSS = '<span class="tcwarn">✘</span>'
 RED_EXCLAM = '<span class="tcred">❗</span>'
 
 PG_VERS = ['17', '16', '15', '14', '13', '12']
 
-NOP_LIST = ['plr', 'pljava','pg_dbms_job', 'pgtap', 'faker', 'dbt2', 'pgpool', 'pgagent', 'pg_mon', 'oracle_fdw', 'pg_strom', 'oracle_fdw',
-            'db2_fdw', 'repmgr', 'slony', 'babelfishpg_common', 'babelfishpg_tsql', 'babelfishpg_tds', 'babelfishpg_money', 'hunspell_pt_pt', '']
+# NOP_LIST = []
+
+NOP_LIST = {
+    "rpm": ["plr", "pljava","pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
+    "el7": ["plr", "pljava","pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
+    "el8": ["plr", "pljava","pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
+    "el9": ["plr", "pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
+
+    "deb": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
+    "u24": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt", "pgml", "citus", "topn", "timescaledb_toolkit"],
+    "u22": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
+    "u20": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
+    "d12": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
+    "d11": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
+}
+
+
 
 CATES = {
     "TIME": "TIME: TimescaleDB, Versioning & Temporal Table, Crontab, Async & Background Job Scheduler, ...",
@@ -125,19 +149,19 @@ COLS = {
     "debpkg2":    {'header': 'Package Pattern',"center": False, "func": lambda row: '`%s`' % row['deb_pkg'] },
     "rpmpkg3":    {'header': 'RPM Package',"center": False, "func": lambda row: '<br>'.join(['`%s`'%i for i in  row['rpm_pkg'].split(' ') ]) },
     "debpkg3":    {'header': 'DEB Package',"center": False, "func": lambda row: '<br>'.join(['`%s`'%i for i in  row['deb_pkg'].split(' ') ]) },
-    "r17":        {'header': '17'         ,"center": True,  "func": lambda row: BLUE_CHECK if '17' in row['rpm_pg'] else '' },
-    "r16":        {'header': '16'         ,"center": True,  "func": lambda row: BLUE_CHECK if '16' in row['rpm_pg'] else '' },
-    "r15":        {'header': '15'         ,"center": True,  "func": lambda row: BLUE_CHECK if '15' in row['rpm_pg'] else '' },
-    "r14":        {'header': '14'         ,"center": True,  "func": lambda row: BLUE_CHECK if '14' in row['rpm_pg'] else '' },
-    "r13":        {'header': '13'         ,"center": True,  "func": lambda row: BLUE_CHECK if '13' in row['rpm_pg'] else '' },
-    "r12":        {'header': '12'         ,"center": True,  "func": lambda row: BLUE_CHECK if '12' in row['rpm_pg'] else '' },
-    "d17":        {'header': '17'         ,"center": True,  "func": lambda row: BLUE_CHECK if '17' in row['deb_pg'] else '' },
-    "d16":        {'header': '16'         ,"center": True,  "func": lambda row: BLUE_CHECK if '16' in row['deb_pg'] else '' },
-    "d15":        {'header': '15'         ,"center": True,  "func": lambda row: BLUE_CHECK if '15' in row['deb_pg'] else '' },
-    "d14":        {'header': '14'         ,"center": True,  "func": lambda row: BLUE_CHECK if '14' in row['deb_pg'] else '' },
-    "d13":        {'header': '13'         ,"center": True,  "func": lambda row: BLUE_CHECK if '13' in row['deb_pg'] else '' },
-    "d12":        {'header': '12'         ,"center": True,  "func": lambda row: BLUE_CHECK if '12' in row['deb_pg'] else '' },
-    "bin":        {'header': '`Bin`'      ,'center': True,  'func': lambda row: BLUE_CHECK if row['utility'] else ''   },
+    "r17":        {'header': '17'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['rpm_repo'], BLUE_CHECK) if '17' in row['rpm_pg'] else '' },
+    "r16":        {'header': '16'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['rpm_repo'], BLUE_CHECK) if '16' in row['rpm_pg'] else '' },
+    "r15":        {'header': '15'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['rpm_repo'], BLUE_CHECK) if '15' in row['rpm_pg'] else '' },
+    "r14":        {'header': '14'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['rpm_repo'], BLUE_CHECK) if '14' in row['rpm_pg'] else '' },
+    "r13":        {'header': '13'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['rpm_repo'], BLUE_CHECK) if '13' in row['rpm_pg'] else '' },
+    "r12":        {'header': '12'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['rpm_repo'], BLUE_CHECK) if '12' in row['rpm_pg'] else '' },
+    "d17":        {'header': '17'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if '17' in row['deb_pg'] else '' },
+    "d16":        {'header': '16'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if '16' in row['deb_pg'] else '' },
+    "d15":        {'header': '15'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if '15' in row['deb_pg'] else '' },
+    "d14":        {'header': '14'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if '14' in row['deb_pg'] else '' },
+    "d13":        {'header': '13'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if '13' in row['deb_pg'] else '' },
+    "d12":        {'header': '12'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if '12' in row['deb_pg'] else '' },
+    "bin":        {'header': '`Bin`'      ,'center': True,  'func': lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if row['utility'] else ''   },
     "load":       {'header': '`LOAD`'     ,"center": True,  "func": lambda row: '' if row['need_load'] is None else (RED_EXCLAM if row['need_load'] else '' ) },
     "ddl":        {'header': '`DDL`'      ,"center": True,  "func": lambda row: '' if row['need_ddl' ] is None else (BLUE_CHECK if row['need_ddl' ] else WARN_CROSS) },
     "trust":      {'header': '`TRUST`'    ,"center": True,  "func": lambda row: '' if row['trusted'  ] is None else (BLUE_CHECK if row['trusted'  ] else WARN_CROSS) },
@@ -326,21 +350,31 @@ repo_packages:
 ```
 """
 
+def corner_case(ver,distro, ext):
+    name, alias = ext['name'], ext['alias']
+
+    if name not in (): return
+    return
+
 def pg_ext_list(ver, distro, category=None):
     REPO_KEY, HAS_KEY, PG_VER_KEY, PKG_KEY = '', '', '', ''
     pg_pkg_str = ''
     filter = lambda row: True
-    if distro.lower() in ('el', 'rpm', 'el7', 'el8', 'el9'):
+    os_type = ''
+    nop_list = NOP_LIST.get(distro.lower(), [])
+    if distro.lower() in ('rpm', 'el7', 'el8', 'el9'):
         REPO_KEY, HAS_KEY, PG_VER_KEY, PKG_KEY = 'rpm_repo', 'has_rpm', 'rpm_pg', 'rpm_pkg'
         pg_pkg_str = '  - postgresql%s*\n' % ver
-        filter = lambda ext: ext[HAS_KEY] and ver in ext[PG_VER_KEY] and ext['alias'] not in NOP_LIST
+        os_type = "rpm"
+        filter = lambda ext: ext[HAS_KEY] and ver in ext[PG_VER_KEY] and ext['alias'] not in nop_list and ext['lead']
     elif distro.lower() in ('deb', 'u20', 'u22', 'u24', 'd12', 'd11'):
         REPO_KEY, HAS_KEY, PG_VER_KEY, PKG_KEY = 'deb_repo', 'has_deb', 'deb_pg', 'deb_pkg'
         pg_pkg_str = '  - postgresql-%s postgresql-client-%s postgresql-server-dev-%s postgresql-plpython3-%s postgresql-plperl-%s postgresql-pltcl-%s\n' % (ver,ver,ver,ver,ver,ver)
-        filter = lambda ext: ext[HAS_KEY] and ver in ext[PG_VER_KEY] and ext['alias'] not in NOP_LIST
+        os_type = "deb"
+        filter = lambda ext: ext[HAS_KEY] and ver in ext[PG_VER_KEY] and ext['alias'] not in nop_list and ext['lead']
     elif distro.lower() in ('both'):
         REPO_KEY, HAS_KEY, PG_VER_KEY, PKG_KEY = 'rpm_repo', 'has_rpm', 'rpm_pg', 'rpm_pkg'
-        filter = lambda ext: ext["has_deb"] and ext["has_rpm"] and ver in ext["rpm_pg"] and ver in ext["deb_pg"] and ext['alias'] not in NOP_LIST
+        filter = lambda ext: ext["has_deb"] and ext["has_rpm"] and ver in ext["rpm_pg"] and ver in ext["deb_pg"] and ext['alias'] not in nop_list and ext['lead']
     else:
         raise("invalid distro")
 
@@ -353,8 +387,19 @@ def pg_ext_list(ver, distro, category=None):
             if ext['repo'] == 'CONTRIB': continue
             if ext['category'] == cate:
                 if filter(ext):
-                    repo_pkg_add.append(ext[PKG_KEY].replace('$v', ver))
-                    ext_list_add.append(ext['alias'])
+                    # edge case: pgaudit on el8/9
+                    name, pkg, alias = ext['name'], ext[PKG_KEY], ext['alias']
+                    if name == 'pgaudit' and os_type == 'rpm' and ver in ['12','13','14','15']: #pg15=pgaudit17, pg14=pgaudit16 pg13=pgaudit15 pg12=pgaudit14
+                        pkg = pkg.replace('$v', ver).replace('pgaudit', 'pgaudit' + str(int(ver)+2))
+                        alias = ext['alias'] + ver
+                    elif ext['name'] == 'citus' and os_type == 'deb' and ver in ['12','13']: #pg12=10.2, pg13=11.3
+                        pkg = ext[PKG_KEY].replace('$v', ver).replace('citus-12.1', 'citus-' + ('10.2' if ver == '12' else '11.3') )
+                        alias = ext['alias'] + ver
+                    else:
+                        pkg = ext[PKG_KEY].replace('$v', ver)
+                        alias = ext['alias']
+                    repo_pkg_add.append(pkg)
+                    ext_list_add.append(alias)
                 else:
                     repo_pkg_nop.append('#' + ext[PKG_KEY].replace('$v', ver))
                     ext_list_nop.append('#' + ext['alias'])
@@ -697,6 +742,14 @@ def generate_readme():
                           cate_index_tabulate()
                           ))
     f.close()
+
+
+def generate_distro_repo_packages(distro):
+    for ver in PG_VERS:
+        repo_list, ext_list = pg_ext_list(ver, distro)
+        print(repo_list.replace('repo_packages:', '  '))
+
+#generate_distro_repo_packages("u24")
 
 
 generate_readme()

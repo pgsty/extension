@@ -38,8 +38,8 @@ CREATE EXTENSION babelfishpg_money;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-money*` |  |  | <span class="tcblue">✔</span> |  |  |  |  |
-| [DEB](/deb) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-money` |  |  | <span class="tcblue">✔</span> |  |  |  |  |
+| [RPM](/rpm) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-money*` |  |  | **<span class="tcpurple">✔</span>** |  |  |  |  |
+| [DEB](/deb) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-money` |  |  | **<span class="tcpurple">✔</span>** |  |  |  |  |
 
 
 
