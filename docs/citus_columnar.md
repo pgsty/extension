@@ -64,7 +64,6 @@ dnf install citus_12*;
 Install `citus` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-citus-12.1;
 apt install postgresql-16-citus-12.1;
 apt install postgresql-15-citus-12.1;
 apt install postgresql-14-citus-12.1;

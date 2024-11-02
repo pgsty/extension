@@ -4,13 +4,13 @@ There are **324** extensions available on Debian/Ubuntu compatible systems, **16
 
 There are **70** built-in [**contrib**](contrib) extensions, in addition to **102** deb extensions provided by PGDG YUM repository, and **143** extensions provided by Pigsty.
 
-There are **320** extensions available in the current major version PostgreSQL 16, and **301** ready for the latest PostgreSQL 17.
+There are **320** extensions available in the current major version PostgreSQL 16, and **300** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| DEB Extension | 324 | 102 | 143 | 70 | 5 | 16 | 301 | 320 | 323 | 314 | 303 | 295 |
-| DEB Package | 239 | 88 | 142 | 1 | 5 | 1 | 217 | 235 | 238 | 232 | 223 | 215 |
+| DEB Extension | 324 | 102 | 143 | 70 | 5 | 16 | 300 | 320 | 323 | 314 | 303 | 295 |
+| DEB Package | 239 | 88 | 142 | 1 | 5 | 1 | 216 | 235 | 238 | 232 | 223 | 215 |
 
 
 
@@ -277,7 +277,7 @@ repo_packages:
   - postgresql-17-postgis-3 postgresql-17-postgis-3-scripts postgresql-17-pgrouting postgresql-17-pgrouting-scripts postgresql-17-pointcloud postgresql-17-h3 postgresql-17-q3c postgresql-17-ogr-fdw postgresql-17-geoip postgresql-17-pg-polyline postgresql-17-pg-geohash postgresql-17-mobilitydb 
   - postgresql-17-pgvector postgresql-17-pgvectorscale postgresql-17-pg-vectorize postgresql-17-similarity postgresql-17-smlar postgresql-17-pg-summarize postgresql-17-pg-tiktoken postgresql-17-pg4ml #postgresql-17-pgml
   - postgresql-17-pg-search postgresql-17-pg-bigm postgresql-17-zhparser postgresql-17-hunspell-cs-cz postgresql-17-hunspell-de-de postgresql-17-hunspell-en-us postgresql-17-hunspell-fr postgresql-17-hunspell-ne-np postgresql-17-hunspell-nl-nl postgresql-17-hunspell-nn-no postgresql-17-hunspell-ru-ru postgresql-17-hunspell-ru-ru-aot #postgresql-17-hunspell-pt-pt
-  - postgresql-17-citus-12.1 postgresql-17-pg-analytics postgresql-17-pg-duckdb postgresql-17-pg-mooncake postgresql-17-pg-parquet postgresql-17-pg-fkpart postgresql-17-partman postgresql-17-plproxy #postgresql-17-citus-12.1 #postgresql-17-hydra #postgresql-17-duckdb-fdw #
+  - postgresql-17-pg-analytics postgresql-17-pg-duckdb postgresql-17-pg-mooncake postgresql-17-pg-parquet postgresql-17-pg-fkpart postgresql-17-partman postgresql-17-plproxy #postgresql-17-citus-12.1 #postgresql-17-hydra #postgresql-17-duckdb-fdw #
   - postgresql-17-hll postgresql-17-rum postgresql-17-pg-graphql postgresql-17-pg-jsonschema postgresql-17-jsquery postgresql-17-pg-hint-plan postgresql-17-hypopg postgresql-17-index-advisor postgresql-17-pg-plan-filter postgresql-17-imgsmlr postgresql-17-pg-ivm postgresql-17-pgmq postgresql-17-pgq3 postgresql-17-pg-cardano #postgresql-17-age #postgresql-17-rdkit
   - postgresql-17-pg-tle postgresql-17-plv8 postgresql-17-pllua postgresql-17-pldebugger postgresql-17-plpgsql-check postgresql-17-plprofiler postgresql-17-plsh #postgresql-17-plprql #postgresql-17-pljava #postgresql-17-plr #postgresql-17-pgtap #
   - postgresql-17-prefix postgresql-17-semver postgresql-17-unit postgresql-17-md5hash postgresql-17-asn1oid postgresql-17-roaringbitmap postgresql-17-pgfaceting postgresql-17-pgsphere postgresql-17-pg-country postgresql-17-pg-currency postgresql-17-pgmp postgresql-17-numeral postgresql-17-rational postgresql-17-pguint postgresql-17-pg-uint128 postgresql-17-ip4r postgresql-17-pg-uri postgresql-17-pg-emailaddr postgresql-17-acl postgresql-17-debversion postgresql-17-pg-rrule postgresql-17-timestamp9 postgresql-17-chkpass 
@@ -294,7 +294,7 @@ pg_extensions:
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb 
   - pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
   - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_ru_ru hunspell_ru_ru_aot #hunspell_pt_pt
-  - citus pg_analytics pg_duckdb pg_mooncake pg_parquet pg_fkpart pg_partman plproxy #citus #hydra #duckdb_fdw #pg_strom
+  - pg_analytics pg_duckdb pg_mooncake pg_parquet pg_fkpart pg_partman plproxy #citus #hydra #duckdb_fdw #pg_strom
   - hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #age #rdkit
   - pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh #plprql #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass 
