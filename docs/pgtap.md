@@ -20,7 +20,7 @@
 
 | Package | Tags | Schemas | Requires | Required by | Comment | Description |
 |---------|------|---------|----------|-------------|:-------:|-------------|
-| [pgtap](/pgtap) | `test` |  |  |  | break perl deps on el | Unit testing for PostgreSQL |
+| [pgtap](/pgtap) | `test` |  |  |  | missing pg17 el9, breaking perl deps | Unit testing for PostgreSQL |
 
 
 
@@ -29,7 +29,7 @@
 ```sql
 CREATE EXTENSION pgtap;
 ```
-> **Comment**: break perl deps on el
+> **Comment**: missing pg17 el9, breaking perl deps
 -----------
 
 
@@ -64,6 +64,7 @@ dnf install pgtap_12*;
 Install `pgtap` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-pgtap;
 apt install postgresql-16-pgtap;
 apt install postgresql-15-pgtap;
 apt install postgresql-14-pgtap;

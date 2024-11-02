@@ -43,7 +43,7 @@ CREATE EXTENSION pgautofailover CASCADE;
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
 | [RPM](/rpm) | 2.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_auto_failover_$v*` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 2.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-16-auto-failover` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [DEB](/deb) | 2.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-auto-failover` |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
 
 
 
@@ -68,11 +68,12 @@ dnf install pg_auto_failover_12*;
 Install `pgautofailover` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-auto-failover;
 apt install postgresql-16-auto-failover;
-apt install postgresql-16-auto-failover;
-apt install postgresql-16-auto-failover;
-apt install postgresql-16-auto-failover;
-apt install postgresql-16-auto-failover;
+apt install postgresql-15-auto-failover;
+apt install postgresql-14-auto-failover;
+apt install postgresql-13-auto-failover;
+apt install postgresql-12-auto-failover;
 ```
 
 

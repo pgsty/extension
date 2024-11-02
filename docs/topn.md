@@ -65,7 +65,6 @@ dnf install topn_12*;
 Install `topn` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-topn;
 apt install postgresql-16-topn;
 apt install postgresql-15-topn;
 apt install postgresql-14-topn;

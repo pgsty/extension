@@ -48,7 +48,8 @@ RED_EXCLAM = '<span class="tcred">❗</span>'
 
 PG_VERS = ['17', '16', '15', '14', '13', '12']
 
-NOP_LIST = ['plr', 'pljava','pg_dbms_job', 'pgtap', 'faker', 'dbt2', 'pgpool', 'pgagent', 'pg_mon', 'oracle_fdw', 'db2_fdw', 'repmgr', 'slony', 'babelfishpg_common', 'babelfishpg_tsql', 'babelfishpg_tds', 'babelfishpg_money', '']
+NOP_LIST = ['plr', 'pljava','pg_dbms_job', 'pgtap', 'faker', 'dbt2', 'pgpool', 'pgagent', 'pg_mon', 'oracle_fdw', 'pg_strom', 'oracle_fdw',
+            'db2_fdw', 'repmgr', 'slony', 'babelfishpg_common', 'babelfishpg_tsql', 'babelfishpg_tds', 'babelfishpg_money', 'hunspell_pt_pt', '']
 
 CATES = {
     "TIME": "TIME: TimescaleDB, Versioning & Temporal Table, Crontab, Async & Background Job Scheduler, ...",
@@ -122,6 +123,8 @@ COLS = {
     "debpkg":     {'header': 'DEB Package',"center": False, "func": lambda row: '`%s`' % row['deb_pkg'] },
     "rpmpkg2":    {'header': 'Package Pattern',"center": False, "func": lambda row: '`%s`' % row['rpm_pkg'] },
     "debpkg2":    {'header': 'Package Pattern',"center": False, "func": lambda row: '`%s`' % row['deb_pkg'] },
+    "rpmpkg3":    {'header': 'RPM Package',"center": False, "func": lambda row: '<br>'.join(['`%s`'%i for i in  row['rpm_pkg'].split(' ') ]) },
+    "debpkg3":    {'header': 'DEB Package',"center": False, "func": lambda row: '<br>'.join(['`%s`'%i for i in  row['deb_pkg'].split(' ') ]) },
     "r17":        {'header': '17'         ,"center": True,  "func": lambda row: BLUE_CHECK if '17' in row['rpm_pg'] else '' },
     "r16":        {'header': '16'         ,"center": True,  "func": lambda row: BLUE_CHECK if '16' in row['rpm_pg'] else '' },
     "r15":        {'header': '15'         ,"center": True,  "func": lambda row: BLUE_CHECK if '15' in row['rpm_pg'] else '' },
@@ -526,11 +529,11 @@ def generate_category():
             lambda row: row['category'] == cate
         )
         rpm_table = tabulate(
-            Columns(["pkg", "rpmver", "lic", "rpmrepo", "rpmpkg", "r17", "r16", "r15", "r14", "r13", "r12", "en_desc"]),
+            Columns(["pkg", "rpmver", "lic", "rpmrepo", "rpmpkg3", "r17", "r16", "r15", "r14", "r13", "r12", "en_desc"]),
             lambda row: row['has_rpm'] and row['lead'] and row['category'] == cate
         )
         deb_table = tabulate(
-            Columns(["pkg", "debver", "lic", "debrepo", "debpkg", "d17", "d16", "d15", "d14", "d13", "d12", "en_desc"]),
+            Columns(["pkg", "debver", "lic", "debrepo", "debpkg3", "d17", "d16", "d15", "d14", "d13", "d12", "en_desc"]),
             lambda row: row['has_deb'] and row['lead'] and row['category'] == cate
         )
         ext_list, rpm_list, deb_list  = [], [], []

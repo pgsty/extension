@@ -18,6 +18,8 @@ run:
 gen:
 	bin/tabulate.py
 
+all: dump gen run
+
 dump: save
 save:
 	psql $(PGURL) -c "COPY (SELECT * FROM ext.pigsty ORDER BY id) TO '/Users/vonng/pgsty/extension/data/pigsty.csv' CSV HEADER;"

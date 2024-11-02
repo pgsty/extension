@@ -64,6 +64,7 @@ dnf install ogr_fdw_12*;
 Install `ogr_fdw` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-ogr-fdw;
 apt install postgresql-16-ogr-fdw;
 apt install postgresql-15-ogr-fdw;
 apt install postgresql-14-ogr-fdw;

@@ -65,6 +65,7 @@ dnf install pljava_12*;
 Install `pljava` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-pljava;
 apt install postgresql-16-pljava;
 apt install postgresql-15-pljava;
 apt install postgresql-14-pljava;

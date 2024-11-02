@@ -1,16 +1,16 @@
 # Extension List
 
-There are **342** available extensions, including **335** [**RPM**](/rpm) extensions available in EL, and **327** [**DEB**](/deb) available in Debian/Ubuntu.
+There are **340** available extensions, including **333** [**RPM**](/rpm) extensions available in EL, and **324** [**DEB**](/deb) available in Debian/Ubuntu.
 
-There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **272** additional third-party extensions provide by PGDG & Pigsty. 
+There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **270** additional third-party extensions provide by PGDG & Pigsty. 
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 335 | 128 | 131 | 70 | 4 | 7 | 297 | 331 | 334 | 325 | 313 | 303 |
-| DEB Extension | 327 | 105 | 144 | 70 | 5 | 15 | 294 | 323 | 326 | 317 | 305 | 297 |
-| RPM Package | 252 | 116 | 130 | 1 | 4 | 1 | 216 | 248 | 251 | 245 | 236 | 226 |
-| DEB Package | 241 | 90 | 143 | 1 | 5 | 1 | 209 | 237 | 240 | 234 | 225 | 217 |
+| RPM Extension | 333 | 126 | 131 | 70 | 4 | 7 | 298 | 329 | 332 | 323 | 312 | 302 |
+| DEB Extension | 324 | 102 | 143 | 70 | 5 | 16 | 301 | 320 | 323 | 314 | 303 | 295 |
+| RPM Package | 250 | 114 | 130 | 1 | 4 | 1 | 217 | 246 | 249 | 243 | 234 | 224 |
+| DEB Package | 239 | 88 | 142 | 1 | 5 | 1 | 217 | 235 | 238 | 232 | 223 | 215 |
 
 
 
@@ -77,7 +77,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [FTS](/fts) | 1339 | [hunspell_ru_ru_aot](/hunspell_ru_ru_aot) | 1.0 | [hunspell_ru_ru_aot](/hunspell_ru_ru_aot) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/postgrespro/hunspell_dicts) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Russian Hunspell Dictionary (from AOT.ru group) |
 | [FTS](/fts) | 1380 | [fuzzystrmatch](/fuzzystrmatch) | 1.2 | [fuzzystrmatch](/fuzzystrmatch) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/fuzzystrmatch.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | determine similarities and distance between strings |
 | [FTS](/fts) | 1390 | [pg_trgm](/pg_trgm) | 1.6 | [pg_trgm](/pg_trgm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgtrgm.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | text similarity measurement and index searching based on trigrams |
-| [OLAP](/olap) | 1500 | [citus](/citus) | 12.1-1 | [citus](/citus) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/citusdata/citus) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Distributed PostgreSQL as an extension |
+| [OLAP](/olap) | 1500 | [citus](/citus) | 12.1-1 | [citus](/citus) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcgreen">CITUS</span>** | [LINK](https://github.com/citusdata/citus) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Distributed PostgreSQL as an extension |
 | [OLAP](/olap) | 1501 | [citus_columnar](/citus_columnar) | 11.3-1 | [citus](/citus_columnar) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcgreen">CITUS</span>** | [LINK](https://github.com/citusdata/citus) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Citus columnar storage engine |
 | [OLAP](/olap) | 1510 | [columnar](/columnar) | 11.1-11 | [hydra](/columnar) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/hydradatabase/hydra) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Hydra Columnar extension |
 | [OLAP](/olap) | 1520 | [pg_analytics](/pg_analytics) | 0.2.3 | [pg_analytics](/pg_analytics) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/paradedb/pg_analytics) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Postgres for analytics, powered by DuckDB |
@@ -278,8 +278,6 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [STAT](/stat) | 6160 | [toastinfo](/toastinfo) | 1 | [toastinfo](/toastinfo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/credativ/toastinfo) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | show details on toasted datums |
 | [STAT](/stat) | 6170 | [explain_ui](/explain_ui) | 0.0.1 | [pg_explain_ui](/explain_ui) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/davidgomes/pg-explain-ui) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | easily jump into a visual plan UI for any SQL query |
 | [STAT](/stat) | 6180 | [pg_relusage](/pg_relusage) | 0.0.1 | [pg_relusage](/pg_relusage) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adept/pg_relusage) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Log all the queries that reference a particular column |
-| [STAT](/stat) | 6200 | [pg_statviz](/pg_statviz) | 0.6 | [pg_statviz](/pg_statviz) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/vyruss/pg_statviz) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | stats visualization and time series analysis |
-| [STAT](/stat) | 6210 | [pgexporter_ext](/pgexporter_ext) | 0.2.3 | [pgexporter_ext](/pgexporter_ext) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/pgexporter/pgexporter_ext) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pgexporter extension for extra metrics |
 | [STAT](/stat) | 6220 | [pg_top](/pg_top) | 3.7.0 | [pg_top](/pg_top) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://gitlab.com/pg_top/pg_top) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Monitor PostgreSQL processes similar to unix top |
 | [STAT](/stat) | 6230 | [pagevis](/pagevis) | 0.1 | [pagevis](/pagevis) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/hollobon/pagevis) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Visualise database pages in ascii code |
 | [STAT](/stat) | 6240 | [powa](/powa) | 4.2.2 | [powa](/powa) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/powa-team/powa) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL Workload Analyser-core |
@@ -325,9 +323,9 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [FDW](/fdw) | 8530 | [jdbc_fdw](/jdbc_fdw) | 1.2 | [jdbc_fdw](/jdbc_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/pgspider/jdbc_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for remote servers available over JDBC |
 | [FDW](/fdw) | 8600 | [mysql_fdw](/mysql_fdw) | 1.2 | [mysql_fdw](/mysql_fdw) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/EnterpriseDB/mysql_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for querying a MySQL server |
 | [FDW](/fdw) | 8610 | [oracle_fdw](/oracle_fdw) | 1.2 | [oracle_fdw](/oracle_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/laurenz/oracle_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign data wrapper for Oracle access |
-| [FDW](/fdw) | 8620 | [tds_fdw](/tds_fdw) | 2.0.4 | [tds_fdw](/tds_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/tds-fdw/tds_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for querying a TDS database (Sybase or Microsoft SQL Server) |
+| [FDW](/fdw) | 8620 | [tds_fdw](/tds_fdw) | 2.0.4 | [tds_fdw](/tds_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/tds-fdw/tds_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for querying a TDS database (Sybase or Microsoft SQL Server) |
 | [FDW](/fdw) | 8630 | [db2_fdw](/db2_fdw) | 6.0.1 | [db2_fdw](/db2_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/wolfgangbrandl/db2_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign data wrapper for DB2 access |
-| [FDW](/fdw) | 8640 | [sqlite_fdw](/sqlite_fdw) | 1.1 | [sqlite_fdw](/sqlite_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgspider/sqlite_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQLite Foreign Data Wrapper |
+| [FDW](/fdw) | 8640 | [sqlite_fdw](/sqlite_fdw) | 1.1 | [sqlite_fdw](/sqlite_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/pgspider/sqlite_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQLite Foreign Data Wrapper |
 | [FDW](/fdw) | 8650 | [pgbouncer_fdw](/pgbouncer_fdw) | 1.2.0 | [pgbouncer_fdw](/pgbouncer_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/CrunchyData/pgbouncer_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension for querying PgBouncer stats from normal SQL views & running pgbouncer commands from normal SQL functions |
 | [FDW](/fdw) | 8700 | [mongo_fdw](/mongo_fdw) | 1.1 | [mongo_fdw](/mongo_fdw) | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/EnterpriseDB/mongo_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign data wrapper for MongoDB access |
 | [FDW](/fdw) | 8710 | [redis_fdw](/redis_fdw) | 1.0 | [redis_fdw](/redis_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pg-redis-fdw/redis_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for querying a Redis server |
@@ -354,13 +352,13 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [SIM](/sim) | 9200 | [pgmemcache](/pgmemcache) | 2.3.0 | [pgmemcache](/pgmemcache) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ohmu/pgmemcache) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | memcached interface |
 | [ETL](/etl) | 9500 | [pglogical](/pglogical) | 2.4.4 | [pglogical](/pglogical) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/2ndQuadrant/pglogical) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL Logical Replication |
 | [ETL](/etl) | 9501 | [pglogical_origin](/pglogical_origin) | 1.0.0 | [pglogical](/pglogical_origin) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/2ndQuadrant/pglogical) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Dummy extension for compatibility when upgrading from Postgres 9.4 |
-| [ETL](/etl) | 9502 | [pglogical_ticker](/pglogical_ticker) | 1.4 | [pglogical](/pglogical_ticker) | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/2ndQuadrant/pglogical) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Have an accurate view on pglogical replication delay |
-| [ETL](/etl) | 9510 | [pgl_ddl_deploy](/pgl_ddl_deploy) | 2.2 | [pgl_ddl_deploy](/pgl_ddl_deploy) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/enova/pgl_ddl_deploy) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | automated ddl deployment using pglogical |
-| [ETL](/etl) | 9520 | [pg_failover_slots](/pg_failover_slots) | 1.0.1 | [pg_failover_slots](/pg_failover_slots) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/EnterpriseDB/pg_failover_slots) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PG Failover Slots extension |
-| [ETL](/etl) | 9610 | [wal2json](/wal2json) | 2.5.3 | [wal2json](/wal2json) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/eulerto/wal2json) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Changing data capture in JSON format |
-| [ETL](/etl) | 9620 | [wal2mongo](/wal2mongo) | 1.0.7 | [wal2mongo](/wal2mongo) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/HighgoSoftware/wal2mongo) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | PostgreSQL logical decoding output plugin for MongoDB |
-| [ETL](/etl) | 9630 | [decoderbufs](/decoderbufs) | 0.1.0 | [decoderbufs](/decoderbufs) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/debezium/postgres-decoderbufs) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format |
-| [ETL](/etl) | 9640 | [decoder_raw](/decoder_raw) | 1.0 | [decoder_raw](/decoder_raw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/michaelpq/pg_plugins/blob/main/decoder_raw/) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Output plugin for logical replication in Raw SQL format |
+| [ETL](/etl) | 9510 | [pglogical_ticker](/pglogical_ticker) | 1.4 | [pglogical_ticker](/pglogical_ticker) | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/enova/pglogical_ticker) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Have an accurate view on pglogical replication delay |
+| [ETL](/etl) | 9520 | [pgl_ddl_deploy](/pgl_ddl_deploy) | 2.2 | [pgl_ddl_deploy](/pgl_ddl_deploy) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/enova/pgl_ddl_deploy) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | automated ddl deployment using pglogical |
+| [ETL](/etl) | 9530 | [pg_failover_slots](/pg_failover_slots) | 1.0.1 | [pg_failover_slots](/pg_failover_slots) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/EnterpriseDB/pg_failover_slots) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PG Failover Slots extension |
+| [ETL](/etl) | 9630 | [wal2json](/wal2json) | 2.5.3 | [wal2json](/wal2json) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/eulerto/wal2json) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Changing data capture in JSON format |
+| [ETL](/etl) | 9640 | [wal2mongo](/wal2mongo) | 1.0.7 | [wal2mongo](/wal2mongo) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/HighgoSoftware/wal2mongo) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | PostgreSQL logical decoding output plugin for MongoDB |
+| [ETL](/etl) | 9650 | [decoderbufs](/decoderbufs) | 0.1.0 | [decoderbufs](/decoderbufs) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/debezium/postgres-decoderbufs) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format |
+| [ETL](/etl) | 9660 | [decoder_raw](/decoder_raw) | 1.0 | [decoder_raw](/decoder_raw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/michaelpq/pg_plugins/blob/main/decoder_raw/) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Output plugin for logical replication in Raw SQL format |
 | [ETL](/etl) | 9690 | [test_decoding](/test_decoding) | - | [test_decoding](/test_decoding) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/test-decoding.html) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | SQL-based test/example module for WAL logical decoding |
 | [ETL](/etl) | 9700 | [mimeo](/mimeo) | 1.5.1 | [mimeo](/mimeo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/omniti-labs/mimeo) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Extension for specialized, per-table replication between PostgreSQL instances |
 | [ETL](/etl) | 9710 | [repmgr](/repmgr) | 5.4 | [repmgr](/repmgr) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/EnterpriseDB/repmgr) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Replication manager for PostgreSQL |
@@ -382,21 +380,21 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ```yaml
 pg_version: 17
 pg_extensions:
-  - timescaledb pg_timeseries periods table_version pg_cron pg_later pg_background #timescaledb_toolkit #temporal_tables #emaj
+  - timescaledb periods emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit #pg_timeseries #temporal_tables
   - postgis pgrouting pointcloud q3c geoip pg_polyline pg_geohash #pg_h3 #ogr_fdw #mobilitydb
   - pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
-  - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot 
-  - pg_analytics pg_duckdb pg_mooncake pg_parquet pg_fkpart pg_partman plproxy #citus #hydra #duckdb_fdw #pg_strom
+  - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_ru_ru hunspell_ru_ru_aot #hunspell_pt_pt
+  - pg_analytics pg_duckdb pg_mooncake pg_parquet pg_fkpart plproxy #citus #hydra #duckdb_fdw #pg_partman #pg_strom
   - hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #age #rdkit
   - pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh #pllua #plprql #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
-  - topn pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time pg_timeit count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client
+  - pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time pg_timeit count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #topn
   - pg_repack pg_squeeze pg_dirtyread pgfincore ddlx pg_prioritize pg_readonly safeupdate pg_permissions pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgdd #pg_checksums #pgautofailover #pgpool #pgagent
-  - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis #pg_store_plans #pg_statviz #pgexporter_ext #pg_top #powa
+  - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis #pg_store_plans #pg_top #powa
   - passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
   - wrappers mysql_fdw redis_fdw pg_redis_pubsub firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #tds_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #kafka_fdw #hdfs_fdw
   - orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
-  - pglogical pgl_ddl_deploy pg_failover_slots wal2json decoder_raw mimeo pg_fact_loader #pglogical #wal2mongo #decoderbufs #repmgr #pg_bulkload
+  - pglogical pgl_ddl_deploy pg_failover_slots wal2json decoder_raw mimeo pg_fact_loader #pglogical_ticker #wal2mongo #decoderbufs #repmgr #pg_bulkload
 ```
 
 --------
@@ -412,18 +410,18 @@ pg_extensions:
   - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pgml pg4ml 
-  - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot 
+  - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_ru_ru hunspell_ru_ru_aot #hunspell_pt_pt
   - citus hydra pg_analytics pg_duckdb pg_mooncake duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_strom
   - age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #rdkit
   - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pllua #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
   - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time pg_timeit count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode 
   - pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
-  - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_statviz pagevis powa #pgexporter_ext #pg_top
+  - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
   - passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pg_tde pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset 
-  - wrappers mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
+  - wrappers mysql_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #tds_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
   - orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
-  - pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical #repmgr
+  - pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical_ticker #repmgr
 ```
 
 --------
@@ -439,18 +437,18 @@ pg_extensions:
   - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pgml pg4ml 
-  - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot 
+  - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_ru_ru hunspell_ru_ru_aot #hunspell_pt_pt
   - citus hydra pg_analytics pg_duckdb pg_mooncake duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_strom
   - age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #rdkit
   - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pllua #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
   - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time pg_timeit count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode 
   - pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
-  - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_statviz pagevis powa #pgexporter_ext #pg_top
+  - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
   - passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
-  - wrappers mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
+  - wrappers mysql_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #tds_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
   - orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
-  - pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical #repmgr
+  - pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical_ticker #repmgr
 ```
 
 --------
@@ -466,18 +464,18 @@ pg_extensions:
   - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pgml pg4ml 
-  - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot 
+  - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_ru_ru hunspell_ru_ru_aot #hunspell_pt_pt
   - citus hydra pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_duckdb #pg_mooncake #pg_strom
   - age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #rdkit
   - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pllua #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
   - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time pg_timeit count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode 
   - pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
-  - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_statviz pagevis powa #pgexporter_ext #pg_top
+  - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
   - passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
-  - wrappers mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
+  - wrappers mysql_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #tds_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
   - orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
-  - pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical #repmgr
+  - pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical_ticker #repmgr
 ```
 
 --------
@@ -493,18 +491,18 @@ pg_extensions:
   - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background 
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pg_vectorize #pgml
-  - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot #pg_search
-  - citus hydra pg_analytics duckdb_fdw pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
+  - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_ru_ru hunspell_ru_ru_aot #pg_search #hunspell_pt_pt
+  - citus hydra pg_analytics duckdb_fdw pg_fkpart pg_partman plproxy #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
   - age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #pg_graphql #rdkit
   - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pllua #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
   - topn pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time pg_timeit count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client
   - pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
-  - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_statviz pagevis powa #pgexporter_ext #pg_top
+  - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
   - passwordcheck supautils pgsodium pg_vault anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_session_jwt #pg_tde
-  - mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 #wrappers #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw #log_fdw
+  - mysql_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 #wrappers #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #tds_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw #log_fdw
   - orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
-  - pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical #repmgr
+  - pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical_ticker #repmgr
 ```
 
 --------
@@ -520,18 +518,18 @@ pg_extensions:
   - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #pg_later
   - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #pgvectorscale #pg_vectorize #smlar #pgml
-  - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_pt_pt hunspell_ru_ru hunspell_ru_ru_aot #pg_search
-  - citus duckdb_fdw pg_fkpart pg_partman plproxy #citus #hydra #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
+  - pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_ru_ru hunspell_ru_ru_aot #pg_search #hunspell_pt_pt
+  - citus duckdb_fdw pg_fkpart pg_partman plproxy #hydra #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
   - age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #pg_graphql #rdkit
   - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pllua #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
   - topn pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time pg_timeit count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client
   - pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio #pg_savior #pgpool #pgagent
-  - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_statviz pagevis powa #pgexporter_ext #pg_top
+  - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
   - passwordcheck pgsodium pg_vault anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #supautils #pg_session_jwt #pg_tde
-  - mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 #wrappers #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw #log_fdw
+  - mysql_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 #wrappers #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #tds_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw #log_fdw
   - orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
-  - pglogical pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical #wal2mongo #repmgr
+  - pglogical pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #pglogical_ticker #wal2mongo #repmgr
 ```
 
 

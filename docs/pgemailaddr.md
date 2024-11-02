@@ -39,7 +39,7 @@ CREATE EXTENSION pgemailaddr;
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
 | [RPM](/rpm) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_emailaddr_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v$v-pg-emailaddr` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [DEB](/deb) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-emailaddr` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
 
 
 
@@ -65,12 +65,12 @@ dnf install pg_emailaddr_12*;
 Install `pgemailaddr` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-1717-pg-emailaddr;
-apt install postgresql-1616-pg-emailaddr;
-apt install postgresql-1515-pg-emailaddr;
-apt install postgresql-1414-pg-emailaddr;
-apt install postgresql-1313-pg-emailaddr;
-apt install postgresql-1212-pg-emailaddr;
+apt install postgresql-17-pg-emailaddr;
+apt install postgresql-16-pg-emailaddr;
+apt install postgresql-15-pg-emailaddr;
+apt install postgresql-14-pg-emailaddr;
+apt install postgresql-13-pg-emailaddr;
+apt install postgresql-12-pg-emailaddr;
 ```
 
 

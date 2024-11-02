@@ -64,6 +64,7 @@ dnf install temporal_tables_12*;
 Install `temporal_tables` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-temporal-tables;
 apt install postgresql-16-temporal-tables;
 apt install postgresql-15-temporal-tables;
 apt install postgresql-14-temporal-tables;

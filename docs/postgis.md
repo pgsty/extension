@@ -39,7 +39,7 @@ CREATE EXTENSION postgis;
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
 | [RPM](/rpm) | 3.5.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgis34_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 3.5.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-postgis-3*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [DEB](/deb) | 3.5.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-postgis-3 postgresql-$v-postgis-3-scripts` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
 
 
 
@@ -65,12 +65,12 @@ dnf install postgis34_12*;
 Install `postgis` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-postgis-3*;
-apt install postgresql-16-postgis-3*;
-apt install postgresql-15-postgis-3*;
-apt install postgresql-14-postgis-3*;
-apt install postgresql-13-postgis-3*;
-apt install postgresql-12-postgis-3*;
+apt install postgresql-17-postgis-3 postgresql-17-postgis-3-scripts;
+apt install postgresql-16-postgis-3 postgresql-16-postgis-3-scripts;
+apt install postgresql-15-postgis-3 postgresql-15-postgis-3-scripts;
+apt install postgresql-14-postgis-3 postgresql-14-postgis-3-scripts;
+apt install postgresql-13-postgis-3 postgresql-13-postgis-3-scripts;
+apt install postgresql-12-postgis-3 postgresql-12-postgis-3-scripts;
 ```
 
 

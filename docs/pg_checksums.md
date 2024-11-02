@@ -60,6 +60,7 @@ dnf install pg_checksums_12*;
 Install `pg_checksums` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-pg-checksums;
 apt install postgresql-16-pg-checksums;
 apt install postgresql-15-pg-checksums;
 apt install postgresql-14-pg-checksums;

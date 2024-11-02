@@ -39,7 +39,7 @@ CREATE EXTENSION pgrouting CASCADE;
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
 | [RPM](/rpm) | 3.6.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `pgrouting_$v*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
-| [DEB](/deb) | 3.6.2 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgrouting*` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+| [DEB](/deb) | 3.6.2 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgrouting postgresql-$v-pgrouting-scripts` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
 
 
 
@@ -65,12 +65,12 @@ dnf install pgrouting_12*;
 Install `pgrouting` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-pgrouting*;
-apt install postgresql-16-pgrouting*;
-apt install postgresql-15-pgrouting*;
-apt install postgresql-14-pgrouting*;
-apt install postgresql-13-pgrouting*;
-apt install postgresql-12-pgrouting*;
+apt install postgresql-17-pgrouting postgresql-17-pgrouting-scripts;
+apt install postgresql-16-pgrouting postgresql-16-pgrouting-scripts;
+apt install postgresql-15-pgrouting postgresql-15-pgrouting-scripts;
+apt install postgresql-14-pgrouting postgresql-14-pgrouting-scripts;
+apt install postgresql-13-pgrouting postgresql-13-pgrouting-scripts;
+apt install postgresql-12-pgrouting postgresql-12-pgrouting-scripts;
 ```
 
 
