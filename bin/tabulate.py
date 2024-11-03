@@ -60,17 +60,17 @@ PG_VERS = ['17', '16', '15', '14', '13', '12']
 # NOP_LIST = []
 
 NOP_LIST = {
-    "rpm": ["plr", "pljava","pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
-    "el7": ["plr", "pljava","pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
-    "el8": ["plr", "pljava","pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
-    "el9": ["plr", "pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
+    "rpm": ["plr", "pljava","pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
+    "el7": ["plr", "pljava","pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
+    "el8": ["plr", "pljava","pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
+    "el9": ["plr", "pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
 
-    "deb": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
-    "u24": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt", "pgml", "citus", "topn", "timescaledb_toolkit"],
-    "u22": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
-    "u20": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
-    "d12": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
-    "d11": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "hunspell_pt_pt"],
+    "deb": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
+    "u24": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "pgml", "citus", "topn", "timescaledb_toolkit"],
+    "u22": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
+    "u20": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
+    "d12": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
+    "d11": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
 }
 
 
@@ -366,15 +366,15 @@ def pg_ext_list(ver, distro, category=None):
         REPO_KEY, HAS_KEY, PG_VER_KEY, PKG_KEY = 'rpm_repo', 'has_rpm', 'rpm_pg', 'rpm_pkg'
         pg_pkg_str = '  - postgresql%s*\n' % ver
         os_type = "rpm"
-        filter = lambda ext: ext[HAS_KEY] and ver in ext[PG_VER_KEY] and ext['alias'] not in nop_list and ext['lead']
+        filter = lambda ext: ext[HAS_KEY] and ver in ext[PG_VER_KEY] and ext['alias'] not in nop_list
     elif distro.lower() in ('deb', 'u20', 'u22', 'u24', 'd12', 'd11'):
         REPO_KEY, HAS_KEY, PG_VER_KEY, PKG_KEY = 'deb_repo', 'has_deb', 'deb_pg', 'deb_pkg'
         pg_pkg_str = '  - postgresql-%s postgresql-client-%s postgresql-server-dev-%s postgresql-plpython3-%s postgresql-plperl-%s postgresql-pltcl-%s\n' % (ver,ver,ver,ver,ver,ver)
         os_type = "deb"
-        filter = lambda ext: ext[HAS_KEY] and ver in ext[PG_VER_KEY] and ext['alias'] not in nop_list and ext['lead']
+        filter = lambda ext: ext[HAS_KEY] and ver in ext[PG_VER_KEY] and ext['alias'] not in nop_list
     elif distro.lower() in ('both'):
         REPO_KEY, HAS_KEY, PG_VER_KEY, PKG_KEY = 'rpm_repo', 'has_rpm', 'rpm_pg', 'rpm_pkg'
-        filter = lambda ext: ext["has_deb"] and ext["has_rpm"] and ver in ext["rpm_pg"] and ver in ext["deb_pg"] and ext['alias'] not in nop_list and ext['lead']
+        filter = lambda ext: ext["has_deb"] and ext["has_rpm"] and ver in ext["rpm_pg"] and ver in ext["deb_pg"] and ext['alias'] not in nop_list
     else:
         raise("invalid distro")
 
@@ -395,24 +395,41 @@ def pg_ext_list(ver, distro, category=None):
                     elif ext['name'] == 'citus' and os_type == 'deb' and ver in ['12','13']: #pg12=10.2, pg13=11.3
                         pkg = ext[PKG_KEY].replace('$v', ver).replace('citus-12.1', 'citus-' + ('10.2' if ver == '12' else '11.3') )
                         alias = ext['alias'] + ver
+                    elif ext['name'] == 'postgis' and os_type == 'rpm' and (ver in ['12']): #pg12=34(el8/9),33(el7)
+                        if distro == 'el7':
+                            pkg,alias = 'postgis33_12*', 'postgis33'
+                        else:
+                            pkg,alias = 'postgis34_12*', 'postgis34'
+                    elif ext['name'] == 'babelfish_common':
+                            pkg,alias = 'wiltondb', 'wiltondb'
                     else:
                         pkg = ext[PKG_KEY].replace('$v', ver)
                         alias = ext['alias']
-                    repo_pkg_add.append(pkg)
-                    ext_list_add.append(alias)
-                else:
-                    repo_pkg_nop.append('#' + ext[PKG_KEY].replace('$v', ver))
-                    ext_list_nop.append('#' + ext['alias'])
 
-        repo_pkg.append(' '.join(list(dict.fromkeys(repo_pkg_add))) + ' ' + ' '.join(list(dict.fromkeys(repo_pkg_nop))))
-        ext_list.append(' '.join(list(dict.fromkeys(ext_list_add))) + ' ' + ' '.join(list(dict.fromkeys(ext_list_nop))))
+                    repo_pkg_add.append(pkg)
+                    if name.startswith('hunspell'):
+                        if name.startswith('hunspell_cs_cz'):
+                            ext_list_add.append('hunspell')
+                    else:
+                        ext_list_add.append(alias)
+                else:
+                    if ext['name'].startswith('babelfish') and ext['name'] != 'babelfishpg_common': continue
+                    if ext['name'] == 'babelfishpg_common':
+                        repo_pkg_nop.append('#wiltondb')
+                        ext_list_nop.append('#wiltondb')
+                    else:
+                        repo_pkg_nop.append('#' + ext[PKG_KEY].replace('$v', ver))
+                        ext_list_nop.append('#' + ext['alias'])
+
+        repo_pkg.append((' '.join(list(dict.fromkeys(repo_pkg_add))) + ' ' + ' '.join(list(dict.fromkeys(repo_pkg_nop)))).rstrip('# '))
+        ext_list.append((' '.join(list(dict.fromkeys(ext_list_add))) + ' ' + ' '.join(list(dict.fromkeys(ext_list_nop)))).rstrip('# '))
 
     if not category:
         repo_pkg_str = 'repo_packages:\n' + pg_pkg_str + '\n'.join([ '  - ' + i for i in repo_pkg ])
         ext_list_str = 'pg_extensions:\n' + '\n'.join([ '  - ' + i for i in ext_list ])
         return repo_pkg_str, ext_list_str
     else:
-        return ' '.join(repo_pkg), ' '.join(ext_list)
+        return ' '.join(repo_pkg), (' '.join(ext_list)).replace('#babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money', '#wiltondb')
 
 
 
@@ -468,6 +485,7 @@ There are **%d** extensions available in the current major version PostgreSQL 16
 > Click the "**Extension**" name will goes to the extension source homepage, click the "**Package**" goes to the metadata page.\n\n
 %s\n\n
 %s\n\n
+%s\n\n
 """
 
 
@@ -476,10 +494,13 @@ def generate_rpm_list():
         Columns([ "cat", "pkg","rpmver", "lic", "rpmrepo", "rpmpkg", "r17", "r16", "r15", "r14", "r13", "r12", "en_desc"]),
         lambda row: row['has_rpm'] and row['repo'] != 'CONTRIB' and row['lead']
     )
-    ver_sections = []
+    ver_sections,overall = [], []
     for ver in PG_VERS:
         repo_str, ext_str = pg_ext_list(ver, 'rpm')
         ver_sections.append("""--------\n\n## PostgreSQL %s\n\n```yaml\npg_version: %s\n%s\n\n%s\n```\n"""% (ver, ver, repo_str, ext_str))
+        overall.append(repo_str.replace('repo_packages:', '  '))
+    repo_packages = """--------\n\n## Repo Packages\n\n```yaml\nrepo_packages:\n%s```\n\n""" % ('\n'.join(overall))
+
     f = openw('rpm.md')
     f.write(RPM_TEMPLATE % (
         STAT["rpm_ext"]["all"],STAT["rpm_ext"]["miss"],STAT["rpm_ext"]["miss"],
@@ -487,7 +508,8 @@ def generate_rpm_list():
         STAT["rpm_ext"]["pg16"], STAT["rpm_ext"]["pg17"],
         tabulate_stats(['rpm_ext', 'rpm_pkg']),
         rpm_table,
-        '\n'.join(ver_sections)
+        '\n'.join(ver_sections),
+        repo_packages
     ))
     f.close()
 
@@ -505,6 +527,7 @@ There are **%d** extensions available in the current major version PostgreSQL 16
 > Click the "**Extension**" name will goes to the extension source homepage, click the "**Package**" goes to the metadata page.\n\n
 %s\n\n
 %s\n\n
+%s\n\n
 """
 
 
@@ -513,10 +536,12 @@ def generate_deb_list():
         Columns(["cat", "pkg", "debver", "lic", "debrepo", "debpkg", "d17", "d16", "d15", "d14", "d13", "d12", "en_desc"]),
         lambda row: row['has_deb'] and row['repo'] != 'CONTRIB' and row['lead']
     )
-    ver_sections = []
+    ver_sections,overall = [], []
     for ver in PG_VERS:
         repo_str, ext_str = pg_ext_list(ver, 'deb')
         ver_sections.append("""--------\n\n## PostgreSQL %s\n\n```yaml\npg_version: %s\n%s\n\n%s\n```\n"""% (ver, ver, repo_str, ext_str))
+        overall.append(repo_str.replace('repo_packages:', '  '))
+    repo_packages = """--------\n\n## Repo Packages\n\n```yaml\nrepo_packages:\n%s```\n\n""" % ('\n'.join(overall))
     f = openw('deb.md')
     f.write(DEB_TEMPLATE % (
         STAT["deb_ext"]["all"],STAT["deb_ext"]["miss"],STAT["deb_ext"]["miss"],
@@ -524,7 +549,8 @@ def generate_deb_list():
         STAT["deb_ext"]["pg16"], STAT["deb_ext"]["pg17"],
         tabulate_stats(['deb_ext', 'deb_pkg']),
         deb_table,
-        '\n'.join(ver_sections)
+        '\n'.join(ver_sections),
+        repo_packages
     ))
     f.close()
 
@@ -748,9 +774,7 @@ def generate_distro_repo_packages(distro):
     for ver in PG_VERS:
         repo_list, ext_list = pg_ext_list(ver, distro)
         print(repo_list.replace('repo_packages:', '"pg%s:all":'%ver))
-
-#generate_distro_repo_packages("rpm")
-#generate_distro_repo_packages("deb")
+        print(ext_list.replace('repo_packages:', '"pg%s:all":'%ver))
 
 
 generate_readme()
@@ -761,4 +785,3 @@ generate_contrib_list()
 generate_category()
 generate_extension()
 
-print("\n" + tabulate_stats(['rpm_ext', 'deb_ext', 'rpm_pkg', 'deb_pkg']))

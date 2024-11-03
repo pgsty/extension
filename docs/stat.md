@@ -47,12 +47,12 @@ There are 31 available extensions in this category:
 
 
 ```yaml
-pg17: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis #pg_store_plans #pgnodemx #pg_top #powa
-pg16: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pgnodemx #pg_top
-pg15: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pgnodemx #pg_top
-pg14: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pgnodemx #pg_top
-pg13: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pgnodemx #pg_top
-pg12: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pgnodemx #pg_top
+pg17: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis #pg_store_plans #pg_top #powa
+pg16: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+pg15: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+pg14: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+pg13: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+pg12: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
 ```
 
 
@@ -98,12 +98,12 @@ pg12: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_st
 
 
 ```yaml
-pg17: pg_profile_17* pg_show_plans_17* pg_stat_kcache_17* pg_stat_monitor_17* pg_qualstats_17* pg_track_settings_17* pg_wait_sampling_17* system_stats_17* pg_meta_17 pgnodemx_17 pg_sqlog_17* bgw_replstatus_17* pgmeminfo_17* toastinfo_17* pg_explain_ui_17 pg_relusage_17 pagevis_17 #pg_store_plans_17* #pgnodemx_17 #pg_top_17* #powa_17*
-pg16: pg_profile_16* pg_show_plans_16* pg_stat_kcache_16* pg_stat_monitor_16* pg_qualstats_16* pg_store_plans_16* pg_track_settings_16* pg_wait_sampling_16* system_stats_16* pg_meta_16 pgnodemx_16 pg_sqlog_16* bgw_replstatus_16* pgmeminfo_16* toastinfo_16* pg_explain_ui_16 pg_relusage_16 pg_top_16* pagevis_16 powa_16* #pgnodemx_16
-pg15: pg_profile_15* pg_show_plans_15* pg_stat_kcache_15* pg_stat_monitor_15* pg_qualstats_15* pg_store_plans_15* pg_track_settings_15* pg_wait_sampling_15* system_stats_15* pg_meta_15 pgnodemx_15 pg_sqlog_15* bgw_replstatus_15* pgmeminfo_15* toastinfo_15* pg_explain_ui_15 pg_relusage_15 pg_top_15* pagevis_15 powa_15* #pgnodemx_15
-pg14: pg_profile_14* pg_show_plans_14* pg_stat_kcache_14* pg_stat_monitor_14* pg_qualstats_14* pg_store_plans_14* pg_track_settings_14* pg_wait_sampling_14* system_stats_14* pg_meta_14 pgnodemx_14 pg_sqlog_14* bgw_replstatus_14* pgmeminfo_14* toastinfo_14* pg_explain_ui_14 pg_relusage_14 pg_top_14* pagevis_14 powa_14* #pgnodemx_14
-pg13: pg_profile_13* pg_show_plans_13* pg_stat_kcache_13* pg_stat_monitor_13* pg_qualstats_13* pg_store_plans_13* pg_track_settings_13* pg_wait_sampling_13* system_stats_13* pg_meta_13 pgnodemx_13 pg_sqlog_13* bgw_replstatus_13* pgmeminfo_13* toastinfo_13* pg_explain_ui_13 pg_relusage_13 pg_top_13* pagevis_13 powa_13* #pgnodemx_13
-pg12: pg_profile_12* pg_show_plans_12* pg_stat_kcache_12* pg_stat_monitor_12* pg_qualstats_12* pg_store_plans_12* pg_track_settings_12* pg_wait_sampling_12* system_stats_12* pg_meta_12 pgnodemx_12 pg_sqlog_12* bgw_replstatus_12* pgmeminfo_12* toastinfo_12* pg_explain_ui_12 pg_relusage_12 pagevis_12 powa_12* #pgnodemx_12 #pg_top_12*
+pg17: pg_profile_17* pg_show_plans_17* pg_stat_kcache_17* pg_stat_monitor_17* pg_qualstats_17* pg_track_settings_17* pg_wait_sampling_17* system_stats_17* pg_meta_17 pgnodemx_17 pg_sqlog_17* bgw_replstatus_17* pgmeminfo_17* toastinfo_17* pg_explain_ui_17 pg_relusage_17 pagevis_17 #pg_store_plans_17* #pg_top_17* #powa_17*
+pg16: pg_profile_16* pg_show_plans_16* pg_stat_kcache_16* pg_stat_monitor_16* pg_qualstats_16* pg_store_plans_16* pg_track_settings_16* pg_wait_sampling_16* system_stats_16* pg_meta_16 pgnodemx_16 pg_sqlog_16* bgw_replstatus_16* pgmeminfo_16* toastinfo_16* pg_explain_ui_16 pg_relusage_16 pg_top_16* pagevis_16 powa_16*
+pg15: pg_profile_15* pg_show_plans_15* pg_stat_kcache_15* pg_stat_monitor_15* pg_qualstats_15* pg_store_plans_15* pg_track_settings_15* pg_wait_sampling_15* system_stats_15* pg_meta_15 pgnodemx_15 pg_sqlog_15* bgw_replstatus_15* pgmeminfo_15* toastinfo_15* pg_explain_ui_15 pg_relusage_15 pg_top_15* pagevis_15 powa_15*
+pg14: pg_profile_14* pg_show_plans_14* pg_stat_kcache_14* pg_stat_monitor_14* pg_qualstats_14* pg_store_plans_14* pg_track_settings_14* pg_wait_sampling_14* system_stats_14* pg_meta_14 pgnodemx_14 pg_sqlog_14* bgw_replstatus_14* pgmeminfo_14* toastinfo_14* pg_explain_ui_14 pg_relusage_14 pg_top_14* pagevis_14 powa_14*
+pg13: pg_profile_13* pg_show_plans_13* pg_stat_kcache_13* pg_stat_monitor_13* pg_qualstats_13* pg_store_plans_13* pg_track_settings_13* pg_wait_sampling_13* system_stats_13* pg_meta_13 pgnodemx_13 pg_sqlog_13* bgw_replstatus_13* pgmeminfo_13* toastinfo_13* pg_explain_ui_13 pg_relusage_13 pg_top_13* pagevis_13 powa_13*
+pg12: pg_profile_12* pg_show_plans_12* pg_stat_kcache_12* pg_stat_monitor_12* pg_qualstats_12* pg_store_plans_12* pg_track_settings_12* pg_wait_sampling_12* system_stats_12* pg_meta_12 pgnodemx_12 pg_sqlog_12* bgw_replstatus_12* pgmeminfo_12* toastinfo_12* pg_explain_ui_12 pg_relusage_12 pagevis_12 powa_12* #pg_top_12*
 ```
 
 
@@ -148,12 +148,12 @@ pg12: pg_profile_12* pg_show_plans_12* pg_stat_kcache_12* pg_stat_monitor_12* pg
 
 
 ```yaml
-pg17: pg_profile_17* pg_show_plans_17* pg_stat_kcache_17* pg_stat_monitor_17* pg_qualstats_17* pg_track_settings_17* pg_wait_sampling_17* system_stats_17* pg_meta_17 pgnodemx_17 pg_sqlog_17* bgw_replstatus_17* pgmeminfo_17* toastinfo_17* pg_explain_ui_17 pg_relusage_17 pagevis_17 #pg_store_plans_17* #pgnodemx_17 #pg_top_17* #powa_17*
-pg16: pg_profile_16* pg_show_plans_16* pg_stat_kcache_16* pg_stat_monitor_16* pg_qualstats_16* pg_store_plans_16* pg_track_settings_16* pg_wait_sampling_16* system_stats_16* pg_meta_16 pgnodemx_16 pg_sqlog_16* bgw_replstatus_16* pgmeminfo_16* toastinfo_16* pg_explain_ui_16 pg_relusage_16 pg_top_16* pagevis_16 powa_16* #pgnodemx_16
-pg15: pg_profile_15* pg_show_plans_15* pg_stat_kcache_15* pg_stat_monitor_15* pg_qualstats_15* pg_store_plans_15* pg_track_settings_15* pg_wait_sampling_15* system_stats_15* pg_meta_15 pgnodemx_15 pg_sqlog_15* bgw_replstatus_15* pgmeminfo_15* toastinfo_15* pg_explain_ui_15 pg_relusage_15 pg_top_15* pagevis_15 powa_15* #pgnodemx_15
-pg14: pg_profile_14* pg_show_plans_14* pg_stat_kcache_14* pg_stat_monitor_14* pg_qualstats_14* pg_store_plans_14* pg_track_settings_14* pg_wait_sampling_14* system_stats_14* pg_meta_14 pgnodemx_14 pg_sqlog_14* bgw_replstatus_14* pgmeminfo_14* toastinfo_14* pg_explain_ui_14 pg_relusage_14 pg_top_14* pagevis_14 powa_14* #pgnodemx_14
-pg13: pg_profile_13* pg_show_plans_13* pg_stat_kcache_13* pg_stat_monitor_13* pg_qualstats_13* pg_store_plans_13* pg_track_settings_13* pg_wait_sampling_13* system_stats_13* pg_meta_13 pgnodemx_13 pg_sqlog_13* bgw_replstatus_13* pgmeminfo_13* toastinfo_13* pg_explain_ui_13 pg_relusage_13 pg_top_13* pagevis_13 powa_13* #pgnodemx_13
-pg12: pg_profile_12* pg_show_plans_12* pg_stat_kcache_12* pg_stat_monitor_12* pg_qualstats_12* pg_store_plans_12* pg_track_settings_12* pg_wait_sampling_12* system_stats_12* pg_meta_12 pgnodemx_12 pg_sqlog_12* bgw_replstatus_12* pgmeminfo_12* toastinfo_12* pg_explain_ui_12 pg_relusage_12 pagevis_12 powa_12* #pgnodemx_12 #pg_top_12*
+pg17: pg_profile_17* pg_show_plans_17* pg_stat_kcache_17* pg_stat_monitor_17* pg_qualstats_17* pg_track_settings_17* pg_wait_sampling_17* system_stats_17* pg_meta_17 pgnodemx_17 pg_sqlog_17* bgw_replstatus_17* pgmeminfo_17* toastinfo_17* pg_explain_ui_17 pg_relusage_17 pagevis_17 #pg_store_plans_17* #pg_top_17* #powa_17*
+pg16: pg_profile_16* pg_show_plans_16* pg_stat_kcache_16* pg_stat_monitor_16* pg_qualstats_16* pg_store_plans_16* pg_track_settings_16* pg_wait_sampling_16* system_stats_16* pg_meta_16 pgnodemx_16 pg_sqlog_16* bgw_replstatus_16* pgmeminfo_16* toastinfo_16* pg_explain_ui_16 pg_relusage_16 pg_top_16* pagevis_16 powa_16*
+pg15: pg_profile_15* pg_show_plans_15* pg_stat_kcache_15* pg_stat_monitor_15* pg_qualstats_15* pg_store_plans_15* pg_track_settings_15* pg_wait_sampling_15* system_stats_15* pg_meta_15 pgnodemx_15 pg_sqlog_15* bgw_replstatus_15* pgmeminfo_15* toastinfo_15* pg_explain_ui_15 pg_relusage_15 pg_top_15* pagevis_15 powa_15*
+pg14: pg_profile_14* pg_show_plans_14* pg_stat_kcache_14* pg_stat_monitor_14* pg_qualstats_14* pg_store_plans_14* pg_track_settings_14* pg_wait_sampling_14* system_stats_14* pg_meta_14 pgnodemx_14 pg_sqlog_14* bgw_replstatus_14* pgmeminfo_14* toastinfo_14* pg_explain_ui_14 pg_relusage_14 pg_top_14* pagevis_14 powa_14*
+pg13: pg_profile_13* pg_show_plans_13* pg_stat_kcache_13* pg_stat_monitor_13* pg_qualstats_13* pg_store_plans_13* pg_track_settings_13* pg_wait_sampling_13* system_stats_13* pg_meta_13 pgnodemx_13 pg_sqlog_13* bgw_replstatus_13* pgmeminfo_13* toastinfo_13* pg_explain_ui_13 pg_relusage_13 pg_top_13* pagevis_13 powa_13*
+pg12: pg_profile_12* pg_show_plans_12* pg_stat_kcache_12* pg_stat_monitor_12* pg_qualstats_12* pg_store_plans_12* pg_track_settings_12* pg_wait_sampling_12* system_stats_12* pg_meta_12 pgnodemx_12 pg_sqlog_12* bgw_replstatus_12* pgmeminfo_12* toastinfo_12* pg_explain_ui_12 pg_relusage_12 pagevis_12 powa_12* #pg_top_12*
 ```
 
 

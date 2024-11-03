@@ -86,12 +86,12 @@ pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava p
 
 
 ```yaml
-pg17: pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* # #pllua_17* #plprql_17 #pljava_17* #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
-pg16: pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* plprofiler_16* plsh_16* # #pllua_16* #pljava_16* #plr_16* #pgtap_16* #postgresql_faker_16* #dbt2-pg16-extensions*
-pg15: pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* # #pllua_15* #pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
-pg14: pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* # #pllua_14* #pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
-pg13: pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* # #pllua_13* #pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
-pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* # #pllua_12* #pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
+pg17: pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* # #plprql_17 #pljava_17* #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
+pg16: pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* plprofiler_16* plsh_16* # #pljava_16* #plr_16* #pgtap_16* #postgresql_faker_16* #dbt2-pg16-extensions*
+pg15: pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* # #pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
+pg14: pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* # #pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
+pg13: pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* # #pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
+pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* # #pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
 ```
 
 
@@ -123,12 +123,12 @@ pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* p
 
 
 ```yaml
-pg17: pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* # #pllua_17* #plprql_17 #pljava_17* #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
-pg16: pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* plprofiler_16* plsh_16* # #pllua_16* #pljava_16* #plr_16* #pgtap_16* #postgresql_faker_16* #dbt2-pg16-extensions*
-pg15: pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* # #pllua_15* #pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
-pg14: pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* # #pllua_14* #pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
-pg13: pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* # #pllua_13* #pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
-pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* # #pllua_12* #pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
+pg17: pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* # #plprql_17 #pljava_17* #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
+pg16: pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* plprofiler_16* plsh_16* # #pljava_16* #plr_16* #pgtap_16* #postgresql_faker_16* #dbt2-pg16-extensions*
+pg15: pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* # #pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
+pg14: pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* # #pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
+pg13: pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* # #pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
+pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* # #pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
 ```
 
 

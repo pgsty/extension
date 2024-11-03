@@ -51,12 +51,12 @@ There are 35 available extensions in this category:
 
 
 ```yaml
-pg17: pg_repack pg_squeeze pg_dirtyread pgfincore ddlx pg_prioritize pg_readonly safeupdate pg_permissions pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent #pgdd #pg_checksums #pgautofailover #pgpool
-pg16: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent #pgpool
-pg15: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent #pgpool
-pg14: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent #pg_prioritize #pgpool
-pg13: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent #pg_prioritize #safeupdate #pgpool
-pg12: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio pgpool pgagent #pg_prioritize #safeupdate #pg_savior #pgpool
+pg17: pg_repack pg_squeeze pg_dirtyread pgfincore ddlx pg_prioritize pg_readonly safeupdate pg_permissions pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent #pgdd #pg_checksums #pgautofailover
+pg16: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent
+pg15: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent
+pg14: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent #pg_prioritize
+pg13: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent #pg_prioritize #safeupdate
+pg12: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio pgpool pgagent #pg_prioritize #safeupdate #pg_savior
 ```
 
 
