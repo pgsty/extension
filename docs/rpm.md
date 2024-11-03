@@ -4,13 +4,13 @@ There are **334** extensions available on EL compatible systems, **6** of them a
 
 There are **70** built-in [**contrib**](contrib) extensions, in addition to **119** rpm extensions provided by PGDG YUM repository, and **139** extensions provided by Pigsty.
 
-There are **330** extensions available in the current major version PostgreSQL 16, and **300** ready for the latest PostgreSQL 17.
+There are **330** extensions available in the current major version PostgreSQL 16, and **301** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 334 | 119 | 139 | 70 | 4 | 6 | 300 | 330 | 333 | 319 | 307 | 294 |
-| RPM Package | 251 | 107 | 138 | 1 | 4 | 1 | 219 | 247 | 250 | 239 | 229 | 216 |
+| RPM Extension | 334 | 119 | 139 | 70 | 4 | 6 | 301 | 330 | 333 | 319 | 307 | 294 |
+| RPM Package | 251 | 107 | 138 | 1 | 4 | 1 | 220 | 247 | 250 | 239 | 229 | 216 |
 
 
 
@@ -70,7 +70,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 | [OLAP](/olap) | [pg_analytics](/pg_analytics) | 0.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_analytics_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Postgres for analytics, powered by DuckDB |
 | [OLAP](/olap) | [pg_duckdb](/pg_duckdb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_duckdb_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  | DuckDB Embedded in Postgres |
 | [OLAP](/olap) | [pg_mooncake](/pg_mooncake) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_mooncake_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  | Columnstore Table in Postgres |
-| [OLAP](/olap) | [duckdb_fdw](/duckdb_fdw) | 1.0.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `duckdb_fdw_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | DuckDB Foreign Data Wrapper |
+| [OLAP](/olap) | [duckdb_fdw](/duckdb_fdw) | 1.1.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `duckdb_fdw_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | DuckDB Foreign Data Wrapper |
 | [OLAP](/olap) | [pg_parquet](/pg_parquet) | 0.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_parquet_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | copy data between Postgres and Parquet |
 | [OLAP](/olap) | [pg_fkpart](/pg_fkpart) | 1.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_fkpart_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Table partitioning by foreign key utility |
 | [OLAP](/olap) | [pg_partman](/pg_partman) | 5.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_partman_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Extension to manage partitioned tables by time or ID |
@@ -289,7 +289,7 @@ repo_packages:
   - postgis34_17* pgrouting_17* pointcloud_17* q3c_17* geoip_17* pg_polyline_17 pg_geohash_17* #postgis34_17* #pointcloud_17* #h3-pg_17* #ogr_fdw_17* #
   - pgvector_17* pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pgml_17
   - pg_search_17 pg_bigm_17* zhparser_17* hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17 #hunspell_pt_pt_17
-  - pg_analytics_17 pg_duckdb_17* pg_mooncake_17* pg_parquet_17 pg_fkpart_17* plproxy_17* #citus_17* #hydra_17* #duckdb_fdw_17* #pg_partman_17* #pg_strom_17*
+  - pg_analytics_17 pg_duckdb_17* pg_mooncake_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17* plproxy_17* #citus_17* #hydra_17* #pg_partman_17* #pg_strom_17*
   - hll_17* rum_17 pg_graphql_17 pg_jsonschema_17 jsquery_17* pg_hint_plan_17* hypopg_17* index_advisor_17 pg_plan_filter_17* imgsmlr_17* pg_ivm_17* pgmq_17 pgq_17* pg_cardano_17 #apache-age_17* #
   - pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* # #pllua_17* #plprql_17 #pljava_17* #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
   - prefix_17* semver_17* postgresql-unit_17* md5hash_17* asn1oid_17* pg_roaringbitmap_17* pgfaceting_17 pgsphere_17* pg_country_17* pg_currency_17* pgmp_17* numeral_17* pg_rational_17* pguint_17* pg_uint128_17* ip4r_17* pg_uri_17* pg_emailaddr_17* acl_17* timestamp9_17* chkpass_17* #
@@ -306,7 +306,7 @@ pg_extensions:
   - postgis pgrouting pointcloud q3c geoip pg_polyline pg_geohash #postgis #pointcloud #pg_h3 #ogr_fdw #mobilitydb
   - pgvector pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
   - pg_search pg_bigm zhparser hunspell_cs_cz hunspell_de_de hunspell_en_us hunspell_fr hunspell_ne_np hunspell_nl_nl hunspell_nn_no hunspell_ru_ru hunspell_ru_ru_aot #hunspell_pt_pt
-  - pg_analytics pg_duckdb pg_mooncake pg_parquet pg_fkpart plproxy #citus #hydra #duckdb_fdw #pg_partman #pg_strom
+  - pg_analytics pg_duckdb pg_mooncake duckdb_fdw pg_parquet pg_fkpart plproxy #citus #hydra #pg_partman #pg_strom
   - hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #age #rdkit
   - pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh #pllua #plprql #pljava #plr #pgtap #faker #dbt2
   - prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
