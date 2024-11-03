@@ -19,7 +19,6 @@ Extensions to be included and extensions will not be included
 - timeseries: waiting on hydra pg17 support
 - citus / citus_columnar: 
 - [hydra](https://github.com/hydradatabase/hydra): waiting on citus_columnar pg17 support
-- duckdb_fdw
 - age
 - pgml
 - rdkit
@@ -113,7 +112,7 @@ Resource:
 
 - parquet_s3_fdw: retired due to too much duckdb better alternatives
 - pg_tier: retired due to parquet_s3_fdw deps
-- pg_mon: retired due to pg17 in-compatbility
+- pg_mon: retired due to pg17 in-compatibility
 - pg_search: retired due to moving to official release procedure
 - pg_bm25: retired due to renaming to pg_search
 - pg_analytics: retired due to moving to official release procedure, and once renaming to pg_lakehouse
@@ -122,6 +121,7 @@ Resource:
 - mysqlcompat: retire due to conflict func with higher version of PG
 - pg_comparator: retired due to removing from PGDG repo 
 - pg_proctab: retired due to covered by pgnodemx
+- pg_statviz: broken deps and replaceable functionality
 - [pg_net](https://github.com/supabase/pg_net)             : retired due to moving into PGDG repo
 - [pg_tle](https://github.com/aws/pg_tle)                  : retired due to moving into PGDG repo
 - [pg_bigm](https://github.com/pgbigm/pg_bigm)             : retired due to moving into PGDG repo

@@ -1,13 +1,13 @@
 
 - [Home](/)
+- [**Extension List**](/list)
+- [RPM Package](/rpm)
+- [DEB Package](/deb)
+- [PG Contribs](/contrib)
+- [Repo Usage](/usage)
 - [Roadmap](/roadmap)
-- [**Extension**](/list)
-  - [RPM Package](/rpm)
-  - [DEB Package](/deb)
-  - [PG Contribs](/contrib)
-  - [Repo Usage](/usage)
 
-- [**Category**](/list)
+- **Category**
 
   - [Category: TIME](/time)
   - [Category: GIS](/gis)
