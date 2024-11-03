@@ -1,6 +1,6 @@
 
 - [Home](/)
-
+- [Roadmap](/roadmap)
 - [**Extension**](/list)
   - [RPM Package](/rpm)
   - [DEB Package](/deb)
@@ -24,7 +24,3 @@
   - [Category: FDW](/fdw)
   - [Category: SIM](/sim)
   - [Category: ETL](/etl)
-
-<br>
-
-- [中文文档](/zh-cn)

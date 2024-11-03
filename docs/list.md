@@ -1,15 +1,15 @@
 # Extension List
 
-There are **340** available extensions, including **333** [**RPM**](/rpm) extensions available in EL, and **324** [**DEB**](/deb) available in Debian/Ubuntu.
+There are **340** available extensions, including **334** [**RPM**](/rpm) extensions available in EL, and **324** [**DEB**](/deb) available in Debian/Ubuntu.
 
 There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **270** additional third-party extensions provide by PGDG & Pigsty. 
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 333 | 119 | 138 | 70 | 4 | 7 | 299 | 329 | 332 | 318 | 306 | 293 |
+| RPM Extension | 334 | 119 | 139 | 70 | 4 | 6 | 300 | 330 | 333 | 319 | 307 | 294 |
 | DEB Extension | 324 | 102 | 143 | 70 | 5 | 16 | 300 | 320 | 323 | 314 | 301 | 291 |
-| RPM Package | 250 | 107 | 137 | 1 | 4 | 1 | 218 | 246 | 249 | 238 | 228 | 215 |
+| RPM Package | 251 | 107 | 138 | 1 | 4 | 1 | 219 | 247 | 250 | 239 | 229 | 216 |
 | DEB Package | 239 | 88 | 142 | 1 | 5 | 1 | 216 | 235 | 238 | 232 | 221 | 211 |
 
 
@@ -53,7 +53,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [GIS](/gis) | 1170 | [pg_geohash](/pg_geohash) | 1.0 | [pg_geohash](/pg_geohash) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/jistok/pg_geohash) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Handle geohash based functionality for spatial coordinates |
 | [GIS](/gis) | 1180 | [mobilitydb](/mobilitydb) | 1.1.1 | [mobilitydb](/mobilitydb) | **<span class="tcwarn">GPLv3</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/MobilityDB/MobilityDB) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | MobilityDB geospatial trajectory data management & analysis platform |
 | [GIS](/gis) | 1190 | [earthdistance](/earthdistance) | 1.1 | [earthdistance](/earthdistance) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/earthdistance.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | calculate great-circle distances on the surface of the Earth |
-| [RAG](/rag) | 1200 | [vector](/vector) | 0.7.4 | [pgvector](/vector) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgvector/pgvector) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | vector data type and ivfflat and hnsw access methods |
+| [RAG](/rag) | 1200 | [vector](/vector) | 0.8.0 | [pgvector](/vector) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgvector/pgvector) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | vector data type and ivfflat and hnsw access methods |
 | [RAG](/rag) | 1210 | [vectorscale](/vectorscale) | 0.4.0 | [pgvectorscale](/vectorscale) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/pgvectorscale) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pgvectorscale:  Advanced indexing for vector data |
 | [RAG](/rag) | 1220 | [vectorize](/vectorize) | 0.20.0 | [pg_vectorize](/vectorize) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | 14} | [LINK](https://github.com/tembo-io/pg_vectorize) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | The simplest way to do vector search on Postgres |
 | [RAG](/rag) | 1230 | [pg_similarity](/pg_similarity) | 1.0 | [pg_similarity](/pg_similarity) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/eulerto/pg_similarity) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | support similarity queries |
@@ -352,7 +352,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [SIM](/sim) | 9200 | [pgmemcache](/pgmemcache) | 2.3.0 | [pgmemcache](/pgmemcache) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ohmu/pgmemcache) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | memcached interface |
 | [ETL](/etl) | 9500 | [pglogical](/pglogical) | 2.4.4 | [pglogical](/pglogical) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/2ndQuadrant/pglogical) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL Logical Replication |
 | [ETL](/etl) | 9501 | [pglogical_origin](/pglogical_origin) | 1.0.0 | [pglogical](/pglogical_origin) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/2ndQuadrant/pglogical) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Dummy extension for compatibility when upgrading from Postgres 9.4 |
-| [ETL](/etl) | 9510 | [pglogical_ticker](/pglogical_ticker) | 1.4 | [pglogical_ticker](/pglogical_ticker) | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/enova/pglogical_ticker) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Have an accurate view on pglogical replication delay |
+| [ETL](/etl) | 9510 | [pglogical_ticker](/pglogical_ticker) | 1.4 | [pglogical_ticker](/pglogical_ticker) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/enova/pglogical_ticker) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Have an accurate view on pglogical replication delay |
 | [ETL](/etl) | 9520 | [pgl_ddl_deploy](/pgl_ddl_deploy) | 2.2 | [pgl_ddl_deploy](/pgl_ddl_deploy) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/enova/pgl_ddl_deploy) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | automated ddl deployment using pglogical |
 | [ETL](/etl) | 9530 | [pg_failover_slots](/pg_failover_slots) | 1.0.1 | [pg_failover_slots](/pg_failover_slots) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/EnterpriseDB/pg_failover_slots) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PG Failover Slots extension |
 | [ETL](/etl) | 9630 | [wal2json](/wal2json) | 2.5.3 | [wal2json](/wal2json) | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/eulerto/wal2json) |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | Changing data capture in JSON format |
@@ -394,7 +394,7 @@ pg_extensions:
   - passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
   - wrappers mysql_fdw oracle_fdw redis_fdw pg_redis_pubsub firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #tds_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #kafka_fdw #hdfs_fdw
   - orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
-  - pglogical pgl_ddl_deploy pg_failover_slots wal2json decoder_raw mimeo pg_fact_loader #pglogical #pglogical_ticker #wal2mongo #decoderbufs #repmgr #pg_bulkload
+  - pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoder_raw mimeo pg_fact_loader #pglogical #wal2mongo #decoderbufs #repmgr #pg_bulkload
 ```
 
 --------
@@ -421,7 +421,7 @@ pg_extensions:
   - passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pg_tde pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset 
   - wrappers mysql_fdw oracle_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #tds_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
   - orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money
-  - pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo repmgr pg_fact_loader pg_bulkload #pglogical #pglogical_ticker
+  - pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo repmgr pg_fact_loader pg_bulkload #pglogical
 ```
 
 --------
@@ -448,7 +448,7 @@ pg_extensions:
   - passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
   - wrappers mysql_fdw oracle_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #tds_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
   - orafce pgtt session_variable pg_statement_rollback babelfishpg_common babelfishpg_tsql babelfishpg_tds babelfishpg_money pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
-  - pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo repmgr pg_fact_loader pg_bulkload #pglogical #pglogical_ticker
+  - pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo repmgr pg_fact_loader pg_bulkload #pglogical
 ```
 
 --------
@@ -475,7 +475,7 @@ pg_extensions:
   - passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
   - wrappers mysql_fdw oracle_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #tds_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
   - orafce pgtt session_variable pg_statement_rollback #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money #pgmemcache
-  - pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo repmgr pg_fact_loader pg_bulkload #pglogical #pglogical_ticker
+  - pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo repmgr pg_fact_loader pg_bulkload #pglogical
 ```
 
 --------
@@ -502,7 +502,7 @@ pg_extensions:
   - passwordcheck supautils pgsodium pg_vault anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_session_jwt #pg_tde
   - mysql_fdw oracle_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 #wrappers #multicorn #odbc_fdw #jdbc_fdw #tds_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw #log_fdw
   - orafce pgtt session_variable pg_statement_rollback #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money #pgmemcache
-  - pglogical pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo repmgr pg_fact_loader pg_bulkload #pglogical #pglogical_ticker
+  - pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo repmgr pg_fact_loader pg_bulkload #pglogical
 ```
 
 --------
@@ -529,7 +529,7 @@ pg_extensions:
   - passwordcheck pgsodium pg_vault anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #supautils #pg_session_jwt #pg_tde
   - mysql_fdw oracle_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 #wrappers #multicorn #odbc_fdw #jdbc_fdw #tds_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw #log_fdw
   - orafce pgtt session_variable pg_statement_rollback #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money #pgmemcache
-  - pglogical pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo repmgr pg_fact_loader #pglogical #pglogical_ticker #wal2mongo #pg_bulkload
+  - pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo repmgr pg_fact_loader #pglogical #wal2mongo #pg_bulkload
 ```
 
 
