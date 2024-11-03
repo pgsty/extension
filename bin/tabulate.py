@@ -639,14 +639,15 @@ def generate_category():
 
 
 EXTENSION_TEMPLATE = """%s\n\n
+%s extensions: %s\n\n
+-------
 ## Extension\n\n
 %s\n\n%s
 -----------\n\n
 ## Packages\n\n
 %s\n\n%s
------------\n\n
-## Category: %s\n\n
-%s\n\n
+\n\n
+%s\n
 """
 
 DEP_MAP = {}
@@ -667,15 +668,19 @@ def generate_extension():
     for ext in DATA:
         name, alias, category = ext['name'], ext['alias'], ext['category']
         ext_path = os.path.join(DOCS_PATH, name + '.md')
+        stub_path = os.path.join(STUB_PATH, name + '.md')
 
-        header = """# %s\n\n\n> %s: %s\n>\n> %s\n\n\n-------""" % (ext['alias'], getcol('pkg2', ext ) ,ext['en_desc'],  ext['url'])
+        header = """# %s\n\n\n> %s: %s\n>\n> %s\n\n\n""" % (ext['alias'], getcol('pkg2', ext ) ,ext['en_desc'],  ext['url'])
         # part 1: extension table
         ext_table = tabulate(
             Columns(["ext", "ver", "lic", "rpmrepo", "debrepo", "lan", "bin", "load", "dylib", "ddl", "trust", "reloc"]),
             lambda row: row['name'] == name
         )
 
-        t2_cols = [ "pkg", "tag", "schema", "req", "reqd", "comment", "en_desc"]
+        exts = [ext for ext in DATA if ext['category'] == category ]
+        ext_links = [ getcol("ext4", ext) for ext in exts ]
+
+        t2_cols = [ "pkg", "tag", "schema", "req", "reqd" ] #, "comment", "en_desc"]
         ext_table_extra = tabulate(Columns(t2_cols),lambda row: row['name'] == name)
         ext_table = ext_table + '\n\n\n' + ext_table_extra
 
@@ -715,16 +720,21 @@ def generate_extension():
         if ext['has_rpm']: install_tmpl = install_tmpl + yum_install_preface + yum_install_tmpl
         if ext['has_deb']: install_tmpl = install_tmpl + apt_install_preface + apt_install_tmpl
 
-        sib_table = tabulate(
-            Columns(["id", "ext3", "ver", "pkg", "lic", "rpmrepo", "debrepo", "lan", "tag", "schema", "req", "load", "dylib", "ddl", "trust", "reloc"]),
-            lambda row: row['category'] == category
-        )
+        #sib_table = tabulate(
+        #    Columns(["id", "ext3", "ver", "pkg", "lic", "rpmrepo", "debrepo", "lan", "tag", "schema", "req", "load", "dylib", "ddl", "trust", "reloc"]),
+        #    lambda row: row['category'] == category
+        #)
+
+        stub_content = ''
+        if os.path.exists(stub_path):
+            stub_content = open(stub_path, 'r').read()
+
 
         content = EXTENSION_TEMPLATE % (
-            header,
+            header, getcol("cat", ext), ', '.join(ext_links),
             ext_table, ext_additional,
             pkg_table, install_tmpl,
-            category, sib_table
+            stub_content
         )
         with open(ext_path, 'w') as f:
             f.write(content)
@@ -784,4 +794,3 @@ generate_deb_list()
 generate_contrib_list()
 generate_category()
 generate_extension()
-
