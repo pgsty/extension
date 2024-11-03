@@ -9,7 +9,7 @@ Provide %s available [Extensions](/list) as [RPM](/rpm) / [DEB](/deb) for Postgr
 
 **Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
 
-[![PostgreSQL Extension Ecosystem](https://pigsty.io/img/pigsty/ecosystem.jpg)](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)
+<a href="https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4"><img src="https://pigsty.io/img/pigsty/ecosystem.jpg" style="max-width: 1000px; max-height: 1000px; width: 100%%; height: auto;">
 
 
 -------
@@ -21,8 +21,9 @@ All rpm/deb packages are signed with GPG key `B9BD8B20` (`9592A7BC7A682E7333376E
 ### APT Repo
 
 [![Linux](https://img.shields.io/badge/Linux-x86_64-%%23FCC624?style=flat&logo=linux&labelColor=FCC624&logoColor=black)](https://pigsty.io/docs/node)
-[![Ubuntu Support: 22](https://img.shields.io/badge/Ubuntu-22-%%23E95420?style=flat&logo=ubuntu&logoColor=%%23E95420)](https://pigsty.io/docs/pgext/list/deb/)
-[![Debian Support: 12](https://img.shields.io/badge/Debian-12-%%23A81D33?style=flat&logo=debian&logoColor=%%23A81D33)](https://pigsty.io/docs/reference/compatibility/)
+[![Ubuntu Support: 24](https://img.shields.io/badge/Ubuntu-24/noble-%%23E95420?style=flat&logo=ubuntu&logoColor=%%23E95420)](https://pigsty.io/docs/pgext/list/deb/)
+[![Ubuntu Support: 22](https://img.shields.io/badge/Ubuntu-22/jammy-%%23E95420?style=flat&logo=ubuntu&logoColor=%%23E95420)](https://pigsty.io/docs/pgext/list/deb/)
+[![Debian Support: 12](https://img.shields.io/badge/Debian-12/bookworm-%%23A81D33?style=flat&logo=debian&logoColor=%%23A81D33)](https://pigsty.io/docs/reference/compatibility/)
 
 For Ubuntu 22.04 & Debian 12 or any compatible platforms, use the following commands to add the APT repo:
 
