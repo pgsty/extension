@@ -11,23 +11,17 @@ Extensions to be included and extensions will not be included
 - [pgai](https://github.com/timescale/pgai)
 - [pg-rag](https://github.com/nearform/pg-rag)
 
-**Waiting on Author**:
-
-
-
-
-
 
 **Waiting on PostgreSQL 17 support**:
 
 - [plprql](https://github.com/kaspermarstal/plprql): wait on pg17
-- timescaledb_toolkit
-- timeseries
-- pgml
-- citus / citus_columnar
-- hydra
+- [timescaledb_toolkit](https://github.com/timescale/timescaledb-toolkit): [pg17 support](https://github.com/timescale/timescaledb-toolkit/issues/813), [ubuntu noble support](https://github.com/timescale/timescaledb-toolkit/issues/823)
+- timeseries: waiting on hydra pg17 support
+- citus / citus_columnar: 
+- [hydra](https://github.com/hydradatabase/hydra): waiting on citus_columnar pg17 support
 - duckdb_fdw
 - age
+- pgml
 - rdkit
 - plprql
 - pgdd
