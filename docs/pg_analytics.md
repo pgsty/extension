@@ -79,27 +79,6 @@ apt install postgresql-13-pg-analytics;
 
 
 
----
-title: pg_lakehouse
-weight: 180
-description: PG Lakehouse 允许用户通过 FDW 读写本地与S3上的 Parquet、Iceberg 数据文件
-icon: fas fa-boxes-stacked
-module: [PGSQL]
-tags: [Extension]
----
-
-
---------
-
-## Metadata
-
-- **Available PG & OS**: EL 8/9: PG15, PG16
-- **Extension Package Name**: `pg_lakehouse_$v`
-- **In `shared_preload_libraries`**: **yes**
-- **Need `CREATE EXTENSION`**: **yes*
-
-- [pg_lakehouse: A DuckDB Alternative in Postgres](https://blog.paradedb.com/pages/introducing_lakehouse)
-- [Putting DuckDB in Postgres to Query Iceberg](https://blog.paradedb.com/pages/iceberg_lakehouse)
 
 
 --------
