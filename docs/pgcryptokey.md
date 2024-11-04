@@ -24,7 +24,7 @@
 
 | Package | Tags | Schemas | Requires | Required by |
 |---------|------|---------|----------|-------------|
-| [pgcryptokey](/pgcryptokey) |  |  | [`pgcrypto`](pgcrypto) |  |
+| [pgcryptokey](/pgcryptokey) | `pgdg-flaw` |  | [`pgcrypto`](pgcrypto) |  |
 
 
 

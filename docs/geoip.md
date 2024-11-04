@@ -24,7 +24,7 @@
 
 | Package | Tags | Schemas | Requires | Required by |
 |---------|------|---------|----------|-------------|
-| [geoip](/geoip) |  | `geoip` | [`ip4r`](ip4r) |  |
+| [geoip](/geoip) | `pgdg-flaw` | `geoip` | [`ip4r`](ip4r) |  |
 
 
 

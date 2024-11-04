@@ -24,7 +24,7 @@
 
 | Package | Tags | Schemas | Requires | Required by |
 |---------|------|---------|----------|-------------|
-| [sslutils](/sslutils) |  |  |  |  |
+| [sslutils](/sslutils) | `pgdg-flaw` |  |  |  |
 
 
 

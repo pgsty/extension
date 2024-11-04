@@ -24,7 +24,7 @@
 
 | Package | Tags | Schemas | Requires | Required by |
 |---------|------|---------|----------|-------------|
-| [pg_store_plans](/pg_store_plans) |  |  |  |  |
+| [pg_store_plans](/pg_store_plans) | `pgdg-flaw` |  |  |  |
 
 
 

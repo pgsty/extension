@@ -24,7 +24,7 @@
 
 | Package | Tags | Schemas | Requires | Required by |
 |---------|------|---------|----------|-------------|
-| [pgmeminfo](/pgmeminfo) |  |  |  |  |
+| [pgmeminfo](/pgmeminfo) | `pgdg-flaw` |  |  |  |
 
 
 

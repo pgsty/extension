@@ -24,7 +24,7 @@
 
 | Package | Tags | Schemas | Requires | Required by |
 |---------|------|---------|----------|-------------|
-| [count_distinct](/count_distinct) |  |  |  |  |
+| [count_distinct](/count_distinct) | `pgdg-flaw` |  |  |  |
 
 
 

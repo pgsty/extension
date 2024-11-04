@@ -24,7 +24,7 @@
 
 | Package | Tags | Schemas | Requires | Required by |
 |---------|------|---------|----------|-------------|
-| [pg_fkpart](/pg_fkpart) |  | `pgfkpart` |  |  |
+| [pg_fkpart](/pg_fkpart) | `pgdg-flaw` | `pgfkpart` |  |  |
 
 
 

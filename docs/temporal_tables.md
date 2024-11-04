@@ -24,7 +24,7 @@
 
 | Package | Tags | Schemas | Requires | Required by |
 |---------|------|---------|----------|-------------|
-| [temporal_tables](/temporal_tables) |  |  |  |  |
+| [temporal_tables](/temporal_tables) | `pgdg-flaw` |  |  |  |
 
 
 

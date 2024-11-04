@@ -24,7 +24,7 @@
 
 | Package | Tags | Schemas | Requires | Required by |
 |---------|------|---------|----------|-------------|
-| [pguint](/uint) |  |  |  |  |
+| [pguint](/uint) | `pgdg-flaw` |  |  |  |
 
 
 
