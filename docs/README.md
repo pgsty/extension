@@ -9,7 +9,7 @@ Provide 340 available [Extensions](/list) as [RPM](/rpm) / [DEB](/deb) for Postg
 
 **Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
 
-<a href="https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4"><img src="https://pigsty.io/img/pigsty/ecosystem.jpg" style="max-width: 1000px; max-height: 1000px; width: 100%; height: auto;">
+<a href="https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4"><img src="https://pigsty.io/img/pigsty/ecosystem.jpg" style="max-width: 1000px; max-height: 1000px; width: 100%; height: auto;"></a>
 
 
 -------
