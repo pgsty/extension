@@ -2,15 +2,15 @@
 
 There are **326** extensions available on Debian/Ubuntu compatible systems, **14** of them are Debian exclusive, and missing **14** EL exclusive extensions.
 
-There are **70** built-in [**contrib**](contrib) extensions, in addition to **104** deb extensions provided by PGDG YUM repository, and **143** extensions provided by Pigsty.
+There are **70** built-in [**contrib**](contrib) extensions, in addition to **104** deb extensions provided by PGDG YUM repository, and **144** extensions provided by Pigsty.
 
 There are **322** extensions available in the current major version PostgreSQL 16, and **302** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| DEB Extension | 326 | 104 | 143 | 70 | 5 | 14 | 302 | 322 | 325 | 316 | 303 | 293 |
-| DEB Package | 241 | 90 | 142 | 1 | 5 | 1 | 218 | 237 | 240 | 234 | 223 | 213 |
+| DEB Extension | 326 | 104 | 144 | 70 | 4 | 14 | 302 | 322 | 325 | 316 | 303 | 293 |
+| DEB Package | 241 | 90 | 143 | 1 | 4 | 1 | 218 | 237 | 240 | 234 | 223 | 213 |
 
 
 
@@ -46,7 +46,7 @@ There are **322** extensions available in the current major version PostgreSQL 1
 | [GIS](/gis) | [mobilitydb](/mobilitydb) | 1.1.1 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-mobilitydb` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | MobilityDB geospatial trajectory data management & analysis platform |
 | [RAG](/rag) | [pgvector](/vector) | 0.8.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgvector` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | vector data type and ivfflat and hnsw access methods |
 | [RAG](/rag) | [pgvectorscale](/vectorscale) | 0.4.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgvectorscale` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | pgvectorscale:  Advanced indexing for vector data |
-| [RAG](/rag) | [pg_vectorize](/vectorize) | 15 | **<span class="tcblue">PostgreSQL</span>** | 14} | `postgresql-$v-pg-vectorize` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  | The simplest way to do vector search on Postgres |
+| [RAG](/rag) | [pg_vectorize](/vectorize) | 0.20.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-vectorize` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | The simplest way to do vector search on Postgres |
 | [RAG](/rag) | [pg_similarity](/pg_similarity) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-similarity` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | support similarity queries |
 | [RAG](/rag) | [smlar](/smlar) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-smlar` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Effective similarity search |
 | [RAG](/rag) | [pg_summarize](/pg_summarize) | 0.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-summarize` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Text Summarization using LLMs. Built using pgrx |
