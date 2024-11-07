@@ -71,7 +71,7 @@ pg16: postgis35_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* g
 pg15: postgis35_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15* pg_polyline_15 pg_geohash_15*
 pg14: postgis35_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14* pg_polyline_14 pg_geohash_14*
 pg13: postgis35_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13*
-pg12: postgis34_12* postgis35_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12*
+pg12: postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12*
 ```
 
 
@@ -103,7 +103,7 @@ pg16: postgis35_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* g
 pg15: postgis35_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15* pg_polyline_15 pg_geohash_15*
 pg14: postgis35_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14* pg_polyline_14 pg_geohash_14*
 pg13: postgis35_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13*
-pg12: postgis34_12* postgis35_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12*
+pg12: postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12*
 ```
 
 

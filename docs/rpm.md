@@ -496,7 +496,7 @@ pg_version: 12
 repo_packages:
   - postgresql12*
   - timescaledb-2-postgresql-12* timescaledb-toolkit-postgresql-12 periods_12* temporal_tables_12* e-maj_12* table_version_12* pg_cron_12* pg_background_12* #pg_timeseries_12 #pg_later_12
-  - postgis34_12* postgis35_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12*
+  - postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12*
   - pgvector_12* pg_similarity_12* pg_summarize_12 pg_tiktoken_12 pg4ml_12 #pgvectorscale_12 #pg_vectorize_12 #smlar_12* #pgml_12
   - pg_bigm_12* zhparser_12* hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12
   - citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_mooncake_12* #pg_parquet_12 #pg_strom_12*
@@ -513,7 +513,7 @@ repo_packages:
 
 pg_extensions:
   - timescaledb timescaledb_toolkit periods temporal_tables emaj table_version pg_cron pg_background #pg_timeseries #pg_later
-  - postgis34 postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
+  - postgis34 pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
   - pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #pgvectorscale #pg_vectorize #smlar #pgml
   - pg_bigm zhparser hunspell #pg_search
   - citus duckdb_fdw pg_fkpart pg_partman plproxy #hydra #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
@@ -625,7 +625,7 @@ repo_packages:
   
   - postgresql12*
   - timescaledb-2-postgresql-12* timescaledb-toolkit-postgresql-12 periods_12* temporal_tables_12* e-maj_12* table_version_12* pg_cron_12* pg_background_12* #pg_timeseries_12 #pg_later_12
-  - postgis34_12* postgis35_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12*
+  - postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12*
   - pgvector_12* pg_similarity_12* pg_summarize_12 pg_tiktoken_12 pg4ml_12 #pgvectorscale_12 #pg_vectorize_12 #smlar_12* #pgml_12
   - pg_bigm_12* zhparser_12* hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12
   - citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_mooncake_12* #pg_parquet_12 #pg_strom_12*

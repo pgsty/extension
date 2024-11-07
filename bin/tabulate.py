@@ -394,12 +394,14 @@ def pg_ext_list(ver, distro, category=None):
                         alias = ext['alias'] + ver
                     elif ext['name'] == 'citus' and os_type == 'deb' and ver in ['12','13']: #pg12=10.2, pg13=11.3
                         pkg = ext[PKG_KEY].replace('$v', ver).replace('citus-12.1', 'citus-' + ('10.2' if ver == '12' else '11.3') )
-                        alias = ext['alias'] + ver
+                        alias = ext['alias'] + str(int(ver) -2)
+                    elif name == 'citus_columnar': continue
                     elif ext['name'] == 'postgis' and os_type == 'rpm' and (ver in ['12']): #pg12=34(el8/9),33(el7)
                         if distro == 'el7':
                             pkg,alias = 'postgis33_12*', 'postgis33'
                         else:
                             pkg,alias = 'postgis34_12*', 'postgis34'
+                    elif name.startswith('postgis_') or name.startswith('address_standardizer'): continue
                     elif ext['name'] == 'babelfish_common':
                             pkg,alias = 'wiltondb', 'wiltondb'
                     else:
