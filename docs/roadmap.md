@@ -10,7 +10,8 @@ Extensions to be included and extensions will not be included
 
 - [pgai](https://github.com/timescale/pgai)
 - [pg-rag](https://github.com/nearform/pg-rag)
-
+- [onesparse](https://github.com/OneSparse/OneSparse)
+- [omnigres](https://omnigres.com/)
 
 **Waiting on PostgreSQL 17 support**:
 

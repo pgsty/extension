@@ -123,5 +123,20 @@ The building recipes and specs, metadata are all open-sourced, related GitHub re
 - [`pgsql-rpm`](https://github.com/pgsty/pgsql-rpm): Building PostgreSQL RPM packages from source code
 - [`pgsql-deb`](https://github.com/pgsty/pgsql-deb): Building PostgreSQL DEB packages from source code
 
+**PostgreSQL Yum Repo** (el9)
 
+- https://download.postgresql.org/pub/repos/yum/17/redhat/rhel-9-x86_64/
+- https://download.postgresql.org/pub/repos/yum/16/redhat/rhel-9-x86_64/
+- https://download.postgresql.org/pub/repos/yum/15/redhat/rhel-9-x86_64/
+- https://download.postgresql.org/pub/repos/yum/14/redhat/rhel-9-x86_64/
+- https://download.postgresql.org/pub/repos/yum/13/redhat/rhel-9-x86_64/
+- https://download.postgresql.org/pub/repos/yum/12/redhat/rhel-9-x86_64/
 
+**PostgreSQL Yum Repo** (el8)
+
+- https://download.postgresql.org/pub/repos/yum/17/redhat/rhel-8-x86_64/
+- https://download.postgresql.org/pub/repos/yum/16/redhat/rhel-8-x86_64/
+- https://download.postgresql.org/pub/repos/yum/15/redhat/rhel-8-x86_64/
+- https://download.postgresql.org/pub/repos/yum/14/redhat/rhel-8-x86_64/
+- https://download.postgresql.org/pub/repos/yum/13/redhat/rhel-8-x86_64/
+- https://download.postgresql.org/pub/repos/yum/12/redhat/rhel-8-x86_64/

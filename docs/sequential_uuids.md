@@ -42,7 +42,7 @@ CREATE EXTENSION sequential_uuids;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0.2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `sequential_uuids_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm) | 1.0.2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `sequential_uuids_$v` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 | [DEB](/deb) | 1.0.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-sequential-uuids` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
@@ -57,12 +57,12 @@ Install `sequential_uuids` via [Pigsty](https://pigsty.cc/docs/pgext/usage/insta
 Install `sequential_uuids` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install sequential_uuids_17*;
-dnf install sequential_uuids_16*;
-dnf install sequential_uuids_15*;
-dnf install sequential_uuids_14*;
-dnf install sequential_uuids_13*;
-dnf install sequential_uuids_12*;
+dnf install sequential_uuids_17;
+dnf install sequential_uuids_16;
+dnf install sequential_uuids_15;
+dnf install sequential_uuids_14;
+dnf install sequential_uuids_13;
+dnf install sequential_uuids_12;
 ```
 
 

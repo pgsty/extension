@@ -33,7 +33,7 @@
 ```sql
 CREATE EXTENSION pg_partman;
 ```
-
+> **Comment**: no pg13,12 on u24 pgdg repo
 -----------
 
 
