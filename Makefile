@@ -23,6 +23,8 @@ all: dump gen run
 dump: save
 save:
 	psql $(PGURL) -c "COPY (SELECT * FROM ext.pigsty ORDER BY id) TO '/Users/vonng/pgsty/extension/data/pigsty.csv' CSV HEADER;"
+save-mini:
+	psql $(PGURL) -c "COPY (select id,name,alias,category,lead,rpm_repo,rpm_pkg,rpm_pg,deb_repo,deb_pkg,deb_pg FROM ext.pigsty ORDER BY id) TO '/Users/vonng/pgsty/extension/data/extension.csv' CSV HEADER;"
 
 load:
 	psql $(PGURL) -c "TRUNCATE ext.pigsty; COPY ext.pigsty FROM '/Users/vonng/pgsty/extension/data/pigsty.csv' CSV HEADER;"
