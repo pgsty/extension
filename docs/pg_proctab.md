@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_proctab](https://github.com/markwkm/pg_proctab) | 0.0.10-compat | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_proctab](https://github.com/markwkm/pg_proctab) | 0.0.10-compat | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgnodemx](/pg_proctab) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pg_proctab;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| Distro-pgnodemx | 1.7 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgnodemx_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| Distro-pgnodemx | 1.7 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgnodemx` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgnodemx_17` | `pgnodemx_16` | `pgnodemx_15` | `pgnodemx_14` | `pgnodemx_13` | `pgnodemx_12` |
+| `el9` | `pgnodemx_17` | `pgnodemx_16` | `pgnodemx_15` | `pgnodemx_14` | `pgnodemx_13` | `pgnodemx_12` |
+| `d12` | `postgresql-17-pgnodemx` | `postgresql-16-pgnodemx` | `postgresql-15-pgnodemx` | `postgresql-14-pgnodemx` | `postgresql-13-pgnodemx` | `postgresql-12-pgnodemx` |
+| `u22` | `postgresql-17-pgnodemx` | `postgresql-16-pgnodemx` | `postgresql-15-pgnodemx` | `postgresql-14-pgnodemx` | `postgresql-13-pgnodemx` | `postgresql-12-pgnodemx` |
+| `u24` | `postgresql-17-pgnodemx` | `postgresql-16-pgnodemx` | `postgresql-15-pgnodemx` | `postgresql-14-pgnodemx` | `postgresql-13-pgnodemx` | `postgresql-12-pgnodemx` |
 
 
 
-Install `pgnodemx` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgnodemx` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgnodemx"]}'
@@ -57,12 +76,12 @@ Install `pgnodemx` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pla
 Install `pgnodemx` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pgnodemx_17;
-dnf install pgnodemx_16;
-dnf install pgnodemx_15;
-dnf install pgnodemx_14;
-dnf install pgnodemx_13;
-dnf install pgnodemx_12;
+yum install pgnodemx_17;
+yum install pgnodemx_16;
+yum install pgnodemx_15;
+yum install pgnodemx_14;
+yum install pgnodemx_13;
+yum install pgnodemx_12;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pgnodemx;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgnodemx_17` | `pgnodemx_16` | `pgnodemx_15` | `pgnodemx_14` | `pgnodemx_13` | `pgnodemx_12` |
+| `el9` | `pgnodemx_17` | `pgnodemx_16` | `pgnodemx_15` | `pgnodemx_14` | `pgnodemx_13` | `pgnodemx_12` |
+| `d12` | `postgresql-17-pgnodemx` | `postgresql-16-pgnodemx` | `postgresql-15-pgnodemx` | `postgresql-14-pgnodemx` | `postgresql-13-pgnodemx` | `postgresql-12-pgnodemx` |
+| `u22` | `postgresql-17-pgnodemx` | `postgresql-16-pgnodemx` | `postgresql-15-pgnodemx` | `postgresql-14-pgnodemx` | `postgresql-13-pgnodemx` | `postgresql-12-pgnodemx` |
+| `u24` | `postgresql-17-pgnodemx` | `postgresql-16-pgnodemx` | `postgresql-15-pgnodemx` | `postgresql-14-pgnodemx` | `postgresql-13-pgnodemx` | `postgresql-12-pgnodemx` |
 
 
 

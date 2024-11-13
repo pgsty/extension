@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [country](https://github.com/adjust/pg-country) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [country](https://github.com/adjust/pg-country) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_country](/country) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION country;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_country_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-country` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_country_17*` | `pg_country_16*` | `pg_country_15*` | `pg_country_14*` | `pg_country_13*` | `pg_country_12*` |
+| `el9` | `pg_country_17*` | `pg_country_16*` | `pg_country_15*` | `pg_country_14*` | `pg_country_13*` | `pg_country_12*` |
+| `d12` | `postgresql-17-pg-country` | `postgresql-16-pg-country` | `postgresql-15-pg-country` | `postgresql-14-pg-country` | `postgresql-13-pg-country` | `postgresql-12-pg-country` |
+| `u22` | `postgresql-17-pg-country` | `postgresql-16-pg-country` | `postgresql-15-pg-country` | `postgresql-14-pg-country` | `postgresql-13-pg-country` | `postgresql-12-pg-country` |
+| `u24` | `postgresql-17-pg-country` | `postgresql-16-pg-country` | `postgresql-15-pg-country` | `postgresql-14-pg-country` | `postgresql-13-pg-country` | `postgresql-12-pg-country` |
 
 
 
-Install `pg_country` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_country` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_country"]}'
@@ -57,12 +76,12 @@ Install `pg_country` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) p
 Install `pg_country` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_country_17*;
-dnf install pg_country_16*;
-dnf install pg_country_15*;
-dnf install pg_country_14*;
-dnf install pg_country_13*;
-dnf install pg_country_12*;
+yum install pg_country_17*;
+yum install pg_country_16*;
+yum install pg_country_15*;
+yum install pg_country_14*;
+yum install pg_country_13*;
+yum install pg_country_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pg-country;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_country_17*` | `pg_country_16*` | `pg_country_15*` | `pg_country_14*` | `pg_country_13*` | `pg_country_12*` |
+| `el9` | `pg_country_17*` | `pg_country_16*` | `pg_country_15*` | `pg_country_14*` | `pg_country_13*` | `pg_country_12*` |
+| `d12` | `postgresql-17-pg-country` | `postgresql-16-pg-country` | `postgresql-15-pg-country` | `postgresql-14-pg-country` | `postgresql-13-pg-country` | `postgresql-12-pg-country` |
+| `u22` | `postgresql-17-pg-country` | `postgresql-16-pg-country` | `postgresql-15-pg-country` | `postgresql-14-pg-country` | `postgresql-13-pg-country` | `postgresql-12-pg-country` |
+| `u24` | `postgresql-17-pg-country` | `postgresql-16-pg-country` | `postgresql-15-pg-country` | `postgresql-14-pg-country` | `postgresql-13-pg-country` | `postgresql-12-pg-country` |
 
 
 

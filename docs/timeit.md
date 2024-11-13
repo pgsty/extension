@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [timeit](https://github.com/joelonsql/pg-timeit) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [timeit](https://github.com/joelonsql/pg-timeit) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_timeit](/timeit) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION timeit;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_timeit_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-timeit` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_timeit_17*` | `pg_timeit_16*` | `pg_timeit_15*` | `pg_timeit_14*` | `pg_timeit_13*` | `pg_timeit_12*` |
+| `el9` | `pg_timeit_17*` | `pg_timeit_16*` | `pg_timeit_15*` | `pg_timeit_14*` | `pg_timeit_13*` | `pg_timeit_12*` |
+| `d12` | `postgresql-17-pg-timeit` | `postgresql-16-pg-timeit` | `postgresql-15-pg-timeit` | `postgresql-14-pg-timeit` | `postgresql-13-pg-timeit` | `postgresql-12-pg-timeit` |
+| `u22` | `postgresql-17-pg-timeit` | `postgresql-16-pg-timeit` | `postgresql-15-pg-timeit` | `postgresql-14-pg-timeit` | `postgresql-13-pg-timeit` | `postgresql-12-pg-timeit` |
+| `u24` | `postgresql-17-pg-timeit` | `postgresql-16-pg-timeit` | `postgresql-15-pg-timeit` | `postgresql-14-pg-timeit` | `postgresql-13-pg-timeit` | `postgresql-12-pg-timeit` |
 
 
 
-Install `pg_timeit` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_timeit` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_timeit"]}'
@@ -57,12 +76,12 @@ Install `pg_timeit` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pl
 Install `pg_timeit` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_timeit_17*;
-dnf install pg_timeit_16*;
-dnf install pg_timeit_15*;
-dnf install pg_timeit_14*;
-dnf install pg_timeit_13*;
-dnf install pg_timeit_12*;
+yum install pg_timeit_17*;
+yum install pg_timeit_16*;
+yum install pg_timeit_15*;
+yum install pg_timeit_14*;
+yum install pg_timeit_13*;
+yum install pg_timeit_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pg-timeit;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_timeit_17*` | `pg_timeit_16*` | `pg_timeit_15*` | `pg_timeit_14*` | `pg_timeit_13*` | `pg_timeit_12*` |
+| `el9` | `pg_timeit_17*` | `pg_timeit_16*` | `pg_timeit_15*` | `pg_timeit_14*` | `pg_timeit_13*` | `pg_timeit_12*` |
+| `d12` | `postgresql-17-pg-timeit` | `postgresql-16-pg-timeit` | `postgresql-15-pg-timeit` | `postgresql-14-pg-timeit` | `postgresql-13-pg-timeit` | `postgresql-12-pg-timeit` |
+| `u22` | `postgresql-17-pg-timeit` | `postgresql-16-pg-timeit` | `postgresql-15-pg-timeit` | `postgresql-14-pg-timeit` | `postgresql-13-pg-timeit` | `postgresql-12-pg-timeit` |
+| `u24` | `postgresql-17-pg-timeit` | `postgresql-16-pg-timeit` | `postgresql-15-pg-timeit` | `postgresql-14-pg-timeit` | `postgresql-13-pg-timeit` | `postgresql-12-pg-timeit` |
 
 
 

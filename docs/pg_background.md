@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_background](https://github.com/vibhorkum/pg_background) | 1.3 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_background](https://github.com/vibhorkum/pg_background) | 1.3 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_background](/pg_background) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pg_background;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.3 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pg_background_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.3 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-background` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_background_17*` | `pg_background_16*` | `pg_background_15*` | `pg_background_14*` | `pg_background_13*` | `pg_background_12*` |
+| `el9` | `pg_background_17*` | `pg_background_16*` | `pg_background_15*` | `pg_background_14*` | `pg_background_13*` | `pg_background_12*` |
+| `d12` | `postgresql-17-pg-background` | `postgresql-16-pg-background` | `postgresql-15-pg-background` | `postgresql-14-pg-background` | `postgresql-13-pg-background` | `postgresql-12-pg-background` |
+| `u22` | `postgresql-17-pg-background` | `postgresql-16-pg-background` | `postgresql-15-pg-background` | `postgresql-14-pg-background` | `postgresql-13-pg-background` | `postgresql-12-pg-background` |
+| `u24` | `postgresql-17-pg-background` | `postgresql-16-pg-background` | `postgresql-15-pg-background` | `postgresql-14-pg-background` | `postgresql-13-pg-background` | `postgresql-12-pg-background` |
 
 
 
-Install `pg_background` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_background` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_background"]}'
@@ -57,12 +76,12 @@ Install `pg_background` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/
 Install `pg_background` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pg_background_17*;
-dnf install pg_background_16*;
-dnf install pg_background_15*;
-dnf install pg_background_14*;
-dnf install pg_background_13*;
-dnf install pg_background_12*;
+yum install pg_background_17*;
+yum install pg_background_16*;
+yum install pg_background_15*;
+yum install pg_background_14*;
+yum install pg_background_13*;
+yum install pg_background_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pg-background;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_background_17*` | `pg_background_16*` | `pg_background_15*` | `pg_background_14*` | `pg_background_13*` | `pg_background_12*` |
+| `el9` | `pg_background_17*` | `pg_background_16*` | `pg_background_15*` | `pg_background_14*` | `pg_background_13*` | `pg_background_12*` |
+| `d12` | `postgresql-17-pg-background` | `postgresql-16-pg-background` | `postgresql-15-pg-background` | `postgresql-14-pg-background` | `postgresql-13-pg-background` | `postgresql-12-pg-background` |
+| `u22` | `postgresql-17-pg-background` | `postgresql-16-pg-background` | `postgresql-15-pg-background` | `postgresql-14-pg-background` | `postgresql-13-pg-background` | `postgresql-12-pg-background` |
+| `u24` | `postgresql-17-pg-background` | `postgresql-16-pg-background` | `postgresql-15-pg-background` | `postgresql-14-pg-background` | `postgresql-13-pg-background` | `postgresql-12-pg-background` |
 
 
 

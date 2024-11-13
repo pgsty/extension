@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [base62](https://github.com/adjust/pg-base62) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [base62](https://github.com/adjust/pg-base62) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_base62](/base62) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION base62;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_base62_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-base62` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_base62_17*` | `pg_base62_16*` | `pg_base62_15*` | `pg_base62_14*` | `pg_base62_13*` | `pg_base62_12*` |
+| `el9` | `pg_base62_17*` | `pg_base62_16*` | `pg_base62_15*` | `pg_base62_14*` | `pg_base62_13*` | `pg_base62_12*` |
+| `d12` | `postgresql-17-base62` | `postgresql-16-base62` | `postgresql-15-base62` | `postgresql-14-base62` | `postgresql-13-base62` | `postgresql-12-base62` |
+| `u22` | `postgresql-17-base62` | `postgresql-16-base62` | `postgresql-15-base62` | `postgresql-14-base62` | `postgresql-13-base62` | `postgresql-12-base62` |
+| `u24` | `postgresql-17-base62` | `postgresql-16-base62` | `postgresql-15-base62` | `postgresql-14-base62` | `postgresql-13-base62` | `postgresql-12-base62` |
 
 
 
-Install `pg_base62` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_base62` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_base62"]}'
@@ -57,12 +76,12 @@ Install `pg_base62` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pl
 Install `pg_base62` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_base62_17*;
-dnf install pg_base62_16*;
-dnf install pg_base62_15*;
-dnf install pg_base62_14*;
-dnf install pg_base62_13*;
-dnf install pg_base62_12*;
+yum install pg_base62_17*;
+yum install pg_base62_16*;
+yum install pg_base62_15*;
+yum install pg_base62_14*;
+yum install pg_base62_13*;
+yum install pg_base62_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-base62;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_base62_17*` | `pg_base62_16*` | `pg_base62_15*` | `pg_base62_14*` | `pg_base62_13*` | `pg_base62_12*` |
+| `el9` | `pg_base62_17*` | `pg_base62_16*` | `pg_base62_15*` | `pg_base62_14*` | `pg_base62_13*` | `pg_base62_12*` |
+| `d12` | `postgresql-17-base62` | `postgresql-16-base62` | `postgresql-15-base62` | `postgresql-14-base62` | `postgresql-13-base62` | `postgresql-12-base62` |
+| `u22` | `postgresql-17-base62` | `postgresql-16-base62` | `postgresql-15-base62` | `postgresql-14-base62` | `postgresql-13-base62` | `postgresql-12-base62` |
+| `u24` | `postgresql-17-base62` | `postgresql-16-base62` | `postgresql-15-base62` | `postgresql-14-base62` | `postgresql-13-base62` | `postgresql-12-base62` |
 
 
 

@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgtt](https://github.com/darold/pgtt) | 4.0.0 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgtt](https://github.com/darold/pgtt) | 4.0.0 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgtt](/pgtt) | `oracle` |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pgtt;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 4.0.0 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `pgtt_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 4.0.0 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgtt` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgtt_17*` | `pgtt_16*` | `pgtt_15*` | `pgtt_14*` | `pgtt_13*` | `pgtt_12*` |
+| `el9` | `pgtt_17*` | `pgtt_16*` | `pgtt_15*` | `pgtt_14*` | `pgtt_13*` | `pgtt_12*` |
+| `d12` | `postgresql-17-pgtt` | `postgresql-16-pgtt` | `postgresql-15-pgtt` | `postgresql-14-pgtt` | `postgresql-13-pgtt` | `postgresql-12-pgtt` |
+| `u22` | `postgresql-17-pgtt` | `postgresql-16-pgtt` | `postgresql-15-pgtt` | `postgresql-14-pgtt` | `postgresql-13-pgtt` | `postgresql-12-pgtt` |
+| `u24` | `postgresql-17-pgtt` | `postgresql-16-pgtt` | `postgresql-15-pgtt` | `postgresql-14-pgtt` | `postgresql-13-pgtt` | `postgresql-12-pgtt` |
 
 
 
-Install `pgtt` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgtt` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgtt"]}'
@@ -57,12 +76,12 @@ Install `pgtt` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playboo
 Install `pgtt` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pgtt_17*;
-dnf install pgtt_16*;
-dnf install pgtt_15*;
-dnf install pgtt_14*;
-dnf install pgtt_13*;
-dnf install pgtt_12*;
+yum install pgtt_17*;
+yum install pgtt_16*;
+yum install pgtt_15*;
+yum install pgtt_14*;
+yum install pgtt_13*;
+yum install pgtt_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pgtt;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgtt_17*` | `pgtt_16*` | `pgtt_15*` | `pgtt_14*` | `pgtt_13*` | `pgtt_12*` |
+| `el9` | `pgtt_17*` | `pgtt_16*` | `pgtt_15*` | `pgtt_14*` | `pgtt_13*` | `pgtt_12*` |
+| `d12` | `postgresql-17-pgtt` | `postgresql-16-pgtt` | `postgresql-15-pgtt` | `postgresql-14-pgtt` | `postgresql-13-pgtt` | `postgresql-12-pgtt` |
+| `u22` | `postgresql-17-pgtt` | `postgresql-16-pgtt` | `postgresql-15-pgtt` | `postgresql-14-pgtt` | `postgresql-13-pgtt` | `postgresql-12-pgtt` |
+| `u24` | `postgresql-17-pgtt` | `postgresql-16-pgtt` | `postgresql-15-pgtt` | `postgresql-14-pgtt` | `postgresql-13-pgtt` | `postgresql-12-pgtt` |
 
 
 

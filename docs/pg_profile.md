@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_profile](https://github.com/zubkov-andrei/pg_profile) | 4.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_profile](https://github.com/zubkov-andrei/pg_profile) | 4.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_profile](/pg_profile) |  |  | [`dblink`](dblink), [`plpgsql`](plpgsql) |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pg_profile CASCADE;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 4.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `pg_profile_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 4.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-profile` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_profile_17*` | `pg_profile_16*` | `pg_profile_15*` | `pg_profile_14*` | `pg_profile_13*` | `pg_profile_12*` |
+| `el9` | `pg_profile_17*` | `pg_profile_16*` | `pg_profile_15*` | `pg_profile_14*` | `pg_profile_13*` | `pg_profile_12*` |
+| `d12` | `postgresql-17-pg-profile` | `postgresql-16-pg-profile` | `postgresql-15-pg-profile` | `postgresql-14-pg-profile` | `postgresql-13-pg-profile` | `postgresql-12-pg-profile` |
+| `u22` | `postgresql-17-pg-profile` | `postgresql-16-pg-profile` | `postgresql-15-pg-profile` | `postgresql-14-pg-profile` | `postgresql-13-pg-profile` | `postgresql-12-pg-profile` |
+| `u24` | `postgresql-17-pg-profile` | `postgresql-16-pg-profile` | `postgresql-15-pg-profile` | `postgresql-14-pg-profile` | `postgresql-13-pg-profile` | `postgresql-12-pg-profile` |
 
 
 
-Install `pg_profile` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_profile` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_profile"]}'
@@ -57,12 +76,12 @@ Install `pg_profile` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) p
 Install `pg_profile` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pg_profile_17*;
-dnf install pg_profile_16*;
-dnf install pg_profile_15*;
-dnf install pg_profile_14*;
-dnf install pg_profile_13*;
-dnf install pg_profile_12*;
+yum install pg_profile_17*;
+yum install pg_profile_16*;
+yum install pg_profile_15*;
+yum install pg_profile_14*;
+yum install pg_profile_13*;
+yum install pg_profile_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pg-profile;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_profile_17*` | `pg_profile_16*` | `pg_profile_15*` | `pg_profile_14*` | `pg_profile_13*` | `pg_profile_12*` |
+| `el9` | `pg_profile_17*` | `pg_profile_16*` | `pg_profile_15*` | `pg_profile_14*` | `pg_profile_13*` | `pg_profile_12*` |
+| `d12` | `postgresql-17-pg-profile` | `postgresql-16-pg-profile` | `postgresql-15-pg-profile` | `postgresql-14-pg-profile` | `postgresql-13-pg-profile` | `postgresql-12-pg-profile` |
+| `u22` | `postgresql-17-pg-profile` | `postgresql-16-pg-profile` | `postgresql-15-pg-profile` | `postgresql-14-pg-profile` | `postgresql-13-pg-profile` | `postgresql-12-pg-profile` |
+| `u24` | `postgresql-17-pg-profile` | `postgresql-16-pg-profile` | `postgresql-15-pg-profile` | `postgresql-14-pg-profile` | `postgresql-13-pg-profile` | `postgresql-12-pg-profile` |
 
 
 

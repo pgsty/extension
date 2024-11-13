@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pljava](https://github.com/tada/pljava) | 1.6.6 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pljava](https://github.com/tada/pljava) | 1.6.6 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pljava](/pljava) | `big-deps` | `sqlj` |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pljava;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.6.6 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pljava_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.6.7 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pljava` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pljava_17*` | `pljava_16*` | `pljava_15*` | `pljava_14*` | `pljava_13*` | `pljava_12*` |
+| `el9` | `pljava_17*` | `pljava_16*` | `pljava_15*` | `pljava_14*` | `pljava_13*` | `pljava_12*` |
+| `d12` | `postgresql-17-pljava` | `postgresql-16-pljava` | `postgresql-15-pljava` | `postgresql-14-pljava` | `postgresql-13-pljava` | `postgresql-12-pljava` |
+| `u22` | `postgresql-17-pljava` | `postgresql-16-pljava` | `postgresql-15-pljava` | `postgresql-14-pljava` | `postgresql-13-pljava` | `postgresql-12-pljava` |
+| `u24` | `postgresql-17-pljava` | `postgresql-16-pljava` | `postgresql-15-pljava` | `postgresql-14-pljava` | `postgresql-13-pljava` | `postgresql-12-pljava` |
 
 
 
-Install `pljava` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pljava` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pljava"]}'
@@ -57,12 +76,12 @@ Install `pljava` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playb
 Install `pljava` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pljava_17*;
-dnf install pljava_16*;
-dnf install pljava_15*;
-dnf install pljava_14*;
-dnf install pljava_13*;
-dnf install pljava_12*;
+yum install pljava_17*;
+yum install pljava_16*;
+yum install pljava_15*;
+yum install pljava_14*;
+yum install pljava_13*;
+yum install pljava_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pljava;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pljava_17*` | `pljava_16*` | `pljava_15*` | `pljava_14*` | `pljava_13*` | `pljava_12*` |
+| `el9` | `pljava_17*` | `pljava_16*` | `pljava_15*` | `pljava_14*` | `pljava_13*` | `pljava_12*` |
+| `d12` | `postgresql-17-pljava` | `postgresql-16-pljava` | `postgresql-15-pljava` | `postgresql-14-pljava` | `postgresql-13-pljava` | `postgresql-12-pljava` |
+| `u22` | `postgresql-17-pljava` | `postgresql-16-pljava` | `postgresql-15-pljava` | `postgresql-14-pljava` | `postgresql-13-pljava` | `postgresql-12-pljava` |
+| `u24` | `postgresql-17-pljava` | `postgresql-16-pljava` | `postgresql-15-pljava` | `postgresql-14-pljava` | `postgresql-13-pljava` | `postgresql-12-pljava` |
 
 
 

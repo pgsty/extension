@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [semver](https://github.com/theory/pg-semver) | 0.32.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [semver](https://github.com/theory/pg-semver) | 0.32.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [semver](/semver) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION semver;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.32.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `semver_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 0.40.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-semver` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `semver_17*` | `semver_16*` | `semver_15*` | `semver_14*` | `semver_13*` | `semver_12*` |
+| `el9` | `semver_17*` | `semver_16*` | `semver_15*` | `semver_14*` | `semver_13*` | `semver_12*` |
+| `d12` | `postgresql-17-semver` | `postgresql-16-semver` | `postgresql-15-semver` | `postgresql-14-semver` | `postgresql-13-semver` | `postgresql-12-semver` |
+| `u22` | `postgresql-17-semver` | `postgresql-16-semver` | `postgresql-15-semver` | `postgresql-14-semver` | `postgresql-13-semver` | `postgresql-12-semver` |
+| `u24` | `postgresql-17-semver` | `postgresql-16-semver` | `postgresql-15-semver` | `postgresql-14-semver` | `postgresql-13-semver` | `postgresql-12-semver` |
 
 
 
-Install `semver` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `semver` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["semver"]}'
@@ -57,12 +76,12 @@ Install `semver` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playb
 Install `semver` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install semver_17*;
-dnf install semver_16*;
-dnf install semver_15*;
-dnf install semver_14*;
-dnf install semver_13*;
-dnf install semver_12*;
+yum install semver_17*;
+yum install semver_16*;
+yum install semver_15*;
+yum install semver_14*;
+yum install semver_13*;
+yum install semver_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-semver;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `semver_17*` | `semver_16*` | `semver_15*` | `semver_14*` | `semver_13*` | `semver_12*` |
+| `el9` | `semver_17*` | `semver_16*` | `semver_15*` | `semver_14*` | `semver_13*` | `semver_12*` |
+| `d12` | `postgresql-17-semver` | `postgresql-16-semver` | `postgresql-15-semver` | `postgresql-14-semver` | `postgresql-13-semver` | `postgresql-12-semver` |
+| `u22` | `postgresql-17-semver` | `postgresql-16-semver` | `postgresql-15-semver` | `postgresql-14-semver` | `postgresql-13-semver` | `postgresql-12-semver` |
+| `u24` | `postgresql-17-semver` | `postgresql-16-semver` | `postgresql-15-semver` | `postgresql-14-semver` | `postgresql-13-semver` | `postgresql-12-semver` |
 
 
 

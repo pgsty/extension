@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_sphere](https://github.com/postgrespro/pgsphere) | 1.5.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_sphere](https://github.com/postgrespro/pgsphere) | 1.5.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgsphere](/pg_sphere) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pg_sphere;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.5.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgsphere_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.5.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgsphere` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgsphere_17*` | `pgsphere_16*` | `pgsphere_15*` | `pgsphere_14*` | `pgsphere_13*` | `pgsphere_12*` |
+| `el9` | `pgsphere_17*` | `pgsphere_16*` | `pgsphere_15*` | `pgsphere_14*` | `pgsphere_13*` | `pgsphere_12*` |
+| `d12` | `postgresql-17-pgsphere` | `postgresql-16-pgsphere` | `postgresql-15-pgsphere` | `postgresql-14-pgsphere` | `postgresql-13-pgsphere` | `postgresql-12-pgsphere` |
+| `u22` | `postgresql-17-pgsphere` | `postgresql-16-pgsphere` | `postgresql-15-pgsphere` | `postgresql-14-pgsphere` | `postgresql-13-pgsphere` | `postgresql-12-pgsphere` |
+| `u24` | `postgresql-17-pgsphere` | `postgresql-16-pgsphere` | `postgresql-15-pgsphere` | `postgresql-14-pgsphere` | `postgresql-13-pgsphere` | `postgresql-12-pgsphere` |
 
 
 
-Install `pgsphere` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgsphere` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgsphere"]}'
@@ -57,12 +76,12 @@ Install `pgsphere` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pla
 Install `pgsphere` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pgsphere_17*;
-dnf install pgsphere_16*;
-dnf install pgsphere_15*;
-dnf install pgsphere_14*;
-dnf install pgsphere_13*;
-dnf install pgsphere_12*;
+yum install pgsphere_17*;
+yum install pgsphere_16*;
+yum install pgsphere_15*;
+yum install pgsphere_14*;
+yum install pgsphere_13*;
+yum install pgsphere_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pgsphere;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgsphere_17*` | `pgsphere_16*` | `pgsphere_15*` | `pgsphere_14*` | `pgsphere_13*` | `pgsphere_12*` |
+| `el9` | `pgsphere_17*` | `pgsphere_16*` | `pgsphere_15*` | `pgsphere_14*` | `pgsphere_13*` | `pgsphere_12*` |
+| `d12` | `postgresql-17-pgsphere` | `postgresql-16-pgsphere` | `postgresql-15-pgsphere` | `postgresql-14-pgsphere` | `postgresql-13-pgsphere` | `postgresql-12-pgsphere` |
+| `u22` | `postgresql-17-pgsphere` | `postgresql-16-pgsphere` | `postgresql-15-pgsphere` | `postgresql-14-pgsphere` | `postgresql-13-pgsphere` | `postgresql-12-pgsphere` |
+| `u24` | `postgresql-17-pgsphere` | `postgresql-16-pgsphere` | `postgresql-15-pgsphere` | `postgresql-14-pgsphere` | `postgresql-13-pgsphere` | `postgresql-12-pgsphere` |
 
 
 

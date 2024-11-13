@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [plsh](https://github.com/petere/plsh) | 2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [plsh](https://github.com/petere/plsh) | 2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [plsh](/plsh) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION plsh;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `plsh_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plsh` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `plsh_17*` | `plsh_16*` | `plsh_15*` | `plsh_14*` | `plsh_13*` | `plsh_12*` |
+| `el9` | `plsh_17*` | `plsh_16*` | `plsh_15*` | `plsh_14*` | `plsh_13*` | `plsh_12*` |
+| `d12` | `postgresql-17-plsh` | `postgresql-16-plsh` | `postgresql-15-plsh` | `postgresql-14-plsh` | `postgresql-13-plsh` | `postgresql-12-plsh` |
+| `u22` | `postgresql-17-plsh` | `postgresql-16-plsh` | `postgresql-15-plsh` | `postgresql-14-plsh` | `postgresql-13-plsh` | `postgresql-12-plsh` |
+| `u24` | `postgresql-17-plsh` | `postgresql-16-plsh` | `postgresql-15-plsh` | `postgresql-14-plsh` | `postgresql-13-plsh` | `postgresql-12-plsh` |
 
 
 
-Install `plsh` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `plsh` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["plsh"]}'
@@ -57,12 +76,12 @@ Install `plsh` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playboo
 Install `plsh` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install plsh_17*;
-dnf install plsh_16*;
-dnf install plsh_15*;
-dnf install plsh_14*;
-dnf install plsh_13*;
-dnf install plsh_12*;
+yum install plsh_17*;
+yum install plsh_16*;
+yum install plsh_15*;
+yum install plsh_14*;
+yum install plsh_13*;
+yum install plsh_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-plsh;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `plsh_17*` | `plsh_16*` | `plsh_15*` | `plsh_14*` | `plsh_13*` | `plsh_12*` |
+| `el9` | `plsh_17*` | `plsh_16*` | `plsh_15*` | `plsh_14*` | `plsh_13*` | `plsh_12*` |
+| `d12` | `postgresql-17-plsh` | `postgresql-16-plsh` | `postgresql-15-plsh` | `postgresql-14-plsh` | `postgresql-13-plsh` | `postgresql-12-plsh` |
+| `u22` | `postgresql-17-plsh` | `postgresql-16-plsh` | `postgresql-15-plsh` | `postgresql-14-plsh` | `postgresql-13-plsh` | `postgresql-12-plsh` |
+| `u24` | `postgresql-17-plsh` | `postgresql-16-plsh` | `postgresql-15-plsh` | `postgresql-14-plsh` | `postgresql-13-plsh` | `postgresql-12-plsh` |
 
 
 

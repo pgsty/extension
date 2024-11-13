@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [multicorn](https://github.com/pgsql-io/multicorn2) | 3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [multicorn](https://github.com/pgsql-io/multicorn2) | 3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [multicorn](/multicorn) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -40,13 +56,17 @@ CREATE EXTENSION multicorn;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `multicorn2_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `multicorn2_17*` | `multicorn2_16*` | `multicorn2_15*` | `multicorn2_14*` | `multicorn2_13*` | `multicorn2_12*` |
+| `el9` | `multicorn2_17*` | `multicorn2_16*` | `multicorn2_15*` | `multicorn2_14*` | `multicorn2_13*` | `multicorn2_12*` |
+| `d12` | `` | `` | `` | `` | `` | `` |
+| `u22` | `` | `` | `` | `` | `` | `` |
+| `u24` | `` | `` | `` | `` | `` | `` |
 
 
 
-Install `multicorn` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `multicorn` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["multicorn"]}'
@@ -56,15 +76,24 @@ Install `multicorn` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pl
 Install `multicorn` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install multicorn2_17*;
-dnf install multicorn2_16*;
-dnf install multicorn2_15*;
-dnf install multicorn2_14*;
-dnf install multicorn2_13*;
-dnf install multicorn2_12*;
+yum install multicorn2_17*;
+yum install multicorn2_16*;
+yum install multicorn2_15*;
+yum install multicorn2_14*;
+yum install multicorn2_13*;
+yum install multicorn2_12*;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `multicorn2_17*` | `multicorn2_16*` | `multicorn2_15*` | `multicorn2_14*` | `multicorn2_13*` | `multicorn2_12*` |
+| `el9` | `multicorn2_17*` | `multicorn2_16*` | `multicorn2_15*` | `multicorn2_14*` | `multicorn2_13*` | `multicorn2_12*` |
+| `d12` | `` | `` | `` | `` | `` | `` |
+| `u22` | `` | `` | `` | `` | `` | `` |
+| `u24` | `` | `` | `` | `` | `` | `` |
 
 
 

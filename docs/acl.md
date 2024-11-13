@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [acl](https://github.com/arkhipov/acl) | 1.0.4 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [acl](https://github.com/arkhipov/acl) | 1.0.4 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [acl](/acl) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION acl;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0.4 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `acl_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0.4 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-acl` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `acl_17*` | `acl_16*` | `acl_15*` | `acl_14*` | `acl_13*` | `acl_12*` |
+| `el9` | `acl_17*` | `acl_16*` | `acl_15*` | `acl_14*` | `acl_13*` | `acl_12*` |
+| `d12` | `postgresql-17-acl` | `postgresql-16-acl` | `postgresql-15-acl` | `postgresql-14-acl` | `postgresql-13-acl` | `postgresql-12-acl` |
+| `u22` | `postgresql-17-acl` | `postgresql-16-acl` | `postgresql-15-acl` | `postgresql-14-acl` | `postgresql-13-acl` | `postgresql-12-acl` |
+| `u24` | `postgresql-17-acl` | `postgresql-16-acl` | `postgresql-15-acl` | `postgresql-14-acl` | `postgresql-13-acl` | `postgresql-12-acl` |
 
 
 
-Install `acl` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `acl` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["acl"]}'
@@ -57,12 +76,12 @@ Install `acl` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook
 Install `acl` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install acl_17*;
-dnf install acl_16*;
-dnf install acl_15*;
-dnf install acl_14*;
-dnf install acl_13*;
-dnf install acl_12*;
+yum install acl_17*;
+yum install acl_16*;
+yum install acl_15*;
+yum install acl_14*;
+yum install acl_13*;
+yum install acl_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-acl;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `acl_17*` | `acl_16*` | `acl_15*` | `acl_14*` | `acl_13*` | `acl_12*` |
+| `el9` | `acl_17*` | `acl_16*` | `acl_15*` | `acl_14*` | `acl_13*` | `acl_12*` |
+| `d12` | `postgresql-17-acl` | `postgresql-16-acl` | `postgresql-15-acl` | `postgresql-14-acl` | `postgresql-13-acl` | `postgresql-12-acl` |
+| `u22` | `postgresql-17-acl` | `postgresql-16-acl` | `postgresql-15-acl` | `postgresql-14-acl` | `postgresql-13-acl` | `postgresql-12-acl` |
+| `u24` | `postgresql-17-acl` | `postgresql-16-acl` | `postgresql-15-acl` | `postgresql-14-acl` | `postgresql-13-acl` | `postgresql-12-acl` |
 
 
 

@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [session_variable](https://github.com/splendiddata/session_variable) | 3.4 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [session_variable](https://github.com/splendiddata/session_variable) | 3.4 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [session_variable](/session_variable) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION session_variable;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.4 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `session_variable_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 3.4 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-session-variable` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `session_variable_17*` | `session_variable_16*` | `session_variable_15*` | `session_variable_14*` | `session_variable_13*` | `session_variable_12*` |
+| `el9` | `session_variable_17*` | `session_variable_16*` | `session_variable_15*` | `session_variable_14*` | `session_variable_13*` | `session_variable_12*` |
+| `d12` | `postgresql-17-session-variable` | `postgresql-16-session-variable` | `postgresql-15-session-variable` | `postgresql-14-session-variable` | `postgresql-13-session-variable` | `postgresql-12-session-variable` |
+| `u22` | `postgresql-17-session-variable` | `postgresql-16-session-variable` | `postgresql-15-session-variable` | `postgresql-14-session-variable` | `postgresql-13-session-variable` | `postgresql-12-session-variable` |
+| `u24` | `postgresql-17-session-variable` | `postgresql-16-session-variable` | `postgresql-15-session-variable` | `postgresql-14-session-variable` | `postgresql-13-session-variable` | `postgresql-12-session-variable` |
 
 
 
-Install `session_variable` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `session_variable` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["session_variable"]}'
@@ -57,12 +76,12 @@ Install `session_variable` via [Pigsty](https://pigsty.cc/docs/pgext/usage/insta
 Install `session_variable` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install session_variable_17*;
-dnf install session_variable_16*;
-dnf install session_variable_15*;
-dnf install session_variable_14*;
-dnf install session_variable_13*;
-dnf install session_variable_12*;
+yum install session_variable_17*;
+yum install session_variable_16*;
+yum install session_variable_15*;
+yum install session_variable_14*;
+yum install session_variable_13*;
+yum install session_variable_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-session-variable;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `session_variable_17*` | `session_variable_16*` | `session_variable_15*` | `session_variable_14*` | `session_variable_13*` | `session_variable_12*` |
+| `el9` | `session_variable_17*` | `session_variable_16*` | `session_variable_15*` | `session_variable_14*` | `session_variable_13*` | `session_variable_12*` |
+| `d12` | `postgresql-17-session-variable` | `postgresql-16-session-variable` | `postgresql-15-session-variable` | `postgresql-14-session-variable` | `postgresql-13-session-variable` | `postgresql-12-session-variable` |
+| `u22` | `postgresql-17-session-variable` | `postgresql-16-session-variable` | `postgresql-15-session-variable` | `postgresql-14-session-variable` | `postgresql-13-session-variable` | `postgresql-12-session-variable` |
+| `u24` | `postgresql-17-session-variable` | `postgresql-16-session-variable` | `postgresql-15-session-variable` | `postgresql-14-session-variable` | `postgresql-13-session-variable` | `postgresql-12-session-variable` |
 
 
 

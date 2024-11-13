@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [dbt2](https://github.com/nuodb/dbt2/tree/master) | 0.45.0 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** |  |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [dbt2](https://github.com/nuodb/dbt2/tree/master) | 0.45.0 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** |  |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [dbt2](/dbt2) | `test` |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -40,13 +56,17 @@ CREATE EXTENSION dbt2;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.45.0 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `dbt2-pg$v-extensions*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `dbt2-pg17-extensions*` | `dbt2-pg16-extensions*` | `dbt2-pg15-extensions*` | `dbt2-pg14-extensions*` | `dbt2-pg13-extensions*` | `dbt2-pg12-extensions*` |
+| `el9` | `dbt2-pg17-extensions*` | `dbt2-pg16-extensions*` | `dbt2-pg15-extensions*` | `dbt2-pg14-extensions*` | `dbt2-pg13-extensions*` | `dbt2-pg12-extensions*` |
+| `d12` | `` | `` | `` | `` | `` | `` |
+| `u22` | `` | `` | `` | `` | `` | `` |
+| `u24` | `` | `` | `` | `` | `` | `` |
 
 
 
-Install `dbt2` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `dbt2` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["dbt2"]}'
@@ -56,15 +76,24 @@ Install `dbt2` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playboo
 Install `dbt2` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install dbt2-pg17-extensions*;
-dnf install dbt2-pg16-extensions*;
-dnf install dbt2-pg15-extensions*;
-dnf install dbt2-pg14-extensions*;
-dnf install dbt2-pg13-extensions*;
-dnf install dbt2-pg12-extensions*;
+yum install dbt2-pg17-extensions*;
+yum install dbt2-pg16-extensions*;
+yum install dbt2-pg15-extensions*;
+yum install dbt2-pg14-extensions*;
+yum install dbt2-pg13-extensions*;
+yum install dbt2-pg12-extensions*;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `dbt2-pg17-extensions*` | `dbt2-pg16-extensions*` | `dbt2-pg15-extensions*` | `dbt2-pg14-extensions*` | `dbt2-pg13-extensions*` | `dbt2-pg12-extensions*` |
+| `el9` | `dbt2-pg17-extensions*` | `dbt2-pg16-extensions*` | `dbt2-pg15-extensions*` | `dbt2-pg14-extensions*` | `dbt2-pg13-extensions*` | `dbt2-pg12-extensions*` |
+| `d12` | `` | `` | `` | `` | `` | `` |
+| `u22` | `` | `` | `` | `` | `` | `` |
+| `u24` | `` | `` | `` | `` | `` | `` |
 
 
 

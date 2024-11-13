@@ -1029,4 +1029,3 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ```
 
 
-

@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgmeminfo](https://github.com/okbob/pgmeminfo) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgmeminfo](https://github.com/okbob/pgmeminfo) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgmeminfo](/pgmeminfo) | `pgdg-flaw` |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pgmeminfo;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgmeminfo_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgmeminfo` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgmeminfo_17*` | `pgmeminfo_16*` | `pgmeminfo_15*` | `pgmeminfo_14*` | `pgmeminfo_13*` | `pgmeminfo_12*` |
+| `el9` | `pgmeminfo_17*` | `pgmeminfo_16*` | `pgmeminfo_15*` | `pgmeminfo_14*` | `pgmeminfo_13*` | `pgmeminfo_12*` |
+| `d12` | `postgresql-17-pgmeminfo` | `postgresql-16-pgmeminfo` | `postgresql-15-pgmeminfo` | `postgresql-14-pgmeminfo` | `postgresql-13-pgmeminfo` | `postgresql-12-pgmeminfo` |
+| `u22` | `postgresql-17-pgmeminfo` | `postgresql-16-pgmeminfo` | `postgresql-15-pgmeminfo` | `postgresql-14-pgmeminfo` | `postgresql-13-pgmeminfo` | `postgresql-12-pgmeminfo` |
+| `u24` | `postgresql-17-pgmeminfo` | `postgresql-16-pgmeminfo` | `postgresql-15-pgmeminfo` | `postgresql-14-pgmeminfo` | `postgresql-13-pgmeminfo` | `postgresql-12-pgmeminfo` |
 
 
 
-Install `pgmeminfo` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgmeminfo` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgmeminfo"]}'
@@ -57,12 +76,12 @@ Install `pgmeminfo` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pl
 Install `pgmeminfo` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pgmeminfo_17*;
-dnf install pgmeminfo_16*;
-dnf install pgmeminfo_15*;
-dnf install pgmeminfo_14*;
-dnf install pgmeminfo_13*;
-dnf install pgmeminfo_12*;
+yum install pgmeminfo_17*;
+yum install pgmeminfo_16*;
+yum install pgmeminfo_15*;
+yum install pgmeminfo_14*;
+yum install pgmeminfo_13*;
+yum install pgmeminfo_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pgmeminfo;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgmeminfo_17*` | `pgmeminfo_16*` | `pgmeminfo_15*` | `pgmeminfo_14*` | `pgmeminfo_13*` | `pgmeminfo_12*` |
+| `el9` | `pgmeminfo_17*` | `pgmeminfo_16*` | `pgmeminfo_15*` | `pgmeminfo_14*` | `pgmeminfo_13*` | `pgmeminfo_12*` |
+| `d12` | `postgresql-17-pgmeminfo` | `postgresql-16-pgmeminfo` | `postgresql-15-pgmeminfo` | `postgresql-14-pgmeminfo` | `postgresql-13-pgmeminfo` | `postgresql-12-pgmeminfo` |
+| `u22` | `postgresql-17-pgmeminfo` | `postgresql-16-pgmeminfo` | `postgresql-15-pgmeminfo` | `postgresql-14-pgmeminfo` | `postgresql-13-pgmeminfo` | `postgresql-12-pgmeminfo` |
+| `u24` | `postgresql-17-pgmeminfo` | `postgresql-16-pgmeminfo` | `postgresql-15-pgmeminfo` | `postgresql-14-pgmeminfo` | `postgresql-13-pgmeminfo` | `postgresql-12-pgmeminfo` |
 
 
 

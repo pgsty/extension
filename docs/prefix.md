@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [prefix](https://github.com/dimitri/prefix) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [prefix](https://github.com/dimitri/prefix) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [prefix](/prefix) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION prefix;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `prefix_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-prefix` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `prefix_17*` | `prefix_16*` | `prefix_15*` | `prefix_14*` | `prefix_13*` | `prefix_12*` |
+| `el9` | `prefix_17*` | `prefix_16*` | `prefix_15*` | `prefix_14*` | `prefix_13*` | `prefix_12*` |
+| `d12` | `postgresql-17-prefix` | `postgresql-16-prefix` | `postgresql-15-prefix` | `postgresql-14-prefix` | `postgresql-13-prefix` | `postgresql-12-prefix` |
+| `u22` | `postgresql-17-prefix` | `postgresql-16-prefix` | `postgresql-15-prefix` | `postgresql-14-prefix` | `postgresql-13-prefix` | `postgresql-12-prefix` |
+| `u24` | `postgresql-17-prefix` | `postgresql-16-prefix` | `postgresql-15-prefix` | `postgresql-14-prefix` | `postgresql-13-prefix` | `postgresql-12-prefix` |
 
 
 
-Install `prefix` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `prefix` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["prefix"]}'
@@ -57,12 +76,12 @@ Install `prefix` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playb
 Install `prefix` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install prefix_17*;
-dnf install prefix_16*;
-dnf install prefix_15*;
-dnf install prefix_14*;
-dnf install prefix_13*;
-dnf install prefix_12*;
+yum install prefix_17*;
+yum install prefix_16*;
+yum install prefix_15*;
+yum install prefix_14*;
+yum install prefix_13*;
+yum install prefix_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-prefix;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `prefix_17*` | `prefix_16*` | `prefix_15*` | `prefix_14*` | `prefix_13*` | `prefix_12*` |
+| `el9` | `prefix_17*` | `prefix_16*` | `prefix_15*` | `prefix_14*` | `prefix_13*` | `prefix_12*` |
+| `d12` | `postgresql-17-prefix` | `postgresql-16-prefix` | `postgresql-15-prefix` | `postgresql-14-prefix` | `postgresql-13-prefix` | `postgresql-12-prefix` |
+| `u22` | `postgresql-17-prefix` | `postgresql-16-prefix` | `postgresql-15-prefix` | `postgresql-14-prefix` | `postgresql-13-prefix` | `postgresql-12-prefix` |
+| `u24` | `postgresql-17-prefix` | `postgresql-16-prefix` | `postgresql-15-prefix` | `postgresql-14-prefix` | `postgresql-13-prefix` | `postgresql-12-prefix` |
 
 
 

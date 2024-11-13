@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [hll](https://github.com/citusdata/postgresql-hll) | 2.18 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [hll](https://github.com/citusdata/postgresql-hll) | 2.18 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [hll](/hll) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION hll;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.18 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `hll_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 2.18 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-hll` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `hll_17*` | `hll_16*` | `hll_15*` | `hll_14*` | `hll_13*` | `hll_12*` |
+| `el9` | `hll_17*` | `hll_16*` | `hll_15*` | `hll_14*` | `hll_13*` | `hll_12*` |
+| `d12` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` | `postgresql-12-hll` |
+| `u22` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` | `postgresql-12-hll` |
+| `u24` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` | `postgresql-12-hll` |
 
 
 
-Install `hll` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `hll` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["hll"]}'
@@ -57,12 +76,12 @@ Install `hll` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook
 Install `hll` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install hll_17*;
-dnf install hll_16*;
-dnf install hll_15*;
-dnf install hll_14*;
-dnf install hll_13*;
-dnf install hll_12*;
+yum install hll_17*;
+yum install hll_16*;
+yum install hll_15*;
+yum install hll_14*;
+yum install hll_13*;
+yum install hll_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-hll;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `hll_17*` | `hll_16*` | `hll_15*` | `hll_14*` | `hll_13*` | `hll_12*` |
+| `el9` | `hll_17*` | `hll_16*` | `hll_15*` | `hll_14*` | `hll_13*` | `hll_12*` |
+| `d12` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` | `postgresql-12-hll` |
+| `u22` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` | `postgresql-12-hll` |
+| `u24` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` | `postgresql-12-hll` |
 
 
 

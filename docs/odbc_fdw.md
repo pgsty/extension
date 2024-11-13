@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [odbc_fdw](https://github.com/CartoDB/odbc_fdw) | 0.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [odbc_fdw](https://github.com/CartoDB/odbc_fdw) | 0.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [odbc_fdw](/odbc_fdw) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -40,13 +56,17 @@ CREATE EXTENSION odbc_fdw;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `odbc_fdw_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  | `unixODBC` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `odbc_fdw_17*` | `odbc_fdw_16*` | `odbc_fdw_15*` | `odbc_fdw_14*` | `odbc_fdw_13*` | `odbc_fdw_12*` |
+| `el9` | `odbc_fdw_17*` | `odbc_fdw_16*` | `odbc_fdw_15*` | `odbc_fdw_14*` | `odbc_fdw_13*` | `odbc_fdw_12*` |
+| `d12` | `` | `` | `` | `` | `` | `` |
+| `u22` | `` | `` | `` | `` | `` | `` |
+| `u24` | `` | `` | `` | `` | `` | `` |
 
 
 
-Install `odbc_fdw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `odbc_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["odbc_fdw"]}'
@@ -56,13 +76,24 @@ Install `odbc_fdw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pla
 Install `odbc_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install odbc_fdw_16*;
-dnf install odbc_fdw_15*;
-dnf install odbc_fdw_14*;
-dnf install odbc_fdw_13*;
+yum install odbc_fdw_17*;
+yum install odbc_fdw_16*;
+yum install odbc_fdw_15*;
+yum install odbc_fdw_14*;
+yum install odbc_fdw_13*;
+yum install odbc_fdw_12*;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `odbc_fdw_17*` | `odbc_fdw_16*` | `odbc_fdw_15*` | `odbc_fdw_14*` | `odbc_fdw_13*` | `odbc_fdw_12*` |
+| `el9` | `odbc_fdw_17*` | `odbc_fdw_16*` | `odbc_fdw_15*` | `odbc_fdw_14*` | `odbc_fdw_13*` | `odbc_fdw_12*` |
+| `d12` | `` | `` | `` | `` | `` | `` |
+| `u22` | `` | `` | `` | `` | `` | `` |
+| `u24` | `` | `` | `` | `` | `` | `` |
 
 
 

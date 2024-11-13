@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_tde](https://github.com/Percona-Lab/pg_tde) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_tde](https://github.com/Percona-Lab/pg_tde) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_tde](/pg_tde) | `beta` |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -44,14 +60,17 @@ CREATE EXTENSION pg_tde;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_tde_$v*` |  | **<span class="tcwarn">✔</span>** |  |  |  |  |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-tde` |  | **<span class="tcwarn">✔</span>** |  |  |  |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_tde_17*` | `pg_tde_16*` | `pg_tde_15*` | `pg_tde_14*` | `pg_tde_13*` | `pg_tde_12*` |
+| `el9` | `pg_tde_17*` | `pg_tde_16*` | `pg_tde_15*` | `pg_tde_14*` | `pg_tde_13*` | `pg_tde_12*` |
+| `d12` | `postgresql-17-pg-tde` | `postgresql-16-pg-tde` | `postgresql-15-pg-tde` | `postgresql-14-pg-tde` | `postgresql-13-pg-tde` | `postgresql-12-pg-tde` |
+| `u22` | `postgresql-17-pg-tde` | `postgresql-16-pg-tde` | `postgresql-15-pg-tde` | `postgresql-14-pg-tde` | `postgresql-13-pg-tde` | `postgresql-12-pg-tde` |
+| `u24` | `postgresql-17-pg-tde` | `postgresql-16-pg-tde` | `postgresql-15-pg-tde` | `postgresql-14-pg-tde` | `postgresql-13-pg-tde` | `postgresql-12-pg-tde` |
 
 
 
-Install `pg_tde` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_tde` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_tde"]}'
@@ -61,17 +80,36 @@ Install `pg_tde` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playb
 Install `pg_tde` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_tde_16*;
+yum install pg_tde_17*;
+yum install pg_tde_16*;
+yum install pg_tde_15*;
+yum install pg_tde_14*;
+yum install pg_tde_13*;
+yum install pg_tde_12*;
 ```
 
 
 Install `pg_tde` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-pg-tde;
 apt install postgresql-16-pg-tde;
+apt install postgresql-15-pg-tde;
+apt install postgresql-14-pg-tde;
+apt install postgresql-13-pg-tde;
+apt install postgresql-12-pg-tde;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_tde_17*` | `pg_tde_16*` | `pg_tde_15*` | `pg_tde_14*` | `pg_tde_13*` | `pg_tde_12*` |
+| `el9` | `pg_tde_17*` | `pg_tde_16*` | `pg_tde_15*` | `pg_tde_14*` | `pg_tde_13*` | `pg_tde_12*` |
+| `d12` | `postgresql-17-pg-tde` | `postgresql-16-pg-tde` | `postgresql-15-pg-tde` | `postgresql-14-pg-tde` | `postgresql-13-pg-tde` | `postgresql-12-pg-tde` |
+| `u22` | `postgresql-17-pg-tde` | `postgresql-16-pg-tde` | `postgresql-15-pg-tde` | `postgresql-14-pg-tde` | `postgresql-13-pg-tde` | `postgresql-12-pg-tde` |
+| `u24` | `postgresql-17-pg-tde` | `postgresql-16-pg-tde` | `postgresql-15-pg-tde` | `postgresql-14-pg-tde` | `postgresql-13-pg-tde` | `postgresql-12-pg-tde` |
 
 
 

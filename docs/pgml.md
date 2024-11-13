@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgml](https://github.com/postgresml/postgresml) | 2.9.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgml](https://github.com/postgresml/postgresml) | 2.9.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgml](/pgml) | `pgrx` | `pgml` |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -44,14 +60,17 @@ CREATE EXTENSION pgml;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.9.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgml_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
-| [DEB](/deb) | 2.9.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgml` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgml_17` | `pgml_16` | `pgml_15` | `pgml_14` | `pgml_13` | `pgml_12` |
+| `el9` | `pgml_17` | `pgml_16` | `pgml_15` | `pgml_14` | `pgml_13` | `pgml_12` |
+| `d12` | `postgresql-17-pgml` | `postgresql-16-pgml` | `postgresql-15-pgml` | `postgresql-14-pgml` | `postgresql-13-pgml` | `postgresql-12-pgml` |
+| `u22` | `postgresql-17-pgml` | `postgresql-16-pgml` | `postgresql-15-pgml` | `postgresql-14-pgml` | `postgresql-13-pgml` | `postgresql-12-pgml` |
+| `u24` | `postgresql-17-pgml` | `postgresql-16-pgml` | `postgresql-15-pgml` | `postgresql-14-pgml` | `postgresql-13-pgml` | `postgresql-12-pgml` |
 
 
 
-Install `pgml` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgml` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgml"]}'
@@ -61,20 +80,36 @@ Install `pgml` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playboo
 Install `pgml` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pgml_16;
-dnf install pgml_15;
-dnf install pgml_14;
+yum install pgml_17;
+yum install pgml_16;
+yum install pgml_15;
+yum install pgml_14;
+yum install pgml_13;
+yum install pgml_12;
 ```
 
 
 Install `pgml` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-pgml;
 apt install postgresql-16-pgml;
 apt install postgresql-15-pgml;
 apt install postgresql-14-pgml;
+apt install postgresql-13-pgml;
+apt install postgresql-12-pgml;
 ```
 
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgml_17` | `pgml_16` | `pgml_15` | `pgml_14` | `pgml_13` | `pgml_12` |
+| `el9` | `pgml_17` | `pgml_16` | `pgml_15` | `pgml_14` | `pgml_13` | `pgml_12` |
+| `d12` | `postgresql-17-pgml` | `postgresql-16-pgml` | `postgresql-15-pgml` | `postgresql-14-pgml` | `postgresql-13-pgml` | `postgresql-12-pgml` |
+| `u22` | `postgresql-17-pgml` | `postgresql-16-pgml` | `postgresql-15-pgml` | `postgresql-14-pgml` | `postgresql-13-pgml` | `postgresql-12-pgml` |
+| `u24` | `postgresql-17-pgml` | `postgresql-16-pgml` | `postgresql-15-pgml` | `postgresql-14-pgml` | `postgresql-13-pgml` | `postgresql-12-pgml` |
 
 
 
@@ -117,7 +152,6 @@ CREATE EXTENSION
 ```
 
 You are all set! Check PostgresML for more details: https://postgresml.org/docs/guides/use-cases/
-
 
 
 

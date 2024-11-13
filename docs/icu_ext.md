@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [icu_ext](https://github.com/dverite/icu_ext) | 1.9 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [icu_ext](https://github.com/dverite/icu_ext) | 1.9 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [icu_ext](/icu_ext) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION icu_ext;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.9 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `icu_ext_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.9 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-icu-ext` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `icu_ext_17*` | `icu_ext_16*` | `icu_ext_15*` | `icu_ext_14*` | `icu_ext_13*` | `icu_ext_12*` |
+| `el9` | `icu_ext_17*` | `icu_ext_16*` | `icu_ext_15*` | `icu_ext_14*` | `icu_ext_13*` | `icu_ext_12*` |
+| `d12` | `postgresql-17-icu-ext` | `postgresql-16-icu-ext` | `postgresql-15-icu-ext` | `postgresql-14-icu-ext` | `postgresql-13-icu-ext` | `postgresql-12-icu-ext` |
+| `u22` | `postgresql-17-icu-ext` | `postgresql-16-icu-ext` | `postgresql-15-icu-ext` | `postgresql-14-icu-ext` | `postgresql-13-icu-ext` | `postgresql-12-icu-ext` |
+| `u24` | `postgresql-17-icu-ext` | `postgresql-16-icu-ext` | `postgresql-15-icu-ext` | `postgresql-14-icu-ext` | `postgresql-13-icu-ext` | `postgresql-12-icu-ext` |
 
 
 
-Install `icu_ext` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `icu_ext` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["icu_ext"]}'
@@ -57,12 +76,12 @@ Install `icu_ext` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) play
 Install `icu_ext` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install icu_ext_17*;
-dnf install icu_ext_16*;
-dnf install icu_ext_15*;
-dnf install icu_ext_14*;
-dnf install icu_ext_13*;
-dnf install icu_ext_12*;
+yum install icu_ext_17*;
+yum install icu_ext_16*;
+yum install icu_ext_15*;
+yum install icu_ext_14*;
+yum install icu_ext_13*;
+yum install icu_ext_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-icu-ext;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `icu_ext_17*` | `icu_ext_16*` | `icu_ext_15*` | `icu_ext_14*` | `icu_ext_13*` | `icu_ext_12*` |
+| `el9` | `icu_ext_17*` | `icu_ext_16*` | `icu_ext_15*` | `icu_ext_14*` | `icu_ext_13*` | `icu_ext_12*` |
+| `d12` | `postgresql-17-icu-ext` | `postgresql-16-icu-ext` | `postgresql-15-icu-ext` | `postgresql-14-icu-ext` | `postgresql-13-icu-ext` | `postgresql-12-icu-ext` |
+| `u22` | `postgresql-17-icu-ext` | `postgresql-16-icu-ext` | `postgresql-15-icu-ext` | `postgresql-14-icu-ext` | `postgresql-13-icu-ext` | `postgresql-12-icu-ext` |
+| `u24` | `postgresql-17-icu-ext` | `postgresql-16-icu-ext` | `postgresql-15-icu-ext` | `postgresql-14-icu-ext` | `postgresql-13-icu-ext` | `postgresql-12-icu-ext` |
 
 
 

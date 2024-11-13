@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgmp](https://github.com/dvarrazzo/pgmp/) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgmp](https://github.com/dvarrazzo/pgmp/) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgmp](/pgmp) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pgmp;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pgmp_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
-| [DEB](/deb) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgmp` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgmp_17*` | `pgmp_16*` | `pgmp_15*` | `pgmp_14*` | `pgmp_13*` | `pgmp_12*` |
+| `el9` | `pgmp_17*` | `pgmp_16*` | `pgmp_15*` | `pgmp_14*` | `pgmp_13*` | `pgmp_12*` |
+| `d12` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` | `postgresql-12-pgmp` |
+| `u22` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` | `postgresql-12-pgmp` |
+| `u24` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` | `postgresql-12-pgmp` |
 
 
 
-Install `pgmp` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgmp` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgmp"]}'
@@ -57,9 +76,12 @@ Install `pgmp` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playboo
 Install `pgmp` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pgmp_17*;
-dnf install pgmp_16*;
-dnf install pgmp_15*;
+yum install pgmp_17*;
+yum install pgmp_16*;
+yum install pgmp_15*;
+yum install pgmp_14*;
+yum install pgmp_13*;
+yum install pgmp_12*;
 ```
 
 
@@ -75,6 +97,15 @@ apt install postgresql-12-pgmp;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgmp_17*` | `pgmp_16*` | `pgmp_15*` | `pgmp_14*` | `pgmp_13*` | `pgmp_12*` |
+| `el9` | `pgmp_17*` | `pgmp_16*` | `pgmp_15*` | `pgmp_14*` | `pgmp_13*` | `pgmp_12*` |
+| `d12` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` | `postgresql-12-pgmp` |
+| `u22` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` | `postgresql-12-pgmp` |
+| `u24` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` | `postgresql-12-pgmp` |
 
 
 

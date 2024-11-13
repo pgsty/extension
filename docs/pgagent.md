@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgagent](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html) | 4.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgagent](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html) | 4.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgagent](/pgagent) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pgagent;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 4.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgagent_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 4.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgagent` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgagent_17*` | `pgagent_16*` | `pgagent_15*` | `pgagent_14*` | `pgagent_13*` | `pgagent_12*` |
+| `el9` | `pgagent_17*` | `pgagent_16*` | `pgagent_15*` | `pgagent_14*` | `pgagent_13*` | `pgagent_12*` |
+| `d12` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` |
+| `u22` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` |
+| `u24` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` |
 
 
 
-Install `pgagent` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgagent` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgagent"]}'
@@ -57,12 +76,12 @@ Install `pgagent` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) play
 Install `pgagent` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pgagent_17*;
-dnf install pgagent_16*;
-dnf install pgagent_15*;
-dnf install pgagent_14*;
-dnf install pgagent_13*;
-dnf install pgagent_12*;
+yum install pgagent_17*;
+yum install pgagent_16*;
+yum install pgagent_15*;
+yum install pgagent_14*;
+yum install pgagent_13*;
+yum install pgagent_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install pgagent;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgagent_17*` | `pgagent_16*` | `pgagent_15*` | `pgagent_14*` | `pgagent_13*` | `pgagent_12*` |
+| `el9` | `pgagent_17*` | `pgagent_16*` | `pgagent_15*` | `pgagent_14*` | `pgagent_13*` | `pgagent_12*` |
+| `d12` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` |
+| `u22` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` |
+| `u24` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` |
 
 
 

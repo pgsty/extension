@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [duckdb_fdw](https://github.com/alitrack/duckdb_fdw) | 1.1.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [duckdb_fdw](https://github.com/alitrack/duckdb_fdw) | 1.1.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [duckdb_fdw](/duckdb_fdw) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION duckdb_fdw;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `duckdb_fdw_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libduckdb` |
-| [DEB](/deb) | 1.1.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-duckdb-fdw` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libduckdb` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `duckdb_fdw_17*` | `duckdb_fdw_16*` | `duckdb_fdw_15*` | `duckdb_fdw_14*` | `duckdb_fdw_13*` | `duckdb_fdw_12*` |
+| `el9` | `duckdb_fdw_17*` | `duckdb_fdw_16*` | `duckdb_fdw_15*` | `duckdb_fdw_14*` | `duckdb_fdw_13*` | `duckdb_fdw_12*` |
+| `d12` | `postgresql-17-duckdb-fdw` | `postgresql-16-duckdb-fdw` | `postgresql-15-duckdb-fdw` | `postgresql-14-duckdb-fdw` | `postgresql-13-duckdb-fdw` | `postgresql-12-duckdb-fdw` |
+| `u22` | `postgresql-17-duckdb-fdw` | `postgresql-16-duckdb-fdw` | `postgresql-15-duckdb-fdw` | `postgresql-14-duckdb-fdw` | `postgresql-13-duckdb-fdw` | `postgresql-12-duckdb-fdw` |
+| `u24` | `postgresql-17-duckdb-fdw` | `postgresql-16-duckdb-fdw` | `postgresql-15-duckdb-fdw` | `postgresql-14-duckdb-fdw` | `postgresql-13-duckdb-fdw` | `postgresql-12-duckdb-fdw` |
 
 
 
-Install `duckdb_fdw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `duckdb_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["duckdb_fdw"]}'
@@ -57,12 +76,12 @@ Install `duckdb_fdw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) p
 Install `duckdb_fdw` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install duckdb_fdw_17*;
-dnf install duckdb_fdw_16*;
-dnf install duckdb_fdw_15*;
-dnf install duckdb_fdw_14*;
-dnf install duckdb_fdw_13*;
-dnf install duckdb_fdw_12*;
+yum install duckdb_fdw_17*;
+yum install duckdb_fdw_16*;
+yum install duckdb_fdw_15*;
+yum install duckdb_fdw_14*;
+yum install duckdb_fdw_13*;
+yum install duckdb_fdw_12*;
 ```
 
 
@@ -77,6 +96,16 @@ apt install postgresql-13-duckdb-fdw;
 apt install postgresql-12-duckdb-fdw;
 ```
 
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `duckdb_fdw_17*` | `duckdb_fdw_16*` | `duckdb_fdw_15*` | `duckdb_fdw_14*` | `duckdb_fdw_13*` | `duckdb_fdw_12*` |
+| `el9` | `duckdb_fdw_17*` | `duckdb_fdw_16*` | `duckdb_fdw_15*` | `duckdb_fdw_14*` | `duckdb_fdw_13*` | `duckdb_fdw_12*` |
+| `d12` | `postgresql-17-duckdb-fdw` | `postgresql-16-duckdb-fdw` | `postgresql-15-duckdb-fdw` | `postgresql-14-duckdb-fdw` | `postgresql-13-duckdb-fdw` | `postgresql-12-duckdb-fdw` |
+| `u22` | `postgresql-17-duckdb-fdw` | `postgresql-16-duckdb-fdw` | `postgresql-15-duckdb-fdw` | `postgresql-14-duckdb-fdw` | `postgresql-13-duckdb-fdw` | `postgresql-12-duckdb-fdw` |
+| `u24` | `postgresql-17-duckdb-fdw` | `postgresql-16-duckdb-fdw` | `postgresql-15-duckdb-fdw` | `postgresql-14-duckdb-fdw` | `postgresql-13-duckdb-fdw` | `postgresql-12-duckdb-fdw` |
 
 
 
@@ -146,6 +175,5 @@ IMPORT FOREIGN SCHEMA public FROM SERVER duckdb_server INTO public;
 - [DuckDB Website](https://duckdb.org/)
 - [GitHub: duckdb_fdw](https://github.com/alitrack/duckdb_fdw/)
 - [Building libduckdb](https://github.com/digoal/blog/blob/master/202401/20240124_01.md)
-
 
 

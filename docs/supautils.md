@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [supautils](https://github.com/supabase/supautils) | 2.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [supautils](https://github.com/supabase/supautils) | 2.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [supautils](/supautils) | `supabase` |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ shared_preload_libraries = 'supautils'; # add this extension to postgresql.conf
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `supautils_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
-| [DEB](/deb) | 2.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-supautils` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `supautils_17*` | `supautils_16*` | `supautils_15*` | `supautils_14*` | `supautils_13*` | `supautils_12*` |
+| `el9` | `supautils_17*` | `supautils_16*` | `supautils_15*` | `supautils_14*` | `supautils_13*` | `supautils_12*` |
+| `d12` | `postgresql-17-supautils` | `postgresql-16-supautils` | `postgresql-15-supautils` | `postgresql-14-supautils` | `postgresql-13-supautils` | `postgresql-12-supautils` |
+| `u22` | `postgresql-17-supautils` | `postgresql-16-supautils` | `postgresql-15-supautils` | `postgresql-14-supautils` | `postgresql-13-supautils` | `postgresql-12-supautils` |
+| `u24` | `postgresql-17-supautils` | `postgresql-16-supautils` | `postgresql-15-supautils` | `postgresql-14-supautils` | `postgresql-13-supautils` | `postgresql-12-supautils` |
 
 
 
-Install `supautils` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `supautils` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["supautils"]}'
@@ -57,11 +76,12 @@ Install `supautils` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pl
 Install `supautils` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install supautils_17*;
-dnf install supautils_16*;
-dnf install supautils_15*;
-dnf install supautils_14*;
-dnf install supautils_13*;
+yum install supautils_17*;
+yum install supautils_16*;
+yum install supautils_15*;
+yum install supautils_14*;
+yum install supautils_13*;
+yum install supautils_12*;
 ```
 
 
@@ -73,9 +93,19 @@ apt install postgresql-16-supautils;
 apt install postgresql-15-supautils;
 apt install postgresql-14-supautils;
 apt install postgresql-13-supautils;
+apt install postgresql-12-supautils;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `supautils_17*` | `supautils_16*` | `supautils_15*` | `supautils_14*` | `supautils_13*` | `supautils_12*` |
+| `el9` | `supautils_17*` | `supautils_16*` | `supautils_15*` | `supautils_14*` | `supautils_13*` | `supautils_12*` |
+| `d12` | `postgresql-17-supautils` | `postgresql-16-supautils` | `postgresql-15-supautils` | `postgresql-14-supautils` | `postgresql-13-supautils` | `postgresql-12-supautils` |
+| `u22` | `postgresql-17-supautils` | `postgresql-16-supautils` | `postgresql-15-supautils` | `postgresql-14-supautils` | `postgresql-13-supautils` | `postgresql-12-supautils` |
+| `u24` | `postgresql-17-supautils` | `postgresql-16-supautils` | `postgresql-15-supautils` | `postgresql-14-supautils` | `postgresql-13-supautils` | `postgresql-12-supautils` |
 
 
 

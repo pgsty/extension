@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_cron](https://github.com/citusdata/pg_cron) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_cron](https://github.com/citusdata/pg_cron) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_cron](/pg_cron) |  | `pg_catalog` |  | [`timeseries`](/timeseries), [`vectorize`](/vectorize) |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -44,14 +60,17 @@ CREATE EXTENSION pg_cron;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_cron_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-cron` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_cron_17*` | `pg_cron_16*` | `pg_cron_15*` | `pg_cron_14*` | `pg_cron_13*` | `pg_cron_12*` |
+| `el9` | `pg_cron_17*` | `pg_cron_16*` | `pg_cron_15*` | `pg_cron_14*` | `pg_cron_13*` | `pg_cron_12*` |
+| `d12` | `postgresql-17-cron` | `postgresql-16-cron` | `postgresql-15-cron` | `postgresql-14-cron` | `postgresql-13-cron` | `postgresql-12-cron` |
+| `u22` | `postgresql-17-cron` | `postgresql-16-cron` | `postgresql-15-cron` | `postgresql-14-cron` | `postgresql-13-cron` | `postgresql-12-cron` |
+| `u24` | `postgresql-17-cron` | `postgresql-16-cron` | `postgresql-15-cron` | `postgresql-14-cron` | `postgresql-13-cron` | `postgresql-12-cron` |
 
 
 
-Install `pg_cron` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_cron` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_cron"]}'
@@ -61,12 +80,12 @@ Install `pg_cron` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) play
 Install `pg_cron` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pg_cron_17*;
-dnf install pg_cron_16*;
-dnf install pg_cron_15*;
-dnf install pg_cron_14*;
-dnf install pg_cron_13*;
-dnf install pg_cron_12*;
+yum install pg_cron_17*;
+yum install pg_cron_16*;
+yum install pg_cron_15*;
+yum install pg_cron_14*;
+yum install pg_cron_13*;
+yum install pg_cron_12*;
 ```
 
 
@@ -84,6 +103,16 @@ apt install postgresql-12-cron;
 
 
 
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_cron_17*` | `pg_cron_16*` | `pg_cron_15*` | `pg_cron_14*` | `pg_cron_13*` | `pg_cron_12*` |
+| `el9` | `pg_cron_17*` | `pg_cron_16*` | `pg_cron_15*` | `pg_cron_14*` | `pg_cron_13*` | `pg_cron_12*` |
+| `d12` | `postgresql-17-cron` | `postgresql-16-cron` | `postgresql-15-cron` | `postgresql-14-cron` | `postgresql-13-cron` | `postgresql-12-cron` |
+| `u22` | `postgresql-17-cron` | `postgresql-16-cron` | `postgresql-15-cron` | `postgresql-14-cron` | `postgresql-13-cron` | `postgresql-12-cron` |
+| `u24` | `postgresql-17-cron` | `postgresql-16-cron` | `postgresql-15-cron` | `postgresql-14-cron` | `postgresql-13-cron` | `postgresql-12-cron` |
+
+
+
 
 
 
@@ -96,4 +125,3 @@ beware that `cron.database` has to be set before adding to `shared_preload_libra
 ```bash
 
 ```
-

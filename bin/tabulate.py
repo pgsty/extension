@@ -9,6 +9,7 @@ import os
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'data', 'pigsty.csv'))
+CATE_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'data', 'category.csv'))
 DOCS_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'docs'))
 STUB_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'stub'))
 
@@ -55,7 +56,9 @@ REPO_CHECK_COLOR = {
 }
 
 BLUE_CHECK = '<span class="tcblue">✔</span>'
+WARN_CHECK = '<span class="tcwarn">✔</span>'
 WARN_CROSS = '<span class="tcwarn">✘</span>'
+RED_CROSS = '<span class="tcred">✘</span>'
 RED_EXCLAM = '<span class="tcred">❗</span>'
 
 
@@ -101,6 +104,8 @@ CATES = {
     "ETL": "ETL: Logical Replication, Decoding, CDC in protobuf/JSON/Mongo format, Copy & Load & Compare Postgres Databases,...",
 }
 
+CATE_LIST = ["TIME","GIS","RAG","FTS","OLAP","FEAT","LANG","TYPE","FUNC","ADMIN","STAT","SEC","FDW","SIM","ETL"]
+
 COLS = {
     "id":         {'header': 'ID'         ,'center': True,  'func': lambda row: str(row['id'])         },
     "name":       {'header': 'name'       ,'center': True,  'func': lambda row: str(row['name'])       },
@@ -132,7 +137,7 @@ COLS = {
     "deb_deps":   {'header': 'deb_deps'   ,'center': True,  'func': lambda row: str(row['deb_deps'])   },
     "en_desc":    {'header': 'Description','center': False, 'func': lambda row: str(row['en_desc'])    },
     "zh_desc":    {'header': '说明'        ,'center': False, 'func': lambda row: str(row['zh_desc'])    },
-    "comment":    {'header': 'Comment'    ,'center': True,  'func': lambda row: str(row['comment'])    },
+    "comment":    {'header': 'Comment'    ,'center': False, 'func': lambda row: str(row['comment'])    },
 
     "ext":        {'header': 'Extension'  ,'center': False, 'func': lambda row: "[%s](%s)" % (row["name"], row["url"])  },
     "ext2":       {'header': 'Extension'  ,'center': False, 'func': lambda row: row["name"] },
@@ -141,6 +146,7 @@ COLS = {
     "link":       {'header': 'Website'    ,'center': True,  'func': lambda row: "[LINK](%s)" % row["url"]  },
     "pkg":        {'header': 'Package'    ,'center': False, 'func': lambda row: "[%s](/%s)" % (row['alias'], row['name'])  },
     "pkg2":       {'header': 'Package'    ,'center': False, 'func': lambda row: "[%s](%s)" % (row['alias'], row['url'])  },
+    "pkg3":       {'header': 'Alias'      ,'center': False, 'func': lambda row: "[%s](/%s)" % (row['alias'], row['name'])  },
     "ver":        {'header': 'Version'    ,"center": True,  "func": lambda row: row['version'] },
     "rpmver":     {'header': 'Version'    ,"center": False, "func": lambda row: row['rpm_ver'] },
     "debver":     {'header': 'Version'    ,"center": False, "func": lambda row: row['deb_ver'] },
@@ -192,7 +198,17 @@ def getcol(col, ext):
 def Columns(columns):
     return [COLS.get(i) for i in columns]
 
-# generate
+
+# generate markdown table
+def get_markdown_table(header, data):
+    headers = "| " + " | ".join(header) + " |\n"
+    separator = "|" + "|".join([ ':' + '-' * len(h)+':' for h in header]) + "|\n"
+    rows = [headers, separator]
+    for row in data:
+        row_str = "| " + " | ".join(row) + " |\n"
+        rows.append(row_str)
+    return ''.join(rows)
+
 def tabulate(cols, filter_func):
     headers = "| " + " | ".join([col['header'] for col in cols]) + " |\n"
     separator = "|" + "|".join([ ':' + '-' * len(col['header'])+':' if col['center'] else '-' * (len(col['header'])+2) for col in cols]) + "|\n"
@@ -252,6 +268,15 @@ def load_data(filepath=DATA_PATH):
             row['deb_pgdg'] = True if row['has_deb'] and row['deb_repo'] == 'PGDG' else False
             row['deb_pigsty'] = True if row['has_deb'] and row['deb_repo'] == 'PIGSTY' else False
             row['deb_misc'] = True if row['has_deb'] and (row['deb_repo'] not in ('PGDG', 'PIGSTY', 'TIMESCALE', 'CITUS','CONTRIB','')) else False
+            data.append(row)
+    return data
+
+# load data from pigsty extension csv, or default to ../data/ext.csv
+def load_categories(filepath=CATE_PATH):
+    data = []
+    with open(filepath, newline='', encoding='utf-8') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
             data.append(row)
     return data
 
@@ -325,6 +350,16 @@ def stat_data(data):
 DATA = load_data()
 STAT = stat_data(DATA)
 CATE = list(dict.fromkeys([i['category'] for i in DATA]))
+DEP_MAP = {}
+EXT_MAP = {}
+for ext in DATA:
+    EXT_MAP[ext['name']] = ext
+    if ext['requires']:
+        for e in ext['requires']:
+            if e not in DEP_MAP:
+                DEP_MAP[e] = [ext['name']]
+            else:
+                DEP_MAP[e].append(ext['name'])
 
 
 def tabulate_stats(todolist):
@@ -345,22 +380,6 @@ def tabulate_stats(todolist):
             row.append(str(value))
         markdown += '| ' + ' | '.join(row) + ' |\n'
     return markdown
-
-
-
-PGVER_TEMPLATE = """
-----------\n
-## PostgreSQL %s\n\n
-```yaml
-pg_version: %s
-pg_extensions:
-  - postgresql%s*
-%s\n
-repo_packages:
-%s\n
-```
-"""
-
 
 
 def process_ext(ver, distro, ext):
@@ -426,6 +445,56 @@ def process_ext(ver, distro, ext):
         else: ext_aye.append(extension)
 
     return pkg_aye, pkg_nay, ext_aye, ext_nay
+
+
+# return (pkg_name, ext_name, available)
+def judge_ext(ver, distro, ext):
+    if distro in ('rpm', 'el7', 'el8', 'el9'):
+        REPO_KEY, PKG_KEY, VER_KEY, HAS_KEY,  = 'rpm_repo', 'rpm_pkg', 'rpm_pg', 'has_rpm'
+    elif distro in ('deb', 'u20', 'u22', 'u24', 'd12', 'd11'):
+        REPO_KEY, PKG_KEY, VER_KEY, HAS_KEY, = 'deb_repo', 'deb_pkg', 'deb_pg',  'has_deb'
+    else:
+        raise ValueError("Invalid distro: %s" % distro)
+    name, alias, extension, package, pg_vers, avail = ext['name'], ext['alias'], ext['alias'], ext[PKG_KEY].replace('$v', ver), ext[VER_KEY], ext[HAS_KEY]
+    if name in DISTRO_MISS[distro]:
+        avail = False
+
+    # rename extension field in certain cases
+    if name == 'pgaudit' and distro in RPM_OS and ver in ['12','13','14','15']:
+        # pgaudit bad case: pg16+ = pgaudit, pg15=pgaudit17, pg14=pgaudit16 pg13=pgaudit15 pg12=pgaudit14
+        package, extension = package.replace('pgaudit', 'pgaudit' + str(int(ver)+2)), alias + str(int(ver)+2)
+    if name == 'citus' and distro in DEB_OS and ver in ['12', '13']:
+        package, extension = package.replace('citus-12.1', 'citus-' + ('10.2' if ver == '12' else '11.3') ), alias + str(int(ver)-2)
+    if name == 'postgis' and distro in ['el8', 'el9'] and ver == '12': # el8/9 will use postgis34 for pg12
+        package, extension = package.replace('postgis35', 'postgis34'), 'postgis34'
+    if name == 'postgis' and distro == 'el7': # el7 with postgis33
+        package, extension = package.replace('postgis35', 'postgis33'), 'postgis33'
+    if name.startswith('babelfishpg'):
+        package, extension = 'wiltondb', 'wiltondb'
+    # ubuntu 24.04 bad case
+    if distro == 'u24' and name == 'timescaledb' and ver == '12': avail = False
+    if distro == 'u24' and name in ['pg_partman', 'timeseries'] and ver in ['12','13']: avail = False
+    if alias in THROW_LIST: avail = False
+    return package, extension, avail
+
+
+
+def avail_matrix(extname, cell='avail'):
+    ext = EXT_MAP[extname]
+    header = ['Distro / Ver', 'PG17', 'PG16', 'PG15', 'PG14', 'PG13', 'PG12']
+    data = []
+    for distro in DISTROS:
+        row = ['`%s`' % distro]
+        for ver in PG_VERS:
+            package, extension, avail = judge_ext(ver, distro, ext)
+            if cell == 'avail':
+                row.append( WARN_CHECK if extension != ext['alias'] else (BLUE_CHECK if avail else RED_CROSS) )
+            elif cell == 'pkg':
+                row.append( '%s' % '<br>'.join(['`%s`' % i for i in  package.split(' ')]) )
+            elif cell == 'ext':
+                row.append( '`%s`' % extension )
+        data.append(row)
+    return get_markdown_table(header, data)
 
 
 
@@ -518,21 +587,6 @@ def gen_param(ver, distro, indent=0, header=True):
 
 
 
-
-LIST_TEMPLATE = """# Extension List\n
-There are **%d** available extensions, including **%d** [**RPM**](/rpm) extensions available in EL, and **%d** [**DEB**](/deb) available in Debian/Ubuntu.\n
-There are **%d** [**Contrib**](contrib) extensions provided by PostgreSQL and **%d** additional third-party extensions provide by PGDG & Pigsty. \n\n
-%s\n\n
---------\n
-## Inventory\n\n
-> Click the "**Extension**" name will goes to the extension source homepage, click the "**Package**" goes to the metadata page.\n\n  
-%s\n\n
-> The CSV Raw data is available at [github.com/pgsty/extension](https://github.com/pgsty/extension/blob/main/data/pigsty.csv)\n\n
-%s\n\n
-"""
-
-
-
 def generate_all_list():
     ext_table = tabulate(
         Columns(["cat", "id", "ext3", "ver", "pkg", "lic", "rpmrepo", "debrepo", "link", "bin", "load", "dylib", "ddl", "en_desc"]),
@@ -546,6 +600,7 @@ def generate_all_list():
             buf.append("""### %s OS (%s)\n\n```yaml\n%s\n```\n""" % ( DISTRO_FULLNAME.get(distro), distro, ext_str))
         ver_sections.append('\n'.join(buf))
 
+    LIST_TEMPLATE = open(os.path.join(STUB_PATH, 'list.md')).read()
     f = openw('list.md')
     f.write(LIST_TEMPLATE % (
         STAT["stat"]["all"],STAT["stat"]["rpm"],STAT["stat"]["deb"],
@@ -556,22 +611,6 @@ def generate_all_list():
     ))
     f.close()
 
-
-RPM_TEMPLATE = """# RPM Extension Packages\n
-There are **%d** extensions available on EL compatible systems, **%s** of them are EL exclusive, and missing **%s** Debian exclusive extensions.\n
-There are **%d** built-in [**contrib**](contrib) extensions, in addition to **%d** rpm extensions provided by PGDG YUM repository, and **%d** extensions provided by Pigsty.\n
-There are **%d** extensions available in the current major version PostgreSQL 16, and **%d** ready for the latest PostgreSQL 17.\n
-
-%s\n\n
---------\n
-## Inventory\n\n
-> Click the "**Extension**" name will goes to the extension source homepage, click the "**Package**" goes to the metadata page.\n\n
-%s\n\n
-%s\n\n
-%s\n\n
-"""
-
-generate_all_list()
 
 def generate_rpm_list():
     rpm_table = tabulate(
@@ -586,6 +625,7 @@ def generate_rpm_list():
             buf.append("""### %s OS (%s)\n\n```yaml\n%s\n```\n""" % ( DISTRO_FULLNAME.get(distro), distro, repo_str))
         ver_sections.append('\n'.join(buf))
 
+    RPM_TEMPLATE = open(os.path.join(STUB_PATH, 'rpm.md')).read()
     f = openw('rpm.md')
     f.write(RPM_TEMPLATE % (
         STAT["rpm_ext"]["all"],STAT["rpm_ext"]["miss"],STAT["rpm_ext"]["miss"],
@@ -597,22 +637,6 @@ def generate_rpm_list():
         ''
     ))
     f.close()
-
-
-
-DEB_TEMPLATE = """# DEB Extension Packages\n
-There are **%d** extensions available on Debian/Ubuntu compatible systems, **%s** of them are Debian exclusive, and missing **%s** EL exclusive extensions.\n
-There are **%d** built-in [**contrib**](contrib) extensions, in addition to **%d** deb extensions provided by PGDG YUM repository, and **%d** extensions provided by Pigsty.\n
-There are **%d** extensions available in the current major version PostgreSQL 16, and **%d** ready for the latest PostgreSQL 17.\n
-
-%s\n\n
---------\n
-## Inventory\n\n
-> Click the "**Extension**" name will goes to the extension source homepage, click the "**Package**" goes to the metadata page.\n\n
-%s\n\n
-%s\n\n
-%s\n\n
-"""
 
 
 def generate_deb_list():
@@ -627,6 +651,7 @@ def generate_deb_list():
             repo_str, ext_str = gen_param(ver, distro, -1, False)
             buf.append("""### %s OS (%s)\n\n```yaml\n%s\n```\n""" % ( DISTRO_FULLNAME.get(distro), distro, repo_str))
         ver_sections.append('\n'.join(buf))
+    DEB_TEMPLATE = open(os.path.join(STUB_PATH, 'deb.md')).read()
     f = openw('deb.md')
     f.write(DEB_TEMPLATE % (
         STAT["deb_ext"]["all"],STAT["deb_ext"]["miss"],STAT["deb_ext"]["miss"],
@@ -640,35 +665,16 @@ def generate_deb_list():
     f.close()
 
 
-
-CONTRIB_TEMPLATE = """# Contrib Extension Packages\n
-There are **%d** built-in [**contrib**](contrib) extensions which are shipping alone with PostgreSQL.\n
-## Inventory\n\n%s
-"""
-
 def generate_contrib_list():
     contrib_table = tabulate(
         Columns(["cat", "id", "ext2", "ver", "pkg", "r17", "r16", "r15", "r14", "r13", "r12","bin", "load", "dylib", "ddl","trust", "reloc", "en_desc"]),
         lambda row: row['repo'] == 'CONTRIB'
     )
+    CONTRIB_TEMPLATE = open(os.path.join(STUB_PATH, 'contrib.md')).read()
     f = openw('contrib.md')
     f.write(CONTRIB_TEMPLATE % (STAT["stat"]["contrib"], contrib_table))
     f.close()
 
-
-CATEGORY_INDEX_TEMPLATE = """# %s\n\n
-> %s
-## Extensions\n\n
-There are %d available extensions in this category:\n\n%s\n\n
-%s\n\n%s\n\n
---------\n
-## RPM Packages\n\n
-%s\n\n%s\n\n
---------\n
-## DEB Packages\n\n
-%s\n\n%s\n\n
---------\n%s
-"""
 
 
 def generate_category():
@@ -711,7 +717,7 @@ def generate_category():
             elif distro in RPM_OS:
                 rpm_list.append('\n### %s (%s)\n\n```yaml\n%s\n```\n' % ( DISTRO_FULLNAME.get(distro,distro), distro, '\n'.join(rpm_e)))
 
-        ext_details = []
+        CATEGORY_INDEX_TEMPLATE = open(os.path.join(STUB_PATH, 'category_index.md')).read()
         with open(cate_index, 'w') as f:
             f.write(CATEGORY_INDEX_TEMPLATE%(
                 cate,CATES.get(cate,''),
@@ -719,33 +725,11 @@ def generate_category():
                 ext_table, '\n'.join(ext_list),
                 rpm_table, '\n'.join(rpm_list),
                 deb_table, '\n'.join(deb_list),
-                '\n'.join(ext_details)
+                ''
             )
         )
 
 
-
-EXTENSION_TEMPLATE = """%s\n\n
-%s extensions: %s\n\n
--------
-## Extension\n\n
-%s\n\n%s
------------\n\n
-## Packages\n\n
-%s\n\n%s
-\n\n
-%s\n
-"""
-
-DEP_MAP = {}
-
-for ext in DATA:
-    if ext['requires']:
-        for e in ext['requires']:
-            if e not in DEP_MAP:
-                DEP_MAP[e] = [ext['name']]
-            else:
-                DEP_MAP[e].append(ext['name'])
 
 
 
@@ -758,16 +742,18 @@ def generate_extension():
         header = """# %s\n\n\n> %s: %s\n>\n> %s\n\n\n""" % (ext['alias'], getcol('pkg2', ext ) ,ext['en_desc'],  ext['url'])
         # part 1: extension table
         ext_table = tabulate(
-            Columns(["ext", "ver", "lic", "rpmrepo", "debrepo", "lan", "bin", "load", "dylib", "ddl", "trust", "reloc"]),
+            Columns(["ext", "ver", "lic", "rpmrepo", "debrepo", "lan"]),
             lambda row: row['name'] == name
         )
-
         exts = [ext for ext in DATA if ext['category'] == category ]
         ext_links = [ getcol("ext4", ext) for ext in exts ]
-
-        t2_cols = [ "pkg", "tag", "schema", "req", "reqd" ] #, "comment", "en_desc"]
-        ext_table_extra = tabulate(Columns(t2_cols),lambda row: row['name'] == name)
-        ext_table = ext_table + '\n\n\n' + ext_table_extra
+        ext_table2 = tabulate(
+            Columns(["bin", "load", "dylib", "ddl", "trust", "reloc"]),
+            lambda row: row['name'] == name
+        )
+        ext_table3 = tabulate(Columns([ "pkg3", "tag", "schema", "req", "reqd" ]),lambda row: row['name'] == name)
+        avail_table = avail_matrix(name)
+        ext_table = ext_table + '\n\n\n' + ext_table2 + '\n\n\n' + ext_table3 + '\n\n\n' + avail_table
 
         tags,comment,schemas,config_ini,create_ddl,requires = '','','','','',''
         if ext['need_load']: config_ini = """\n```bash\nshared_preload_libraries = '%s'; # add this extension to postgresql.conf\n```\n""" % name
@@ -788,33 +774,46 @@ def generate_extension():
         deb_table = '\n'.join(deb_table.replace('Distro-'+name, '[DEB](/deb)').split('\n')[2:])
         pkg_table = rpm_table + deb_table
 
+
         # install info
-        pigsty_install_preface = '\nInstall `%s` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:\n\n' % getcol("alias", ext)
-        pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["%s"]}'\n```\n\n""" % alias
+        pigsty_install_preface = '\nInstall `%s` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:\n\n' % getcol("alias", ext)
+        if name not in ['postgis', 'citus', 'pgaudit']:
+            pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["%s"]}'\n```\n\n""" % alias
+        else:
+            if name == 'postgis': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis"]}'   # postgis35, common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis34"]}' # pg12 @ el8/9 \n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis33"]}' # el7\n```\n\n"""
+            if name == 'pgaudit': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit"]}'   # common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit17"]}' # pg15 @ el\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit16"]}' # pg14 @ el'\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit15"]}' # pg13 @ el'\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit14"]}' # pg12 @ el'\n```\n\n"""
+            if name == 'citus': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["citus"]}'     # common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["citus11"]}'   # pg13 @ deb\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["citus10"]}'   # pg12 @ deb\n```\n\n"""
+
         yum_install_preface = '\nInstall `%s` [RPM](/rpm) from the %s **YUM** repo:\n\n' % (getcol("alias", ext), getcol("rpmrepo", ext))
         if '$v' not in ext['rpm_pkg']:
-            yum_install_tmpl = """```bash\ndnf instsall %s;\n```\n\n""" % ext['rpm_pkg']
+            yum_install_tmpl = """```bash\ndnf install %s;\n```\n\n""" % ext['rpm_pkg']
         else:
-            yum_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'dnf install ' + ext['rpm_pkg'].replace('$v', ver) + ';' for ver in ext['rpm_pg'] ])
+            #yum_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'dnf install ' + ext['rpm_pkg'].replace('$v', ver) + ';' for ver in ext['rpm_pg'] ])
+
+            pkgs = [ judge_ext(ver, 'el9', ext)[0] for ver in PG_VERS ]
+            yum_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'yum install ' + pkg + ';' for pkg in pkgs ])
+
         apt_install_preface = '\nInstall `%s` [DEB](/deb) from the %s **APT** repo:\n\n' % (getcol("alias", ext), getcol("rpmrepo", ext))
         if '$v' not in ext['rpm_pkg']:
             apt_install_tmpl = """```bash\napt install %s;\n```\n\n""" % ext['deb_pkg']
         else:
-            apt_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'apt install ' + ext['deb_pkg'].replace('$v', ver) + ';' for ver in ext['deb_pg'] ])
+            pkgs = [ judge_ext(ver, 'u22', ext)[0] for ver in PG_VERS ]
+            apt_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'apt install ' + pkg + ';' for pkg in pkgs ])
+            # if name == 'citus':
+            #
+            # else:
+            #     apt_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'apt install ' + ext['deb_pkg'].replace('$v', ver) + ';' for ver in ext['deb_pg'] ])
         install_tmpl = pigsty_install_preface + pigsty_install_cmd
         if ext['has_rpm']: install_tmpl = install_tmpl + yum_install_preface + yum_install_tmpl
         if ext['has_deb']: install_tmpl = install_tmpl + apt_install_preface + apt_install_tmpl
-
-        #sib_table = tabulate(
-        #    Columns(["id", "ext3", "ver", "pkg", "lic", "rpmrepo", "debrepo", "lan", "tag", "schema", "req", "load", "dylib", "ddl", "trust", "reloc"]),
-        #    lambda row: row['category'] == category
-        #)
+        pkg_table = avail_matrix(name,'pkg')
+        install_tmpl += ('\n\n\n' + pkg_table)
 
         stub_content = ''
         if os.path.exists(stub_path):
             stub_content = open(stub_path, 'r').read()
 
-
+        EXTENSION_TEMPLATE = open(os.path.join(STUB_PATH, 'extension_page.md')).read()
         content = EXTENSION_TEMPLATE % (
             header, getcol("cat", ext), ', '.join(ext_links),
             ext_table, ext_additional,
@@ -824,7 +823,7 @@ def generate_extension():
         with open(ext_path, 'w') as f:
             f.write(content)
 
-generate_extension()
+
 
 def cate_index_tabulate():
     cates = []
@@ -853,6 +852,32 @@ def cate_index_tabulate2():
 
 
 
+
+def generate_categories():
+    data = []
+    for cate in CATE_LIST:
+        extensions = [row for row in DATA if row['category'] == cate]
+        exts = [ext for ext in DATA if ext['category'] == cate ]
+        ext_links = [ getcol("ext4", ext) for ext in exts ]
+        ext_table = tabulate(
+            Columns(["id", "ext3", "ver", "pkg", "lic", "rpmrepo", "debrepo", "link", "en_desc", "comment"]),
+            lambda row: row['category'] == cate
+        )
+        cate_info = """\n--------\n## [**%s**](/%s)\n> %s\n\n%s""" %(
+            cate, cate.lower(), CATES.get(cate,'') + ' (%d extensions)' % len(exts), ext_table
+        )
+
+        data.append(cate_info)
+
+
+    CATEGORIES_TEMPLATE = open(os.path.join(STUB_PATH, 'categories.md')).read()
+    f = openw('categories.md')
+    f.write(CATEGORIES_TEMPLATE%(
+        len(CATE_LIST),'\n'.join(data)
+    ))
+
+
+
 def generate_readme():
     with open(os.path.join(STUB_PATH, 'README.md'), 'r') as src:
         readme_tmpl = src.read()
@@ -865,17 +890,13 @@ def generate_readme():
     f.close()
 
 
-def generate_distro_repo_packages(distro):
-    for ver in PG_VERS:
-        repo_list, ext_list = gen_ext_list(ver, distro)
-        print(repo_list.replace('repo_packages:', '"pg%s:all":'%ver))
-        print(ext_list.replace('repo_packages:', '"pg%s:all":'%ver))
-
 
 generate_readme()
 generate_all_list()
 generate_rpm_list()
 generate_deb_list()
 generate_contrib_list()
+generate_categories()
 generate_category()
 generate_extension()
+

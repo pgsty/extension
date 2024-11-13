@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgl_ddl_deploy](https://github.com/enova/pgl_ddl_deploy) | 2.2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgl_ddl_deploy](https://github.com/enova/pgl_ddl_deploy) | 2.2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgl_ddl_deploy](/pgl_ddl_deploy) |  | `pgl_ddl_deploy` | [`pglogical`](pglogical) |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pgl_ddl_deploy CASCADE;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgl_ddl_deploy_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | `pglogical_$v` |
-| [DEB](/deb) | 2.2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgl-ddl-deploy` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | `postgresql-$v-pglogical` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgl_ddl_deploy_17*` | `pgl_ddl_deploy_16*` | `pgl_ddl_deploy_15*` | `pgl_ddl_deploy_14*` | `pgl_ddl_deploy_13*` | `pgl_ddl_deploy_12*` |
+| `el9` | `pgl_ddl_deploy_17*` | `pgl_ddl_deploy_16*` | `pgl_ddl_deploy_15*` | `pgl_ddl_deploy_14*` | `pgl_ddl_deploy_13*` | `pgl_ddl_deploy_12*` |
+| `d12` | `postgresql-17-pgl-ddl-deploy` | `postgresql-16-pgl-ddl-deploy` | `postgresql-15-pgl-ddl-deploy` | `postgresql-14-pgl-ddl-deploy` | `postgresql-13-pgl-ddl-deploy` | `postgresql-12-pgl-ddl-deploy` |
+| `u22` | `postgresql-17-pgl-ddl-deploy` | `postgresql-16-pgl-ddl-deploy` | `postgresql-15-pgl-ddl-deploy` | `postgresql-14-pgl-ddl-deploy` | `postgresql-13-pgl-ddl-deploy` | `postgresql-12-pgl-ddl-deploy` |
+| `u24` | `postgresql-17-pgl-ddl-deploy` | `postgresql-16-pgl-ddl-deploy` | `postgresql-15-pgl-ddl-deploy` | `postgresql-14-pgl-ddl-deploy` | `postgresql-13-pgl-ddl-deploy` | `postgresql-12-pgl-ddl-deploy` |
 
 
 
-Install `pgl_ddl_deploy` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgl_ddl_deploy` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgl_ddl_deploy"]}'
@@ -57,12 +76,12 @@ Install `pgl_ddl_deploy` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install
 Install `pgl_ddl_deploy` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pgl_ddl_deploy_17*;
-dnf install pgl_ddl_deploy_16*;
-dnf install pgl_ddl_deploy_15*;
-dnf install pgl_ddl_deploy_14*;
-dnf install pgl_ddl_deploy_13*;
-dnf install pgl_ddl_deploy_12*;
+yum install pgl_ddl_deploy_17*;
+yum install pgl_ddl_deploy_16*;
+yum install pgl_ddl_deploy_15*;
+yum install pgl_ddl_deploy_14*;
+yum install pgl_ddl_deploy_13*;
+yum install pgl_ddl_deploy_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pgl-ddl-deploy;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgl_ddl_deploy_17*` | `pgl_ddl_deploy_16*` | `pgl_ddl_deploy_15*` | `pgl_ddl_deploy_14*` | `pgl_ddl_deploy_13*` | `pgl_ddl_deploy_12*` |
+| `el9` | `pgl_ddl_deploy_17*` | `pgl_ddl_deploy_16*` | `pgl_ddl_deploy_15*` | `pgl_ddl_deploy_14*` | `pgl_ddl_deploy_13*` | `pgl_ddl_deploy_12*` |
+| `d12` | `postgresql-17-pgl-ddl-deploy` | `postgresql-16-pgl-ddl-deploy` | `postgresql-15-pgl-ddl-deploy` | `postgresql-14-pgl-ddl-deploy` | `postgresql-13-pgl-ddl-deploy` | `postgresql-12-pgl-ddl-deploy` |
+| `u22` | `postgresql-17-pgl-ddl-deploy` | `postgresql-16-pgl-ddl-deploy` | `postgresql-15-pgl-ddl-deploy` | `postgresql-14-pgl-ddl-deploy` | `postgresql-13-pgl-ddl-deploy` | `postgresql-12-pgl-ddl-deploy` |
+| `u24` | `postgresql-17-pgl-ddl-deploy` | `postgresql-16-pgl-ddl-deploy` | `postgresql-15-pgl-ddl-deploy` | `postgresql-14-pgl-ddl-deploy` | `postgresql-13-pgl-ddl-deploy` | `postgresql-12-pgl-ddl-deploy` |
 
 
 

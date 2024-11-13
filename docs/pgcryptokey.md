@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgcryptokey](https://momjian.us/download/pgcryptokey/) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgcryptokey](https://momjian.us/download/pgcryptokey/) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgcryptokey](/pgcryptokey) | `pgdg-flaw` |  | [`pgcrypto`](pgcrypto) |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pgcryptokey CASCADE;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgcryptokey_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgcryptokey` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgcryptokey_17` | `pgcryptokey_16` | `pgcryptokey_15` | `pgcryptokey_14` | `pgcryptokey_13` | `pgcryptokey_12` |
+| `el9` | `pgcryptokey_17` | `pgcryptokey_16` | `pgcryptokey_15` | `pgcryptokey_14` | `pgcryptokey_13` | `pgcryptokey_12` |
+| `d12` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` | `postgresql-12-pgcryptokey` |
+| `u22` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` | `postgresql-12-pgcryptokey` |
+| `u24` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` | `postgresql-12-pgcryptokey` |
 
 
 
-Install `pgcryptokey` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgcryptokey` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgcryptokey"]}'
@@ -57,12 +76,12 @@ Install `pgcryptokey` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) 
 Install `pgcryptokey` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pgcryptokey_17;
-dnf install pgcryptokey_16;
-dnf install pgcryptokey_15;
-dnf install pgcryptokey_14;
-dnf install pgcryptokey_13;
-dnf install pgcryptokey_12;
+yum install pgcryptokey_17;
+yum install pgcryptokey_16;
+yum install pgcryptokey_15;
+yum install pgcryptokey_14;
+yum install pgcryptokey_13;
+yum install pgcryptokey_12;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pgcryptokey;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgcryptokey_17` | `pgcryptokey_16` | `pgcryptokey_15` | `pgcryptokey_14` | `pgcryptokey_13` | `pgcryptokey_12` |
+| `el9` | `pgcryptokey_17` | `pgcryptokey_16` | `pgcryptokey_15` | `pgcryptokey_14` | `pgcryptokey_13` | `pgcryptokey_12` |
+| `d12` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` | `postgresql-12-pgcryptokey` |
+| `u22` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` | `postgresql-12-pgcryptokey` |
+| `u24` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` | `postgresql-12-pgcryptokey` |
 
 
 

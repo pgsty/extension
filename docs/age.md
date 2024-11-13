@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [age](https://github.com/apache/age) | 1.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [age](https://github.com/apache/age) | 1.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [age](/age) |  | `ag_catalog` |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION age;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `apache-age_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |  |
-| [DEB](/deb) | 1.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-age` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `apache-age_17*` | `apache-age_16*` | `apache-age_15*` | `apache-age_14*` | `apache-age_13*` | `apache-age_12*` |
+| `el9` | `apache-age_17*` | `apache-age_16*` | `apache-age_15*` | `apache-age_14*` | `apache-age_13*` | `apache-age_12*` |
+| `d12` | `postgresql-17-age` | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` | `postgresql-12-age` |
+| `u22` | `postgresql-17-age` | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` | `postgresql-12-age` |
+| `u24` | `postgresql-17-age` | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` | `postgresql-12-age` |
 
 
 
-Install `age` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `age` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["age"]}'
@@ -57,14 +76,19 @@ Install `age` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook
 Install `age` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install apache-age_16*;
-dnf install apache-age_15*;
+yum install apache-age_17*;
+yum install apache-age_16*;
+yum install apache-age_15*;
+yum install apache-age_14*;
+yum install apache-age_13*;
+yum install apache-age_12*;
 ```
 
 
 Install `age` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-age;
 apt install postgresql-16-age;
 apt install postgresql-15-age;
 apt install postgresql-14-age;
@@ -73,6 +97,15 @@ apt install postgresql-12-age;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `apache-age_17*` | `apache-age_16*` | `apache-age_15*` | `apache-age_14*` | `apache-age_13*` | `apache-age_12*` |
+| `el9` | `apache-age_17*` | `apache-age_16*` | `apache-age_15*` | `apache-age_14*` | `apache-age_13*` | `apache-age_12*` |
+| `d12` | `postgresql-17-age` | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` | `postgresql-12-age` |
+| `u22` | `postgresql-17-age` | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` | `postgresql-12-age` |
+| `u24` | `postgresql-17-age` | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` | `postgresql-12-age` |
 
 
 

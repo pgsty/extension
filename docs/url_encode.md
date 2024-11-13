@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [url_encode](https://github.com/okbob/url_encode) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [url_encode](https://github.com/okbob/url_encode) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [url_encode](/url_encode) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION url_encode;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `url_encode_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-url-encode` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `url_encode_17*` | `url_encode_16*` | `url_encode_15*` | `url_encode_14*` | `url_encode_13*` | `url_encode_12*` |
+| `el9` | `url_encode_17*` | `url_encode_16*` | `url_encode_15*` | `url_encode_14*` | `url_encode_13*` | `url_encode_12*` |
+| `d12` | `postgresql-17-url-encode` | `postgresql-16-url-encode` | `postgresql-15-url-encode` | `postgresql-14-url-encode` | `postgresql-13-url-encode` | `postgresql-12-url-encode` |
+| `u22` | `postgresql-17-url-encode` | `postgresql-16-url-encode` | `postgresql-15-url-encode` | `postgresql-14-url-encode` | `postgresql-13-url-encode` | `postgresql-12-url-encode` |
+| `u24` | `postgresql-17-url-encode` | `postgresql-16-url-encode` | `postgresql-15-url-encode` | `postgresql-14-url-encode` | `postgresql-13-url-encode` | `postgresql-12-url-encode` |
 
 
 
-Install `url_encode` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `url_encode` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["url_encode"]}'
@@ -57,12 +76,12 @@ Install `url_encode` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) p
 Install `url_encode` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install url_encode_17*;
-dnf install url_encode_16*;
-dnf install url_encode_15*;
-dnf install url_encode_14*;
-dnf install url_encode_13*;
-dnf install url_encode_12*;
+yum install url_encode_17*;
+yum install url_encode_16*;
+yum install url_encode_15*;
+yum install url_encode_14*;
+yum install url_encode_13*;
+yum install url_encode_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-url-encode;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `url_encode_17*` | `url_encode_16*` | `url_encode_15*` | `url_encode_14*` | `url_encode_13*` | `url_encode_12*` |
+| `el9` | `url_encode_17*` | `url_encode_16*` | `url_encode_15*` | `url_encode_14*` | `url_encode_13*` | `url_encode_12*` |
+| `d12` | `postgresql-17-url-encode` | `postgresql-16-url-encode` | `postgresql-15-url-encode` | `postgresql-14-url-encode` | `postgresql-13-url-encode` | `postgresql-12-url-encode` |
+| `u22` | `postgresql-17-url-encode` | `postgresql-16-url-encode` | `postgresql-15-url-encode` | `postgresql-14-url-encode` | `postgresql-13-url-encode` | `postgresql-12-url-encode` |
+| `u24` | `postgresql-17-url-encode` | `postgresql-16-url-encode` | `postgresql-15-url-encode` | `postgresql-14-url-encode` | `postgresql-13-url-encode` | `postgresql-12-url-encode` |
 
 
 

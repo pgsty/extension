@@ -4,10 +4,10 @@
 - [RPM Package](/rpm)
 - [DEB Package](/deb)
 - [PG Contribs](/contrib)
-- [Repo Usage](/usage)
-- [Roadmap](/roadmap)
+- [**Repo Usage**](/usage)
+- [**Roadmap**](/roadmap)
 
-- **Category**
+- [**Categories**](/categories)
 
   - [Category: TIME](/time)
   - [Category: GIS](/gis)

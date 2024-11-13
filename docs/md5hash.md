@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [md5hash](https://github.com/tvondra/md5hash) | 1.0.1 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [md5hash](https://github.com/tvondra/md5hash) | 1.0.1 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [md5hash](/md5hash) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION md5hash;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0.1 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `md5hash_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0.1 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-md5hash` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `md5hash_17*` | `md5hash_16*` | `md5hash_15*` | `md5hash_14*` | `md5hash_13*` | `md5hash_12*` |
+| `el9` | `md5hash_17*` | `md5hash_16*` | `md5hash_15*` | `md5hash_14*` | `md5hash_13*` | `md5hash_12*` |
+| `d12` | `postgresql-17-md5hash` | `postgresql-16-md5hash` | `postgresql-15-md5hash` | `postgresql-14-md5hash` | `postgresql-13-md5hash` | `postgresql-12-md5hash` |
+| `u22` | `postgresql-17-md5hash` | `postgresql-16-md5hash` | `postgresql-15-md5hash` | `postgresql-14-md5hash` | `postgresql-13-md5hash` | `postgresql-12-md5hash` |
+| `u24` | `postgresql-17-md5hash` | `postgresql-16-md5hash` | `postgresql-15-md5hash` | `postgresql-14-md5hash` | `postgresql-13-md5hash` | `postgresql-12-md5hash` |
 
 
 
-Install `md5hash` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `md5hash` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["md5hash"]}'
@@ -57,12 +76,12 @@ Install `md5hash` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) play
 Install `md5hash` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install md5hash_17*;
-dnf install md5hash_16*;
-dnf install md5hash_15*;
-dnf install md5hash_14*;
-dnf install md5hash_13*;
-dnf install md5hash_12*;
+yum install md5hash_17*;
+yum install md5hash_16*;
+yum install md5hash_15*;
+yum install md5hash_14*;
+yum install md5hash_13*;
+yum install md5hash_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-md5hash;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `md5hash_17*` | `md5hash_16*` | `md5hash_15*` | `md5hash_14*` | `md5hash_13*` | `md5hash_12*` |
+| `el9` | `md5hash_17*` | `md5hash_16*` | `md5hash_15*` | `md5hash_14*` | `md5hash_13*` | `md5hash_12*` |
+| `d12` | `postgresql-17-md5hash` | `postgresql-16-md5hash` | `postgresql-15-md5hash` | `postgresql-14-md5hash` | `postgresql-13-md5hash` | `postgresql-12-md5hash` |
+| `u22` | `postgresql-17-md5hash` | `postgresql-16-md5hash` | `postgresql-15-md5hash` | `postgresql-14-md5hash` | `postgresql-13-md5hash` | `postgresql-12-md5hash` |
+| `u24` | `postgresql-17-md5hash` | `postgresql-16-md5hash` | `postgresql-15-md5hash` | `postgresql-14-md5hash` | `postgresql-13-md5hash` | `postgresql-12-md5hash` |
 
 
 

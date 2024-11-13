@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [extra_window_functions](https://github.com/xocolatl/extra_window_functions) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [extra_window_functions](https://github.com/xocolatl/extra_window_functions) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [extra_window_functions](/extra_window_functions) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION extra_window_functions;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `extra_window_functions_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-extra-window-functions` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | `extra_window_functions_14*` | `extra_window_functions_13*` | `extra_window_functions_12*` |
+| `el9` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | `extra_window_functions_14*` | `extra_window_functions_13*` | `extra_window_functions_12*` |
+| `d12` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
+| `u22` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
+| `u24` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
 
 
 
-Install `extra_window_functions` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `extra_window_functions` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["extra_window_functions"]}'
@@ -57,9 +76,12 @@ Install `extra_window_functions` via [Pigsty](https://pigsty.cc/docs/pgext/usage
 Install `extra_window_functions` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install extra_window_functions_17*;
-dnf install extra_window_functions_16*;
-dnf install extra_window_functions_15*;
+yum install extra_window_functions_17*;
+yum install extra_window_functions_16*;
+yum install extra_window_functions_15*;
+yum install extra_window_functions_14*;
+yum install extra_window_functions_13*;
+yum install extra_window_functions_12*;
 ```
 
 
@@ -75,6 +97,15 @@ apt install postgresql-12-extra-window-functions;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | `extra_window_functions_14*` | `extra_window_functions_13*` | `extra_window_functions_12*` |
+| `el9` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | `extra_window_functions_14*` | `extra_window_functions_13*` | `extra_window_functions_12*` |
+| `d12` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
+| `u22` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
+| `u24` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
 
 
 

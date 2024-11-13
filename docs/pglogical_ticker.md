@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pglogical_ticker](https://github.com/enova/pglogical_ticker) | 1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | `C` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pglogical_ticker](https://github.com/enova/pglogical_ticker) | 1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pglogical_ticker](/pglogical_ticker) |  | `pglogical_ticker` | [`pglogical`](pglogical) |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -44,14 +60,17 @@ CREATE EXTENSION pglogical_ticker CASCADE;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.4.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pglogical_ticker_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `pglogical_$v` |
-| [DEB](/deb) | 1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pglogical-ticker` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `postgresql-$v-pglogical` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pglogical_ticker_17*` | `pglogical_ticker_16*` | `pglogical_ticker_15*` | `pglogical_ticker_14*` | `pglogical_ticker_13*` | `pglogical_ticker_12*` |
+| `el9` | `pglogical_ticker_17*` | `pglogical_ticker_16*` | `pglogical_ticker_15*` | `pglogical_ticker_14*` | `pglogical_ticker_13*` | `pglogical_ticker_12*` |
+| `d12` | `postgresql-17-pglogical-ticker` | `postgresql-16-pglogical-ticker` | `postgresql-15-pglogical-ticker` | `postgresql-14-pglogical-ticker` | `postgresql-13-pglogical-ticker` | `postgresql-12-pglogical-ticker` |
+| `u22` | `postgresql-17-pglogical-ticker` | `postgresql-16-pglogical-ticker` | `postgresql-15-pglogical-ticker` | `postgresql-14-pglogical-ticker` | `postgresql-13-pglogical-ticker` | `postgresql-12-pglogical-ticker` |
+| `u24` | `postgresql-17-pglogical-ticker` | `postgresql-16-pglogical-ticker` | `postgresql-15-pglogical-ticker` | `postgresql-14-pglogical-ticker` | `postgresql-13-pglogical-ticker` | `postgresql-12-pglogical-ticker` |
 
 
 
-Install `pglogical_ticker` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pglogical_ticker` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pglogical_ticker"]}'
@@ -61,12 +80,12 @@ Install `pglogical_ticker` via [Pigsty](https://pigsty.cc/docs/pgext/usage/insta
 Install `pglogical_ticker` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pglogical_ticker_17*;
-dnf install pglogical_ticker_16*;
-dnf install pglogical_ticker_15*;
-dnf install pglogical_ticker_14*;
-dnf install pglogical_ticker_13*;
-dnf install pglogical_ticker_12*;
+yum install pglogical_ticker_17*;
+yum install pglogical_ticker_16*;
+yum install pglogical_ticker_15*;
+yum install pglogical_ticker_14*;
+yum install pglogical_ticker_13*;
+yum install pglogical_ticker_12*;
 ```
 
 
@@ -82,6 +101,15 @@ apt install postgresql-12-pglogical-ticker;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pglogical_ticker_17*` | `pglogical_ticker_16*` | `pglogical_ticker_15*` | `pglogical_ticker_14*` | `pglogical_ticker_13*` | `pglogical_ticker_12*` |
+| `el9` | `pglogical_ticker_17*` | `pglogical_ticker_16*` | `pglogical_ticker_15*` | `pglogical_ticker_14*` | `pglogical_ticker_13*` | `pglogical_ticker_12*` |
+| `d12` | `postgresql-17-pglogical-ticker` | `postgresql-16-pglogical-ticker` | `postgresql-15-pglogical-ticker` | `postgresql-14-pglogical-ticker` | `postgresql-13-pglogical-ticker` | `postgresql-12-pglogical-ticker` |
+| `u22` | `postgresql-17-pglogical-ticker` | `postgresql-16-pglogical-ticker` | `postgresql-15-pglogical-ticker` | `postgresql-14-pglogical-ticker` | `postgresql-13-pglogical-ticker` | `postgresql-12-pglogical-ticker` |
+| `u24` | `postgresql-17-pglogical-ticker` | `postgresql-16-pglogical-ticker` | `postgresql-15-pglogical-ticker` | `postgresql-14-pglogical-ticker` | `postgresql-13-pglogical-ticker` | `postgresql-12-pglogical-ticker` |
 
 
 

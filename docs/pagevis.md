@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pagevis](https://github.com/hollobon/pagevis) | 0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pagevis](https://github.com/hollobon/pagevis) | 0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pagevis](/pagevis) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pagevis;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pagevis_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pagevis` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pagevis_17` | `pagevis_16` | `pagevis_15` | `pagevis_14` | `pagevis_13` | `pagevis_12` |
+| `el9` | `pagevis_17` | `pagevis_16` | `pagevis_15` | `pagevis_14` | `pagevis_13` | `pagevis_12` |
+| `d12` | `postgresql-17-pagevis` | `postgresql-16-pagevis` | `postgresql-15-pagevis` | `postgresql-14-pagevis` | `postgresql-13-pagevis` | `postgresql-12-pagevis` |
+| `u22` | `postgresql-17-pagevis` | `postgresql-16-pagevis` | `postgresql-15-pagevis` | `postgresql-14-pagevis` | `postgresql-13-pagevis` | `postgresql-12-pagevis` |
+| `u24` | `postgresql-17-pagevis` | `postgresql-16-pagevis` | `postgresql-15-pagevis` | `postgresql-14-pagevis` | `postgresql-13-pagevis` | `postgresql-12-pagevis` |
 
 
 
-Install `pagevis` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pagevis` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pagevis"]}'
@@ -57,12 +76,12 @@ Install `pagevis` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) play
 Install `pagevis` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pagevis_17;
-dnf install pagevis_16;
-dnf install pagevis_15;
-dnf install pagevis_14;
-dnf install pagevis_13;
-dnf install pagevis_12;
+yum install pagevis_17;
+yum install pagevis_16;
+yum install pagevis_15;
+yum install pagevis_14;
+yum install pagevis_13;
+yum install pagevis_12;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pagevis;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pagevis_17` | `pagevis_16` | `pagevis_15` | `pagevis_14` | `pagevis_13` | `pagevis_12` |
+| `el9` | `pagevis_17` | `pagevis_16` | `pagevis_15` | `pagevis_14` | `pagevis_13` | `pagevis_12` |
+| `d12` | `postgresql-17-pagevis` | `postgresql-16-pagevis` | `postgresql-15-pagevis` | `postgresql-14-pagevis` | `postgresql-13-pagevis` | `postgresql-12-pagevis` |
+| `u22` | `postgresql-17-pagevis` | `postgresql-16-pagevis` | `postgresql-15-pagevis` | `postgresql-14-pagevis` | `postgresql-13-pagevis` | `postgresql-12-pagevis` |
+| `u24` | `postgresql-17-pagevis` | `postgresql-16-pagevis` | `postgresql-15-pagevis` | `postgresql-14-pagevis` | `postgresql-13-pagevis` | `postgresql-12-pagevis` |
 
 
 

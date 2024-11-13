@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [plv8](https://github.com/plv8/plv8) | 3.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C++` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [plv8](https://github.com/plv8/plv8) | 3.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C++` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [plv8](/plv8) |  | `pg_catalog` |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION plv8;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `plv8_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 3.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-plv8` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `plv8_17*` | `plv8_16*` | `plv8_15*` | `plv8_14*` | `plv8_13*` | `plv8_12*` |
+| `el9` | `plv8_17*` | `plv8_16*` | `plv8_15*` | `plv8_14*` | `plv8_13*` | `plv8_12*` |
+| `d12` | `postgresql-17-plv8` | `postgresql-16-plv8` | `postgresql-15-plv8` | `postgresql-14-plv8` | `postgresql-13-plv8` | `postgresql-12-plv8` |
+| `u22` | `postgresql-17-plv8` | `postgresql-16-plv8` | `postgresql-15-plv8` | `postgresql-14-plv8` | `postgresql-13-plv8` | `postgresql-12-plv8` |
+| `u24` | `postgresql-17-plv8` | `postgresql-16-plv8` | `postgresql-15-plv8` | `postgresql-14-plv8` | `postgresql-13-plv8` | `postgresql-12-plv8` |
 
 
 
-Install `plv8` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `plv8` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["plv8"]}'
@@ -57,12 +76,12 @@ Install `plv8` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playboo
 Install `plv8` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install plv8_17*;
-dnf install plv8_16*;
-dnf install plv8_15*;
-dnf install plv8_14*;
-dnf install plv8_13*;
-dnf install plv8_12*;
+yum install plv8_17*;
+yum install plv8_16*;
+yum install plv8_15*;
+yum install plv8_14*;
+yum install plv8_13*;
+yum install plv8_12*;
 ```
 
 
@@ -77,6 +96,16 @@ apt install postgresql-13-plv8;
 apt install postgresql-12-plv8;
 ```
 
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `plv8_17*` | `plv8_16*` | `plv8_15*` | `plv8_14*` | `plv8_13*` | `plv8_12*` |
+| `el9` | `plv8_17*` | `plv8_16*` | `plv8_15*` | `plv8_14*` | `plv8_13*` | `plv8_12*` |
+| `d12` | `postgresql-17-plv8` | `postgresql-16-plv8` | `postgresql-15-plv8` | `postgresql-14-plv8` | `postgresql-13-plv8` | `postgresql-12-plv8` |
+| `u22` | `postgresql-17-plv8` | `postgresql-16-plv8` | `postgresql-15-plv8` | `postgresql-14-plv8` | `postgresql-13-plv8` | `postgresql-12-plv8` |
+| `u24` | `postgresql-17-plv8` | `postgresql-16-plv8` | `postgresql-15-plv8` | `postgresql-14-plv8` | `postgresql-13-plv8` | `postgresql-12-plv8` |
 
 
 
@@ -109,7 +138,6 @@ $$ LANGUAGE plv8 IMMUTABLE STRICT;
 
 SELECT plv8_test(ARRAY['name', 'age'], ARRAY['Tom', '29']);
 ```
-
 
 
 

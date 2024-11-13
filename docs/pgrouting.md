@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgrouting](https://github.com/pgRouting/pgrouting) | 3.6.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgrouting](https://github.com/pgRouting/pgrouting) | 3.6.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgrouting](/pgrouting) |  |  | [`postgis`](postgis) |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pgrouting CASCADE;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.6.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `pgrouting_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 3.6.2 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgrouting postgresql-$v-pgrouting-scripts` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgrouting_17*` | `pgrouting_16*` | `pgrouting_15*` | `pgrouting_14*` | `pgrouting_13*` | `pgrouting_12*` |
+| `el9` | `pgrouting_17*` | `pgrouting_16*` | `pgrouting_15*` | `pgrouting_14*` | `pgrouting_13*` | `pgrouting_12*` |
+| `d12` | `postgresql-17-pgrouting`<br>`postgresql-17-pgrouting-scripts` | `postgresql-16-pgrouting`<br>`postgresql-16-pgrouting-scripts` | `postgresql-15-pgrouting`<br>`postgresql-15-pgrouting-scripts` | `postgresql-14-pgrouting`<br>`postgresql-14-pgrouting-scripts` | `postgresql-13-pgrouting`<br>`postgresql-13-pgrouting-scripts` | `postgresql-12-pgrouting`<br>`postgresql-12-pgrouting-scripts` |
+| `u22` | `postgresql-17-pgrouting`<br>`postgresql-17-pgrouting-scripts` | `postgresql-16-pgrouting`<br>`postgresql-16-pgrouting-scripts` | `postgresql-15-pgrouting`<br>`postgresql-15-pgrouting-scripts` | `postgresql-14-pgrouting`<br>`postgresql-14-pgrouting-scripts` | `postgresql-13-pgrouting`<br>`postgresql-13-pgrouting-scripts` | `postgresql-12-pgrouting`<br>`postgresql-12-pgrouting-scripts` |
+| `u24` | `postgresql-17-pgrouting`<br>`postgresql-17-pgrouting-scripts` | `postgresql-16-pgrouting`<br>`postgresql-16-pgrouting-scripts` | `postgresql-15-pgrouting`<br>`postgresql-15-pgrouting-scripts` | `postgresql-14-pgrouting`<br>`postgresql-14-pgrouting-scripts` | `postgresql-13-pgrouting`<br>`postgresql-13-pgrouting-scripts` | `postgresql-12-pgrouting`<br>`postgresql-12-pgrouting-scripts` |
 
 
 
-Install `pgrouting` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgrouting` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgrouting"]}'
@@ -57,12 +76,12 @@ Install `pgrouting` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pl
 Install `pgrouting` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pgrouting_17*;
-dnf install pgrouting_16*;
-dnf install pgrouting_15*;
-dnf install pgrouting_14*;
-dnf install pgrouting_13*;
-dnf install pgrouting_12*;
+yum install pgrouting_17*;
+yum install pgrouting_16*;
+yum install pgrouting_15*;
+yum install pgrouting_14*;
+yum install pgrouting_13*;
+yum install pgrouting_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pgrouting postgresql-12-pgrouting-scripts;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgrouting_17*` | `pgrouting_16*` | `pgrouting_15*` | `pgrouting_14*` | `pgrouting_13*` | `pgrouting_12*` |
+| `el9` | `pgrouting_17*` | `pgrouting_16*` | `pgrouting_15*` | `pgrouting_14*` | `pgrouting_13*` | `pgrouting_12*` |
+| `d12` | `postgresql-17-pgrouting`<br>`postgresql-17-pgrouting-scripts` | `postgresql-16-pgrouting`<br>`postgresql-16-pgrouting-scripts` | `postgresql-15-pgrouting`<br>`postgresql-15-pgrouting-scripts` | `postgresql-14-pgrouting`<br>`postgresql-14-pgrouting-scripts` | `postgresql-13-pgrouting`<br>`postgresql-13-pgrouting-scripts` | `postgresql-12-pgrouting`<br>`postgresql-12-pgrouting-scripts` |
+| `u22` | `postgresql-17-pgrouting`<br>`postgresql-17-pgrouting-scripts` | `postgresql-16-pgrouting`<br>`postgresql-16-pgrouting-scripts` | `postgresql-15-pgrouting`<br>`postgresql-15-pgrouting-scripts` | `postgresql-14-pgrouting`<br>`postgresql-14-pgrouting-scripts` | `postgresql-13-pgrouting`<br>`postgresql-13-pgrouting-scripts` | `postgresql-12-pgrouting`<br>`postgresql-12-pgrouting-scripts` |
+| `u24` | `postgresql-17-pgrouting`<br>`postgresql-17-pgrouting-scripts` | `postgresql-16-pgrouting`<br>`postgresql-16-pgrouting-scripts` | `postgresql-15-pgrouting`<br>`postgresql-15-pgrouting-scripts` | `postgresql-14-pgrouting`<br>`postgresql-14-pgrouting-scripts` | `postgresql-13-pgrouting`<br>`postgresql-13-pgrouting-scripts` | `postgresql-12-pgrouting`<br>`postgresql-12-pgrouting-scripts` |
 
 
 

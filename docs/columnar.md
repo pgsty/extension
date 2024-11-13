@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [columnar](https://github.com/hydradatabase/hydra) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [columnar](https://github.com/hydradatabase/hydra) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [hydra](/columnar) |  |  |  | [`timeseries`](/timeseries) |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION columnar;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `hydra_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
-| [DEB](/deb) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-hydra` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `hydra_17*` | `hydra_16*` | `hydra_15*` | `hydra_14*` | `hydra_13*` | `hydra_12*` |
+| `el9` | `hydra_17*` | `hydra_16*` | `hydra_15*` | `hydra_14*` | `hydra_13*` | `hydra_12*` |
+| `d12` | `postgresql-17-hydra` | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | `postgresql-12-hydra` |
+| `u22` | `postgresql-17-hydra` | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | `postgresql-12-hydra` |
+| `u24` | `postgresql-17-hydra` | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | `postgresql-12-hydra` |
 
 
 
-Install `hydra` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `hydra` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["hydra"]}'
@@ -57,23 +76,36 @@ Install `hydra` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbo
 Install `hydra` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install hydra_16*;
-dnf install hydra_15*;
-dnf install hydra_14*;
-dnf install hydra_13*;
+yum install hydra_17*;
+yum install hydra_16*;
+yum install hydra_15*;
+yum install hydra_14*;
+yum install hydra_13*;
+yum install hydra_12*;
 ```
 
 
 Install `hydra` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-hydra;
 apt install postgresql-16-hydra;
 apt install postgresql-15-hydra;
 apt install postgresql-14-hydra;
 apt install postgresql-13-hydra;
+apt install postgresql-12-hydra;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `hydra_17*` | `hydra_16*` | `hydra_15*` | `hydra_14*` | `hydra_13*` | `hydra_12*` |
+| `el9` | `hydra_17*` | `hydra_16*` | `hydra_15*` | `hydra_14*` | `hydra_13*` | `hydra_12*` |
+| `d12` | `postgresql-17-hydra` | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | `postgresql-12-hydra` |
+| `u22` | `postgresql-17-hydra` | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | `postgresql-12-hydra` |
+| `u24` | `postgresql-17-hydra` | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | `postgresql-12-hydra` |
 
 
 

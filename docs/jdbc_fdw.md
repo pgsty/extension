@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [jdbc_fdw](https://github.com/pgspider/jdbc_fdw) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [jdbc_fdw](https://github.com/pgspider/jdbc_fdw) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [jdbc_fdw](/jdbc_fdw) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -40,13 +56,17 @@ CREATE EXTENSION jdbc_fdw;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `jdbc_fdw_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  | `java-11-openjdk-headless` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `jdbc_fdw_17*` | `jdbc_fdw_16*` | `jdbc_fdw_15*` | `jdbc_fdw_14*` | `jdbc_fdw_13*` | `jdbc_fdw_12*` |
+| `el9` | `jdbc_fdw_17*` | `jdbc_fdw_16*` | `jdbc_fdw_15*` | `jdbc_fdw_14*` | `jdbc_fdw_13*` | `jdbc_fdw_12*` |
+| `d12` | `` | `` | `` | `` | `` | `` |
+| `u22` | `` | `` | `` | `` | `` | `` |
+| `u24` | `` | `` | `` | `` | `` | `` |
 
 
 
-Install `jdbc_fdw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `jdbc_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["jdbc_fdw"]}'
@@ -56,13 +76,24 @@ Install `jdbc_fdw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pla
 Install `jdbc_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install jdbc_fdw_16*;
-dnf install jdbc_fdw_15*;
-dnf install jdbc_fdw_14*;
-dnf install jdbc_fdw_13*;
+yum install jdbc_fdw_17*;
+yum install jdbc_fdw_16*;
+yum install jdbc_fdw_15*;
+yum install jdbc_fdw_14*;
+yum install jdbc_fdw_13*;
+yum install jdbc_fdw_12*;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `jdbc_fdw_17*` | `jdbc_fdw_16*` | `jdbc_fdw_15*` | `jdbc_fdw_14*` | `jdbc_fdw_13*` | `jdbc_fdw_12*` |
+| `el9` | `jdbc_fdw_17*` | `jdbc_fdw_16*` | `jdbc_fdw_15*` | `jdbc_fdw_14*` | `jdbc_fdw_13*` | `jdbc_fdw_12*` |
+| `d12` | `` | `` | `` | `` | `` | `` |
+| `u22` | `` | `` | `` | `` | `` | `` |
+| `u24` | `` | `` | `` | `` | `` | `` |
 
 
 

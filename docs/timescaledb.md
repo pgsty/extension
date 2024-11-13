@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [timescaledb](https://github.com/timescale/timescaledb) | 2.17.1 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | **<span class="tcwarn">TIMESCALE</span>** | `C` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [timescaledb](https://github.com/timescale/timescaledb) | 2.17.1 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | **<span class="tcwarn">TIMESCALE</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [timescaledb](/timescaledb) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -44,14 +60,17 @@ CREATE EXTENSION timescaledb;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.17.1 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-2-postgresql-$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 2.17.1 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-2-postgresql-$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `timescaledb-2-postgresql-17*` | `timescaledb-2-postgresql-16*` | `timescaledb-2-postgresql-15*` | `timescaledb-2-postgresql-14*` | `timescaledb-2-postgresql-13*` | `timescaledb-2-postgresql-12*` |
+| `el9` | `timescaledb-2-postgresql-17*` | `timescaledb-2-postgresql-16*` | `timescaledb-2-postgresql-15*` | `timescaledb-2-postgresql-14*` | `timescaledb-2-postgresql-13*` | `timescaledb-2-postgresql-12*` |
+| `d12` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | `timescaledb-2-postgresql-12` |
+| `u22` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | `timescaledb-2-postgresql-12` |
+| `u24` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | `timescaledb-2-postgresql-12` |
 
 
 
-Install `timescaledb` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `timescaledb` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["timescaledb"]}'
@@ -61,12 +80,12 @@ Install `timescaledb` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) 
 Install `timescaledb` [RPM](/rpm) from the **<span class="tcwarn">TIMESCALE</span>** **YUM** repo:
 
 ```bash
-dnf install timescaledb-2-postgresql-17*;
-dnf install timescaledb-2-postgresql-16*;
-dnf install timescaledb-2-postgresql-15*;
-dnf install timescaledb-2-postgresql-14*;
-dnf install timescaledb-2-postgresql-13*;
-dnf install timescaledb-2-postgresql-12*;
+yum install timescaledb-2-postgresql-17*;
+yum install timescaledb-2-postgresql-16*;
+yum install timescaledb-2-postgresql-15*;
+yum install timescaledb-2-postgresql-14*;
+yum install timescaledb-2-postgresql-13*;
+yum install timescaledb-2-postgresql-12*;
 ```
 
 
@@ -81,6 +100,16 @@ apt install timescaledb-2-postgresql-13;
 apt install timescaledb-2-postgresql-12;
 ```
 
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `timescaledb-2-postgresql-17*` | `timescaledb-2-postgresql-16*` | `timescaledb-2-postgresql-15*` | `timescaledb-2-postgresql-14*` | `timescaledb-2-postgresql-13*` | `timescaledb-2-postgresql-12*` |
+| `el9` | `timescaledb-2-postgresql-17*` | `timescaledb-2-postgresql-16*` | `timescaledb-2-postgresql-15*` | `timescaledb-2-postgresql-14*` | `timescaledb-2-postgresql-13*` | `timescaledb-2-postgresql-12*` |
+| `d12` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | `timescaledb-2-postgresql-12` |
+| `u22` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | `timescaledb-2-postgresql-12` |
+| `u24` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | `timescaledb-2-postgresql-12` |
 
 
 
@@ -121,4 +150,3 @@ WITH (timescaledb.continuous) AS
 
 SELECT add_job('SELECT 1','1h', initial_start => '2024-07-09 18:52:00+00'::timestamptz);
 ```
-

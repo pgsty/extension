@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgmq](https://github.com/tembo-io/pgmq) | 1.4.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgmq](https://github.com/tembo-io/pgmq) | 1.4.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgmq](/pgmq) |  | `pgmq` |  | [`pg_later`](/pg_later), [`vectorize`](/vectorize) |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pgmq;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.4.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgmq_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.4.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgmq` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgmq_17` | `pgmq_16` | `pgmq_15` | `pgmq_14` | `pgmq_13` | `pgmq_12` |
+| `el9` | `pgmq_17` | `pgmq_16` | `pgmq_15` | `pgmq_14` | `pgmq_13` | `pgmq_12` |
+| `d12` | `postgresql-17-pgmq` | `postgresql-16-pgmq` | `postgresql-15-pgmq` | `postgresql-14-pgmq` | `postgresql-13-pgmq` | `postgresql-12-pgmq` |
+| `u22` | `postgresql-17-pgmq` | `postgresql-16-pgmq` | `postgresql-15-pgmq` | `postgresql-14-pgmq` | `postgresql-13-pgmq` | `postgresql-12-pgmq` |
+| `u24` | `postgresql-17-pgmq` | `postgresql-16-pgmq` | `postgresql-15-pgmq` | `postgresql-14-pgmq` | `postgresql-13-pgmq` | `postgresql-12-pgmq` |
 
 
 
-Install `pgmq` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgmq` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgmq"]}'
@@ -57,12 +76,12 @@ Install `pgmq` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playboo
 Install `pgmq` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pgmq_17;
-dnf install pgmq_16;
-dnf install pgmq_15;
-dnf install pgmq_14;
-dnf install pgmq_13;
-dnf install pgmq_12;
+yum install pgmq_17;
+yum install pgmq_16;
+yum install pgmq_15;
+yum install pgmq_14;
+yum install pgmq_13;
+yum install pgmq_12;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pgmq;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgmq_17` | `pgmq_16` | `pgmq_15` | `pgmq_14` | `pgmq_13` | `pgmq_12` |
+| `el9` | `pgmq_17` | `pgmq_16` | `pgmq_15` | `pgmq_14` | `pgmq_13` | `pgmq_12` |
+| `d12` | `postgresql-17-pgmq` | `postgresql-16-pgmq` | `postgresql-15-pgmq` | `postgresql-14-pgmq` | `postgresql-13-pgmq` | `postgresql-12-pgmq` |
+| `u22` | `postgresql-17-pgmq` | `postgresql-16-pgmq` | `postgresql-15-pgmq` | `postgresql-14-pgmq` | `postgresql-13-pgmq` | `postgresql-12-pgmq` |
+| `u24` | `postgresql-17-pgmq` | `postgresql-16-pgmq` | `postgresql-15-pgmq` | `postgresql-14-pgmq` | `postgresql-13-pgmq` | `postgresql-12-pgmq` |
 
 
 

@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [http](https://github.com/pramsey/pgsql-http) | 1.6 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [http](https://github.com/pramsey/pgsql-http) | 1.6 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_http](/http) | `supabase` |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION http;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.6 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgsql_http_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.6 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-http` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgsql_http_17*` | `pgsql_http_16*` | `pgsql_http_15*` | `pgsql_http_14*` | `pgsql_http_13*` | `pgsql_http_12*` |
+| `el9` | `pgsql_http_17*` | `pgsql_http_16*` | `pgsql_http_15*` | `pgsql_http_14*` | `pgsql_http_13*` | `pgsql_http_12*` |
+| `d12` | `postgresql-17-http` | `postgresql-16-http` | `postgresql-15-http` | `postgresql-14-http` | `postgresql-13-http` | `postgresql-12-http` |
+| `u22` | `postgresql-17-http` | `postgresql-16-http` | `postgresql-15-http` | `postgresql-14-http` | `postgresql-13-http` | `postgresql-12-http` |
+| `u24` | `postgresql-17-http` | `postgresql-16-http` | `postgresql-15-http` | `postgresql-14-http` | `postgresql-13-http` | `postgresql-12-http` |
 
 
 
-Install `pg_http` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_http` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_http"]}'
@@ -57,12 +76,12 @@ Install `pg_http` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) play
 Install `pg_http` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pgsql_http_17*;
-dnf install pgsql_http_16*;
-dnf install pgsql_http_15*;
-dnf install pgsql_http_14*;
-dnf install pgsql_http_13*;
-dnf install pgsql_http_12*;
+yum install pgsql_http_17*;
+yum install pgsql_http_16*;
+yum install pgsql_http_15*;
+yum install pgsql_http_14*;
+yum install pgsql_http_13*;
+yum install pgsql_http_12*;
 ```
 
 
@@ -77,6 +96,16 @@ apt install postgresql-13-http;
 apt install postgresql-12-http;
 ```
 
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgsql_http_17*` | `pgsql_http_16*` | `pgsql_http_15*` | `pgsql_http_14*` | `pgsql_http_13*` | `pgsql_http_12*` |
+| `el9` | `pgsql_http_17*` | `pgsql_http_16*` | `pgsql_http_15*` | `pgsql_http_14*` | `pgsql_http_13*` | `pgsql_http_12*` |
+| `d12` | `postgresql-17-http` | `postgresql-16-http` | `postgresql-15-http` | `postgresql-14-http` | `postgresql-13-http` | `postgresql-12-http` |
+| `u22` | `postgresql-17-http` | `postgresql-16-http` | `postgresql-15-http` | `postgresql-14-http` | `postgresql-13-http` | `postgresql-12-http` |
+| `u24` | `postgresql-17-http` | `postgresql-16-http` | `postgresql-15-http` | `postgresql-14-http` | `postgresql-13-http` | `postgresql-12-http` |
 
 
 
@@ -165,6 +194,5 @@ SELECT status, content_type, content::json->>'data' AS data
 ```
 
 Issue http post request:
-
 
 

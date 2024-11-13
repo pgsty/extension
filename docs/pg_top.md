@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_top](https://gitlab.com/pg_top/pg_top) | 3.7.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_top](https://gitlab.com/pg_top/pg_top) | 3.7.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_top](/pg_top) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -36,13 +52,17 @@
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.7.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_top_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_top_17*` | `pg_top_16*` | `pg_top_15*` | `pg_top_14*` | `pg_top_13*` | `pg_top_12*` |
+| `el9` | `pg_top_17*` | `pg_top_16*` | `pg_top_15*` | `pg_top_14*` | `pg_top_13*` | `pg_top_12*` |
+| `d12` | `` | `` | `` | `` | `` | `` |
+| `u22` | `` | `` | `` | `` | `` | `` |
+| `u24` | `` | `` | `` | `` | `` | `` |
 
 
 
-Install `pg_top` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_top` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_top"]}'
@@ -52,13 +72,24 @@ Install `pg_top` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playb
 Install `pg_top` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pg_top_16*;
-dnf install pg_top_15*;
-dnf install pg_top_14*;
-dnf install pg_top_13*;
+yum install pg_top_17*;
+yum install pg_top_16*;
+yum install pg_top_15*;
+yum install pg_top_14*;
+yum install pg_top_13*;
+yum install pg_top_12*;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_top_17*` | `pg_top_16*` | `pg_top_15*` | `pg_top_14*` | `pg_top_13*` | `pg_top_12*` |
+| `el9` | `pg_top_17*` | `pg_top_16*` | `pg_top_15*` | `pg_top_14*` | `pg_top_13*` | `pg_top_12*` |
+| `d12` | `` | `` | `` | `` | `` | `` |
+| `u22` | `` | `` | `` | `` | `` | `` |
+| `u24` | `` | `` | `` | `` | `` | `` |
 
 
 

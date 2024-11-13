@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [mysql_fdw](https://github.com/EnterpriseDB/mysql_fdw) | 1.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [mysql_fdw](https://github.com/EnterpriseDB/mysql_fdw) | 1.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [mysql_fdw](/mysql_fdw) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION mysql_fdw;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `mysql_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-mysql-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `mysql_fdw_17*` | `mysql_fdw_16*` | `mysql_fdw_15*` | `mysql_fdw_14*` | `mysql_fdw_13*` | `mysql_fdw_12*` |
+| `el9` | `mysql_fdw_17*` | `mysql_fdw_16*` | `mysql_fdw_15*` | `mysql_fdw_14*` | `mysql_fdw_13*` | `mysql_fdw_12*` |
+| `d12` | `postgresql-17-mysql-fdw` | `postgresql-16-mysql-fdw` | `postgresql-15-mysql-fdw` | `postgresql-14-mysql-fdw` | `postgresql-13-mysql-fdw` | `postgresql-12-mysql-fdw` |
+| `u22` | `postgresql-17-mysql-fdw` | `postgresql-16-mysql-fdw` | `postgresql-15-mysql-fdw` | `postgresql-14-mysql-fdw` | `postgresql-13-mysql-fdw` | `postgresql-12-mysql-fdw` |
+| `u24` | `postgresql-17-mysql-fdw` | `postgresql-16-mysql-fdw` | `postgresql-15-mysql-fdw` | `postgresql-14-mysql-fdw` | `postgresql-13-mysql-fdw` | `postgresql-12-mysql-fdw` |
 
 
 
-Install `mysql_fdw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `mysql_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["mysql_fdw"]}'
@@ -57,12 +76,12 @@ Install `mysql_fdw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pl
 Install `mysql_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install mysql_fdw_17*;
-dnf install mysql_fdw_16*;
-dnf install mysql_fdw_15*;
-dnf install mysql_fdw_14*;
-dnf install mysql_fdw_13*;
-dnf install mysql_fdw_12*;
+yum install mysql_fdw_17*;
+yum install mysql_fdw_16*;
+yum install mysql_fdw_15*;
+yum install mysql_fdw_14*;
+yum install mysql_fdw_13*;
+yum install mysql_fdw_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-mysql-fdw;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `mysql_fdw_17*` | `mysql_fdw_16*` | `mysql_fdw_15*` | `mysql_fdw_14*` | `mysql_fdw_13*` | `mysql_fdw_12*` |
+| `el9` | `mysql_fdw_17*` | `mysql_fdw_16*` | `mysql_fdw_15*` | `mysql_fdw_14*` | `mysql_fdw_13*` | `mysql_fdw_12*` |
+| `d12` | `postgresql-17-mysql-fdw` | `postgresql-16-mysql-fdw` | `postgresql-15-mysql-fdw` | `postgresql-14-mysql-fdw` | `postgresql-13-mysql-fdw` | `postgresql-12-mysql-fdw` |
+| `u22` | `postgresql-17-mysql-fdw` | `postgresql-16-mysql-fdw` | `postgresql-15-mysql-fdw` | `postgresql-14-mysql-fdw` | `postgresql-13-mysql-fdw` | `postgresql-12-mysql-fdw` |
+| `u24` | `postgresql-17-mysql-fdw` | `postgresql-16-mysql-fdw` | `postgresql-15-mysql-fdw` | `postgresql-14-mysql-fdw` | `postgresql-13-mysql-fdw` | `postgresql-12-mysql-fdw` |
 
 
 

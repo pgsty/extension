@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [log_fdw](https://github.com/aws/postgresql-logfdw) | 1.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [log_fdw](https://github.com/aws/postgresql-logfdw) | 1.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [log_fdw](/log_fdw) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION log_fdw;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `log_fdw_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
-| [DEB](/deb) | 1.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-log-fdw` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `log_fdw_17*` | `log_fdw_16*` | `log_fdw_15*` | `log_fdw_14*` | `log_fdw_13*` | `log_fdw_12*` |
+| `el9` | `log_fdw_17*` | `log_fdw_16*` | `log_fdw_15*` | `log_fdw_14*` | `log_fdw_13*` | `log_fdw_12*` |
+| `d12` | `postgresql-17-log-fdw` | `postgresql-16-log-fdw` | `postgresql-15-log-fdw` | `postgresql-14-log-fdw` | `postgresql-13-log-fdw` | `postgresql-12-log-fdw` |
+| `u22` | `postgresql-17-log-fdw` | `postgresql-16-log-fdw` | `postgresql-15-log-fdw` | `postgresql-14-log-fdw` | `postgresql-13-log-fdw` | `postgresql-12-log-fdw` |
+| `u24` | `postgresql-17-log-fdw` | `postgresql-16-log-fdw` | `postgresql-15-log-fdw` | `postgresql-14-log-fdw` | `postgresql-13-log-fdw` | `postgresql-12-log-fdw` |
 
 
 
-Install `log_fdw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `log_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["log_fdw"]}'
@@ -57,10 +76,12 @@ Install `log_fdw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) play
 Install `log_fdw` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install log_fdw_17*;
-dnf install log_fdw_16*;
-dnf install log_fdw_15*;
-dnf install log_fdw_14*;
+yum install log_fdw_17*;
+yum install log_fdw_16*;
+yum install log_fdw_15*;
+yum install log_fdw_14*;
+yum install log_fdw_13*;
+yum install log_fdw_12*;
 ```
 
 
@@ -71,9 +92,20 @@ apt install postgresql-17-log-fdw;
 apt install postgresql-16-log-fdw;
 apt install postgresql-15-log-fdw;
 apt install postgresql-14-log-fdw;
+apt install postgresql-13-log-fdw;
+apt install postgresql-12-log-fdw;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `log_fdw_17*` | `log_fdw_16*` | `log_fdw_15*` | `log_fdw_14*` | `log_fdw_13*` | `log_fdw_12*` |
+| `el9` | `log_fdw_17*` | `log_fdw_16*` | `log_fdw_15*` | `log_fdw_14*` | `log_fdw_13*` | `log_fdw_12*` |
+| `d12` | `postgresql-17-log-fdw` | `postgresql-16-log-fdw` | `postgresql-15-log-fdw` | `postgresql-14-log-fdw` | `postgresql-13-log-fdw` | `postgresql-12-log-fdw` |
+| `u22` | `postgresql-17-log-fdw` | `postgresql-16-log-fdw` | `postgresql-15-log-fdw` | `postgresql-14-log-fdw` | `postgresql-13-log-fdw` | `postgresql-12-log-fdw` |
+| `u24` | `postgresql-17-log-fdw` | `postgresql-16-log-fdw` | `postgresql-15-log-fdw` | `postgresql-14-log-fdw` | `postgresql-13-log-fdw` | `postgresql-12-log-fdw` |
 
 
 

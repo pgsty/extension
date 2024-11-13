@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_store_plans](https://github.com/ossc-db/pg_store_plans) | 1.8 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_store_plans](https://github.com/ossc-db/pg_store_plans) | 1.8 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_store_plans](/pg_store_plans) | `pgdg-flaw` |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -44,14 +60,17 @@ CREATE EXTENSION pg_store_plans;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.8 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_store_plans_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.8 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-store-plan` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_store_plans_17*` | `pg_store_plans_16*` | `pg_store_plans_15*` | `pg_store_plans_14*` | `pg_store_plans_13*` | `pg_store_plans_12*` |
+| `el9` | `pg_store_plans_17*` | `pg_store_plans_16*` | `pg_store_plans_15*` | `pg_store_plans_14*` | `pg_store_plans_13*` | `pg_store_plans_12*` |
+| `d12` | `postgresql-17-pg-store-plan` | `postgresql-16-pg-store-plan` | `postgresql-15-pg-store-plan` | `postgresql-14-pg-store-plan` | `postgresql-13-pg-store-plan` | `postgresql-12-pg-store-plan` |
+| `u22` | `postgresql-17-pg-store-plan` | `postgresql-16-pg-store-plan` | `postgresql-15-pg-store-plan` | `postgresql-14-pg-store-plan` | `postgresql-13-pg-store-plan` | `postgresql-12-pg-store-plan` |
+| `u24` | `postgresql-17-pg-store-plan` | `postgresql-16-pg-store-plan` | `postgresql-15-pg-store-plan` | `postgresql-14-pg-store-plan` | `postgresql-13-pg-store-plan` | `postgresql-12-pg-store-plan` |
 
 
 
-Install `pg_store_plans` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_store_plans` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_store_plans"]}'
@@ -61,17 +80,19 @@ Install `pg_store_plans` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install
 Install `pg_store_plans` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_store_plans_16*;
-dnf install pg_store_plans_15*;
-dnf install pg_store_plans_14*;
-dnf install pg_store_plans_13*;
-dnf install pg_store_plans_12*;
+yum install pg_store_plans_17*;
+yum install pg_store_plans_16*;
+yum install pg_store_plans_15*;
+yum install pg_store_plans_14*;
+yum install pg_store_plans_13*;
+yum install pg_store_plans_12*;
 ```
 
 
 Install `pg_store_plans` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-pg-store-plan;
 apt install postgresql-16-pg-store-plan;
 apt install postgresql-15-pg-store-plan;
 apt install postgresql-14-pg-store-plan;
@@ -80,6 +101,15 @@ apt install postgresql-12-pg-store-plan;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_store_plans_17*` | `pg_store_plans_16*` | `pg_store_plans_15*` | `pg_store_plans_14*` | `pg_store_plans_13*` | `pg_store_plans_12*` |
+| `el9` | `pg_store_plans_17*` | `pg_store_plans_16*` | `pg_store_plans_15*` | `pg_store_plans_14*` | `pg_store_plans_13*` | `pg_store_plans_12*` |
+| `d12` | `postgresql-17-pg-store-plan` | `postgresql-16-pg-store-plan` | `postgresql-15-pg-store-plan` | `postgresql-14-pg-store-plan` | `postgresql-13-pg-store-plan` | `postgresql-12-pg-store-plan` |
+| `u22` | `postgresql-17-pg-store-plan` | `postgresql-16-pg-store-plan` | `postgresql-15-pg-store-plan` | `postgresql-14-pg-store-plan` | `postgresql-13-pg-store-plan` | `postgresql-12-pg-store-plan` |
+| `u24` | `postgresql-17-pg-store-plan` | `postgresql-16-pg-store-plan` | `postgresql-15-pg-store-plan` | `postgresql-14-pg-store-plan` | `postgresql-13-pg-store-plan` | `postgresql-12-pg-store-plan` |
 
 
 

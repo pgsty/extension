@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_rrule](https://github.com/petropavel13/pg_rrule) | 0.2.0 | **<span class="tcblue">MIT</span>** |  | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_rrule](https://github.com/petropavel13/pg_rrule) | 0.2.0 | **<span class="tcblue">MIT</span>** |  | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_rrule](/pg_rrule) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,13 +56,17 @@ CREATE EXTENSION pg_rrule;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [DEB](/deb) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-rrule` |  |  |  |  |  |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `` | `` | `` | `` | `` | `` |
+| `el9` | `` | `` | `` | `` | `` | `` |
+| `d12` | `postgresql-17-pg-rrule` | `postgresql-16-pg-rrule` | `postgresql-15-pg-rrule` | `postgresql-14-pg-rrule` | `postgresql-13-pg-rrule` | `postgresql-12-pg-rrule` |
+| `u22` | `postgresql-17-pg-rrule` | `postgresql-16-pg-rrule` | `postgresql-15-pg-rrule` | `postgresql-14-pg-rrule` | `postgresql-13-pg-rrule` | `postgresql-12-pg-rrule` |
+| `u24` | `postgresql-17-pg-rrule` | `postgresql-16-pg-rrule` | `postgresql-15-pg-rrule` | `postgresql-14-pg-rrule` | `postgresql-13-pg-rrule` | `postgresql-12-pg-rrule` |
 
 
 
-Install `pg_rrule` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_rrule` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_rrule"]}'
@@ -60,6 +80,15 @@ apt install postgresql-$v-pg-rrule;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `` | `` | `` | `` | `` | `` |
+| `el9` | `` | `` | `` | `` | `` | `` |
+| `d12` | `postgresql-17-pg-rrule` | `postgresql-16-pg-rrule` | `postgresql-15-pg-rrule` | `postgresql-14-pg-rrule` | `postgresql-13-pg-rrule` | `postgresql-12-pg-rrule` |
+| `u22` | `postgresql-17-pg-rrule` | `postgresql-16-pg-rrule` | `postgresql-15-pg-rrule` | `postgresql-14-pg-rrule` | `postgresql-13-pg-rrule` | `postgresql-12-pg-rrule` |
+| `u24` | `postgresql-17-pg-rrule` | `postgresql-16-pg-rrule` | `postgresql-15-pg-rrule` | `postgresql-14-pg-rrule` | `postgresql-13-pg-rrule` | `postgresql-12-pg-rrule` |
 
 
 

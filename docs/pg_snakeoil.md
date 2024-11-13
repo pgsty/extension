@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_snakeoil](https://github.com/credativ/pg_snakeoil) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | `C` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_snakeoil](https://github.com/credativ/pg_snakeoil) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_snakeoil](/pg_snakeoil) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ shared_preload_libraries = 'pg_snakeoil'; # add this extension to postgresql.con
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_snakeoil_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-snakeoil` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_snakeoil_17*` | `pg_snakeoil_16*` | `pg_snakeoil_15*` | `pg_snakeoil_14*` | `pg_snakeoil_13*` | `pg_snakeoil_12*` |
+| `el9` | `pg_snakeoil_17*` | `pg_snakeoil_16*` | `pg_snakeoil_15*` | `pg_snakeoil_14*` | `pg_snakeoil_13*` | `pg_snakeoil_12*` |
+| `d12` | `postgresql-17-snakeoil` | `postgresql-16-snakeoil` | `postgresql-15-snakeoil` | `postgresql-14-snakeoil` | `postgresql-13-snakeoil` | `postgresql-12-snakeoil` |
+| `u22` | `postgresql-17-snakeoil` | `postgresql-16-snakeoil` | `postgresql-15-snakeoil` | `postgresql-14-snakeoil` | `postgresql-13-snakeoil` | `postgresql-12-snakeoil` |
+| `u24` | `postgresql-17-snakeoil` | `postgresql-16-snakeoil` | `postgresql-15-snakeoil` | `postgresql-14-snakeoil` | `postgresql-13-snakeoil` | `postgresql-12-snakeoil` |
 
 
 
-Install `pg_snakeoil` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_snakeoil` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_snakeoil"]}'
@@ -57,12 +76,12 @@ Install `pg_snakeoil` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) 
 Install `pg_snakeoil` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_snakeoil_17*;
-dnf install pg_snakeoil_16*;
-dnf install pg_snakeoil_15*;
-dnf install pg_snakeoil_14*;
-dnf install pg_snakeoil_13*;
-dnf install pg_snakeoil_12*;
+yum install pg_snakeoil_17*;
+yum install pg_snakeoil_16*;
+yum install pg_snakeoil_15*;
+yum install pg_snakeoil_14*;
+yum install pg_snakeoil_13*;
+yum install pg_snakeoil_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-snakeoil;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_snakeoil_17*` | `pg_snakeoil_16*` | `pg_snakeoil_15*` | `pg_snakeoil_14*` | `pg_snakeoil_13*` | `pg_snakeoil_12*` |
+| `el9` | `pg_snakeoil_17*` | `pg_snakeoil_16*` | `pg_snakeoil_15*` | `pg_snakeoil_14*` | `pg_snakeoil_13*` | `pg_snakeoil_12*` |
+| `d12` | `postgresql-17-snakeoil` | `postgresql-16-snakeoil` | `postgresql-15-snakeoil` | `postgresql-14-snakeoil` | `postgresql-13-snakeoil` | `postgresql-12-snakeoil` |
+| `u22` | `postgresql-17-snakeoil` | `postgresql-16-snakeoil` | `postgresql-15-snakeoil` | `postgresql-14-snakeoil` | `postgresql-13-snakeoil` | `postgresql-12-snakeoil` |
+| `u24` | `postgresql-17-snakeoil` | `postgresql-16-snakeoil` | `postgresql-15-snakeoil` | `postgresql-14-snakeoil` | `postgresql-13-snakeoil` | `postgresql-12-snakeoil` |
 
 
 

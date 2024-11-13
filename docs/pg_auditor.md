@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_auditor](https://github.com/kouber/pg_auditor) | 0.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_auditor](https://github.com/kouber/pg_auditor) | 0.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_auditor](/pg_auditor) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pg_auditor;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_auditor_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-auditor` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_auditor_17` | `pg_auditor_16` | `pg_auditor_15` | `pg_auditor_14` | `pg_auditor_13` | `pg_auditor_12` |
+| `el9` | `pg_auditor_17` | `pg_auditor_16` | `pg_auditor_15` | `pg_auditor_14` | `pg_auditor_13` | `pg_auditor_12` |
+| `d12` | `postgresql-17-pg-auditor` | `postgresql-16-pg-auditor` | `postgresql-15-pg-auditor` | `postgresql-14-pg-auditor` | `postgresql-13-pg-auditor` | `postgresql-12-pg-auditor` |
+| `u22` | `postgresql-17-pg-auditor` | `postgresql-16-pg-auditor` | `postgresql-15-pg-auditor` | `postgresql-14-pg-auditor` | `postgresql-13-pg-auditor` | `postgresql-12-pg-auditor` |
+| `u24` | `postgresql-17-pg-auditor` | `postgresql-16-pg-auditor` | `postgresql-15-pg-auditor` | `postgresql-14-pg-auditor` | `postgresql-13-pg-auditor` | `postgresql-12-pg-auditor` |
 
 
 
-Install `pg_auditor` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_auditor` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_auditor"]}'
@@ -57,12 +76,12 @@ Install `pg_auditor` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) p
 Install `pg_auditor` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_auditor_17;
-dnf install pg_auditor_16;
-dnf install pg_auditor_15;
-dnf install pg_auditor_14;
-dnf install pg_auditor_13;
-dnf install pg_auditor_12;
+yum install pg_auditor_17;
+yum install pg_auditor_16;
+yum install pg_auditor_15;
+yum install pg_auditor_14;
+yum install pg_auditor_13;
+yum install pg_auditor_12;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pg-auditor;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_auditor_17` | `pg_auditor_16` | `pg_auditor_15` | `pg_auditor_14` | `pg_auditor_13` | `pg_auditor_12` |
+| `el9` | `pg_auditor_17` | `pg_auditor_16` | `pg_auditor_15` | `pg_auditor_14` | `pg_auditor_13` | `pg_auditor_12` |
+| `d12` | `postgresql-17-pg-auditor` | `postgresql-16-pg-auditor` | `postgresql-15-pg-auditor` | `postgresql-14-pg-auditor` | `postgresql-13-pg-auditor` | `postgresql-12-pg-auditor` |
+| `u22` | `postgresql-17-pg-auditor` | `postgresql-16-pg-auditor` | `postgresql-15-pg-auditor` | `postgresql-14-pg-auditor` | `postgresql-13-pg-auditor` | `postgresql-12-pg-auditor` |
+| `u24` | `postgresql-17-pg-auditor` | `postgresql-16-pg-auditor` | `postgresql-15-pg-auditor` | `postgresql-14-pg-auditor` | `postgresql-13-pg-auditor` | `postgresql-12-pg-auditor` |
 
 
 

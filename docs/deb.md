@@ -697,4 +697,3 @@ There are **322** extensions available in the current major version PostgreSQL 1
 
 
 
-

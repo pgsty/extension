@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_html5_email_address](https://github.com/bigsmoke/pg_html5_email_address) | 1.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_html5_email_address](https://github.com/bigsmoke/pg_html5_email_address) | 1.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_html5_email_address](/pg_html5_email_address) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pg_html5_email_address;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_html5_email_address_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-html5-email-address` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_html5_email_address_17` | `pg_html5_email_address_16` | `pg_html5_email_address_15` | `pg_html5_email_address_14` | `pg_html5_email_address_13` | `pg_html5_email_address_12` |
+| `el9` | `pg_html5_email_address_17` | `pg_html5_email_address_16` | `pg_html5_email_address_15` | `pg_html5_email_address_14` | `pg_html5_email_address_13` | `pg_html5_email_address_12` |
+| `d12` | `postgresql-17-pg-html5-email-address` | `postgresql-16-pg-html5-email-address` | `postgresql-15-pg-html5-email-address` | `postgresql-14-pg-html5-email-address` | `postgresql-13-pg-html5-email-address` | `postgresql-12-pg-html5-email-address` |
+| `u22` | `postgresql-17-pg-html5-email-address` | `postgresql-16-pg-html5-email-address` | `postgresql-15-pg-html5-email-address` | `postgresql-14-pg-html5-email-address` | `postgresql-13-pg-html5-email-address` | `postgresql-12-pg-html5-email-address` |
+| `u24` | `postgresql-17-pg-html5-email-address` | `postgresql-16-pg-html5-email-address` | `postgresql-15-pg-html5-email-address` | `postgresql-14-pg-html5-email-address` | `postgresql-13-pg-html5-email-address` | `postgresql-12-pg-html5-email-address` |
 
 
 
-Install `pg_html5_email_address` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_html5_email_address` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_html5_email_address"]}'
@@ -57,12 +76,12 @@ Install `pg_html5_email_address` via [Pigsty](https://pigsty.cc/docs/pgext/usage
 Install `pg_html5_email_address` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_html5_email_address_17;
-dnf install pg_html5_email_address_16;
-dnf install pg_html5_email_address_15;
-dnf install pg_html5_email_address_14;
-dnf install pg_html5_email_address_13;
-dnf install pg_html5_email_address_12;
+yum install pg_html5_email_address_17;
+yum install pg_html5_email_address_16;
+yum install pg_html5_email_address_15;
+yum install pg_html5_email_address_14;
+yum install pg_html5_email_address_13;
+yum install pg_html5_email_address_12;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pg-html5-email-address;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_html5_email_address_17` | `pg_html5_email_address_16` | `pg_html5_email_address_15` | `pg_html5_email_address_14` | `pg_html5_email_address_13` | `pg_html5_email_address_12` |
+| `el9` | `pg_html5_email_address_17` | `pg_html5_email_address_16` | `pg_html5_email_address_15` | `pg_html5_email_address_14` | `pg_html5_email_address_13` | `pg_html5_email_address_12` |
+| `d12` | `postgresql-17-pg-html5-email-address` | `postgresql-16-pg-html5-email-address` | `postgresql-15-pg-html5-email-address` | `postgresql-14-pg-html5-email-address` | `postgresql-13-pg-html5-email-address` | `postgresql-12-pg-html5-email-address` |
+| `u22` | `postgresql-17-pg-html5-email-address` | `postgresql-16-pg-html5-email-address` | `postgresql-15-pg-html5-email-address` | `postgresql-14-pg-html5-email-address` | `postgresql-13-pg-html5-email-address` | `postgresql-12-pg-html5-email-address` |
+| `u24` | `postgresql-17-pg-html5-email-address` | `postgresql-16-pg-html5-email-address` | `postgresql-15-pg-html5-email-address` | `postgresql-14-pg-html5-email-address` | `postgresql-13-pg-html5-email-address` | `postgresql-12-pg-html5-email-address` |
 
 
 

@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [first_last_agg](https://github.com/wulczer/first_last_agg) | 0.1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [first_last_agg](https://github.com/wulczer/first_last_agg) | 0.1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [first_last_agg](/first_last_agg) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION first_last_agg;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `first_last_agg_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-first-last-agg` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `first_last_agg_17` | `first_last_agg_16` | `first_last_agg_15` | `first_last_agg_14` | `first_last_agg_13` | `first_last_agg_12` |
+| `el9` | `first_last_agg_17` | `first_last_agg_16` | `first_last_agg_15` | `first_last_agg_14` | `first_last_agg_13` | `first_last_agg_12` |
+| `d12` | `postgresql-17-first-last-agg` | `postgresql-16-first-last-agg` | `postgresql-15-first-last-agg` | `postgresql-14-first-last-agg` | `postgresql-13-first-last-agg` | `postgresql-12-first-last-agg` |
+| `u22` | `postgresql-17-first-last-agg` | `postgresql-16-first-last-agg` | `postgresql-15-first-last-agg` | `postgresql-14-first-last-agg` | `postgresql-13-first-last-agg` | `postgresql-12-first-last-agg` |
+| `u24` | `postgresql-17-first-last-agg` | `postgresql-16-first-last-agg` | `postgresql-15-first-last-agg` | `postgresql-14-first-last-agg` | `postgresql-13-first-last-agg` | `postgresql-12-first-last-agg` |
 
 
 
-Install `first_last_agg` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `first_last_agg` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["first_last_agg"]}'
@@ -57,12 +76,12 @@ Install `first_last_agg` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install
 Install `first_last_agg` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install first_last_agg_17;
-dnf install first_last_agg_16;
-dnf install first_last_agg_15;
-dnf install first_last_agg_14;
-dnf install first_last_agg_13;
-dnf install first_last_agg_12;
+yum install first_last_agg_17;
+yum install first_last_agg_16;
+yum install first_last_agg_15;
+yum install first_last_agg_14;
+yum install first_last_agg_13;
+yum install first_last_agg_12;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-first-last-agg;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `first_last_agg_17` | `first_last_agg_16` | `first_last_agg_15` | `first_last_agg_14` | `first_last_agg_13` | `first_last_agg_12` |
+| `el9` | `first_last_agg_17` | `first_last_agg_16` | `first_last_agg_15` | `first_last_agg_14` | `first_last_agg_13` | `first_last_agg_12` |
+| `d12` | `postgresql-17-first-last-agg` | `postgresql-16-first-last-agg` | `postgresql-15-first-last-agg` | `postgresql-14-first-last-agg` | `postgresql-13-first-last-agg` | `postgresql-12-first-last-agg` |
+| `u22` | `postgresql-17-first-last-agg` | `postgresql-16-first-last-agg` | `postgresql-15-first-last-agg` | `postgresql-14-first-last-agg` | `postgresql-13-first-last-agg` | `postgresql-12-first-last-agg` |
+| `u24` | `postgresql-17-first-last-agg` | `postgresql-16-first-last-agg` | `postgresql-15-first-last-agg` | `postgresql-14-first-last-agg` | `postgresql-13-first-last-agg` | `postgresql-12-first-last-agg` |
 
 
 

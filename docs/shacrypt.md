@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [shacrypt](https://github.com/dverite/postgres-shacrypt) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [shacrypt](https://github.com/dverite/postgres-shacrypt) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [shacrypt](/shacrypt) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION shacrypt;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgres_shacrypt_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-shacrypt` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `postgres_shacrypt_17*` | `postgres_shacrypt_16*` | `postgres_shacrypt_15*` | `postgres_shacrypt_14*` | `postgres_shacrypt_13*` | `postgres_shacrypt_12*` |
+| `el9` | `postgres_shacrypt_17*` | `postgres_shacrypt_16*` | `postgres_shacrypt_15*` | `postgres_shacrypt_14*` | `postgres_shacrypt_13*` | `postgres_shacrypt_12*` |
+| `d12` | `postgresql-17-shacrypt` | `postgresql-16-shacrypt` | `postgresql-15-shacrypt` | `postgresql-14-shacrypt` | `postgresql-13-shacrypt` | `postgresql-12-shacrypt` |
+| `u22` | `postgresql-17-shacrypt` | `postgresql-16-shacrypt` | `postgresql-15-shacrypt` | `postgresql-14-shacrypt` | `postgresql-13-shacrypt` | `postgresql-12-shacrypt` |
+| `u24` | `postgresql-17-shacrypt` | `postgresql-16-shacrypt` | `postgresql-15-shacrypt` | `postgresql-14-shacrypt` | `postgresql-13-shacrypt` | `postgresql-12-shacrypt` |
 
 
 
-Install `shacrypt` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `shacrypt` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["shacrypt"]}'
@@ -57,12 +76,12 @@ Install `shacrypt` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pla
 Install `shacrypt` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install postgres_shacrypt_17*;
-dnf install postgres_shacrypt_16*;
-dnf install postgres_shacrypt_15*;
-dnf install postgres_shacrypt_14*;
-dnf install postgres_shacrypt_13*;
-dnf install postgres_shacrypt_12*;
+yum install postgres_shacrypt_17*;
+yum install postgres_shacrypt_16*;
+yum install postgres_shacrypt_15*;
+yum install postgres_shacrypt_14*;
+yum install postgres_shacrypt_13*;
+yum install postgres_shacrypt_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-shacrypt;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `postgres_shacrypt_17*` | `postgres_shacrypt_16*` | `postgres_shacrypt_15*` | `postgres_shacrypt_14*` | `postgres_shacrypt_13*` | `postgres_shacrypt_12*` |
+| `el9` | `postgres_shacrypt_17*` | `postgres_shacrypt_16*` | `postgres_shacrypt_15*` | `postgres_shacrypt_14*` | `postgres_shacrypt_13*` | `postgres_shacrypt_12*` |
+| `d12` | `postgresql-17-shacrypt` | `postgresql-16-shacrypt` | `postgresql-15-shacrypt` | `postgresql-14-shacrypt` | `postgresql-13-shacrypt` | `postgresql-12-shacrypt` |
+| `u22` | `postgresql-17-shacrypt` | `postgresql-16-shacrypt` | `postgresql-15-shacrypt` | `postgresql-14-shacrypt` | `postgresql-13-shacrypt` | `postgresql-12-shacrypt` |
+| `u24` | `postgresql-17-shacrypt` | `postgresql-16-shacrypt` | `postgresql-15-shacrypt` | `postgresql-14-shacrypt` | `postgresql-13-shacrypt` | `postgresql-12-shacrypt` |
 
 
 

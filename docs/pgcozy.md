@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgcozy](https://github.com/vventirozos/pgcozy) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |  |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgcozy](https://github.com/vventirozos/pgcozy) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |  |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgcozy](/pgcozy) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pgcozy;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgcozy_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgcozy` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgcozy_17` | `pgcozy_16` | `pgcozy_15` | `pgcozy_14` | `pgcozy_13` | `pgcozy_12` |
+| `el9` | `pgcozy_17` | `pgcozy_16` | `pgcozy_15` | `pgcozy_14` | `pgcozy_13` | `pgcozy_12` |
+| `d12` | `postgresql-17-pgcozy` | `postgresql-16-pgcozy` | `postgresql-15-pgcozy` | `postgresql-14-pgcozy` | `postgresql-13-pgcozy` | `postgresql-12-pgcozy` |
+| `u22` | `postgresql-17-pgcozy` | `postgresql-16-pgcozy` | `postgresql-15-pgcozy` | `postgresql-14-pgcozy` | `postgresql-13-pgcozy` | `postgresql-12-pgcozy` |
+| `u24` | `postgresql-17-pgcozy` | `postgresql-16-pgcozy` | `postgresql-15-pgcozy` | `postgresql-14-pgcozy` | `postgresql-13-pgcozy` | `postgresql-12-pgcozy` |
 
 
 
-Install `pgcozy` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgcozy` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgcozy"]}'
@@ -57,12 +76,12 @@ Install `pgcozy` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playb
 Install `pgcozy` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pgcozy_17;
-dnf install pgcozy_16;
-dnf install pgcozy_15;
-dnf install pgcozy_14;
-dnf install pgcozy_13;
-dnf install pgcozy_12;
+yum install pgcozy_17;
+yum install pgcozy_16;
+yum install pgcozy_15;
+yum install pgcozy_14;
+yum install pgcozy_13;
+yum install pgcozy_12;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pgcozy;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgcozy_17` | `pgcozy_16` | `pgcozy_15` | `pgcozy_14` | `pgcozy_13` | `pgcozy_12` |
+| `el9` | `pgcozy_17` | `pgcozy_16` | `pgcozy_15` | `pgcozy_14` | `pgcozy_13` | `pgcozy_12` |
+| `d12` | `postgresql-17-pgcozy` | `postgresql-16-pgcozy` | `postgresql-15-pgcozy` | `postgresql-14-pgcozy` | `postgresql-13-pgcozy` | `postgresql-12-pgcozy` |
+| `u22` | `postgresql-17-pgcozy` | `postgresql-16-pgcozy` | `postgresql-15-pgcozy` | `postgresql-14-pgcozy` | `postgresql-13-pgcozy` | `postgresql-12-pgcozy` |
+| `u24` | `postgresql-17-pgcozy` | `postgresql-16-pgcozy` | `postgresql-15-pgcozy` | `postgresql-14-pgcozy` | `postgresql-13-pgcozy` | `postgresql-12-pgcozy` |
 
 
 

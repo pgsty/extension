@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pllua](https://github.com/pllua/pllua) | 2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pllua](https://github.com/pllua/pllua) | 2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pllua](/pllua) |  | `pg_catalog` |  | [`hstore_pllua`](/hstore_pllua) |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pllua;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pllua_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pllua` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pllua_17*` | `pllua_16*` | `pllua_15*` | `pllua_14*` | `pllua_13*` | `pllua_12*` |
+| `el9` | `pllua_17*` | `pllua_16*` | `pllua_15*` | `pllua_14*` | `pllua_13*` | `pllua_12*` |
+| `d12` | `postgresql-17-pllua` | `postgresql-16-pllua` | `postgresql-15-pllua` | `postgresql-14-pllua` | `postgresql-13-pllua` | `postgresql-12-pllua` |
+| `u22` | `postgresql-17-pllua` | `postgresql-16-pllua` | `postgresql-15-pllua` | `postgresql-14-pllua` | `postgresql-13-pllua` | `postgresql-12-pllua` |
+| `u24` | `postgresql-17-pllua` | `postgresql-16-pllua` | `postgresql-15-pllua` | `postgresql-14-pllua` | `postgresql-13-pllua` | `postgresql-12-pllua` |
 
 
 
-Install `pllua` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pllua` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pllua"]}'
@@ -57,12 +76,12 @@ Install `pllua` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbo
 Install `pllua` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pllua_17*;
-dnf install pllua_16*;
-dnf install pllua_15*;
-dnf install pllua_14*;
-dnf install pllua_13*;
-dnf install pllua_12*;
+yum install pllua_17*;
+yum install pllua_16*;
+yum install pllua_15*;
+yum install pllua_14*;
+yum install pllua_13*;
+yum install pllua_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pllua;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pllua_17*` | `pllua_16*` | `pllua_15*` | `pllua_14*` | `pllua_13*` | `pllua_12*` |
+| `el9` | `pllua_17*` | `pllua_16*` | `pllua_15*` | `pllua_14*` | `pllua_13*` | `pllua_12*` |
+| `d12` | `postgresql-17-pllua` | `postgresql-16-pllua` | `postgresql-15-pllua` | `postgresql-14-pllua` | `postgresql-13-pllua` | `postgresql-12-pllua` |
+| `u22` | `postgresql-17-pllua` | `postgresql-16-pllua` | `postgresql-15-pllua` | `postgresql-14-pllua` | `postgresql-13-pllua` | `postgresql-12-pllua` |
+| `u24` | `postgresql-17-pllua` | `postgresql-16-pllua` | `postgresql-15-pllua` | `postgresql-14-pllua` | `postgresql-13-pllua` | `postgresql-12-pllua` |
 
 
 

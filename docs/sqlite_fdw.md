@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [sqlite_fdw](https://github.com/pgspider/sqlite_fdw) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [sqlite_fdw](https://github.com/pgspider/sqlite_fdw) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [sqlite_fdw](/sqlite_fdw) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION sqlite_fdw;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `sqlite_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 2.4.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-sqlite-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `sqlite_fdw_17*` | `sqlite_fdw_16*` | `sqlite_fdw_15*` | `sqlite_fdw_14*` | `sqlite_fdw_13*` | `sqlite_fdw_12*` |
+| `el9` | `sqlite_fdw_17*` | `sqlite_fdw_16*` | `sqlite_fdw_15*` | `sqlite_fdw_14*` | `sqlite_fdw_13*` | `sqlite_fdw_12*` |
+| `d12` | `postgresql-17-sqlite-fdw` | `postgresql-16-sqlite-fdw` | `postgresql-15-sqlite-fdw` | `postgresql-14-sqlite-fdw` | `postgresql-13-sqlite-fdw` | `postgresql-12-sqlite-fdw` |
+| `u22` | `postgresql-17-sqlite-fdw` | `postgresql-16-sqlite-fdw` | `postgresql-15-sqlite-fdw` | `postgresql-14-sqlite-fdw` | `postgresql-13-sqlite-fdw` | `postgresql-12-sqlite-fdw` |
+| `u24` | `postgresql-17-sqlite-fdw` | `postgresql-16-sqlite-fdw` | `postgresql-15-sqlite-fdw` | `postgresql-14-sqlite-fdw` | `postgresql-13-sqlite-fdw` | `postgresql-12-sqlite-fdw` |
 
 
 
-Install `sqlite_fdw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `sqlite_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["sqlite_fdw"]}'
@@ -57,18 +76,19 @@ Install `sqlite_fdw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) p
 Install `sqlite_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install sqlite_fdw_17*;
-dnf install sqlite_fdw_16*;
-dnf install sqlite_fdw_15*;
-dnf install sqlite_fdw_14*;
-dnf install sqlite_fdw_13*;
-dnf install sqlite_fdw_12*;
+yum install sqlite_fdw_17*;
+yum install sqlite_fdw_16*;
+yum install sqlite_fdw_15*;
+yum install sqlite_fdw_14*;
+yum install sqlite_fdw_13*;
+yum install sqlite_fdw_12*;
 ```
 
 
 Install `sqlite_fdw` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-sqlite-fdw;
 apt install postgresql-16-sqlite-fdw;
 apt install postgresql-15-sqlite-fdw;
 apt install postgresql-14-sqlite-fdw;
@@ -77,6 +97,15 @@ apt install postgresql-12-sqlite-fdw;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `sqlite_fdw_17*` | `sqlite_fdw_16*` | `sqlite_fdw_15*` | `sqlite_fdw_14*` | `sqlite_fdw_13*` | `sqlite_fdw_12*` |
+| `el9` | `sqlite_fdw_17*` | `sqlite_fdw_16*` | `sqlite_fdw_15*` | `sqlite_fdw_14*` | `sqlite_fdw_13*` | `sqlite_fdw_12*` |
+| `d12` | `postgresql-17-sqlite-fdw` | `postgresql-16-sqlite-fdw` | `postgresql-15-sqlite-fdw` | `postgresql-14-sqlite-fdw` | `postgresql-13-sqlite-fdw` | `postgresql-12-sqlite-fdw` |
+| `u22` | `postgresql-17-sqlite-fdw` | `postgresql-16-sqlite-fdw` | `postgresql-15-sqlite-fdw` | `postgresql-14-sqlite-fdw` | `postgresql-13-sqlite-fdw` | `postgresql-12-sqlite-fdw` |
+| `u24` | `postgresql-17-sqlite-fdw` | `postgresql-16-sqlite-fdw` | `postgresql-15-sqlite-fdw` | `postgresql-14-sqlite-fdw` | `postgresql-13-sqlite-fdw` | `postgresql-12-sqlite-fdw` |
 
 
 

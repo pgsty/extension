@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [ddlx](https://github.com/lacanoid/pgddl) | 0.27 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [ddlx](https://github.com/lacanoid/pgddl) | 0.27 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [ddlx](/ddlx) | `pgdg-flaw` |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION ddlx;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.27 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `ddlx_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.28 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-ddlx` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `ddlx_17*` | `ddlx_16*` | `ddlx_15*` | `ddlx_14*` | `ddlx_13*` | `ddlx_12*` |
+| `el9` | `ddlx_17*` | `ddlx_16*` | `ddlx_15*` | `ddlx_14*` | `ddlx_13*` | `ddlx_12*` |
+| `d12` | `postgresql-17-ddlx` | `postgresql-16-ddlx` | `postgresql-15-ddlx` | `postgresql-14-ddlx` | `postgresql-13-ddlx` | `postgresql-12-ddlx` |
+| `u22` | `postgresql-17-ddlx` | `postgresql-16-ddlx` | `postgresql-15-ddlx` | `postgresql-14-ddlx` | `postgresql-13-ddlx` | `postgresql-12-ddlx` |
+| `u24` | `postgresql-17-ddlx` | `postgresql-16-ddlx` | `postgresql-15-ddlx` | `postgresql-14-ddlx` | `postgresql-13-ddlx` | `postgresql-12-ddlx` |
 
 
 
-Install `ddlx` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `ddlx` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["ddlx"]}'
@@ -57,12 +76,12 @@ Install `ddlx` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playboo
 Install `ddlx` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install ddlx_17*;
-dnf install ddlx_16*;
-dnf install ddlx_15*;
-dnf install ddlx_14*;
-dnf install ddlx_13*;
-dnf install ddlx_12*;
+yum install ddlx_17*;
+yum install ddlx_16*;
+yum install ddlx_15*;
+yum install ddlx_14*;
+yum install ddlx_13*;
+yum install ddlx_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-ddlx;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `ddlx_17*` | `ddlx_16*` | `ddlx_15*` | `ddlx_14*` | `ddlx_13*` | `ddlx_12*` |
+| `el9` | `ddlx_17*` | `ddlx_16*` | `ddlx_15*` | `ddlx_14*` | `ddlx_13*` | `ddlx_12*` |
+| `d12` | `postgresql-17-ddlx` | `postgresql-16-ddlx` | `postgresql-15-ddlx` | `postgresql-14-ddlx` | `postgresql-13-ddlx` | `postgresql-12-ddlx` |
+| `u22` | `postgresql-17-ddlx` | `postgresql-16-ddlx` | `postgresql-15-ddlx` | `postgresql-14-ddlx` | `postgresql-13-ddlx` | `postgresql-12-ddlx` |
+| `u24` | `postgresql-17-ddlx` | `postgresql-16-ddlx` | `postgresql-15-ddlx` | `postgresql-14-ddlx` | `postgresql-13-ddlx` | `postgresql-12-ddlx` |
 
 
 

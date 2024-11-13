@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgjwt](https://github.com/michelp/pgjwt) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgjwt](https://github.com/michelp/pgjwt) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgjwt](/pgjwt) | `supabase` |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pgjwt;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgjwt_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgjwt` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgjwt_17*` | `pgjwt_16*` | `pgjwt_15*` | `pgjwt_14*` | `pgjwt_13*` | `pgjwt_12*` |
+| `el9` | `pgjwt_17*` | `pgjwt_16*` | `pgjwt_15*` | `pgjwt_14*` | `pgjwt_13*` | `pgjwt_12*` |
+| `d12` | `postgresql-17-pgjwt` | `postgresql-16-pgjwt` | `postgresql-15-pgjwt` | `postgresql-14-pgjwt` | `postgresql-13-pgjwt` | `postgresql-12-pgjwt` |
+| `u22` | `postgresql-17-pgjwt` | `postgresql-16-pgjwt` | `postgresql-15-pgjwt` | `postgresql-14-pgjwt` | `postgresql-13-pgjwt` | `postgresql-12-pgjwt` |
+| `u24` | `postgresql-17-pgjwt` | `postgresql-16-pgjwt` | `postgresql-15-pgjwt` | `postgresql-14-pgjwt` | `postgresql-13-pgjwt` | `postgresql-12-pgjwt` |
 
 
 
-Install `pgjwt` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgjwt` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgjwt"]}'
@@ -57,12 +76,12 @@ Install `pgjwt` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbo
 Install `pgjwt` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pgjwt_17*;
-dnf install pgjwt_16*;
-dnf install pgjwt_15*;
-dnf install pgjwt_14*;
-dnf install pgjwt_13*;
-dnf install pgjwt_12*;
+yum install pgjwt_17*;
+yum install pgjwt_16*;
+yum install pgjwt_15*;
+yum install pgjwt_14*;
+yum install pgjwt_13*;
+yum install pgjwt_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pgjwt;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgjwt_17*` | `pgjwt_16*` | `pgjwt_15*` | `pgjwt_14*` | `pgjwt_13*` | `pgjwt_12*` |
+| `el9` | `pgjwt_17*` | `pgjwt_16*` | `pgjwt_15*` | `pgjwt_14*` | `pgjwt_13*` | `pgjwt_12*` |
+| `d12` | `postgresql-17-pgjwt` | `postgresql-16-pgjwt` | `postgresql-15-pgjwt` | `postgresql-14-pgjwt` | `postgresql-13-pgjwt` | `postgresql-12-pgjwt` |
+| `u22` | `postgresql-17-pgjwt` | `postgresql-16-pgjwt` | `postgresql-15-pgjwt` | `postgresql-14-pgjwt` | `postgresql-13-pgjwt` | `postgresql-12-pgjwt` |
+| `u24` | `postgresql-17-pgjwt` | `postgresql-16-pgjwt` | `postgresql-15-pgjwt` | `postgresql-14-pgjwt` | `postgresql-13-pgjwt` | `postgresql-12-pgjwt` |
 
 
 

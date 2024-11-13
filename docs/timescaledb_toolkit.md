@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [timescaledb_toolkit](https://github.com/timescale/timescaledb-toolkit) | 1.18.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | **<span class="tcwarn">TIMESCALE</span>** | `Rust` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [timescaledb_toolkit](https://github.com/timescale/timescaledb-toolkit) | 1.18.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | **<span class="tcwarn">TIMESCALE</span>** | `Rust` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [timescaledb_toolkit](/timescaledb_toolkit) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION timescaledb_toolkit;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.18.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-toolkit-postgresql-$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.18.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-toolkit-postgresql-$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `el9` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `d12` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `u22` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `u24` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
 
 
 
-Install `timescaledb_toolkit` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `timescaledb_toolkit` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["timescaledb_toolkit"]}'
@@ -57,17 +76,19 @@ Install `timescaledb_toolkit` via [Pigsty](https://pigsty.cc/docs/pgext/usage/in
 Install `timescaledb_toolkit` [RPM](/rpm) from the **<span class="tcwarn">TIMESCALE</span>** **YUM** repo:
 
 ```bash
-dnf install timescaledb-toolkit-postgresql-16;
-dnf install timescaledb-toolkit-postgresql-15;
-dnf install timescaledb-toolkit-postgresql-14;
-dnf install timescaledb-toolkit-postgresql-13;
-dnf install timescaledb-toolkit-postgresql-12;
+yum install timescaledb-toolkit-postgresql-17;
+yum install timescaledb-toolkit-postgresql-16;
+yum install timescaledb-toolkit-postgresql-15;
+yum install timescaledb-toolkit-postgresql-14;
+yum install timescaledb-toolkit-postgresql-13;
+yum install timescaledb-toolkit-postgresql-12;
 ```
 
 
 Install `timescaledb_toolkit` [DEB](/deb) from the **<span class="tcwarn">TIMESCALE</span>** **APT** repo:
 
 ```bash
+apt install timescaledb-toolkit-postgresql-17;
 apt install timescaledb-toolkit-postgresql-16;
 apt install timescaledb-toolkit-postgresql-15;
 apt install timescaledb-toolkit-postgresql-14;
@@ -75,6 +96,16 @@ apt install timescaledb-toolkit-postgresql-13;
 apt install timescaledb-toolkit-postgresql-12;
 ```
 
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `el9` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `d12` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `u22` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `u24` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
 
 
 
@@ -97,4 +128,3 @@ The following links lead to pages for the different features in the TimescaleDB 
 - [Percentile Approximation](percentile_approximation.md) - A simple percentile approximation interface [([Methods](percentile_approximation.md#api))], wraps and simplifies the lower level algorithms:
     - [T-Digest](tdigest.md) – A quantile estimate sketch optimized to provide more accurate estimates near the tails (i.e. 0.001 or 0.995) than conventional approaches. ([Methods](tdigest#tdigest_api))
     - [UddSketch](uddsketch.md) – A quantile estimate sketch which provides a guaranteed maximum relative error. ([Methods](uddsketch.md#uddsketch_api))
-

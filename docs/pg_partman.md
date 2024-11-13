@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_partman](https://github.com/pgpartman/pg_partman) | 5.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_partman](https://github.com/pgpartman/pg_partman) | 5.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_partman](/pg_partman) |  |  |  | [`timeseries`](/timeseries) |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pg_partman;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 5.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_partman_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 5.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-partman` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_partman_17*` | `pg_partman_16*` | `pg_partman_15*` | `pg_partman_14*` | `pg_partman_13*` | `pg_partman_12*` |
+| `el9` | `pg_partman_17*` | `pg_partman_16*` | `pg_partman_15*` | `pg_partman_14*` | `pg_partman_13*` | `pg_partman_12*` |
+| `d12` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | `postgresql-13-partman` | `postgresql-12-partman` |
+| `u22` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | `postgresql-13-partman` | `postgresql-12-partman` |
+| `u24` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | `postgresql-13-partman` | `postgresql-12-partman` |
 
 
 
-Install `pg_partman` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_partman` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_partman"]}'
@@ -57,11 +76,12 @@ Install `pg_partman` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) p
 Install `pg_partman` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pg_partman_16*;
-dnf install pg_partman_15*;
-dnf install pg_partman_14*;
-dnf install pg_partman_13*;
-dnf install pg_partman_12*;
+yum install pg_partman_17*;
+yum install pg_partman_16*;
+yum install pg_partman_15*;
+yum install pg_partman_14*;
+yum install pg_partman_13*;
+yum install pg_partman_12*;
 ```
 
 
@@ -77,6 +97,15 @@ apt install postgresql-12-partman;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_partman_17*` | `pg_partman_16*` | `pg_partman_15*` | `pg_partman_14*` | `pg_partman_13*` | `pg_partman_12*` |
+| `el9` | `pg_partman_17*` | `pg_partman_16*` | `pg_partman_15*` | `pg_partman_14*` | `pg_partman_13*` | `pg_partman_12*` |
+| `d12` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | `postgresql-13-partman` | `postgresql-12-partman` |
+| `u22` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | `postgresql-13-partman` | `postgresql-12-partman` |
+| `u24` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | `postgresql-13-partman` | `postgresql-12-partman` |
 
 
 

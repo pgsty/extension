@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgqr](https://github.com/AbdulYadi/pgqr) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgqr](https://github.com/AbdulYadi/pgqr) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgqr](/pgqr) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pgqr;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgqr_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgqr` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgqr_17*` | `pgqr_16*` | `pgqr_15*` | `pgqr_14*` | `pgqr_13*` | `pgqr_12*` |
+| `el9` | `pgqr_17*` | `pgqr_16*` | `pgqr_15*` | `pgqr_14*` | `pgqr_13*` | `pgqr_12*` |
+| `d12` | `postgresql-17-pgqr` | `postgresql-16-pgqr` | `postgresql-15-pgqr` | `postgresql-14-pgqr` | `postgresql-13-pgqr` | `postgresql-12-pgqr` |
+| `u22` | `postgresql-17-pgqr` | `postgresql-16-pgqr` | `postgresql-15-pgqr` | `postgresql-14-pgqr` | `postgresql-13-pgqr` | `postgresql-12-pgqr` |
+| `u24` | `postgresql-17-pgqr` | `postgresql-16-pgqr` | `postgresql-15-pgqr` | `postgresql-14-pgqr` | `postgresql-13-pgqr` | `postgresql-12-pgqr` |
 
 
 
-Install `pgqr` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgqr` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgqr"]}'
@@ -57,12 +76,12 @@ Install `pgqr` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playboo
 Install `pgqr` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pgqr_17*;
-dnf install pgqr_16*;
-dnf install pgqr_15*;
-dnf install pgqr_14*;
-dnf install pgqr_13*;
-dnf install pgqr_12*;
+yum install pgqr_17*;
+yum install pgqr_16*;
+yum install pgqr_15*;
+yum install pgqr_14*;
+yum install pgqr_13*;
+yum install pgqr_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pgqr;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgqr_17*` | `pgqr_16*` | `pgqr_15*` | `pgqr_14*` | `pgqr_13*` | `pgqr_12*` |
+| `el9` | `pgqr_17*` | `pgqr_16*` | `pgqr_15*` | `pgqr_14*` | `pgqr_13*` | `pgqr_12*` |
+| `d12` | `postgresql-17-pgqr` | `postgresql-16-pgqr` | `postgresql-15-pgqr` | `postgresql-14-pgqr` | `postgresql-13-pgqr` | `postgresql-12-pgqr` |
+| `u22` | `postgresql-17-pgqr` | `postgresql-16-pgqr` | `postgresql-15-pgqr` | `postgresql-14-pgqr` | `postgresql-13-pgqr` | `postgresql-12-pgqr` |
+| `u24` | `postgresql-17-pgqr` | `postgresql-16-pgqr` | `postgresql-15-pgqr` | `postgresql-14-pgqr` | `postgresql-13-pgqr` | `postgresql-12-pgqr` |
 
 
 

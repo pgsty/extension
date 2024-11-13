@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pldbgapi](https://github.com/EnterpriseDB/pldebugger) | 1.1 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pldbgapi](https://github.com/EnterpriseDB/pldebugger) | 1.1 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pldebugger](/pldbgapi) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pldbgapi;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `pldebugger_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.1 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pldebugger` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pldebugger_17*` | `pldebugger_16*` | `pldebugger_15*` | `pldebugger_14*` | `pldebugger_13*` | `pldebugger_12*` |
+| `el9` | `pldebugger_17*` | `pldebugger_16*` | `pldebugger_15*` | `pldebugger_14*` | `pldebugger_13*` | `pldebugger_12*` |
+| `d12` | `postgresql-17-pldebugger` | `postgresql-16-pldebugger` | `postgresql-15-pldebugger` | `postgresql-14-pldebugger` | `postgresql-13-pldebugger` | `postgresql-12-pldebugger` |
+| `u22` | `postgresql-17-pldebugger` | `postgresql-16-pldebugger` | `postgresql-15-pldebugger` | `postgresql-14-pldebugger` | `postgresql-13-pldebugger` | `postgresql-12-pldebugger` |
+| `u24` | `postgresql-17-pldebugger` | `postgresql-16-pldebugger` | `postgresql-15-pldebugger` | `postgresql-14-pldebugger` | `postgresql-13-pldebugger` | `postgresql-12-pldebugger` |
 
 
 
-Install `pldebugger` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pldebugger` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pldebugger"]}'
@@ -57,12 +76,12 @@ Install `pldebugger` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) p
 Install `pldebugger` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pldebugger_17*;
-dnf install pldebugger_16*;
-dnf install pldebugger_15*;
-dnf install pldebugger_14*;
-dnf install pldebugger_13*;
-dnf install pldebugger_12*;
+yum install pldebugger_17*;
+yum install pldebugger_16*;
+yum install pldebugger_15*;
+yum install pldebugger_14*;
+yum install pldebugger_13*;
+yum install pldebugger_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pldebugger;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pldebugger_17*` | `pldebugger_16*` | `pldebugger_15*` | `pldebugger_14*` | `pldebugger_13*` | `pldebugger_12*` |
+| `el9` | `pldebugger_17*` | `pldebugger_16*` | `pldebugger_15*` | `pldebugger_14*` | `pldebugger_13*` | `pldebugger_12*` |
+| `d12` | `postgresql-17-pldebugger` | `postgresql-16-pldebugger` | `postgresql-15-pldebugger` | `postgresql-14-pldebugger` | `postgresql-13-pldebugger` | `postgresql-12-pldebugger` |
+| `u22` | `postgresql-17-pldebugger` | `postgresql-16-pldebugger` | `postgresql-15-pldebugger` | `postgresql-14-pldebugger` | `postgresql-13-pldebugger` | `postgresql-12-pldebugger` |
+| `u24` | `postgresql-17-pldebugger` | `postgresql-16-pldebugger` | `postgresql-15-pldebugger` | `postgresql-14-pldebugger` | `postgresql-13-pldebugger` | `postgresql-12-pldebugger` |
 
 
 

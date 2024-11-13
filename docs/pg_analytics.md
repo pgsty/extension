@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_analytics](https://github.com/paradedb/pg_analytics) | 0.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_analytics](https://github.com/paradedb/pg_analytics) | 0.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_analytics](/pg_analytics) | `pgrx` | `paradedb` |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pg_analytics;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_analytics_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
-| [DEB](/deb) | 0.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-analytics` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_analytics_17` | `pg_analytics_16` | `pg_analytics_15` | `pg_analytics_14` | `pg_analytics_13` | `pg_analytics_12` |
+| `el9` | `pg_analytics_17` | `pg_analytics_16` | `pg_analytics_15` | `pg_analytics_14` | `pg_analytics_13` | `pg_analytics_12` |
+| `d12` | `postgresql-17-pg-analytics` | `postgresql-16-pg-analytics` | `postgresql-15-pg-analytics` | `postgresql-14-pg-analytics` | `postgresql-13-pg-analytics` | `postgresql-12-pg-analytics` |
+| `u22` | `postgresql-17-pg-analytics` | `postgresql-16-pg-analytics` | `postgresql-15-pg-analytics` | `postgresql-14-pg-analytics` | `postgresql-13-pg-analytics` | `postgresql-12-pg-analytics` |
+| `u24` | `postgresql-17-pg-analytics` | `postgresql-16-pg-analytics` | `postgresql-15-pg-analytics` | `postgresql-14-pg-analytics` | `postgresql-13-pg-analytics` | `postgresql-12-pg-analytics` |
 
 
 
-Install `pg_analytics` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_analytics` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_analytics"]}'
@@ -57,11 +76,12 @@ Install `pg_analytics` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/)
 Install `pg_analytics` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_analytics_17;
-dnf install pg_analytics_16;
-dnf install pg_analytics_15;
-dnf install pg_analytics_14;
-dnf install pg_analytics_13;
+yum install pg_analytics_17;
+yum install pg_analytics_16;
+yum install pg_analytics_15;
+yum install pg_analytics_14;
+yum install pg_analytics_13;
+yum install pg_analytics_12;
 ```
 
 
@@ -73,8 +93,19 @@ apt install postgresql-16-pg-analytics;
 apt install postgresql-15-pg-analytics;
 apt install postgresql-14-pg-analytics;
 apt install postgresql-13-pg-analytics;
+apt install postgresql-12-pg-analytics;
 ```
 
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_analytics_17` | `pg_analytics_16` | `pg_analytics_15` | `pg_analytics_14` | `pg_analytics_13` | `pg_analytics_12` |
+| `el9` | `pg_analytics_17` | `pg_analytics_16` | `pg_analytics_15` | `pg_analytics_14` | `pg_analytics_13` | `pg_analytics_12` |
+| `d12` | `postgresql-17-pg-analytics` | `postgresql-16-pg-analytics` | `postgresql-15-pg-analytics` | `postgresql-14-pg-analytics` | `postgresql-13-pg-analytics` | `postgresql-12-pg-analytics` |
+| `u22` | `postgresql-17-pg-analytics` | `postgresql-16-pg-analytics` | `postgresql-15-pg-analytics` | `postgresql-14-pg-analytics` | `postgresql-13-pg-analytics` | `postgresql-12-pg-analytics` |
+| `u24` | `postgresql-17-pg-analytics` | `postgresql-16-pg-analytics` | `postgresql-15-pg-analytics` | `postgresql-14-pg-analytics` | `postgresql-13-pg-analytics` | `postgresql-12-pg-analytics` |
 
 
 
@@ -135,6 +166,5 @@ CREATE FOREIGN TABLE iceberg_table (x INT)
 -- Success! You can now query the Iceberg table
 SELECT COUNT(*) FROM iceberg_table;
 ```
-
 
 

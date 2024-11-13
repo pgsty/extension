@@ -199,4 +199,3 @@ pg12: postgresql-12-pglogical postgresql-12-pglogical-ticker postgresql-12-pgl-d
 
 
 --------
-

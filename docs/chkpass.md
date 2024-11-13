@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [chkpass](https://github.com/lacanoid/chkpass) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [chkpass](https://github.com/lacanoid/chkpass) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [chkpass](/chkpass) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION chkpass;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `chkpass_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-chkpass` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `chkpass_17*` | `chkpass_16*` | `chkpass_15*` | `chkpass_14*` | `chkpass_13*` | `chkpass_12*` |
+| `el9` | `chkpass_17*` | `chkpass_16*` | `chkpass_15*` | `chkpass_14*` | `chkpass_13*` | `chkpass_12*` |
+| `d12` | `postgresql-17-chkpass` | `postgresql-16-chkpass` | `postgresql-15-chkpass` | `postgresql-14-chkpass` | `postgresql-13-chkpass` | `postgresql-12-chkpass` |
+| `u22` | `postgresql-17-chkpass` | `postgresql-16-chkpass` | `postgresql-15-chkpass` | `postgresql-14-chkpass` | `postgresql-13-chkpass` | `postgresql-12-chkpass` |
+| `u24` | `postgresql-17-chkpass` | `postgresql-16-chkpass` | `postgresql-15-chkpass` | `postgresql-14-chkpass` | `postgresql-13-chkpass` | `postgresql-12-chkpass` |
 
 
 
-Install `chkpass` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `chkpass` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["chkpass"]}'
@@ -57,12 +76,12 @@ Install `chkpass` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) play
 Install `chkpass` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install chkpass_17*;
-dnf install chkpass_16*;
-dnf install chkpass_15*;
-dnf install chkpass_14*;
-dnf install chkpass_13*;
-dnf install chkpass_12*;
+yum install chkpass_17*;
+yum install chkpass_16*;
+yum install chkpass_15*;
+yum install chkpass_14*;
+yum install chkpass_13*;
+yum install chkpass_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-chkpass;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `chkpass_17*` | `chkpass_16*` | `chkpass_15*` | `chkpass_14*` | `chkpass_13*` | `chkpass_12*` |
+| `el9` | `chkpass_17*` | `chkpass_16*` | `chkpass_15*` | `chkpass_14*` | `chkpass_13*` | `chkpass_12*` |
+| `d12` | `postgresql-17-chkpass` | `postgresql-16-chkpass` | `postgresql-15-chkpass` | `postgresql-14-chkpass` | `postgresql-13-chkpass` | `postgresql-12-chkpass` |
+| `u22` | `postgresql-17-chkpass` | `postgresql-16-chkpass` | `postgresql-15-chkpass` | `postgresql-14-chkpass` | `postgresql-13-chkpass` | `postgresql-12-chkpass` |
+| `u24` | `postgresql-17-chkpass` | `postgresql-16-chkpass` | `postgresql-15-chkpass` | `postgresql-14-chkpass` | `postgresql-13-chkpass` | `postgresql-12-chkpass` |
 
 
 

@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pre_prepare](https://github.com/dimitri/preprepare) | 0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pre_prepare](https://github.com/dimitri/preprepare) | 0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [preprepare](/pre_prepare) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pre_prepare;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `preprepare_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-preprepare` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `preprepare_17*` | `preprepare_16*` | `preprepare_15*` | `preprepare_14*` | `preprepare_13*` | `preprepare_12*` |
+| `el9` | `preprepare_17*` | `preprepare_16*` | `preprepare_15*` | `preprepare_14*` | `preprepare_13*` | `preprepare_12*` |
+| `d12` | `postgresql-17-preprepare` | `postgresql-16-preprepare` | `postgresql-15-preprepare` | `postgresql-14-preprepare` | `postgresql-13-preprepare` | `postgresql-12-preprepare` |
+| `u22` | `postgresql-17-preprepare` | `postgresql-16-preprepare` | `postgresql-15-preprepare` | `postgresql-14-preprepare` | `postgresql-13-preprepare` | `postgresql-12-preprepare` |
+| `u24` | `postgresql-17-preprepare` | `postgresql-16-preprepare` | `postgresql-15-preprepare` | `postgresql-14-preprepare` | `postgresql-13-preprepare` | `postgresql-12-preprepare` |
 
 
 
-Install `preprepare` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `preprepare` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["preprepare"]}'
@@ -57,12 +76,12 @@ Install `preprepare` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) p
 Install `preprepare` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install preprepare_17*;
-dnf install preprepare_16*;
-dnf install preprepare_15*;
-dnf install preprepare_14*;
-dnf install preprepare_13*;
-dnf install preprepare_12*;
+yum install preprepare_17*;
+yum install preprepare_16*;
+yum install preprepare_15*;
+yum install preprepare_14*;
+yum install preprepare_13*;
+yum install preprepare_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-preprepare;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `preprepare_17*` | `preprepare_16*` | `preprepare_15*` | `preprepare_14*` | `preprepare_13*` | `preprepare_12*` |
+| `el9` | `preprepare_17*` | `preprepare_16*` | `preprepare_15*` | `preprepare_14*` | `preprepare_13*` | `preprepare_12*` |
+| `d12` | `postgresql-17-preprepare` | `postgresql-16-preprepare` | `postgresql-15-preprepare` | `postgresql-14-preprepare` | `postgresql-13-preprepare` | `postgresql-12-preprepare` |
+| `u22` | `postgresql-17-preprepare` | `postgresql-16-preprepare` | `postgresql-15-preprepare` | `postgresql-14-preprepare` | `postgresql-13-preprepare` | `postgresql-12-preprepare` |
+| `u24` | `postgresql-17-preprepare` | `postgresql-16-preprepare` | `postgresql-15-preprepare` | `postgresql-14-preprepare` | `postgresql-13-preprepare` | `postgresql-12-preprepare` |
 
 
 

@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_math](https://github.com/chanukyasds/pg_math) | 1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_math](https://github.com/chanukyasds/pg_math) | 1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_math](/pg_math) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pg_math;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_math_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-math` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_math_17*` | `pg_math_16*` | `pg_math_15*` | `pg_math_14*` | `pg_math_13*` | `pg_math_12*` |
+| `el9` | `pg_math_17*` | `pg_math_16*` | `pg_math_15*` | `pg_math_14*` | `pg_math_13*` | `pg_math_12*` |
+| `d12` | `postgresql-17-pg-math` | `postgresql-16-pg-math` | `postgresql-15-pg-math` | `postgresql-14-pg-math` | `postgresql-13-pg-math` | `postgresql-12-pg-math` |
+| `u22` | `postgresql-17-pg-math` | `postgresql-16-pg-math` | `postgresql-15-pg-math` | `postgresql-14-pg-math` | `postgresql-13-pg-math` | `postgresql-12-pg-math` |
+| `u24` | `postgresql-17-pg-math` | `postgresql-16-pg-math` | `postgresql-15-pg-math` | `postgresql-14-pg-math` | `postgresql-13-pg-math` | `postgresql-12-pg-math` |
 
 
 
-Install `pg_math` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_math` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_math"]}'
@@ -57,12 +76,12 @@ Install `pg_math` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) play
 Install `pg_math` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_math_17*;
-dnf install pg_math_16*;
-dnf install pg_math_15*;
-dnf install pg_math_14*;
-dnf install pg_math_13*;
-dnf install pg_math_12*;
+yum install pg_math_17*;
+yum install pg_math_16*;
+yum install pg_math_15*;
+yum install pg_math_14*;
+yum install pg_math_13*;
+yum install pg_math_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pg-math;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_math_17*` | `pg_math_16*` | `pg_math_15*` | `pg_math_14*` | `pg_math_13*` | `pg_math_12*` |
+| `el9` | `pg_math_17*` | `pg_math_16*` | `pg_math_15*` | `pg_math_14*` | `pg_math_13*` | `pg_math_12*` |
+| `d12` | `postgresql-17-pg-math` | `postgresql-16-pg-math` | `postgresql-15-pg-math` | `postgresql-14-pg-math` | `postgresql-13-pg-math` | `postgresql-12-pg-math` |
+| `u22` | `postgresql-17-pg-math` | `postgresql-16-pg-math` | `postgresql-15-pg-math` | `postgresql-14-pg-math` | `postgresql-13-pg-math` | `postgresql-12-pg-math` |
+| `u24` | `postgresql-17-pg-math` | `postgresql-16-pg-math` | `postgresql-15-pg-math` | `postgresql-14-pg-math` | `postgresql-13-pg-math` | `postgresql-12-pg-math` |
 
 
 

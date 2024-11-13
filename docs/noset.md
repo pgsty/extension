@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [noset](https://gitlab.com/ongresinc/extensions/noset) | 0.3.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [noset](https://gitlab.com/ongresinc/extensions/noset) | 0.3.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [noset](/noset) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -44,14 +60,17 @@ CREATE EXTENSION noset;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.3.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `noset_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.3.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-noset` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `noset_17*` | `noset_16*` | `noset_15*` | `noset_14*` | `noset_13*` | `noset_12*` |
+| `el9` | `noset_17*` | `noset_16*` | `noset_15*` | `noset_14*` | `noset_13*` | `noset_12*` |
+| `d12` | `postgresql-17-noset` | `postgresql-16-noset` | `postgresql-15-noset` | `postgresql-14-noset` | `postgresql-13-noset` | `postgresql-12-noset` |
+| `u22` | `postgresql-17-noset` | `postgresql-16-noset` | `postgresql-15-noset` | `postgresql-14-noset` | `postgresql-13-noset` | `postgresql-12-noset` |
+| `u24` | `postgresql-17-noset` | `postgresql-16-noset` | `postgresql-15-noset` | `postgresql-14-noset` | `postgresql-13-noset` | `postgresql-12-noset` |
 
 
 
-Install `noset` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `noset` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["noset"]}'
@@ -61,12 +80,12 @@ Install `noset` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbo
 Install `noset` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install noset_17*;
-dnf install noset_16*;
-dnf install noset_15*;
-dnf install noset_14*;
-dnf install noset_13*;
-dnf install noset_12*;
+yum install noset_17*;
+yum install noset_16*;
+yum install noset_15*;
+yum install noset_14*;
+yum install noset_13*;
+yum install noset_12*;
 ```
 
 
@@ -82,6 +101,15 @@ apt install postgresql-12-noset;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `noset_17*` | `noset_16*` | `noset_15*` | `noset_14*` | `noset_13*` | `noset_12*` |
+| `el9` | `noset_17*` | `noset_16*` | `noset_15*` | `noset_14*` | `noset_13*` | `noset_12*` |
+| `d12` | `postgresql-17-noset` | `postgresql-16-noset` | `postgresql-15-noset` | `postgresql-14-noset` | `postgresql-13-noset` | `postgresql-12-noset` |
+| `u22` | `postgresql-17-noset` | `postgresql-16-noset` | `postgresql-15-noset` | `postgresql-14-noset` | `postgresql-13-noset` | `postgresql-12-noset` |
+| `u24` | `postgresql-17-noset` | `postgresql-16-noset` | `postgresql-15-noset` | `postgresql-14-noset` | `postgresql-13-noset` | `postgresql-12-noset` |
 
 
 

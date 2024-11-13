@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [tdigest](https://github.com/tdunning/t-digest) | 1.4.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [tdigest](https://github.com/tdunning/t-digest) | 1.4.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [tdigest](/tdigest) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION tdigest;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.4.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `tdigest_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.4.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-tdigest` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `tdigest_17*` | `tdigest_16*` | `tdigest_15*` | `tdigest_14*` | `tdigest_13*` | `tdigest_12*` |
+| `el9` | `tdigest_17*` | `tdigest_16*` | `tdigest_15*` | `tdigest_14*` | `tdigest_13*` | `tdigest_12*` |
+| `d12` | `postgresql-17-tdigest` | `postgresql-16-tdigest` | `postgresql-15-tdigest` | `postgresql-14-tdigest` | `postgresql-13-tdigest` | `postgresql-12-tdigest` |
+| `u22` | `postgresql-17-tdigest` | `postgresql-16-tdigest` | `postgresql-15-tdigest` | `postgresql-14-tdigest` | `postgresql-13-tdigest` | `postgresql-12-tdigest` |
+| `u24` | `postgresql-17-tdigest` | `postgresql-16-tdigest` | `postgresql-15-tdigest` | `postgresql-14-tdigest` | `postgresql-13-tdigest` | `postgresql-12-tdigest` |
 
 
 
-Install `tdigest` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `tdigest` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["tdigest"]}'
@@ -57,12 +76,12 @@ Install `tdigest` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) play
 Install `tdigest` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install tdigest_17*;
-dnf install tdigest_16*;
-dnf install tdigest_15*;
-dnf install tdigest_14*;
-dnf install tdigest_13*;
-dnf install tdigest_12*;
+yum install tdigest_17*;
+yum install tdigest_16*;
+yum install tdigest_15*;
+yum install tdigest_14*;
+yum install tdigest_13*;
+yum install tdigest_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-tdigest;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `tdigest_17*` | `tdigest_16*` | `tdigest_15*` | `tdigest_14*` | `tdigest_13*` | `tdigest_12*` |
+| `el9` | `tdigest_17*` | `tdigest_16*` | `tdigest_15*` | `tdigest_14*` | `tdigest_13*` | `tdigest_12*` |
+| `d12` | `postgresql-17-tdigest` | `postgresql-16-tdigest` | `postgresql-15-tdigest` | `postgresql-14-tdigest` | `postgresql-13-tdigest` | `postgresql-12-tdigest` |
+| `u22` | `postgresql-17-tdigest` | `postgresql-16-tdigest` | `postgresql-15-tdigest` | `postgresql-14-tdigest` | `postgresql-13-tdigest` | `postgresql-12-tdigest` |
+| `u24` | `postgresql-17-tdigest` | `postgresql-16-tdigest` | `postgresql-15-tdigest` | `postgresql-14-tdigest` | `postgresql-13-tdigest` | `postgresql-12-tdigest` |
 
 
 

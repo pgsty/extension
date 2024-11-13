@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pg_duckdb](https://github.com/duckdb/pg_duckdb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C++` |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pg_duckdb](https://github.com/duckdb/pg_duckdb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C++` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_duckdb](/pg_duckdb) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -44,14 +60,17 @@ CREATE EXTENSION pg_duckdb;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_duckdb_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |  |
-| [DEB](/deb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-duckdb` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_duckdb_17*` | `pg_duckdb_16*` | `pg_duckdb_15*` | `pg_duckdb_14*` | `pg_duckdb_13*` | `pg_duckdb_12*` |
+| `el9` | `pg_duckdb_17*` | `pg_duckdb_16*` | `pg_duckdb_15*` | `pg_duckdb_14*` | `pg_duckdb_13*` | `pg_duckdb_12*` |
+| `d12` | `postgresql-17-pg-duckdb` | `postgresql-16-pg-duckdb` | `postgresql-15-pg-duckdb` | `postgresql-14-pg-duckdb` | `postgresql-13-pg-duckdb` | `postgresql-12-pg-duckdb` |
+| `u22` | `postgresql-17-pg-duckdb` | `postgresql-16-pg-duckdb` | `postgresql-15-pg-duckdb` | `postgresql-14-pg-duckdb` | `postgresql-13-pg-duckdb` | `postgresql-12-pg-duckdb` |
+| `u24` | `postgresql-17-pg-duckdb` | `postgresql-16-pg-duckdb` | `postgresql-15-pg-duckdb` | `postgresql-14-pg-duckdb` | `postgresql-13-pg-duckdb` | `postgresql-12-pg-duckdb` |
 
 
 
-Install `pg_duckdb` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_duckdb` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_duckdb"]}'
@@ -61,9 +80,12 @@ Install `pg_duckdb` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pl
 Install `pg_duckdb` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_duckdb_17*;
-dnf install pg_duckdb_16*;
-dnf install pg_duckdb_15*;
+yum install pg_duckdb_17*;
+yum install pg_duckdb_16*;
+yum install pg_duckdb_15*;
+yum install pg_duckdb_14*;
+yum install pg_duckdb_13*;
+yum install pg_duckdb_12*;
 ```
 
 
@@ -73,8 +95,21 @@ Install `pg_duckdb` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** 
 apt install postgresql-17-pg-duckdb;
 apt install postgresql-16-pg-duckdb;
 apt install postgresql-15-pg-duckdb;
+apt install postgresql-14-pg-duckdb;
+apt install postgresql-13-pg-duckdb;
+apt install postgresql-12-pg-duckdb;
 ```
 
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_duckdb_17*` | `pg_duckdb_16*` | `pg_duckdb_15*` | `pg_duckdb_14*` | `pg_duckdb_13*` | `pg_duckdb_12*` |
+| `el9` | `pg_duckdb_17*` | `pg_duckdb_16*` | `pg_duckdb_15*` | `pg_duckdb_14*` | `pg_duckdb_13*` | `pg_duckdb_12*` |
+| `d12` | `postgresql-17-pg-duckdb` | `postgresql-16-pg-duckdb` | `postgresql-15-pg-duckdb` | `postgresql-14-pg-duckdb` | `postgresql-13-pg-duckdb` | `postgresql-12-pg-duckdb` |
+| `u22` | `postgresql-17-pg-duckdb` | `postgresql-16-pg-duckdb` | `postgresql-15-pg-duckdb` | `postgresql-14-pg-duckdb` | `postgresql-13-pg-duckdb` | `postgresql-12-pg-duckdb` |
+| `u24` | `postgresql-17-pg-duckdb` | `postgresql-16-pg-duckdb` | `postgresql-15-pg-duckdb` | `postgresql-14-pg-duckdb` | `postgresql-13-pg-duckdb` | `postgresql-12-pg-duckdb` |
 
 
 
@@ -155,4 +190,3 @@ According some user feedbacks, the duckdb engine can achieve 100x - 1000x speed 
 
 
 Check more details @ https://github.com/duckdb/pg_duckdb
-

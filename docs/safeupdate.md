@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [safeupdate](https://github.com/eradman/pg-safeupdate) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [safeupdate](https://github.com/eradman/pg-safeupdate) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [safeupdate](/safeupdate) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION safeupdate;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `safeupdate_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-safeupdate` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `safeupdate_17*` | `safeupdate_16*` | `safeupdate_15*` | `safeupdate_14*` | `safeupdate_13*` | `safeupdate_12*` |
+| `el9` | `safeupdate_17*` | `safeupdate_16*` | `safeupdate_15*` | `safeupdate_14*` | `safeupdate_13*` | `safeupdate_12*` |
+| `d12` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | `postgresql-13-pg-safeupdate` | `postgresql-12-pg-safeupdate` |
+| `u22` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | `postgresql-13-pg-safeupdate` | `postgresql-12-pg-safeupdate` |
+| `u24` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | `postgresql-13-pg-safeupdate` | `postgresql-12-pg-safeupdate` |
 
 
 
-Install `safeupdate` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `safeupdate` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["safeupdate"]}'
@@ -57,12 +76,12 @@ Install `safeupdate` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) p
 Install `safeupdate` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install safeupdate_17*;
-dnf install safeupdate_16*;
-dnf install safeupdate_15*;
-dnf install safeupdate_14*;
-dnf install safeupdate_13*;
-dnf install safeupdate_12*;
+yum install safeupdate_17*;
+yum install safeupdate_16*;
+yum install safeupdate_15*;
+yum install safeupdate_14*;
+yum install safeupdate_13*;
+yum install safeupdate_12*;
 ```
 
 
@@ -73,9 +92,20 @@ apt install postgresql-17-pg-safeupdate;
 apt install postgresql-16-pg-safeupdate;
 apt install postgresql-15-pg-safeupdate;
 apt install postgresql-14-pg-safeupdate;
+apt install postgresql-13-pg-safeupdate;
+apt install postgresql-12-pg-safeupdate;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `safeupdate_17*` | `safeupdate_16*` | `safeupdate_15*` | `safeupdate_14*` | `safeupdate_13*` | `safeupdate_12*` |
+| `el9` | `safeupdate_17*` | `safeupdate_16*` | `safeupdate_15*` | `safeupdate_14*` | `safeupdate_13*` | `safeupdate_12*` |
+| `d12` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | `postgresql-13-pg-safeupdate` | `postgresql-12-pg-safeupdate` |
+| `u22` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | `postgresql-13-pg-safeupdate` | `postgresql-12-pg-safeupdate` |
+| `u24` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | `postgresql-13-pg-safeupdate` | `postgresql-12-pg-safeupdate` |
 
 
 

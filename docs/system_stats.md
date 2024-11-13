@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [system_stats](https://github.com/EnterpriseDB/system_stats) | 3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [system_stats](https://github.com/EnterpriseDB/system_stats) | 3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [system_stats](/system_stats) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION system_stats;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `system_stats_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-system-stats` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `system_stats_17*` | `system_stats_16*` | `system_stats_15*` | `system_stats_14*` | `system_stats_13*` | `system_stats_12*` |
+| `el9` | `system_stats_17*` | `system_stats_16*` | `system_stats_15*` | `system_stats_14*` | `system_stats_13*` | `system_stats_12*` |
+| `d12` | `postgresql-17-system-stats` | `postgresql-16-system-stats` | `postgresql-15-system-stats` | `postgresql-14-system-stats` | `postgresql-13-system-stats` | `postgresql-12-system-stats` |
+| `u22` | `postgresql-17-system-stats` | `postgresql-16-system-stats` | `postgresql-15-system-stats` | `postgresql-14-system-stats` | `postgresql-13-system-stats` | `postgresql-12-system-stats` |
+| `u24` | `postgresql-17-system-stats` | `postgresql-16-system-stats` | `postgresql-15-system-stats` | `postgresql-14-system-stats` | `postgresql-13-system-stats` | `postgresql-12-system-stats` |
 
 
 
-Install `system_stats` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `system_stats` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["system_stats"]}'
@@ -57,12 +76,12 @@ Install `system_stats` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/)
 Install `system_stats` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install system_stats_17*;
-dnf install system_stats_16*;
-dnf install system_stats_15*;
-dnf install system_stats_14*;
-dnf install system_stats_13*;
-dnf install system_stats_12*;
+yum install system_stats_17*;
+yum install system_stats_16*;
+yum install system_stats_15*;
+yum install system_stats_14*;
+yum install system_stats_13*;
+yum install system_stats_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-system-stats;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `system_stats_17*` | `system_stats_16*` | `system_stats_15*` | `system_stats_14*` | `system_stats_13*` | `system_stats_12*` |
+| `el9` | `system_stats_17*` | `system_stats_16*` | `system_stats_15*` | `system_stats_14*` | `system_stats_13*` | `system_stats_12*` |
+| `d12` | `postgresql-17-system-stats` | `postgresql-16-system-stats` | `postgresql-15-system-stats` | `postgresql-14-system-stats` | `postgresql-13-system-stats` | `postgresql-12-system-stats` |
+| `u22` | `postgresql-17-system-stats` | `postgresql-16-system-stats` | `postgresql-15-system-stats` | `postgresql-14-system-stats` | `postgresql-13-system-stats` | `postgresql-12-system-stats` |
+| `u24` | `postgresql-17-system-stats` | `postgresql-16-system-stats` | `postgresql-15-system-stats` | `postgresql-14-system-stats` | `postgresql-13-system-stats` | `postgresql-12-system-stats` |
 
 
 

@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [rdkit](https://github.com/rdkit/rdkit) | 4.3.0 | **<span class="tcblue">BSD-3</span>** |  | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [rdkit](https://github.com/rdkit/rdkit) | 4.3.0 | **<span class="tcblue">BSD-3</span>** |  | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [rdkit](/rdkit) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,13 +56,17 @@ CREATE EXTENSION rdkit;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [DEB](/deb) | 4.3.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-rdkit` |  |  |  |  |  |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `` | `` | `` | `` | `` | `` |
+| `el9` | `` | `` | `` | `` | `` | `` |
+| `d12` | `postgresql-17-rdkit` | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
+| `u22` | `postgresql-17-rdkit` | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
+| `u24` | `postgresql-17-rdkit` | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
 
 
 
-Install `rdkit` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `rdkit` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["rdkit"]}'
@@ -60,6 +80,15 @@ apt install postgresql-$v-rdkit;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `` | `` | `` | `` | `` | `` |
+| `el9` | `` | `` | `` | `` | `` | `` |
+| `d12` | `postgresql-17-rdkit` | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
+| `u22` | `postgresql-17-rdkit` | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
+| `u24` | `postgresql-17-rdkit` | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
 
 
 

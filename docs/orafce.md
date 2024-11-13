@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [orafce](https://github.com/orafce/orafce) | 4.13 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [orafce](https://github.com/orafce/orafce) | 4.13 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [orafce](/orafce) | `oracle` |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION orafce;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 4.13 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | `orafce_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 4.13 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-orafce` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `orafce_17*` | `orafce_16*` | `orafce_15*` | `orafce_14*` | `orafce_13*` | `orafce_12*` |
+| `el9` | `orafce_17*` | `orafce_16*` | `orafce_15*` | `orafce_14*` | `orafce_13*` | `orafce_12*` |
+| `d12` | `postgresql-17-orafce` | `postgresql-16-orafce` | `postgresql-15-orafce` | `postgresql-14-orafce` | `postgresql-13-orafce` | `postgresql-12-orafce` |
+| `u22` | `postgresql-17-orafce` | `postgresql-16-orafce` | `postgresql-15-orafce` | `postgresql-14-orafce` | `postgresql-13-orafce` | `postgresql-12-orafce` |
+| `u24` | `postgresql-17-orafce` | `postgresql-16-orafce` | `postgresql-15-orafce` | `postgresql-14-orafce` | `postgresql-13-orafce` | `postgresql-12-orafce` |
 
 
 
-Install `orafce` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `orafce` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["orafce"]}'
@@ -57,12 +76,12 @@ Install `orafce` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playb
 Install `orafce` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install orafce_17*;
-dnf install orafce_16*;
-dnf install orafce_15*;
-dnf install orafce_14*;
-dnf install orafce_13*;
-dnf install orafce_12*;
+yum install orafce_17*;
+yum install orafce_16*;
+yum install orafce_15*;
+yum install orafce_14*;
+yum install orafce_13*;
+yum install orafce_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-orafce;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `orafce_17*` | `orafce_16*` | `orafce_15*` | `orafce_14*` | `orafce_13*` | `orafce_12*` |
+| `el9` | `orafce_17*` | `orafce_16*` | `orafce_15*` | `orafce_14*` | `orafce_13*` | `orafce_12*` |
+| `d12` | `postgresql-17-orafce` | `postgresql-16-orafce` | `postgresql-15-orafce` | `postgresql-14-orafce` | `postgresql-13-orafce` | `postgresql-12-orafce` |
+| `u22` | `postgresql-17-orafce` | `postgresql-16-orafce` | `postgresql-15-orafce` | `postgresql-14-orafce` | `postgresql-13-orafce` | `postgresql-12-orafce` |
+| `u24` | `postgresql-17-orafce` | `postgresql-16-orafce` | `postgresql-15-orafce` | `postgresql-14-orafce` | `postgresql-13-orafce` | `postgresql-12-orafce` |
 
 
 

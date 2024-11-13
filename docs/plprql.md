@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [plprql](https://github.com/kaspermarstal/plprql) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [plprql](https://github.com/kaspermarstal/plprql) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [plprql](/plprql) | `pgrx` |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION plprql;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `plprql_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-plprql` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `plprql_17` | `plprql_16` | `plprql_15` | `plprql_14` | `plprql_13` | `plprql_12` |
+| `el9` | `plprql_17` | `plprql_16` | `plprql_15` | `plprql_14` | `plprql_13` | `plprql_12` |
+| `d12` | `postgresql-17-plprql` | `postgresql-16-plprql` | `postgresql-15-plprql` | `postgresql-14-plprql` | `postgresql-13-plprql` | `postgresql-12-plprql` |
+| `u22` | `postgresql-17-plprql` | `postgresql-16-plprql` | `postgresql-15-plprql` | `postgresql-14-plprql` | `postgresql-13-plprql` | `postgresql-12-plprql` |
+| `u24` | `postgresql-17-plprql` | `postgresql-16-plprql` | `postgresql-15-plprql` | `postgresql-14-plprql` | `postgresql-13-plprql` | `postgresql-12-plprql` |
 
 
 
-Install `plprql` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `plprql` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["plprql"]}'
@@ -57,17 +76,19 @@ Install `plprql` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playb
 Install `plprql` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install plprql_16;
-dnf install plprql_15;
-dnf install plprql_14;
-dnf install plprql_13;
-dnf install plprql_12;
+yum install plprql_17;
+yum install plprql_16;
+yum install plprql_15;
+yum install plprql_14;
+yum install plprql_13;
+yum install plprql_12;
 ```
 
 
 Install `plprql` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-plprql;
 apt install postgresql-16-plprql;
 apt install postgresql-15-plprql;
 apt install postgresql-14-plprql;
@@ -76,6 +97,15 @@ apt install postgresql-12-plprql;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `plprql_17` | `plprql_16` | `plprql_15` | `plprql_14` | `plprql_13` | `plprql_12` |
+| `el9` | `plprql_17` | `plprql_16` | `plprql_15` | `plprql_14` | `plprql_13` | `plprql_12` |
+| `d12` | `postgresql-17-plprql` | `postgresql-16-plprql` | `postgresql-15-plprql` | `postgresql-14-plprql` | `postgresql-13-plprql` | `postgresql-12-plprql` |
+| `u22` | `postgresql-17-plprql` | `postgresql-16-plprql` | `postgresql-15-plprql` | `postgresql-14-plprql` | `postgresql-13-plprql` | `postgresql-12-plprql` |
+| `u24` | `postgresql-17-plprql` | `postgresql-16-plprql` | `postgresql-15-plprql` | `postgresql-14-plprql` | `postgresql-13-plprql` | `postgresql-12-plprql` |
 
 
 

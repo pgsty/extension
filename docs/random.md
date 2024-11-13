@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [random](https://github.com/tvondra/random) | 2.0.0-dev | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [random](https://github.com/tvondra/random) | 2.0.0-dev | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pg_random](/random) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION random;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.0.0-dev | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_random_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 2.0.0-dev | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-random` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_random_17*` | `pg_random_16*` | `pg_random_15*` | `pg_random_14*` | `pg_random_13*` | `pg_random_12*` |
+| `el9` | `pg_random_17*` | `pg_random_16*` | `pg_random_15*` | `pg_random_14*` | `pg_random_13*` | `pg_random_12*` |
+| `d12` | `postgresql-17-random` | `postgresql-16-random` | `postgresql-15-random` | `postgresql-14-random` | `postgresql-13-random` | `postgresql-12-random` |
+| `u22` | `postgresql-17-random` | `postgresql-16-random` | `postgresql-15-random` | `postgresql-14-random` | `postgresql-13-random` | `postgresql-12-random` |
+| `u24` | `postgresql-17-random` | `postgresql-16-random` | `postgresql-15-random` | `postgresql-14-random` | `postgresql-13-random` | `postgresql-12-random` |
 
 
 
-Install `pg_random` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pg_random` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_random"]}'
@@ -57,12 +76,12 @@ Install `pg_random` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pl
 Install `pg_random` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_random_17*;
-dnf install pg_random_16*;
-dnf install pg_random_15*;
-dnf install pg_random_14*;
-dnf install pg_random_13*;
-dnf install pg_random_12*;
+yum install pg_random_17*;
+yum install pg_random_16*;
+yum install pg_random_15*;
+yum install pg_random_14*;
+yum install pg_random_13*;
+yum install pg_random_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-random;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_random_17*` | `pg_random_16*` | `pg_random_15*` | `pg_random_14*` | `pg_random_13*` | `pg_random_12*` |
+| `el9` | `pg_random_17*` | `pg_random_16*` | `pg_random_15*` | `pg_random_14*` | `pg_random_13*` | `pg_random_12*` |
+| `d12` | `postgresql-17-random` | `postgresql-16-random` | `postgresql-15-random` | `postgresql-14-random` | `postgresql-13-random` | `postgresql-12-random` |
+| `u22` | `postgresql-17-random` | `postgresql-16-random` | `postgresql-15-random` | `postgresql-14-random` | `postgresql-13-random` | `postgresql-12-random` |
+| `u24` | `postgresql-17-random` | `postgresql-16-random` | `postgresql-15-random` | `postgresql-14-random` | `postgresql-13-random` | `postgresql-12-random` |
 
 
 

@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [jsquery](https://github.com/postgrespro/jsquery) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [jsquery](https://github.com/postgrespro/jsquery) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [jsquery](/jsquery) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION jsquery;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `jsquery_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |
-| [DEB](/deb) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-jsquery` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `jsquery_17*` | `jsquery_16*` | `jsquery_15*` | `jsquery_14*` | `jsquery_13*` | `jsquery_12*` |
+| `el9` | `jsquery_17*` | `jsquery_16*` | `jsquery_15*` | `jsquery_14*` | `jsquery_13*` | `jsquery_12*` |
+| `d12` | `postgresql-17-jsquery` | `postgresql-16-jsquery` | `postgresql-15-jsquery` | `postgresql-14-jsquery` | `postgresql-13-jsquery` | `postgresql-12-jsquery` |
+| `u22` | `postgresql-17-jsquery` | `postgresql-16-jsquery` | `postgresql-15-jsquery` | `postgresql-14-jsquery` | `postgresql-13-jsquery` | `postgresql-12-jsquery` |
+| `u24` | `postgresql-17-jsquery` | `postgresql-16-jsquery` | `postgresql-15-jsquery` | `postgresql-14-jsquery` | `postgresql-13-jsquery` | `postgresql-12-jsquery` |
 
 
 
-Install `jsquery` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `jsquery` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["jsquery"]}'
@@ -57,10 +76,12 @@ Install `jsquery` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) play
 Install `jsquery` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install jsquery_17*;
-dnf install jsquery_16*;
-dnf install jsquery_15*;
-dnf install jsquery_14*;
+yum install jsquery_17*;
+yum install jsquery_16*;
+yum install jsquery_15*;
+yum install jsquery_14*;
+yum install jsquery_13*;
+yum install jsquery_12*;
 ```
 
 
@@ -76,6 +97,15 @@ apt install postgresql-12-jsquery;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `jsquery_17*` | `jsquery_16*` | `jsquery_15*` | `jsquery_14*` | `jsquery_13*` | `jsquery_12*` |
+| `el9` | `jsquery_17*` | `jsquery_16*` | `jsquery_15*` | `jsquery_14*` | `jsquery_13*` | `jsquery_12*` |
+| `d12` | `postgresql-17-jsquery` | `postgresql-16-jsquery` | `postgresql-15-jsquery` | `postgresql-14-jsquery` | `postgresql-13-jsquery` | `postgresql-12-jsquery` |
+| `u22` | `postgresql-17-jsquery` | `postgresql-16-jsquery` | `postgresql-15-jsquery` | `postgresql-14-jsquery` | `postgresql-13-jsquery` | `postgresql-12-jsquery` |
+| `u24` | `postgresql-17-jsquery` | `postgresql-16-jsquery` | `postgresql-15-jsquery` | `postgresql-14-jsquery` | `postgresql-13-jsquery` | `postgresql-12-jsquery` |
 
 
 

@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [aggs_for_arrays](https://github.com/pjungwir/aggs_for_arrays) | 1.3.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [aggs_for_arrays](https://github.com/pjungwir/aggs_for_arrays) | 1.3.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [aggs_for_arrays](/aggs_for_arrays) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION aggs_for_arrays;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.3.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `aggs_for_arrays_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.3.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-aggs-for-arrays` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `aggs_for_arrays_17*` | `aggs_for_arrays_16*` | `aggs_for_arrays_15*` | `aggs_for_arrays_14*` | `aggs_for_arrays_13*` | `aggs_for_arrays_12*` |
+| `el9` | `aggs_for_arrays_17*` | `aggs_for_arrays_16*` | `aggs_for_arrays_15*` | `aggs_for_arrays_14*` | `aggs_for_arrays_13*` | `aggs_for_arrays_12*` |
+| `d12` | `postgresql-17-aggs-for-arrays` | `postgresql-16-aggs-for-arrays` | `postgresql-15-aggs-for-arrays` | `postgresql-14-aggs-for-arrays` | `postgresql-13-aggs-for-arrays` | `postgresql-12-aggs-for-arrays` |
+| `u22` | `postgresql-17-aggs-for-arrays` | `postgresql-16-aggs-for-arrays` | `postgresql-15-aggs-for-arrays` | `postgresql-14-aggs-for-arrays` | `postgresql-13-aggs-for-arrays` | `postgresql-12-aggs-for-arrays` |
+| `u24` | `postgresql-17-aggs-for-arrays` | `postgresql-16-aggs-for-arrays` | `postgresql-15-aggs-for-arrays` | `postgresql-14-aggs-for-arrays` | `postgresql-13-aggs-for-arrays` | `postgresql-12-aggs-for-arrays` |
 
 
 
-Install `aggs_for_arrays` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `aggs_for_arrays` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["aggs_for_arrays"]}'
@@ -57,12 +76,12 @@ Install `aggs_for_arrays` via [Pigsty](https://pigsty.cc/docs/pgext/usage/instal
 Install `aggs_for_arrays` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install aggs_for_arrays_17*;
-dnf install aggs_for_arrays_16*;
-dnf install aggs_for_arrays_15*;
-dnf install aggs_for_arrays_14*;
-dnf install aggs_for_arrays_13*;
-dnf install aggs_for_arrays_12*;
+yum install aggs_for_arrays_17*;
+yum install aggs_for_arrays_16*;
+yum install aggs_for_arrays_15*;
+yum install aggs_for_arrays_14*;
+yum install aggs_for_arrays_13*;
+yum install aggs_for_arrays_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-aggs-for-arrays;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `aggs_for_arrays_17*` | `aggs_for_arrays_16*` | `aggs_for_arrays_15*` | `aggs_for_arrays_14*` | `aggs_for_arrays_13*` | `aggs_for_arrays_12*` |
+| `el9` | `aggs_for_arrays_17*` | `aggs_for_arrays_16*` | `aggs_for_arrays_15*` | `aggs_for_arrays_14*` | `aggs_for_arrays_13*` | `aggs_for_arrays_12*` |
+| `d12` | `postgresql-17-aggs-for-arrays` | `postgresql-16-aggs-for-arrays` | `postgresql-15-aggs-for-arrays` | `postgresql-14-aggs-for-arrays` | `postgresql-13-aggs-for-arrays` | `postgresql-12-aggs-for-arrays` |
+| `u22` | `postgresql-17-aggs-for-arrays` | `postgresql-16-aggs-for-arrays` | `postgresql-15-aggs-for-arrays` | `postgresql-14-aggs-for-arrays` | `postgresql-13-aggs-for-arrays` | `postgresql-12-aggs-for-arrays` |
+| `u24` | `postgresql-17-aggs-for-arrays` | `postgresql-16-aggs-for-arrays` | `postgresql-15-aggs-for-arrays` | `postgresql-14-aggs-for-arrays` | `postgresql-13-aggs-for-arrays` | `postgresql-12-aggs-for-arrays` |
 
 
 

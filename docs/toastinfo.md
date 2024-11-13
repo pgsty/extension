@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [toastinfo](https://github.com/credativ/toastinfo) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [toastinfo](https://github.com/credativ/toastinfo) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [toastinfo](/toastinfo) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION toastinfo;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `toastinfo_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-toastinfo` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `toastinfo_17*` | `toastinfo_16*` | `toastinfo_15*` | `toastinfo_14*` | `toastinfo_13*` | `toastinfo_12*` |
+| `el9` | `toastinfo_17*` | `toastinfo_16*` | `toastinfo_15*` | `toastinfo_14*` | `toastinfo_13*` | `toastinfo_12*` |
+| `d12` | `postgresql-17-toastinfo` | `postgresql-16-toastinfo` | `postgresql-15-toastinfo` | `postgresql-14-toastinfo` | `postgresql-13-toastinfo` | `postgresql-12-toastinfo` |
+| `u22` | `postgresql-17-toastinfo` | `postgresql-16-toastinfo` | `postgresql-15-toastinfo` | `postgresql-14-toastinfo` | `postgresql-13-toastinfo` | `postgresql-12-toastinfo` |
+| `u24` | `postgresql-17-toastinfo` | `postgresql-16-toastinfo` | `postgresql-15-toastinfo` | `postgresql-14-toastinfo` | `postgresql-13-toastinfo` | `postgresql-12-toastinfo` |
 
 
 
-Install `toastinfo` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `toastinfo` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["toastinfo"]}'
@@ -57,12 +76,12 @@ Install `toastinfo` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pl
 Install `toastinfo` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install toastinfo_17*;
-dnf install toastinfo_16*;
-dnf install toastinfo_15*;
-dnf install toastinfo_14*;
-dnf install toastinfo_13*;
-dnf install toastinfo_12*;
+yum install toastinfo_17*;
+yum install toastinfo_16*;
+yum install toastinfo_15*;
+yum install toastinfo_14*;
+yum install toastinfo_13*;
+yum install toastinfo_12*;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-toastinfo;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `toastinfo_17*` | `toastinfo_16*` | `toastinfo_15*` | `toastinfo_14*` | `toastinfo_13*` | `toastinfo_12*` |
+| `el9` | `toastinfo_17*` | `toastinfo_16*` | `toastinfo_15*` | `toastinfo_14*` | `toastinfo_13*` | `toastinfo_12*` |
+| `d12` | `postgresql-17-toastinfo` | `postgresql-16-toastinfo` | `postgresql-15-toastinfo` | `postgresql-14-toastinfo` | `postgresql-13-toastinfo` | `postgresql-12-toastinfo` |
+| `u22` | `postgresql-17-toastinfo` | `postgresql-16-toastinfo` | `postgresql-15-toastinfo` | `postgresql-14-toastinfo` | `postgresql-13-toastinfo` | `postgresql-12-toastinfo` |
+| `u24` | `postgresql-17-toastinfo` | `postgresql-16-toastinfo` | `postgresql-15-toastinfo` | `postgresql-14-toastinfo` | `postgresql-13-toastinfo` | `postgresql-12-toastinfo` |
 
 
 

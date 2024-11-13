@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [decoder_raw](https://github.com/michaelpq/pg_plugins/blob/main/decoder_raw/) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  | <span class="tcwarn">✘</span> |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [decoder_raw](https://github.com/michaelpq/pg_plugins/blob/main/decoder_raw/) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  | <span class="tcwarn">✘</span> |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [decoder_raw](/decoder_raw) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -36,14 +52,17 @@
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `decoder_raw_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-decoder-raw` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `decoder_raw_17*` | `decoder_raw_16*` | `decoder_raw_15*` | `decoder_raw_14*` | `decoder_raw_13*` | `decoder_raw_12*` |
+| `el9` | `decoder_raw_17*` | `decoder_raw_16*` | `decoder_raw_15*` | `decoder_raw_14*` | `decoder_raw_13*` | `decoder_raw_12*` |
+| `d12` | `postgresql-17-decoder-raw` | `postgresql-16-decoder-raw` | `postgresql-15-decoder-raw` | `postgresql-14-decoder-raw` | `postgresql-13-decoder-raw` | `postgresql-12-decoder-raw` |
+| `u22` | `postgresql-17-decoder-raw` | `postgresql-16-decoder-raw` | `postgresql-15-decoder-raw` | `postgresql-14-decoder-raw` | `postgresql-13-decoder-raw` | `postgresql-12-decoder-raw` |
+| `u24` | `postgresql-17-decoder-raw` | `postgresql-16-decoder-raw` | `postgresql-15-decoder-raw` | `postgresql-14-decoder-raw` | `postgresql-13-decoder-raw` | `postgresql-12-decoder-raw` |
 
 
 
-Install `decoder_raw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `decoder_raw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["decoder_raw"]}'
@@ -53,12 +72,12 @@ Install `decoder_raw` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) 
 Install `decoder_raw` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install decoder_raw_17*;
-dnf install decoder_raw_16*;
-dnf install decoder_raw_15*;
-dnf install decoder_raw_14*;
-dnf install decoder_raw_13*;
-dnf install decoder_raw_12*;
+yum install decoder_raw_17*;
+yum install decoder_raw_16*;
+yum install decoder_raw_15*;
+yum install decoder_raw_14*;
+yum install decoder_raw_13*;
+yum install decoder_raw_12*;
 ```
 
 
@@ -74,6 +93,15 @@ apt install postgresql-12-decoder-raw;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `decoder_raw_17*` | `decoder_raw_16*` | `decoder_raw_15*` | `decoder_raw_14*` | `decoder_raw_13*` | `decoder_raw_12*` |
+| `el9` | `decoder_raw_17*` | `decoder_raw_16*` | `decoder_raw_15*` | `decoder_raw_14*` | `decoder_raw_13*` | `decoder_raw_12*` |
+| `d12` | `postgresql-17-decoder-raw` | `postgresql-16-decoder-raw` | `postgresql-15-decoder-raw` | `postgresql-14-decoder-raw` | `postgresql-13-decoder-raw` | `postgresql-12-decoder-raw` |
+| `u22` | `postgresql-17-decoder-raw` | `postgresql-16-decoder-raw` | `postgresql-15-decoder-raw` | `postgresql-14-decoder-raw` | `postgresql-13-decoder-raw` | `postgresql-12-decoder-raw` |
+| `u24` | `postgresql-17-decoder-raw` | `postgresql-16-decoder-raw` | `postgresql-15-decoder-raw` | `postgresql-14-decoder-raw` | `postgresql-13-decoder-raw` | `postgresql-12-decoder-raw` |
 
 
 

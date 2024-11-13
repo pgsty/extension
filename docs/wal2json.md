@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [wal2json](https://github.com/eulerto/wal2json) | 2.5.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` |  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [wal2json](https://github.com/eulerto/wal2json) | 2.5.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [wal2json](/wal2json) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -36,14 +52,17 @@
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.5.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `wal2json_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 2.5.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-wal2json` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `wal2json_17*` | `wal2json_16*` | `wal2json_15*` | `wal2json_14*` | `wal2json_13*` | `wal2json_12*` |
+| `el9` | `wal2json_17*` | `wal2json_16*` | `wal2json_15*` | `wal2json_14*` | `wal2json_13*` | `wal2json_12*` |
+| `d12` | `postgresql-17-wal2json` | `postgresql-16-wal2json` | `postgresql-15-wal2json` | `postgresql-14-wal2json` | `postgresql-13-wal2json` | `postgresql-12-wal2json` |
+| `u22` | `postgresql-17-wal2json` | `postgresql-16-wal2json` | `postgresql-15-wal2json` | `postgresql-14-wal2json` | `postgresql-13-wal2json` | `postgresql-12-wal2json` |
+| `u24` | `postgresql-17-wal2json` | `postgresql-16-wal2json` | `postgresql-15-wal2json` | `postgresql-14-wal2json` | `postgresql-13-wal2json` | `postgresql-12-wal2json` |
 
 
 
-Install `wal2json` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `wal2json` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["wal2json"]}'
@@ -53,12 +72,12 @@ Install `wal2json` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) pla
 Install `wal2json` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install wal2json_17*;
-dnf install wal2json_16*;
-dnf install wal2json_15*;
-dnf install wal2json_14*;
-dnf install wal2json_13*;
-dnf install wal2json_12*;
+yum install wal2json_17*;
+yum install wal2json_16*;
+yum install wal2json_15*;
+yum install wal2json_14*;
+yum install wal2json_13*;
+yum install wal2json_12*;
 ```
 
 
@@ -74,6 +93,15 @@ apt install postgresql-12-wal2json;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `wal2json_17*` | `wal2json_16*` | `wal2json_15*` | `wal2json_14*` | `wal2json_13*` | `wal2json_12*` |
+| `el9` | `wal2json_17*` | `wal2json_16*` | `wal2json_15*` | `wal2json_14*` | `wal2json_13*` | `wal2json_12*` |
+| `d12` | `postgresql-17-wal2json` | `postgresql-16-wal2json` | `postgresql-15-wal2json` | `postgresql-14-wal2json` | `postgresql-13-wal2json` | `postgresql-12-wal2json` |
+| `u22` | `postgresql-17-wal2json` | `postgresql-16-wal2json` | `postgresql-15-wal2json` | `postgresql-14-wal2json` | `postgresql-13-wal2json` | `postgresql-12-wal2json` |
+| `u24` | `postgresql-17-wal2json` | `postgresql-16-wal2json` | `postgresql-15-wal2json` | `postgresql-14-wal2json` | `postgresql-13-wal2json` | `postgresql-12-wal2json` |
 
 
 

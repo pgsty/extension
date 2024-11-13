@@ -16,15 +16,31 @@
 ## Extension
 
 
-| Extension | Version | License | RPM | DEB | PL | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
-|-----------|:-------:|:-------:|:---:|:---:|:--:|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-| [pgpool_adm](https://pgpool.net/) | 1.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+| Extension | Version | License | RPM | DEB | PL |
+|-----------|:-------:|:-------:|:---:|:---:|:--:|
+| [pgpool_adm](https://pgpool.net/) | 1.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` |
 
 
 
-| Package | Tags | Schemas | Requires | Required by |
-|---------|------|---------|----------|-------------|
+| `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
+|:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
+|  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+
+
+
+| Alias | Tags | Schemas | Requires | Required by |
+|-------|------|---------|----------|-------------|
 | [pgpool](/pgpool_adm) |  |  |  |  |
+
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -40,14 +56,17 @@ CREATE EXTENSION pgpool_adm;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgpool-II-pg$v-extensions` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgpool2` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgpool-II-pg17-extensions` | `pgpool-II-pg16-extensions` | `pgpool-II-pg15-extensions` | `pgpool-II-pg14-extensions` | `pgpool-II-pg13-extensions` | `pgpool-II-pg12-extensions` |
+| `el9` | `pgpool-II-pg17-extensions` | `pgpool-II-pg16-extensions` | `pgpool-II-pg15-extensions` | `pgpool-II-pg14-extensions` | `pgpool-II-pg13-extensions` | `pgpool-II-pg12-extensions` |
+| `d12` | `postgresql-17-pgpool2` | `postgresql-16-pgpool2` | `postgresql-15-pgpool2` | `postgresql-14-pgpool2` | `postgresql-13-pgpool2` | `postgresql-12-pgpool2` |
+| `u22` | `postgresql-17-pgpool2` | `postgresql-16-pgpool2` | `postgresql-15-pgpool2` | `postgresql-14-pgpool2` | `postgresql-13-pgpool2` | `postgresql-12-pgpool2` |
+| `u24` | `postgresql-17-pgpool2` | `postgresql-16-pgpool2` | `postgresql-15-pgpool2` | `postgresql-14-pgpool2` | `postgresql-13-pgpool2` | `postgresql-12-pgpool2` |
 
 
 
-Install `pgpool` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playbook:
+Install `pgpool` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgpool"]}'
@@ -57,12 +76,12 @@ Install `pgpool` via [Pigsty](https://pigsty.cc/docs/pgext/usage/install/) playb
 Install `pgpool` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pgpool-II-pg17-extensions;
-dnf install pgpool-II-pg16-extensions;
-dnf install pgpool-II-pg15-extensions;
-dnf install pgpool-II-pg14-extensions;
-dnf install pgpool-II-pg13-extensions;
-dnf install pgpool-II-pg12-extensions;
+yum install pgpool-II-pg17-extensions;
+yum install pgpool-II-pg16-extensions;
+yum install pgpool-II-pg15-extensions;
+yum install pgpool-II-pg14-extensions;
+yum install pgpool-II-pg13-extensions;
+yum install pgpool-II-pg12-extensions;
 ```
 
 
@@ -78,6 +97,15 @@ apt install postgresql-12-pgpool2;
 ```
 
 
+
+
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgpool-II-pg17-extensions` | `pgpool-II-pg16-extensions` | `pgpool-II-pg15-extensions` | `pgpool-II-pg14-extensions` | `pgpool-II-pg13-extensions` | `pgpool-II-pg12-extensions` |
+| `el9` | `pgpool-II-pg17-extensions` | `pgpool-II-pg16-extensions` | `pgpool-II-pg15-extensions` | `pgpool-II-pg14-extensions` | `pgpool-II-pg13-extensions` | `pgpool-II-pg12-extensions` |
+| `d12` | `postgresql-17-pgpool2` | `postgresql-16-pgpool2` | `postgresql-15-pgpool2` | `postgresql-14-pgpool2` | `postgresql-13-pgpool2` | `postgresql-12-pgpool2` |
+| `u22` | `postgresql-17-pgpool2` | `postgresql-16-pgpool2` | `postgresql-15-pgpool2` | `postgresql-14-pgpool2` | `postgresql-13-pgpool2` | `postgresql-12-pgpool2` |
+| `u24` | `postgresql-17-pgpool2` | `postgresql-16-pgpool2` | `postgresql-15-pgpool2` | `postgresql-14-pgpool2` | `postgresql-13-pgpool2` | `postgresql-12-pgpool2` |
 
 
 

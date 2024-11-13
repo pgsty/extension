@@ -575,4 +575,3 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 
 
-
