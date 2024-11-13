@@ -28,13 +28,63 @@ There are 13 available extensions in this category:
 
 
 
+### RHEL 8 Compatible (el8)
+
 ```yaml
-pg17: pg_analytics pg_duckdb pg_mooncake duckdb_fdw pg_parquet pg_fkpart plproxy #citus #hydra #pg_partman #pg_strom
-pg16: citus hydra pg_analytics pg_duckdb pg_mooncake duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_strom
-pg15: citus hydra pg_analytics pg_duckdb pg_mooncake duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_strom
-pg14: citus hydra pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_duckdb #pg_mooncake #pg_strom
-pg13: citus hydra pg_analytics duckdb_fdw pg_fkpart pg_partman plproxy #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
-pg12: citus duckdb_fdw pg_fkpart pg_partman plproxy #hydra #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
+pg17: pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart plproxy #citus #hydra #pg_mooncake #pg_partman #pg_strom
+pg16: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_mooncake #pg_strom
+pg15: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_mooncake #pg_strom
+pg14: hydra pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_mooncake #pg_strom
+pg13: hydra pg_analytics duckdb_fdw pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
+pg12: duckdb_fdw pg_fkpart pg_partman plproxy #citus #hydra #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
+```
+
+
+### RHEL 9 Compatible (el9)
+
+```yaml
+pg17: pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart plproxy #citus #hydra #pg_mooncake #pg_partman #pg_strom
+pg16: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_mooncake #pg_strom
+pg15: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_mooncake #pg_strom
+pg14: hydra pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_mooncake #pg_strom
+pg13: hydra pg_analytics duckdb_fdw pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
+pg12: duckdb_fdw pg_fkpart pg_partman plproxy #citus #hydra #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
+```
+
+
+### Debian 12 bookworm Compatible (d12)
+
+```yaml
+pg17: pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #hydra #pg_mooncake #pg_strom
+pg16: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_mooncake #pg_strom
+pg15: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_mooncake #pg_strom
+pg14: hydra pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_mooncake #pg_strom
+pg13: hydra pg_analytics duckdb_fdw pg_fkpart pg_partman plproxy #citus11 #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
+pg12: duckdb_fdw pg_fkpart pg_partman plproxy #citus10 #hydra #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #hydra #pg_mooncake #pg_strom
+pg16: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_mooncake #pg_strom
+pg15: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_mooncake #pg_strom
+pg14: hydra pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_mooncake #pg_strom
+pg13: hydra pg_analytics duckdb_fdw pg_fkpart pg_partman plproxy #citus11 #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
+pg12: duckdb_fdw pg_fkpart pg_partman plproxy #citus10 #hydra #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #hydra #pg_mooncake #pg_strom
+pg16: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_mooncake #pg_strom
+pg15: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_mooncake #pg_strom
+pg14: hydra pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_mooncake #pg_strom
+pg13: hydra pg_analytics duckdb_fdw pg_fkpart plproxy #citus11 #pg_duckdb #pg_mooncake #pg_parquet #pg_partman #pg_strom
+pg12: duckdb_fdw pg_fkpart plproxy #citus10 #hydra #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_partman #pg_strom
 ```
 
 
@@ -60,6 +110,20 @@ pg12: citus duckdb_fdw pg_fkpart pg_partman plproxy #hydra #pg_analytics #pg_duc
 | [tablefunc](/tablefunc) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | functions that manipulate whole tables, including crosstab |
 
 
+
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: pg_analytics_17 pg_duckdb_17* pg_mooncake_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17* plproxy_17* #citus_17* #hydra_17* #pg_partman_17* #pg_strom_17*
+pg16: citus_16* hydra_16* pg_analytics_16 pg_duckdb_16* pg_mooncake_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16* pg_partman_16* plproxy_16* #pg_strom_16*
+pg15: citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* pg_mooncake_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15* pg_partman_15* plproxy_15* #pg_strom_15*
+pg14: citus_14* hydra_14* pg_analytics_14 duckdb_fdw_14* pg_parquet_14 pg_fkpart_14* pg_partman_14* plproxy_14* #pg_duckdb_14* #pg_mooncake_14* #pg_strom_14*
+pg13: citus_13* hydra_13* pg_analytics_13 duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* #pg_duckdb_13* #pg_mooncake_13* #pg_parquet_13 #pg_strom_13*
+pg12: citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_mooncake_12* #pg_parquet_12 #pg_strom_12*
+```
+
+
+### RHEL 9 Compatible (el9)
 
 ```yaml
 pg17: pg_analytics_17 pg_duckdb_17* pg_mooncake_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17* plproxy_17* #citus_17* #hydra_17* #pg_partman_17* #pg_strom_17*
@@ -93,13 +157,39 @@ pg12: citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* #hydra_1
 
 
 
+### Debian 12 bookworm Compatible (d12)
+
 ```yaml
-pg17: pg_analytics_17 pg_duckdb_17* pg_mooncake_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17* plproxy_17* #citus_17* #hydra_17* #pg_partman_17* #pg_strom_17*
-pg16: citus_16* hydra_16* pg_analytics_16 pg_duckdb_16* pg_mooncake_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16* pg_partman_16* plproxy_16* #pg_strom_16*
-pg15: citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* pg_mooncake_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15* pg_partman_15* plproxy_15* #pg_strom_15*
-pg14: citus_14* hydra_14* pg_analytics_14 duckdb_fdw_14* pg_parquet_14 pg_fkpart_14* pg_partman_14* plproxy_14* #pg_duckdb_14* #pg_mooncake_14* #pg_strom_14*
-pg13: citus_13* hydra_13* pg_analytics_13 duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* #pg_duckdb_13* #pg_mooncake_13* #pg_parquet_13 #pg_strom_13*
-pg12: citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_mooncake_12* #pg_parquet_12 #pg_strom_12*
+pg17: postgresql-17-pg-analytics postgresql-17-pg-duckdb postgresql-17-pg-mooncake postgresql-17-duckdb-fdw postgresql-17-pg-parquet postgresql-17-pg-fkpart postgresql-17-partman postgresql-17-plproxy #postgresql-17-citus-12.1 #postgresql-17-hydra
+pg16: postgresql-16-citus-12.1 postgresql-16-hydra postgresql-16-pg-analytics postgresql-16-pg-duckdb postgresql-16-pg-mooncake postgresql-16-duckdb-fdw postgresql-16-pg-parquet postgresql-16-pg-fkpart postgresql-16-partman postgresql-16-plproxy
+pg15: postgresql-15-citus-12.1 postgresql-15-hydra postgresql-15-pg-analytics postgresql-15-pg-duckdb postgresql-15-pg-mooncake postgresql-15-duckdb-fdw postgresql-15-pg-parquet postgresql-15-pg-fkpart postgresql-15-partman postgresql-15-plproxy
+pg14: postgresql-14-citus-12.1 postgresql-14-hydra postgresql-14-pg-analytics postgresql-14-duckdb-fdw postgresql-14-pg-parquet postgresql-14-pg-fkpart postgresql-14-partman postgresql-14-plproxy #postgresql-14-pg-duckdb #postgresql-14-pg-mooncake
+pg13: postgresql-13-citus-11.3 postgresql-13-hydra postgresql-13-pg-analytics postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postgresql-13-partman postgresql-13-plproxy #postgresql-13-pg-duckdb #postgresql-13-pg-mooncake #postgresql-13-pg-parquet
+pg12: postgresql-12-citus-10.2 postgresql-12-duckdb-fdw postgresql-12-pg-fkpart postgresql-12-partman postgresql-12-plproxy #postgresql-12-hydra #postgresql-12-pg-analytics #postgresql-12-pg-duckdb #postgresql-12-pg-mooncake #postgresql-12-pg-parquet
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: postgresql-17-pg-analytics postgresql-17-pg-duckdb postgresql-17-pg-mooncake postgresql-17-duckdb-fdw postgresql-17-pg-parquet postgresql-17-pg-fkpart postgresql-17-partman postgresql-17-plproxy #postgresql-17-citus-12.1 #postgresql-17-hydra
+pg16: postgresql-16-citus-12.1 postgresql-16-hydra postgresql-16-pg-analytics postgresql-16-pg-duckdb postgresql-16-pg-mooncake postgresql-16-duckdb-fdw postgresql-16-pg-parquet postgresql-16-pg-fkpart postgresql-16-partman postgresql-16-plproxy
+pg15: postgresql-15-citus-12.1 postgresql-15-hydra postgresql-15-pg-analytics postgresql-15-pg-duckdb postgresql-15-pg-mooncake postgresql-15-duckdb-fdw postgresql-15-pg-parquet postgresql-15-pg-fkpart postgresql-15-partman postgresql-15-plproxy
+pg14: postgresql-14-citus-12.1 postgresql-14-hydra postgresql-14-pg-analytics postgresql-14-duckdb-fdw postgresql-14-pg-parquet postgresql-14-pg-fkpart postgresql-14-partman postgresql-14-plproxy #postgresql-14-pg-duckdb #postgresql-14-pg-mooncake
+pg13: postgresql-13-citus-11.3 postgresql-13-hydra postgresql-13-pg-analytics postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postgresql-13-partman postgresql-13-plproxy #postgresql-13-pg-duckdb #postgresql-13-pg-mooncake #postgresql-13-pg-parquet
+pg12: postgresql-12-citus-10.2 postgresql-12-duckdb-fdw postgresql-12-pg-fkpart postgresql-12-partman postgresql-12-plproxy #postgresql-12-hydra #postgresql-12-pg-analytics #postgresql-12-pg-duckdb #postgresql-12-pg-mooncake #postgresql-12-pg-parquet
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: postgresql-17-pg-analytics postgresql-17-pg-duckdb postgresql-17-pg-mooncake postgresql-17-duckdb-fdw postgresql-17-pg-parquet postgresql-17-pg-fkpart postgresql-17-partman postgresql-17-plproxy #postgresql-17-citus-12.1 #postgresql-17-hydra
+pg16: postgresql-16-hydra postgresql-16-pg-analytics postgresql-16-pg-duckdb postgresql-16-pg-mooncake postgresql-16-duckdb-fdw postgresql-16-pg-parquet postgresql-16-pg-fkpart postgresql-16-partman postgresql-16-plproxy #postgresql-16-citus-12.1
+pg15: postgresql-15-hydra postgresql-15-pg-analytics postgresql-15-pg-duckdb postgresql-15-pg-mooncake postgresql-15-duckdb-fdw postgresql-15-pg-parquet postgresql-15-pg-fkpart postgresql-15-partman postgresql-15-plproxy #postgresql-15-citus-12.1
+pg14: postgresql-14-hydra postgresql-14-pg-analytics postgresql-14-duckdb-fdw postgresql-14-pg-parquet postgresql-14-pg-fkpart postgresql-14-partman postgresql-14-plproxy #postgresql-14-citus-12.1 #postgresql-14-pg-duckdb #postgresql-14-pg-mooncake
+pg13: postgresql-13-hydra postgresql-13-pg-analytics postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postgresql-13-plproxy #postgresql-13-citus-11.3 #postgresql-13-pg-duckdb #postgresql-13-pg-mooncake #postgresql-13-pg-parquet #postgresql-13-partman
+pg12: postgresql-12-duckdb-fdw postgresql-12-pg-fkpart postgresql-12-plproxy #postgresql-12-citus-10.2 #postgresql-12-hydra #postgresql-12-pg-analytics #postgresql-12-pg-duckdb #postgresql-12-pg-mooncake #postgresql-12-pg-parquet #postgresql-12-partman
 ```
 
 

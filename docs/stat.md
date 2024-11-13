@@ -46,6 +46,56 @@ There are 31 available extensions in this category:
 
 
 
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis #pg_store_plans #pg_top #powa
+pg16: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_top pagevis powa
+pg15: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_top pagevis powa
+pg14: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_top pagevis powa
+pg13: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_top pagevis powa
+pg12: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+```
+
+
+### RHEL 9 Compatible (el9)
+
+```yaml
+pg17: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis #pg_store_plans #pg_top #powa
+pg16: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_top pagevis powa
+pg15: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_top pagevis powa
+pg14: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_top pagevis powa
+pg13: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pg_top pagevis powa
+pg12: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+```
+
+
+### Debian 12 bookworm Compatible (d12)
+
+```yaml
+pg17: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis #pg_store_plans #pg_top #powa
+pg16: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+pg15: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+pg14: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+pg13: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+pg12: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis #pg_store_plans #pg_top #powa
+pg16: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+pg15: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+pg14: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+pg13: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+pg12: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
 ```yaml
 pg17: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis #pg_store_plans #pg_top #powa
 pg16: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_top
@@ -97,6 +147,20 @@ pg12: pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_st
 
 
 
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: pg_profile_17* pg_show_plans_17* pg_stat_kcache_17* pg_stat_monitor_17* pg_qualstats_17* pg_track_settings_17* pg_wait_sampling_17* system_stats_17* pg_meta_17 pgnodemx_17 pg_sqlog_17* bgw_replstatus_17* pgmeminfo_17* toastinfo_17* pg_explain_ui_17 pg_relusage_17 pagevis_17 #pg_store_plans_17* #pg_top_17* #powa_17*
+pg16: pg_profile_16* pg_show_plans_16* pg_stat_kcache_16* pg_stat_monitor_16* pg_qualstats_16* pg_store_plans_16* pg_track_settings_16* pg_wait_sampling_16* system_stats_16* pg_meta_16 pgnodemx_16 pg_sqlog_16* bgw_replstatus_16* pgmeminfo_16* toastinfo_16* pg_explain_ui_16 pg_relusage_16 pg_top_16* pagevis_16 powa_16*
+pg15: pg_profile_15* pg_show_plans_15* pg_stat_kcache_15* pg_stat_monitor_15* pg_qualstats_15* pg_store_plans_15* pg_track_settings_15* pg_wait_sampling_15* system_stats_15* pg_meta_15 pgnodemx_15 pg_sqlog_15* bgw_replstatus_15* pgmeminfo_15* toastinfo_15* pg_explain_ui_15 pg_relusage_15 pg_top_15* pagevis_15 powa_15*
+pg14: pg_profile_14* pg_show_plans_14* pg_stat_kcache_14* pg_stat_monitor_14* pg_qualstats_14* pg_store_plans_14* pg_track_settings_14* pg_wait_sampling_14* system_stats_14* pg_meta_14 pgnodemx_14 pg_sqlog_14* bgw_replstatus_14* pgmeminfo_14* toastinfo_14* pg_explain_ui_14 pg_relusage_14 pg_top_14* pagevis_14 powa_14*
+pg13: pg_profile_13* pg_show_plans_13* pg_stat_kcache_13* pg_stat_monitor_13* pg_qualstats_13* pg_store_plans_13* pg_track_settings_13* pg_wait_sampling_13* system_stats_13* pg_meta_13 pgnodemx_13 pg_sqlog_13* bgw_replstatus_13* pgmeminfo_13* toastinfo_13* pg_explain_ui_13 pg_relusage_13 pg_top_13* pagevis_13 powa_13*
+pg12: pg_profile_12* pg_show_plans_12* pg_stat_kcache_12* pg_stat_monitor_12* pg_qualstats_12* pg_store_plans_12* pg_track_settings_12* pg_wait_sampling_12* system_stats_12* pg_meta_12 pgnodemx_12 pg_sqlog_12* bgw_replstatus_12* pgmeminfo_12* toastinfo_12* pg_explain_ui_12 pg_relusage_12 pagevis_12 powa_12* #pg_top_12*
+```
+
+
+### RHEL 9 Compatible (el9)
+
 ```yaml
 pg17: pg_profile_17* pg_show_plans_17* pg_stat_kcache_17* pg_stat_monitor_17* pg_qualstats_17* pg_track_settings_17* pg_wait_sampling_17* system_stats_17* pg_meta_17 pgnodemx_17 pg_sqlog_17* bgw_replstatus_17* pgmeminfo_17* toastinfo_17* pg_explain_ui_17 pg_relusage_17 pagevis_17 #pg_store_plans_17* #pg_top_17* #powa_17*
 pg16: pg_profile_16* pg_show_plans_16* pg_stat_kcache_16* pg_stat_monitor_16* pg_qualstats_16* pg_store_plans_16* pg_track_settings_16* pg_wait_sampling_16* system_stats_16* pg_meta_16 pgnodemx_16 pg_sqlog_16* bgw_replstatus_16* pgmeminfo_16* toastinfo_16* pg_explain_ui_16 pg_relusage_16 pg_top_16* pagevis_16 powa_16*
@@ -147,13 +211,39 @@ pg12: pg_profile_12* pg_show_plans_12* pg_stat_kcache_12* pg_stat_monitor_12* pg
 
 
 
+### Debian 12 bookworm Compatible (d12)
+
 ```yaml
-pg17: pg_profile_17* pg_show_plans_17* pg_stat_kcache_17* pg_stat_monitor_17* pg_qualstats_17* pg_track_settings_17* pg_wait_sampling_17* system_stats_17* pg_meta_17 pgnodemx_17 pg_sqlog_17* bgw_replstatus_17* pgmeminfo_17* toastinfo_17* pg_explain_ui_17 pg_relusage_17 pagevis_17 #pg_store_plans_17* #pg_top_17* #powa_17*
-pg16: pg_profile_16* pg_show_plans_16* pg_stat_kcache_16* pg_stat_monitor_16* pg_qualstats_16* pg_store_plans_16* pg_track_settings_16* pg_wait_sampling_16* system_stats_16* pg_meta_16 pgnodemx_16 pg_sqlog_16* bgw_replstatus_16* pgmeminfo_16* toastinfo_16* pg_explain_ui_16 pg_relusage_16 pg_top_16* pagevis_16 powa_16*
-pg15: pg_profile_15* pg_show_plans_15* pg_stat_kcache_15* pg_stat_monitor_15* pg_qualstats_15* pg_store_plans_15* pg_track_settings_15* pg_wait_sampling_15* system_stats_15* pg_meta_15 pgnodemx_15 pg_sqlog_15* bgw_replstatus_15* pgmeminfo_15* toastinfo_15* pg_explain_ui_15 pg_relusage_15 pg_top_15* pagevis_15 powa_15*
-pg14: pg_profile_14* pg_show_plans_14* pg_stat_kcache_14* pg_stat_monitor_14* pg_qualstats_14* pg_store_plans_14* pg_track_settings_14* pg_wait_sampling_14* system_stats_14* pg_meta_14 pgnodemx_14 pg_sqlog_14* bgw_replstatus_14* pgmeminfo_14* toastinfo_14* pg_explain_ui_14 pg_relusage_14 pg_top_14* pagevis_14 powa_14*
-pg13: pg_profile_13* pg_show_plans_13* pg_stat_kcache_13* pg_stat_monitor_13* pg_qualstats_13* pg_store_plans_13* pg_track_settings_13* pg_wait_sampling_13* system_stats_13* pg_meta_13 pgnodemx_13 pg_sqlog_13* bgw_replstatus_13* pgmeminfo_13* toastinfo_13* pg_explain_ui_13 pg_relusage_13 pg_top_13* pagevis_13 powa_13*
-pg12: pg_profile_12* pg_show_plans_12* pg_stat_kcache_12* pg_stat_monitor_12* pg_qualstats_12* pg_store_plans_12* pg_track_settings_12* pg_wait_sampling_12* system_stats_12* pg_meta_12 pgnodemx_12 pg_sqlog_12* bgw_replstatus_12* pgmeminfo_12* toastinfo_12* pg_explain_ui_12 pg_relusage_12 pagevis_12 powa_12* #pg_top_12*
+pg17: postgresql-17-pg-profile postgresql-17-show-plans postgresql-17-pg-stat-kcache postgresql-17-pg-stat-monitor postgresql-17-pg-qualstats postgresql-17-pg-track-settings postgresql-17-pg-wait-sampling postgresql-17-system-stats postgresql-17-pg-meta postgresql-17-pgnodemx postgresql-17-pg-sqlog postgresql-17-bgw-replstatus postgresql-17-pgmeminfo postgresql-17-toastinfo postgresql-17-pg-explain-ui postgresql-17-pg-relusage postgresql-17-pagevis #postgresql-17-pg-store-plan # #postgresql-17-powa
+pg16: postgresql-16-pg-profile postgresql-16-show-plans postgresql-16-pg-stat-kcache postgresql-16-pg-stat-monitor postgresql-16-pg-qualstats postgresql-16-pg-store-plan postgresql-16-pg-track-settings postgresql-16-pg-wait-sampling postgresql-16-system-stats postgresql-16-pg-meta postgresql-16-pgnodemx postgresql-16-pg-sqlog postgresql-16-bgw-replstatus postgresql-16-pgmeminfo postgresql-16-toastinfo postgresql-16-pg-explain-ui postgresql-16-pg-relusage postgresql-16-pagevis postgresql-16-powa
+pg15: postgresql-15-pg-profile postgresql-15-show-plans postgresql-15-pg-stat-kcache postgresql-15-pg-stat-monitor postgresql-15-pg-qualstats postgresql-15-pg-store-plan postgresql-15-pg-track-settings postgresql-15-pg-wait-sampling postgresql-15-system-stats postgresql-15-pg-meta postgresql-15-pgnodemx postgresql-15-pg-sqlog postgresql-15-bgw-replstatus postgresql-15-pgmeminfo postgresql-15-toastinfo postgresql-15-pg-explain-ui postgresql-15-pg-relusage postgresql-15-pagevis postgresql-15-powa
+pg14: postgresql-14-pg-profile postgresql-14-show-plans postgresql-14-pg-stat-kcache postgresql-14-pg-stat-monitor postgresql-14-pg-qualstats postgresql-14-pg-store-plan postgresql-14-pg-track-settings postgresql-14-pg-wait-sampling postgresql-14-system-stats postgresql-14-pg-meta postgresql-14-pgnodemx postgresql-14-pg-sqlog postgresql-14-bgw-replstatus postgresql-14-pgmeminfo postgresql-14-toastinfo postgresql-14-pg-explain-ui postgresql-14-pg-relusage postgresql-14-pagevis postgresql-14-powa
+pg13: postgresql-13-pg-profile postgresql-13-show-plans postgresql-13-pg-stat-kcache postgresql-13-pg-stat-monitor postgresql-13-pg-qualstats postgresql-13-pg-store-plan postgresql-13-pg-track-settings postgresql-13-pg-wait-sampling postgresql-13-system-stats postgresql-13-pg-meta postgresql-13-pgnodemx postgresql-13-pg-sqlog postgresql-13-bgw-replstatus postgresql-13-pgmeminfo postgresql-13-toastinfo postgresql-13-pg-explain-ui postgresql-13-pg-relusage postgresql-13-pagevis postgresql-13-powa
+pg12: postgresql-12-pg-profile postgresql-12-show-plans postgresql-12-pg-stat-kcache postgresql-12-pg-stat-monitor postgresql-12-pg-qualstats postgresql-12-pg-store-plan postgresql-12-pg-track-settings postgresql-12-pg-wait-sampling postgresql-12-system-stats postgresql-12-pg-meta postgresql-12-pgnodemx postgresql-12-pg-sqlog postgresql-12-bgw-replstatus postgresql-12-pgmeminfo postgresql-12-toastinfo postgresql-12-pg-explain-ui postgresql-12-pg-relusage postgresql-12-pagevis postgresql-12-powa
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: postgresql-17-pg-profile postgresql-17-show-plans postgresql-17-pg-stat-kcache postgresql-17-pg-stat-monitor postgresql-17-pg-qualstats postgresql-17-pg-track-settings postgresql-17-pg-wait-sampling postgresql-17-system-stats postgresql-17-pg-meta postgresql-17-pgnodemx postgresql-17-pg-sqlog postgresql-17-bgw-replstatus postgresql-17-pgmeminfo postgresql-17-toastinfo postgresql-17-pg-explain-ui postgresql-17-pg-relusage postgresql-17-pagevis #postgresql-17-pg-store-plan # #postgresql-17-powa
+pg16: postgresql-16-pg-profile postgresql-16-show-plans postgresql-16-pg-stat-kcache postgresql-16-pg-stat-monitor postgresql-16-pg-qualstats postgresql-16-pg-store-plan postgresql-16-pg-track-settings postgresql-16-pg-wait-sampling postgresql-16-system-stats postgresql-16-pg-meta postgresql-16-pgnodemx postgresql-16-pg-sqlog postgresql-16-bgw-replstatus postgresql-16-pgmeminfo postgresql-16-toastinfo postgresql-16-pg-explain-ui postgresql-16-pg-relusage postgresql-16-pagevis postgresql-16-powa
+pg15: postgresql-15-pg-profile postgresql-15-show-plans postgresql-15-pg-stat-kcache postgresql-15-pg-stat-monitor postgresql-15-pg-qualstats postgresql-15-pg-store-plan postgresql-15-pg-track-settings postgresql-15-pg-wait-sampling postgresql-15-system-stats postgresql-15-pg-meta postgresql-15-pgnodemx postgresql-15-pg-sqlog postgresql-15-bgw-replstatus postgresql-15-pgmeminfo postgresql-15-toastinfo postgresql-15-pg-explain-ui postgresql-15-pg-relusage postgresql-15-pagevis postgresql-15-powa
+pg14: postgresql-14-pg-profile postgresql-14-show-plans postgresql-14-pg-stat-kcache postgresql-14-pg-stat-monitor postgresql-14-pg-qualstats postgresql-14-pg-store-plan postgresql-14-pg-track-settings postgresql-14-pg-wait-sampling postgresql-14-system-stats postgresql-14-pg-meta postgresql-14-pgnodemx postgresql-14-pg-sqlog postgresql-14-bgw-replstatus postgresql-14-pgmeminfo postgresql-14-toastinfo postgresql-14-pg-explain-ui postgresql-14-pg-relusage postgresql-14-pagevis postgresql-14-powa
+pg13: postgresql-13-pg-profile postgresql-13-show-plans postgresql-13-pg-stat-kcache postgresql-13-pg-stat-monitor postgresql-13-pg-qualstats postgresql-13-pg-store-plan postgresql-13-pg-track-settings postgresql-13-pg-wait-sampling postgresql-13-system-stats postgresql-13-pg-meta postgresql-13-pgnodemx postgresql-13-pg-sqlog postgresql-13-bgw-replstatus postgresql-13-pgmeminfo postgresql-13-toastinfo postgresql-13-pg-explain-ui postgresql-13-pg-relusage postgresql-13-pagevis postgresql-13-powa
+pg12: postgresql-12-pg-profile postgresql-12-show-plans postgresql-12-pg-stat-kcache postgresql-12-pg-stat-monitor postgresql-12-pg-qualstats postgresql-12-pg-store-plan postgresql-12-pg-track-settings postgresql-12-pg-wait-sampling postgresql-12-system-stats postgresql-12-pg-meta postgresql-12-pgnodemx postgresql-12-pg-sqlog postgresql-12-bgw-replstatus postgresql-12-pgmeminfo postgresql-12-toastinfo postgresql-12-pg-explain-ui postgresql-12-pg-relusage postgresql-12-pagevis postgresql-12-powa
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: postgresql-17-pg-profile postgresql-17-show-plans postgresql-17-pg-stat-kcache postgresql-17-pg-stat-monitor postgresql-17-pg-qualstats postgresql-17-pg-track-settings postgresql-17-pg-wait-sampling postgresql-17-system-stats postgresql-17-pg-meta postgresql-17-pgnodemx postgresql-17-pg-sqlog postgresql-17-bgw-replstatus postgresql-17-pgmeminfo postgresql-17-toastinfo postgresql-17-pg-explain-ui postgresql-17-pg-relusage postgresql-17-pagevis #postgresql-17-pg-store-plan # #postgresql-17-powa
+pg16: postgresql-16-pg-profile postgresql-16-show-plans postgresql-16-pg-stat-kcache postgresql-16-pg-stat-monitor postgresql-16-pg-qualstats postgresql-16-pg-store-plan postgresql-16-pg-track-settings postgresql-16-pg-wait-sampling postgresql-16-system-stats postgresql-16-pg-meta postgresql-16-pgnodemx postgresql-16-pg-sqlog postgresql-16-bgw-replstatus postgresql-16-pgmeminfo postgresql-16-toastinfo postgresql-16-pg-explain-ui postgresql-16-pg-relusage postgresql-16-pagevis postgresql-16-powa
+pg15: postgresql-15-pg-profile postgresql-15-show-plans postgresql-15-pg-stat-kcache postgresql-15-pg-stat-monitor postgresql-15-pg-qualstats postgresql-15-pg-store-plan postgresql-15-pg-track-settings postgresql-15-pg-wait-sampling postgresql-15-system-stats postgresql-15-pg-meta postgresql-15-pgnodemx postgresql-15-pg-sqlog postgresql-15-bgw-replstatus postgresql-15-pgmeminfo postgresql-15-toastinfo postgresql-15-pg-explain-ui postgresql-15-pg-relusage postgresql-15-pagevis postgresql-15-powa
+pg14: postgresql-14-pg-profile postgresql-14-show-plans postgresql-14-pg-stat-kcache postgresql-14-pg-stat-monitor postgresql-14-pg-qualstats postgresql-14-pg-store-plan postgresql-14-pg-track-settings postgresql-14-pg-wait-sampling postgresql-14-system-stats postgresql-14-pg-meta postgresql-14-pgnodemx postgresql-14-pg-sqlog postgresql-14-bgw-replstatus postgresql-14-pgmeminfo postgresql-14-toastinfo postgresql-14-pg-explain-ui postgresql-14-pg-relusage postgresql-14-pagevis postgresql-14-powa
+pg13: postgresql-13-pg-profile postgresql-13-show-plans postgresql-13-pg-stat-kcache postgresql-13-pg-stat-monitor postgresql-13-pg-qualstats postgresql-13-pg-store-plan postgresql-13-pg-track-settings postgresql-13-pg-wait-sampling postgresql-13-system-stats postgresql-13-pg-meta postgresql-13-pgnodemx postgresql-13-pg-sqlog postgresql-13-bgw-replstatus postgresql-13-pgmeminfo postgresql-13-toastinfo postgresql-13-pg-explain-ui postgresql-13-pg-relusage postgresql-13-pagevis postgresql-13-powa
+pg12: postgresql-12-pg-profile postgresql-12-show-plans postgresql-12-pg-stat-kcache postgresql-12-pg-stat-monitor postgresql-12-pg-qualstats postgresql-12-pg-store-plan postgresql-12-pg-track-settings postgresql-12-pg-wait-sampling postgresql-12-system-stats postgresql-12-pg-meta postgresql-12-pgnodemx postgresql-12-pg-sqlog postgresql-12-bgw-replstatus postgresql-12-pgmeminfo postgresql-12-toastinfo postgresql-12-pg-explain-ui postgresql-12-pg-relusage postgresql-12-pagevis postgresql-12-powa
 ```
 
 

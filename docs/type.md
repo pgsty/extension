@@ -45,13 +45,63 @@ There are 30 available extensions in this category:
 
 
 
+### RHEL 8 Compatible (el8)
+
 ```yaml
 pg17: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
 pg16: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
 pg15: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
 pg14: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #pgmp #debversion #pg_rrule
-pg13: prefix semver pgunit md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #pgfaceting #pgmp #debversion #pg_rrule
-pg12: prefix semver pgunit md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #pgfaceting #pgmp #debversion #pg_rrule
+pg13: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #pgmp #debversion #pg_rrule
+pg12: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #pgmp #debversion #pg_rrule
+```
+
+
+### RHEL 9 Compatible (el9)
+
+```yaml
+pg17: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
+pg16: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
+pg15: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #debversion #pg_rrule
+pg14: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #pgmp #debversion #pg_rrule
+pg13: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #pgmp #debversion #pg_rrule
+pg12: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl timestamp9 chkpass #pgmp #debversion #pg_rrule
+```
+
+
+### Debian 12 bookworm Compatible (d12)
+
+```yaml
+pg17: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass
+pg16: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass
+pg15: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass
+pg14: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass
+pg13: prefix semver pgunit md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass #pgfaceting
+pg12: prefix semver pgunit md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass #pgfaceting
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass
+pg16: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass
+pg15: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass
+pg14: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass
+pg13: prefix semver pgunit md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass #pgfaceting
+pg12: prefix semver pgunit md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass #pgfaceting
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass
+pg16: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass
+pg15: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass
+pg14: prefix semver pgunit md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass
+pg13: prefix semver pgunit md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass #pgfaceting
+pg12: prefix semver pgunit md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr acl debversion pg_rrule timestamp9 chkpass #pgfaceting
 ```
 
 
@@ -93,6 +143,20 @@ pg12: prefix semver pgunit md5hash asn1oid roaringbitmap pgsphere pg_country pg_
 | [xml2](/xml2) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | XPath querying and XSLT |
 
 
+
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: prefix_17* semver_17* postgresql-unit_17* md5hash_17* asn1oid_17* pg_roaringbitmap_17* pgfaceting_17 pgsphere_17* pg_country_17* pg_currency_17* pgmp_17* numeral_17* pg_rational_17* pguint_17* pg_uint128_17* ip4r_17* pg_uri_17* pg_emailaddr_17* acl_17* timestamp9_17* chkpass_17*
+pg16: prefix_16* semver_16* postgresql-unit_16* md5hash_16* asn1oid_16* pg_roaringbitmap_16* pgfaceting_16 pgsphere_16* pg_country_16* pg_currency_16* pgmp_16* numeral_16* pg_rational_16* pguint_16* pg_uint128_16* ip4r_16* pg_uri_16* pg_emailaddr_16* acl_16* timestamp9_16* chkpass_16*
+pg15: prefix_15* semver_15* postgresql-unit_15* md5hash_15* asn1oid_15* pg_roaringbitmap_15* pgfaceting_15 pgsphere_15* pg_country_15* pg_currency_15* pgmp_15* numeral_15* pg_rational_15* pguint_15* pg_uint128_15* ip4r_15* pg_uri_15* pg_emailaddr_15* acl_15* timestamp9_15* chkpass_15*
+pg14: prefix_14* semver_14* postgresql-unit_14* md5hash_14* asn1oid_14* pg_roaringbitmap_14* pgfaceting_14 pgsphere_14* pg_country_14* pg_currency_14* numeral_14* pg_rational_14* pguint_14* pg_uint128_14* ip4r_14* pg_uri_14* pg_emailaddr_14* acl_14* timestamp9_14* chkpass_14* #pgmp_14*
+pg13: prefix_13* semver_13* postgresql-unit_13* md5hash_13* asn1oid_13* pg_roaringbitmap_13* pgfaceting_13 pgsphere_13* pg_country_13* pg_currency_13* numeral_13* pg_rational_13* pguint_13* pg_uint128_13* ip4r_13* pg_uri_13* pg_emailaddr_13* acl_13* timestamp9_13* chkpass_13* #pgmp_13*
+pg12: prefix_12* semver_12* postgresql-unit_12* md5hash_12* asn1oid_12* pg_roaringbitmap_12* pgfaceting_12 pgsphere_12* pg_country_12* pg_currency_12* numeral_12* pg_rational_12* pguint_12* pg_uint128_12* ip4r_12* pg_uri_12* pg_emailaddr_12* acl_12* timestamp9_12* chkpass_12* #pgmp_12*
+```
+
+
+### RHEL 9 Compatible (el9)
 
 ```yaml
 pg17: prefix_17* semver_17* postgresql-unit_17* md5hash_17* asn1oid_17* pg_roaringbitmap_17* pgfaceting_17 pgsphere_17* pg_country_17* pg_currency_17* pgmp_17* numeral_17* pg_rational_17* pguint_17* pg_uint128_17* ip4r_17* pg_uri_17* pg_emailaddr_17* acl_17* timestamp9_17* chkpass_17*
@@ -145,13 +209,39 @@ pg12: prefix_12* semver_12* postgresql-unit_12* md5hash_12* asn1oid_12* pg_roari
 
 
 
+### Debian 12 bookworm Compatible (d12)
+
 ```yaml
-pg17: prefix_17* semver_17* postgresql-unit_17* md5hash_17* asn1oid_17* pg_roaringbitmap_17* pgfaceting_17 pgsphere_17* pg_country_17* pg_currency_17* pgmp_17* numeral_17* pg_rational_17* pguint_17* pg_uint128_17* ip4r_17* pg_uri_17* pg_emailaddr_17* acl_17* timestamp9_17* chkpass_17*
-pg16: prefix_16* semver_16* postgresql-unit_16* md5hash_16* asn1oid_16* pg_roaringbitmap_16* pgfaceting_16 pgsphere_16* pg_country_16* pg_currency_16* pgmp_16* numeral_16* pg_rational_16* pguint_16* pg_uint128_16* ip4r_16* pg_uri_16* pg_emailaddr_16* acl_16* timestamp9_16* chkpass_16*
-pg15: prefix_15* semver_15* postgresql-unit_15* md5hash_15* asn1oid_15* pg_roaringbitmap_15* pgfaceting_15 pgsphere_15* pg_country_15* pg_currency_15* pgmp_15* numeral_15* pg_rational_15* pguint_15* pg_uint128_15* ip4r_15* pg_uri_15* pg_emailaddr_15* acl_15* timestamp9_15* chkpass_15*
-pg14: prefix_14* semver_14* postgresql-unit_14* md5hash_14* asn1oid_14* pg_roaringbitmap_14* pgfaceting_14 pgsphere_14* pg_country_14* pg_currency_14* numeral_14* pg_rational_14* pguint_14* pg_uint128_14* ip4r_14* pg_uri_14* pg_emailaddr_14* acl_14* timestamp9_14* chkpass_14* #pgmp_14*
-pg13: prefix_13* semver_13* postgresql-unit_13* md5hash_13* asn1oid_13* pg_roaringbitmap_13* pgfaceting_13 pgsphere_13* pg_country_13* pg_currency_13* numeral_13* pg_rational_13* pguint_13* pg_uint128_13* ip4r_13* pg_uri_13* pg_emailaddr_13* acl_13* timestamp9_13* chkpass_13* #pgmp_13*
-pg12: prefix_12* semver_12* postgresql-unit_12* md5hash_12* asn1oid_12* pg_roaringbitmap_12* pgfaceting_12 pgsphere_12* pg_country_12* pg_currency_12* numeral_12* pg_rational_12* pguint_12* pg_uint128_12* ip4r_12* pg_uri_12* pg_emailaddr_12* acl_12* timestamp9_12* chkpass_12* #pgmp_12*
+pg17: postgresql-17-prefix postgresql-17-semver postgresql-17-unit postgresql-17-md5hash postgresql-17-asn1oid postgresql-17-roaringbitmap postgresql-17-pgfaceting postgresql-17-pgsphere postgresql-17-pg-country postgresql-17-pg-currency postgresql-17-pgmp postgresql-17-numeral postgresql-17-rational postgresql-17-pguint postgresql-17-pg-uint128 postgresql-17-ip4r postgresql-17-pg-uri postgresql-17-pg-emailaddr postgresql-17-acl postgresql-17-debversion postgresql-17-pg-rrule postgresql-17-timestamp9 postgresql-17-chkpass
+pg16: postgresql-16-prefix postgresql-16-semver postgresql-16-unit postgresql-16-md5hash postgresql-16-asn1oid postgresql-16-roaringbitmap postgresql-16-pgfaceting postgresql-16-pgsphere postgresql-16-pg-country postgresql-16-pg-currency postgresql-16-pgmp postgresql-16-numeral postgresql-16-rational postgresql-16-pguint postgresql-16-pg-uint128 postgresql-16-ip4r postgresql-16-pg-uri postgresql-16-pg-emailaddr postgresql-16-acl postgresql-16-debversion postgresql-16-pg-rrule postgresql-16-timestamp9 postgresql-16-chkpass
+pg15: postgresql-15-prefix postgresql-15-semver postgresql-15-unit postgresql-15-md5hash postgresql-15-asn1oid postgresql-15-roaringbitmap postgresql-15-pgfaceting postgresql-15-pgsphere postgresql-15-pg-country postgresql-15-pg-currency postgresql-15-pgmp postgresql-15-numeral postgresql-15-rational postgresql-15-pguint postgresql-15-pg-uint128 postgresql-15-ip4r postgresql-15-pg-uri postgresql-15-pg-emailaddr postgresql-15-acl postgresql-15-debversion postgresql-15-pg-rrule postgresql-15-timestamp9 postgresql-15-chkpass
+pg14: postgresql-14-prefix postgresql-14-semver postgresql-14-unit postgresql-14-md5hash postgresql-14-asn1oid postgresql-14-roaringbitmap postgresql-14-pgfaceting postgresql-14-pgsphere postgresql-14-pg-country postgresql-14-pg-currency postgresql-14-pgmp postgresql-14-numeral postgresql-14-rational postgresql-14-pguint postgresql-14-pg-uint128 postgresql-14-ip4r postgresql-14-pg-uri postgresql-14-pg-emailaddr postgresql-14-acl postgresql-14-debversion postgresql-14-pg-rrule postgresql-14-timestamp9 postgresql-14-chkpass
+pg13: postgresql-13-prefix postgresql-13-semver postgresql-13-unit postgresql-13-md5hash postgresql-13-asn1oid postgresql-13-roaringbitmap postgresql-13-pgsphere postgresql-13-pg-country postgresql-13-pg-currency postgresql-13-pgmp postgresql-13-numeral postgresql-13-rational postgresql-13-pguint postgresql-13-pg-uint128 postgresql-13-ip4r postgresql-13-pg-uri postgresql-13-pg-emailaddr postgresql-13-acl postgresql-13-debversion postgresql-13-pg-rrule postgresql-13-timestamp9 postgresql-13-chkpass #postgresql-13-pgfaceting
+pg12: postgresql-12-prefix postgresql-12-semver postgresql-12-unit postgresql-12-md5hash postgresql-12-asn1oid postgresql-12-roaringbitmap postgresql-12-pgsphere postgresql-12-pg-country postgresql-12-pg-currency postgresql-12-pgmp postgresql-12-numeral postgresql-12-rational postgresql-12-pguint postgresql-12-pg-uint128 postgresql-12-ip4r postgresql-12-pg-uri postgresql-12-pg-emailaddr postgresql-12-acl postgresql-12-debversion postgresql-12-pg-rrule postgresql-12-timestamp9 postgresql-12-chkpass #postgresql-12-pgfaceting
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: postgresql-17-prefix postgresql-17-semver postgresql-17-unit postgresql-17-md5hash postgresql-17-asn1oid postgresql-17-roaringbitmap postgresql-17-pgfaceting postgresql-17-pgsphere postgresql-17-pg-country postgresql-17-pg-currency postgresql-17-pgmp postgresql-17-numeral postgresql-17-rational postgresql-17-pguint postgresql-17-pg-uint128 postgresql-17-ip4r postgresql-17-pg-uri postgresql-17-pg-emailaddr postgresql-17-acl postgresql-17-debversion postgresql-17-pg-rrule postgresql-17-timestamp9 postgresql-17-chkpass
+pg16: postgresql-16-prefix postgresql-16-semver postgresql-16-unit postgresql-16-md5hash postgresql-16-asn1oid postgresql-16-roaringbitmap postgresql-16-pgfaceting postgresql-16-pgsphere postgresql-16-pg-country postgresql-16-pg-currency postgresql-16-pgmp postgresql-16-numeral postgresql-16-rational postgresql-16-pguint postgresql-16-pg-uint128 postgresql-16-ip4r postgresql-16-pg-uri postgresql-16-pg-emailaddr postgresql-16-acl postgresql-16-debversion postgresql-16-pg-rrule postgresql-16-timestamp9 postgresql-16-chkpass
+pg15: postgresql-15-prefix postgresql-15-semver postgresql-15-unit postgresql-15-md5hash postgresql-15-asn1oid postgresql-15-roaringbitmap postgresql-15-pgfaceting postgresql-15-pgsphere postgresql-15-pg-country postgresql-15-pg-currency postgresql-15-pgmp postgresql-15-numeral postgresql-15-rational postgresql-15-pguint postgresql-15-pg-uint128 postgresql-15-ip4r postgresql-15-pg-uri postgresql-15-pg-emailaddr postgresql-15-acl postgresql-15-debversion postgresql-15-pg-rrule postgresql-15-timestamp9 postgresql-15-chkpass
+pg14: postgresql-14-prefix postgresql-14-semver postgresql-14-unit postgresql-14-md5hash postgresql-14-asn1oid postgresql-14-roaringbitmap postgresql-14-pgfaceting postgresql-14-pgsphere postgresql-14-pg-country postgresql-14-pg-currency postgresql-14-pgmp postgresql-14-numeral postgresql-14-rational postgresql-14-pguint postgresql-14-pg-uint128 postgresql-14-ip4r postgresql-14-pg-uri postgresql-14-pg-emailaddr postgresql-14-acl postgresql-14-debversion postgresql-14-pg-rrule postgresql-14-timestamp9 postgresql-14-chkpass
+pg13: postgresql-13-prefix postgresql-13-semver postgresql-13-unit postgresql-13-md5hash postgresql-13-asn1oid postgresql-13-roaringbitmap postgresql-13-pgsphere postgresql-13-pg-country postgresql-13-pg-currency postgresql-13-pgmp postgresql-13-numeral postgresql-13-rational postgresql-13-pguint postgresql-13-pg-uint128 postgresql-13-ip4r postgresql-13-pg-uri postgresql-13-pg-emailaddr postgresql-13-acl postgresql-13-debversion postgresql-13-pg-rrule postgresql-13-timestamp9 postgresql-13-chkpass #postgresql-13-pgfaceting
+pg12: postgresql-12-prefix postgresql-12-semver postgresql-12-unit postgresql-12-md5hash postgresql-12-asn1oid postgresql-12-roaringbitmap postgresql-12-pgsphere postgresql-12-pg-country postgresql-12-pg-currency postgresql-12-pgmp postgresql-12-numeral postgresql-12-rational postgresql-12-pguint postgresql-12-pg-uint128 postgresql-12-ip4r postgresql-12-pg-uri postgresql-12-pg-emailaddr postgresql-12-acl postgresql-12-debversion postgresql-12-pg-rrule postgresql-12-timestamp9 postgresql-12-chkpass #postgresql-12-pgfaceting
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: postgresql-17-prefix postgresql-17-semver postgresql-17-unit postgresql-17-md5hash postgresql-17-asn1oid postgresql-17-roaringbitmap postgresql-17-pgfaceting postgresql-17-pgsphere postgresql-17-pg-country postgresql-17-pg-currency postgresql-17-pgmp postgresql-17-numeral postgresql-17-rational postgresql-17-pguint postgresql-17-pg-uint128 postgresql-17-ip4r postgresql-17-pg-uri postgresql-17-pg-emailaddr postgresql-17-acl postgresql-17-debversion postgresql-17-pg-rrule postgresql-17-timestamp9 postgresql-17-chkpass
+pg16: postgresql-16-prefix postgresql-16-semver postgresql-16-unit postgresql-16-md5hash postgresql-16-asn1oid postgresql-16-roaringbitmap postgresql-16-pgfaceting postgresql-16-pgsphere postgresql-16-pg-country postgresql-16-pg-currency postgresql-16-pgmp postgresql-16-numeral postgresql-16-rational postgresql-16-pguint postgresql-16-pg-uint128 postgresql-16-ip4r postgresql-16-pg-uri postgresql-16-pg-emailaddr postgresql-16-acl postgresql-16-debversion postgresql-16-pg-rrule postgresql-16-timestamp9 postgresql-16-chkpass
+pg15: postgresql-15-prefix postgresql-15-semver postgresql-15-unit postgresql-15-md5hash postgresql-15-asn1oid postgresql-15-roaringbitmap postgresql-15-pgfaceting postgresql-15-pgsphere postgresql-15-pg-country postgresql-15-pg-currency postgresql-15-pgmp postgresql-15-numeral postgresql-15-rational postgresql-15-pguint postgresql-15-pg-uint128 postgresql-15-ip4r postgresql-15-pg-uri postgresql-15-pg-emailaddr postgresql-15-acl postgresql-15-debversion postgresql-15-pg-rrule postgresql-15-timestamp9 postgresql-15-chkpass
+pg14: postgresql-14-prefix postgresql-14-semver postgresql-14-unit postgresql-14-md5hash postgresql-14-asn1oid postgresql-14-roaringbitmap postgresql-14-pgfaceting postgresql-14-pgsphere postgresql-14-pg-country postgresql-14-pg-currency postgresql-14-pgmp postgresql-14-numeral postgresql-14-rational postgresql-14-pguint postgresql-14-pg-uint128 postgresql-14-ip4r postgresql-14-pg-uri postgresql-14-pg-emailaddr postgresql-14-acl postgresql-14-debversion postgresql-14-pg-rrule postgresql-14-timestamp9 postgresql-14-chkpass
+pg13: postgresql-13-prefix postgresql-13-semver postgresql-13-unit postgresql-13-md5hash postgresql-13-asn1oid postgresql-13-roaringbitmap postgresql-13-pgsphere postgresql-13-pg-country postgresql-13-pg-currency postgresql-13-pgmp postgresql-13-numeral postgresql-13-rational postgresql-13-pguint postgresql-13-pg-uint128 postgresql-13-ip4r postgresql-13-pg-uri postgresql-13-pg-emailaddr postgresql-13-acl postgresql-13-debversion postgresql-13-pg-rrule postgresql-13-timestamp9 postgresql-13-chkpass #postgresql-13-pgfaceting
+pg12: postgresql-12-prefix postgresql-12-semver postgresql-12-unit postgresql-12-md5hash postgresql-12-asn1oid postgresql-12-roaringbitmap postgresql-12-pgsphere postgresql-12-pg-country postgresql-12-pg-currency postgresql-12-pgmp postgresql-12-numeral postgresql-12-rational postgresql-12-pguint postgresql-12-pg-uint128 postgresql-12-ip4r postgresql-12-pg-uri postgresql-12-pg-emailaddr postgresql-12-acl postgresql-12-debversion postgresql-12-pg-rrule postgresql-12-timestamp9 postgresql-12-chkpass #postgresql-12-pgfaceting
 ```
 
 

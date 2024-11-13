@@ -114,7 +114,7 @@ All DEBs are signed with the GPG key fingerprint `9592A7BC7A682E7333376E09E7935D
 
 ## Resources
 
-GitHub Repo of this website: [github.com/pgsty/extensions](https://github.com/pgsty/extensions) 
+GitHub Repo of this website: [github.com/pgsty/extension](https://github.com/pgsty/extension) 
 
 The building recipes and specs, metadata are all open-sourced, related GitHub repos:
 

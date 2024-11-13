@@ -2,7 +2,6 @@
 
 import csv
 import os
-import json
 
 ##################################################
 # CONSTANT                                       #
@@ -13,6 +12,10 @@ DATA_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'data', 'pigsty.csv')
 DOCS_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'docs'))
 STUB_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'stub'))
 
+PG_VERS = ['17', '16', '15', '14', '13', '12']
+DISTROS = ['el8', 'el9', 'd12', 'u22', 'u24']
+DEB_OS = ['d12', 'u22', 'u24']
+RPM_OS = ['el8', 'el9']
 
 LICENSE_MAP = {
     'PostgreSQL': '**<span class="tcblue">PostgreSQL</span>**',
@@ -55,25 +58,30 @@ BLUE_CHECK = '<span class="tcblue">✔</span>'
 WARN_CROSS = '<span class="tcwarn">✘</span>'
 RED_EXCLAM = '<span class="tcred">❗</span>'
 
-PG_VERS = ['17', '16', '15', '14', '13', '12']
 
-# NOP_LIST = []
-
-NOP_LIST = {
-    "rpm": ["plr", "pljava","pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
-    "el7": ["plr", "pljava","pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
-    "el8": ["plr", "pljava","pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
-    "el9": ["plr", "pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
-
-    "deb": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
-    "u24": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "pgml", "citus", "topn", "timescaledb_toolkit"],
-    "u22": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
-    "u20": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
-    "d12": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
-    "d11": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
+THROW_LIST = []
+HIDE_LIST = ['pgpool', 'plr', 'pgagent', 'dbt2', 'pgtap', 'faker', 'repmgr', 'slony', 'oracle_fdw', 'pg_strom', 'db2_fdw']
+EXT_NOP_LIST = ["pg_mooncake", "citus"] # these extensions will be commented in pg_extensions due to conflict
+DISTRO_MISS = {
+    "el7": ["pg_dbms_job", "pljava"],
+    "el8": ["pg_dbms_job", "pljava"],
+    "el9": ["pg_dbms_job" ],
+    "u24": ["pgml", "citus", "topn", "timescaledb_toolkit"],
+    "u22": [],
+    "u20": ["pljava"],
+    "d12": [],
+    "d11": ["pljava"],
 }
-
-
+DISTRO_FULLNAME = {
+    "el7": "RHEL 7 Compatible",
+    "el8": "RHEL 8 Compatible",
+    "el9": "RHEL 9 Compatible",
+    "u24": "Ubuntu 24.04 noble Compatible",
+    "u22": "Ubuntu 24.04 jammy Compatible",
+    "u20": "Ubuntu 24.04 focal Compatible",
+    "d12": "Debian 12 bookworm Compatible",
+    "d11": "Ubuntu 11 bullseye Compatible",
+}
 
 CATES = {
     "TIME": "TIME: TimescaleDB, Versioning & Temporal Table, Crontab, Async & Background Job Scheduler, ...",
@@ -176,6 +184,9 @@ COLS = {
     "rpmdep":     {'header': 'Dependency' ,'center': False, 'func': lambda row: ', '.join([ '`%s`'%e for e in row['rpm_deps'] ])  },
     "debdep":     {'header': 'Dependency' ,'center': False, 'func': lambda row: ', '.join([ '`%s`'%e for e in row['deb_deps'] ])  },
 }
+
+def getcol(col, ext):
+    return COLS[col]['func'](ext)
 
 # generate column descriptor list
 def Columns(columns):
@@ -350,90 +361,159 @@ repo_packages:
 ```
 """
 
-def corner_case(ver,distro, ext):
-    name, alias = ext['name'], ext['alias']
 
-    if name not in (): return
-    return
 
-def pg_ext_list(ver, distro, category=None):
-    REPO_KEY, HAS_KEY, PG_VER_KEY, PKG_KEY = '', '', '', ''
-    pg_pkg_str = ''
-    filter = lambda row: True
-    os_type = ''
-    nop_list = NOP_LIST.get(distro.lower(), [])
-    if distro.lower() in ('rpm', 'el7', 'el8', 'el9'):
-        REPO_KEY, HAS_KEY, PG_VER_KEY, PKG_KEY = 'rpm_repo', 'has_rpm', 'rpm_pg', 'rpm_pkg'
-        pg_pkg_str = '  - postgresql%s*\n' % ver
-        os_type = "rpm"
-        filter = lambda ext: ext[HAS_KEY] and ver in ext[PG_VER_KEY] and ext['alias'] not in nop_list
-    elif distro.lower() in ('deb', 'u20', 'u22', 'u24', 'd12', 'd11'):
-        REPO_KEY, HAS_KEY, PG_VER_KEY, PKG_KEY = 'deb_repo', 'has_deb', 'deb_pg', 'deb_pkg'
-        pg_pkg_str = '  - postgresql-%s postgresql-client-%s postgresql-server-dev-%s postgresql-plpython3-%s postgresql-plperl-%s postgresql-pltcl-%s\n' % (ver,ver,ver,ver,ver,ver)
-        os_type = "deb"
-        filter = lambda ext: ext[HAS_KEY] and ver in ext[PG_VER_KEY] and ext['alias'] not in nop_list
-    elif distro.lower() in ('both'):
-        REPO_KEY, HAS_KEY, PG_VER_KEY, PKG_KEY = 'rpm_repo', 'has_rpm', 'rpm_pg', 'rpm_pkg'
-        filter = lambda ext: ext["has_deb"] and ext["has_rpm"] and ver in ext["rpm_pg"] and ver in ext["deb_pg"] and ext['alias'] not in nop_list
+def process_ext(ver, distro, ext):
+    if distro in ('rpm', 'el7', 'el8', 'el9'):
+        REPO_KEY, PKG_KEY, VER_KEY, HAS_KEY,  = 'rpm_repo', 'rpm_pkg', 'rpm_pg', 'has_rpm'
+    elif distro in ('deb', 'u20', 'u22', 'u24', 'd12', 'd11'):
+        REPO_KEY, PKG_KEY, VER_KEY, HAS_KEY, = 'deb_repo', 'deb_pkg', 'deb_pg',  'has_deb'
     else:
-        raise("invalid distro")
+        raise ValueError("Invalid distro: %s" % distro)
+    name, alias, extension, package, pg_vers, avail = ext['name'], ext['alias'], ext['alias'], ext[PKG_KEY].replace('$v', ver), ext[VER_KEY], ext[HAS_KEY]
+    hide_pkg, hide_ext, drop_pkg, drop_ext = True, True, False, False
+    if avail and ver in pg_vers and name not in DISTRO_MISS[distro]:
+        hide_pkg, hide_ext = False, False
 
+    # rename extension field in certain cases
+    if name == 'pgaudit' and distro in RPM_OS and ver in ['12','13','14','15']:
+        # pgaudit bad case: pg16+ = pgaudit, pg15=pgaudit17, pg14=pgaudit16 pg13=pgaudit15 pg12=pgaudit14
+        package, extension = package.replace('pgaudit', 'pgaudit' + str(int(ver)+2)), alias + str(int(ver)+2)
+    if name == 'citus' and distro in DEB_OS and ver in ['12', '13']:
+        package, extension = package.replace('citus-12.1', 'citus-' + ('10.2' if ver == '12' else '11.3') ), alias + str(int(ver)-2)
+    if name == 'postgis' and distro in ['el8', 'el9'] and ver == '12': # el8/9 will use postgis34 for pg12
+        package, extension = package.replace('postgis35', 'postgis34'), 'postgis34'
+    if name == 'postgis' and distro == 'el7': # el7 with postgis33
+        package, extension = package.replace('postgis35', 'postgis33'), 'postgis33'
+    if name in ['pg_mooncake', 'citus']:
+        hide_ext = True
+
+    # ubuntu 24.04 bad case
+    if distro == 'u24' and name == 'timescaledb' and ver == '12': # no timescaledb 12 for ubuntu24
+        hide_pkg, hide_ext = True, True
+    if distro == 'u24' and name in ['pg_partman', 'timeseries'] and ver in ['12','13']: # not pg_partman 12,13 for u24
+        hide_pkg, hide_ext = True, True
+
+    # version ad hoc logic
+
+    # just don't want them
+    if alias in THROW_LIST:
+        drop_pkg, drop_ext = True, True
+    if alias in HIDE_LIST:
+        hide_pkg, hide_ext = True, True
+
+    # merge babelfish pkg & ext into one wiltondb package/extension
+    if name == 'babelfishpg_common' and distro in ['el7', 'el8', 'el9', 'u20', 'u22', 'u24']:
+        package, extension = 'wiltondb', 'wiltondb'
+        hide_pkg, hide_ext = True, True
+    if name in ['babelfishpg_tsql','babelfishpg_tds','babelfishpg_money']:
+        drop_pkg, drop_ext = True, True
+    if name.startswith('babelfishpg') and distro not in ['el7', 'el8', 'el9', 'u20', 'u22', 'u24']:
+        drop_pkg, drop_ext = True, True   # wiltondb not available on other platforms
+
+    # merge hunspell pkg & ext into one wiltondb package/extension
+    if name == 'hunspell_cs_cz':
+        extension = 'hunspell'
+    if name.startswith('hunspell') and name != 'hunspell_cs_cz':
+        drop_ext = True # package still need to be downloaded
+
+    pkg_aye, pkg_nay, ext_aye, ext_nay = [], [], [], []
+    if not drop_pkg:
+        if hide_pkg: pkg_nay.append('#' + package)
+        else: pkg_aye.append(package)
+    if not drop_ext:
+        if hide_ext: ext_nay.append('#' + extension)
+        else: ext_aye.append(extension)
+
+    return pkg_aye, pkg_nay, ext_aye, ext_nay
+
+
+
+# generate postgres related repo_package list and pg_extension according to pg major version and os distro
+def gen_ext_list(ver, distro):
+    if distro.lower() in ('rpm', 'el7', 'el8', 'el9'):
+        REPO_KEY, PKG_KEY, VER_KEY, HAS_KEY,  = 'rpm_repo', 'rpm_pkg', 'rpm_pg', 'has_rpm'
+    elif distro.lower() in ('deb', 'u20', 'u22', 'u24', 'd12', 'd11'):
+        REPO_KEY, PKG_KEY, VER_KEY, HAS_KEY, = 'deb_repo', 'deb_pkg', 'deb_pg',  'has_deb'
+    else:
+        raise ValueError("Invalid distro: %s" % distro)
+
+    # generate pkg & ext list, per category
     repo_pkg, ext_list = [], []
     for cate in CATE:
-        if category is not None and cate != category: continue
-        repo_pkg_add, repo_pkg_nop, ext_list_add, ext_list_nop = [], [] ,[], []
-        for ext in DATA:
-            #if not ext[REPO_KEY]: continue
-            if ext['repo'] == 'CONTRIB': continue
-            if ext['category'] == cate:
-                if filter(ext):
-                    # edge case: pgaudit on el8/9
-                    name, pkg, alias = ext['name'], ext[PKG_KEY], ext['alias']
-                    if name == 'pgaudit' and os_type == 'rpm' and ver in ['12','13','14','15']: #pg15=pgaudit17, pg14=pgaudit16 pg13=pgaudit15 pg12=pgaudit14
-                        pkg = pkg.replace('$v', ver).replace('pgaudit', 'pgaudit' + str(int(ver)+2))
-                        alias = ext['alias'] + ver
-                    elif ext['name'] == 'citus' and os_type == 'deb' and ver in ['12','13']: #pg12=10.2, pg13=11.3
-                        pkg = ext[PKG_KEY].replace('$v', ver).replace('citus-12.1', 'citus-' + ('10.2' if ver == '12' else '11.3') )
-                        alias = ext['alias'] + str(int(ver) -2)
-                    elif name == 'citus_columnar': continue
-                    elif ext['name'] == 'postgis' and os_type == 'rpm' and (ver in ['12']): #pg12=34(el8/9),33(el7)
-                        if distro == 'el7':
-                            pkg,alias = 'postgis33_12*', 'postgis33'
-                        else:
-                            pkg,alias = 'postgis34_12*', 'postgis34'
-                    elif name.startswith('postgis_') or name.startswith('address_standardizer'): continue
-                    elif ext['name'] == 'babelfish_common':
-                            pkg,alias = 'wiltondb', 'wiltondb'
-                    else:
-                        pkg = ext[PKG_KEY].replace('$v', ver)
-                        alias = ext['alias']
+        pkg_aye, pkg_nay, ext_aye, ext_nay = [], [], [], []
+        for ext in [e for e in DATA if e['category'] == cate and e[REPO_KEY] != 'CONTRIB' and e['lead']]:
+            #ext['package'], ext['pg_ver'], ext['avail'] =  ext[PKG_KEY].replace('$v', ver), ext[VER_KEY], ext[HAS_KEY]
+            t_pkg_aye, t_pkg_nay, t_ext_aye, t_ext_nay = process_ext(ver, distro, ext)
+            pkg_aye.extend(t_pkg_aye)
+            pkg_nay.extend(t_pkg_nay)
+            ext_aye.extend(t_ext_aye)
+            ext_nay.extend(t_ext_nay)
 
-                    repo_pkg_add.append(pkg)
-                    if name.startswith('hunspell'):
-                        if name.startswith('hunspell_cs_cz'):
-                            ext_list_add.append('hunspell')
-                    else:
-                        ext_list_add.append(alias)
-                else:
-                    if ext['name'].startswith('babelfish') and ext['name'] != 'babelfishpg_common': continue
-                    if ext['name'] == 'babelfishpg_common':
-                        repo_pkg_nop.append('#wiltondb')
-                        ext_list_nop.append('#wiltondb')
-                    else:
-                        repo_pkg_nop.append('#' + ext[PKG_KEY].replace('$v', ver))
-                        ext_list_nop.append('#' + ext['alias'])
+        repo_entry = (' '.join(list(dict.fromkeys(pkg_aye))) + ' ' + ' '.join(list(dict.fromkeys(pkg_nay)))).rstrip('# ')
+        ext_entry = (' '.join(list(dict.fromkeys(ext_aye))) + ' ' + ' '.join(list(dict.fromkeys(ext_nay)))).rstrip('# ')
+        repo_pkg.append(repo_entry)
+        ext_list.append(ext_entry.replace('#babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money', '#wiltondb'))
 
-        repo_pkg.append((' '.join(list(dict.fromkeys(repo_pkg_add))) + ' ' + ' '.join(list(dict.fromkeys(repo_pkg_nop)))).rstrip('# '))
-        ext_list.append((' '.join(list(dict.fromkeys(ext_list_add))) + ' ' + ' '.join(list(dict.fromkeys(ext_list_nop)))).rstrip('# '))
+    return repo_pkg, ext_list
 
-    if not category:
-        repo_pkg_str = 'repo_packages:\n' + pg_pkg_str + '\n'.join([ '  - ' + i for i in repo_pkg ])
-        ext_list_str = 'pg_extensions:\n' + '\n'.join([ '  - ' + i for i in ext_list ])
-        return repo_pkg_str, ext_list_str
+
+def gen_cate_ext_list(ver, distro, cate):
+    if distro.lower() in ('rpm', 'el7', 'el8', 'el9'):
+        REPO_KEY, PKG_KEY, VER_KEY, HAS_KEY,  = 'rpm_repo', 'rpm_pkg', 'rpm_pg', 'has_rpm'
+    elif distro.lower() in ('deb', 'u20', 'u22', 'u24', 'd12', 'd11'):
+        REPO_KEY, PKG_KEY, VER_KEY, HAS_KEY, = 'deb_repo', 'deb_pkg', 'deb_pg',  'has_deb'
     else:
-        return ' '.join(repo_pkg), (' '.join(ext_list)).replace('#babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money', '#wiltondb')
+        raise ValueError("Invalid distro: %s" % distro)
+
+    # generate pkg & ext list, per category
+    repo_pkg, ext_list = [], []
+    pkg_aye, pkg_nay, ext_aye, ext_nay = [], [], [], []
+    for ext in [e for e in DATA if e['category'] == cate and e[REPO_KEY] != 'CONTRIB' and e['lead']]:
+        #ext['package'], ext['pg_ver'], ext['avail'] =  ext[PKG_KEY].replace('$v', ver), ext[VER_KEY], ext[HAS_KEY]
+        t_pkg_aye, t_pkg_nay, t_ext_aye, t_ext_nay = process_ext(ver, distro, ext)
+        pkg_aye.extend(t_pkg_aye)
+        pkg_nay.extend(t_pkg_nay)
+        ext_aye.extend(t_ext_aye)
+        ext_nay.extend(t_ext_nay)
+
+    repo_entry = (' '.join(list(dict.fromkeys(pkg_aye))) + ' ' + ' '.join(list(dict.fromkeys(pkg_nay)))).rstrip('# ')
+    ext_entry = (' '.join(list(dict.fromkeys(ext_aye))) + ' ' + ' '.join(list(dict.fromkeys(ext_nay)))).rstrip('# ')
+    repo_pkg.append(repo_entry)
+    ext_list.append(ext_entry.replace('#babelfishpg_common #babelfishpg_tsql #babelfishpg_tds #babelfishpg_money', '#wiltondb'))
+
+    return repo_pkg, ext_list
 
 
+
+def gen_param(ver, distro, indent=0, header=True):
+    distro = distro.lower()
+    head_pad = '  ' * indent
+    text_pad = '  ' * (indent + 1) + '- '
+
+    pkg_list, ext_list = gen_ext_list(ver, distro)
+    common_packages = []
+    if distro in ('rpm', 'el7', 'el8', 'el9'):
+        common_packages = []
+        pgsql_kernel = '%-159s # PostgreSQL %s' % ( 'postgresql%s*'%ver, ver)
+    elif distro in ('deb', 'u20', 'u22', 'u24', 'd12', 'd11'):
+        common_packages = []
+        pgsql_kernel = '%-150s # PostgreSQL %s' % ('postgresql-%s postgresql-client-%s postgresql-server-dev-%s postgresql-plpython3-%s postgresql-plperl-%s postgresql-pltcl-%s' % (ver,ver,ver,ver,ver,ver) , ver)
+    else:
+        raise("invalid distro")
+    pgsql_packages = [pgsql_kernel] + pkg_list
+    if header:
+        all_pkgs =  common_packages + pgsql_packages
+    else:
+        all_pkgs =  pgsql_packages
+    pkg_str = '\n'.join([text_pad + i for i in all_pkgs])
+    ext_str = '\n'.join([text_pad + i for i in ext_list])
+    pkg_str = pkg_str.replace('-lower-quantile ', '-lower-quantile\n' + text_pad).replace(' pg_idkit_','\n' + text_pad + 'pg_idkit_')
+    ext_str = ext_str.replace('lower_quantile ', 'lower_quantile\n' + text_pad)
+    if header:
+        return head_pad + 'repo_packages:\n%s' % pkg_str , head_pad + 'pg_extensions:\n%s' % ext_str
+    else:
+        return pkg_str , ext_str
 
 
 
@@ -460,20 +540,21 @@ def generate_all_list():
     )
     ver_sections = []
     for ver in PG_VERS:
-        repo_str, ext_str = pg_ext_list(ver, 'both')
-        ver_sections.append("""--------\n\n## PostgreSQL %s\n\n>Extensions that both available on PG%s as [RPM](/rpm#postgresql-%s) and [DEB](/deb#postgresql-%s) are shown below:\n\n\n```yaml\npg_version: %s\n%s\n```\n"""% (ver, ver, ver, ver, ver, ext_str))
+        buf = ["""--------\n\n## PostgreSQL %s\n\n""" % ver ]
+        for distro in DISTROS:
+            repo_str, ext_str = gen_param(ver, distro, -1, False)
+            buf.append("""### %s OS (%s)\n\n```yaml\n%s\n```\n""" % ( DISTRO_FULLNAME.get(distro), distro, ext_str))
+        ver_sections.append('\n'.join(buf))
 
     f = openw('list.md')
     f.write(LIST_TEMPLATE % (
         STAT["stat"]["all"],STAT["stat"]["rpm"],STAT["stat"]["deb"],
         STAT["stat"]["contrib"],STAT["stat"]["non-contrib"],
-        tabulate_stats(['rpm_ext', 'deb_ext','rpm_pkg', 'deb_pkg']),
+        tabulate_stats(['rpm_ext', 'deb_ext']),
         ext_table,
         '\n'.join(ver_sections)
     ))
     f.close()
-
-
 
 
 RPM_TEMPLATE = """# RPM Extension Packages\n
@@ -490,18 +571,20 @@ There are **%d** extensions available in the current major version PostgreSQL 16
 %s\n\n
 """
 
+generate_all_list()
 
 def generate_rpm_list():
     rpm_table = tabulate(
         Columns([ "cat", "pkg","rpmver", "lic", "rpmrepo", "rpmpkg", "r17", "r16", "r15", "r14", "r13", "r12", "en_desc"]),
         lambda row: row['has_rpm'] and row['repo'] != 'CONTRIB' and row['lead']
     )
-    ver_sections,overall = [], []
+    ver_sections = []
     for ver in PG_VERS:
-        repo_str, ext_str = pg_ext_list(ver, 'rpm')
-        ver_sections.append("""--------\n\n## PostgreSQL %s\n\n```yaml\npg_version: %s\n%s\n\n%s\n```\n"""% (ver, ver, repo_str, ext_str))
-        overall.append(repo_str.replace('repo_packages:', '  '))
-    repo_packages = """--------\n\n## Repo Packages\n\n```yaml\nrepo_packages:\n%s```\n\n""" % ('\n'.join(overall))
+        buf = ["""--------\n\n## PostgreSQL %s\n\n""" % ver ]
+        for distro in ('el8', 'el9'):
+            repo_str, ext_str = gen_param(ver, distro, -1, False)
+            buf.append("""### %s OS (%s)\n\n```yaml\n%s\n```\n""" % ( DISTRO_FULLNAME.get(distro), distro, repo_str))
+        ver_sections.append('\n'.join(buf))
 
     f = openw('rpm.md')
     f.write(RPM_TEMPLATE % (
@@ -511,10 +594,9 @@ def generate_rpm_list():
         tabulate_stats(['rpm_ext', 'rpm_pkg']),
         rpm_table,
         '\n'.join(ver_sections),
-        repo_packages
+        ''
     ))
     f.close()
-
 
 
 
@@ -538,12 +620,13 @@ def generate_deb_list():
         Columns(["cat", "pkg", "debver", "lic", "debrepo", "debpkg", "d17", "d16", "d15", "d14", "d13", "d12", "en_desc"]),
         lambda row: row['has_deb'] and row['repo'] != 'CONTRIB' and row['lead']
     )
-    ver_sections,overall = [], []
+    ver_sections = []
     for ver in PG_VERS:
-        repo_str, ext_str = pg_ext_list(ver, 'deb')
-        ver_sections.append("""--------\n\n## PostgreSQL %s\n\n```yaml\npg_version: %s\n%s\n\n%s\n```\n"""% (ver, ver, repo_str, ext_str))
-        overall.append(repo_str.replace('repo_packages:', '  '))
-    repo_packages = """--------\n\n## Repo Packages\n\n```yaml\nrepo_packages:\n%s```\n\n""" % ('\n'.join(overall))
+        buf = ["""--------\n\n## PostgreSQL %s\n\n""" % ver ]
+        for distro in ('d12', 'u22', 'u24'):
+            repo_str, ext_str = gen_param(ver, distro, -1, False)
+            buf.append("""### %s OS (%s)\n\n```yaml\n%s\n```\n""" % ( DISTRO_FULLNAME.get(distro), distro, repo_str))
+        ver_sections.append('\n'.join(buf))
     f = openw('deb.md')
     f.write(DEB_TEMPLATE % (
         STAT["deb_ext"]["all"],STAT["deb_ext"]["miss"],STAT["deb_ext"]["miss"],
@@ -552,9 +635,10 @@ def generate_deb_list():
         tabulate_stats(['deb_ext', 'deb_pkg']),
         deb_table,
         '\n'.join(ver_sections),
-        repo_packages
+        ''
     ))
     f.close()
+
 
 
 CONTRIB_TEMPLATE = """# Contrib Extension Packages\n
@@ -609,34 +693,35 @@ def generate_category():
             Columns(["pkg", "debver", "lic", "debrepo", "debpkg3", "d17", "d16", "d15", "d14", "d13", "d12", "en_desc"]),
             lambda row: row['has_deb'] and row['lead'] and row['category'] == cate
         )
+
         ext_list, rpm_list, deb_list  = [], [], []
-        for ver in PG_VERS:
-            _, ext_str = pg_ext_list(ver, 'both', cate)
-            rpm_repo_str, rpm_ext_str = pg_ext_list(ver, 'rpm', cate)
-            deb_repo_str, deb_ext_str = pg_ext_list(ver, 'rpm', cate)
-            ext_list.append('pg%s: %s'% (ver, ext_str))
-            rpm_list.append('pg%s: %s'% (ver, rpm_repo_str))
-            deb_list.append('pg%s: %s'% (ver, deb_repo_str))
+        for distro in DISTROS:
+            ext_e, rpm_e, deb_e  = [], [], []
+            for ver in PG_VERS:
+                pkg_str, ext_str = gen_cate_ext_list(ver, distro, cate)
+                ext_e.append('pg%s: %s'% (ver, ' '.join(ext_str)))
+                if distro in DEB_OS:
+                    deb_e.append('pg%s: %s'% (ver, ' '.join(pkg_str)))
+                elif distro in RPM_OS:
+                    rpm_e.append('pg%s: %s'% (ver, ' '.join(pkg_str)))
+
+            ext_list.append('\n### %s (%s)\n\n```yaml\n%s\n```\n' % ( DISTRO_FULLNAME.get(distro,distro), distro, '\n'.join(ext_e)))
+            if distro in DEB_OS:
+                deb_list.append('\n### %s (%s)\n\n```yaml\n%s\n```\n' % ( DISTRO_FULLNAME.get(distro,distro), distro, '\n'.join(deb_e)))
+            elif distro in RPM_OS:
+                rpm_list.append('\n### %s (%s)\n\n```yaml\n%s\n```\n' % ( DISTRO_FULLNAME.get(distro,distro), distro, '\n'.join(rpm_e)))
 
         ext_details = []
-        #ext_detail_tmpl = """\n## %s\n\n[`%s`](/%s): %s%s"""
-        #ext_details = [ ext_detail_tmpl % (ext['name'], ext['name'], ext['name'],
-        #                                   '(package alias: `%s`) ' % ext['alias'] if ext['name'] != ext['alias'] else '',
-        #                                   ext['en_desc']) for ext in exts ]
-
-
         with open(cate_index, 'w') as f:
             f.write(CATEGORY_INDEX_TEMPLATE%(
                 cate,CATES.get(cate,''),
                 len(extensions), ' '.join(ext_links),
-                ext_table, """\n```yaml\n%s\n```\n"""% ('\n'.join(ext_list)),
-                rpm_table, """\n```yaml\n%s\n```\n"""% ('\n'.join(rpm_list)),
-                deb_table, """\n```yaml\n%s\n```\n"""% ('\n'.join(deb_list)),
+                ext_table, '\n'.join(ext_list),
+                rpm_table, '\n'.join(rpm_list),
+                deb_table, '\n'.join(deb_list),
                 '\n'.join(ext_details)
             )
         )
-
-
 
 
 
@@ -662,11 +747,9 @@ for ext in DATA:
             else:
                 DEP_MAP[e].append(ext['name'])
 
-def getcol(col, ext):
-    return COLS[col]['func'](ext)
+
 
 def generate_extension():
-
     for ext in DATA:
         name, alias, category = ext['name'], ext['alias'], ext['category']
         ext_path = os.path.join(DOCS_PATH, name + '.md')
@@ -741,7 +824,7 @@ def generate_extension():
         with open(ext_path, 'w') as f:
             f.write(content)
 
-
+generate_extension()
 
 def cate_index_tabulate():
     cates = []
@@ -776,7 +859,7 @@ def generate_readme():
     ext_num = len(DATA)
     f = openw('README.md')
     f.write(readme_tmpl% (ext_num,ext_num,ext_num,
-                          tabulate_stats(['rpm_ext', 'deb_ext', 'rpm_pkg', 'deb_pkg']),
+                          tabulate_stats(['rpm_ext', 'deb_ext']),
                           cate_index_tabulate()
                           ))
     f.close()
@@ -784,7 +867,7 @@ def generate_readme():
 
 def generate_distro_repo_packages(distro):
     for ver in PG_VERS:
-        repo_list, ext_list = pg_ext_list(ver, distro)
+        repo_list, ext_list = gen_ext_list(ver, distro)
         print(repo_list.replace('repo_packages:', '"pg%s:all":'%ver))
         print(ext_list.replace('repo_packages:', '"pg%s:all":'%ver))
 

@@ -30,6 +30,56 @@ There are 15 available extensions in this category:
 
 
 
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: pg_search pg_bigm zhparser hunspell
+pg16: pg_search pg_bigm zhparser hunspell
+pg15: pg_search pg_bigm zhparser hunspell
+pg14: pg_search pg_bigm zhparser hunspell
+pg13: pg_bigm zhparser hunspell #pg_search
+pg12: pg_bigm zhparser hunspell #pg_search
+```
+
+
+### RHEL 9 Compatible (el9)
+
+```yaml
+pg17: pg_search pg_bigm zhparser hunspell
+pg16: pg_search pg_bigm zhparser hunspell
+pg15: pg_search pg_bigm zhparser hunspell
+pg14: pg_search pg_bigm zhparser hunspell
+pg13: pg_bigm zhparser hunspell #pg_search
+pg12: pg_bigm zhparser hunspell #pg_search
+```
+
+
+### Debian 12 bookworm Compatible (d12)
+
+```yaml
+pg17: pg_search pg_bigm zhparser hunspell
+pg16: pg_search pg_bigm zhparser hunspell
+pg15: pg_search pg_bigm zhparser hunspell
+pg14: pg_search pg_bigm zhparser hunspell
+pg13: pg_bigm zhparser hunspell #pg_search
+pg12: pg_bigm zhparser hunspell #pg_search
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: pg_search pg_bigm zhparser hunspell
+pg16: pg_search pg_bigm zhparser hunspell
+pg15: pg_search pg_bigm zhparser hunspell
+pg14: pg_search pg_bigm zhparser hunspell
+pg13: pg_bigm zhparser hunspell #pg_search
+pg12: pg_bigm zhparser hunspell #pg_search
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
 ```yaml
 pg17: pg_search pg_bigm zhparser hunspell
 pg16: pg_search pg_bigm zhparser hunspell
@@ -65,6 +115,20 @@ pg12: pg_bigm zhparser hunspell #pg_search
 | [pg_trgm](/pg_trgm) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | text similarity measurement and index searching based on trigrams |
 
 
+
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: pg_search_17 pg_bigm_17* zhparser_17* hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
+pg16: pg_search_16 pg_bigm_16* zhparser_16* hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
+pg15: pg_search_15 pg_bigm_15* zhparser_15* hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
+pg14: pg_search_14 pg_bigm_14* zhparser_14* hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14
+pg13: pg_bigm_13* zhparser_13* hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13
+pg12: pg_bigm_12* zhparser_12* hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12
+```
+
+
+### RHEL 9 Compatible (el9)
 
 ```yaml
 pg17: pg_search_17 pg_bigm_17* zhparser_17* hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
@@ -102,13 +166,39 @@ pg12: pg_bigm_12* zhparser_12* hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_u
 
 
 
+### Debian 12 bookworm Compatible (d12)
+
 ```yaml
-pg17: pg_search_17 pg_bigm_17* zhparser_17* hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
-pg16: pg_search_16 pg_bigm_16* zhparser_16* hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
-pg15: pg_search_15 pg_bigm_15* zhparser_15* hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
-pg14: pg_search_14 pg_bigm_14* zhparser_14* hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14
-pg13: pg_bigm_13* zhparser_13* hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13
-pg12: pg_bigm_12* zhparser_12* hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12
+pg17: postgresql-17-pg-search postgresql-17-pg-bigm postgresql-17-zhparser postgresql-17-hunspell-cs-cz postgresql-17-hunspell-de-de postgresql-17-hunspell-en-us postgresql-17-hunspell-fr postgresql-17-hunspell-ne-np postgresql-17-hunspell-nl-nl postgresql-17-hunspell-nn-no postgresql-17-hunspell-pt-pt postgresql-17-hunspell-ru-ru postgresql-17-hunspell-ru-ru-aot
+pg16: postgresql-16-pg-search postgresql-16-pg-bigm postgresql-16-zhparser postgresql-16-hunspell-cs-cz postgresql-16-hunspell-de-de postgresql-16-hunspell-en-us postgresql-16-hunspell-fr postgresql-16-hunspell-ne-np postgresql-16-hunspell-nl-nl postgresql-16-hunspell-nn-no postgresql-16-hunspell-pt-pt postgresql-16-hunspell-ru-ru postgresql-16-hunspell-ru-ru-aot
+pg15: postgresql-15-pg-search postgresql-15-pg-bigm postgresql-15-zhparser postgresql-15-hunspell-cs-cz postgresql-15-hunspell-de-de postgresql-15-hunspell-en-us postgresql-15-hunspell-fr postgresql-15-hunspell-ne-np postgresql-15-hunspell-nl-nl postgresql-15-hunspell-nn-no postgresql-15-hunspell-pt-pt postgresql-15-hunspell-ru-ru postgresql-15-hunspell-ru-ru-aot
+pg14: postgresql-14-pg-search postgresql-14-pg-bigm postgresql-14-zhparser postgresql-14-hunspell-cs-cz postgresql-14-hunspell-de-de postgresql-14-hunspell-en-us postgresql-14-hunspell-fr postgresql-14-hunspell-ne-np postgresql-14-hunspell-nl-nl postgresql-14-hunspell-nn-no postgresql-14-hunspell-pt-pt postgresql-14-hunspell-ru-ru postgresql-14-hunspell-ru-ru-aot
+pg13: postgresql-13-pg-bigm postgresql-13-zhparser postgresql-13-hunspell-cs-cz postgresql-13-hunspell-de-de postgresql-13-hunspell-en-us postgresql-13-hunspell-fr postgresql-13-hunspell-ne-np postgresql-13-hunspell-nl-nl postgresql-13-hunspell-nn-no postgresql-13-hunspell-pt-pt postgresql-13-hunspell-ru-ru postgresql-13-hunspell-ru-ru-aot #postgresql-13-pg-search
+pg12: postgresql-12-pg-bigm postgresql-12-zhparser postgresql-12-hunspell-cs-cz postgresql-12-hunspell-de-de postgresql-12-hunspell-en-us postgresql-12-hunspell-fr postgresql-12-hunspell-ne-np postgresql-12-hunspell-nl-nl postgresql-12-hunspell-nn-no postgresql-12-hunspell-pt-pt postgresql-12-hunspell-ru-ru postgresql-12-hunspell-ru-ru-aot #postgresql-12-pg-search
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: postgresql-17-pg-search postgresql-17-pg-bigm postgresql-17-zhparser postgresql-17-hunspell-cs-cz postgresql-17-hunspell-de-de postgresql-17-hunspell-en-us postgresql-17-hunspell-fr postgresql-17-hunspell-ne-np postgresql-17-hunspell-nl-nl postgresql-17-hunspell-nn-no postgresql-17-hunspell-pt-pt postgresql-17-hunspell-ru-ru postgresql-17-hunspell-ru-ru-aot
+pg16: postgresql-16-pg-search postgresql-16-pg-bigm postgresql-16-zhparser postgresql-16-hunspell-cs-cz postgresql-16-hunspell-de-de postgresql-16-hunspell-en-us postgresql-16-hunspell-fr postgresql-16-hunspell-ne-np postgresql-16-hunspell-nl-nl postgresql-16-hunspell-nn-no postgresql-16-hunspell-pt-pt postgresql-16-hunspell-ru-ru postgresql-16-hunspell-ru-ru-aot
+pg15: postgresql-15-pg-search postgresql-15-pg-bigm postgresql-15-zhparser postgresql-15-hunspell-cs-cz postgresql-15-hunspell-de-de postgresql-15-hunspell-en-us postgresql-15-hunspell-fr postgresql-15-hunspell-ne-np postgresql-15-hunspell-nl-nl postgresql-15-hunspell-nn-no postgresql-15-hunspell-pt-pt postgresql-15-hunspell-ru-ru postgresql-15-hunspell-ru-ru-aot
+pg14: postgresql-14-pg-search postgresql-14-pg-bigm postgresql-14-zhparser postgresql-14-hunspell-cs-cz postgresql-14-hunspell-de-de postgresql-14-hunspell-en-us postgresql-14-hunspell-fr postgresql-14-hunspell-ne-np postgresql-14-hunspell-nl-nl postgresql-14-hunspell-nn-no postgresql-14-hunspell-pt-pt postgresql-14-hunspell-ru-ru postgresql-14-hunspell-ru-ru-aot
+pg13: postgresql-13-pg-bigm postgresql-13-zhparser postgresql-13-hunspell-cs-cz postgresql-13-hunspell-de-de postgresql-13-hunspell-en-us postgresql-13-hunspell-fr postgresql-13-hunspell-ne-np postgresql-13-hunspell-nl-nl postgresql-13-hunspell-nn-no postgresql-13-hunspell-pt-pt postgresql-13-hunspell-ru-ru postgresql-13-hunspell-ru-ru-aot #postgresql-13-pg-search
+pg12: postgresql-12-pg-bigm postgresql-12-zhparser postgresql-12-hunspell-cs-cz postgresql-12-hunspell-de-de postgresql-12-hunspell-en-us postgresql-12-hunspell-fr postgresql-12-hunspell-ne-np postgresql-12-hunspell-nl-nl postgresql-12-hunspell-nn-no postgresql-12-hunspell-pt-pt postgresql-12-hunspell-ru-ru postgresql-12-hunspell-ru-ru-aot #postgresql-12-pg-search
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: postgresql-17-pg-search postgresql-17-pg-bigm postgresql-17-zhparser postgresql-17-hunspell-cs-cz postgresql-17-hunspell-de-de postgresql-17-hunspell-en-us postgresql-17-hunspell-fr postgresql-17-hunspell-ne-np postgresql-17-hunspell-nl-nl postgresql-17-hunspell-nn-no postgresql-17-hunspell-pt-pt postgresql-17-hunspell-ru-ru postgresql-17-hunspell-ru-ru-aot
+pg16: postgresql-16-pg-search postgresql-16-pg-bigm postgresql-16-zhparser postgresql-16-hunspell-cs-cz postgresql-16-hunspell-de-de postgresql-16-hunspell-en-us postgresql-16-hunspell-fr postgresql-16-hunspell-ne-np postgresql-16-hunspell-nl-nl postgresql-16-hunspell-nn-no postgresql-16-hunspell-pt-pt postgresql-16-hunspell-ru-ru postgresql-16-hunspell-ru-ru-aot
+pg15: postgresql-15-pg-search postgresql-15-pg-bigm postgresql-15-zhparser postgresql-15-hunspell-cs-cz postgresql-15-hunspell-de-de postgresql-15-hunspell-en-us postgresql-15-hunspell-fr postgresql-15-hunspell-ne-np postgresql-15-hunspell-nl-nl postgresql-15-hunspell-nn-no postgresql-15-hunspell-pt-pt postgresql-15-hunspell-ru-ru postgresql-15-hunspell-ru-ru-aot
+pg14: postgresql-14-pg-search postgresql-14-pg-bigm postgresql-14-zhparser postgresql-14-hunspell-cs-cz postgresql-14-hunspell-de-de postgresql-14-hunspell-en-us postgresql-14-hunspell-fr postgresql-14-hunspell-ne-np postgresql-14-hunspell-nl-nl postgresql-14-hunspell-nn-no postgresql-14-hunspell-pt-pt postgresql-14-hunspell-ru-ru postgresql-14-hunspell-ru-ru-aot
+pg13: postgresql-13-pg-bigm postgresql-13-zhparser postgresql-13-hunspell-cs-cz postgresql-13-hunspell-de-de postgresql-13-hunspell-en-us postgresql-13-hunspell-fr postgresql-13-hunspell-ne-np postgresql-13-hunspell-nl-nl postgresql-13-hunspell-nn-no postgresql-13-hunspell-pt-pt postgresql-13-hunspell-ru-ru postgresql-13-hunspell-ru-ru-aot #postgresql-13-pg-search
+pg12: postgresql-12-pg-bigm postgresql-12-zhparser postgresql-12-hunspell-cs-cz postgresql-12-hunspell-de-de postgresql-12-hunspell-en-us postgresql-12-hunspell-fr postgresql-12-hunspell-ne-np postgresql-12-hunspell-nl-nl postgresql-12-hunspell-nn-no postgresql-12-hunspell-pt-pt postgresql-12-hunspell-ru-ru postgresql-12-hunspell-ru-ru-aot #postgresql-12-pg-search
 ```
 
 

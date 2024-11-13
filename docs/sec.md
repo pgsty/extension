@@ -41,6 +41,56 @@ There are 26 available extensions in this category:
 
 
 
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
+pg16: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pg_tde pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset
+pg15: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit17 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
+pg14: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit16 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
+pg13: passwordcheck supautils pgsodium pg_vault anonymizer pgsmcrypto pgaudit15 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_session_jwt #pg_tde
+pg12: passwordcheck pgsodium pg_vault anonymizer pgsmcrypto pgaudit14 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #supautils #pg_session_jwt #pg_tde
+```
+
+
+### RHEL 9 Compatible (el9)
+
+```yaml
+pg17: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
+pg16: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pg_tde pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset
+pg15: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit17 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
+pg14: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit16 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
+pg13: passwordcheck supautils pgsodium pg_vault anonymizer pgsmcrypto pgaudit15 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_session_jwt #pg_tde
+pg12: passwordcheck pgsodium pg_vault anonymizer pgsmcrypto pgaudit14 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #supautils #pg_session_jwt #pg_tde
+```
+
+
+### Debian 12 bookworm Compatible (d12)
+
+```yaml
+pg17: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
+pg16: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pg_tde pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset
+pg15: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
+pg14: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
+pg13: passwordcheck supautils pgsodium pg_vault anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_session_jwt #pg_tde
+pg12: passwordcheck pgsodium pg_vault anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #supautils #pg_session_jwt #pg_tde
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
+pg16: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pg_tde pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset
+pg15: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
+pg14: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
+pg13: passwordcheck supautils pgsodium pg_vault anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_session_jwt #pg_tde
+pg12: passwordcheck pgsodium pg_vault anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #supautils #pg_session_jwt #pg_tde
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
 ```yaml
 pg17: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset #pg_tde
 pg16: passwordcheck supautils pgsodium pg_vault pg_session_jwt anonymizer pg_tde pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils noset
@@ -86,6 +136,20 @@ pg12: passwordcheck pgsodium pg_vault anonymizer pgsmcrypto pgaudit pgauditlogto
 | [pgcrypto](/pgcrypto) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | cryptographic functions |
 
 
+
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: passwordcheck_cracklib_17* supautils_17* pgsodium_17* vault_17* pg_session_jwt_17 postgresql_anonymizer_17* pgsmcrypto_17 pgaudit_17* pgauditlogtofile_17* pg_auth_mon_17* credcheck_17* pgcryptokey_17 pg_jobmon_17* logerrors_17* login_hook_17* set_user_17* pg_snakeoil_17* pgextwlist_17* pg_auditor_17 sslutils_17* noset_17* #pg_tde_17*
+pg16: passwordcheck_cracklib_16* supautils_16* pgsodium_16* vault_16* pg_session_jwt_16 postgresql_anonymizer_16* pg_tde_16* pgsmcrypto_16 pgaudit_16* pgauditlogtofile_16* pg_auth_mon_16* credcheck_16* pgcryptokey_16 pg_jobmon_16* logerrors_16* login_hook_16* set_user_16* pg_snakeoil_16* pgextwlist_16* pg_auditor_16 sslutils_16* noset_16*
+pg15: passwordcheck_cracklib_15* supautils_15* pgsodium_15* vault_15* pg_session_jwt_15 postgresql_anonymizer_15* pgsmcrypto_15 pgaudit17_15* pgauditlogtofile_15* pg_auth_mon_15* credcheck_15* pgcryptokey_15 pg_jobmon_15* logerrors_15* login_hook_15* set_user_15* pg_snakeoil_15* pgextwlist_15* pg_auditor_15 sslutils_15* noset_15* #pg_tde_15*
+pg14: passwordcheck_cracklib_14* supautils_14* pgsodium_14* vault_14* pg_session_jwt_14 postgresql_anonymizer_14* pgsmcrypto_14 pgaudit16_14* pgauditlogtofile_14* pg_auth_mon_14* credcheck_14* pgcryptokey_14 pg_jobmon_14* logerrors_14* login_hook_14* set_user_14* pg_snakeoil_14* pgextwlist_14* pg_auditor_14 sslutils_14* noset_14* #pg_tde_14*
+pg13: passwordcheck_cracklib_13* supautils_13* pgsodium_13* vault_13* postgresql_anonymizer_13* pgsmcrypto_13 pgaudit15_13* pgauditlogtofile_13* pg_auth_mon_13* credcheck_13* pgcryptokey_13 pg_jobmon_13* logerrors_13* login_hook_13* set_user_13* pg_snakeoil_13* pgextwlist_13* pg_auditor_13 sslutils_13* noset_13* #pg_session_jwt_13 #pg_tde_13*
+pg12: passwordcheck_cracklib_12* pgsodium_12* vault_12* postgresql_anonymizer_12* pgsmcrypto_12 pgaudit14_12* pgauditlogtofile_12* pg_auth_mon_12* credcheck_12* pgcryptokey_12 pg_jobmon_12* logerrors_12* login_hook_12* set_user_12* pg_snakeoil_12* pgextwlist_12* pg_auditor_12 sslutils_12* noset_12* #supautils_12* #pg_session_jwt_12 #pg_tde_12*
+```
+
+
+### RHEL 9 Compatible (el9)
 
 ```yaml
 pg17: passwordcheck_cracklib_17* supautils_17* pgsodium_17* vault_17* pg_session_jwt_17 postgresql_anonymizer_17* pgsmcrypto_17 pgaudit_17* pgauditlogtofile_17* pg_auth_mon_17* credcheck_17* pgcryptokey_17 pg_jobmon_17* logerrors_17* login_hook_17* set_user_17* pg_snakeoil_17* pgextwlist_17* pg_auditor_17 sslutils_17* noset_17* #pg_tde_17*
@@ -133,13 +197,39 @@ pg12: passwordcheck_cracklib_12* pgsodium_12* vault_12* postgresql_anonymizer_12
 
 
 
+### Debian 12 bookworm Compatible (d12)
+
 ```yaml
-pg17: passwordcheck_cracklib_17* supautils_17* pgsodium_17* vault_17* pg_session_jwt_17 postgresql_anonymizer_17* pgsmcrypto_17 pgaudit_17* pgauditlogtofile_17* pg_auth_mon_17* credcheck_17* pgcryptokey_17 pg_jobmon_17* logerrors_17* login_hook_17* set_user_17* pg_snakeoil_17* pgextwlist_17* pg_auditor_17 sslutils_17* noset_17* #pg_tde_17*
-pg16: passwordcheck_cracklib_16* supautils_16* pgsodium_16* vault_16* pg_session_jwt_16 postgresql_anonymizer_16* pg_tde_16* pgsmcrypto_16 pgaudit_16* pgauditlogtofile_16* pg_auth_mon_16* credcheck_16* pgcryptokey_16 pg_jobmon_16* logerrors_16* login_hook_16* set_user_16* pg_snakeoil_16* pgextwlist_16* pg_auditor_16 sslutils_16* noset_16*
-pg15: passwordcheck_cracklib_15* supautils_15* pgsodium_15* vault_15* pg_session_jwt_15 postgresql_anonymizer_15* pgsmcrypto_15 pgaudit17_15* pgauditlogtofile_15* pg_auth_mon_15* credcheck_15* pgcryptokey_15 pg_jobmon_15* logerrors_15* login_hook_15* set_user_15* pg_snakeoil_15* pgextwlist_15* pg_auditor_15 sslutils_15* noset_15* #pg_tde_15*
-pg14: passwordcheck_cracklib_14* supautils_14* pgsodium_14* vault_14* pg_session_jwt_14 postgresql_anonymizer_14* pgsmcrypto_14 pgaudit16_14* pgauditlogtofile_14* pg_auth_mon_14* credcheck_14* pgcryptokey_14 pg_jobmon_14* logerrors_14* login_hook_14* set_user_14* pg_snakeoil_14* pgextwlist_14* pg_auditor_14 sslutils_14* noset_14* #pg_tde_14*
-pg13: passwordcheck_cracklib_13* supautils_13* pgsodium_13* vault_13* postgresql_anonymizer_13* pgsmcrypto_13 pgaudit15_13* pgauditlogtofile_13* pg_auth_mon_13* credcheck_13* pgcryptokey_13 pg_jobmon_13* logerrors_13* login_hook_13* set_user_13* pg_snakeoil_13* pgextwlist_13* pg_auditor_13 sslutils_13* noset_13* #pg_session_jwt_13 #pg_tde_13*
-pg12: passwordcheck_cracklib_12* pgsodium_12* vault_12* postgresql_anonymizer_12* pgsmcrypto_12 pgaudit14_12* pgauditlogtofile_12* pg_auth_mon_12* credcheck_12* pgcryptokey_12 pg_jobmon_12* logerrors_12* login_hook_12* set_user_12* pg_snakeoil_12* pgextwlist_12* pg_auditor_12 sslutils_12* noset_12* #supautils_12* #pg_session_jwt_12 #pg_tde_12*
+pg17: postgresql-17-passwordcheck-cracklib postgresql-17-supautils postgresql-17-pgsodium postgresql-17-vault postgresql-17-pg-session-jwt postgresql-17-anonymizer postgresql-17-pgsmcrypto postgresql-17-pgaudit postgresql-17-pgauditlogtofile postgresql-17-pg-auth-mon postgresql-17-credcheck postgresql-17-pgcryptokey postgresql-17-pg-jobmon postgresql-17-logerrors postgresql-17-login-hook postgresql-17-set-user postgresql-17-snakeoil postgresql-17-pgextwlist postgresql-17-pg-auditor postgresql-17-sslutils postgresql-17-noset #postgresql-17-pg-tde
+pg16: postgresql-16-passwordcheck-cracklib postgresql-16-supautils postgresql-16-pgsodium postgresql-16-vault postgresql-16-pg-session-jwt postgresql-16-anonymizer postgresql-16-pg-tde postgresql-16-pgsmcrypto postgresql-16-pgaudit postgresql-16-pgauditlogtofile postgresql-16-pg-auth-mon postgresql-16-credcheck postgresql-16-pgcryptokey postgresql-16-pg-jobmon postgresql-16-logerrors postgresql-16-login-hook postgresql-16-set-user postgresql-16-snakeoil postgresql-16-pgextwlist postgresql-16-pg-auditor postgresql-16-sslutils postgresql-16-noset
+pg15: postgresql-15-passwordcheck-cracklib postgresql-15-supautils postgresql-15-pgsodium postgresql-15-vault postgresql-15-pg-session-jwt postgresql-15-anonymizer postgresql-15-pgsmcrypto postgresql-15-pgaudit postgresql-15-pgauditlogtofile postgresql-15-pg-auth-mon postgresql-15-credcheck postgresql-15-pgcryptokey postgresql-15-pg-jobmon postgresql-15-logerrors postgresql-15-login-hook postgresql-15-set-user postgresql-15-snakeoil postgresql-15-pgextwlist postgresql-15-pg-auditor postgresql-15-sslutils postgresql-15-noset #postgresql-15-pg-tde
+pg14: postgresql-14-passwordcheck-cracklib postgresql-14-supautils postgresql-14-pgsodium postgresql-14-vault postgresql-14-pg-session-jwt postgresql-14-anonymizer postgresql-14-pgsmcrypto postgresql-14-pgaudit postgresql-14-pgauditlogtofile postgresql-14-pg-auth-mon postgresql-14-credcheck postgresql-14-pgcryptokey postgresql-14-pg-jobmon postgresql-14-logerrors postgresql-14-login-hook postgresql-14-set-user postgresql-14-snakeoil postgresql-14-pgextwlist postgresql-14-pg-auditor postgresql-14-sslutils postgresql-14-noset #postgresql-14-pg-tde
+pg13: postgresql-13-passwordcheck-cracklib postgresql-13-supautils postgresql-13-pgsodium postgresql-13-vault postgresql-13-anonymizer postgresql-13-pgsmcrypto postgresql-13-pgaudit postgresql-13-pgauditlogtofile postgresql-13-pg-auth-mon postgresql-13-credcheck postgresql-13-pgcryptokey postgresql-13-pg-jobmon postgresql-13-logerrors postgresql-13-login-hook postgresql-13-set-user postgresql-13-snakeoil postgresql-13-pgextwlist postgresql-13-pg-auditor postgresql-13-sslutils postgresql-13-noset #postgresql-13-pg-session-jwt #postgresql-13-pg-tde
+pg12: postgresql-12-passwordcheck-cracklib postgresql-12-pgsodium postgresql-12-vault postgresql-12-anonymizer postgresql-12-pgsmcrypto postgresql-12-pgaudit postgresql-12-pgauditlogtofile postgresql-12-pg-auth-mon postgresql-12-credcheck postgresql-12-pgcryptokey postgresql-12-pg-jobmon postgresql-12-logerrors postgresql-12-login-hook postgresql-12-set-user postgresql-12-snakeoil postgresql-12-pgextwlist postgresql-12-pg-auditor postgresql-12-sslutils postgresql-12-noset #postgresql-12-supautils #postgresql-12-pg-session-jwt #postgresql-12-pg-tde
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: postgresql-17-passwordcheck-cracklib postgresql-17-supautils postgresql-17-pgsodium postgresql-17-vault postgresql-17-pg-session-jwt postgresql-17-anonymizer postgresql-17-pgsmcrypto postgresql-17-pgaudit postgresql-17-pgauditlogtofile postgresql-17-pg-auth-mon postgresql-17-credcheck postgresql-17-pgcryptokey postgresql-17-pg-jobmon postgresql-17-logerrors postgresql-17-login-hook postgresql-17-set-user postgresql-17-snakeoil postgresql-17-pgextwlist postgresql-17-pg-auditor postgresql-17-sslutils postgresql-17-noset #postgresql-17-pg-tde
+pg16: postgresql-16-passwordcheck-cracklib postgresql-16-supautils postgresql-16-pgsodium postgresql-16-vault postgresql-16-pg-session-jwt postgresql-16-anonymizer postgresql-16-pg-tde postgresql-16-pgsmcrypto postgresql-16-pgaudit postgresql-16-pgauditlogtofile postgresql-16-pg-auth-mon postgresql-16-credcheck postgresql-16-pgcryptokey postgresql-16-pg-jobmon postgresql-16-logerrors postgresql-16-login-hook postgresql-16-set-user postgresql-16-snakeoil postgresql-16-pgextwlist postgresql-16-pg-auditor postgresql-16-sslutils postgresql-16-noset
+pg15: postgresql-15-passwordcheck-cracklib postgresql-15-supautils postgresql-15-pgsodium postgresql-15-vault postgresql-15-pg-session-jwt postgresql-15-anonymizer postgresql-15-pgsmcrypto postgresql-15-pgaudit postgresql-15-pgauditlogtofile postgresql-15-pg-auth-mon postgresql-15-credcheck postgresql-15-pgcryptokey postgresql-15-pg-jobmon postgresql-15-logerrors postgresql-15-login-hook postgresql-15-set-user postgresql-15-snakeoil postgresql-15-pgextwlist postgresql-15-pg-auditor postgresql-15-sslutils postgresql-15-noset #postgresql-15-pg-tde
+pg14: postgresql-14-passwordcheck-cracklib postgresql-14-supautils postgresql-14-pgsodium postgresql-14-vault postgresql-14-pg-session-jwt postgresql-14-anonymizer postgresql-14-pgsmcrypto postgresql-14-pgaudit postgresql-14-pgauditlogtofile postgresql-14-pg-auth-mon postgresql-14-credcheck postgresql-14-pgcryptokey postgresql-14-pg-jobmon postgresql-14-logerrors postgresql-14-login-hook postgresql-14-set-user postgresql-14-snakeoil postgresql-14-pgextwlist postgresql-14-pg-auditor postgresql-14-sslutils postgresql-14-noset #postgresql-14-pg-tde
+pg13: postgresql-13-passwordcheck-cracklib postgresql-13-supautils postgresql-13-pgsodium postgresql-13-vault postgresql-13-anonymizer postgresql-13-pgsmcrypto postgresql-13-pgaudit postgresql-13-pgauditlogtofile postgresql-13-pg-auth-mon postgresql-13-credcheck postgresql-13-pgcryptokey postgresql-13-pg-jobmon postgresql-13-logerrors postgresql-13-login-hook postgresql-13-set-user postgresql-13-snakeoil postgresql-13-pgextwlist postgresql-13-pg-auditor postgresql-13-sslutils postgresql-13-noset #postgresql-13-pg-session-jwt #postgresql-13-pg-tde
+pg12: postgresql-12-passwordcheck-cracklib postgresql-12-pgsodium postgresql-12-vault postgresql-12-anonymizer postgresql-12-pgsmcrypto postgresql-12-pgaudit postgresql-12-pgauditlogtofile postgresql-12-pg-auth-mon postgresql-12-credcheck postgresql-12-pgcryptokey postgresql-12-pg-jobmon postgresql-12-logerrors postgresql-12-login-hook postgresql-12-set-user postgresql-12-snakeoil postgresql-12-pgextwlist postgresql-12-pg-auditor postgresql-12-sslutils postgresql-12-noset #postgresql-12-supautils #postgresql-12-pg-session-jwt #postgresql-12-pg-tde
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: postgresql-17-passwordcheck-cracklib postgresql-17-supautils postgresql-17-pgsodium postgresql-17-vault postgresql-17-pg-session-jwt postgresql-17-anonymizer postgresql-17-pgsmcrypto postgresql-17-pgaudit postgresql-17-pgauditlogtofile postgresql-17-pg-auth-mon postgresql-17-credcheck postgresql-17-pgcryptokey postgresql-17-pg-jobmon postgresql-17-logerrors postgresql-17-login-hook postgresql-17-set-user postgresql-17-snakeoil postgresql-17-pgextwlist postgresql-17-pg-auditor postgresql-17-sslutils postgresql-17-noset #postgresql-17-pg-tde
+pg16: postgresql-16-passwordcheck-cracklib postgresql-16-supautils postgresql-16-pgsodium postgresql-16-vault postgresql-16-pg-session-jwt postgresql-16-anonymizer postgresql-16-pg-tde postgresql-16-pgsmcrypto postgresql-16-pgaudit postgresql-16-pgauditlogtofile postgresql-16-pg-auth-mon postgresql-16-credcheck postgresql-16-pgcryptokey postgresql-16-pg-jobmon postgresql-16-logerrors postgresql-16-login-hook postgresql-16-set-user postgresql-16-snakeoil postgresql-16-pgextwlist postgresql-16-pg-auditor postgresql-16-sslutils postgresql-16-noset
+pg15: postgresql-15-passwordcheck-cracklib postgresql-15-supautils postgresql-15-pgsodium postgresql-15-vault postgresql-15-pg-session-jwt postgresql-15-anonymizer postgresql-15-pgsmcrypto postgresql-15-pgaudit postgresql-15-pgauditlogtofile postgresql-15-pg-auth-mon postgresql-15-credcheck postgresql-15-pgcryptokey postgresql-15-pg-jobmon postgresql-15-logerrors postgresql-15-login-hook postgresql-15-set-user postgresql-15-snakeoil postgresql-15-pgextwlist postgresql-15-pg-auditor postgresql-15-sslutils postgresql-15-noset #postgresql-15-pg-tde
+pg14: postgresql-14-passwordcheck-cracklib postgresql-14-supautils postgresql-14-pgsodium postgresql-14-vault postgresql-14-pg-session-jwt postgresql-14-anonymizer postgresql-14-pgsmcrypto postgresql-14-pgaudit postgresql-14-pgauditlogtofile postgresql-14-pg-auth-mon postgresql-14-credcheck postgresql-14-pgcryptokey postgresql-14-pg-jobmon postgresql-14-logerrors postgresql-14-login-hook postgresql-14-set-user postgresql-14-snakeoil postgresql-14-pgextwlist postgresql-14-pg-auditor postgresql-14-sslutils postgresql-14-noset #postgresql-14-pg-tde
+pg13: postgresql-13-passwordcheck-cracklib postgresql-13-supautils postgresql-13-pgsodium postgresql-13-vault postgresql-13-anonymizer postgresql-13-pgsmcrypto postgresql-13-pgaudit postgresql-13-pgauditlogtofile postgresql-13-pg-auth-mon postgresql-13-credcheck postgresql-13-pgcryptokey postgresql-13-pg-jobmon postgresql-13-logerrors postgresql-13-login-hook postgresql-13-set-user postgresql-13-snakeoil postgresql-13-pgextwlist postgresql-13-pg-auditor postgresql-13-sslutils postgresql-13-noset #postgresql-13-pg-session-jwt #postgresql-13-pg-tde
+pg12: postgresql-12-passwordcheck-cracklib postgresql-12-pgsodium postgresql-12-vault postgresql-12-anonymizer postgresql-12-pgsmcrypto postgresql-12-pgaudit postgresql-12-pgauditlogtofile postgresql-12-pg-auth-mon postgresql-12-credcheck postgresql-12-pgcryptokey postgresql-12-pg-jobmon postgresql-12-logerrors postgresql-12-login-hook postgresql-12-set-user postgresql-12-snakeoil postgresql-12-pgextwlist postgresql-12-pg-auditor postgresql-12-sslutils postgresql-12-noset #postgresql-12-supautils #postgresql-12-pg-session-jwt #postgresql-12-pg-tde
 ```
 
 

@@ -7,9 +7,12 @@ The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL exte
 
 Provide %s available [Extensions](/list) as [RPM](/rpm) / [DEB](/deb) for PostgreSQL **12** - **17** in addition to the official PGDG repo.
 
-**Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
+%s
 
-<a href="https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4"><img src="https://pigsty.io/img/pigsty/ecosystem.jpg" style="max-width: 1000px; max-height: 1000px; width: 100%%; height: auto;"></a>
+
+> **Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
+>
+> <a href="https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4"><img src="https://pigsty.io/img/pigsty/ecosystem.jpg" style="max-width: 1000px; max-height: 1000px; width: 100%%; height: auto;"></a>
 
 
 -------
@@ -58,24 +61,21 @@ sudo yum makecache
 
 ## What's Inside
 
-Linux x86_64/amd64 [Extension](/list) packages for PostgreSQL 12 - 17, on El8, EL9, Ubuntu 22.04 and Debian 12.
+Linux x86_64/amd64 [Extension](/list) packages for PostgreSQL 12 - 17, on El8, EL9, Ubuntu 22.04/24.04 and Debian 12.
 
 %s
-
 
 > Note: One single rpm/deb package may contain more than one extension
 
-%s
+
 
 ----------------
 
 ## Contrib
 
-You can edit the [`pigsty.csv`](https://github.com/pgsty/extension/blob/main/data/pigsty.csv) raw data and create a pull
-request to update the metadata in case of any error.
+You can edit the [`pigsty.csv`](https://github.com/pgsty/extension/blob/main/data/pigsty.csv) raw data and create a pull request to update the metadata in case of any error.
 
-If you have any suggestions on including new extensions or bumping to new versions, PR
-or [Issue](https://github.com/pgsty/extension/issues/new) are always welcome!
+If you have any suggestions on including new extensions or bumping to new versions, PR or [Issue](https://github.com/pgsty/extension/issues/new) are always welcome!
 
 
 
@@ -83,7 +83,7 @@ or [Issue](https://github.com/pgsty/extension/issues/new) are always welcome!
 
 ## About
 
-[![Github: pgsty/extensions](https://img.shields.io/badge/GitHub-pgsty/extensions-slategray?style=flat&logo=github&logoColor=black)](https://github.com/pgsty/extensions)
+[![Github: pgsty/extension](https://img.shields.io/badge/GitHub-pgsty/extension-slategray?style=flat&logo=github&logoColor=black)](https://github.com/pgsty/extension)
 [![Author: RuohangFeng](https://img.shields.io/badge/Author-Ruohang_Feng-steelblue?style=flat)](https://vonng.com/)
 [![About: @Vonng](https://img.shields.io/badge/%%40Vonng-steelblue?style=flat)](https://vonng.com/en/)
 [![Mail: rh@vonng.com](https://img.shields.io/badge/rh%%40vonng.com-steelblue?style=flat)](mailto:rh@vonng.com)

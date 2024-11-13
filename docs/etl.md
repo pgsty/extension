@@ -29,13 +29,63 @@ There are 14 available extensions in this category:
 
 
 
+### RHEL 8 Compatible (el8)
+
 ```yaml
 pg17: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoder_raw mimeo pg_fact_loader #wal2mongo #decoderbufs #repmgr #pg_bulkload
-pg16: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo repmgr pg_fact_loader pg_bulkload
-pg15: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo repmgr pg_fact_loader pg_bulkload
-pg14: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo repmgr pg_fact_loader pg_bulkload
-pg13: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo repmgr pg_fact_loader pg_bulkload
-pg12: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo repmgr pg_fact_loader #wal2mongo #pg_bulkload
+pg16: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg15: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg14: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg13: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg12: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #wal2mongo #repmgr
+```
+
+
+### RHEL 9 Compatible (el9)
+
+```yaml
+pg17: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoder_raw mimeo pg_fact_loader #wal2mongo #decoderbufs #repmgr #pg_bulkload
+pg16: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg15: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg14: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg13: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg12: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #wal2mongo #repmgr
+```
+
+
+### Debian 12 bookworm Compatible (d12)
+
+```yaml
+pg17: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoder_raw mimeo pg_fact_loader #wal2mongo #decoderbufs #repmgr #pg_bulkload
+pg16: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg15: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg14: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg13: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg12: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader #wal2mongo #repmgr #pg_bulkload
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoder_raw mimeo pg_fact_loader #wal2mongo #decoderbufs #repmgr #pg_bulkload
+pg16: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg15: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg14: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg13: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg12: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader #wal2mongo #repmgr #pg_bulkload
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoder_raw mimeo pg_fact_loader #wal2mongo #decoderbufs #repmgr #pg_bulkload
+pg16: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg15: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg14: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg13: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
+pg12: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader #wal2mongo #repmgr #pg_bulkload
 ```
 
 
@@ -62,6 +112,20 @@ pg12: pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decod
 | [pg_bulkload](/pg_bulkload) | 3.1.21 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_bulkload_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | pg_bulkload is a high speed data loading utility for PostgreSQL |
 
 
+
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: pglogical_17* pglogical_ticker_17* pgl_ddl_deploy_17* pg_failover_slots_17* wal2json_17* decoder_raw_17* mimeo_17 pg_fact_loader_17* #wal2mongo_17* #postgres-decoderbufs_17* #repmgr_17* #pg_bulkload_17*
+pg16: pglogical_16* pglogical_ticker_16* pgl_ddl_deploy_16* pg_failover_slots_16* wal2json_16* wal2mongo_16* postgres-decoderbufs_16* decoder_raw_16* mimeo_16 pg_fact_loader_16* pg_bulkload_16* #repmgr_16*
+pg15: pglogical_15* pglogical_ticker_15* pgl_ddl_deploy_15* pg_failover_slots_15* wal2json_15* wal2mongo_15* postgres-decoderbufs_15* decoder_raw_15* mimeo_15 pg_fact_loader_15* pg_bulkload_15* #repmgr_15*
+pg14: pglogical_14* pglogical_ticker_14* pgl_ddl_deploy_14* pg_failover_slots_14* wal2json_14* wal2mongo_14* postgres-decoderbufs_14* decoder_raw_14* mimeo_14 pg_fact_loader_14* pg_bulkload_14* #repmgr_14*
+pg13: pglogical_13* pglogical_ticker_13* pgl_ddl_deploy_13* pg_failover_slots_13* wal2json_13* wal2mongo_13* postgres-decoderbufs_13* decoder_raw_13* mimeo_13 pg_fact_loader_13* pg_bulkload_13* #repmgr_13*
+pg12: pglogical_12* pglogical_ticker_12* pgl_ddl_deploy_12* pg_failover_slots_12* wal2json_12* postgres-decoderbufs_12* decoder_raw_12* mimeo_12 pg_fact_loader_12* pg_bulkload_12* #wal2mongo_12* #repmgr_12*
+```
+
+
+### RHEL 9 Compatible (el9)
 
 ```yaml
 pg17: pglogical_17* pglogical_ticker_17* pgl_ddl_deploy_17* pg_failover_slots_17* wal2json_17* decoder_raw_17* mimeo_17 pg_fact_loader_17* #wal2mongo_17* #postgres-decoderbufs_17* #repmgr_17* #pg_bulkload_17*
@@ -97,13 +161,39 @@ pg12: pglogical_12* pglogical_ticker_12* pgl_ddl_deploy_12* pg_failover_slots_12
 
 
 
+### Debian 12 bookworm Compatible (d12)
+
 ```yaml
-pg17: pglogical_17* pglogical_ticker_17* pgl_ddl_deploy_17* pg_failover_slots_17* wal2json_17* decoder_raw_17* mimeo_17 pg_fact_loader_17* #wal2mongo_17* #postgres-decoderbufs_17* #repmgr_17* #pg_bulkload_17*
-pg16: pglogical_16* pglogical_ticker_16* pgl_ddl_deploy_16* pg_failover_slots_16* wal2json_16* wal2mongo_16* postgres-decoderbufs_16* decoder_raw_16* mimeo_16 pg_fact_loader_16* pg_bulkload_16* #repmgr_16*
-pg15: pglogical_15* pglogical_ticker_15* pgl_ddl_deploy_15* pg_failover_slots_15* wal2json_15* wal2mongo_15* postgres-decoderbufs_15* decoder_raw_15* mimeo_15 pg_fact_loader_15* pg_bulkload_15* #repmgr_15*
-pg14: pglogical_14* pglogical_ticker_14* pgl_ddl_deploy_14* pg_failover_slots_14* wal2json_14* wal2mongo_14* postgres-decoderbufs_14* decoder_raw_14* mimeo_14 pg_fact_loader_14* pg_bulkload_14* #repmgr_14*
-pg13: pglogical_13* pglogical_ticker_13* pgl_ddl_deploy_13* pg_failover_slots_13* wal2json_13* wal2mongo_13* postgres-decoderbufs_13* decoder_raw_13* mimeo_13 pg_fact_loader_13* pg_bulkload_13* #repmgr_13*
-pg12: pglogical_12* pglogical_ticker_12* pgl_ddl_deploy_12* pg_failover_slots_12* wal2json_12* postgres-decoderbufs_12* decoder_raw_12* mimeo_12 pg_fact_loader_12* pg_bulkload_12* #wal2mongo_12* #repmgr_12*
+pg17: postgresql-17-pglogical postgresql-17-pglogical-ticker postgresql-17-pgl-ddl-deploy postgresql-17-pg-failover-slots postgresql-17-wal2json postgresql-17-decoder-raw postgresql-17-mimeo postgresql-17-pg-fact-loader #postgresql-17-wal2mongo #postgresql-17-decoderbufs #postgresql-17-repmgr #postgresql-17-pg-bulkload
+pg16: postgresql-16-pglogical postgresql-16-pglogical-ticker postgresql-16-pgl-ddl-deploy postgresql-16-pg-failover-slots postgresql-16-wal2json postgresql-16-wal2mongo postgresql-16-decoderbufs postgresql-16-decoder-raw postgresql-16-mimeo postgresql-16-pg-fact-loader postgresql-16-pg-bulkload #postgresql-16-repmgr
+pg15: postgresql-15-pglogical postgresql-15-pglogical-ticker postgresql-15-pgl-ddl-deploy postgresql-15-pg-failover-slots postgresql-15-wal2json postgresql-15-wal2mongo postgresql-15-decoderbufs postgresql-15-decoder-raw postgresql-15-mimeo postgresql-15-pg-fact-loader postgresql-15-pg-bulkload #postgresql-15-repmgr
+pg14: postgresql-14-pglogical postgresql-14-pglogical-ticker postgresql-14-pgl-ddl-deploy postgresql-14-pg-failover-slots postgresql-14-wal2json postgresql-14-wal2mongo postgresql-14-decoderbufs postgresql-14-decoder-raw postgresql-14-mimeo postgresql-14-pg-fact-loader postgresql-14-pg-bulkload #postgresql-14-repmgr
+pg13: postgresql-13-pglogical postgresql-13-pglogical-ticker postgresql-13-pgl-ddl-deploy postgresql-13-pg-failover-slots postgresql-13-wal2json postgresql-13-wal2mongo postgresql-13-decoderbufs postgresql-13-decoder-raw postgresql-13-mimeo postgresql-13-pg-fact-loader postgresql-13-pg-bulkload #postgresql-13-repmgr
+pg12: postgresql-12-pglogical postgresql-12-pglogical-ticker postgresql-12-pgl-ddl-deploy postgresql-12-pg-failover-slots postgresql-12-wal2json postgresql-12-decoderbufs postgresql-12-decoder-raw postgresql-12-mimeo postgresql-12-pg-fact-loader #postgresql-12-wal2mongo #postgresql-12-repmgr #postgresql-12-pg-bulkload
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: postgresql-17-pglogical postgresql-17-pglogical-ticker postgresql-17-pgl-ddl-deploy postgresql-17-pg-failover-slots postgresql-17-wal2json postgresql-17-decoder-raw postgresql-17-mimeo postgresql-17-pg-fact-loader #postgresql-17-wal2mongo #postgresql-17-decoderbufs #postgresql-17-repmgr #postgresql-17-pg-bulkload
+pg16: postgresql-16-pglogical postgresql-16-pglogical-ticker postgresql-16-pgl-ddl-deploy postgresql-16-pg-failover-slots postgresql-16-wal2json postgresql-16-wal2mongo postgresql-16-decoderbufs postgresql-16-decoder-raw postgresql-16-mimeo postgresql-16-pg-fact-loader postgresql-16-pg-bulkload #postgresql-16-repmgr
+pg15: postgresql-15-pglogical postgresql-15-pglogical-ticker postgresql-15-pgl-ddl-deploy postgresql-15-pg-failover-slots postgresql-15-wal2json postgresql-15-wal2mongo postgresql-15-decoderbufs postgresql-15-decoder-raw postgresql-15-mimeo postgresql-15-pg-fact-loader postgresql-15-pg-bulkload #postgresql-15-repmgr
+pg14: postgresql-14-pglogical postgresql-14-pglogical-ticker postgresql-14-pgl-ddl-deploy postgresql-14-pg-failover-slots postgresql-14-wal2json postgresql-14-wal2mongo postgresql-14-decoderbufs postgresql-14-decoder-raw postgresql-14-mimeo postgresql-14-pg-fact-loader postgresql-14-pg-bulkload #postgresql-14-repmgr
+pg13: postgresql-13-pglogical postgresql-13-pglogical-ticker postgresql-13-pgl-ddl-deploy postgresql-13-pg-failover-slots postgresql-13-wal2json postgresql-13-wal2mongo postgresql-13-decoderbufs postgresql-13-decoder-raw postgresql-13-mimeo postgresql-13-pg-fact-loader postgresql-13-pg-bulkload #postgresql-13-repmgr
+pg12: postgresql-12-pglogical postgresql-12-pglogical-ticker postgresql-12-pgl-ddl-deploy postgresql-12-pg-failover-slots postgresql-12-wal2json postgresql-12-decoderbufs postgresql-12-decoder-raw postgresql-12-mimeo postgresql-12-pg-fact-loader #postgresql-12-wal2mongo #postgresql-12-repmgr #postgresql-12-pg-bulkload
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: postgresql-17-pglogical postgresql-17-pglogical-ticker postgresql-17-pgl-ddl-deploy postgresql-17-pg-failover-slots postgresql-17-wal2json postgresql-17-decoder-raw postgresql-17-mimeo postgresql-17-pg-fact-loader #postgresql-17-wal2mongo #postgresql-17-decoderbufs #postgresql-17-repmgr #postgresql-17-pg-bulkload
+pg16: postgresql-16-pglogical postgresql-16-pglogical-ticker postgresql-16-pgl-ddl-deploy postgresql-16-pg-failover-slots postgresql-16-wal2json postgresql-16-wal2mongo postgresql-16-decoderbufs postgresql-16-decoder-raw postgresql-16-mimeo postgresql-16-pg-fact-loader postgresql-16-pg-bulkload #postgresql-16-repmgr
+pg15: postgresql-15-pglogical postgresql-15-pglogical-ticker postgresql-15-pgl-ddl-deploy postgresql-15-pg-failover-slots postgresql-15-wal2json postgresql-15-wal2mongo postgresql-15-decoderbufs postgresql-15-decoder-raw postgresql-15-mimeo postgresql-15-pg-fact-loader postgresql-15-pg-bulkload #postgresql-15-repmgr
+pg14: postgresql-14-pglogical postgresql-14-pglogical-ticker postgresql-14-pgl-ddl-deploy postgresql-14-pg-failover-slots postgresql-14-wal2json postgresql-14-wal2mongo postgresql-14-decoderbufs postgresql-14-decoder-raw postgresql-14-mimeo postgresql-14-pg-fact-loader postgresql-14-pg-bulkload #postgresql-14-repmgr
+pg13: postgresql-13-pglogical postgresql-13-pglogical-ticker postgresql-13-pgl-ddl-deploy postgresql-13-pg-failover-slots postgresql-13-wal2json postgresql-13-wal2mongo postgresql-13-decoderbufs postgresql-13-decoder-raw postgresql-13-mimeo postgresql-13-pg-fact-loader postgresql-13-pg-bulkload #postgresql-13-repmgr
+pg12: postgresql-12-pglogical postgresql-12-pglogical-ticker postgresql-12-pgl-ddl-deploy postgresql-12-pg-failover-slots postgresql-12-wal2json postgresql-12-decoderbufs postgresql-12-decoder-raw postgresql-12-mimeo postgresql-12-pg-fact-loader #postgresql-12-wal2mongo #postgresql-12-repmgr #postgresql-12-pg-bulkload
 ```
 
 

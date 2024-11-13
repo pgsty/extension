@@ -50,13 +50,63 @@ There are 35 available extensions in this category:
 
 
 
+### RHEL 8 Compatible (el8)
+
 ```yaml
-pg17: pg_repack pg_squeeze pg_dirtyread pgfincore ddlx pg_prioritize pg_readonly safeupdate pg_permissions pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent #pgdd #pg_checksums #pgautofailover
-pg16: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent
-pg15: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent
-pg14: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent #pg_prioritize
-pg13: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio pgpool pgagent #pg_prioritize #safeupdate
-pg12: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio pgpool pgagent #pg_prioritize #safeupdate #pg_savior
+pg17: pg_repack pg_squeeze pg_dirtyread pgfincore ddlx pg_prioritize pg_readonly safeupdate pg_permissions pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgdd #pg_checksums #pgautofailover #pgpool #pgagent
+pg16: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg15: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg14: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pg_prioritize #pgpool #pgagent
+pg13: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pg_prioritize #pgpool #pgagent
+pg12: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio #pg_prioritize #pg_savior #pgpool #pgagent
+```
+
+
+### RHEL 9 Compatible (el9)
+
+```yaml
+pg17: pg_repack pg_squeeze pg_dirtyread pgfincore ddlx pg_prioritize pg_readonly safeupdate pg_permissions pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgdd #pg_checksums #pgautofailover #pgpool #pgagent
+pg16: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg15: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg14: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pg_prioritize #pgpool #pgagent
+pg13: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pg_prioritize #pgpool #pgagent
+pg12: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio #pg_prioritize #pg_savior #pgpool #pgagent
+```
+
+
+### Debian 12 bookworm Compatible (d12)
+
+```yaml
+pg17: pg_repack pg_squeeze pg_dirtyread pgfincore ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgdd #pgpool #pgagent
+pg16: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg15: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg14: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg13: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #safeupdate #pgpool #pgagent
+pg12: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio #safeupdate #pg_savior #pgpool #pgagent
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: pg_repack pg_squeeze pg_dirtyread pgfincore ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgdd #pgpool #pgagent
+pg16: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg15: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg14: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg13: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #safeupdate #pgpool #pgagent
+pg12: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio #safeupdate #pg_savior #pgpool #pgagent
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: pg_repack pg_squeeze pg_dirtyread pgfincore ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgdd #pgpool #pgagent
+pg16: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg15: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg14: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
+pg13: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #safeupdate #pgpool #pgagent
+pg12: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_prioritize pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio #safeupdate #pg_savior #pgpool #pgagent
 ```
 
 
@@ -103,6 +153,20 @@ pg12: pg_repack pg_squeeze pg_dirtyread pgfincore pgdd ddlx pg_checksums pg_read
 | [pg_surgery](/pg_surgery) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** |  |  | extension to perform surgery on a damaged relation |
 
 
+
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: pg_repack_17* pg_squeeze_17* pg_dirtyread_17* pgfincore_17* ddlx_17* pg_prioritize_17* pg_readonly_17* safeupdate_17* pg_permissions_17* pg_catcheck_17* preprepare_17* pgcozy_17 pg_orphaned_17* pg_crash_17* pg_cheat_funcs_17* pg_savior_17* table_log_17 pg_fio_17 #pgdd_17 #pg_checksums_17* #pg_auto_failover_17* #pgpool-II-pg17-extensions #pgagent_17*
+pg16: pg_repack_16* pg_squeeze_16* pg_dirtyread_16* pgfincore_16* pgdd_16 ddlx_16* pg_prioritize_16* pg_checksums_16* pg_readonly_16* safeupdate_16* pg_permissions_16* pg_auto_failover_16* pg_catcheck_16* preprepare_16* pgcozy_16 pg_orphaned_16* pg_crash_16* pg_cheat_funcs_16* pg_savior_16* table_log_16 pg_fio_16 #pgpool-II-pg16-extensions #pgagent_16*
+pg15: pg_repack_15* pg_squeeze_15* pg_dirtyread_15* pgfincore_15* pgdd_15 ddlx_15* pg_prioritize_15* pg_checksums_15* pg_readonly_15* safeupdate_15* pg_permissions_15* pg_auto_failover_15* pg_catcheck_15* preprepare_15* pgcozy_15 pg_orphaned_15* pg_crash_15* pg_cheat_funcs_15* pg_savior_15* table_log_15 pg_fio_15 #pgpool-II-pg15-extensions #pgagent_15*
+pg14: pg_repack_14* pg_squeeze_14* pg_dirtyread_14* pgfincore_14* pgdd_14 ddlx_14* pg_checksums_14* pg_readonly_14* safeupdate_14* pg_permissions_14* pg_auto_failover_14* pg_catcheck_14* preprepare_14* pgcozy_14 pg_orphaned_14* pg_crash_14* pg_cheat_funcs_14* pg_savior_14* table_log_14 pg_fio_14 #pg_prioritize_14* #pgpool-II-pg14-extensions #pgagent_14*
+pg13: pg_repack_13* pg_squeeze_13* pg_dirtyread_13* pgfincore_13* pgdd_13 ddlx_13* pg_checksums_13* pg_readonly_13* safeupdate_13* pg_permissions_13* pg_auto_failover_13* pg_catcheck_13* preprepare_13* pgcozy_13 pg_orphaned_13* pg_crash_13* pg_cheat_funcs_13* pg_savior_13* table_log_13 pg_fio_13 #pg_prioritize_13* #pgpool-II-pg13-extensions #pgagent_13*
+pg12: pg_repack_12* pg_squeeze_12* pg_dirtyread_12* pgfincore_12* pgdd_12 ddlx_12* pg_checksums_12* pg_readonly_12* safeupdate_12* pg_permissions_12* pg_auto_failover_12* pg_catcheck_12* preprepare_12* pgcozy_12 pg_orphaned_12* pg_crash_12* pg_cheat_funcs_12* table_log_12 pg_fio_12 #pg_prioritize_12* #pg_savior_12* #pgpool-II-pg12-extensions #pgagent_12*
+```
+
+
+### RHEL 9 Compatible (el9)
 
 ```yaml
 pg17: pg_repack_17* pg_squeeze_17* pg_dirtyread_17* pgfincore_17* ddlx_17* pg_prioritize_17* pg_readonly_17* safeupdate_17* pg_permissions_17* pg_catcheck_17* preprepare_17* pgcozy_17 pg_orphaned_17* pg_crash_17* pg_cheat_funcs_17* pg_savior_17* table_log_17 pg_fio_17 #pgdd_17 #pg_checksums_17* #pg_auto_failover_17* #pgpool-II-pg17-extensions #pgagent_17*
@@ -158,13 +222,39 @@ pg12: pg_repack_12* pg_squeeze_12* pg_dirtyread_12* pgfincore_12* pgdd_12 ddlx_1
 
 
 
+### Debian 12 bookworm Compatible (d12)
+
 ```yaml
-pg17: pg_repack_17* pg_squeeze_17* pg_dirtyread_17* pgfincore_17* ddlx_17* pg_prioritize_17* pg_readonly_17* safeupdate_17* pg_permissions_17* pg_catcheck_17* preprepare_17* pgcozy_17 pg_orphaned_17* pg_crash_17* pg_cheat_funcs_17* pg_savior_17* table_log_17 pg_fio_17 #pgdd_17 #pg_checksums_17* #pg_auto_failover_17* #pgpool-II-pg17-extensions #pgagent_17*
-pg16: pg_repack_16* pg_squeeze_16* pg_dirtyread_16* pgfincore_16* pgdd_16 ddlx_16* pg_prioritize_16* pg_checksums_16* pg_readonly_16* safeupdate_16* pg_permissions_16* pg_auto_failover_16* pg_catcheck_16* preprepare_16* pgcozy_16 pg_orphaned_16* pg_crash_16* pg_cheat_funcs_16* pg_savior_16* table_log_16 pg_fio_16 #pgpool-II-pg16-extensions #pgagent_16*
-pg15: pg_repack_15* pg_squeeze_15* pg_dirtyread_15* pgfincore_15* pgdd_15 ddlx_15* pg_prioritize_15* pg_checksums_15* pg_readonly_15* safeupdate_15* pg_permissions_15* pg_auto_failover_15* pg_catcheck_15* preprepare_15* pgcozy_15 pg_orphaned_15* pg_crash_15* pg_cheat_funcs_15* pg_savior_15* table_log_15 pg_fio_15 #pgpool-II-pg15-extensions #pgagent_15*
-pg14: pg_repack_14* pg_squeeze_14* pg_dirtyread_14* pgfincore_14* pgdd_14 ddlx_14* pg_checksums_14* pg_readonly_14* safeupdate_14* pg_permissions_14* pg_auto_failover_14* pg_catcheck_14* preprepare_14* pgcozy_14 pg_orphaned_14* pg_crash_14* pg_cheat_funcs_14* pg_savior_14* table_log_14 pg_fio_14 #pg_prioritize_14* #pgpool-II-pg14-extensions #pgagent_14*
-pg13: pg_repack_13* pg_squeeze_13* pg_dirtyread_13* pgfincore_13* pgdd_13 ddlx_13* pg_checksums_13* pg_readonly_13* safeupdate_13* pg_permissions_13* pg_auto_failover_13* pg_catcheck_13* preprepare_13* pgcozy_13 pg_orphaned_13* pg_crash_13* pg_cheat_funcs_13* pg_savior_13* table_log_13 pg_fio_13 #pg_prioritize_13* #pgpool-II-pg13-extensions #pgagent_13*
-pg12: pg_repack_12* pg_squeeze_12* pg_dirtyread_12* pgfincore_12* pgdd_12 ddlx_12* pg_checksums_12* pg_readonly_12* safeupdate_12* pg_permissions_12* pg_auto_failover_12* pg_catcheck_12* preprepare_12* pgcozy_12 pg_orphaned_12* pg_crash_12* pg_cheat_funcs_12* table_log_12 pg_fio_12 #pg_prioritize_12* #pg_savior_12* #pgpool-II-pg12-extensions #pgagent_12*
+pg17: postgresql-17-repack postgresql-17-squeeze postgresql-17-dirtyread postgresql-17-pgfincore postgresql-17-ddlx postgresql-17-prioritize postgresql-17-pg-checksums postgresql-17-pg-readonly postgresql-17-pg-safeupdate postgresql-17-pg-permissions postgresql-17-auto-failover postgresql-17-pg-catcheck postgresql-17-preprepare postgresql-17-pgcozy postgresql-17-pg-orphaned postgresql-17-pg-crash postgresql-17-pg-cheat-funcs postgresql-17-pg-savior postgresql-17-tablelog postgresql-17-pg-fio #postgresql-17-pgdd #postgresql-17-pgpool2 #pgagent
+pg16: postgresql-16-repack postgresql-16-squeeze postgresql-16-dirtyread postgresql-16-pgfincore postgresql-16-pgdd postgresql-16-ddlx postgresql-16-prioritize postgresql-16-pg-checksums postgresql-16-pg-readonly postgresql-16-pg-safeupdate postgresql-16-pg-permissions postgresql-16-auto-failover postgresql-16-pg-catcheck postgresql-16-preprepare postgresql-16-pgcozy postgresql-16-pg-orphaned postgresql-16-pg-crash postgresql-16-pg-cheat-funcs postgresql-16-pg-savior postgresql-16-tablelog postgresql-16-pg-fio #postgresql-16-pgpool2 #pgagent
+pg15: postgresql-15-repack postgresql-15-squeeze postgresql-15-dirtyread postgresql-15-pgfincore postgresql-15-pgdd postgresql-15-ddlx postgresql-15-prioritize postgresql-15-pg-checksums postgresql-15-pg-readonly postgresql-15-pg-safeupdate postgresql-15-pg-permissions postgresql-15-auto-failover postgresql-15-pg-catcheck postgresql-15-preprepare postgresql-15-pgcozy postgresql-15-pg-orphaned postgresql-15-pg-crash postgresql-15-pg-cheat-funcs postgresql-15-pg-savior postgresql-15-tablelog postgresql-15-pg-fio #postgresql-15-pgpool2 #pgagent
+pg14: postgresql-14-repack postgresql-14-squeeze postgresql-14-dirtyread postgresql-14-pgfincore postgresql-14-pgdd postgresql-14-ddlx postgresql-14-prioritize postgresql-14-pg-checksums postgresql-14-pg-readonly postgresql-14-pg-safeupdate postgresql-14-pg-permissions postgresql-14-auto-failover postgresql-14-pg-catcheck postgresql-14-preprepare postgresql-14-pgcozy postgresql-14-pg-orphaned postgresql-14-pg-crash postgresql-14-pg-cheat-funcs postgresql-14-pg-savior postgresql-14-tablelog postgresql-14-pg-fio #postgresql-14-pgpool2 #pgagent
+pg13: postgresql-13-repack postgresql-13-squeeze postgresql-13-dirtyread postgresql-13-pgfincore postgresql-13-pgdd postgresql-13-ddlx postgresql-13-prioritize postgresql-13-pg-checksums postgresql-13-pg-readonly postgresql-13-pg-permissions postgresql-13-auto-failover postgresql-13-pg-catcheck postgresql-13-preprepare postgresql-13-pgcozy postgresql-13-pg-orphaned postgresql-13-pg-crash postgresql-13-pg-cheat-funcs postgresql-13-pg-savior postgresql-13-tablelog postgresql-13-pg-fio #postgresql-13-pg-safeupdate #postgresql-13-pgpool2 #pgagent
+pg12: postgresql-12-repack postgresql-12-squeeze postgresql-12-dirtyread postgresql-12-pgfincore postgresql-12-pgdd postgresql-12-ddlx postgresql-12-prioritize postgresql-12-pg-checksums postgresql-12-pg-readonly postgresql-12-pg-permissions postgresql-12-auto-failover postgresql-12-pg-catcheck postgresql-12-preprepare postgresql-12-pgcozy postgresql-12-pg-orphaned postgresql-12-pg-crash postgresql-12-pg-cheat-funcs postgresql-12-tablelog postgresql-12-pg-fio #postgresql-12-pg-safeupdate #postgresql-12-pg-savior #postgresql-12-pgpool2 #pgagent
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: postgresql-17-repack postgresql-17-squeeze postgresql-17-dirtyread postgresql-17-pgfincore postgresql-17-ddlx postgresql-17-prioritize postgresql-17-pg-checksums postgresql-17-pg-readonly postgresql-17-pg-safeupdate postgresql-17-pg-permissions postgresql-17-auto-failover postgresql-17-pg-catcheck postgresql-17-preprepare postgresql-17-pgcozy postgresql-17-pg-orphaned postgresql-17-pg-crash postgresql-17-pg-cheat-funcs postgresql-17-pg-savior postgresql-17-tablelog postgresql-17-pg-fio #postgresql-17-pgdd #postgresql-17-pgpool2 #pgagent
+pg16: postgresql-16-repack postgresql-16-squeeze postgresql-16-dirtyread postgresql-16-pgfincore postgresql-16-pgdd postgresql-16-ddlx postgresql-16-prioritize postgresql-16-pg-checksums postgresql-16-pg-readonly postgresql-16-pg-safeupdate postgresql-16-pg-permissions postgresql-16-auto-failover postgresql-16-pg-catcheck postgresql-16-preprepare postgresql-16-pgcozy postgresql-16-pg-orphaned postgresql-16-pg-crash postgresql-16-pg-cheat-funcs postgresql-16-pg-savior postgresql-16-tablelog postgresql-16-pg-fio #postgresql-16-pgpool2 #pgagent
+pg15: postgresql-15-repack postgresql-15-squeeze postgresql-15-dirtyread postgresql-15-pgfincore postgresql-15-pgdd postgresql-15-ddlx postgresql-15-prioritize postgresql-15-pg-checksums postgresql-15-pg-readonly postgresql-15-pg-safeupdate postgresql-15-pg-permissions postgresql-15-auto-failover postgresql-15-pg-catcheck postgresql-15-preprepare postgresql-15-pgcozy postgresql-15-pg-orphaned postgresql-15-pg-crash postgresql-15-pg-cheat-funcs postgresql-15-pg-savior postgresql-15-tablelog postgresql-15-pg-fio #postgresql-15-pgpool2 #pgagent
+pg14: postgresql-14-repack postgresql-14-squeeze postgresql-14-dirtyread postgresql-14-pgfincore postgresql-14-pgdd postgresql-14-ddlx postgresql-14-prioritize postgresql-14-pg-checksums postgresql-14-pg-readonly postgresql-14-pg-safeupdate postgresql-14-pg-permissions postgresql-14-auto-failover postgresql-14-pg-catcheck postgresql-14-preprepare postgresql-14-pgcozy postgresql-14-pg-orphaned postgresql-14-pg-crash postgresql-14-pg-cheat-funcs postgresql-14-pg-savior postgresql-14-tablelog postgresql-14-pg-fio #postgresql-14-pgpool2 #pgagent
+pg13: postgresql-13-repack postgresql-13-squeeze postgresql-13-dirtyread postgresql-13-pgfincore postgresql-13-pgdd postgresql-13-ddlx postgresql-13-prioritize postgresql-13-pg-checksums postgresql-13-pg-readonly postgresql-13-pg-permissions postgresql-13-auto-failover postgresql-13-pg-catcheck postgresql-13-preprepare postgresql-13-pgcozy postgresql-13-pg-orphaned postgresql-13-pg-crash postgresql-13-pg-cheat-funcs postgresql-13-pg-savior postgresql-13-tablelog postgresql-13-pg-fio #postgresql-13-pg-safeupdate #postgresql-13-pgpool2 #pgagent
+pg12: postgresql-12-repack postgresql-12-squeeze postgresql-12-dirtyread postgresql-12-pgfincore postgresql-12-pgdd postgresql-12-ddlx postgresql-12-prioritize postgresql-12-pg-checksums postgresql-12-pg-readonly postgresql-12-pg-permissions postgresql-12-auto-failover postgresql-12-pg-catcheck postgresql-12-preprepare postgresql-12-pgcozy postgresql-12-pg-orphaned postgresql-12-pg-crash postgresql-12-pg-cheat-funcs postgresql-12-tablelog postgresql-12-pg-fio #postgresql-12-pg-safeupdate #postgresql-12-pg-savior #postgresql-12-pgpool2 #pgagent
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: postgresql-17-repack postgresql-17-squeeze postgresql-17-dirtyread postgresql-17-pgfincore postgresql-17-ddlx postgresql-17-prioritize postgresql-17-pg-checksums postgresql-17-pg-readonly postgresql-17-pg-safeupdate postgresql-17-pg-permissions postgresql-17-auto-failover postgresql-17-pg-catcheck postgresql-17-preprepare postgresql-17-pgcozy postgresql-17-pg-orphaned postgresql-17-pg-crash postgresql-17-pg-cheat-funcs postgresql-17-pg-savior postgresql-17-tablelog postgresql-17-pg-fio #postgresql-17-pgdd #postgresql-17-pgpool2 #pgagent
+pg16: postgresql-16-repack postgresql-16-squeeze postgresql-16-dirtyread postgresql-16-pgfincore postgresql-16-pgdd postgresql-16-ddlx postgresql-16-prioritize postgresql-16-pg-checksums postgresql-16-pg-readonly postgresql-16-pg-safeupdate postgresql-16-pg-permissions postgresql-16-auto-failover postgresql-16-pg-catcheck postgresql-16-preprepare postgresql-16-pgcozy postgresql-16-pg-orphaned postgresql-16-pg-crash postgresql-16-pg-cheat-funcs postgresql-16-pg-savior postgresql-16-tablelog postgresql-16-pg-fio #postgresql-16-pgpool2 #pgagent
+pg15: postgresql-15-repack postgresql-15-squeeze postgresql-15-dirtyread postgresql-15-pgfincore postgresql-15-pgdd postgresql-15-ddlx postgresql-15-prioritize postgresql-15-pg-checksums postgresql-15-pg-readonly postgresql-15-pg-safeupdate postgresql-15-pg-permissions postgresql-15-auto-failover postgresql-15-pg-catcheck postgresql-15-preprepare postgresql-15-pgcozy postgresql-15-pg-orphaned postgresql-15-pg-crash postgresql-15-pg-cheat-funcs postgresql-15-pg-savior postgresql-15-tablelog postgresql-15-pg-fio #postgresql-15-pgpool2 #pgagent
+pg14: postgresql-14-repack postgresql-14-squeeze postgresql-14-dirtyread postgresql-14-pgfincore postgresql-14-pgdd postgresql-14-ddlx postgresql-14-prioritize postgresql-14-pg-checksums postgresql-14-pg-readonly postgresql-14-pg-safeupdate postgresql-14-pg-permissions postgresql-14-auto-failover postgresql-14-pg-catcheck postgresql-14-preprepare postgresql-14-pgcozy postgresql-14-pg-orphaned postgresql-14-pg-crash postgresql-14-pg-cheat-funcs postgresql-14-pg-savior postgresql-14-tablelog postgresql-14-pg-fio #postgresql-14-pgpool2 #pgagent
+pg13: postgresql-13-repack postgresql-13-squeeze postgresql-13-dirtyread postgresql-13-pgfincore postgresql-13-pgdd postgresql-13-ddlx postgresql-13-prioritize postgresql-13-pg-checksums postgresql-13-pg-readonly postgresql-13-pg-permissions postgresql-13-auto-failover postgresql-13-pg-catcheck postgresql-13-preprepare postgresql-13-pgcozy postgresql-13-pg-orphaned postgresql-13-pg-crash postgresql-13-pg-cheat-funcs postgresql-13-pg-savior postgresql-13-tablelog postgresql-13-pg-fio #postgresql-13-pg-safeupdate #postgresql-13-pgpool2 #pgagent
+pg12: postgresql-12-repack postgresql-12-squeeze postgresql-12-dirtyread postgresql-12-pgfincore postgresql-12-pgdd postgresql-12-ddlx postgresql-12-prioritize postgresql-12-pg-checksums postgresql-12-pg-readonly postgresql-12-pg-permissions postgresql-12-auto-failover postgresql-12-pg-catcheck postgresql-12-preprepare postgresql-12-pgcozy postgresql-12-pg-orphaned postgresql-12-pg-crash postgresql-12-pg-cheat-funcs postgresql-12-tablelog postgresql-12-pg-fio #postgresql-12-pg-safeupdate #postgresql-12-pg-savior #postgresql-12-pgpool2 #pgagent
 ```
 
 

@@ -46,13 +46,63 @@ There are 31 available extensions in this category:
 
 
 
+### RHEL 8 Compatible (el8)
+
 ```yaml
-pg17: pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh pljava plr #pllua #plprql #pgtap #faker #dbt2
-pg16: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava plr pgtap #pllua #faker #dbt2
-pg15: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava plr pgtap #pllua #faker #dbt2
-pg14: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava plr pgtap #pllua #faker #dbt2
-pg13: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava plr pgtap #pllua #faker #dbt2
-pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava plr pgtap #pllua #faker #dbt2
+pg17: pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh #plprql #pljava #plr #pgtap #faker #dbt2
+pg16: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
+pg15: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
+pg14: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
+pg13: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
+pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
+```
+
+
+### RHEL 9 Compatible (el9)
+
+```yaml
+pg17: pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh pljava #plprql #plr #pgtap #faker #dbt2
+pg16: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg15: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg14: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg13: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+```
+
+
+### Debian 12 bookworm Compatible (d12)
+
+```yaml
+pg17: pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh pljava #plprql #plr #pgtap #faker #dbt2
+pg16: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg15: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg14: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg13: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh pljava #plprql #plr #pgtap #faker #dbt2
+pg16: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg15: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg14: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg13: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh pljava #plprql #plr #pgtap #faker #dbt2
+pg16: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg15: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg14: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg13: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
+pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 ```
 
 
@@ -85,13 +135,27 @@ pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava p
 
 
 
+### RHEL 8 Compatible (el8)
+
 ```yaml
-pg17: pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* # #plprql_17 #pljava_17* #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
-pg16: pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* plprofiler_16* plsh_16* # #pljava_16* #plr_16* #pgtap_16* #postgresql_faker_16* #dbt2-pg16-extensions*
-pg15: pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* # #pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
-pg14: pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* # #pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
-pg13: pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* # #pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
-pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* # #pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
+pg17: pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* #plprql_17 #pljava_17* #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
+pg16: pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* plprofiler_16* plsh_16* #pljava_16* #plr_16* #pgtap_16* #postgresql_faker_16* #dbt2-pg16-extensions*
+pg15: pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* #pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
+pg14: pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* #pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
+pg13: pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* #pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
+pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* #pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
+```
+
+
+### RHEL 9 Compatible (el9)
+
+```yaml
+pg17: pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* pljava_17* #plprql_17 #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
+pg16: pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* plprofiler_16* plsh_16* pljava_16* #plr_16* #pgtap_16* #postgresql_faker_16* #dbt2-pg16-extensions*
+pg15: pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
+pg14: pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
+pg13: pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
+pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
 ```
 
 
@@ -122,13 +186,39 @@ pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* p
 
 
 
+### Debian 12 bookworm Compatible (d12)
+
 ```yaml
-pg17: pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* # #plprql_17 #pljava_17* #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
-pg16: pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* plprofiler_16* plsh_16* # #pljava_16* #plr_16* #pgtap_16* #postgresql_faker_16* #dbt2-pg16-extensions*
-pg15: pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* # #pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
-pg14: pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* # #pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
-pg13: pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* # #pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
-pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* # #pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
+pg17: postgresql-17-pg-tle postgresql-17-plv8 postgresql-17-pllua postgresql-17-pldebugger postgresql-17-plpgsql-check postgresql-17-plprofiler postgresql-17-plsh postgresql-17-pljava #postgresql-17-plprql #postgresql-17-plr #postgresql-17-pgtap
+pg16: postgresql-16-pg-tle postgresql-16-plv8 postgresql-16-pllua postgresql-16-plprql postgresql-16-pldebugger postgresql-16-plpgsql-check postgresql-16-plprofiler postgresql-16-plsh postgresql-16-pljava #postgresql-16-plr #postgresql-16-pgtap
+pg15: postgresql-15-pg-tle postgresql-15-plv8 postgresql-15-pllua postgresql-15-plprql postgresql-15-pldebugger postgresql-15-plpgsql-check postgresql-15-plprofiler postgresql-15-plsh postgresql-15-pljava #postgresql-15-plr #postgresql-15-pgtap
+pg14: postgresql-14-pg-tle postgresql-14-plv8 postgresql-14-pllua postgresql-14-plprql postgresql-14-pldebugger postgresql-14-plpgsql-check postgresql-14-plprofiler postgresql-14-plsh postgresql-14-pljava #postgresql-14-plr #postgresql-14-pgtap
+pg13: postgresql-13-pg-tle postgresql-13-plv8 postgresql-13-pllua postgresql-13-plprql postgresql-13-pldebugger postgresql-13-plpgsql-check postgresql-13-plprofiler postgresql-13-plsh postgresql-13-pljava #postgresql-13-plr #postgresql-13-pgtap
+pg12: postgresql-12-pg-tle postgresql-12-plv8 postgresql-12-pllua postgresql-12-plprql postgresql-12-pldebugger postgresql-12-plpgsql-check postgresql-12-plprofiler postgresql-12-plsh postgresql-12-pljava #postgresql-12-plr #postgresql-12-pgtap
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: postgresql-17-pg-tle postgresql-17-plv8 postgresql-17-pllua postgresql-17-pldebugger postgresql-17-plpgsql-check postgresql-17-plprofiler postgresql-17-plsh postgresql-17-pljava #postgresql-17-plprql #postgresql-17-plr #postgresql-17-pgtap
+pg16: postgresql-16-pg-tle postgresql-16-plv8 postgresql-16-pllua postgresql-16-plprql postgresql-16-pldebugger postgresql-16-plpgsql-check postgresql-16-plprofiler postgresql-16-plsh postgresql-16-pljava #postgresql-16-plr #postgresql-16-pgtap
+pg15: postgresql-15-pg-tle postgresql-15-plv8 postgresql-15-pllua postgresql-15-plprql postgresql-15-pldebugger postgresql-15-plpgsql-check postgresql-15-plprofiler postgresql-15-plsh postgresql-15-pljava #postgresql-15-plr #postgresql-15-pgtap
+pg14: postgresql-14-pg-tle postgresql-14-plv8 postgresql-14-pllua postgresql-14-plprql postgresql-14-pldebugger postgresql-14-plpgsql-check postgresql-14-plprofiler postgresql-14-plsh postgresql-14-pljava #postgresql-14-plr #postgresql-14-pgtap
+pg13: postgresql-13-pg-tle postgresql-13-plv8 postgresql-13-pllua postgresql-13-plprql postgresql-13-pldebugger postgresql-13-plpgsql-check postgresql-13-plprofiler postgresql-13-plsh postgresql-13-pljava #postgresql-13-plr #postgresql-13-pgtap
+pg12: postgresql-12-pg-tle postgresql-12-plv8 postgresql-12-pllua postgresql-12-plprql postgresql-12-pldebugger postgresql-12-plpgsql-check postgresql-12-plprofiler postgresql-12-plsh postgresql-12-pljava #postgresql-12-plr #postgresql-12-pgtap
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: postgresql-17-pg-tle postgresql-17-plv8 postgresql-17-pllua postgresql-17-pldebugger postgresql-17-plpgsql-check postgresql-17-plprofiler postgresql-17-plsh postgresql-17-pljava #postgresql-17-plprql #postgresql-17-plr #postgresql-17-pgtap
+pg16: postgresql-16-pg-tle postgresql-16-plv8 postgresql-16-pllua postgresql-16-plprql postgresql-16-pldebugger postgresql-16-plpgsql-check postgresql-16-plprofiler postgresql-16-plsh postgresql-16-pljava #postgresql-16-plr #postgresql-16-pgtap
+pg15: postgresql-15-pg-tle postgresql-15-plv8 postgresql-15-pllua postgresql-15-plprql postgresql-15-pldebugger postgresql-15-plpgsql-check postgresql-15-plprofiler postgresql-15-plsh postgresql-15-pljava #postgresql-15-plr #postgresql-15-pgtap
+pg14: postgresql-14-pg-tle postgresql-14-plv8 postgresql-14-pllua postgresql-14-plprql postgresql-14-pldebugger postgresql-14-plpgsql-check postgresql-14-plprofiler postgresql-14-plsh postgresql-14-pljava #postgresql-14-plr #postgresql-14-pgtap
+pg13: postgresql-13-pg-tle postgresql-13-plv8 postgresql-13-pllua postgresql-13-plprql postgresql-13-pldebugger postgresql-13-plpgsql-check postgresql-13-plprofiler postgresql-13-plsh postgresql-13-pljava #postgresql-13-plr #postgresql-13-pgtap
+pg12: postgresql-12-pg-tle postgresql-12-plv8 postgresql-12-pllua postgresql-12-plprql postgresql-12-pldebugger postgresql-12-plpgsql-check postgresql-12-plprofiler postgresql-12-plsh postgresql-12-pljava #postgresql-12-plr #postgresql-12-pgtap
 ```
 
 

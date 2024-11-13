@@ -77,7 +77,7 @@ request to update the metadata.
 
 ## About
 
-[![Github: Repo](https://img.shields.io/badge/GitHub-Repo-slategray?style=flat&logo=github&logoColor=black)](https://github.com/pgsty/extensions)
+[![Github: Repo](https://img.shields.io/badge/GitHub-Repo-slategray?style=flat&logo=github&logoColor=black)](https://github.com/pgsty/extension)
 [![Author: RuohangFeng](https://img.shields.io/badge/Author-Ruohang_Feng-steelblue?style=flat)](https://vonng.com/)
 [![About: @Vonng](https://img.shields.io/badge/%40Vonng-steelblue?style=flat)](https://vonng.com/en/)
 [![Mail: rh@vonng.com](https://img.shields.io/badge/rh%40vonng.com-steelblue?style=flat)](mailto:rh@vonng.com)

@@ -27,13 +27,63 @@ There are 12 available extensions in this category:
 
 
 
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb
+pg16: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb
+pg15: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb
+pg14: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #pg_dbms_job #wiltondb #pgmemcache
+pg13: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #pg_dbms_job #wiltondb #pgmemcache
+pg12: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #pg_dbms_job #wiltondb #pgmemcache
+```
+
+
+### RHEL 9 Compatible (el9)
+
+```yaml
+pg17: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb
+pg16: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb
+pg15: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb
+pg14: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #pg_dbms_job #wiltondb #pgmemcache
+pg13: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #pg_dbms_job #wiltondb #pgmemcache
+pg12: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #pg_dbms_job #wiltondb #pgmemcache
+```
+
+
+### Debian 12 bookworm Compatible (d12)
+
+```yaml
+pg17: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
+pg16: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
+pg15: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
+pg14: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
+pg13: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
+pg12: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
 ```yaml
 pg17: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
 pg16: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
-pg15: orafce pgtt session_variable pg_statement_rollback babelfishpg_common babelfishpg_tsql babelfishpg_tds babelfishpg_money pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
-pg14: orafce pgtt session_variable pg_statement_rollback #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb #pgmemcache
-pg13: orafce pgtt session_variable pg_statement_rollback #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb #pgmemcache
-pg12: orafce pgtt session_variable pg_statement_rollback #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb #pgmemcache
+pg15: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+pg14: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+pg13: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+pg12: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+pg16: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+pg15: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+pg14: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+pg13: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+pg12: orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
 ```
 
 
@@ -59,6 +109,20 @@ pg12: orafce pgtt session_variable pg_statement_rollback #pg_dbms_metadata #pg_d
 | [pgmemcache](/pgmemcache) | 2.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgmemcache_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  | memcached interface |
 
 
+
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: orafce_17* pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17* pg_dbms_lock_17* pgmemcache_17* #pg_dbms_job_17* #wiltondb
+pg16: orafce_16* pgtt_16* session_variable_16* pg_statement_rollback_16* pg_dbms_metadata_16* pg_dbms_lock_16* pgmemcache_16* #pg_dbms_job_16* #wiltondb
+pg15: orafce_15* pgtt_15* session_variable_15* pg_statement_rollback_15* pg_dbms_metadata_15* pg_dbms_lock_15* pgmemcache_15* #pg_dbms_job_15* #wiltondb
+pg14: orafce_14* pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14* pg_dbms_lock_14* #pg_dbms_job_14* #wiltondb #pgmemcache_14*
+pg13: orafce_13* pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13* pg_dbms_lock_13* #pg_dbms_job_13* #wiltondb #pgmemcache_13*
+pg12: orafce_12* pgtt_12* session_variable_12* pg_statement_rollback_12* pg_dbms_metadata_12* pg_dbms_lock_12* #pg_dbms_job_12* #wiltondb #pgmemcache_12*
+```
+
+
+### RHEL 9 Compatible (el9)
 
 ```yaml
 pg17: orafce_17* pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17* pg_dbms_lock_17* pgmemcache_17* #pg_dbms_job_17* #wiltondb
@@ -90,13 +154,39 @@ pg12: orafce_12* pgtt_12* session_variable_12* pg_statement_rollback_12* pg_dbms
 
 
 
+### Debian 12 bookworm Compatible (d12)
+
 ```yaml
-pg17: orafce_17* pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17* pg_dbms_lock_17* pgmemcache_17* #pg_dbms_job_17* #wiltondb
-pg16: orafce_16* pgtt_16* session_variable_16* pg_statement_rollback_16* pg_dbms_metadata_16* pg_dbms_lock_16* pgmemcache_16* #pg_dbms_job_16* #wiltondb
-pg15: orafce_15* pgtt_15* session_variable_15* pg_statement_rollback_15* pg_dbms_metadata_15* pg_dbms_lock_15* pgmemcache_15* #pg_dbms_job_15* #wiltondb
-pg14: orafce_14* pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14* pg_dbms_lock_14* #pg_dbms_job_14* #wiltondb #pgmemcache_14*
-pg13: orafce_13* pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13* pg_dbms_lock_13* #pg_dbms_job_13* #wiltondb #pgmemcache_13*
-pg12: orafce_12* pgtt_12* session_variable_12* pg_statement_rollback_12* pg_dbms_metadata_12* pg_dbms_lock_12* #pg_dbms_job_12* #wiltondb #pgmemcache_12*
+pg17: postgresql-17-orafce postgresql-17-pgtt postgresql-17-session-variable postgresql-17-pg-statement-rollback postgresql-17-pgmemcache
+pg16: postgresql-16-orafce postgresql-16-pgtt postgresql-16-session-variable postgresql-16-pg-statement-rollback postgresql-16-pgmemcache
+pg15: postgresql-15-orafce postgresql-15-pgtt postgresql-15-session-variable postgresql-15-pg-statement-rollback postgresql-15-pgmemcache
+pg14: postgresql-14-orafce postgresql-14-pgtt postgresql-14-session-variable postgresql-14-pg-statement-rollback postgresql-14-pgmemcache
+pg13: postgresql-13-orafce postgresql-13-pgtt postgresql-13-session-variable postgresql-13-pg-statement-rollback postgresql-13-pgmemcache
+pg12: postgresql-12-orafce postgresql-12-pgtt postgresql-12-session-variable postgresql-12-pg-statement-rollback postgresql-12-pgmemcache
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: postgresql-17-orafce postgresql-17-pgtt postgresql-17-session-variable postgresql-17-pg-statement-rollback postgresql-17-pgmemcache # #wiltondb
+pg16: postgresql-16-orafce postgresql-16-pgtt postgresql-16-session-variable postgresql-16-pg-statement-rollback postgresql-16-pgmemcache # #wiltondb
+pg15: postgresql-15-orafce postgresql-15-pgtt postgresql-15-session-variable postgresql-15-pg-statement-rollback postgresql-15-pgmemcache # #wiltondb
+pg14: postgresql-14-orafce postgresql-14-pgtt postgresql-14-session-variable postgresql-14-pg-statement-rollback postgresql-14-pgmemcache # #wiltondb
+pg13: postgresql-13-orafce postgresql-13-pgtt postgresql-13-session-variable postgresql-13-pg-statement-rollback postgresql-13-pgmemcache # #wiltondb
+pg12: postgresql-12-orafce postgresql-12-pgtt postgresql-12-session-variable postgresql-12-pg-statement-rollback postgresql-12-pgmemcache # #wiltondb
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: postgresql-17-orafce postgresql-17-pgtt postgresql-17-session-variable postgresql-17-pg-statement-rollback postgresql-17-pgmemcache # #wiltondb
+pg16: postgresql-16-orafce postgresql-16-pgtt postgresql-16-session-variable postgresql-16-pg-statement-rollback postgresql-16-pgmemcache # #wiltondb
+pg15: postgresql-15-orafce postgresql-15-pgtt postgresql-15-session-variable postgresql-15-pg-statement-rollback postgresql-15-pgmemcache # #wiltondb
+pg14: postgresql-14-orafce postgresql-14-pgtt postgresql-14-session-variable postgresql-14-pg-statement-rollback postgresql-14-pgmemcache # #wiltondb
+pg13: postgresql-13-orafce postgresql-13-pgtt postgresql-13-session-variable postgresql-13-pg-statement-rollback postgresql-13-pgmemcache # #wiltondb
+pg12: postgresql-12-orafce postgresql-12-pgtt postgresql-12-session-variable postgresql-12-pg-statement-rollback postgresql-12-pgmemcache # #wiltondb
 ```
 
 

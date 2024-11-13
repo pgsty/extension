@@ -34,13 +34,63 @@ There are 19 available extensions in this category:
 
 
 
+### RHEL 8 Compatible (el8)
+
 ```yaml
 pg17: postgis pgrouting pointcloud q3c geoip pg_polyline pg_geohash #pg_h3 #ogr_fdw #mobilitydb
 pg16: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 pg15: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 pg14: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 pg13: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
-pg12: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
+pg12: postgis34 pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
+```
+
+
+### RHEL 9 Compatible (el9)
+
+```yaml
+pg17: postgis pgrouting pointcloud q3c geoip pg_polyline pg_geohash #pg_h3 #ogr_fdw #mobilitydb
+pg16: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
+pg15: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
+pg14: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
+pg13: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
+pg12: postgis34 pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
+```
+
+
+### Debian 12 bookworm Compatible (d12)
+
+```yaml
+pg17: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg16: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg15: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg14: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg13: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg12: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg16: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg15: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg14: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg13: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg12: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg16: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg15: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg14: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg13: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
+pg12: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 ```
 
 
@@ -64,6 +114,20 @@ pg12: postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohas
 | [earthdistance](/earthdistance) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | calculate great-circle distances on the surface of the Earth |
 
 
+
+### RHEL 8 Compatible (el8)
+
+```yaml
+pg17: postgis35_17* pgrouting_17* pointcloud_17* q3c_17* geoip_17* pg_polyline_17 pg_geohash_17* #h3-pg_17* #ogr_fdw_17*
+pg16: postgis35_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* geoip_16* pg_polyline_16 pg_geohash_16*
+pg15: postgis35_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15* pg_polyline_15 pg_geohash_15*
+pg14: postgis35_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14* pg_polyline_14 pg_geohash_14*
+pg13: postgis35_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13*
+pg12: postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12*
+```
+
+
+### RHEL 9 Compatible (el9)
 
 ```yaml
 pg17: postgis35_17* pgrouting_17* pointcloud_17* q3c_17* geoip_17* pg_polyline_17 pg_geohash_17* #h3-pg_17* #ogr_fdw_17*
@@ -97,13 +161,39 @@ pg12: postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* g
 
 
 
+### Debian 12 bookworm Compatible (d12)
+
 ```yaml
-pg17: postgis35_17* pgrouting_17* pointcloud_17* q3c_17* geoip_17* pg_polyline_17 pg_geohash_17* #h3-pg_17* #ogr_fdw_17*
-pg16: postgis35_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* geoip_16* pg_polyline_16 pg_geohash_16*
-pg15: postgis35_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15* pg_polyline_15 pg_geohash_15*
-pg14: postgis35_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14* pg_polyline_14 pg_geohash_14*
-pg13: postgis35_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13*
-pg12: postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12*
+pg17: postgresql-17-postgis-3 postgresql-17-postgis-3-scripts postgresql-17-pgrouting postgresql-17-pgrouting-scripts postgresql-17-pointcloud postgresql-17-h3 postgresql-17-q3c postgresql-17-ogr-fdw postgresql-17-geoip postgresql-17-pg-polyline postgresql-17-pg-geohash postgresql-17-mobilitydb
+pg16: postgresql-16-postgis-3 postgresql-16-postgis-3-scripts postgresql-16-pgrouting postgresql-16-pgrouting-scripts postgresql-16-pointcloud postgresql-16-h3 postgresql-16-q3c postgresql-16-ogr-fdw postgresql-16-geoip postgresql-16-pg-polyline postgresql-16-pg-geohash postgresql-16-mobilitydb
+pg15: postgresql-15-postgis-3 postgresql-15-postgis-3-scripts postgresql-15-pgrouting postgresql-15-pgrouting-scripts postgresql-15-pointcloud postgresql-15-h3 postgresql-15-q3c postgresql-15-ogr-fdw postgresql-15-geoip postgresql-15-pg-polyline postgresql-15-pg-geohash postgresql-15-mobilitydb
+pg14: postgresql-14-postgis-3 postgresql-14-postgis-3-scripts postgresql-14-pgrouting postgresql-14-pgrouting-scripts postgresql-14-pointcloud postgresql-14-h3 postgresql-14-q3c postgresql-14-ogr-fdw postgresql-14-geoip postgresql-14-pg-polyline postgresql-14-pg-geohash postgresql-14-mobilitydb
+pg13: postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13-pgrouting postgresql-13-pgrouting-scripts postgresql-13-pointcloud postgresql-13-h3 postgresql-13-q3c postgresql-13-ogr-fdw postgresql-13-geoip postgresql-13-pg-polyline postgresql-13-pg-geohash postgresql-13-mobilitydb
+pg12: postgresql-12-postgis-3 postgresql-12-postgis-3-scripts postgresql-12-pgrouting postgresql-12-pgrouting-scripts postgresql-12-pointcloud postgresql-12-h3 postgresql-12-q3c postgresql-12-ogr-fdw postgresql-12-geoip postgresql-12-pg-polyline postgresql-12-pg-geohash postgresql-12-mobilitydb
+```
+
+
+### Ubuntu 24.04 jammy Compatible (u22)
+
+```yaml
+pg17: postgresql-17-postgis-3 postgresql-17-postgis-3-scripts postgresql-17-pgrouting postgresql-17-pgrouting-scripts postgresql-17-pointcloud postgresql-17-h3 postgresql-17-q3c postgresql-17-ogr-fdw postgresql-17-geoip postgresql-17-pg-polyline postgresql-17-pg-geohash postgresql-17-mobilitydb
+pg16: postgresql-16-postgis-3 postgresql-16-postgis-3-scripts postgresql-16-pgrouting postgresql-16-pgrouting-scripts postgresql-16-pointcloud postgresql-16-h3 postgresql-16-q3c postgresql-16-ogr-fdw postgresql-16-geoip postgresql-16-pg-polyline postgresql-16-pg-geohash postgresql-16-mobilitydb
+pg15: postgresql-15-postgis-3 postgresql-15-postgis-3-scripts postgresql-15-pgrouting postgresql-15-pgrouting-scripts postgresql-15-pointcloud postgresql-15-h3 postgresql-15-q3c postgresql-15-ogr-fdw postgresql-15-geoip postgresql-15-pg-polyline postgresql-15-pg-geohash postgresql-15-mobilitydb
+pg14: postgresql-14-postgis-3 postgresql-14-postgis-3-scripts postgresql-14-pgrouting postgresql-14-pgrouting-scripts postgresql-14-pointcloud postgresql-14-h3 postgresql-14-q3c postgresql-14-ogr-fdw postgresql-14-geoip postgresql-14-pg-polyline postgresql-14-pg-geohash postgresql-14-mobilitydb
+pg13: postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13-pgrouting postgresql-13-pgrouting-scripts postgresql-13-pointcloud postgresql-13-h3 postgresql-13-q3c postgresql-13-ogr-fdw postgresql-13-geoip postgresql-13-pg-polyline postgresql-13-pg-geohash postgresql-13-mobilitydb
+pg12: postgresql-12-postgis-3 postgresql-12-postgis-3-scripts postgresql-12-pgrouting postgresql-12-pgrouting-scripts postgresql-12-pointcloud postgresql-12-h3 postgresql-12-q3c postgresql-12-ogr-fdw postgresql-12-geoip postgresql-12-pg-polyline postgresql-12-pg-geohash postgresql-12-mobilitydb
+```
+
+
+### Ubuntu 24.04 noble Compatible (u24)
+
+```yaml
+pg17: postgresql-17-postgis-3 postgresql-17-postgis-3-scripts postgresql-17-pgrouting postgresql-17-pgrouting-scripts postgresql-17-pointcloud postgresql-17-h3 postgresql-17-q3c postgresql-17-ogr-fdw postgresql-17-geoip postgresql-17-pg-polyline postgresql-17-pg-geohash postgresql-17-mobilitydb
+pg16: postgresql-16-postgis-3 postgresql-16-postgis-3-scripts postgresql-16-pgrouting postgresql-16-pgrouting-scripts postgresql-16-pointcloud postgresql-16-h3 postgresql-16-q3c postgresql-16-ogr-fdw postgresql-16-geoip postgresql-16-pg-polyline postgresql-16-pg-geohash postgresql-16-mobilitydb
+pg15: postgresql-15-postgis-3 postgresql-15-postgis-3-scripts postgresql-15-pgrouting postgresql-15-pgrouting-scripts postgresql-15-pointcloud postgresql-15-h3 postgresql-15-q3c postgresql-15-ogr-fdw postgresql-15-geoip postgresql-15-pg-polyline postgresql-15-pg-geohash postgresql-15-mobilitydb
+pg14: postgresql-14-postgis-3 postgresql-14-postgis-3-scripts postgresql-14-pgrouting postgresql-14-pgrouting-scripts postgresql-14-pointcloud postgresql-14-h3 postgresql-14-q3c postgresql-14-ogr-fdw postgresql-14-geoip postgresql-14-pg-polyline postgresql-14-pg-geohash postgresql-14-mobilitydb
+pg13: postgresql-13-postgis-3 postgresql-13-postgis-3-scripts postgresql-13-pgrouting postgresql-13-pgrouting-scripts postgresql-13-pointcloud postgresql-13-h3 postgresql-13-q3c postgresql-13-ogr-fdw postgresql-13-geoip postgresql-13-pg-polyline postgresql-13-pg-geohash postgresql-13-mobilitydb
+pg12: postgresql-12-postgis-3 postgresql-12-postgis-3-scripts postgresql-12-pgrouting postgresql-12-pgrouting-scripts postgresql-12-pointcloud postgresql-12-h3 postgresql-12-q3c postgresql-12-ogr-fdw postgresql-12-geoip postgresql-12-pg-polyline postgresql-12-pg-geohash postgresql-12-mobilitydb
 ```
 
 
