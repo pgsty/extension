@@ -12,6 +12,9 @@ Extensions to be included and extensions will not be included
 - [pg-rag](https://github.com/nearform/pg-rag)
 - [onesparse](https://github.com/OneSparse/OneSparse)
 - [omnigres](https://omnigres.com/)
+- pg_task: pgdg
+- pg_readme: pgdg
+
 
 **Waiting on PostgreSQL 17 support**:
 
