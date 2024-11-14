@@ -56,13 +56,10 @@ CREATE EXTENSION topn;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `topn_17*` | `topn_16*` | `topn_15*` | `topn_14*` | `topn_13*` | `topn_12*` |
-| `el9` | `topn_17*` | `topn_16*` | `topn_15*` | `topn_14*` | `topn_13*` | `topn_12*` |
-| `d12` | `postgresql-17-topn` | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` | `postgresql-12-topn` |
-| `u22` | `postgresql-17-topn` | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` | `postgresql-12-topn` |
-| `u24` | `postgresql-17-topn` | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` | `postgresql-12-topn` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.6.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `topn_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.6.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-topn` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

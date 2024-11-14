@@ -56,13 +56,10 @@ CREATE EXTENSION pg_smtp_client;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_smtp_client_17` | `pg_smtp_client_16` | `pg_smtp_client_15` | `pg_smtp_client_14` | `pg_smtp_client_13` | `pg_smtp_client_12` |
-| `el9` | `pg_smtp_client_17` | `pg_smtp_client_16` | `pg_smtp_client_15` | `pg_smtp_client_14` | `pg_smtp_client_13` | `pg_smtp_client_12` |
-| `d12` | `postgresql-17-pg-smtp-client` | `postgresql-16-pg-smtp-client` | `postgresql-15-pg-smtp-client` | `postgresql-14-pg-smtp-client` | `postgresql-13-pg-smtp-client` | `postgresql-12-pg-smtp-client` |
-| `u22` | `postgresql-17-pg-smtp-client` | `postgresql-16-pg-smtp-client` | `postgresql-15-pg-smtp-client` | `postgresql-14-pg-smtp-client` | `postgresql-13-pg-smtp-client` | `postgresql-12-pg-smtp-client` |
-| `u24` | `postgresql-17-pg-smtp-client` | `postgresql-16-pg-smtp-client` | `postgresql-15-pg-smtp-client` | `postgresql-14-pg-smtp-client` | `postgresql-13-pg-smtp-client` | `postgresql-12-pg-smtp-client` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_smtp_client_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
+| [DEB](/deb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-smtp-client` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
 
 
 

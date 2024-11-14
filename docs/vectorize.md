@@ -56,13 +56,10 @@ CREATE EXTENSION vectorize CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_vectorize_17` | `pg_vectorize_16` | `pg_vectorize_15` | `pg_vectorize_14` | `pg_vectorize_13` | `pg_vectorize_12` |
-| `el9` | `pg_vectorize_17` | `pg_vectorize_16` | `pg_vectorize_15` | `pg_vectorize_14` | `pg_vectorize_13` | `pg_vectorize_12` |
-| `d12` | `postgresql-17-pg-vectorize` | `postgresql-16-pg-vectorize` | `postgresql-15-pg-vectorize` | `postgresql-14-pg-vectorize` | `postgresql-13-pg-vectorize` | `postgresql-12-pg-vectorize` |
-| `u22` | `postgresql-17-pg-vectorize` | `postgresql-16-pg-vectorize` | `postgresql-15-pg-vectorize` | `postgresql-14-pg-vectorize` | `postgresql-13-pg-vectorize` | `postgresql-12-pg-vectorize` |
-| `u24` | `postgresql-17-pg-vectorize` | `postgresql-16-pg-vectorize` | `postgresql-15-pg-vectorize` | `postgresql-14-pg-vectorize` | `postgresql-13-pg-vectorize` | `postgresql-12-pg-vectorize` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.20.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_vectorize_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | `pgmq_$v`, `pg_cron_$v`, `pgvector_$v` |
+| [DEB](/deb) | 0.20.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-vectorize` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | `postgresql-$v-pgmq`, `postgresql-$v-pg-cron`, `postgresql-$v-pgvector` |
 
 
 

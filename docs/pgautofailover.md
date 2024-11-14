@@ -60,13 +60,10 @@ CREATE EXTENSION pgautofailover CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_auto_failover_17*` | `pg_auto_failover_16*` | `pg_auto_failover_15*` | `pg_auto_failover_14*` | `pg_auto_failover_13*` | `pg_auto_failover_12*` |
-| `el9` | `pg_auto_failover_17*` | `pg_auto_failover_16*` | `pg_auto_failover_15*` | `pg_auto_failover_14*` | `pg_auto_failover_13*` | `pg_auto_failover_12*` |
-| `d12` | `postgresql-17-auto-failover` | `postgresql-16-auto-failover` | `postgresql-15-auto-failover` | `postgresql-14-auto-failover` | `postgresql-13-auto-failover` | `postgresql-12-auto-failover` |
-| `u22` | `postgresql-17-auto-failover` | `postgresql-16-auto-failover` | `postgresql-15-auto-failover` | `postgresql-14-auto-failover` | `postgresql-13-auto-failover` | `postgresql-12-auto-failover` |
-| `u24` | `postgresql-17-auto-failover` | `postgresql-16-auto-failover` | `postgresql-15-auto-failover` | `postgresql-14-auto-failover` | `postgresql-13-auto-failover` | `postgresql-12-auto-failover` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_auto_failover_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-auto-failover` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

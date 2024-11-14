@@ -56,13 +56,10 @@ CREATE EXTENSION vector;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgvector_17*` | `pgvector_16*` | `pgvector_15*` | `pgvector_14*` | `pgvector_13*` | `pgvector_12*` |
-| `el9` | `pgvector_17*` | `pgvector_16*` | `pgvector_15*` | `pgvector_14*` | `pgvector_13*` | `pgvector_12*` |
-| `d12` | `postgresql-17-pgvector` | `postgresql-16-pgvector` | `postgresql-15-pgvector` | `postgresql-14-pgvector` | `postgresql-13-pgvector` | `postgresql-12-pgvector` |
-| `u22` | `postgresql-17-pgvector` | `postgresql-16-pgvector` | `postgresql-15-pgvector` | `postgresql-14-pgvector` | `postgresql-13-pgvector` | `postgresql-12-pgvector` |
-| `u24` | `postgresql-17-pgvector` | `postgresql-16-pgvector` | `postgresql-15-pgvector` | `postgresql-14-pgvector` | `postgresql-13-pgvector` | `postgresql-12-pgvector` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.8.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgvector_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 0.8.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgvector` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

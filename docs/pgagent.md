@@ -56,13 +56,10 @@ CREATE EXTENSION pgagent;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgagent_17*` | `pgagent_16*` | `pgagent_15*` | `pgagent_14*` | `pgagent_13*` | `pgagent_12*` |
-| `el9` | `pgagent_17*` | `pgagent_16*` | `pgagent_15*` | `pgagent_14*` | `pgagent_13*` | `pgagent_12*` |
-| `d12` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` |
-| `u22` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` |
-| `u24` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` | `pgagent` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 4.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgagent_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 4.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgagent` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

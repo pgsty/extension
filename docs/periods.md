@@ -56,13 +56,10 @@ CREATE EXTENSION periods CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `periods_17*` | `periods_16*` | `periods_15*` | `periods_14*` | `periods_13*` | `periods_12*` |
-| `el9` | `periods_17*` | `periods_16*` | `periods_15*` | `periods_14*` | `periods_13*` | `periods_12*` |
-| `d12` | `postgresql-17-periods` | `postgresql-16-periods` | `postgresql-15-periods` | `postgresql-14-periods` | `postgresql-13-periods` | `postgresql-12-periods` |
-| `u22` | `postgresql-17-periods` | `postgresql-16-periods` | `postgresql-15-periods` | `postgresql-14-periods` | `postgresql-13-periods` | `postgresql-12-periods` |
-| `u24` | `postgresql-17-periods` | `postgresql-16-periods` | `postgresql-15-periods` | `postgresql-14-periods` | `postgresql-13-periods` | `postgresql-12-periods` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `periods_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-periods` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

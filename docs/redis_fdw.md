@@ -56,13 +56,10 @@ CREATE EXTENSION redis_fdw;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `redis_fdw_17*` | `redis_fdw_16*` | `redis_fdw_15*` | `redis_fdw_14*` | `redis_fdw_13*` | `redis_fdw_12*` |
-| `el9` | `redis_fdw_17*` | `redis_fdw_16*` | `redis_fdw_15*` | `redis_fdw_14*` | `redis_fdw_13*` | `redis_fdw_12*` |
-| `d12` | `postgresql-17-redis-fdw` | `postgresql-16-redis-fdw` | `postgresql-15-redis-fdw` | `postgresql-14-redis-fdw` | `postgresql-13-redis-fdw` | `postgresql-12-redis-fdw` |
-| `u22` | `postgresql-17-redis-fdw` | `postgresql-16-redis-fdw` | `postgresql-15-redis-fdw` | `postgresql-14-redis-fdw` | `postgresql-13-redis-fdw` | `postgresql-12-redis-fdw` |
-| `u24` | `postgresql-17-redis-fdw` | `postgresql-16-redis-fdw` | `postgresql-15-redis-fdw` | `postgresql-14-redis-fdw` | `postgresql-13-redis-fdw` | `postgresql-12-redis-fdw` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `redis_fdw_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-redis-fdw` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

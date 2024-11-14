@@ -56,13 +56,10 @@ CREATE EXTENSION extra_window_functions;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | `extra_window_functions_14*` | `extra_window_functions_13*` | `extra_window_functions_12*` |
-| `el9` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | `extra_window_functions_14*` | `extra_window_functions_13*` | `extra_window_functions_12*` |
-| `d12` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
-| `u22` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
-| `u24` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `extra_window_functions_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-extra-window-functions` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
 
 
 

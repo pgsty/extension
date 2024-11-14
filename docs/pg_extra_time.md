@@ -56,13 +56,10 @@ CREATE EXTENSION pg_extra_time;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_extra_time_17*` | `pg_extra_time_16*` | `pg_extra_time_15*` | `pg_extra_time_14*` | `pg_extra_time_13*` | `pg_extra_time_12*` |
-| `el9` | `pg_extra_time_17*` | `pg_extra_time_16*` | `pg_extra_time_15*` | `pg_extra_time_14*` | `pg_extra_time_13*` | `pg_extra_time_12*` |
-| `d12` | `postgresql-17-pg-extra-time` | `postgresql-16-pg-extra-time` | `postgresql-15-pg-extra-time` | `postgresql-14-pg-extra-time` | `postgresql-13-pg-extra-time` | `postgresql-12-pg-extra-time` |
-| `u22` | `postgresql-17-pg-extra-time` | `postgresql-16-pg-extra-time` | `postgresql-15-pg-extra-time` | `postgresql-14-pg-extra-time` | `postgresql-13-pg-extra-time` | `postgresql-12-pg-extra-time` |
-| `u24` | `postgresql-17-pg-extra-time` | `postgresql-16-pg-extra-time` | `postgresql-15-pg-extra-time` | `postgresql-14-pg-extra-time` | `postgresql-13-pg-extra-time` | `postgresql-12-pg-extra-time` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_extra_time_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-extra-time` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

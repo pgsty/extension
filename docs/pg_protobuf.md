@@ -56,13 +56,10 @@ CREATE EXTENSION pg_protobuf;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_protobuf_17` | `pg_protobuf_16` | `pg_protobuf_15` | `pg_protobuf_14` | `pg_protobuf_13` | `pg_protobuf_12` |
-| `el9` | `pg_protobuf_17` | `pg_protobuf_16` | `pg_protobuf_15` | `pg_protobuf_14` | `pg_protobuf_13` | `pg_protobuf_12` |
-| `d12` | `postgresql-17-pg-protobuf` | `postgresql-16-pg-protobuf` | `postgresql-15-pg-protobuf` | `postgresql-14-pg-protobuf` | `postgresql-13-pg-protobuf` | `postgresql-12-pg-protobuf` |
-| `u22` | `postgresql-17-pg-protobuf` | `postgresql-16-pg-protobuf` | `postgresql-15-pg-protobuf` | `postgresql-14-pg-protobuf` | `postgresql-13-pg-protobuf` | `postgresql-12-pg-protobuf` |
-| `u24` | `postgresql-17-pg-protobuf` | `postgresql-16-pg-protobuf` | `postgresql-15-pg-protobuf` | `postgresql-14-pg-protobuf` | `postgresql-13-pg-protobuf` | `postgresql-12-pg-protobuf` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_protobuf_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-protobuf` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

@@ -60,13 +60,10 @@ CREATE EXTENSION pgaudit;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgaudit_17*` | `pgaudit_16*` | `pgaudit17_15*` | `pgaudit16_14*` | `pgaudit15_13*` | `pgaudit14_12*` |
-| `el9` | `pgaudit_17*` | `pgaudit_16*` | `pgaudit17_15*` | `pgaudit16_14*` | `pgaudit15_13*` | `pgaudit14_12*` |
-| `d12` | `postgresql-17-pgaudit` | `postgresql-16-pgaudit` | `postgresql-15-pgaudit` | `postgresql-14-pgaudit` | `postgresql-13-pgaudit` | `postgresql-12-pgaudit` |
-| `u22` | `postgresql-17-pgaudit` | `postgresql-16-pgaudit` | `postgresql-15-pgaudit` | `postgresql-14-pgaudit` | `postgresql-13-pgaudit` | `postgresql-12-pgaudit` |
-| `u24` | `postgresql-17-pgaudit` | `postgresql-16-pgaudit` | `postgresql-15-pgaudit` | `postgresql-14-pgaudit` | `postgresql-13-pgaudit` | `postgresql-12-pgaudit` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 16.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgaudit_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 16.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgaudit` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 
@@ -75,9 +72,9 @@ Install `pgaudit` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 ```bash
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit"]}'   # common case
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit17"]}' # pg15 @ el
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit16"]}' # pg14 @ el'
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit15"]}' # pg13 @ el'
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit14"]}' # pg12 @ el'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit16"]}' # pg14 @ el
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit15"]}' # pg13 @ el
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit14"]}' # pg12 @ el
 ```
 
 

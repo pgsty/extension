@@ -56,13 +56,10 @@ CREATE EXTENSION pg_ivm;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_ivm_17*` | `pg_ivm_16*` | `pg_ivm_15*` | `pg_ivm_14*` | `pg_ivm_13*` | `pg_ivm_12*` |
-| `el9` | `pg_ivm_17*` | `pg_ivm_16*` | `pg_ivm_15*` | `pg_ivm_14*` | `pg_ivm_13*` | `pg_ivm_12*` |
-| `d12` | `postgresql-17-pg-ivm` | `postgresql-16-pg-ivm` | `postgresql-15-pg-ivm` | `postgresql-14-pg-ivm` | `postgresql-13-pg-ivm` | `postgresql-12-pg-ivm` |
-| `u22` | `postgresql-17-pg-ivm` | `postgresql-16-pg-ivm` | `postgresql-15-pg-ivm` | `postgresql-14-pg-ivm` | `postgresql-13-pg-ivm` | `postgresql-12-pg-ivm` |
-| `u24` | `postgresql-17-pg-ivm` | `postgresql-16-pg-ivm` | `postgresql-15-pg-ivm` | `postgresql-14-pg-ivm` | `postgresql-13-pg-ivm` | `postgresql-12-pg-ivm` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.8 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_ivm_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |
+| [DEB](/deb) | 1.9 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-ivm` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |
 
 
 

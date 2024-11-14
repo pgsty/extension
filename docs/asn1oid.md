@@ -56,13 +56,10 @@ CREATE EXTENSION asn1oid;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `asn1oid_17*` | `asn1oid_16*` | `asn1oid_15*` | `asn1oid_14*` | `asn1oid_13*` | `asn1oid_12*` |
-| `el9` | `asn1oid_17*` | `asn1oid_16*` | `asn1oid_15*` | `asn1oid_14*` | `asn1oid_13*` | `asn1oid_12*` |
-| `d12` | `postgresql-17-asn1oid` | `postgresql-16-asn1oid` | `postgresql-15-asn1oid` | `postgresql-14-asn1oid` | `postgresql-13-asn1oid` | `postgresql-12-asn1oid` |
-| `u22` | `postgresql-17-asn1oid` | `postgresql-16-asn1oid` | `postgresql-15-asn1oid` | `postgresql-14-asn1oid` | `postgresql-13-asn1oid` | `postgresql-12-asn1oid` |
-| `u24` | `postgresql-17-asn1oid` | `postgresql-16-asn1oid` | `postgresql-15-asn1oid` | `postgresql-14-asn1oid` | `postgresql-13-asn1oid` | `postgresql-12-asn1oid` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `asn1oid_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-asn1oid` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

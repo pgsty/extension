@@ -56,13 +56,10 @@ CREATE EXTENSION quantile;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `quantile_17*` | `quantile_16*` | `quantile_15*` | `quantile_14*` | `quantile_13*` | `quantile_12*` |
-| `el9` | `quantile_17*` | `quantile_16*` | `quantile_15*` | `quantile_14*` | `quantile_13*` | `quantile_12*` |
-| `d12` | `postgresql-17-quantile` | `postgresql-16-quantile` | `postgresql-15-quantile` | `postgresql-14-quantile` | `postgresql-13-quantile` | `postgresql-12-quantile` |
-| `u22` | `postgresql-17-quantile` | `postgresql-16-quantile` | `postgresql-15-quantile` | `postgresql-14-quantile` | `postgresql-13-quantile` | `postgresql-12-quantile` |
-| `u24` | `postgresql-17-quantile` | `postgresql-16-quantile` | `postgresql-15-quantile` | `postgresql-14-quantile` | `postgresql-13-quantile` | `postgresql-12-quantile` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `quantile_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.1.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-quantile` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

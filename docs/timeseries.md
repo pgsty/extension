@@ -56,13 +56,10 @@ CREATE EXTENSION timeseries CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_timeseries_17` | `pg_timeseries_16` | `pg_timeseries_15` | `pg_timeseries_14` | `pg_timeseries_13` | `pg_timeseries_12` |
-| `el9` | `pg_timeseries_17` | `pg_timeseries_16` | `pg_timeseries_15` | `pg_timeseries_14` | `pg_timeseries_13` | `pg_timeseries_12` |
-| `d12` | `postgresql-17-pg-timeseries` | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | `postgresql-13-pg-timeseries` | `postgresql-12-pg-timeseries` |
-| `u22` | `postgresql-17-pg-timeseries` | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | `postgresql-13-pg-timeseries` | `postgresql-12-pg-timeseries` |
-| `u24` | `postgresql-17-pg-timeseries` | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | `postgresql-13-pg-timeseries` | `postgresql-12-pg-timeseries` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_timeseries_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | `hydra_$v`, `pg_cron_$v`, `pg_ivm_$v`, `pg_partman_$v` |
+| [DEB](/deb) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-timeseries` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
 
 
 

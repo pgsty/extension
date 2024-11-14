@@ -56,13 +56,10 @@ CREATE EXTENSION cryptint;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `cryptint_17*` | `cryptint_16*` | `cryptint_15*` | `cryptint_14*` | `cryptint_13*` | `cryptint_12*` |
-| `el9` | `cryptint_17*` | `cryptint_16*` | `cryptint_15*` | `cryptint_14*` | `cryptint_13*` | `cryptint_12*` |
-| `d12` | `postgresql-17-cryptint` | `postgresql-16-cryptint` | `postgresql-15-cryptint` | `postgresql-14-cryptint` | `postgresql-13-cryptint` | `postgresql-12-cryptint` |
-| `u22` | `postgresql-17-cryptint` | `postgresql-16-cryptint` | `postgresql-15-cryptint` | `postgresql-14-cryptint` | `postgresql-13-cryptint` | `postgresql-12-cryptint` |
-| `u24` | `postgresql-17-cryptint` | `postgresql-16-cryptint` | `postgresql-15-cryptint` | `postgresql-14-cryptint` | `postgresql-13-cryptint` | `postgresql-12-cryptint` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `cryptint_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-cryptint` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

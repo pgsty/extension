@@ -60,13 +60,10 @@ CREATE EXTENSION citus;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `citus_17*` | `citus_16*` | `citus_15*` | `citus_14*` | `citus_13*` | `citus_12*` |
-| `el9` | `citus_17*` | `citus_16*` | `citus_15*` | `citus_14*` | `citus_13*` | `citus_12*` |
-| `d12` | `postgresql-17-citus-12.1` | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | `postgresql-13-citus-11.3` | `postgresql-12-citus-10.2` |
-| `u22` | `postgresql-17-citus-12.1` | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | `postgresql-13-citus-11.3` | `postgresql-12-citus-10.2` |
-| `u24` | `postgresql-17-citus-12.1` | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | `postgresql-13-citus-11.3` | `postgresql-12-citus-10.2` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 12.1-1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `citus_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 12.1-1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcgreen">CITUS</span>** | `postgresql-$v-citus-12.1` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

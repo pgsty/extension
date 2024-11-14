@@ -60,13 +60,10 @@ CREATE EXTENSION pg_cron;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_cron_17*` | `pg_cron_16*` | `pg_cron_15*` | `pg_cron_14*` | `pg_cron_13*` | `pg_cron_12*` |
-| `el9` | `pg_cron_17*` | `pg_cron_16*` | `pg_cron_15*` | `pg_cron_14*` | `pg_cron_13*` | `pg_cron_12*` |
-| `d12` | `postgresql-17-cron` | `postgresql-16-cron` | `postgresql-15-cron` | `postgresql-14-cron` | `postgresql-13-cron` | `postgresql-12-cron` |
-| `u22` | `postgresql-17-cron` | `postgresql-16-cron` | `postgresql-15-cron` | `postgresql-14-cron` | `postgresql-13-cron` | `postgresql-12-cron` |
-| `u24` | `postgresql-17-cron` | `postgresql-16-cron` | `postgresql-15-cron` | `postgresql-14-cron` | `postgresql-13-cron` | `postgresql-12-cron` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_cron_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-cron` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

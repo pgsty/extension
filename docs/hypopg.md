@@ -56,13 +56,10 @@ CREATE EXTENSION hypopg;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `hypopg_17*` | `hypopg_16*` | `hypopg_15*` | `hypopg_14*` | `hypopg_13*` | `hypopg_12*` |
-| `el9` | `hypopg_17*` | `hypopg_16*` | `hypopg_15*` | `hypopg_14*` | `hypopg_13*` | `hypopg_12*` |
-| `d12` | `postgresql-17-hypopg` | `postgresql-16-hypopg` | `postgresql-15-hypopg` | `postgresql-14-hypopg` | `postgresql-13-hypopg` | `postgresql-12-hypopg` |
-| `u22` | `postgresql-17-hypopg` | `postgresql-16-hypopg` | `postgresql-15-hypopg` | `postgresql-14-hypopg` | `postgresql-13-hypopg` | `postgresql-12-hypopg` |
-| `u24` | `postgresql-17-hypopg` | `postgresql-16-hypopg` | `postgresql-15-hypopg` | `postgresql-14-hypopg` | `postgresql-13-hypopg` | `postgresql-12-hypopg` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `hypopg_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.4.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-hypopg` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

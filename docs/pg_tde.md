@@ -60,13 +60,10 @@ CREATE EXTENSION pg_tde;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_tde_17*` | `pg_tde_16*` | `pg_tde_15*` | `pg_tde_14*` | `pg_tde_13*` | `pg_tde_12*` |
-| `el9` | `pg_tde_17*` | `pg_tde_16*` | `pg_tde_15*` | `pg_tde_14*` | `pg_tde_13*` | `pg_tde_12*` |
-| `d12` | `postgresql-17-pg-tde` | `postgresql-16-pg-tde` | `postgresql-15-pg-tde` | `postgresql-14-pg-tde` | `postgresql-13-pg-tde` | `postgresql-12-pg-tde` |
-| `u22` | `postgresql-17-pg-tde` | `postgresql-16-pg-tde` | `postgresql-15-pg-tde` | `postgresql-14-pg-tde` | `postgresql-13-pg-tde` | `postgresql-12-pg-tde` |
-| `u24` | `postgresql-17-pg-tde` | `postgresql-16-pg-tde` | `postgresql-15-pg-tde` | `postgresql-14-pg-tde` | `postgresql-13-pg-tde` | `postgresql-12-pg-tde` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_tde_$v*` |  | **<span class="tcwarn">✔</span>** |  |  |  |  |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-tde` |  | **<span class="tcwarn">✔</span>** |  |  |  |  |  |
 
 
 

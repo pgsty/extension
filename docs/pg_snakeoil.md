@@ -56,13 +56,10 @@ shared_preload_libraries = 'pg_snakeoil'; # add this extension to postgresql.con
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_snakeoil_17*` | `pg_snakeoil_16*` | `pg_snakeoil_15*` | `pg_snakeoil_14*` | `pg_snakeoil_13*` | `pg_snakeoil_12*` |
-| `el9` | `pg_snakeoil_17*` | `pg_snakeoil_16*` | `pg_snakeoil_15*` | `pg_snakeoil_14*` | `pg_snakeoil_13*` | `pg_snakeoil_12*` |
-| `d12` | `postgresql-17-snakeoil` | `postgresql-16-snakeoil` | `postgresql-15-snakeoil` | `postgresql-14-snakeoil` | `postgresql-13-snakeoil` | `postgresql-12-snakeoil` |
-| `u22` | `postgresql-17-snakeoil` | `postgresql-16-snakeoil` | `postgresql-15-snakeoil` | `postgresql-14-snakeoil` | `postgresql-13-snakeoil` | `postgresql-12-snakeoil` |
-| `u24` | `postgresql-17-snakeoil` | `postgresql-16-snakeoil` | `postgresql-15-snakeoil` | `postgresql-14-snakeoil` | `postgresql-13-snakeoil` | `postgresql-12-snakeoil` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_snakeoil_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-snakeoil` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

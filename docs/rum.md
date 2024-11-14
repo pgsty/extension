@@ -56,13 +56,10 @@ CREATE EXTENSION rum;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `rum_17` | `rum_16` | `rum_15` | `rum_14` | `rum_13` | `rum_12` |
-| `el9` | `rum_17` | `rum_16` | `rum_15` | `rum_14` | `rum_13` | `rum_12` |
-| `d12` | `postgresql-17-rum` | `postgresql-16-rum` | `postgresql-15-rum` | `postgresql-14-rum` | `postgresql-13-rum` | `postgresql-12-rum` |
-| `u22` | `postgresql-17-rum` | `postgresql-16-rum` | `postgresql-15-rum` | `postgresql-14-rum` | `postgresql-13-rum` | `postgresql-12-rum` |
-| `u24` | `postgresql-17-rum` | `postgresql-16-rum` | `postgresql-15-rum` | `postgresql-14-rum` | `postgresql-13-rum` | `postgresql-12-rum` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `rum_$v` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-rum` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

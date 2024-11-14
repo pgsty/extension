@@ -56,13 +56,10 @@ CREATE EXTENSION pgmp;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgmp_17*` | `pgmp_16*` | `pgmp_15*` | `pgmp_14*` | `pgmp_13*` | `pgmp_12*` |
-| `el9` | `pgmp_17*` | `pgmp_16*` | `pgmp_15*` | `pgmp_14*` | `pgmp_13*` | `pgmp_12*` |
-| `d12` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` | `postgresql-12-pgmp` |
-| `u22` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` | `postgresql-12-pgmp` |
-| `u24` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` | `postgresql-12-pgmp` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pgmp_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
+| [DEB](/deb) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgmp` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
 
 
 

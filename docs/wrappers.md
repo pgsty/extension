@@ -56,13 +56,10 @@ CREATE EXTENSION wrappers;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `wrappers_17` | `wrappers_16` | `wrappers_15` | `wrappers_14` | `wrappers_13` | `wrappers_12` |
-| `el9` | `wrappers_17` | `wrappers_16` | `wrappers_15` | `wrappers_14` | `wrappers_13` | `wrappers_12` |
-| `d12` | `postgresql-17-wrappers` | `postgresql-16-wrappers` | `postgresql-15-wrappers` | `postgresql-14-wrappers` | `postgresql-13-wrappers` | `postgresql-12-wrappers` |
-| `u22` | `postgresql-17-wrappers` | `postgresql-16-wrappers` | `postgresql-15-wrappers` | `postgresql-14-wrappers` | `postgresql-13-wrappers` | `postgresql-12-wrappers` |
-| `u24` | `postgresql-17-wrappers` | `postgresql-16-wrappers` | `postgresql-15-wrappers` | `postgresql-14-wrappers` | `postgresql-13-wrappers` | `postgresql-12-wrappers` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.4.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `wrappers_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
+| [DEB](/deb) | 0.4.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-wrappers` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
 
 
 

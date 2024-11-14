@@ -56,13 +56,9 @@ CREATE EXTENSION debversion;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `` | `` | `` | `` | `` | `` |
-| `el9` | `` | `` | `` | `` | `` | `` |
-| `d12` | `postgresql-17-debversion` | `postgresql-16-debversion` | `postgresql-15-debversion` | `postgresql-14-debversion` | `postgresql-13-debversion` | `postgresql-12-debversion` |
-| `u22` | `postgresql-17-debversion` | `postgresql-16-debversion` | `postgresql-15-debversion` | `postgresql-14-debversion` | `postgresql-13-debversion` | `postgresql-12-debversion` |
-| `u24` | `postgresql-17-debversion` | `postgresql-16-debversion` | `postgresql-15-debversion` | `postgresql-14-debversion` | `postgresql-13-debversion` | `postgresql-12-debversion` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [DEB](/deb) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-debversion` |  |  |  |  |  |  |  |
 
 
 

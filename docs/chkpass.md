@@ -56,13 +56,10 @@ CREATE EXTENSION chkpass;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `chkpass_17*` | `chkpass_16*` | `chkpass_15*` | `chkpass_14*` | `chkpass_13*` | `chkpass_12*` |
-| `el9` | `chkpass_17*` | `chkpass_16*` | `chkpass_15*` | `chkpass_14*` | `chkpass_13*` | `chkpass_12*` |
-| `d12` | `postgresql-17-chkpass` | `postgresql-16-chkpass` | `postgresql-15-chkpass` | `postgresql-14-chkpass` | `postgresql-13-chkpass` | `postgresql-12-chkpass` |
-| `u22` | `postgresql-17-chkpass` | `postgresql-16-chkpass` | `postgresql-15-chkpass` | `postgresql-14-chkpass` | `postgresql-13-chkpass` | `postgresql-12-chkpass` |
-| `u24` | `postgresql-17-chkpass` | `postgresql-16-chkpass` | `postgresql-15-chkpass` | `postgresql-14-chkpass` | `postgresql-13-chkpass` | `postgresql-12-chkpass` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `chkpass_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-chkpass` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

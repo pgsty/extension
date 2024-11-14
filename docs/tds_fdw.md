@@ -56,13 +56,10 @@ CREATE EXTENSION tds_fdw;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `tds_fdw_17*` | `tds_fdw_16*` | `tds_fdw_15*` | `tds_fdw_14*` | `tds_fdw_13*` | `tds_fdw_12*` |
-| `el9` | `tds_fdw_17*` | `tds_fdw_16*` | `tds_fdw_15*` | `tds_fdw_14*` | `tds_fdw_13*` | `tds_fdw_12*` |
-| `d12` | `postgresql-17-tds-fdw` | `postgresql-16-tds-fdw` | `postgresql-15-tds-fdw` | `postgresql-14-tds-fdw` | `postgresql-13-tds-fdw` | `postgresql-12-tds-fdw` |
-| `u22` | `postgresql-17-tds-fdw` | `postgresql-16-tds-fdw` | `postgresql-15-tds-fdw` | `postgresql-14-tds-fdw` | `postgresql-13-tds-fdw` | `postgresql-12-tds-fdw` |
-| `u24` | `postgresql-17-tds-fdw` | `postgresql-16-tds-fdw` | `postgresql-15-tds-fdw` | `postgresql-14-tds-fdw` | `postgresql-13-tds-fdw` | `postgresql-12-tds-fdw` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `tds_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-tds-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

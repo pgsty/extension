@@ -56,13 +56,10 @@ CREATE EXTENSION pgmemcache;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgmemcache_17*` | `pgmemcache_16*` | `pgmemcache_15*` | `pgmemcache_14*` | `pgmemcache_13*` | `pgmemcache_12*` |
-| `el9` | `pgmemcache_17*` | `pgmemcache_16*` | `pgmemcache_15*` | `pgmemcache_14*` | `pgmemcache_13*` | `pgmemcache_12*` |
-| `d12` | `postgresql-17-pgmemcache` | `postgresql-16-pgmemcache` | `postgresql-15-pgmemcache` | `postgresql-14-pgmemcache` | `postgresql-13-pgmemcache` | `postgresql-12-pgmemcache` |
-| `u22` | `postgresql-17-pgmemcache` | `postgresql-16-pgmemcache` | `postgresql-15-pgmemcache` | `postgresql-14-pgmemcache` | `postgresql-13-pgmemcache` | `postgresql-12-pgmemcache` |
-| `u24` | `postgresql-17-pgmemcache` | `postgresql-16-pgmemcache` | `postgresql-15-pgmemcache` | `postgresql-14-pgmemcache` | `postgresql-13-pgmemcache` | `postgresql-12-pgmemcache` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgmemcache_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
+| [DEB](/deb) | 2.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgmemcache` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
 
 
 

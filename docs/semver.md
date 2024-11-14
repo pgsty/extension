@@ -56,13 +56,10 @@ CREATE EXTENSION semver;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `semver_17*` | `semver_16*` | `semver_15*` | `semver_14*` | `semver_13*` | `semver_12*` |
-| `el9` | `semver_17*` | `semver_16*` | `semver_15*` | `semver_14*` | `semver_13*` | `semver_12*` |
-| `d12` | `postgresql-17-semver` | `postgresql-16-semver` | `postgresql-15-semver` | `postgresql-14-semver` | `postgresql-13-semver` | `postgresql-12-semver` |
-| `u22` | `postgresql-17-semver` | `postgresql-16-semver` | `postgresql-15-semver` | `postgresql-14-semver` | `postgresql-13-semver` | `postgresql-12-semver` |
-| `u24` | `postgresql-17-semver` | `postgresql-16-semver` | `postgresql-15-semver` | `postgresql-14-semver` | `postgresql-13-semver` | `postgresql-12-semver` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.32.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `semver_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 0.40.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-semver` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

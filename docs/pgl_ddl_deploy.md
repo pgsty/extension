@@ -56,13 +56,10 @@ CREATE EXTENSION pgl_ddl_deploy CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgl_ddl_deploy_17*` | `pgl_ddl_deploy_16*` | `pgl_ddl_deploy_15*` | `pgl_ddl_deploy_14*` | `pgl_ddl_deploy_13*` | `pgl_ddl_deploy_12*` |
-| `el9` | `pgl_ddl_deploy_17*` | `pgl_ddl_deploy_16*` | `pgl_ddl_deploy_15*` | `pgl_ddl_deploy_14*` | `pgl_ddl_deploy_13*` | `pgl_ddl_deploy_12*` |
-| `d12` | `postgresql-17-pgl-ddl-deploy` | `postgresql-16-pgl-ddl-deploy` | `postgresql-15-pgl-ddl-deploy` | `postgresql-14-pgl-ddl-deploy` | `postgresql-13-pgl-ddl-deploy` | `postgresql-12-pgl-ddl-deploy` |
-| `u22` | `postgresql-17-pgl-ddl-deploy` | `postgresql-16-pgl-ddl-deploy` | `postgresql-15-pgl-ddl-deploy` | `postgresql-14-pgl-ddl-deploy` | `postgresql-13-pgl-ddl-deploy` | `postgresql-12-pgl-ddl-deploy` |
-| `u24` | `postgresql-17-pgl-ddl-deploy` | `postgresql-16-pgl-ddl-deploy` | `postgresql-15-pgl-ddl-deploy` | `postgresql-14-pgl-ddl-deploy` | `postgresql-13-pgl-ddl-deploy` | `postgresql-12-pgl-ddl-deploy` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgl_ddl_deploy_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | `pglogical_$v` |
+| [DEB](/deb) | 2.2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgl-ddl-deploy` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | `postgresql-$v-pglogical` |
 
 
 

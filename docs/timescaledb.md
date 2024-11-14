@@ -60,13 +60,10 @@ CREATE EXTENSION timescaledb;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `timescaledb-2-postgresql-17*` | `timescaledb-2-postgresql-16*` | `timescaledb-2-postgresql-15*` | `timescaledb-2-postgresql-14*` | `timescaledb-2-postgresql-13*` | `timescaledb-2-postgresql-12*` |
-| `el9` | `timescaledb-2-postgresql-17*` | `timescaledb-2-postgresql-16*` | `timescaledb-2-postgresql-15*` | `timescaledb-2-postgresql-14*` | `timescaledb-2-postgresql-13*` | `timescaledb-2-postgresql-12*` |
-| `d12` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | `timescaledb-2-postgresql-12` |
-| `u22` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | `timescaledb-2-postgresql-12` |
-| `u24` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | `timescaledb-2-postgresql-12` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.17.1 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-2-postgresql-$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 2.17.1 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-2-postgresql-$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

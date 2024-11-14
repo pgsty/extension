@@ -56,13 +56,10 @@ shared_preload_libraries = 'plan_filter'; # add this extension to postgresql.con
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_plan_filter_17*` | `pg_plan_filter_16*` | `pg_plan_filter_15*` | `pg_plan_filter_14*` | `pg_plan_filter_13*` | `pg_plan_filter_12*` |
-| `el9` | `pg_plan_filter_17*` | `pg_plan_filter_16*` | `pg_plan_filter_15*` | `pg_plan_filter_14*` | `pg_plan_filter_13*` | `pg_plan_filter_12*` |
-| `d12` | `postgresql-17-pg-plan-filter` | `postgresql-16-pg-plan-filter` | `postgresql-15-pg-plan-filter` | `postgresql-14-pg-plan-filter` | `postgresql-13-pg-plan-filter` | `postgresql-12-pg-plan-filter` |
-| `u22` | `postgresql-17-pg-plan-filter` | `postgresql-16-pg-plan-filter` | `postgresql-15-pg-plan-filter` | `postgresql-14-pg-plan-filter` | `postgresql-13-pg-plan-filter` | `postgresql-12-pg-plan-filter` |
-| `u24` | `postgresql-17-pg-plan-filter` | `postgresql-16-pg-plan-filter` | `postgresql-15-pg-plan-filter` | `postgresql-14-pg-plan-filter` | `postgresql-13-pg-plan-filter` | `postgresql-12-pg-plan-filter` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_plan_filter_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-plan-filter` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION tdigest;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `tdigest_17*` | `tdigest_16*` | `tdigest_15*` | `tdigest_14*` | `tdigest_13*` | `tdigest_12*` |
-| `el9` | `tdigest_17*` | `tdigest_16*` | `tdigest_15*` | `tdigest_14*` | `tdigest_13*` | `tdigest_12*` |
-| `d12` | `postgresql-17-tdigest` | `postgresql-16-tdigest` | `postgresql-15-tdigest` | `postgresql-14-tdigest` | `postgresql-13-tdigest` | `postgresql-12-tdigest` |
-| `u22` | `postgresql-17-tdigest` | `postgresql-16-tdigest` | `postgresql-15-tdigest` | `postgresql-14-tdigest` | `postgresql-13-tdigest` | `postgresql-12-tdigest` |
-| `u24` | `postgresql-17-tdigest` | `postgresql-16-tdigest` | `postgresql-15-tdigest` | `postgresql-14-tdigest` | `postgresql-13-tdigest` | `postgresql-12-tdigest` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `tdigest_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.4.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-tdigest` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

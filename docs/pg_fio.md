@@ -56,13 +56,10 @@ CREATE EXTENSION pg_fio;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_fio_17` | `pg_fio_16` | `pg_fio_15` | `pg_fio_14` | `pg_fio_13` | `pg_fio_12` |
-| `el9` | `pg_fio_17` | `pg_fio_16` | `pg_fio_15` | `pg_fio_14` | `pg_fio_13` | `pg_fio_12` |
-| `d12` | `postgresql-17-pg-fio` | `postgresql-16-pg-fio` | `postgresql-15-pg-fio` | `postgresql-14-pg-fio` | `postgresql-13-pg-fio` | `postgresql-12-pg-fio` |
-| `u22` | `postgresql-17-pg-fio` | `postgresql-16-pg-fio` | `postgresql-15-pg-fio` | `postgresql-14-pg-fio` | `postgresql-13-pg-fio` | `postgresql-12-pg-fio` |
-| `u24` | `postgresql-17-pg-fio` | `postgresql-16-pg-fio` | `postgresql-15-pg-fio` | `postgresql-14-pg-fio` | `postgresql-13-pg-fio` | `postgresql-12-pg-fio` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_fio_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-fio` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

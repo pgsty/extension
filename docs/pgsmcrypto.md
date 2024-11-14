@@ -56,13 +56,10 @@ CREATE EXTENSION pgsmcrypto;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgsmcrypto_17` | `pgsmcrypto_16` | `pgsmcrypto_15` | `pgsmcrypto_14` | `pgsmcrypto_13` | `pgsmcrypto_12` |
-| `el9` | `pgsmcrypto_17` | `pgsmcrypto_16` | `pgsmcrypto_15` | `pgsmcrypto_14` | `pgsmcrypto_13` | `pgsmcrypto_12` |
-| `d12` | `postgresql-17-pgsmcrypto` | `postgresql-16-pgsmcrypto` | `postgresql-15-pgsmcrypto` | `postgresql-14-pgsmcrypto` | `postgresql-13-pgsmcrypto` | `postgresql-12-pgsmcrypto` |
-| `u22` | `postgresql-17-pgsmcrypto` | `postgresql-16-pgsmcrypto` | `postgresql-15-pgsmcrypto` | `postgresql-14-pgsmcrypto` | `postgresql-13-pgsmcrypto` | `postgresql-12-pgsmcrypto` |
-| `u24` | `postgresql-17-pgsmcrypto` | `postgresql-16-pgsmcrypto` | `postgresql-15-pgsmcrypto` | `postgresql-14-pgsmcrypto` | `postgresql-13-pgsmcrypto` | `postgresql-12-pgsmcrypto` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgsmcrypto_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgsmcrypto` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

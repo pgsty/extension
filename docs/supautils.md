@@ -56,13 +56,10 @@ shared_preload_libraries = 'supautils'; # add this extension to postgresql.conf
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `supautils_17*` | `supautils_16*` | `supautils_15*` | `supautils_14*` | `supautils_13*` | `supautils_12*` |
-| `el9` | `supautils_17*` | `supautils_16*` | `supautils_15*` | `supautils_14*` | `supautils_13*` | `supautils_12*` |
-| `d12` | `postgresql-17-supautils` | `postgresql-16-supautils` | `postgresql-15-supautils` | `postgresql-14-supautils` | `postgresql-13-supautils` | `postgresql-12-supautils` |
-| `u22` | `postgresql-17-supautils` | `postgresql-16-supautils` | `postgresql-15-supautils` | `postgresql-14-supautils` | `postgresql-13-supautils` | `postgresql-12-supautils` |
-| `u24` | `postgresql-17-supautils` | `postgresql-16-supautils` | `postgresql-15-supautils` | `postgresql-14-supautils` | `postgresql-13-supautils` | `postgresql-12-supautils` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `supautils_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| [DEB](/deb) | 2.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-supautils` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
 
 
 

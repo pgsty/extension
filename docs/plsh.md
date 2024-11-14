@@ -56,13 +56,10 @@ CREATE EXTENSION plsh;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `plsh_17*` | `plsh_16*` | `plsh_15*` | `plsh_14*` | `plsh_13*` | `plsh_12*` |
-| `el9` | `plsh_17*` | `plsh_16*` | `plsh_15*` | `plsh_14*` | `plsh_13*` | `plsh_12*` |
-| `d12` | `postgresql-17-plsh` | `postgresql-16-plsh` | `postgresql-15-plsh` | `postgresql-14-plsh` | `postgresql-13-plsh` | `postgresql-12-plsh` |
-| `u22` | `postgresql-17-plsh` | `postgresql-16-plsh` | `postgresql-15-plsh` | `postgresql-14-plsh` | `postgresql-13-plsh` | `postgresql-12-plsh` |
-| `u24` | `postgresql-17-plsh` | `postgresql-16-plsh` | `postgresql-15-plsh` | `postgresql-14-plsh` | `postgresql-13-plsh` | `postgresql-12-plsh` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `plsh_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plsh` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

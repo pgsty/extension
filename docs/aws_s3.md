@@ -56,13 +56,10 @@ CREATE EXTENSION aws_s3;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `aws_s3_17` | `aws_s3_16` | `aws_s3_15` | `aws_s3_14` | `aws_s3_13` | `aws_s3_12` |
-| `el9` | `aws_s3_17` | `aws_s3_16` | `aws_s3_15` | `aws_s3_14` | `aws_s3_13` | `aws_s3_12` |
-| `d12` | `postgresql-17-aws-s3` | `postgresql-16-aws-s3` | `postgresql-15-aws-s3` | `postgresql-14-aws-s3` | `postgresql-13-aws-s3` | `postgresql-12-aws-s3` |
-| `u22` | `postgresql-17-aws-s3` | `postgresql-16-aws-s3` | `postgresql-15-aws-s3` | `postgresql-14-aws-s3` | `postgresql-13-aws-s3` | `postgresql-12-aws-s3` |
-| `u24` | `postgresql-17-aws-s3` | `postgresql-16-aws-s3` | `postgresql-15-aws-s3` | `postgresql-14-aws-s3` | `postgresql-13-aws-s3` | `postgresql-12-aws-s3` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `aws_s3_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.0.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-aws-s3` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

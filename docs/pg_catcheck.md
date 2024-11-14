@@ -56,13 +56,10 @@ CREATE EXTENSION pg_catcheck;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_catcheck_17*` | `pg_catcheck_16*` | `pg_catcheck_15*` | `pg_catcheck_14*` | `pg_catcheck_13*` | `pg_catcheck_12*` |
-| `el9` | `pg_catcheck_17*` | `pg_catcheck_16*` | `pg_catcheck_15*` | `pg_catcheck_14*` | `pg_catcheck_13*` | `pg_catcheck_12*` |
-| `d12` | `postgresql-17-pg-catcheck` | `postgresql-16-pg-catcheck` | `postgresql-15-pg-catcheck` | `postgresql-14-pg-catcheck` | `postgresql-13-pg-catcheck` | `postgresql-12-pg-catcheck` |
-| `u22` | `postgresql-17-pg-catcheck` | `postgresql-16-pg-catcheck` | `postgresql-15-pg-catcheck` | `postgresql-14-pg-catcheck` | `postgresql-13-pg-catcheck` | `postgresql-12-pg-catcheck` |
-| `u24` | `postgresql-17-pg-catcheck` | `postgresql-16-pg-catcheck` | `postgresql-15-pg-catcheck` | `postgresql-14-pg-catcheck` | `postgresql-13-pg-catcheck` | `postgresql-12-pg-catcheck` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_catcheck_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.4.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-catcheck` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

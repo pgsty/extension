@@ -60,13 +60,10 @@ CREATE EXTENSION pg_mooncake;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_mooncake_17*` | `pg_mooncake_16*` | `pg_mooncake_15*` | `pg_mooncake_14*` | `pg_mooncake_13*` | `pg_mooncake_12*` |
-| `el9` | `pg_mooncake_17*` | `pg_mooncake_16*` | `pg_mooncake_15*` | `pg_mooncake_14*` | `pg_mooncake_13*` | `pg_mooncake_12*` |
-| `d12` | `postgresql-17-pg-mooncake` | `postgresql-16-pg-mooncake` | `postgresql-15-pg-mooncake` | `postgresql-14-pg-mooncake` | `postgresql-13-pg-mooncake` | `postgresql-12-pg-mooncake` |
-| `u22` | `postgresql-17-pg-mooncake` | `postgresql-16-pg-mooncake` | `postgresql-15-pg-mooncake` | `postgresql-14-pg-mooncake` | `postgresql-13-pg-mooncake` | `postgresql-12-pg-mooncake` |
-| `u24` | `postgresql-17-pg-mooncake` | `postgresql-16-pg-mooncake` | `postgresql-15-pg-mooncake` | `postgresql-14-pg-mooncake` | `postgresql-13-pg-mooncake` | `postgresql-12-pg-mooncake` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_mooncake_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |  |
+| [DEB](/deb) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-mooncake` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |  |
 
 
 

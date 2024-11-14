@@ -56,13 +56,10 @@ CREATE EXTENSION base36;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_base36_17*` | `pg_base36_16*` | `pg_base36_15*` | `pg_base36_14*` | `pg_base36_13*` | `pg_base36_12*` |
-| `el9` | `pg_base36_17*` | `pg_base36_16*` | `pg_base36_15*` | `pg_base36_14*` | `pg_base36_13*` | `pg_base36_12*` |
-| `d12` | `postgresql-17-base36` | `postgresql-16-base36` | `postgresql-15-base36` | `postgresql-14-base36` | `postgresql-13-base36` | `postgresql-12-base36` |
-| `u22` | `postgresql-17-base36` | `postgresql-16-base36` | `postgresql-15-base36` | `postgresql-14-base36` | `postgresql-13-base36` | `postgresql-12-base36` |
-| `u24` | `postgresql-17-base36` | `postgresql-16-base36` | `postgresql-15-base36` | `postgresql-14-base36` | `postgresql-13-base36` | `postgresql-12-base36` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_base36_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-base36` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

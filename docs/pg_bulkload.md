@@ -56,13 +56,10 @@ CREATE EXTENSION pg_bulkload;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_bulkload_17*` | `pg_bulkload_16*` | `pg_bulkload_15*` | `pg_bulkload_14*` | `pg_bulkload_13*` | `pg_bulkload_12*` |
-| `el9` | `pg_bulkload_17*` | `pg_bulkload_16*` | `pg_bulkload_15*` | `pg_bulkload_14*` | `pg_bulkload_13*` | `pg_bulkload_12*` |
-| `d12` | `postgresql-17-pg-bulkload` | `postgresql-16-pg-bulkload` | `postgresql-15-pg-bulkload` | `postgresql-14-pg-bulkload` | `postgresql-13-pg-bulkload` | `postgresql-12-pg-bulkload` |
-| `u22` | `postgresql-17-pg-bulkload` | `postgresql-16-pg-bulkload` | `postgresql-15-pg-bulkload` | `postgresql-14-pg-bulkload` | `postgresql-13-pg-bulkload` | `postgresql-12-pg-bulkload` |
-| `u24` | `postgresql-17-pg-bulkload` | `postgresql-16-pg-bulkload` | `postgresql-15-pg-bulkload` | `postgresql-14-pg-bulkload` | `postgresql-13-pg-bulkload` | `postgresql-12-pg-bulkload` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 3.1.21 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_bulkload_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 3.1.21 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-bulkload` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

@@ -56,13 +56,9 @@ CREATE EXTENSION rdkit;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `` | `` | `` | `` | `` | `` |
-| `el9` | `` | `` | `` | `` | `` | `` |
-| `d12` | `postgresql-17-rdkit` | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
-| `u22` | `postgresql-17-rdkit` | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
-| `u24` | `postgresql-17-rdkit` | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [DEB](/deb) | 4.3.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-rdkit` |  |  |  |  |  |  |  |
 
 
 

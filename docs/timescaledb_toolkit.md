@@ -56,13 +56,10 @@ CREATE EXTENSION timescaledb_toolkit;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
-| `el9` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
-| `d12` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
-| `u22` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
-| `u24` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.18.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-toolkit-postgresql-$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.18.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-toolkit-postgresql-$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

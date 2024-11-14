@@ -60,13 +60,10 @@ CREATE EXTENSION pglogical_ticker CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pglogical_ticker_17*` | `pglogical_ticker_16*` | `pglogical_ticker_15*` | `pglogical_ticker_14*` | `pglogical_ticker_13*` | `pglogical_ticker_12*` |
-| `el9` | `pglogical_ticker_17*` | `pglogical_ticker_16*` | `pglogical_ticker_15*` | `pglogical_ticker_14*` | `pglogical_ticker_13*` | `pglogical_ticker_12*` |
-| `d12` | `postgresql-17-pglogical-ticker` | `postgresql-16-pglogical-ticker` | `postgresql-15-pglogical-ticker` | `postgresql-14-pglogical-ticker` | `postgresql-13-pglogical-ticker` | `postgresql-12-pglogical-ticker` |
-| `u22` | `postgresql-17-pglogical-ticker` | `postgresql-16-pglogical-ticker` | `postgresql-15-pglogical-ticker` | `postgresql-14-pglogical-ticker` | `postgresql-13-pglogical-ticker` | `postgresql-12-pglogical-ticker` |
-| `u24` | `postgresql-17-pglogical-ticker` | `postgresql-16-pglogical-ticker` | `postgresql-15-pglogical-ticker` | `postgresql-14-pglogical-ticker` | `postgresql-13-pglogical-ticker` | `postgresql-12-pglogical-ticker` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pglogical_ticker_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `pglogical_$v` |
+| [DEB](/deb) | 1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pglogical-ticker` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `postgresql-$v-pglogical` |
 
 
 

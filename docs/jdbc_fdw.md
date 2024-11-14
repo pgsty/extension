@@ -56,13 +56,9 @@ CREATE EXTENSION jdbc_fdw;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `jdbc_fdw_17*` | `jdbc_fdw_16*` | `jdbc_fdw_15*` | `jdbc_fdw_14*` | `jdbc_fdw_13*` | `jdbc_fdw_12*` |
-| `el9` | `jdbc_fdw_17*` | `jdbc_fdw_16*` | `jdbc_fdw_15*` | `jdbc_fdw_14*` | `jdbc_fdw_13*` | `jdbc_fdw_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `jdbc_fdw_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  | `java-11-openjdk-headless` |
 
 
 

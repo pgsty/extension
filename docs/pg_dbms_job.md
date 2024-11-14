@@ -56,13 +56,9 @@ CREATE EXTENSION pg_dbms_job;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_dbms_job_17*` | `pg_dbms_job_16*` | `pg_dbms_job_15*` | `pg_dbms_job_14*` | `pg_dbms_job_13*` | `pg_dbms_job_12*` |
-| `el9` | `pg_dbms_job_17*` | `pg_dbms_job_16*` | `pg_dbms_job_15*` | `pg_dbms_job_14*` | `pg_dbms_job_13*` | `pg_dbms_job_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.5.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_dbms_job_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

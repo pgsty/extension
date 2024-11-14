@@ -60,13 +60,10 @@ CREATE EXTENSION pg_stat_kcache CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_stat_kcache_17*` | `pg_stat_kcache_16*` | `pg_stat_kcache_15*` | `pg_stat_kcache_14*` | `pg_stat_kcache_13*` | `pg_stat_kcache_12*` |
-| `el9` | `pg_stat_kcache_17*` | `pg_stat_kcache_16*` | `pg_stat_kcache_15*` | `pg_stat_kcache_14*` | `pg_stat_kcache_13*` | `pg_stat_kcache_12*` |
-| `d12` | `postgresql-17-pg-stat-kcache` | `postgresql-16-pg-stat-kcache` | `postgresql-15-pg-stat-kcache` | `postgresql-14-pg-stat-kcache` | `postgresql-13-pg-stat-kcache` | `postgresql-12-pg-stat-kcache` |
-| `u22` | `postgresql-17-pg-stat-kcache` | `postgresql-16-pg-stat-kcache` | `postgresql-15-pg-stat-kcache` | `postgresql-14-pg-stat-kcache` | `postgresql-13-pg-stat-kcache` | `postgresql-12-pg-stat-kcache` |
-| `u24` | `postgresql-17-pg-stat-kcache` | `postgresql-16-pg-stat-kcache` | `postgresql-15-pg-stat-kcache` | `postgresql-14-pg-stat-kcache` | `postgresql-13-pg-stat-kcache` | `postgresql-12-pg-stat-kcache` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.3.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_stat_kcache_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.3.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-stat-kcache` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

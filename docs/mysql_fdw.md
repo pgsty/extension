@@ -56,13 +56,10 @@ CREATE EXTENSION mysql_fdw;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `mysql_fdw_17*` | `mysql_fdw_16*` | `mysql_fdw_15*` | `mysql_fdw_14*` | `mysql_fdw_13*` | `mysql_fdw_12*` |
-| `el9` | `mysql_fdw_17*` | `mysql_fdw_16*` | `mysql_fdw_15*` | `mysql_fdw_14*` | `mysql_fdw_13*` | `mysql_fdw_12*` |
-| `d12` | `postgresql-17-mysql-fdw` | `postgresql-16-mysql-fdw` | `postgresql-15-mysql-fdw` | `postgresql-14-mysql-fdw` | `postgresql-13-mysql-fdw` | `postgresql-12-mysql-fdw` |
-| `u22` | `postgresql-17-mysql-fdw` | `postgresql-16-mysql-fdw` | `postgresql-15-mysql-fdw` | `postgresql-14-mysql-fdw` | `postgresql-13-mysql-fdw` | `postgresql-12-mysql-fdw` |
-| `u24` | `postgresql-17-mysql-fdw` | `postgresql-16-mysql-fdw` | `postgresql-15-mysql-fdw` | `postgresql-14-mysql-fdw` | `postgresql-13-mysql-fdw` | `postgresql-12-mysql-fdw` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `mysql_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-mysql-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

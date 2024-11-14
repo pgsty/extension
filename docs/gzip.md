@@ -56,13 +56,10 @@ CREATE EXTENSION gzip;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgsql_gzip_17*` | `pgsql_gzip_16*` | `pgsql_gzip_15*` | `pgsql_gzip_14*` | `pgsql_gzip_13*` | `pgsql_gzip_12*` |
-| `el9` | `pgsql_gzip_17*` | `pgsql_gzip_16*` | `pgsql_gzip_15*` | `pgsql_gzip_14*` | `pgsql_gzip_13*` | `pgsql_gzip_12*` |
-| `d12` | `postgresql-17-gzip` | `postgresql-16-gzip` | `postgresql-15-gzip` | `postgresql-14-gzip` | `postgresql-13-gzip` | `postgresql-12-gzip` |
-| `u22` | `postgresql-17-gzip` | `postgresql-16-gzip` | `postgresql-15-gzip` | `postgresql-14-gzip` | `postgresql-13-gzip` | `postgresql-12-gzip` |
-| `u24` | `postgresql-17-gzip` | `postgresql-16-gzip` | `postgresql-15-gzip` | `postgresql-14-gzip` | `postgresql-13-gzip` | `postgresql-12-gzip` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgsql_gzip_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-gzip` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

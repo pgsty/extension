@@ -56,13 +56,10 @@ CREATE EXTENSION pagevis;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pagevis_17` | `pagevis_16` | `pagevis_15` | `pagevis_14` | `pagevis_13` | `pagevis_12` |
-| `el9` | `pagevis_17` | `pagevis_16` | `pagevis_15` | `pagevis_14` | `pagevis_13` | `pagevis_12` |
-| `d12` | `postgresql-17-pagevis` | `postgresql-16-pagevis` | `postgresql-15-pagevis` | `postgresql-14-pagevis` | `postgresql-13-pagevis` | `postgresql-12-pagevis` |
-| `u22` | `postgresql-17-pagevis` | `postgresql-16-pagevis` | `postgresql-15-pagevis` | `postgresql-14-pagevis` | `postgresql-13-pagevis` | `postgresql-12-pagevis` |
-| `u24` | `postgresql-17-pagevis` | `postgresql-16-pagevis` | `postgresql-15-pagevis` | `postgresql-14-pagevis` | `postgresql-13-pagevis` | `postgresql-12-pagevis` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pagevis_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pagevis` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION explain_ui;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_explain_ui_17` | `pg_explain_ui_16` | `pg_explain_ui_15` | `pg_explain_ui_14` | `pg_explain_ui_13` | `pg_explain_ui_12` |
-| `el9` | `pg_explain_ui_17` | `pg_explain_ui_16` | `pg_explain_ui_15` | `pg_explain_ui_14` | `pg_explain_ui_13` | `pg_explain_ui_12` |
-| `d12` | `postgresql-17-pg-explain-ui` | `postgresql-16-pg-explain-ui` | `postgresql-15-pg-explain-ui` | `postgresql-14-pg-explain-ui` | `postgresql-13-pg-explain-ui` | `postgresql-12-pg-explain-ui` |
-| `u22` | `postgresql-17-pg-explain-ui` | `postgresql-16-pg-explain-ui` | `postgresql-15-pg-explain-ui` | `postgresql-14-pg-explain-ui` | `postgresql-13-pg-explain-ui` | `postgresql-12-pg-explain-ui` |
-| `u24` | `postgresql-17-pg-explain-ui` | `postgresql-16-pg-explain-ui` | `postgresql-15-pg-explain-ui` | `postgresql-14-pg-explain-ui` | `postgresql-13-pg-explain-ui` | `postgresql-12-pg-explain-ui` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_explain_ui_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-explain-ui` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

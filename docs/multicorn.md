@@ -56,13 +56,9 @@ CREATE EXTENSION multicorn;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `multicorn2_17*` | `multicorn2_16*` | `multicorn2_15*` | `multicorn2_14*` | `multicorn2_13*` | `multicorn2_12*` |
-| `el9` | `multicorn2_17*` | `multicorn2_16*` | `multicorn2_15*` | `multicorn2_14*` | `multicorn2_13*` | `multicorn2_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `multicorn2_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION pgtt;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgtt_17*` | `pgtt_16*` | `pgtt_15*` | `pgtt_14*` | `pgtt_13*` | `pgtt_12*` |
-| `el9` | `pgtt_17*` | `pgtt_16*` | `pgtt_15*` | `pgtt_14*` | `pgtt_13*` | `pgtt_12*` |
-| `d12` | `postgresql-17-pgtt` | `postgresql-16-pgtt` | `postgresql-15-pgtt` | `postgresql-14-pgtt` | `postgresql-13-pgtt` | `postgresql-12-pgtt` |
-| `u22` | `postgresql-17-pgtt` | `postgresql-16-pgtt` | `postgresql-15-pgtt` | `postgresql-14-pgtt` | `postgresql-13-pgtt` | `postgresql-12-pgtt` |
-| `u24` | `postgresql-17-pgtt` | `postgresql-16-pgtt` | `postgresql-15-pgtt` | `postgresql-14-pgtt` | `postgresql-13-pgtt` | `postgresql-12-pgtt` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 4.0.0 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `pgtt_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 4.0.0 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgtt` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

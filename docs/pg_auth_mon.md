@@ -56,13 +56,10 @@ CREATE EXTENSION pg_auth_mon;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_auth_mon_17*` | `pg_auth_mon_16*` | `pg_auth_mon_15*` | `pg_auth_mon_14*` | `pg_auth_mon_13*` | `pg_auth_mon_12*` |
-| `el9` | `pg_auth_mon_17*` | `pg_auth_mon_16*` | `pg_auth_mon_15*` | `pg_auth_mon_14*` | `pg_auth_mon_13*` | `pg_auth_mon_12*` |
-| `d12` | `postgresql-17-pg-auth-mon` | `postgresql-16-pg-auth-mon` | `postgresql-15-pg-auth-mon` | `postgresql-14-pg-auth-mon` | `postgresql-13-pg-auth-mon` | `postgresql-12-pg-auth-mon` |
-| `u22` | `postgresql-17-pg-auth-mon` | `postgresql-16-pg-auth-mon` | `postgresql-15-pg-auth-mon` | `postgresql-14-pg-auth-mon` | `postgresql-13-pg-auth-mon` | `postgresql-12-pg-auth-mon` |
-| `u24` | `postgresql-17-pg-auth-mon` | `postgresql-16-pg-auth-mon` | `postgresql-15-pg-auth-mon` | `postgresql-14-pg-auth-mon` | `postgresql-13-pg-auth-mon` | `postgresql-12-pg-auth-mon` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pg_auth_mon_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-auth-mon` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

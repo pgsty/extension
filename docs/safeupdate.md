@@ -56,13 +56,10 @@ CREATE EXTENSION safeupdate;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `safeupdate_17*` | `safeupdate_16*` | `safeupdate_15*` | `safeupdate_14*` | `safeupdate_13*` | `safeupdate_12*` |
-| `el9` | `safeupdate_17*` | `safeupdate_16*` | `safeupdate_15*` | `safeupdate_14*` | `safeupdate_13*` | `safeupdate_12*` |
-| `d12` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | `postgresql-13-pg-safeupdate` | `postgresql-12-pg-safeupdate` |
-| `u22` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | `postgresql-13-pg-safeupdate` | `postgresql-12-pg-safeupdate` |
-| `u24` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | `postgresql-13-pg-safeupdate` | `postgresql-12-pg-safeupdate` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `safeupdate_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-safeupdate` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION pg_track_settings;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_track_settings_17*` | `pg_track_settings_16*` | `pg_track_settings_15*` | `pg_track_settings_14*` | `pg_track_settings_13*` | `pg_track_settings_12*` |
-| `el9` | `pg_track_settings_17*` | `pg_track_settings_16*` | `pg_track_settings_15*` | `pg_track_settings_14*` | `pg_track_settings_13*` | `pg_track_settings_12*` |
-| `d12` | `postgresql-17-pg-track-settings` | `postgresql-16-pg-track-settings` | `postgresql-15-pg-track-settings` | `postgresql-14-pg-track-settings` | `postgresql-13-pg-track-settings` | `postgresql-12-pg-track-settings` |
-| `u22` | `postgresql-17-pg-track-settings` | `postgresql-16-pg-track-settings` | `postgresql-15-pg-track-settings` | `postgresql-14-pg-track-settings` | `postgresql-13-pg-track-settings` | `postgresql-12-pg-track-settings` |
-| `u24` | `postgresql-17-pg-track-settings` | `postgresql-16-pg-track-settings` | `postgresql-15-pg-track-settings` | `postgresql-14-pg-track-settings` | `postgresql-13-pg-track-settings` | `postgresql-12-pg-track-settings` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_track_settings_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-track-settings` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

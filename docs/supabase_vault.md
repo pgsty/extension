@@ -56,13 +56,10 @@ CREATE EXTENSION supabase_vault CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `vault_17*` | `vault_16*` | `vault_15*` | `vault_14*` | `vault_13*` | `vault_12*` |
-| `el9` | `vault_17*` | `vault_16*` | `vault_15*` | `vault_14*` | `vault_13*` | `vault_12*` |
-| `d12` | `postgresql-17-vault` | `postgresql-16-vault` | `postgresql-15-vault` | `postgresql-14-vault` | `postgresql-13-vault` | `postgresql-12-vault` |
-| `u22` | `postgresql-17-vault` | `postgresql-16-vault` | `postgresql-15-vault` | `postgresql-14-vault` | `postgresql-13-vault` | `postgresql-12-vault` |
-| `u24` | `postgresql-17-vault` | `postgresql-16-vault` | `postgresql-15-vault` | `postgresql-14-vault` | `postgresql-13-vault` | `postgresql-12-vault` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.2.8 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `vault_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.2.8 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-vault` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

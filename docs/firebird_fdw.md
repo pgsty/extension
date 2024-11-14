@@ -56,13 +56,10 @@ CREATE EXTENSION firebird_fdw;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `firebird_fdw_17` | `firebird_fdw_16` | `firebird_fdw_15` | `firebird_fdw_14` | `firebird_fdw_13` | `firebird_fdw_12` |
-| `el9` | `firebird_fdw_17` | `firebird_fdw_16` | `firebird_fdw_15` | `firebird_fdw_14` | `firebird_fdw_13` | `firebird_fdw_12` |
-| `d12` | `postgresql-17-firebird-fdw` | `postgresql-16-firebird-fdw` | `postgresql-15-firebird-fdw` | `postgresql-14-firebird-fdw` | `postgresql-13-firebird-fdw` | `postgresql-12-firebird-fdw` |
-| `u22` | `postgresql-17-firebird-fdw` | `postgresql-16-firebird-fdw` | `postgresql-15-firebird-fdw` | `postgresql-14-firebird-fdw` | `postgresql-13-firebird-fdw` | `postgresql-12-firebird-fdw` |
-| `u24` | `postgresql-17-firebird-fdw` | `postgresql-16-firebird-fdw` | `postgresql-15-firebird-fdw` | `postgresql-14-firebird-fdw` | `postgresql-13-firebird-fdw` | `postgresql-12-firebird-fdw` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `firebird_fdw_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libfq` |
+| [DEB](/deb) | 1.4.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-firebird-fdw` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libfq` |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION powa CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `powa_17*` | `powa_16*` | `powa_15*` | `powa_14*` | `powa_13*` | `powa_12*` |
-| `el9` | `powa_17*` | `powa_16*` | `powa_15*` | `powa_14*` | `powa_13*` | `powa_12*` |
-| `d12` | `postgresql-17-powa` | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` | `postgresql-12-powa` |
-| `u22` | `postgresql-17-powa` | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` | `postgresql-12-powa` |
-| `u24` | `postgresql-17-powa` | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` | `postgresql-12-powa` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 4.2.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `powa_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 4.2.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-powa` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

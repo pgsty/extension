@@ -56,13 +56,10 @@ CREATE EXTENSION index_advisor;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `index_advisor_17` | `index_advisor_16` | `index_advisor_15` | `index_advisor_14` | `index_advisor_13` | `index_advisor_12` |
-| `el9` | `index_advisor_17` | `index_advisor_16` | `index_advisor_15` | `index_advisor_14` | `index_advisor_13` | `index_advisor_12` |
-| `d12` | `postgresql-17-index-advisor` | `postgresql-16-index-advisor` | `postgresql-15-index-advisor` | `postgresql-14-index-advisor` | `postgresql-13-index-advisor` | `postgresql-12-index-advisor` |
-| `u22` | `postgresql-17-index-advisor` | `postgresql-16-index-advisor` | `postgresql-15-index-advisor` | `postgresql-14-index-advisor` | `postgresql-13-index-advisor` | `postgresql-12-index-advisor` |
-| `u24` | `postgresql-17-index-advisor` | `postgresql-16-index-advisor` | `postgresql-15-index-advisor` | `postgresql-14-index-advisor` | `postgresql-13-index-advisor` | `postgresql-12-index-advisor` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `index_advisor_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-index-advisor` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

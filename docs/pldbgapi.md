@@ -56,13 +56,10 @@ CREATE EXTENSION pldbgapi;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pldebugger_17*` | `pldebugger_16*` | `pldebugger_15*` | `pldebugger_14*` | `pldebugger_13*` | `pldebugger_12*` |
-| `el9` | `pldebugger_17*` | `pldebugger_16*` | `pldebugger_15*` | `pldebugger_14*` | `pldebugger_13*` | `pldebugger_12*` |
-| `d12` | `postgresql-17-pldebugger` | `postgresql-16-pldebugger` | `postgresql-15-pldebugger` | `postgresql-14-pldebugger` | `postgresql-13-pldebugger` | `postgresql-12-pldebugger` |
-| `u22` | `postgresql-17-pldebugger` | `postgresql-16-pldebugger` | `postgresql-15-pldebugger` | `postgresql-14-pldebugger` | `postgresql-13-pldebugger` | `postgresql-12-pldebugger` |
-| `u24` | `postgresql-17-pldebugger` | `postgresql-16-pldebugger` | `postgresql-15-pldebugger` | `postgresql-14-pldebugger` | `postgresql-13-pldebugger` | `postgresql-12-pldebugger` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `pldebugger_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.1 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pldebugger` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

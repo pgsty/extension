@@ -56,13 +56,10 @@ CREATE EXTENSION uint;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pguint_17*` | `pguint_16*` | `pguint_15*` | `pguint_14*` | `pguint_13*` | `pguint_12*` |
-| `el9` | `pguint_17*` | `pguint_16*` | `pguint_15*` | `pguint_14*` | `pguint_13*` | `pguint_12*` |
-| `d12` | `postgresql-17-pguint` | `postgresql-16-pguint` | `postgresql-15-pguint` | `postgresql-14-pguint` | `postgresql-13-pguint` | `postgresql-12-pguint` |
-| `u22` | `postgresql-17-pguint` | `postgresql-16-pguint` | `postgresql-15-pguint` | `postgresql-14-pguint` | `postgresql-13-pguint` | `postgresql-12-pguint` |
-| `u24` | `postgresql-17-pguint` | `postgresql-16-pguint` | `postgresql-15-pguint` | `postgresql-14-pguint` | `postgresql-13-pguint` | `postgresql-12-pguint` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pguint_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pguint` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION pg_jobmon CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_jobmon_17*` | `pg_jobmon_16*` | `pg_jobmon_15*` | `pg_jobmon_14*` | `pg_jobmon_13*` | `pg_jobmon_12*` |
-| `el9` | `pg_jobmon_17*` | `pg_jobmon_16*` | `pg_jobmon_15*` | `pg_jobmon_14*` | `pg_jobmon_13*` | `pg_jobmon_12*` |
-| `d12` | `postgresql-17-pg-jobmon` | `postgresql-16-pg-jobmon` | `postgresql-15-pg-jobmon` | `postgresql-14-pg-jobmon` | `postgresql-13-pg-jobmon` | `postgresql-12-pg-jobmon` |
-| `u22` | `postgresql-17-pg-jobmon` | `postgresql-16-pg-jobmon` | `postgresql-15-pg-jobmon` | `postgresql-14-pg-jobmon` | `postgresql-13-pg-jobmon` | `postgresql-12-pg-jobmon` |
-| `u24` | `postgresql-17-pg-jobmon` | `postgresql-16-pg-jobmon` | `postgresql-15-pg-jobmon` | `postgresql-14-pg-jobmon` | `postgresql-13-pg-jobmon` | `postgresql-12-pg-jobmon` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_jobmon_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.4.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-jobmon` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

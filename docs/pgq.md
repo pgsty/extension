@@ -56,13 +56,10 @@ CREATE EXTENSION pgq;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgq_17*` | `pgq_16*` | `pgq_15*` | `pgq_14*` | `pgq_13*` | `pgq_12*` |
-| `el9` | `pgq_17*` | `pgq_16*` | `pgq_15*` | `pgq_14*` | `pgq_13*` | `pgq_12*` |
-| `d12` | `postgresql-17-pgq3` | `postgresql-16-pgq3` | `postgresql-15-pgq3` | `postgresql-14-pgq3` | `postgresql-13-pgq3` | `postgresql-12-pgq3` |
-| `u22` | `postgresql-17-pgq3` | `postgresql-16-pgq3` | `postgresql-15-pgq3` | `postgresql-14-pgq3` | `postgresql-13-pgq3` | `postgresql-12-pgq3` |
-| `u24` | `postgresql-17-pgq3` | `postgresql-16-pgq3` | `postgresql-15-pgq3` | `postgresql-14-pgq3` | `postgresql-13-pgq3` | `postgresql-12-pgq3` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 3.5.1 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `pgq_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 3.5 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgq3` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

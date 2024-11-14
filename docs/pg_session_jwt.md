@@ -56,13 +56,10 @@ CREATE EXTENSION pg_session_jwt;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_session_jwt_17` | `pg_session_jwt_16` | `pg_session_jwt_15` | `pg_session_jwt_14` | `pg_session_jwt_13` | `pg_session_jwt_12` |
-| `el9` | `pg_session_jwt_17` | `pg_session_jwt_16` | `pg_session_jwt_15` | `pg_session_jwt_14` | `pg_session_jwt_13` | `pg_session_jwt_12` |
-| `d12` | `postgresql-17-pg-session-jwt` | `postgresql-16-pg-session-jwt` | `postgresql-15-pg-session-jwt` | `postgresql-14-pg-session-jwt` | `postgresql-13-pg-session-jwt` | `postgresql-12-pg-session-jwt` |
-| `u22` | `postgresql-17-pg-session-jwt` | `postgresql-16-pg-session-jwt` | `postgresql-15-pg-session-jwt` | `postgresql-14-pg-session-jwt` | `postgresql-13-pg-session-jwt` | `postgresql-12-pg-session-jwt` |
-| `u24` | `postgresql-17-pg-session-jwt` | `postgresql-16-pg-session-jwt` | `postgresql-15-pg-session-jwt` | `postgresql-14-pg-session-jwt` | `postgresql-13-pg-session-jwt` | `postgresql-12-pg-session-jwt` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.1.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_session_jwt_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
+| [DEB](/deb) | 0.1.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-session-jwt` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
 
 
 

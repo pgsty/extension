@@ -60,13 +60,10 @@ CREATE EXTENSION pg_squeeze;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_squeeze_17*` | `pg_squeeze_16*` | `pg_squeeze_15*` | `pg_squeeze_14*` | `pg_squeeze_13*` | `pg_squeeze_12*` |
-| `el9` | `pg_squeeze_17*` | `pg_squeeze_16*` | `pg_squeeze_15*` | `pg_squeeze_14*` | `pg_squeeze_13*` | `pg_squeeze_12*` |
-| `d12` | `postgresql-17-squeeze` | `postgresql-16-squeeze` | `postgresql-15-squeeze` | `postgresql-14-squeeze` | `postgresql-13-squeeze` | `postgresql-12-squeeze` |
-| `u22` | `postgresql-17-squeeze` | `postgresql-16-squeeze` | `postgresql-15-squeeze` | `postgresql-14-squeeze` | `postgresql-13-squeeze` | `postgresql-12-squeeze` |
-| `u24` | `postgresql-17-squeeze` | `postgresql-16-squeeze` | `postgresql-15-squeeze` | `postgresql-14-squeeze` | `postgresql-13-squeeze` | `postgresql-12-squeeze` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `pg_squeeze_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-squeeze` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

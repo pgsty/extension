@@ -56,13 +56,9 @@ CREATE EXTENSION db2_fdw;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `db2_fdw_17*` | `db2_fdw_16*` | `db2_fdw_15*` | `db2_fdw_14*` | `db2_fdw_13*` | `db2_fdw_12*` |
-| `el9` | `db2_fdw_17*` | `db2_fdw_16*` | `db2_fdw_15*` | `db2_fdw_14*` | `db2_fdw_13*` | `db2_fdw_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 6.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `db2_fdw_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION pgdd;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgdd_17` | `pgdd_16` | `pgdd_15` | `pgdd_14` | `pgdd_13` | `pgdd_12` |
-| `el9` | `pgdd_17` | `pgdd_16` | `pgdd_15` | `pgdd_14` | `pgdd_13` | `pgdd_12` |
-| `d12` | `postgresql-17-pgdd` | `postgresql-16-pgdd` | `postgresql-15-pgdd` | `postgresql-14-pgdd` | `postgresql-13-pgdd` | `postgresql-12-pgdd` |
-| `u22` | `postgresql-17-pgdd` | `postgresql-16-pgdd` | `postgresql-15-pgdd` | `postgresql-14-pgdd` | `postgresql-13-pgdd` | `postgresql-12-pgdd` |
-| `u24` | `postgresql-17-pgdd` | `postgresql-16-pgdd` | `postgresql-15-pgdd` | `postgresql-14-pgdd` | `postgresql-13-pgdd` | `postgresql-12-pgdd` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.5.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgdd_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.5.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgdd` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

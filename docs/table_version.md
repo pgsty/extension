@@ -56,13 +56,10 @@ CREATE EXTENSION table_version CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `table_version_17*` | `table_version_16*` | `table_version_15*` | `table_version_14*` | `table_version_13*` | `table_version_12*` |
-| `el9` | `table_version_17*` | `table_version_16*` | `table_version_15*` | `table_version_14*` | `table_version_13*` | `table_version_12*` |
-| `d12` | `postgresql-17-tableversion` | `postgresql-16-tableversion` | `postgresql-15-tableversion` | `postgresql-14-tableversion` | `postgresql-13-tableversion` | `postgresql-12-tableversion` |
-| `u22` | `postgresql-17-tableversion` | `postgresql-16-tableversion` | `postgresql-15-tableversion` | `postgresql-14-tableversion` | `postgresql-13-tableversion` | `postgresql-12-tableversion` |
-| `u24` | `postgresql-17-tableversion` | `postgresql-16-tableversion` | `postgresql-15-tableversion` | `postgresql-14-tableversion` | `postgresql-13-tableversion` | `postgresql-12-tableversion` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.10.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `table_version_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.10.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-tableversion` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

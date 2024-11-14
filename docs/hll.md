@@ -56,13 +56,10 @@ CREATE EXTENSION hll;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `hll_17*` | `hll_16*` | `hll_15*` | `hll_14*` | `hll_13*` | `hll_12*` |
-| `el9` | `hll_17*` | `hll_16*` | `hll_15*` | `hll_14*` | `hll_13*` | `hll_12*` |
-| `d12` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` | `postgresql-12-hll` |
-| `u22` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` | `postgresql-12-hll` |
-| `u24` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` | `postgresql-12-hll` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.18 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `hll_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.18 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-hll` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

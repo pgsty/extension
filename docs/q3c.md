@@ -56,13 +56,10 @@ CREATE EXTENSION q3c;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `q3c_17*` | `q3c_16*` | `q3c_15*` | `q3c_14*` | `q3c_13*` | `q3c_12*` |
-| `el9` | `q3c_17*` | `q3c_16*` | `q3c_15*` | `q3c_14*` | `q3c_13*` | `q3c_12*` |
-| `d12` | `postgresql-17-q3c` | `postgresql-16-q3c` | `postgresql-15-q3c` | `postgresql-14-q3c` | `postgresql-13-q3c` | `postgresql-12-q3c` |
-| `u22` | `postgresql-17-q3c` | `postgresql-16-q3c` | `postgresql-15-q3c` | `postgresql-14-q3c` | `postgresql-13-q3c` | `postgresql-12-q3c` |
-| `u24` | `postgresql-17-q3c` | `postgresql-16-q3c` | `postgresql-15-q3c` | `postgresql-14-q3c` | `postgresql-13-q3c` | `postgresql-12-q3c` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.0.1 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `q3c_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 2.0.1 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-q3c` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

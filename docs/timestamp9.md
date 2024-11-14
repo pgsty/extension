@@ -56,13 +56,10 @@ CREATE EXTENSION timestamp9;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `timestamp9_17*` | `timestamp9_16*` | `timestamp9_15*` | `timestamp9_14*` | `timestamp9_13*` | `timestamp9_12*` |
-| `el9` | `timestamp9_17*` | `timestamp9_16*` | `timestamp9_15*` | `timestamp9_14*` | `timestamp9_13*` | `timestamp9_12*` |
-| `d12` | `postgresql-17-timestamp9` | `postgresql-16-timestamp9` | `postgresql-15-timestamp9` | `postgresql-14-timestamp9` | `postgresql-13-timestamp9` | `postgresql-12-timestamp9` |
-| `u22` | `postgresql-17-timestamp9` | `postgresql-16-timestamp9` | `postgresql-15-timestamp9` | `postgresql-14-timestamp9` | `postgresql-13-timestamp9` | `postgresql-12-timestamp9` |
-| `u24` | `postgresql-17-timestamp9` | `postgresql-16-timestamp9` | `postgresql-15-timestamp9` | `postgresql-14-timestamp9` | `postgresql-13-timestamp9` | `postgresql-12-timestamp9` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `timestamp9_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.4.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-timestamp9` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

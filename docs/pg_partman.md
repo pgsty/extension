@@ -56,13 +56,10 @@ CREATE EXTENSION pg_partman;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_partman_17*` | `pg_partman_16*` | `pg_partman_15*` | `pg_partman_14*` | `pg_partman_13*` | `pg_partman_12*` |
-| `el9` | `pg_partman_17*` | `pg_partman_16*` | `pg_partman_15*` | `pg_partman_14*` | `pg_partman_13*` | `pg_partman_12*` |
-| `d12` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | `postgresql-13-partman` | `postgresql-12-partman` |
-| `u22` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | `postgresql-13-partman` | `postgresql-12-partman` |
-| `u24` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | `postgresql-13-partman` | `postgresql-12-partman` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 5.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_partman_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 5.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-partman` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

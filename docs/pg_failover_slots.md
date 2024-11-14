@@ -60,13 +60,10 @@ CREATE EXTENSION pg_failover_slots;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_failover_slots_17*` | `pg_failover_slots_16*` | `pg_failover_slots_15*` | `pg_failover_slots_14*` | `pg_failover_slots_13*` | `pg_failover_slots_12*` |
-| `el9` | `pg_failover_slots_17*` | `pg_failover_slots_16*` | `pg_failover_slots_15*` | `pg_failover_slots_14*` | `pg_failover_slots_13*` | `pg_failover_slots_12*` |
-| `d12` | `postgresql-17-pg-failover-slots` | `postgresql-16-pg-failover-slots` | `postgresql-15-pg-failover-slots` | `postgresql-14-pg-failover-slots` | `postgresql-13-pg-failover-slots` | `postgresql-12-pg-failover-slots` |
-| `u22` | `postgresql-17-pg-failover-slots` | `postgresql-16-pg-failover-slots` | `postgresql-15-pg-failover-slots` | `postgresql-14-pg-failover-slots` | `postgresql-13-pg-failover-slots` | `postgresql-12-pg-failover-slots` |
-| `u24` | `postgresql-17-pg-failover-slots` | `postgresql-16-pg-failover-slots` | `postgresql-15-pg-failover-slots` | `postgresql-14-pg-failover-slots` | `postgresql-13-pg-failover-slots` | `postgresql-12-pg-failover-slots` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_failover_slots_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-failover-slots` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

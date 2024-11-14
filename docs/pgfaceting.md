@@ -56,13 +56,10 @@ CREATE EXTENSION pgfaceting CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgfaceting_17` | `pgfaceting_16` | `pgfaceting_15` | `pgfaceting_14` | `pgfaceting_13` | `pgfaceting_12` |
-| `el9` | `pgfaceting_17` | `pgfaceting_16` | `pgfaceting_15` | `pgfaceting_14` | `pgfaceting_13` | `pgfaceting_12` |
-| `d12` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | `postgresql-13-pgfaceting` | `postgresql-12-pgfaceting` |
-| `u22` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | `postgresql-13-pgfaceting` | `postgresql-12-pgfaceting` |
-| `u24` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | `postgresql-13-pgfaceting` | `postgresql-12-pgfaceting` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.2.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgfaceting_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.2.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgfaceting` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION sslutils;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `sslutils_17*` | `sslutils_16*` | `sslutils_15*` | `sslutils_14*` | `sslutils_13*` | `sslutils_12*` |
-| `el9` | `sslutils_17*` | `sslutils_16*` | `sslutils_15*` | `sslutils_14*` | `sslutils_13*` | `sslutils_12*` |
-| `d12` | `postgresql-17-sslutils` | `postgresql-16-sslutils` | `postgresql-15-sslutils` | `postgresql-14-sslutils` | `postgresql-13-sslutils` | `postgresql-12-sslutils` |
-| `u22` | `postgresql-17-sslutils` | `postgresql-16-sslutils` | `postgresql-15-sslutils` | `postgresql-14-sslutils` | `postgresql-13-sslutils` | `postgresql-12-sslutils` |
-| `u24` | `postgresql-17-sslutils` | `postgresql-16-sslutils` | `postgresql-15-sslutils` | `postgresql-14-sslutils` | `postgresql-13-sslutils` | `postgresql-12-sslutils` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `sslutils_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-sslutils` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

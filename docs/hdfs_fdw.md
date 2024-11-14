@@ -56,13 +56,9 @@ CREATE EXTENSION hdfs_fdw;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `hdfs_fdw_17*` | `hdfs_fdw_16*` | `hdfs_fdw_15*` | `hdfs_fdw_14*` | `hdfs_fdw_13*` | `hdfs_fdw_12*` |
-| `el9` | `hdfs_fdw_17*` | `hdfs_fdw_16*` | `hdfs_fdw_15*` | `hdfs_fdw_14*` | `hdfs_fdw_13*` | `hdfs_fdw_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.0.5 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `hdfs_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

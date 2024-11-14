@@ -56,13 +56,10 @@ CREATE EXTENSION hstore_pllua CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `` | `` | `` | `` | `` | `` |
-| `el9` | `` | `` | `` | `` | `` | `` |
-| `d12` | `postgresql-17-pllua` | `postgresql-16-pllua` | `postgresql-15-pllua` | `postgresql-14-pllua` | `postgresql-13-pllua` | `postgresql-12-pllua` |
-| `u22` | `postgresql-17-pllua` | `postgresql-16-pllua` | `postgresql-15-pllua` | `postgresql-14-pllua` | `postgresql-13-pllua` | `postgresql-12-pllua` |
-| `u24` | `postgresql-17-pllua` | `postgresql-16-pllua` | `postgresql-15-pllua` | `postgresql-14-pllua` | `postgresql-13-pllua` | `postgresql-12-pllua` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| Distro-pllua | 2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pllua_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro-pllua | 2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pllua` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

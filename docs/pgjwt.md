@@ -56,13 +56,10 @@ CREATE EXTENSION pgjwt;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgjwt_17*` | `pgjwt_16*` | `pgjwt_15*` | `pgjwt_14*` | `pgjwt_13*` | `pgjwt_12*` |
-| `el9` | `pgjwt_17*` | `pgjwt_16*` | `pgjwt_15*` | `pgjwt_14*` | `pgjwt_13*` | `pgjwt_12*` |
-| `d12` | `postgresql-17-pgjwt` | `postgresql-16-pgjwt` | `postgresql-15-pgjwt` | `postgresql-14-pgjwt` | `postgresql-13-pgjwt` | `postgresql-12-pgjwt` |
-| `u22` | `postgresql-17-pgjwt` | `postgresql-16-pgjwt` | `postgresql-15-pgjwt` | `postgresql-14-pgjwt` | `postgresql-13-pgjwt` | `postgresql-12-pgjwt` |
-| `u24` | `postgresql-17-pgjwt` | `postgresql-16-pgjwt` | `postgresql-15-pgjwt` | `postgresql-14-pgjwt` | `postgresql-13-pgjwt` | `postgresql-12-pgjwt` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgjwt_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgjwt` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

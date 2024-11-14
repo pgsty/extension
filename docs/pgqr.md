@@ -56,13 +56,10 @@ CREATE EXTENSION pgqr;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgqr_17*` | `pgqr_16*` | `pgqr_15*` | `pgqr_14*` | `pgqr_13*` | `pgqr_12*` |
-| `el9` | `pgqr_17*` | `pgqr_16*` | `pgqr_15*` | `pgqr_14*` | `pgqr_13*` | `pgqr_12*` |
-| `d12` | `postgresql-17-pgqr` | `postgresql-16-pgqr` | `postgresql-15-pgqr` | `postgresql-14-pgqr` | `postgresql-13-pgqr` | `postgresql-12-pgqr` |
-| `u22` | `postgresql-17-pgqr` | `postgresql-16-pgqr` | `postgresql-15-pgqr` | `postgresql-14-pgqr` | `postgresql-13-pgqr` | `postgresql-12-pgqr` |
-| `u24` | `postgresql-17-pgqr` | `postgresql-16-pgqr` | `postgresql-15-pgqr` | `postgresql-14-pgqr` | `postgresql-13-pgqr` | `postgresql-12-pgqr` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgqr_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgqr` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

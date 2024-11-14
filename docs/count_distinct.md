@@ -56,13 +56,10 @@ CREATE EXTENSION count_distinct;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `count_distinct_17*` | `count_distinct_16*` | `count_distinct_15*` | `count_distinct_14*` | `count_distinct_13*` | `count_distinct_12*` |
-| `el9` | `count_distinct_17*` | `count_distinct_16*` | `count_distinct_15*` | `count_distinct_14*` | `count_distinct_13*` | `count_distinct_12*` |
-| `d12` | `postgresql-17-count-distinct` | `postgresql-16-count-distinct` | `postgresql-15-count-distinct` | `postgresql-14-count-distinct` | `postgresql-13-count-distinct` | `postgresql-12-count-distinct` |
-| `u22` | `postgresql-17-count-distinct` | `postgresql-16-count-distinct` | `postgresql-15-count-distinct` | `postgresql-14-count-distinct` | `postgresql-13-count-distinct` | `postgresql-12-count-distinct` |
-| `u24` | `postgresql-17-count-distinct` | `postgresql-16-count-distinct` | `postgresql-15-count-distinct` | `postgresql-14-count-distinct` | `postgresql-13-count-distinct` | `postgresql-12-count-distinct` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 3.0.1 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `count_distinct_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 3.0.2 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-count-distinct` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

@@ -56,13 +56,9 @@ CREATE EXTENSION pg_dbms_metadata;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_dbms_metadata_17*` | `pg_dbms_metadata_16*` | `pg_dbms_metadata_15*` | `pg_dbms_metadata_14*` | `pg_dbms_metadata_13*` | `pg_dbms_metadata_12*` |
-| `el9` | `pg_dbms_metadata_17*` | `pg_dbms_metadata_16*` | `pg_dbms_metadata_15*` | `pg_dbms_metadata_14*` | `pg_dbms_metadata_13*` | `pg_dbms_metadata_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_dbms_metadata_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION pg_bigm;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_bigm_17*` | `pg_bigm_16*` | `pg_bigm_15*` | `pg_bigm_14*` | `pg_bigm_13*` | `pg_bigm_12*` |
-| `el9` | `pg_bigm_17*` | `pg_bigm_16*` | `pg_bigm_15*` | `pg_bigm_14*` | `pg_bigm_13*` | `pg_bigm_12*` |
-| `d12` | `postgresql-17-pg-bigm` | `postgresql-16-pg-bigm` | `postgresql-15-pg-bigm` | `postgresql-14-pg-bigm` | `postgresql-13-pg-bigm` | `postgresql-12-pg-bigm` |
-| `u22` | `postgresql-17-pg-bigm` | `postgresql-16-pg-bigm` | `postgresql-15-pg-bigm` | `postgresql-14-pg-bigm` | `postgresql-13-pg-bigm` | `postgresql-12-pg-bigm` |
-| `u24` | `postgresql-17-pg-bigm` | `postgresql-16-pg-bigm` | `postgresql-15-pg-bigm` | `postgresql-14-pg-bigm` | `postgresql-13-pg-bigm` | `postgresql-12-pg-bigm` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_bigm_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-bigm` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

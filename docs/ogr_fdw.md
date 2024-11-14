@@ -56,13 +56,10 @@ CREATE EXTENSION ogr_fdw;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `ogr_fdw_17*` | `ogr_fdw_16*` | `ogr_fdw_15*` | `ogr_fdw_14*` | `ogr_fdw_13*` | `ogr_fdw_12*` |
-| `el9` | `ogr_fdw_17*` | `ogr_fdw_16*` | `ogr_fdw_15*` | `ogr_fdw_14*` | `ogr_fdw_13*` | `ogr_fdw_12*` |
-| `d12` | `postgresql-17-ogr-fdw` | `postgresql-16-ogr-fdw` | `postgresql-15-ogr-fdw` | `postgresql-14-ogr-fdw` | `postgresql-13-ogr-fdw` | `postgresql-12-ogr-fdw` |
-| `u22` | `postgresql-17-ogr-fdw` | `postgresql-16-ogr-fdw` | `postgresql-15-ogr-fdw` | `postgresql-14-ogr-fdw` | `postgresql-13-ogr-fdw` | `postgresql-12-ogr-fdw` |
-| `u24` | `postgresql-17-ogr-fdw` | `postgresql-16-ogr-fdw` | `postgresql-15-ogr-fdw` | `postgresql-14-ogr-fdw` | `postgresql-13-ogr-fdw` | `postgresql-12-ogr-fdw` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `ogr_fdw_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-ogr-fdw` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

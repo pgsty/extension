@@ -56,13 +56,10 @@ CREATE EXTENSION system_stats;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `system_stats_17*` | `system_stats_16*` | `system_stats_15*` | `system_stats_14*` | `system_stats_13*` | `system_stats_12*` |
-| `el9` | `system_stats_17*` | `system_stats_16*` | `system_stats_15*` | `system_stats_14*` | `system_stats_13*` | `system_stats_12*` |
-| `d12` | `postgresql-17-system-stats` | `postgresql-16-system-stats` | `postgresql-15-system-stats` | `postgresql-14-system-stats` | `postgresql-13-system-stats` | `postgresql-12-system-stats` |
-| `u22` | `postgresql-17-system-stats` | `postgresql-16-system-stats` | `postgresql-15-system-stats` | `postgresql-14-system-stats` | `postgresql-13-system-stats` | `postgresql-12-system-stats` |
-| `u24` | `postgresql-17-system-stats` | `postgresql-16-system-stats` | `postgresql-15-system-stats` | `postgresql-14-system-stats` | `postgresql-13-system-stats` | `postgresql-12-system-stats` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `system_stats_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-system-stats` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

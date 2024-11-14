@@ -56,13 +56,10 @@ CREATE EXTENSION ddlx;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `ddlx_17*` | `ddlx_16*` | `ddlx_15*` | `ddlx_14*` | `ddlx_13*` | `ddlx_12*` |
-| `el9` | `ddlx_17*` | `ddlx_16*` | `ddlx_15*` | `ddlx_14*` | `ddlx_13*` | `ddlx_12*` |
-| `d12` | `postgresql-17-ddlx` | `postgresql-16-ddlx` | `postgresql-15-ddlx` | `postgresql-14-ddlx` | `postgresql-13-ddlx` | `postgresql-12-ddlx` |
-| `u22` | `postgresql-17-ddlx` | `postgresql-16-ddlx` | `postgresql-15-ddlx` | `postgresql-14-ddlx` | `postgresql-13-ddlx` | `postgresql-12-ddlx` |
-| `u24` | `postgresql-17-ddlx` | `postgresql-16-ddlx` | `postgresql-15-ddlx` | `postgresql-14-ddlx` | `postgresql-13-ddlx` | `postgresql-12-ddlx` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.27 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `ddlx_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.28 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-ddlx` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

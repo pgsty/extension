@@ -56,13 +56,10 @@ CREATE EXTENSION hunspell_pt_pt;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `hunspell_pt_pt_17` | `hunspell_pt_pt_16` | `hunspell_pt_pt_15` | `hunspell_pt_pt_14` | `hunspell_pt_pt_13` | `hunspell_pt_pt_12` |
-| `el9` | `hunspell_pt_pt_17` | `hunspell_pt_pt_16` | `hunspell_pt_pt_15` | `hunspell_pt_pt_14` | `hunspell_pt_pt_13` | `hunspell_pt_pt_12` |
-| `d12` | `postgresql-17-hunspell-pt-pt` | `postgresql-16-hunspell-pt-pt` | `postgresql-15-hunspell-pt-pt` | `postgresql-14-hunspell-pt-pt` | `postgresql-13-hunspell-pt-pt` | `postgresql-12-hunspell-pt-pt` |
-| `u22` | `postgresql-17-hunspell-pt-pt` | `postgresql-16-hunspell-pt-pt` | `postgresql-15-hunspell-pt-pt` | `postgresql-14-hunspell-pt-pt` | `postgresql-13-hunspell-pt-pt` | `postgresql-12-hunspell-pt-pt` |
-| `u24` | `postgresql-17-hunspell-pt-pt` | `postgresql-16-hunspell-pt-pt` | `postgresql-15-hunspell-pt-pt` | `postgresql-14-hunspell-pt-pt` | `postgresql-13-hunspell-pt-pt` | `postgresql-12-hunspell-pt-pt` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `hunspell_pt_pt_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-hunspell-pt-pt` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

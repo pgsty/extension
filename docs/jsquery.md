@@ -56,13 +56,10 @@ CREATE EXTENSION jsquery;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `jsquery_17*` | `jsquery_16*` | `jsquery_15*` | `jsquery_14*` | `jsquery_13*` | `jsquery_12*` |
-| `el9` | `jsquery_17*` | `jsquery_16*` | `jsquery_15*` | `jsquery_14*` | `jsquery_13*` | `jsquery_12*` |
-| `d12` | `postgresql-17-jsquery` | `postgresql-16-jsquery` | `postgresql-15-jsquery` | `postgresql-14-jsquery` | `postgresql-13-jsquery` | `postgresql-12-jsquery` |
-| `u22` | `postgresql-17-jsquery` | `postgresql-16-jsquery` | `postgresql-15-jsquery` | `postgresql-14-jsquery` | `postgresql-13-jsquery` | `postgresql-12-jsquery` |
-| `u24` | `postgresql-17-jsquery` | `postgresql-16-jsquery` | `postgresql-15-jsquery` | `postgresql-14-jsquery` | `postgresql-13-jsquery` | `postgresql-12-jsquery` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `jsquery_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |
+| [DEB](/deb) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-jsquery` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |
 
 
 

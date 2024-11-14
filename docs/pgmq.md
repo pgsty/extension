@@ -56,13 +56,10 @@ CREATE EXTENSION pgmq;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgmq_17` | `pgmq_16` | `pgmq_15` | `pgmq_14` | `pgmq_13` | `pgmq_12` |
-| `el9` | `pgmq_17` | `pgmq_16` | `pgmq_15` | `pgmq_14` | `pgmq_13` | `pgmq_12` |
-| `d12` | `postgresql-17-pgmq` | `postgresql-16-pgmq` | `postgresql-15-pgmq` | `postgresql-14-pgmq` | `postgresql-13-pgmq` | `postgresql-12-pgmq` |
-| `u22` | `postgresql-17-pgmq` | `postgresql-16-pgmq` | `postgresql-15-pgmq` | `postgresql-14-pgmq` | `postgresql-13-pgmq` | `postgresql-12-pgmq` |
-| `u24` | `postgresql-17-pgmq` | `postgresql-16-pgmq` | `postgresql-15-pgmq` | `postgresql-14-pgmq` | `postgresql-13-pgmq` | `postgresql-12-pgmq` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgmq_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.4.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgmq` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ shared_preload_libraries = 'pg_crash'; # add this extension to postgresql.conf
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_crash_17*` | `pg_crash_16*` | `pg_crash_15*` | `pg_crash_14*` | `pg_crash_13*` | `pg_crash_12*` |
-| `el9` | `pg_crash_17*` | `pg_crash_16*` | `pg_crash_15*` | `pg_crash_14*` | `pg_crash_13*` | `pg_crash_12*` |
-| `d12` | `postgresql-17-pg-crash` | `postgresql-16-pg-crash` | `postgresql-15-pg-crash` | `postgresql-14-pg-crash` | `postgresql-13-pg-crash` | `postgresql-12-pg-crash` |
-| `u22` | `postgresql-17-pg-crash` | `postgresql-16-pg-crash` | `postgresql-15-pg-crash` | `postgresql-14-pg-crash` | `postgresql-13-pg-crash` | `postgresql-12-pg-crash` |
-| `u24` | `postgresql-17-pg-crash` | `postgresql-16-pg-crash` | `postgresql-15-pg-crash` | `postgresql-14-pg-crash` | `postgresql-13-pg-crash` | `postgresql-12-pg-crash` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_crash_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-crash` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

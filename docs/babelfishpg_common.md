@@ -56,13 +56,10 @@ CREATE EXTENSION babelfishpg_common;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` |
-| `el9` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` |
-| `d12` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` |
-| `u22` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` |
-| `u24` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 3.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-common*` |  |  | **<span class="tcpurple">✔</span>** |  |  |  |  |
+| [DEB](/deb) | 3.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-common` |  |  | **<span class="tcpurple">✔</span>** |  |  |  |  |
 
 
 

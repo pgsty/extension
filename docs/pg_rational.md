@@ -56,13 +56,10 @@ CREATE EXTENSION pg_rational;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_rational_17*` | `pg_rational_16*` | `pg_rational_15*` | `pg_rational_14*` | `pg_rational_13*` | `pg_rational_12*` |
-| `el9` | `pg_rational_17*` | `pg_rational_16*` | `pg_rational_15*` | `pg_rational_14*` | `pg_rational_13*` | `pg_rational_12*` |
-| `d12` | `postgresql-17-rational` | `postgresql-16-rational` | `postgresql-15-rational` | `postgresql-14-rational` | `postgresql-13-rational` | `postgresql-12-rational` |
-| `u22` | `postgresql-17-rational` | `postgresql-16-rational` | `postgresql-15-rational` | `postgresql-14-rational` | `postgresql-13-rational` | `postgresql-12-rational` |
-| `u24` | `postgresql-17-rational` | `postgresql-16-rational` | `postgresql-15-rational` | `postgresql-14-rational` | `postgresql-13-rational` | `postgresql-12-rational` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_rational_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-rational` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

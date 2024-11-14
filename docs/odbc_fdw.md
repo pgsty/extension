@@ -56,13 +56,9 @@ CREATE EXTENSION odbc_fdw;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `odbc_fdw_17*` | `odbc_fdw_16*` | `odbc_fdw_15*` | `odbc_fdw_14*` | `odbc_fdw_13*` | `odbc_fdw_12*` |
-| `el9` | `odbc_fdw_17*` | `odbc_fdw_16*` | `odbc_fdw_15*` | `odbc_fdw_14*` | `odbc_fdw_13*` | `odbc_fdw_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `odbc_fdw_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  | `unixODBC` |
 
 
 

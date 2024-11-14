@@ -56,13 +56,10 @@ CREATE EXTENSION vectorscale CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgvectorscale_17` | `pgvectorscale_16` | `pgvectorscale_15` | `pgvectorscale_14` | `pgvectorscale_13` | `pgvectorscale_12` |
-| `el9` | `pgvectorscale_17` | `pgvectorscale_16` | `pgvectorscale_15` | `pgvectorscale_14` | `pgvectorscale_13` | `pgvectorscale_12` |
-| `d12` | `postgresql-17-pgvectorscale` | `postgresql-16-pgvectorscale` | `postgresql-15-pgvectorscale` | `postgresql-14-pgvectorscale` | `postgresql-13-pgvectorscale` | `postgresql-12-pgvectorscale` |
-| `u22` | `postgresql-17-pgvectorscale` | `postgresql-16-pgvectorscale` | `postgresql-15-pgvectorscale` | `postgresql-14-pgvectorscale` | `postgresql-13-pgvectorscale` | `postgresql-12-pgvectorscale` |
-| `u24` | `postgresql-17-pgvectorscale` | `postgresql-16-pgvectorscale` | `postgresql-15-pgvectorscale` | `postgresql-14-pgvectorscale` | `postgresql-13-pgvectorscale` | `postgresql-12-pgvectorscale` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.4.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgvectorscale_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| [DEB](/deb) | 0.4.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgvectorscale` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
 
 
 

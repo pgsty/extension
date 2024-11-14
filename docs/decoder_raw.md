@@ -52,13 +52,10 @@
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `decoder_raw_17*` | `decoder_raw_16*` | `decoder_raw_15*` | `decoder_raw_14*` | `decoder_raw_13*` | `decoder_raw_12*` |
-| `el9` | `decoder_raw_17*` | `decoder_raw_16*` | `decoder_raw_15*` | `decoder_raw_14*` | `decoder_raw_13*` | `decoder_raw_12*` |
-| `d12` | `postgresql-17-decoder-raw` | `postgresql-16-decoder-raw` | `postgresql-15-decoder-raw` | `postgresql-14-decoder-raw` | `postgresql-13-decoder-raw` | `postgresql-12-decoder-raw` |
-| `u22` | `postgresql-17-decoder-raw` | `postgresql-16-decoder-raw` | `postgresql-15-decoder-raw` | `postgresql-14-decoder-raw` | `postgresql-13-decoder-raw` | `postgresql-12-decoder-raw` |
-| `u24` | `postgresql-17-decoder-raw` | `postgresql-16-decoder-raw` | `postgresql-15-decoder-raw` | `postgresql-14-decoder-raw` | `postgresql-13-decoder-raw` | `postgresql-12-decoder-raw` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `decoder_raw_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-decoder-raw` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

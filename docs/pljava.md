@@ -56,13 +56,10 @@ CREATE EXTENSION pljava;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pljava_17*` | `pljava_16*` | `pljava_15*` | `pljava_14*` | `pljava_13*` | `pljava_12*` |
-| `el9` | `pljava_17*` | `pljava_16*` | `pljava_15*` | `pljava_14*` | `pljava_13*` | `pljava_12*` |
-| `d12` | `postgresql-17-pljava` | `postgresql-16-pljava` | `postgresql-15-pljava` | `postgresql-14-pljava` | `postgresql-13-pljava` | `postgresql-12-pljava` |
-| `u22` | `postgresql-17-pljava` | `postgresql-16-pljava` | `postgresql-15-pljava` | `postgresql-14-pljava` | `postgresql-13-pljava` | `postgresql-12-pljava` |
-| `u24` | `postgresql-17-pljava` | `postgresql-16-pljava` | `postgresql-15-pljava` | `postgresql-14-pljava` | `postgresql-13-pljava` | `postgresql-12-pljava` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.6.6 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pljava_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.6.7 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pljava` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

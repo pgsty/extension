@@ -56,13 +56,10 @@ CREATE EXTENSION zstd;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_zstd_17*` | `pg_zstd_16*` | `pg_zstd_15*` | `pg_zstd_14*` | `pg_zstd_13*` | `pg_zstd_12*` |
-| `el9` | `pg_zstd_17*` | `pg_zstd_16*` | `pg_zstd_15*` | `pg_zstd_14*` | `pg_zstd_13*` | `pg_zstd_12*` |
-| `d12` | `postgresql-17-pg-zstd` | `postgresql-16-pg-zstd` | `postgresql-15-pg-zstd` | `postgresql-14-pg-zstd` | `postgresql-13-pg-zstd` | `postgresql-12-pg-zstd` |
-| `u22` | `postgresql-17-pg-zstd` | `postgresql-16-pg-zstd` | `postgresql-15-pg-zstd` | `postgresql-14-pg-zstd` | `postgresql-13-pg-zstd` | `postgresql-12-pg-zstd` |
-| `u24` | `postgresql-17-pg-zstd` | `postgresql-16-pg-zstd` | `postgresql-15-pg-zstd` | `postgresql-14-pg-zstd` | `postgresql-13-pg-zstd` | `postgresql-12-pg-zstd` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1.0 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_zstd_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.1.0 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-zstd` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

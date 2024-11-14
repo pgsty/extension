@@ -56,13 +56,10 @@ CREATE EXTENSION roaringbitmap;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_roaringbitmap_17*` | `pg_roaringbitmap_16*` | `pg_roaringbitmap_15*` | `pg_roaringbitmap_14*` | `pg_roaringbitmap_13*` | `pg_roaringbitmap_12*` |
-| `el9` | `pg_roaringbitmap_17*` | `pg_roaringbitmap_16*` | `pg_roaringbitmap_15*` | `pg_roaringbitmap_14*` | `pg_roaringbitmap_13*` | `pg_roaringbitmap_12*` |
-| `d12` | `postgresql-17-roaringbitmap` | `postgresql-16-roaringbitmap` | `postgresql-15-roaringbitmap` | `postgresql-14-roaringbitmap` | `postgresql-13-roaringbitmap` | `postgresql-12-roaringbitmap` |
-| `u22` | `postgresql-17-roaringbitmap` | `postgresql-16-roaringbitmap` | `postgresql-15-roaringbitmap` | `postgresql-14-roaringbitmap` | `postgresql-13-roaringbitmap` | `postgresql-12-roaringbitmap` |
-| `u24` | `postgresql-17-roaringbitmap` | `postgresql-16-roaringbitmap` | `postgresql-15-roaringbitmap` | `postgresql-14-roaringbitmap` | `postgresql-13-roaringbitmap` | `postgresql-12-roaringbitmap` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.5 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_roaringbitmap_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.5 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-roaringbitmap` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

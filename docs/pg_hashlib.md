@@ -56,13 +56,10 @@ CREATE EXTENSION pg_hashlib;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_hashlib_17` | `pg_hashlib_16` | `pg_hashlib_15` | `pg_hashlib_14` | `pg_hashlib_13` | `pg_hashlib_12` |
-| `el9` | `pg_hashlib_17` | `pg_hashlib_16` | `pg_hashlib_15` | `pg_hashlib_14` | `pg_hashlib_13` | `pg_hashlib_12` |
-| `d12` | `postgresql-17-pg-hashlib` | `postgresql-16-pg-hashlib` | `postgresql-15-pg-hashlib` | `postgresql-14-pg-hashlib` | `postgresql-13-pg-hashlib` | `postgresql-12-pg-hashlib` |
-| `u22` | `postgresql-17-pg-hashlib` | `postgresql-16-pg-hashlib` | `postgresql-15-pg-hashlib` | `postgresql-14-pg-hashlib` | `postgresql-13-pg-hashlib` | `postgresql-12-pg-hashlib` |
-| `u24` | `postgresql-17-pg-hashlib` | `postgresql-16-pg-hashlib` | `postgresql-15-pg-hashlib` | `postgresql-14-pg-hashlib` | `postgresql-13-pg-hashlib` | `postgresql-12-pg-hashlib` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_hashlib_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-hashlib` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

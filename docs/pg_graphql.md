@@ -56,13 +56,10 @@ CREATE EXTENSION pg_graphql;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_graphql_17` | `pg_graphql_16` | `pg_graphql_15` | `pg_graphql_14` | `pg_graphql_13` | `pg_graphql_12` |
-| `el9` | `pg_graphql_17` | `pg_graphql_16` | `pg_graphql_15` | `pg_graphql_14` | `pg_graphql_13` | `pg_graphql_12` |
-| `d12` | `postgresql-17-pg-graphql` | `postgresql-16-pg-graphql` | `postgresql-15-pg-graphql` | `postgresql-14-pg-graphql` | `postgresql-13-pg-graphql` | `postgresql-12-pg-graphql` |
-| `u22` | `postgresql-17-pg-graphql` | `postgresql-16-pg-graphql` | `postgresql-15-pg-graphql` | `postgresql-14-pg-graphql` | `postgresql-13-pg-graphql` | `postgresql-12-pg-graphql` |
-| `u24` | `postgresql-17-pg-graphql` | `postgresql-16-pg-graphql` | `postgresql-15-pg-graphql` | `postgresql-14-pg-graphql` | `postgresql-13-pg-graphql` | `postgresql-12-pg-graphql` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.5.9 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_graphql_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
+| [DEB](/deb) | 1.5.9 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-graphql` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
 
 
 

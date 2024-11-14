@@ -56,13 +56,10 @@ CREATE EXTENSION pg_summarize;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_summarize_17` | `pg_summarize_16` | `pg_summarize_15` | `pg_summarize_14` | `pg_summarize_13` | `pg_summarize_12` |
-| `el9` | `pg_summarize_17` | `pg_summarize_16` | `pg_summarize_15` | `pg_summarize_14` | `pg_summarize_13` | `pg_summarize_12` |
-| `d12` | `postgresql-17-pg-summarize` | `postgresql-16-pg-summarize` | `postgresql-15-pg-summarize` | `postgresql-14-pg-summarize` | `postgresql-13-pg-summarize` | `postgresql-12-pg-summarize` |
-| `u22` | `postgresql-17-pg-summarize` | `postgresql-16-pg-summarize` | `postgresql-15-pg-summarize` | `postgresql-14-pg-summarize` | `postgresql-13-pg-summarize` | `postgresql-12-pg-summarize` |
-| `u24` | `postgresql-17-pg-summarize` | `postgresql-16-pg-summarize` | `postgresql-15-pg-summarize` | `postgresql-14-pg-summarize` | `postgresql-13-pg-summarize` | `postgresql-12-pg-summarize` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_summarize_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-summarize` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

@@ -56,13 +56,9 @@ CREATE EXTENSION mobilitydb CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `` | `` | `` | `` | `` | `` |
-| `el9` | `` | `` | `` | `` | `` | `` |
-| `d12` | `postgresql-17-mobilitydb` | `postgresql-16-mobilitydb` | `postgresql-15-mobilitydb` | `postgresql-14-mobilitydb` | `postgresql-13-mobilitydb` | `postgresql-12-mobilitydb` |
-| `u22` | `postgresql-17-mobilitydb` | `postgresql-16-mobilitydb` | `postgresql-15-mobilitydb` | `postgresql-14-mobilitydb` | `postgresql-13-mobilitydb` | `postgresql-12-mobilitydb` |
-| `u24` | `postgresql-17-mobilitydb` | `postgresql-16-mobilitydb` | `postgresql-15-mobilitydb` | `postgresql-14-mobilitydb` | `postgresql-13-mobilitydb` | `postgresql-12-mobilitydb` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [DEB](/deb) | 1.1.1 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-mobilitydb` |  |  |  |  |  |  |  |
 
 
 

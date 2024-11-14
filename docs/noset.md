@@ -60,13 +60,10 @@ CREATE EXTENSION noset;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `noset_17*` | `noset_16*` | `noset_15*` | `noset_14*` | `noset_13*` | `noset_12*` |
-| `el9` | `noset_17*` | `noset_16*` | `noset_15*` | `noset_14*` | `noset_13*` | `noset_12*` |
-| `d12` | `postgresql-17-noset` | `postgresql-16-noset` | `postgresql-15-noset` | `postgresql-14-noset` | `postgresql-13-noset` | `postgresql-12-noset` |
-| `u22` | `postgresql-17-noset` | `postgresql-16-noset` | `postgresql-15-noset` | `postgresql-14-noset` | `postgresql-13-noset` | `postgresql-12-noset` |
-| `u24` | `postgresql-17-noset` | `postgresql-16-noset` | `postgresql-15-noset` | `postgresql-14-noset` | `postgresql-13-noset` | `postgresql-12-noset` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.3.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `noset_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.3.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-noset` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

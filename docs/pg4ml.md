@@ -56,13 +56,10 @@ CREATE EXTENSION pg4ml CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg4ml_17` | `pg4ml_16` | `pg4ml_15` | `pg4ml_14` | `pg4ml_13` | `pg4ml_12` |
-| `el9` | `pg4ml_17` | `pg4ml_16` | `pg4ml_15` | `pg4ml_14` | `pg4ml_13` | `pg4ml_12` |
-| `d12` | `postgresql-17-pg4ml` | `postgresql-16-pg4ml` | `postgresql-15-pg4ml` | `postgresql-14-pg4ml` | `postgresql-13-pg4ml` | `postgresql-12-pg4ml` |
-| `u22` | `postgresql-17-pg4ml` | `postgresql-16-pg4ml` | `postgresql-15-pg4ml` | `postgresql-14-pg4ml` | `postgresql-13-pg4ml` | `postgresql-12-pg4ml` |
-| `u24` | `postgresql-17-pg4ml` | `postgresql-16-pg4ml` | `postgresql-15-pg4ml` | `postgresql-14-pg4ml` | `postgresql-13-pg4ml` | `postgresql-12-pg4ml` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg4ml_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 2.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg4ml` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

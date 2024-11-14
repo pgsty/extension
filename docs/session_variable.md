@@ -56,13 +56,10 @@ CREATE EXTENSION session_variable;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `session_variable_17*` | `session_variable_16*` | `session_variable_15*` | `session_variable_14*` | `session_variable_13*` | `session_variable_12*` |
-| `el9` | `session_variable_17*` | `session_variable_16*` | `session_variable_15*` | `session_variable_14*` | `session_variable_13*` | `session_variable_12*` |
-| `d12` | `postgresql-17-session-variable` | `postgresql-16-session-variable` | `postgresql-15-session-variable` | `postgresql-14-session-variable` | `postgresql-13-session-variable` | `postgresql-12-session-variable` |
-| `u22` | `postgresql-17-session-variable` | `postgresql-16-session-variable` | `postgresql-15-session-variable` | `postgresql-14-session-variable` | `postgresql-13-session-variable` | `postgresql-12-session-variable` |
-| `u24` | `postgresql-17-session-variable` | `postgresql-16-session-variable` | `postgresql-15-session-variable` | `postgresql-14-session-variable` | `postgresql-13-session-variable` | `postgresql-12-session-variable` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 3.4 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `session_variable_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 3.4 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-session-variable` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

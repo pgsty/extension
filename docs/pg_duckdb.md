@@ -60,13 +60,10 @@ CREATE EXTENSION pg_duckdb;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_duckdb_17*` | `pg_duckdb_16*` | `pg_duckdb_15*` | `pg_duckdb_14*` | `pg_duckdb_13*` | `pg_duckdb_12*` |
-| `el9` | `pg_duckdb_17*` | `pg_duckdb_16*` | `pg_duckdb_15*` | `pg_duckdb_14*` | `pg_duckdb_13*` | `pg_duckdb_12*` |
-| `d12` | `postgresql-17-pg-duckdb` | `postgresql-16-pg-duckdb` | `postgresql-15-pg-duckdb` | `postgresql-14-pg-duckdb` | `postgresql-13-pg-duckdb` | `postgresql-12-pg-duckdb` |
-| `u22` | `postgresql-17-pg-duckdb` | `postgresql-16-pg-duckdb` | `postgresql-15-pg-duckdb` | `postgresql-14-pg-duckdb` | `postgresql-13-pg-duckdb` | `postgresql-12-pg-duckdb` |
-| `u24` | `postgresql-17-pg-duckdb` | `postgresql-16-pg-duckdb` | `postgresql-15-pg-duckdb` | `postgresql-14-pg-duckdb` | `postgresql-13-pg-duckdb` | `postgresql-12-pg-duckdb` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_duckdb_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |  |
+| [DEB](/deb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-duckdb` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |  |
 
 
 

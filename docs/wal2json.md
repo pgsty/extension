@@ -52,13 +52,10 @@
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `wal2json_17*` | `wal2json_16*` | `wal2json_15*` | `wal2json_14*` | `wal2json_13*` | `wal2json_12*` |
-| `el9` | `wal2json_17*` | `wal2json_16*` | `wal2json_15*` | `wal2json_14*` | `wal2json_13*` | `wal2json_12*` |
-| `d12` | `postgresql-17-wal2json` | `postgresql-16-wal2json` | `postgresql-15-wal2json` | `postgresql-14-wal2json` | `postgresql-13-wal2json` | `postgresql-12-wal2json` |
-| `u22` | `postgresql-17-wal2json` | `postgresql-16-wal2json` | `postgresql-15-wal2json` | `postgresql-14-wal2json` | `postgresql-13-wal2json` | `postgresql-12-wal2json` |
-| `u24` | `postgresql-17-wal2json` | `postgresql-16-wal2json` | `postgresql-15-wal2json` | `postgresql-14-wal2json` | `postgresql-13-wal2json` | `postgresql-12-wal2json` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.5.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `wal2json_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.5.3 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-wal2json` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

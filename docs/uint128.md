@@ -56,13 +56,10 @@ CREATE EXTENSION uint128;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_uint128_17*` | `pg_uint128_16*` | `pg_uint128_15*` | `pg_uint128_14*` | `pg_uint128_13*` | `pg_uint128_12*` |
-| `el9` | `pg_uint128_17*` | `pg_uint128_16*` | `pg_uint128_15*` | `pg_uint128_14*` | `pg_uint128_13*` | `pg_uint128_12*` |
-| `d12` | `postgresql-17-pg-uint128` | `postgresql-16-pg-uint128` | `postgresql-15-pg-uint128` | `postgresql-14-pg-uint128` | `postgresql-13-pg-uint128` | `postgresql-12-pg-uint128` |
-| `u22` | `postgresql-17-pg-uint128` | `postgresql-16-pg-uint128` | `postgresql-15-pg-uint128` | `postgresql-14-pg-uint128` | `postgresql-13-pg-uint128` | `postgresql-12-pg-uint128` |
-| `u24` | `postgresql-17-pg-uint128` | `postgresql-16-pg-uint128` | `postgresql-15-pg-uint128` | `postgresql-14-pg-uint128` | `postgresql-13-pg-uint128` | `postgresql-12-pg-uint128` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_uint128_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-uint128` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

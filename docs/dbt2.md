@@ -56,13 +56,9 @@ CREATE EXTENSION dbt2;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `dbt2-pg17-extensions*` | `dbt2-pg16-extensions*` | `dbt2-pg15-extensions*` | `dbt2-pg14-extensions*` | `dbt2-pg13-extensions*` | `dbt2-pg12-extensions*` |
-| `el9` | `dbt2-pg17-extensions*` | `dbt2-pg16-extensions*` | `dbt2-pg15-extensions*` | `dbt2-pg14-extensions*` | `dbt2-pg13-extensions*` | `dbt2-pg12-extensions*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.45.0 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `dbt2-pg$v-extensions*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

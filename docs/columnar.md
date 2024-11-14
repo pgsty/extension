@@ -56,13 +56,10 @@ CREATE EXTENSION columnar;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `hydra_17*` | `hydra_16*` | `hydra_15*` | `hydra_14*` | `hydra_13*` | `hydra_12*` |
-| `el9` | `hydra_17*` | `hydra_16*` | `hydra_15*` | `hydra_14*` | `hydra_13*` | `hydra_12*` |
-| `d12` | `postgresql-17-hydra` | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | `postgresql-12-hydra` |
-| `u22` | `postgresql-17-hydra` | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | `postgresql-12-hydra` |
-| `u24` | `postgresql-17-hydra` | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | `postgresql-12-hydra` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `hydra_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| [DEB](/deb) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-hydra` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
 
 
 

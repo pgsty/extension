@@ -56,13 +56,10 @@ CREATE EXTENSION mimeo CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `mimeo_17` | `mimeo_16` | `mimeo_15` | `mimeo_14` | `mimeo_13` | `mimeo_12` |
-| `el9` | `mimeo_17` | `mimeo_16` | `mimeo_15` | `mimeo_14` | `mimeo_13` | `mimeo_12` |
-| `d12` | `postgresql-17-mimeo` | `postgresql-16-mimeo` | `postgresql-15-mimeo` | `postgresql-14-mimeo` | `postgresql-13-mimeo` | `postgresql-12-mimeo` |
-| `u22` | `postgresql-17-mimeo` | `postgresql-16-mimeo` | `postgresql-15-mimeo` | `postgresql-14-mimeo` | `postgresql-13-mimeo` | `postgresql-12-mimeo` |
-| `u24` | `postgresql-17-mimeo` | `postgresql-16-mimeo` | `postgresql-15-mimeo` | `postgresql-14-mimeo` | `postgresql-13-mimeo` | `postgresql-12-mimeo` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `mimeo_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-mimeo` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION pg_background;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_background_17*` | `pg_background_16*` | `pg_background_15*` | `pg_background_14*` | `pg_background_13*` | `pg_background_12*` |
-| `el9` | `pg_background_17*` | `pg_background_16*` | `pg_background_15*` | `pg_background_14*` | `pg_background_13*` | `pg_background_12*` |
-| `d12` | `postgresql-17-pg-background` | `postgresql-16-pg-background` | `postgresql-15-pg-background` | `postgresql-14-pg-background` | `postgresql-13-pg-background` | `postgresql-12-pg-background` |
-| `u22` | `postgresql-17-pg-background` | `postgresql-16-pg-background` | `postgresql-15-pg-background` | `postgresql-14-pg-background` | `postgresql-13-pg-background` | `postgresql-12-pg-background` |
-| `u24` | `postgresql-17-pg-background` | `postgresql-16-pg-background` | `postgresql-15-pg-background` | `postgresql-14-pg-background` | `postgresql-13-pg-background` | `postgresql-12-pg-background` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.3 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pg_background_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.3 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-background` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

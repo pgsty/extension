@@ -56,13 +56,10 @@ CREATE EXTENSION currency;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_currency_17*` | `pg_currency_16*` | `pg_currency_15*` | `pg_currency_14*` | `pg_currency_13*` | `pg_currency_12*` |
-| `el9` | `pg_currency_17*` | `pg_currency_16*` | `pg_currency_15*` | `pg_currency_14*` | `pg_currency_13*` | `pg_currency_12*` |
-| `d12` | `postgresql-17-pg-currency` | `postgresql-16-pg-currency` | `postgresql-15-pg-currency` | `postgresql-14-pg-currency` | `postgresql-13-pg-currency` | `postgresql-12-pg-currency` |
-| `u22` | `postgresql-17-pg-currency` | `postgresql-16-pg-currency` | `postgresql-15-pg-currency` | `postgresql-14-pg-currency` | `postgresql-13-pg-currency` | `postgresql-12-pg-currency` |
-| `u24` | `postgresql-17-pg-currency` | `postgresql-16-pg-currency` | `postgresql-15-pg-currency` | `postgresql-14-pg-currency` | `postgresql-13-pg-currency` | `postgresql-12-pg-currency` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_currency_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.0.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-currency` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

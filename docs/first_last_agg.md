@@ -56,13 +56,10 @@ CREATE EXTENSION first_last_agg;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `first_last_agg_17` | `first_last_agg_16` | `first_last_agg_15` | `first_last_agg_14` | `first_last_agg_13` | `first_last_agg_12` |
-| `el9` | `first_last_agg_17` | `first_last_agg_16` | `first_last_agg_15` | `first_last_agg_14` | `first_last_agg_13` | `first_last_agg_12` |
-| `d12` | `postgresql-17-first-last-agg` | `postgresql-16-first-last-agg` | `postgresql-15-first-last-agg` | `postgresql-14-first-last-agg` | `postgresql-13-first-last-agg` | `postgresql-12-first-last-agg` |
-| `u22` | `postgresql-17-first-last-agg` | `postgresql-16-first-last-agg` | `postgresql-15-first-last-agg` | `postgresql-14-first-last-agg` | `postgresql-13-first-last-agg` | `postgresql-12-first-last-agg` |
-| `u24` | `postgresql-17-first-last-agg` | `postgresql-16-first-last-agg` | `postgresql-15-first-last-agg` | `postgresql-14-first-last-agg` | `postgresql-13-first-last-agg` | `postgresql-12-first-last-agg` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `first_last_agg_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-first-last-agg` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

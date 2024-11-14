@@ -56,13 +56,10 @@ CREATE EXTENSION base62;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_base62_17*` | `pg_base62_16*` | `pg_base62_15*` | `pg_base62_14*` | `pg_base62_13*` | `pg_base62_12*` |
-| `el9` | `pg_base62_17*` | `pg_base62_16*` | `pg_base62_15*` | `pg_base62_14*` | `pg_base62_13*` | `pg_base62_12*` |
-| `d12` | `postgresql-17-base62` | `postgresql-16-base62` | `postgresql-15-base62` | `postgresql-14-base62` | `postgresql-13-base62` | `postgresql-12-base62` |
-| `u22` | `postgresql-17-base62` | `postgresql-16-base62` | `postgresql-15-base62` | `postgresql-14-base62` | `postgresql-13-base62` | `postgresql-12-base62` |
-| `u24` | `postgresql-17-base62` | `postgresql-16-base62` | `postgresql-15-base62` | `postgresql-14-base62` | `postgresql-13-base62` | `postgresql-12-base62` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_base62_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-base62` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

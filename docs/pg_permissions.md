@@ -56,13 +56,10 @@ CREATE EXTENSION pg_permissions;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_permissions_17*` | `pg_permissions_16*` | `pg_permissions_15*` | `pg_permissions_14*` | `pg_permissions_13*` | `pg_permissions_12*` |
-| `el9` | `pg_permissions_17*` | `pg_permissions_16*` | `pg_permissions_15*` | `pg_permissions_14*` | `pg_permissions_13*` | `pg_permissions_12*` |
-| `d12` | `postgresql-17-pg-permissions` | `postgresql-16-pg-permissions` | `postgresql-15-pg-permissions` | `postgresql-14-pg-permissions` | `postgresql-13-pg-permissions` | `postgresql-12-pg-permissions` |
-| `u22` | `postgresql-17-pg-permissions` | `postgresql-16-pg-permissions` | `postgresql-15-pg-permissions` | `postgresql-14-pg-permissions` | `postgresql-13-pg-permissions` | `postgresql-12-pg-permissions` |
-| `u24` | `postgresql-17-pg-permissions` | `postgresql-16-pg-permissions` | `postgresql-15-pg-permissions` | `postgresql-14-pg-permissions` | `postgresql-13-pg-permissions` | `postgresql-12-pg-permissions` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.3 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `pg_permissions_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.3 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-permissions` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

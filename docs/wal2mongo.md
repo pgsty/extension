@@ -52,13 +52,10 @@
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `wal2mongo_17*` | `wal2mongo_16*` | `wal2mongo_15*` | `wal2mongo_14*` | `wal2mongo_13*` | `wal2mongo_12*` |
-| `el9` | `wal2mongo_17*` | `wal2mongo_16*` | `wal2mongo_15*` | `wal2mongo_14*` | `wal2mongo_13*` | `wal2mongo_12*` |
-| `d12` | `postgresql-17-wal2mongo` | `postgresql-16-wal2mongo` | `postgresql-15-wal2mongo` | `postgresql-14-wal2mongo` | `postgresql-13-wal2mongo` | `postgresql-12-wal2mongo` |
-| `u22` | `postgresql-17-wal2mongo` | `postgresql-16-wal2mongo` | `postgresql-15-wal2mongo` | `postgresql-14-wal2mongo` | `postgresql-13-wal2mongo` | `postgresql-12-wal2mongo` |
-| `u24` | `postgresql-17-wal2mongo` | `postgresql-16-wal2mongo` | `postgresql-15-wal2mongo` | `postgresql-14-wal2mongo` | `postgresql-13-wal2mongo` | `postgresql-12-wal2mongo` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.7 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `wal2mongo_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| [DEB](/deb) | 1.0.7 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-wal2mongo` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
 
 
 

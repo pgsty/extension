@@ -56,13 +56,10 @@ CREATE EXTENSION pg_search;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_search_17` | `pg_search_16` | `pg_search_15` | `pg_search_14` | `pg_search_13` | `pg_search_12` |
-| `el9` | `pg_search_17` | `pg_search_16` | `pg_search_15` | `pg_search_14` | `pg_search_13` | `pg_search_12` |
-| `d12` | `postgresql-17-pg-search` | `postgresql-16-pg-search` | `postgresql-15-pg-search` | `postgresql-14-pg-search` | `postgresql-13-pg-search` | `postgresql-12-pg-search` |
-| `u22` | `postgresql-17-pg-search` | `postgresql-16-pg-search` | `postgresql-15-pg-search` | `postgresql-14-pg-search` | `postgresql-13-pg-search` | `postgresql-12-pg-search` |
-| `u24` | `postgresql-17-pg-search` | `postgresql-16-pg-search` | `postgresql-15-pg-search` | `postgresql-14-pg-search` | `postgresql-13-pg-search` | `postgresql-12-pg-search` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.11.1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_search_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
+| [DEB](/deb) | 0.11.1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-search` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
 
 
 

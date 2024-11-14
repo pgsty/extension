@@ -56,13 +56,10 @@ CREATE EXTENSION plr;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `plr_17*` | `plr_16*` | `plr_15*` | `plr_14*` | `plr_13*` | `plr_12*` |
-| `el9` | `plr_17*` | `plr_16*` | `plr_15*` | `plr_14*` | `plr_13*` | `plr_12*` |
-| `d12` | `postgresql-17-plr` | `postgresql-16-plr` | `postgresql-15-plr` | `postgresql-14-plr` | `postgresql-13-plr` | `postgresql-12-plr` |
-| `u22` | `postgresql-17-plr` | `postgresql-16-plr` | `postgresql-15-plr` | `postgresql-14-plr` | `postgresql-13-plr` | `postgresql-12-plr` |
-| `u24` | `postgresql-17-plr` | `postgresql-16-plr` | `postgresql-15-plr` | `postgresql-14-plr` | `postgresql-13-plr` | `postgresql-12-plr` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 8.4.6 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `plr_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 8.4.6 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plr` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

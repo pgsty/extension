@@ -60,13 +60,10 @@ CREATE EXTENSION pg_qualstats;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_qualstats_17*` | `pg_qualstats_16*` | `pg_qualstats_15*` | `pg_qualstats_14*` | `pg_qualstats_13*` | `pg_qualstats_12*` |
-| `el9` | `pg_qualstats_17*` | `pg_qualstats_16*` | `pg_qualstats_15*` | `pg_qualstats_14*` | `pg_qualstats_13*` | `pg_qualstats_12*` |
-| `d12` | `postgresql-17-pg-qualstats` | `postgresql-16-pg-qualstats` | `postgresql-15-pg-qualstats` | `postgresql-14-pg-qualstats` | `postgresql-13-pg-qualstats` | `postgresql-12-pg-qualstats` |
-| `u22` | `postgresql-17-pg-qualstats` | `postgresql-16-pg-qualstats` | `postgresql-15-pg-qualstats` | `postgresql-14-pg-qualstats` | `postgresql-13-pg-qualstats` | `postgresql-12-pg-qualstats` |
-| `u24` | `postgresql-17-pg-qualstats` | `postgresql-16-pg-qualstats` | `postgresql-15-pg-qualstats` | `postgresql-14-pg-qualstats` | `postgresql-13-pg-qualstats` | `postgresql-12-pg-qualstats` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.1.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_qualstats_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.1.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-qualstats` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

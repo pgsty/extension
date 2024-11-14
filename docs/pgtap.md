@@ -56,13 +56,10 @@ CREATE EXTENSION pgtap;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgtap_17*` | `pgtap_16*` | `pgtap_15*` | `pgtap_14*` | `pgtap_13*` | `pgtap_12*` |
-| `el9` | `pgtap_17*` | `pgtap_16*` | `pgtap_15*` | `pgtap_14*` | `pgtap_13*` | `pgtap_12*` |
-| `d12` | `postgresql-17-pgtap` | `postgresql-16-pgtap` | `postgresql-15-pgtap` | `postgresql-14-pgtap` | `postgresql-13-pgtap` | `postgresql-12-pgtap` |
-| `u22` | `postgresql-17-pgtap` | `postgresql-16-pgtap` | `postgresql-15-pgtap` | `postgresql-14-pgtap` | `postgresql-13-pgtap` | `postgresql-12-pgtap` |
-| `u24` | `postgresql-17-pgtap` | `postgresql-16-pgtap` | `postgresql-15-pgtap` | `postgresql-14-pgtap` | `postgresql-13-pgtap` | `postgresql-12-pgtap` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.3.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgtap_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.3.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgtap` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

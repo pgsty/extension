@@ -56,13 +56,10 @@ CREATE EXTENSION pg_idkit;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_idkit_17` | `pg_idkit_16` | `pg_idkit_15` | `pg_idkit_14` | `pg_idkit_13` | `pg_idkit_12` |
-| `el9` | `pg_idkit_17` | `pg_idkit_16` | `pg_idkit_15` | `pg_idkit_14` | `pg_idkit_13` | `pg_idkit_12` |
-| `d12` | `postgresql-17-pg-idkit` | `postgresql-16-pg-idkit` | `postgresql-15-pg-idkit` | `postgresql-14-pg-idkit` | `postgresql-13-pg-idkit` | `postgresql-12-pg-idkit` |
-| `u22` | `postgresql-17-pg-idkit` | `postgresql-16-pg-idkit` | `postgresql-15-pg-idkit` | `postgresql-14-pg-idkit` | `postgresql-13-pg-idkit` | `postgresql-12-pg-idkit` |
-| `u24` | `postgresql-17-pg-idkit` | `postgresql-16-pg-idkit` | `postgresql-15-pg-idkit` | `postgresql-14-pg-idkit` | `postgresql-13-pg-idkit` | `postgresql-12-pg-idkit` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.2.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_idkit_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.2.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-idkit` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

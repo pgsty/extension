@@ -56,13 +56,10 @@ CREATE EXTENSION set_user;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `set_user_17*` | `set_user_16*` | `set_user_15*` | `set_user_14*` | `set_user_13*` | `set_user_12*` |
-| `el9` | `set_user_17*` | `set_user_16*` | `set_user_15*` | `set_user_14*` | `set_user_13*` | `set_user_12*` |
-| `d12` | `postgresql-17-set-user` | `postgresql-16-set-user` | `postgresql-15-set-user` | `postgresql-14-set-user` | `postgresql-13-set-user` | `postgresql-12-set-user` |
-| `u22` | `postgresql-17-set-user` | `postgresql-16-set-user` | `postgresql-15-set-user` | `postgresql-14-set-user` | `postgresql-13-set-user` | `postgresql-12-set-user` |
-| `u24` | `postgresql-17-set-user` | `postgresql-16-set-user` | `postgresql-15-set-user` | `postgresql-14-set-user` | `postgresql-13-set-user` | `postgresql-12-set-user` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 4.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `set_user_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 4.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-set-user` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

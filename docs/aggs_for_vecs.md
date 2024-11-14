@@ -56,13 +56,10 @@ CREATE EXTENSION aggs_for_vecs;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `aggs_for_vecs_17*` | `aggs_for_vecs_16*` | `aggs_for_vecs_15*` | `aggs_for_vecs_14*` | `aggs_for_vecs_13*` | `aggs_for_vecs_12*` |
-| `el9` | `aggs_for_vecs_17*` | `aggs_for_vecs_16*` | `aggs_for_vecs_15*` | `aggs_for_vecs_14*` | `aggs_for_vecs_13*` | `aggs_for_vecs_12*` |
-| `d12` | `postgresql-17-aggs-for-vecs` | `postgresql-16-aggs-for-vecs` | `postgresql-15-aggs-for-vecs` | `postgresql-14-aggs-for-vecs` | `postgresql-13-aggs-for-vecs` | `postgresql-12-aggs-for-vecs` |
-| `u22` | `postgresql-17-aggs-for-vecs` | `postgresql-16-aggs-for-vecs` | `postgresql-15-aggs-for-vecs` | `postgresql-14-aggs-for-vecs` | `postgresql-13-aggs-for-vecs` | `postgresql-12-aggs-for-vecs` |
-| `u24` | `postgresql-17-aggs-for-vecs` | `postgresql-16-aggs-for-vecs` | `postgresql-15-aggs-for-vecs` | `postgresql-14-aggs-for-vecs` | `postgresql-13-aggs-for-vecs` | `postgresql-12-aggs-for-vecs` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.3.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `aggs_for_vecs_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.3.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-aggs-for-vecs` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

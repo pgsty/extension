@@ -56,13 +56,10 @@ CREATE EXTENSION pgsql_tweaks;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgsql_tweaks_17*` | `pgsql_tweaks_16*` | `pgsql_tweaks_15*` | `pgsql_tweaks_14*` | `pgsql_tweaks_13*` | `pgsql_tweaks_12*` |
-| `el9` | `pgsql_tweaks_17*` | `pgsql_tweaks_16*` | `pgsql_tweaks_15*` | `pgsql_tweaks_14*` | `pgsql_tweaks_13*` | `pgsql_tweaks_12*` |
-| `d12` | `postgresql-17-pgsql-tweaks` | `postgresql-16-pgsql-tweaks` | `postgresql-15-pgsql-tweaks` | `postgresql-14-pgsql-tweaks` | `postgresql-13-pgsql-tweaks` | `postgresql-12-pgsql-tweaks` |
-| `u22` | `postgresql-17-pgsql-tweaks` | `postgresql-16-pgsql-tweaks` | `postgresql-15-pgsql-tweaks` | `postgresql-14-pgsql-tweaks` | `postgresql-13-pgsql-tweaks` | `postgresql-12-pgsql-tweaks` |
-| `u24` | `postgresql-17-pgsql-tweaks` | `postgresql-16-pgsql-tweaks` | `postgresql-15-pgsql-tweaks` | `postgresql-14-pgsql-tweaks` | `postgresql-13-pgsql-tweaks` | `postgresql-12-pgsql-tweaks` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.10.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgsql_tweaks_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 0.10.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgsql-tweaks` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

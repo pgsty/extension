@@ -56,13 +56,10 @@ CREATE EXTENSION pg_cardano;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_cardano_17` | `pg_cardano_16` | `pg_cardano_15` | `pg_cardano_14` | `pg_cardano_13` | `pg_cardano_12` |
-| `el9` | `pg_cardano_17` | `pg_cardano_16` | `pg_cardano_15` | `pg_cardano_14` | `pg_cardano_13` | `pg_cardano_12` |
-| `d12` | `postgresql-17-pg-cardano` | `postgresql-16-pg-cardano` | `postgresql-15-pg-cardano` | `postgresql-14-pg-cardano` | `postgresql-13-pg-cardano` | `postgresql-12-pg-cardano` |
-| `u22` | `postgresql-17-pg-cardano` | `postgresql-16-pg-cardano` | `postgresql-15-pg-cardano` | `postgresql-14-pg-cardano` | `postgresql-13-pg-cardano` | `postgresql-12-pg-cardano` |
-| `u24` | `postgresql-17-pg-cardano` | `postgresql-16-pg-cardano` | `postgresql-15-pg-cardano` | `postgresql-14-pg-cardano` | `postgresql-13-pg-cardano` | `postgresql-12-pg-cardano` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_cardano_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-cardano` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

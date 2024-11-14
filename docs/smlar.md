@@ -56,13 +56,10 @@ CREATE EXTENSION smlar;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `smlar_17*` | `smlar_16*` | `smlar_15*` | `smlar_14*` | `smlar_13*` | `smlar_12*` |
-| `el9` | `smlar_17*` | `smlar_16*` | `smlar_15*` | `smlar_14*` | `smlar_13*` | `smlar_12*` |
-| `d12` | `postgresql-17-smlar` | `postgresql-16-smlar` | `postgresql-15-smlar` | `postgresql-14-smlar` | `postgresql-13-smlar` | `postgresql-12-smlar` |
-| `u22` | `postgresql-17-smlar` | `postgresql-16-smlar` | `postgresql-15-smlar` | `postgresql-14-smlar` | `postgresql-13-smlar` | `postgresql-12-smlar` |
-| `u24` | `postgresql-17-smlar` | `postgresql-16-smlar` | `postgresql-15-smlar` | `postgresql-14-smlar` | `postgresql-13-smlar` | `postgresql-12-smlar` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `smlar_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-smlar` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
 
 
 

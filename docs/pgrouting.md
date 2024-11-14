@@ -56,13 +56,10 @@ CREATE EXTENSION pgrouting CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgrouting_17*` | `pgrouting_16*` | `pgrouting_15*` | `pgrouting_14*` | `pgrouting_13*` | `pgrouting_12*` |
-| `el9` | `pgrouting_17*` | `pgrouting_16*` | `pgrouting_15*` | `pgrouting_14*` | `pgrouting_13*` | `pgrouting_12*` |
-| `d12` | `postgresql-17-pgrouting`<br>`postgresql-17-pgrouting-scripts` | `postgresql-16-pgrouting`<br>`postgresql-16-pgrouting-scripts` | `postgresql-15-pgrouting`<br>`postgresql-15-pgrouting-scripts` | `postgresql-14-pgrouting`<br>`postgresql-14-pgrouting-scripts` | `postgresql-13-pgrouting`<br>`postgresql-13-pgrouting-scripts` | `postgresql-12-pgrouting`<br>`postgresql-12-pgrouting-scripts` |
-| `u22` | `postgresql-17-pgrouting`<br>`postgresql-17-pgrouting-scripts` | `postgresql-16-pgrouting`<br>`postgresql-16-pgrouting-scripts` | `postgresql-15-pgrouting`<br>`postgresql-15-pgrouting-scripts` | `postgresql-14-pgrouting`<br>`postgresql-14-pgrouting-scripts` | `postgresql-13-pgrouting`<br>`postgresql-13-pgrouting-scripts` | `postgresql-12-pgrouting`<br>`postgresql-12-pgrouting-scripts` |
-| `u24` | `postgresql-17-pgrouting`<br>`postgresql-17-pgrouting-scripts` | `postgresql-16-pgrouting`<br>`postgresql-16-pgrouting-scripts` | `postgresql-15-pgrouting`<br>`postgresql-15-pgrouting-scripts` | `postgresql-14-pgrouting`<br>`postgresql-14-pgrouting-scripts` | `postgresql-13-pgrouting`<br>`postgresql-13-pgrouting-scripts` | `postgresql-12-pgrouting`<br>`postgresql-12-pgrouting-scripts` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 3.6.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `pgrouting_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 3.6.2 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgrouting postgresql-$v-pgrouting-scripts` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

@@ -56,13 +56,9 @@ CREATE EXTENSION pg_rrule;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `` | `` | `` | `` | `` | `` |
-| `el9` | `` | `` | `` | `` | `` | `` |
-| `d12` | `postgresql-17-pg-rrule` | `postgresql-16-pg-rrule` | `postgresql-15-pg-rrule` | `postgresql-14-pg-rrule` | `postgresql-13-pg-rrule` | `postgresql-12-pg-rrule` |
-| `u22` | `postgresql-17-pg-rrule` | `postgresql-16-pg-rrule` | `postgresql-15-pg-rrule` | `postgresql-14-pg-rrule` | `postgresql-13-pg-rrule` | `postgresql-12-pg-rrule` |
-| `u24` | `postgresql-17-pg-rrule` | `postgresql-16-pg-rrule` | `postgresql-15-pg-rrule` | `postgresql-14-pg-rrule` | `postgresql-13-pg-rrule` | `postgresql-12-pg-rrule` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [DEB](/deb) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-rrule` |  |  |  |  |  |  |  |
 
 
 

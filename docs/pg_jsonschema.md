@@ -56,13 +56,10 @@ CREATE EXTENSION pg_jsonschema;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_jsonschema_17` | `pg_jsonschema_16` | `pg_jsonschema_15` | `pg_jsonschema_14` | `pg_jsonschema_13` | `pg_jsonschema_12` |
-| `el9` | `pg_jsonschema_17` | `pg_jsonschema_16` | `pg_jsonschema_15` | `pg_jsonschema_14` | `pg_jsonschema_13` | `pg_jsonschema_12` |
-| `d12` | `postgresql-17-pg-jsonschema` | `postgresql-16-pg-jsonschema` | `postgresql-15-pg-jsonschema` | `postgresql-14-pg-jsonschema` | `postgresql-13-pg-jsonschema` | `postgresql-12-pg-jsonschema` |
-| `u22` | `postgresql-17-pg-jsonschema` | `postgresql-16-pg-jsonschema` | `postgresql-15-pg-jsonschema` | `postgresql-14-pg-jsonschema` | `postgresql-13-pg-jsonschema` | `postgresql-12-pg-jsonschema` |
-| `u24` | `postgresql-17-pg-jsonschema` | `postgresql-16-pg-jsonschema` | `postgresql-15-pg-jsonschema` | `postgresql-14-pg-jsonschema` | `postgresql-13-pg-jsonschema` | `postgresql-12-pg-jsonschema` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_jsonschema_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-jsonschema` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

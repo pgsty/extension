@@ -56,13 +56,10 @@ CREATE EXTENSION log_fdw;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `log_fdw_17*` | `log_fdw_16*` | `log_fdw_15*` | `log_fdw_14*` | `log_fdw_13*` | `log_fdw_12*` |
-| `el9` | `log_fdw_17*` | `log_fdw_16*` | `log_fdw_15*` | `log_fdw_14*` | `log_fdw_13*` | `log_fdw_12*` |
-| `d12` | `postgresql-17-log-fdw` | `postgresql-16-log-fdw` | `postgresql-15-log-fdw` | `postgresql-14-log-fdw` | `postgresql-13-log-fdw` | `postgresql-12-log-fdw` |
-| `u22` | `postgresql-17-log-fdw` | `postgresql-16-log-fdw` | `postgresql-15-log-fdw` | `postgresql-14-log-fdw` | `postgresql-13-log-fdw` | `postgresql-12-log-fdw` |
-| `u24` | `postgresql-17-log-fdw` | `postgresql-16-log-fdw` | `postgresql-15-log-fdw` | `postgresql-14-log-fdw` | `postgresql-13-log-fdw` | `postgresql-12-log-fdw` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `log_fdw_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
+| [DEB](/deb) | 1.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-log-fdw` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
 
 
 

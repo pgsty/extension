@@ -56,13 +56,10 @@ CREATE EXTENSION pgcozy;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgcozy_17` | `pgcozy_16` | `pgcozy_15` | `pgcozy_14` | `pgcozy_13` | `pgcozy_12` |
-| `el9` | `pgcozy_17` | `pgcozy_16` | `pgcozy_15` | `pgcozy_14` | `pgcozy_13` | `pgcozy_12` |
-| `d12` | `postgresql-17-pgcozy` | `postgresql-16-pgcozy` | `postgresql-15-pgcozy` | `postgresql-14-pgcozy` | `postgresql-13-pgcozy` | `postgresql-12-pgcozy` |
-| `u22` | `postgresql-17-pgcozy` | `postgresql-16-pgcozy` | `postgresql-15-pgcozy` | `postgresql-14-pgcozy` | `postgresql-13-pgcozy` | `postgresql-12-pgcozy` |
-| `u24` | `postgresql-17-pgcozy` | `postgresql-16-pgcozy` | `postgresql-15-pgcozy` | `postgresql-14-pgcozy` | `postgresql-13-pgcozy` | `postgresql-12-pgcozy` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgcozy_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgcozy` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

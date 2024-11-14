@@ -56,13 +56,10 @@ CREATE EXTENSION hunspell_nl_nl;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `hunspell_nl_nl_17` | `hunspell_nl_nl_16` | `hunspell_nl_nl_15` | `hunspell_nl_nl_14` | `hunspell_nl_nl_13` | `hunspell_nl_nl_12` |
-| `el9` | `hunspell_nl_nl_17` | `hunspell_nl_nl_16` | `hunspell_nl_nl_15` | `hunspell_nl_nl_14` | `hunspell_nl_nl_13` | `hunspell_nl_nl_12` |
-| `d12` | `postgresql-17-hunspell-nl-nl` | `postgresql-16-hunspell-nl-nl` | `postgresql-15-hunspell-nl-nl` | `postgresql-14-hunspell-nl-nl` | `postgresql-13-hunspell-nl-nl` | `postgresql-12-hunspell-nl-nl` |
-| `u22` | `postgresql-17-hunspell-nl-nl` | `postgresql-16-hunspell-nl-nl` | `postgresql-15-hunspell-nl-nl` | `postgresql-14-hunspell-nl-nl` | `postgresql-13-hunspell-nl-nl` | `postgresql-12-hunspell-nl-nl` |
-| `u24` | `postgresql-17-hunspell-nl-nl` | `postgresql-16-hunspell-nl-nl` | `postgresql-15-hunspell-nl-nl` | `postgresql-14-hunspell-nl-nl` | `postgresql-13-hunspell-nl-nl` | `postgresql-12-hunspell-nl-nl` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `hunspell_nl_nl_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-hunspell-nl-nl` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

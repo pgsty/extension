@@ -56,13 +56,10 @@ CREATE EXTENSION financial;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_financial_17*` | `pg_financial_16*` | `pg_financial_15*` | `pg_financial_14*` | `pg_financial_13*` | `pg_financial_12*` |
-| `el9` | `pg_financial_17*` | `pg_financial_16*` | `pg_financial_15*` | `pg_financial_14*` | `pg_financial_13*` | `pg_financial_12*` |
-| `d12` | `postgresql-17-pg-financial` | `postgresql-16-pg-financial` | `postgresql-15-pg-financial` | `postgresql-14-pg-financial` | `postgresql-13-pg-financial` | `postgresql-12-pg-financial` |
-| `u22` | `postgresql-17-pg-financial` | `postgresql-16-pg-financial` | `postgresql-15-pg-financial` | `postgresql-14-pg-financial` | `postgresql-13-pg-financial` | `postgresql-12-pg-financial` |
-| `u24` | `postgresql-17-pg-financial` | `postgresql-16-pg-financial` | `postgresql-15-pg-financial` | `postgresql-14-pg-financial` | `postgresql-13-pg-financial` | `postgresql-12-pg-financial` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_financial_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-financial` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

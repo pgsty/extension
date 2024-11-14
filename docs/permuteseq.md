@@ -56,13 +56,10 @@ CREATE EXTENSION permuteseq;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `permuteseq_17*` | `permuteseq_16*` | `permuteseq_15*` | `permuteseq_14*` | `permuteseq_13*` | `permuteseq_12*` |
-| `el9` | `permuteseq_17*` | `permuteseq_16*` | `permuteseq_15*` | `permuteseq_14*` | `permuteseq_13*` | `permuteseq_12*` |
-| `d12` | `postgresql-17-permuteseq` | `postgresql-16-permuteseq` | `postgresql-15-permuteseq` | `postgresql-14-permuteseq` | `postgresql-13-permuteseq` | `postgresql-12-permuteseq` |
-| `u22` | `postgresql-17-permuteseq` | `postgresql-16-permuteseq` | `postgresql-15-permuteseq` | `postgresql-14-permuteseq` | `postgresql-13-permuteseq` | `postgresql-12-permuteseq` |
-| `u24` | `postgresql-17-permuteseq` | `postgresql-16-permuteseq` | `postgresql-15-permuteseq` | `postgresql-14-permuteseq` | `postgresql-13-permuteseq` | `postgresql-12-permuteseq` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `permuteseq_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-permuteseq` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

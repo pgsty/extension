@@ -56,13 +56,10 @@ CREATE EXTENSION prioritize;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_prioritize_17*` | `pg_prioritize_16*` | `pg_prioritize_15*` | `pg_prioritize_14*` | `pg_prioritize_13*` | `pg_prioritize_12*` |
-| `el9` | `pg_prioritize_17*` | `pg_prioritize_16*` | `pg_prioritize_15*` | `pg_prioritize_14*` | `pg_prioritize_13*` | `pg_prioritize_12*` |
-| `d12` | `postgresql-17-prioritize` | `postgresql-16-prioritize` | `postgresql-15-prioritize` | `postgresql-14-prioritize` | `postgresql-13-prioritize` | `postgresql-12-prioritize` |
-| `u22` | `postgresql-17-prioritize` | `postgresql-16-prioritize` | `postgresql-15-prioritize` | `postgresql-14-prioritize` | `postgresql-13-prioritize` | `postgresql-12-prioritize` |
-| `u24` | `postgresql-17-prioritize` | `postgresql-16-prioritize` | `postgresql-15-prioritize` | `postgresql-14-prioritize` | `postgresql-13-prioritize` | `postgresql-12-prioritize` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_prioritize_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-prioritize` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
 
 
 

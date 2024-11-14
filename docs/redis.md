@@ -56,13 +56,10 @@ CREATE EXTENSION redis;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_redis_pubsub_17*` | `pg_redis_pubsub_16*` | `pg_redis_pubsub_15*` | `pg_redis_pubsub_14*` | `pg_redis_pubsub_13*` | `pg_redis_pubsub_12*` |
-| `el9` | `pg_redis_pubsub_17*` | `pg_redis_pubsub_16*` | `pg_redis_pubsub_15*` | `pg_redis_pubsub_14*` | `pg_redis_pubsub_13*` | `pg_redis_pubsub_12*` |
-| `d12` | `postgresql-17-pg-redis-pubsub` | `postgresql-16-pg-redis-pubsub` | `postgresql-15-pg-redis-pubsub` | `postgresql-14-pg-redis-pubsub` | `postgresql-13-pg-redis-pubsub` | `postgresql-12-pg-redis-pubsub` |
-| `u22` | `postgresql-17-pg-redis-pubsub` | `postgresql-16-pg-redis-pubsub` | `postgresql-15-pg-redis-pubsub` | `postgresql-14-pg-redis-pubsub` | `postgresql-13-pg-redis-pubsub` | `postgresql-12-pg-redis-pubsub` |
-| `u24` | `postgresql-17-pg-redis-pubsub` | `postgresql-16-pg-redis-pubsub` | `postgresql-15-pg-redis-pubsub` | `postgresql-14-pg-redis-pubsub` | `postgresql-13-pg-redis-pubsub` | `postgresql-12-pg-redis-pubsub` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_redis_pubsub_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-redis-pubsub` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

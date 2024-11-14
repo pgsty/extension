@@ -56,13 +56,10 @@ CREATE EXTENSION pg_readonly;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_readonly_17*` | `pg_readonly_16*` | `pg_readonly_15*` | `pg_readonly_14*` | `pg_readonly_13*` | `pg_readonly_12*` |
-| `el9` | `pg_readonly_17*` | `pg_readonly_16*` | `pg_readonly_15*` | `pg_readonly_14*` | `pg_readonly_13*` | `pg_readonly_12*` |
-| `d12` | `postgresql-17-pg-readonly` | `postgresql-16-pg-readonly` | `postgresql-15-pg-readonly` | `postgresql-14-pg-readonly` | `postgresql-13-pg-readonly` | `postgresql-12-pg-readonly` |
-| `u22` | `postgresql-17-pg-readonly` | `postgresql-16-pg-readonly` | `postgresql-15-pg-readonly` | `postgresql-14-pg-readonly` | `postgresql-13-pg-readonly` | `postgresql-12-pg-readonly` |
-| `u24` | `postgresql-17-pg-readonly` | `postgresql-16-pg-readonly` | `postgresql-15-pg-readonly` | `postgresql-14-pg-readonly` | `postgresql-13-pg-readonly` | `postgresql-12-pg-readonly` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_readonly_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-readonly` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION pgcryptokey CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgcryptokey_17` | `pgcryptokey_16` | `pgcryptokey_15` | `pgcryptokey_14` | `pgcryptokey_13` | `pgcryptokey_12` |
-| `el9` | `pgcryptokey_17` | `pgcryptokey_16` | `pgcryptokey_15` | `pgcryptokey_14` | `pgcryptokey_13` | `pgcryptokey_12` |
-| `d12` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` | `postgresql-12-pgcryptokey` |
-| `u22` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` | `postgresql-12-pgcryptokey` |
-| `u24` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` | `postgresql-12-pgcryptokey` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgcryptokey_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgcryptokey` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION pg_sphere;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgsphere_17*` | `pgsphere_16*` | `pgsphere_15*` | `pgsphere_14*` | `pgsphere_13*` | `pgsphere_12*` |
-| `el9` | `pgsphere_17*` | `pgsphere_16*` | `pgsphere_15*` | `pgsphere_14*` | `pgsphere_13*` | `pgsphere_12*` |
-| `d12` | `postgresql-17-pgsphere` | `postgresql-16-pgsphere` | `postgresql-15-pgsphere` | `postgresql-14-pgsphere` | `postgresql-13-pgsphere` | `postgresql-12-pgsphere` |
-| `u22` | `postgresql-17-pgsphere` | `postgresql-16-pgsphere` | `postgresql-15-pgsphere` | `postgresql-14-pgsphere` | `postgresql-13-pgsphere` | `postgresql-12-pgsphere` |
-| `u24` | `postgresql-17-pgsphere` | `postgresql-16-pgsphere` | `postgresql-15-pgsphere` | `postgresql-14-pgsphere` | `postgresql-13-pgsphere` | `postgresql-12-pgsphere` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.5.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgsphere_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.5.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgsphere` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

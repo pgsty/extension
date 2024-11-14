@@ -56,13 +56,9 @@ CREATE EXTENSION pgbouncer_fdw;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgbouncer_fdw_17*` | `pgbouncer_fdw_16*` | `pgbouncer_fdw_15*` | `pgbouncer_fdw_14*` | `pgbouncer_fdw_13*` | `pgbouncer_fdw_12*` |
-| `el9` | `pgbouncer_fdw_17*` | `pgbouncer_fdw_16*` | `pgbouncer_fdw_15*` | `pgbouncer_fdw_14*` | `pgbouncer_fdw_13*` | `pgbouncer_fdw_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgbouncer_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

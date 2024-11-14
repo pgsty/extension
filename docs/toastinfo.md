@@ -56,13 +56,10 @@ CREATE EXTENSION toastinfo;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `toastinfo_17*` | `toastinfo_16*` | `toastinfo_15*` | `toastinfo_14*` | `toastinfo_13*` | `toastinfo_12*` |
-| `el9` | `toastinfo_17*` | `toastinfo_16*` | `toastinfo_15*` | `toastinfo_14*` | `toastinfo_13*` | `toastinfo_12*` |
-| `d12` | `postgresql-17-toastinfo` | `postgresql-16-toastinfo` | `postgresql-15-toastinfo` | `postgresql-14-toastinfo` | `postgresql-13-toastinfo` | `postgresql-12-toastinfo` |
-| `u22` | `postgresql-17-toastinfo` | `postgresql-16-toastinfo` | `postgresql-15-toastinfo` | `postgresql-14-toastinfo` | `postgresql-13-toastinfo` | `postgresql-12-toastinfo` |
-| `u24` | `postgresql-17-toastinfo` | `postgresql-16-toastinfo` | `postgresql-15-toastinfo` | `postgresql-14-toastinfo` | `postgresql-13-toastinfo` | `postgresql-12-toastinfo` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `toastinfo_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-toastinfo` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

@@ -56,13 +56,10 @@ CREATE EXTENSION unit CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `postgresql-unit_17*` | `postgresql-unit_16*` | `postgresql-unit_15*` | `postgresql-unit_14*` | `postgresql-unit_13*` | `postgresql-unit_12*` |
-| `el9` | `postgresql-unit_17*` | `postgresql-unit_16*` | `postgresql-unit_15*` | `postgresql-unit_14*` | `postgresql-unit_13*` | `postgresql-unit_12*` |
-| `d12` | `postgresql-17-unit` | `postgresql-16-unit` | `postgresql-15-unit` | `postgresql-14-unit` | `postgresql-13-unit` | `postgresql-12-unit` |
-| `u22` | `postgresql-17-unit` | `postgresql-16-unit` | `postgresql-15-unit` | `postgresql-14-unit` | `postgresql-13-unit` | `postgresql-12-unit` |
-| `u24` | `postgresql-17-unit` | `postgresql-16-unit` | `postgresql-15-unit` | `postgresql-14-unit` | `postgresql-13-unit` | `postgresql-12-unit` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 7 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-unit_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 7 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-unit` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

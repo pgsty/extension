@@ -56,13 +56,10 @@ CREATE EXTENSION pgpool_regclass;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgpool-II-pg17-extensions` | `pgpool-II-pg16-extensions` | `pgpool-II-pg15-extensions` | `pgpool-II-pg14-extensions` | `pgpool-II-pg13-extensions` | `pgpool-II-pg12-extensions` |
-| `el9` | `pgpool-II-pg17-extensions` | `pgpool-II-pg16-extensions` | `pgpool-II-pg15-extensions` | `pgpool-II-pg14-extensions` | `pgpool-II-pg13-extensions` | `pgpool-II-pg12-extensions` |
-| `d12` | `postgresql-17-pgpool2` | `postgresql-16-pgpool2` | `postgresql-15-pgpool2` | `postgresql-14-pgpool2` | `postgresql-13-pgpool2` | `postgresql-12-pgpool2` |
-| `u22` | `postgresql-17-pgpool2` | `postgresql-16-pgpool2` | `postgresql-15-pgpool2` | `postgresql-14-pgpool2` | `postgresql-13-pgpool2` | `postgresql-12-pgpool2` |
-| `u24` | `postgresql-17-pgpool2` | `postgresql-16-pgpool2` | `postgresql-15-pgpool2` | `postgresql-14-pgpool2` | `postgresql-13-pgpool2` | `postgresql-12-pgpool2` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| Distro-pgpool_adm | 1.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgpool-II-pg$v-extensions` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro-pgpool_adm | 1.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgpool2` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

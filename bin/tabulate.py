@@ -781,15 +781,13 @@ def generate_extension():
             pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["%s"]}'\n```\n\n""" % alias
         else:
             if name == 'postgis': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis"]}'   # postgis35, common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis34"]}' # pg12 @ el8/9 \n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis33"]}' # el7\n```\n\n"""
-            if name == 'pgaudit': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit"]}'   # common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit17"]}' # pg15 @ el\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit16"]}' # pg14 @ el'\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit15"]}' # pg13 @ el'\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit14"]}' # pg12 @ el'\n```\n\n"""
+            if name == 'pgaudit': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit"]}'   # common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit17"]}' # pg15 @ el\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit16"]}' # pg14 @ el\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit15"]}' # pg13 @ el\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit14"]}' # pg12 @ el\n```\n\n"""
             if name == 'citus': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["citus"]}'     # common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["citus11"]}'   # pg13 @ deb\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["citus10"]}'   # pg12 @ deb\n```\n\n"""
 
         yum_install_preface = '\nInstall `%s` [RPM](/rpm) from the %s **YUM** repo:\n\n' % (getcol("alias", ext), getcol("rpmrepo", ext))
         if '$v' not in ext['rpm_pkg']:
             yum_install_tmpl = """```bash\ndnf install %s;\n```\n\n""" % ext['rpm_pkg']
         else:
-            #yum_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'dnf install ' + ext['rpm_pkg'].replace('$v', ver) + ';' for ver in ext['rpm_pg'] ])
-
             pkgs = [ judge_ext(ver, 'el9', ext)[0] for ver in PG_VERS ]
             yum_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'yum install ' + pkg + ';' for pkg in pkgs ])
 
@@ -799,15 +797,11 @@ def generate_extension():
         else:
             pkgs = [ judge_ext(ver, 'u22', ext)[0] for ver in PG_VERS ]
             apt_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'apt install ' + pkg + ';' for pkg in pkgs ])
-            # if name == 'citus':
-            #
-            # else:
-            #     apt_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'apt install ' + ext['deb_pkg'].replace('$v', ver) + ';' for ver in ext['deb_pg'] ])
         install_tmpl = pigsty_install_preface + pigsty_install_cmd
         if ext['has_rpm']: install_tmpl = install_tmpl + yum_install_preface + yum_install_tmpl
         if ext['has_deb']: install_tmpl = install_tmpl + apt_install_preface + apt_install_tmpl
-        pkg_table = avail_matrix(name,'pkg')
-        install_tmpl += ('\n\n\n' + pkg_table)
+        package_distro_matrix = avail_matrix(name,'pkg')
+        install_tmpl += ('\n\n\n' + package_distro_matrix)
 
         stub_content = ''
         if os.path.exists(stub_path):

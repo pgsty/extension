@@ -60,13 +60,10 @@ CREATE EXTENSION plpgsql_check CASCADE;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `plpgsql_check_17*` | `plpgsql_check_16*` | `plpgsql_check_15*` | `plpgsql_check_14*` | `plpgsql_check_13*` | `plpgsql_check_12*` |
-| `el9` | `plpgsql_check_17*` | `plpgsql_check_16*` | `plpgsql_check_15*` | `plpgsql_check_14*` | `plpgsql_check_13*` | `plpgsql_check_12*` |
-| `d12` | `postgresql-17-plpgsql-check` | `postgresql-16-plpgsql-check` | `postgresql-15-plpgsql-check` | `postgresql-14-plpgsql-check` | `postgresql-13-plpgsql-check` | `postgresql-12-plpgsql-check` |
-| `u22` | `postgresql-17-plpgsql-check` | `postgresql-16-plpgsql-check` | `postgresql-15-plpgsql-check` | `postgresql-14-plpgsql-check` | `postgresql-13-plpgsql-check` | `postgresql-12-plpgsql-check` |
-| `u24` | `postgresql-17-plpgsql-check` | `postgresql-16-plpgsql-check` | `postgresql-15-plpgsql-check` | `postgresql-14-plpgsql-check` | `postgresql-13-plpgsql-check` | `postgresql-12-plpgsql-check` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.7 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `plpgsql_check_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.7 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plpgsql-check` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

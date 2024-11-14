@@ -56,13 +56,10 @@ CREATE EXTENSION temporal_tables;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `temporal_tables_17*` | `temporal_tables_16*` | `temporal_tables_15*` | `temporal_tables_14*` | `temporal_tables_13*` | `temporal_tables_12*` |
-| `el9` | `temporal_tables_17*` | `temporal_tables_16*` | `temporal_tables_15*` | `temporal_tables_14*` | `temporal_tables_13*` | `temporal_tables_12*` |
-| `d12` | `postgresql-17-temporal-tables` | `postgresql-16-temporal-tables` | `postgresql-15-temporal-tables` | `postgresql-14-temporal-tables` | `postgresql-13-temporal-tables` | `postgresql-12-temporal-tables` |
-| `u22` | `postgresql-17-temporal-tables` | `postgresql-16-temporal-tables` | `postgresql-15-temporal-tables` | `postgresql-14-temporal-tables` | `postgresql-13-temporal-tables` | `postgresql-12-temporal-tables` |
-| `u24` | `postgresql-17-temporal-tables` | `postgresql-16-temporal-tables` | `postgresql-15-temporal-tables` | `postgresql-14-temporal-tables` | `postgresql-13-temporal-tables` | `postgresql-12-temporal-tables` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.2.2 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `temporal_tables_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.2.2 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-temporal-tables` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

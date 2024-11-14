@@ -56,13 +56,10 @@ CREATE EXTENSION uri;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_uri_17*` | `pg_uri_16*` | `pg_uri_15*` | `pg_uri_14*` | `pg_uri_13*` | `pg_uri_12*` |
-| `el9` | `pg_uri_17*` | `pg_uri_16*` | `pg_uri_15*` | `pg_uri_14*` | `pg_uri_13*` | `pg_uri_12*` |
-| `d12` | `postgresql-17-pg-uri` | `postgresql-16-pg-uri` | `postgresql-15-pg-uri` | `postgresql-14-pg-uri` | `postgresql-13-pg-uri` | `postgresql-12-pg-uri` |
-| `u22` | `postgresql-17-pg-uri` | `postgresql-16-pg-uri` | `postgresql-15-pg-uri` | `postgresql-14-pg-uri` | `postgresql-13-pg-uri` | `postgresql-12-pg-uri` |
-| `u24` | `postgresql-17-pg-uri` | `postgresql-16-pg-uri` | `postgresql-15-pg-uri` | `postgresql-14-pg-uri` | `postgresql-13-pg-uri` | `postgresql-12-pg-uri` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_uri_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-uri` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 

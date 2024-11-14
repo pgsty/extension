@@ -56,13 +56,10 @@ CREATE EXTENSION logerrors;
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `logerrors_17*` | `logerrors_16*` | `logerrors_15*` | `logerrors_14*` | `logerrors_13*` | `logerrors_12*` |
-| `el9` | `logerrors_17*` | `logerrors_16*` | `logerrors_15*` | `logerrors_14*` | `logerrors_13*` | `logerrors_12*` |
-| `d12` | `postgresql-17-logerrors` | `postgresql-16-logerrors` | `postgresql-15-logerrors` | `postgresql-14-logerrors` | `postgresql-13-logerrors` | `postgresql-12-logerrors` |
-| `u22` | `postgresql-17-logerrors` | `postgresql-16-logerrors` | `postgresql-15-logerrors` | `postgresql-14-logerrors` | `postgresql-13-logerrors` | `postgresql-12-logerrors` |
-| `u24` | `postgresql-17-logerrors` | `postgresql-16-logerrors` | `postgresql-15-logerrors` | `postgresql-14-logerrors` | `postgresql-13-logerrors` | `postgresql-12-logerrors` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `logerrors_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-logerrors` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

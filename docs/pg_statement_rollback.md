@@ -56,13 +56,10 @@ shared_preload_libraries = 'pg_statement_rollback'; # add this extension to post
 ## Packages
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_statement_rollback_17*` | `pg_statement_rollback_16*` | `pg_statement_rollback_15*` | `pg_statement_rollback_14*` | `pg_statement_rollback_13*` | `pg_statement_rollback_12*` |
-| `el9` | `pg_statement_rollback_17*` | `pg_statement_rollback_16*` | `pg_statement_rollback_15*` | `pg_statement_rollback_14*` | `pg_statement_rollback_13*` | `pg_statement_rollback_12*` |
-| `d12` | `postgresql-17-pg-statement-rollback` | `postgresql-16-pg-statement-rollback` | `postgresql-15-pg-statement-rollback` | `postgresql-14-pg-statement-rollback` | `postgresql-13-pg-statement-rollback` | `postgresql-12-pg-statement-rollback` |
-| `u22` | `postgresql-17-pg-statement-rollback` | `postgresql-16-pg-statement-rollback` | `postgresql-15-pg-statement-rollback` | `postgresql-14-pg-statement-rollback` | `postgresql-13-pg-statement-rollback` | `postgresql-12-pg-statement-rollback` |
-| `u24` | `postgresql-17-pg-statement-rollback` | `postgresql-16-pg-statement-rollback` | `postgresql-15-pg-statement-rollback` | `postgresql-14-pg-statement-rollback` | `postgresql-13-pg-statement-rollback` | `postgresql-12-pg-statement-rollback` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `pg_statement_rollback_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-statement-rollback` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 
