@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <title>Pigsty Documentation</title>
+  <title>Pigsty Extension Repo</title>
   <link rel="icon" href="_media/favicon.ico"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <meta name="keywords" content="postgresql,extension,pgext,pgextension,pgpackages,ecosystem,postgres,pgsql,psql,ext,pigsty,pigsty.io,postgis,timescaledb,pgvector,duckdb,pg_parquet,pg_search,pg_analytics,open-source,repo"/>
-  <meta name="description" content="Pigsty, A Battery-Included Open Source PostgreSQL Distribution"/>
+  <meta name="keywords" content="postgresql,pigsty,extension,repo,postgres,pgsql,psql,ext,pigsty,pigsty.io,postgis,timescaledb,pgvector,duckdb,pg_parquet,pg_search,pg_analytics,open-source"/>
+  <meta name="description" content="Pigsty Extension Repo"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
   <link rel="stylesheet" href="js/vue.css" title="vue"/>
   <link rel="stylesheet" href="js/customze.css" title="vue"/>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css" />
   <script>window.dataLayer = window.dataLayer || [];function gtag() {dataLayer.push(arguments);};gtag('js', new Date());gtag('config', 'G-LG1V9WTKGE');</script>
 </head>
 
@@ -56,6 +57,24 @@
       pathNamespaces: ['/zh-cn']
     },
     plugins: [],
+    gitalk: {
+      clientID: 'Ov23li6D7QVlvFxPWDJX',
+      clientSecret: '40fccb0560263d50122c0cd9b546e28b1b584a19',
+      repo: 'extensions',
+      owner: 'pgsty',
+      admin: ['Vonng']
+    },
+    gitalkWithFooter: {
+      gitalkConfig: {
+        clientID: 'Ov23li6D7QVlvFxPWDJX',
+        clientSecret: '40fccb0560263d50122c0cd9b546e28b1b584a19',
+        repo: 'extension',
+        owner: 'pgsty',
+        admin: ['Vonng'],
+        // facebook-like distraction free mode
+        distractionFreeMode: false,
+      }
+    },
   };
 </script>
 <script src="js/docsify.min.js"></script>
@@ -63,5 +82,17 @@
 <script src="js/prism-bash.min.js"></script>
 <script src="js/prism-yaml.min.js"></script>
 <script src="js/prism-sql.min.js"></script>
+<script src="//unpkg.com/docsify-copy-code"></script>
+<!-- 图片缩放 -->
+<script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+<!-- 字数统计 -->
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+<!-- 分页 -->
+<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/pikapikapikaori/docsify-gitalk-with-footer@latest/src/gitalkWithFooter.js"></script>
+
 </body>
 </html>
