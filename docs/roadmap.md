@@ -14,6 +14,7 @@ Extensions to be included and extensions will not be included
 - [omnigres](https://omnigres.com/)
 - pg_task: pgdg
 - pg_readme: pgdg
+- [pglite-fusion](https://github.com/frectonz/pglite-fusion)
 
 
 **Waiting on PostgreSQL 17 support**:
