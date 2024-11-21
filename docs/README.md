@@ -9,7 +9,7 @@ Provide 340 available [Extensions](/list) as [RPM](/rpm) / [DEB](/deb) for Postg
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 334 | 115 | 143 | 70 | 4 | 6 | 301 | 330 | 333 | 319 | 307 | 294 |
+| RPM Extension | 334 | 115 | 143 | 70 | 4 | 6 | 302 | 330 | 333 | 319 | 307 | 294 |
 | DEB Extension | 326 | 104 | 144 | 70 | 4 | 14 | 302 | 322 | 325 | 316 | 303 | 293 |
 
 
