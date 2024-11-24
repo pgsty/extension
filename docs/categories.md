@@ -71,7 +71,7 @@ All PostgreSQL are divided into 15 categories, shown below:
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | Description | Comment |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|-------------|---------|
-| 1300 | [pg_search](/pg_search) | 0.11.1 | [pg_search](/pg_search) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/paradedb/paradedb/tree/dev/pg_search) | pg_search: Full text search for PostgreSQL using BM25 |  |
+| 1300 | [pg_search](/pg_search) | 0.13.0 | [pg_search](/pg_search) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/paradedb/paradedb/tree/dev/pg_search) | pg_search: Full text search for PostgreSQL using BM25 |  |
 | 1310 | [pg_bigm](/pg_bigm) | 1.2 | [pg_bigm](/pg_bigm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgbigm/pg_bigm) | create 2-gram (bigram) index for faster full text search. |  |
 | 1320 | [zhparser](/zhparser) | 2.2 | [zhparser](/zhparser) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/amutu/zhparser) | a parser for full-text search of Chinese |  |
 | 1330 | [hunspell_cs_cz](/hunspell_cs_cz) | 1.0 | [hunspell_cs_cz](/hunspell_cs_cz) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/postgrespro/hunspell_dicts) | Czech Hunspell Dictionary |  |
