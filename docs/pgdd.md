@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pgdd;
 ```
-> **Comment**: building failed on pg17
+> **Comment**: building failed on pg17, and u24.arm
 -----------
 
 

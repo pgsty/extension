@@ -4,6 +4,9 @@
 
 ## Usage
 
+> THIS EXTENSION IS CONFLICT WITH pg_duckdb & duckdb_fdw, if it is under maintained, we may remove this extension in the future
+
+
 Beware that this package is conflict with the official `pg_duckdb` extension due to use the same `libduckdb.so` under same path.
 
 And this function will block the `duckdb_fdw` functioning.
@@ -20,6 +23,8 @@ INSERT INTO user_activity VALUES ....;
 SELECT * FROM user_activity LIMIT 5;
 ```
 
+
+--------
 
 ## Example
 

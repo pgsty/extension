@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [timescaledb](https://github.com/timescale/timescaledb) | 2.17.2 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | **<span class="tcwarn">TIMESCALE</span>** | `C` |
+| [timescaledb](https://github.com/timescale/timescaledb) | 2.17.2 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
@@ -53,7 +53,7 @@ shared_preload_libraries = 'timescaledb'; # add this extension to postgresql.con
 ```sql
 CREATE EXTENSION timescaledb;
 ```
-> **Comment**: missing arm64 on el8/el9, pg12=2.11.2, pg13=2.15.3
+> **Comment**: missing arm64 on el, pg12=2.11.2, pg13=2.15.3
 -----------
 
 
@@ -62,8 +62,8 @@ CREATE EXTENSION timescaledb;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.17.2 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-2-postgresql-$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 2.17.2 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">TIMESCALE</span>** | `timescaledb-2-postgresql-$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [RPM](/rpm) | 2.17.2 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-2-postgresql-$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 2.17.2 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-2-postgresql-$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 
@@ -74,7 +74,7 @@ Install `timescaledb` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 ```
 
 
-Install `timescaledb` [RPM](/rpm) from the **<span class="tcwarn">TIMESCALE</span>** **YUM** repo:
+Install `timescaledb` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
 yum install timescaledb-2-postgresql-17*;
@@ -86,7 +86,7 @@ yum install timescaledb-2-postgresql-12*;
 ```
 
 
-Install `timescaledb` [DEB](/deb) from the **<span class="tcwarn">TIMESCALE</span>** **APT** repo:
+Install `timescaledb` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install timescaledb-2-postgresql-17;

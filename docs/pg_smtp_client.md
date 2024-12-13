@@ -9,7 +9,7 @@
 
 
 
-[FUNC](/func) extensions: [`topn`](/topn), [`gzip`](/gzip), [`zstd`](/zstd), [`http`](/http), [`pg_net`](/pg_net), [`pg_smtp_client`](/pg_smtp_client), [`pg_html5_email_address`](/pg_html5_email_address), [`pgsql_tweaks`](/pgsql_tweaks), [`pg_extra_time`](/pg_extra_time), [`timeit`](/timeit), [`count_distinct`](/count_distinct), [`extra_window_functions`](/extra_window_functions), [`first_last_agg`](/first_last_agg), [`tdigest`](/tdigest), [`aggs_for_vecs`](/aggs_for_vecs), [`aggs_for_arrays`](/aggs_for_arrays), [`arraymath`](/arraymath), [`quantile`](/quantile), [`lower_quantile`](/lower_quantile), [`pg_idkit`](/pg_idkit), [`pg_uuidv7`](/pg_uuidv7), [`permuteseq`](/permuteseq), [`pg_hashids`](/pg_hashids), [`sequential_uuids`](/sequential_uuids), [`pg_math`](/pg_math), [`random`](/random), [`base36`](/base36), [`base62`](/base62), [`pg_base58`](/pg_base58), [`floatvec`](/floatvec), [`financial`](/financial), [`pgjwt`](/pgjwt), [`pg_hashlib`](/pg_hashlib), [`shacrypt`](/shacrypt), [`cryptint`](/cryptint), [`pguecc`](/pguecc), [`pgpcre`](/pgpcre), [`icu_ext`](/icu_ext), [`pgqr`](/pgqr), [`envvar`](/envvar), [`pg_protobuf`](/pg_protobuf), [`url_encode`](/url_encode), [`refint`](/refint), [`autoinc`](/autoinc), [`insert_username`](/insert_username), [`moddatetime`](/moddatetime), [`tsm_system_time`](/tsm_system_time), [`dict_xsyn`](/dict_xsyn), [`tsm_system_rows`](/tsm_system_rows), [`tcn`](/tcn), [`uuid-ossp`](/uuid-ossp), [`btree_gist`](/btree_gist), [`btree_gin`](/btree_gin), [`intarray`](/intarray), [`intagg`](/intagg), [`dict_int`](/dict_int), [`unaccent`](/unaccent)
+[FUNC](/func) extensions: [`topn`](/topn), [`gzip`](/gzip), [`zstd`](/zstd), [`http`](/http), [`pg_net`](/pg_net), [`pg_smtp_client`](/pg_smtp_client), [`pg_html5_email_address`](/pg_html5_email_address), [`pgsql_tweaks`](/pgsql_tweaks), [`pg_extra_time`](/pg_extra_time), [`count_distinct`](/count_distinct), [`extra_window_functions`](/extra_window_functions), [`first_last_agg`](/first_last_agg), [`tdigest`](/tdigest), [`aggs_for_vecs`](/aggs_for_vecs), [`aggs_for_arrays`](/aggs_for_arrays), [`arraymath`](/arraymath), [`quantile`](/quantile), [`lower_quantile`](/lower_quantile), [`pg_idkit`](/pg_idkit), [`pg_uuidv7`](/pg_uuidv7), [`permuteseq`](/permuteseq), [`pg_hashids`](/pg_hashids), [`sequential_uuids`](/sequential_uuids), [`pg_math`](/pg_math), [`random`](/random), [`base36`](/base36), [`base62`](/base62), [`pg_base58`](/pg_base58), [`floatvec`](/floatvec), [`financial`](/financial), [`pgjwt`](/pgjwt), [`pg_hashlib`](/pg_hashlib), [`shacrypt`](/shacrypt), [`cryptint`](/cryptint), [`pguecc`](/pguecc), [`pgpcre`](/pgpcre), [`icu_ext`](/icu_ext), [`pgqr`](/pgqr), [`envvar`](/envvar), [`pg_protobuf`](/pg_protobuf), [`url_encode`](/url_encode), [`refint`](/refint), [`autoinc`](/autoinc), [`insert_username`](/insert_username), [`moddatetime`](/moddatetime), [`tsm_system_time`](/tsm_system_time), [`dict_xsyn`](/dict_xsyn), [`tsm_system_rows`](/tsm_system_rows), [`tcn`](/tcn), [`uuid-ossp`](/uuid-ossp), [`btree_gist`](/btree_gist), [`btree_gin`](/btree_gin), [`intarray`](/intarray), [`intagg`](/intagg), [`dict_int`](/dict_int), [`unaccent`](/unaccent)
 
 
 -------
@@ -59,7 +59,7 @@ CREATE EXTENSION pg_smtp_client;
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
 | [RPM](/rpm) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_smtp_client_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
-| [DEB](/deb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-smtp-client` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
+| [DEB](/deb) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-smtp-client` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
 
 
 
@@ -112,34 +112,64 @@ apt install postgresql-12-pg-smtp-client;
 
 ## Usage
 
-Install `go-sqlcmd`:
+> https://github.com/frectonz/pglite-fusion/blob/main/README.md
 
-```bash
-curl -LO https://github.com/microsoft/go-sqlcmd/releases/download/v1.4.0/sqlcmd-v1.4.0-linux-amd64.tar.bz2
-tar xjvf sqlcmd-v1.4.0-linux-amd64.tar.bz2
-sudo mv sqlcmd* /usr/bin/
+### Enabling the extension
+
+Connect to postgres and run the following command.
+
+```sql
+CREATE EXTENSION IF NOT EXISTS pg_smtp_client CASCADE;
 ```
 
-Try go-sqlcmd
+## Usage
 
-```bash
-$ sqlcmd -S 10.10.10.10,1433 -U dbuser_mssql -P DBUser.MSSQL
-1> select @@version
-2> go
-version                                                                                                                                                                                                                                                         
------------------------------
-Babelfish for PostgreSQL with SQL Server Compatibility - 12.0.2000.8
-Oct 22 2023 17:48:32
-Copyright (c) Amazon Web Services
-PostgreSQL 15.4 (EL 1:15.4.wiltondb3.3_2-2.el8) on x86_64-redhat-linux-gnu (Babelfish 3.3.0)                                        
+Use the `smtp_client.send_email()` function to send an email.
 
-(1 row affected)
+### Function Parameters
+
+| Parameter     | Type    | Description                                           | System Configuration (Optional) |
+|---------------|---------|-------------------------------------------------------|---------------------------------|
+| subject       | text    | The subject of the email                              |                                 |
+| body          | text    | The body of the email                                 |                                 |
+| html          | boolean | Whether the body is HTML (true) or plain text (false) |                                 |
+| from_address  | text    | The from email address                                | `smtp_client.from_address`      |
+| recipients    | text[]  | The email addresses of the recipients                 |                                 |
+| ccs           | text[]  | The email addresses to CCs                            |                                 |
+| bccs          | text[]  | The email addresses to BCCs                           |                                 |
+| smtp_server   | text    | The SMTP server to use                                | `smtp_client.server`            |
+| smtp_port     | integer | The port of the SMTP server                           | `smtp_client.port`              |
+| smtp_tls      | boolean | Whether to use TLS                                    | `smtp_client.tls`               |
+| smtp_username | text    | The username for the SMTP server                      | `smtp_client.username`          |
+| smtp_password | text    | The password for the SMTP server                      | `smtp_client.password`          |
+
+### Default Configuration
+
+You can configure the following system-wide default values for some of the parameters (as indiciated in the table above) like this:
+
+```
+ALTER SYSTEM SET smtp_client.server TO 'smtp.example.com';
+ALTER SYSTEM SET smtp_client.port TO 587;
+ALTER SYSTEM SET smtp_client.tls TO true;
+ALTER SYSTEM SET smtp_client.username TO 'MySmtpUsername';
+ALTER SYSTEM SET smtp_client.password TO 'MySmtpPassword';
+ALTER SYSTEM SET smtp_client.from_address TO 'from@example.com';
+SELECT pg_reload_conf();
 ```
 
-Access pigsty exposed primary/replica service port
+### Usage Examples
 
-```bash 
-sqlcmd -S 10.10.10.11,5433 -U dbuser_mssql -P DBUser.MSSQL
+Send an email:
+```sql
+SELECT smtp_client.send_email('test subject', 'test body', false, 'from@example.com', array['to@example.com'], null, null, 'smtp.example.com', 587, true, 'username', 'password');
+```
 
-sqlcmd -S 10.10.10.11,5434 -U dbuser_mssql -P DBUser.MSSQL
+Send an email using configured default values:
+```sql
+SELECT smtp_client.send_email('test subject', 'test body', false, null, array['to@example.com']);
+```
+
+Or, using named arguments:
+```sql
+SELECT smtp_client.send_email('test subject', 'test body', recipients => array['to@example.com']);
 ```

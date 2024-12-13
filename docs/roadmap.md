@@ -14,8 +14,12 @@ Extensions to be included and extensions will not be included
 - [omnigres](https://omnigres.com/)
 - pg_task: pgdg
 - pg_readme: pgdg
-- [pglite-fusion](https://github.com/frectonz/pglite-fusion)
-
+- [synchdb](https://github.com/Hornetlabs/synchdb)
+- [x] [pglite-fusion](https://github.com/frectonz/pglite-fusion)
+- [x] vchord https://github.com/tensorchord/VectorChord 0.1.0 rag 14 -17
+- [x] pgvectorscale https://github.com/timescale/pgvectorscale/releases/tag/0.5.1 0.5.1 rag
+- [x] pg_bestmatch.rs 0.0.1 pgrx 0.12.9 rag
+- [ ] vchord-bm25 TBD
 
 **Waiting on PostgreSQL 17 support**:
 

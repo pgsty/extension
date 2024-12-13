@@ -3,34 +3,64 @@
 
 ## Usage
 
-Install `go-sqlcmd`:
+> https://github.com/frectonz/pglite-fusion/blob/main/README.md
 
-```bash
-curl -LO https://github.com/microsoft/go-sqlcmd/releases/download/v1.4.0/sqlcmd-v1.4.0-linux-amd64.tar.bz2
-tar xjvf sqlcmd-v1.4.0-linux-amd64.tar.bz2
-sudo mv sqlcmd* /usr/bin/
+### Enabling the extension
+
+Connect to postgres and run the following command.
+
+```sql
+CREATE EXTENSION IF NOT EXISTS pg_smtp_client CASCADE;
 ```
 
-Try go-sqlcmd
+## Usage
 
-```bash
-$ sqlcmd -S 10.10.10.10,1433 -U dbuser_mssql -P DBUser.MSSQL
-1> select @@version
-2> go
-version                                                                                                                                                                                                                                                         
------------------------------
-Babelfish for PostgreSQL with SQL Server Compatibility - 12.0.2000.8
-Oct 22 2023 17:48:32
-Copyright (c) Amazon Web Services
-PostgreSQL 15.4 (EL 1:15.4.wiltondb3.3_2-2.el8) on x86_64-redhat-linux-gnu (Babelfish 3.3.0)                                        
+Use the `smtp_client.send_email()` function to send an email.
 
-(1 row affected)
+### Function Parameters
+
+| Parameter     | Type    | Description                                           | System Configuration (Optional) |
+|---------------|---------|-------------------------------------------------------|---------------------------------|
+| subject       | text    | The subject of the email                              |                                 |
+| body          | text    | The body of the email                                 |                                 |
+| html          | boolean | Whether the body is HTML (true) or plain text (false) |                                 |
+| from_address  | text    | The from email address                                | `smtp_client.from_address`      |
+| recipients    | text[]  | The email addresses of the recipients                 |                                 |
+| ccs           | text[]  | The email addresses to CCs                            |                                 |
+| bccs          | text[]  | The email addresses to BCCs                           |                                 |
+| smtp_server   | text    | The SMTP server to use                                | `smtp_client.server`            |
+| smtp_port     | integer | The port of the SMTP server                           | `smtp_client.port`              |
+| smtp_tls      | boolean | Whether to use TLS                                    | `smtp_client.tls`               |
+| smtp_username | text    | The username for the SMTP server                      | `smtp_client.username`          |
+| smtp_password | text    | The password for the SMTP server                      | `smtp_client.password`          |
+
+### Default Configuration
+
+You can configure the following system-wide default values for some of the parameters (as indiciated in the table above) like this:
+
+```
+ALTER SYSTEM SET smtp_client.server TO 'smtp.example.com';
+ALTER SYSTEM SET smtp_client.port TO 587;
+ALTER SYSTEM SET smtp_client.tls TO true;
+ALTER SYSTEM SET smtp_client.username TO 'MySmtpUsername';
+ALTER SYSTEM SET smtp_client.password TO 'MySmtpPassword';
+ALTER SYSTEM SET smtp_client.from_address TO 'from@example.com';
+SELECT pg_reload_conf();
 ```
 
-Access pigsty exposed primary/replica service port
+### Usage Examples
 
-```bash 
-sqlcmd -S 10.10.10.11,5433 -U dbuser_mssql -P DBUser.MSSQL
+Send an email:
+```sql
+SELECT smtp_client.send_email('test subject', 'test body', false, 'from@example.com', array['to@example.com'], null, null, 'smtp.example.com', 587, true, 'username', 'password');
+```
 
-sqlcmd -S 10.10.10.11,5434 -U dbuser_mssql -P DBUser.MSSQL
+Send an email using configured default values:
+```sql
+SELECT smtp_client.send_email('test subject', 'test body', false, null, array['to@example.com']);
+```
+
+Or, using named arguments:
+```sql
+SELECT smtp_client.send_email('test subject', 'test body', recipients => array['to@example.com']);
 ```

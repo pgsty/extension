@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [wrappers](/wrappers) | `pgrx` |  |  |  |
+| [wrappers](/wrappers) | `pgrx`, `supabase` |  |  |  |
 
 
 
