@@ -1,7 +1,7 @@
-# acl
+# pg_acl
 
 
-> [acl](https://github.com/arkhipov/acl): ACL Data type
+> [pg_acl](https://github.com/arkhipov/acl): ACL Data type
 >
 > https://github.com/arkhipov/acl
 
@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [acl](/acl) |  |  |  |  |
+| [pg_acl](/acl) |  |  |  |  |
 
 
 
@@ -63,14 +63,14 @@ CREATE EXTENSION acl;
 
 
 
-Install `acl` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
+Install `pg_acl` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["acl"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_acl"]}'
 ```
 
 
-Install `acl` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
+Install `pg_acl` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
 yum install acl_17*;
@@ -82,7 +82,7 @@ yum install acl_12*;
 ```
 
 
-Install `acl` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+Install `pg_acl` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-acl;

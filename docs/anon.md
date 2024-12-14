@@ -1,7 +1,7 @@
-# anonymizer
+# pg_anon
 
 
-> [anonymizer](https://postgresql-anonymizer.readthedocs.io/en/stable/): Data anonymization tools
+> [pg_anon](https://postgresql-anonymizer.readthedocs.io/en/stable/): Data anonymization tools
 >
 > https://postgresql-anonymizer.readthedocs.io/en/stable/
 
@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [anonymizer](/anon) | `pgdg-flaw` |  |  |  |
+| [pg_anon](/anon) | `pgdg-flaw` |  |  |  |
 
 
 
@@ -67,14 +67,14 @@ CREATE EXTENSION anon;
 
 
 
-Install `anonymizer` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
+Install `pg_anon` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["anonymizer"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_anon"]}'
 ```
 
 
-Install `anonymizer` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
+Install `pg_anon` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
 yum install postgresql_anonymizer_17*;
@@ -86,7 +86,7 @@ yum install postgresql_anonymizer_12*;
 ```
 
 
-Install `anonymizer` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+Install `pg_anon` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-anonymizer;

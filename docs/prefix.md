@@ -1,7 +1,7 @@
-# prefix
+# pg_prefix
 
 
-> [prefix](https://github.com/dimitri/prefix): Prefix Range module for PostgreSQL
+> [pg_prefix](https://github.com/dimitri/prefix): Prefix Range module for PostgreSQL
 >
 > https://github.com/dimitri/prefix
 
@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [prefix](/prefix) |  |  |  |  |
+| [pg_prefix](/prefix) |  |  |  |  |
 
 
 
@@ -63,14 +63,14 @@ CREATE EXTENSION prefix;
 
 
 
-Install `prefix` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
+Install `pg_prefix` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["prefix"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_prefix"]}'
 ```
 
 
-Install `prefix` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
+Install `pg_prefix` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
 yum install prefix_17*;
@@ -82,7 +82,7 @@ yum install prefix_12*;
 ```
 
 
-Install `prefix` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
+Install `pg_prefix` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-prefix;

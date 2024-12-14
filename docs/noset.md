@@ -1,7 +1,7 @@
-# noset
+# pg_noset
 
 
-> [noset](https://gitlab.com/ongresinc/extensions/noset): Module for blocking SET variables for non-super users.
+> [pg_noset](https://gitlab.com/ongresinc/extensions/noset): Module for blocking SET variables for non-super users.
 >
 > https://gitlab.com/ongresinc/extensions/noset
 
@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [noset](/noset) |  |  |  |  |
+| [pg_noset](/noset) |  |  |  |  |
 
 
 
@@ -67,14 +67,14 @@ CREATE EXTENSION noset;
 
 
 
-Install `noset` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
+Install `pg_noset` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["noset"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_noset"]}'
 ```
 
 
-Install `noset` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
+Install `pg_noset` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
 yum install noset_17*;
@@ -86,7 +86,7 @@ yum install noset_12*;
 ```
 
 
-Install `noset` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+Install `pg_noset` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-noset;

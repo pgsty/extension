@@ -1,7 +1,7 @@
-# semver
+# pg_semver
 
 
-> [semver](https://github.com/theory/pg-semver): Semantic version data type
+> [pg_semver](https://github.com/theory/pg-semver): Semantic version data type
 >
 > https://github.com/theory/pg-semver
 
@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [semver](/semver) |  |  |  |  |
+| [pg_semver](/semver) |  |  |  |  |
 
 
 
@@ -63,14 +63,14 @@ CREATE EXTENSION semver;
 
 
 
-Install `semver` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
+Install `pg_semver` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["semver"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_semver"]}'
 ```
 
 
-Install `semver` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
+Install `pg_semver` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
 yum install semver_17*;
@@ -82,7 +82,7 @@ yum install semver_12*;
 ```
 
 
-Install `semver` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
+Install `pg_semver` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-semver;

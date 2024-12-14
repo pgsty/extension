@@ -1,7 +1,7 @@
-# ddlx
+# pg_ddlx
 
 
-> [ddlx](https://github.com/lacanoid/pgddl): DDL eXtractor functions
+> [pg_ddlx](https://github.com/lacanoid/pgddl): DDL eXtractor functions
 >
 > https://github.com/lacanoid/pgddl
 
@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [ddlx](/ddlx) | `pgdg-flaw` |  |  |  |
+| [pg_ddlx](/ddlx) | `pgdg-flaw` |  |  |  |
 
 
 
@@ -63,14 +63,14 @@ CREATE EXTENSION ddlx;
 
 
 
-Install `ddlx` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
+Install `pg_ddlx` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["ddlx"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_ddlx"]}'
 ```
 
 
-Install `ddlx` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
+Install `pg_ddlx` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
 yum install ddlx_17*;
@@ -82,7 +82,7 @@ yum install ddlx_12*;
 ```
 
 
-Install `ddlx` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+Install `pg_ddlx` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-ddlx;

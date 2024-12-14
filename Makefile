@@ -21,7 +21,7 @@ gen:
 all: dump gen run
 
 dump: save
-save-save: save-data save-mini save-cate
+save: save-data save-mini save-cate
 save-data:
 	psql $(PGURL) -c "COPY (SELECT * FROM ext.pigsty ORDER BY id) TO '/Users/vonng/pgsty/extension/data/pigsty.csv' CSV HEADER;"
 save-mini:
