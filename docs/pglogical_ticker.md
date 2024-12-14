@@ -77,12 +77,12 @@ Install `pglogical_ticker` via [Pigsty](https://pigsty.io/docs/pgext/usage/insta
 Install `pglogical_ticker` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pglogical_ticker_17*;
-yum install pglogical_ticker_16*;
-yum install pglogical_ticker_15*;
-yum install pglogical_ticker_14*;
-yum install pglogical_ticker_13*;
-yum install pglogical_ticker_12*;
+dnf install pglogical_ticker_17*;
+dnf install pglogical_ticker_16*;
+dnf install pglogical_ticker_15*;
+dnf install pglogical_ticker_14*;
+dnf install pglogical_ticker_13*;
+dnf install pglogical_ticker_12*;
 ```
 
 

@@ -73,12 +73,12 @@ Install `pg_cardano` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pg_cardano` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_cardano_17;
-yum install pg_cardano_16;
-yum install pg_cardano_15;
-yum install pg_cardano_14;
-yum install pg_cardano_13;
-yum install pg_cardano_12;
+dnf install pg_cardano_17;
+dnf install pg_cardano_16;
+dnf install pg_cardano_15;
+dnf install pg_cardano_14;
+dnf install pg_cardano_13;
+dnf install pg_cardano_12;
 ```
 
 

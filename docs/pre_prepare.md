@@ -73,12 +73,12 @@ Install `preprepare` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `preprepare` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install preprepare_17*;
-yum install preprepare_16*;
-yum install preprepare_15*;
-yum install preprepare_14*;
-yum install preprepare_13*;
-yum install preprepare_12*;
+dnf install preprepare_17*;
+dnf install preprepare_16*;
+dnf install preprepare_15*;
+dnf install preprepare_14*;
+dnf install preprepare_13*;
+dnf install preprepare_12*;
 ```
 
 

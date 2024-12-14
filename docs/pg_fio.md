@@ -73,12 +73,12 @@ Install `pg_fio` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `pg_fio` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_fio_17;
-yum install pg_fio_16;
-yum install pg_fio_15;
-yum install pg_fio_14;
-yum install pg_fio_13;
-yum install pg_fio_12;
+dnf install pg_fio_17;
+dnf install pg_fio_16;
+dnf install pg_fio_15;
+dnf install pg_fio_14;
+dnf install pg_fio_13;
+dnf install pg_fio_12;
 ```
 
 

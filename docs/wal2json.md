@@ -69,12 +69,12 @@ Install `wal2json` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `wal2json` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install wal2json_17*;
-yum install wal2json_16*;
-yum install wal2json_15*;
-yum install wal2json_14*;
-yum install wal2json_13*;
-yum install wal2json_12*;
+dnf install wal2json_17*;
+dnf install wal2json_16*;
+dnf install wal2json_15*;
+dnf install wal2json_14*;
+dnf install wal2json_13*;
+dnf install wal2json_12*;
 ```
 
 

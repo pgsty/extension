@@ -73,12 +73,12 @@ Install `pg_http` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pg_http` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgsql_http_17*;
-yum install pgsql_http_16*;
-yum install pgsql_http_15*;
-yum install pgsql_http_14*;
-yum install pgsql_http_13*;
-yum install pgsql_http_12*;
+dnf install pgsql_http_17*;
+dnf install pgsql_http_16*;
+dnf install pgsql_http_15*;
+dnf install pgsql_http_14*;
+dnf install pgsql_http_13*;
+dnf install pgsql_http_12*;
 ```
 
 

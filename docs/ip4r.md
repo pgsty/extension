@@ -73,12 +73,12 @@ Install `ip4r` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 Install `ip4r` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install ip4r_17*;
-yum install ip4r_16*;
-yum install ip4r_15*;
-yum install ip4r_14*;
-yum install ip4r_13*;
-yum install ip4r_12*;
+dnf install ip4r_17*;
+dnf install ip4r_16*;
+dnf install ip4r_15*;
+dnf install ip4r_14*;
+dnf install ip4r_13*;
+dnf install ip4r_12*;
 ```
 
 

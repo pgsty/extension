@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -77,12 +77,10 @@ Install `pg_parquet` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pg_parquet` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_parquet_17;
-yum install pg_parquet_16;
-yum install pg_parquet_15;
-yum install pg_parquet_14;
-yum install pg_parquet_13;
-yum install pg_parquet_12;
+dnf install pg_parquet_17;
+dnf install pg_parquet_16;
+dnf install pg_parquet_15;
+dnf install pg_parquet_14;
 ```
 
 
@@ -93,8 +91,6 @@ apt install postgresql-17-pg-parquet;
 apt install postgresql-16-pg-parquet;
 apt install postgresql-15-pg-parquet;
 apt install postgresql-14-pg-parquet;
-apt install postgresql-13-pg-parquet;
-apt install postgresql-12-pg-parquet;
 ```
 
 
@@ -102,11 +98,11 @@ apt install postgresql-12-pg-parquet;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_parquet_17` | `pg_parquet_16` | `pg_parquet_15` | `pg_parquet_14` | `pg_parquet_13` | `pg_parquet_12` |
-| `el9` | `pg_parquet_17` | `pg_parquet_16` | `pg_parquet_15` | `pg_parquet_14` | `pg_parquet_13` | `pg_parquet_12` |
-| `d12` | `postgresql-17-pg-parquet` | `postgresql-16-pg-parquet` | `postgresql-15-pg-parquet` | `postgresql-14-pg-parquet` | `postgresql-13-pg-parquet` | `postgresql-12-pg-parquet` |
-| `u22` | `postgresql-17-pg-parquet` | `postgresql-16-pg-parquet` | `postgresql-15-pg-parquet` | `postgresql-14-pg-parquet` | `postgresql-13-pg-parquet` | `postgresql-12-pg-parquet` |
-| `u24` | `postgresql-17-pg-parquet` | `postgresql-16-pg-parquet` | `postgresql-15-pg-parquet` | `postgresql-14-pg-parquet` | `postgresql-13-pg-parquet` | `postgresql-12-pg-parquet` |
+| `el8` | `pg_parquet_17` | `pg_parquet_16` | `pg_parquet_15` | `pg_parquet_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `pg_parquet_17` | `pg_parquet_16` | `pg_parquet_15` | `pg_parquet_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-pg-parquet` | `postgresql-16-pg-parquet` | `postgresql-15-pg-parquet` | `postgresql-14-pg-parquet` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pg-parquet` | `postgresql-16-pg-parquet` | `postgresql-15-pg-parquet` | `postgresql-14-pg-parquet` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pg-parquet` | `postgresql-16-pg-parquet` | `postgresql-15-pg-parquet` | `postgresql-14-pg-parquet` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

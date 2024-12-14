@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -73,12 +73,11 @@ Install `smlar` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `smlar` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install smlar_17*;
-yum install smlar_16*;
-yum install smlar_15*;
-yum install smlar_14*;
-yum install smlar_13*;
-yum install smlar_12*;
+dnf install smlar_17*;
+dnf install smlar_16*;
+dnf install smlar_15*;
+dnf install smlar_14*;
+dnf install smlar_13*;
 ```
 
 
@@ -90,7 +89,6 @@ apt install postgresql-16-smlar;
 apt install postgresql-15-smlar;
 apt install postgresql-14-smlar;
 apt install postgresql-13-smlar;
-apt install postgresql-12-smlar;
 ```
 
 
@@ -98,11 +96,11 @@ apt install postgresql-12-smlar;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `smlar_17*` | `smlar_16*` | `smlar_15*` | `smlar_14*` | `smlar_13*` | `smlar_12*` |
-| `el9` | `smlar_17*` | `smlar_16*` | `smlar_15*` | `smlar_14*` | `smlar_13*` | `smlar_12*` |
-| `d12` | `postgresql-17-smlar` | `postgresql-16-smlar` | `postgresql-15-smlar` | `postgresql-14-smlar` | `postgresql-13-smlar` | `postgresql-12-smlar` |
-| `u22` | `postgresql-17-smlar` | `postgresql-16-smlar` | `postgresql-15-smlar` | `postgresql-14-smlar` | `postgresql-13-smlar` | `postgresql-12-smlar` |
-| `u24` | `postgresql-17-smlar` | `postgresql-16-smlar` | `postgresql-15-smlar` | `postgresql-14-smlar` | `postgresql-13-smlar` | `postgresql-12-smlar` |
+| `el8` | `smlar_17*` | `smlar_16*` | `smlar_15*` | `smlar_14*` | `smlar_13*` | <span class="tcred">✘</span> |
+| `el9` | `smlar_17*` | `smlar_16*` | `smlar_15*` | `smlar_14*` | `smlar_13*` | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-smlar` | `postgresql-16-smlar` | `postgresql-15-smlar` | `postgresql-14-smlar` | `postgresql-13-smlar` | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-smlar` | `postgresql-16-smlar` | `postgresql-15-smlar` | `postgresql-14-smlar` | `postgresql-13-smlar` | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-smlar` | `postgresql-16-smlar` | `postgresql-15-smlar` | `postgresql-14-smlar` | `postgresql-13-smlar` | <span class="tcred">✘</span> |
 
 
 

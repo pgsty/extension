@@ -77,12 +77,12 @@ Install `pg_squeeze` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pg_squeeze` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_squeeze_17*;
-yum install pg_squeeze_16*;
-yum install pg_squeeze_15*;
-yum install pg_squeeze_14*;
-yum install pg_squeeze_13*;
-yum install pg_squeeze_12*;
+dnf install pg_squeeze_17*;
+dnf install pg_squeeze_16*;
+dnf install pg_squeeze_15*;
+dnf install pg_squeeze_14*;
+dnf install pg_squeeze_13*;
+dnf install pg_squeeze_12*;
 ```
 
 

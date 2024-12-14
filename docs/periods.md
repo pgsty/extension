@@ -73,12 +73,12 @@ Install `periods` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `periods` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install periods_17*;
-yum install periods_16*;
-yum install periods_15*;
-yum install periods_14*;
-yum install periods_13*;
-yum install periods_12*;
+dnf install periods_17*;
+dnf install periods_16*;
+dnf install periods_15*;
+dnf install periods_14*;
+dnf install periods_13*;
+dnf install periods_12*;
 ```
 
 

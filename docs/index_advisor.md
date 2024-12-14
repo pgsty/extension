@@ -73,12 +73,12 @@ Install `index_advisor` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `index_advisor` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install index_advisor_17;
-yum install index_advisor_16;
-yum install index_advisor_15;
-yum install index_advisor_14;
-yum install index_advisor_13;
-yum install index_advisor_12;
+dnf install index_advisor_17;
+dnf install index_advisor_16;
+dnf install index_advisor_15;
+dnf install index_advisor_14;
+dnf install index_advisor_13;
+dnf install index_advisor_12;
 ```
 
 

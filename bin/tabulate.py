@@ -456,9 +456,10 @@ def judge_ext(ver, distro, ext):
     else:
         raise ValueError("Invalid distro: %s" % distro)
     name, alias, extension, package, pg_vers, avail = ext['name'], ext['alias'], ext['alias'], ext[PKG_KEY].replace('$v', ver), ext[VER_KEY], ext[HAS_KEY]
+    avail = str(ver) in pg_vers
+
     if name in DISTRO_MISS[distro]:
         avail = False
-
     # rename extension field in certain cases
     if name == 'pgaudit' and distro in RPM_OS and ver in ['12','13','14','15']:
         # pgaudit bad case: pg16+ = pgaudit, pg15=pgaudit17, pg14=pgaudit16 pg13=pgaudit15 pg12=pgaudit14
@@ -475,6 +476,7 @@ def judge_ext(ver, distro, ext):
     if distro == 'u24' and name == 'timescaledb' and ver == '12': avail = False
     if distro == 'u24' and name in ['pg_partman', 'timeseries'] and ver in ['12','13']: avail = False
     if alias in THROW_LIST: avail = False
+
     return package, extension, avail
 
 
@@ -490,9 +492,16 @@ def avail_matrix(extname, cell='avail'):
             if cell == 'avail':
                 row.append( WARN_CHECK if extension != ext['alias'] else (BLUE_CHECK if avail else RED_CROSS) )
             elif cell == 'pkg':
-                row.append( '%s' % '<br>'.join(['`%s`' % i for i in  package.split(' ')]) )
+                if avail:
+                    row.append( '%s' % '<br>'.join(['`%s`' % i for i in  package.split(' ')]) )
+                else:
+                    row.append(RED_CROSS)
             elif cell == 'ext':
-                row.append( '`%s`' % extension )
+                if avail:
+                    row.append( '`%s`' % extension )
+                else:
+                    row.append(RED_CROSS)
+
         data.append(row)
     return get_markdown_table(header, data)
 
@@ -788,14 +797,14 @@ def generate_extension():
         if '$v' not in ext['rpm_pkg']:
             yum_install_tmpl = """```bash\ndnf install %s;\n```\n\n""" % ext['rpm_pkg']
         else:
-            pkgs = [ judge_ext(ver, 'el9', ext)[0] for ver in PG_VERS ]
-            yum_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'yum install ' + pkg + ';' for pkg in pkgs ])
+            pkgs = [ judge_ext(ver, 'el9', ext)[0] for ver in ext['rpm_pg'] ]
+            yum_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'dnf install ' + pkg + ';' for pkg in pkgs ])
 
         apt_install_preface = '\nInstall `%s` [DEB](/deb) from the %s **APT** repo:\n\n' % (getcol("alias", ext), getcol("rpmrepo", ext))
         if '$v' not in ext['rpm_pkg']:
             apt_install_tmpl = """```bash\napt install %s;\n```\n\n""" % ext['deb_pkg']
         else:
-            pkgs = [ judge_ext(ver, 'u22', ext)[0] for ver in PG_VERS ]
+            pkgs = [ judge_ext(ver, 'u22', ext)[0] for ver in ext['deb_pg'] ]
             apt_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'apt install ' + pkg + ';' for pkg in pkgs ])
         install_tmpl = pigsty_install_preface + pigsty_install_cmd
         if ext['has_rpm']: install_tmpl = install_tmpl + yum_install_preface + yum_install_tmpl
@@ -893,4 +902,3 @@ generate_contrib_list()
 generate_categories()
 generate_category()
 generate_extension()
-

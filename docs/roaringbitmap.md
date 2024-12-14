@@ -73,12 +73,12 @@ Install `roaringbitmap` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `roaringbitmap` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_roaringbitmap_17*;
-yum install pg_roaringbitmap_16*;
-yum install pg_roaringbitmap_15*;
-yum install pg_roaringbitmap_14*;
-yum install pg_roaringbitmap_13*;
-yum install pg_roaringbitmap_12*;
+dnf install pg_roaringbitmap_17*;
+dnf install pg_roaringbitmap_16*;
+dnf install pg_roaringbitmap_15*;
+dnf install pg_roaringbitmap_14*;
+dnf install pg_roaringbitmap_13*;
+dnf install pg_roaringbitmap_12*;
 ```
 
 

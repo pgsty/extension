@@ -73,12 +73,12 @@ Install `pg_random` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pg_random` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_random_17*;
-yum install pg_random_16*;
-yum install pg_random_15*;
-yum install pg_random_14*;
-yum install pg_random_13*;
-yum install pg_random_12*;
+dnf install pg_random_17*;
+dnf install pg_random_16*;
+dnf install pg_random_15*;
+dnf install pg_random_14*;
+dnf install pg_random_13*;
+dnf install pg_random_12*;
 ```
 
 

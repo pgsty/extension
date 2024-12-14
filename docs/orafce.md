@@ -73,12 +73,12 @@ Install `orafce` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `orafce` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install orafce_17*;
-yum install orafce_16*;
-yum install orafce_15*;
-yum install orafce_14*;
-yum install orafce_13*;
-yum install orafce_12*;
+dnf install orafce_17*;
+dnf install orafce_16*;
+dnf install orafce_15*;
+dnf install orafce_14*;
+dnf install orafce_13*;
+dnf install orafce_12*;
 ```
 
 

@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -77,12 +77,10 @@ Install `vchord` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `vchord` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install vchord_17;
-yum install vchord_16;
-yum install vchord_15;
-yum install vchord_14;
-yum install vchord_13;
-yum install vchord_12;
+dnf install vchord_17;
+dnf install vchord_16;
+dnf install vchord_15;
+dnf install vchord_14;
 ```
 
 
@@ -93,8 +91,6 @@ apt install postgresql-17-vchord;
 apt install postgresql-16-vchord;
 apt install postgresql-15-vchord;
 apt install postgresql-14-vchord;
-apt install postgresql-13-vchord;
-apt install postgresql-12-vchord;
 ```
 
 
@@ -102,11 +98,11 @@ apt install postgresql-12-vchord;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `vchord_17` | `vchord_16` | `vchord_15` | `vchord_14` | `vchord_13` | `vchord_12` |
-| `el9` | `vchord_17` | `vchord_16` | `vchord_15` | `vchord_14` | `vchord_13` | `vchord_12` |
-| `d12` | `postgresql-17-vchord` | `postgresql-16-vchord` | `postgresql-15-vchord` | `postgresql-14-vchord` | `postgresql-13-vchord` | `postgresql-12-vchord` |
-| `u22` | `postgresql-17-vchord` | `postgresql-16-vchord` | `postgresql-15-vchord` | `postgresql-14-vchord` | `postgresql-13-vchord` | `postgresql-12-vchord` |
-| `u24` | `postgresql-17-vchord` | `postgresql-16-vchord` | `postgresql-15-vchord` | `postgresql-14-vchord` | `postgresql-13-vchord` | `postgresql-12-vchord` |
+| `el8` | `vchord_17` | `vchord_16` | `vchord_15` | `vchord_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `vchord_17` | `vchord_16` | `vchord_15` | `vchord_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-vchord` | `postgresql-16-vchord` | `postgresql-15-vchord` | `postgresql-14-vchord` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-vchord` | `postgresql-16-vchord` | `postgresql-15-vchord` | `postgresql-14-vchord` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-vchord` | `postgresql-16-vchord` | `postgresql-15-vchord` | `postgresql-14-vchord` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

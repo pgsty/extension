@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
@@ -72,12 +72,11 @@ Install `mongo_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `mongo_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install mongo_fdw_17*;
-yum install mongo_fdw_16*;
-yum install mongo_fdw_15*;
-yum install mongo_fdw_14*;
-yum install mongo_fdw_13*;
-yum install mongo_fdw_12*;
+dnf install mongo_fdw_16*;
+dnf install mongo_fdw_15*;
+dnf install mongo_fdw_14*;
+dnf install mongo_fdw_13*;
+dnf install mongo_fdw_12*;
 ```
 
 
@@ -85,11 +84,11 @@ yum install mongo_fdw_12*;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `mongo_fdw_17*` | `mongo_fdw_16*` | `mongo_fdw_15*` | `mongo_fdw_14*` | `mongo_fdw_13*` | `mongo_fdw_12*` |
-| `el9` | `mongo_fdw_17*` | `mongo_fdw_16*` | `mongo_fdw_15*` | `mongo_fdw_14*` | `mongo_fdw_13*` | `mongo_fdw_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| `el8` | <span class="tcred">✘</span> | `mongo_fdw_16*` | `mongo_fdw_15*` | `mongo_fdw_14*` | `mongo_fdw_13*` | `mongo_fdw_12*` |
+| `el9` | <span class="tcred">✘</span> | `mongo_fdw_16*` | `mongo_fdw_15*` | `mongo_fdw_14*` | `mongo_fdw_13*` | `mongo_fdw_12*` |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

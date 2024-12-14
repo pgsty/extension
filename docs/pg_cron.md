@@ -77,12 +77,12 @@ Install `pg_cron` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pg_cron` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_cron_17*;
-yum install pg_cron_16*;
-yum install pg_cron_15*;
-yum install pg_cron_14*;
-yum install pg_cron_13*;
-yum install pg_cron_12*;
+dnf install pg_cron_17*;
+dnf install pg_cron_16*;
+dnf install pg_cron_15*;
+dnf install pg_cron_14*;
+dnf install pg_cron_13*;
+dnf install pg_cron_12*;
 ```
 
 

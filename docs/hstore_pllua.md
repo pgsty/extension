@@ -81,8 +81,8 @@ apt install postgresql-$v-pllua;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `` | `` | `` | `` | `` | `` |
-| `el9` | `` | `` | `` | `` | `` | `` |
+| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | `postgresql-17-pllua` | `postgresql-16-pllua` | `postgresql-15-pllua` | `postgresql-14-pllua` | `postgresql-13-pllua` | `postgresql-12-pllua` |
 | `u22` | `postgresql-17-pllua` | `postgresql-16-pllua` | `postgresql-15-pllua` | `postgresql-14-pllua` | `postgresql-13-pllua` | `postgresql-12-pllua` |
 | `u24` | `postgresql-17-pllua` | `postgresql-16-pllua` | `postgresql-15-pllua` | `postgresql-14-pllua` | `postgresql-13-pllua` | `postgresql-12-pllua` |

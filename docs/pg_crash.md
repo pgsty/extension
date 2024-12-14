@@ -73,12 +73,12 @@ Install `pg_crash` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pg_crash` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_crash_17*;
-yum install pg_crash_16*;
-yum install pg_crash_15*;
-yum install pg_crash_14*;
-yum install pg_crash_13*;
-yum install pg_crash_12*;
+dnf install pg_crash_17*;
+dnf install pg_crash_16*;
+dnf install pg_crash_15*;
+dnf install pg_crash_14*;
+dnf install pg_crash_13*;
+dnf install pg_crash_12*;
 ```
 
 

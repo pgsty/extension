@@ -73,12 +73,12 @@ Install `cryptint` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `cryptint` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install cryptint_17*;
-yum install cryptint_16*;
-yum install cryptint_15*;
-yum install cryptint_14*;
-yum install cryptint_13*;
-yum install cryptint_12*;
+dnf install cryptint_17*;
+dnf install cryptint_16*;
+dnf install cryptint_15*;
+dnf install cryptint_14*;
+dnf install cryptint_13*;
+dnf install cryptint_12*;
 ```
 
 

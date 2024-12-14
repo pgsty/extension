@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
@@ -72,12 +72,11 @@ Install `db2_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `db2_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install db2_fdw_17*;
-yum install db2_fdw_16*;
-yum install db2_fdw_15*;
-yum install db2_fdw_14*;
-yum install db2_fdw_13*;
-yum install db2_fdw_12*;
+dnf install db2_fdw_16*;
+dnf install db2_fdw_15*;
+dnf install db2_fdw_14*;
+dnf install db2_fdw_13*;
+dnf install db2_fdw_12*;
 ```
 
 
@@ -85,11 +84,11 @@ yum install db2_fdw_12*;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `db2_fdw_17*` | `db2_fdw_16*` | `db2_fdw_15*` | `db2_fdw_14*` | `db2_fdw_13*` | `db2_fdw_12*` |
-| `el9` | `db2_fdw_17*` | `db2_fdw_16*` | `db2_fdw_15*` | `db2_fdw_14*` | `db2_fdw_13*` | `db2_fdw_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| `el8` | <span class="tcred">✘</span> | `db2_fdw_16*` | `db2_fdw_15*` | `db2_fdw_14*` | `db2_fdw_13*` | `db2_fdw_12*` |
+| `el9` | <span class="tcred">✘</span> | `db2_fdw_16*` | `db2_fdw_15*` | `db2_fdw_14*` | `db2_fdw_13*` | `db2_fdw_12*` |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

@@ -73,12 +73,12 @@ Install `pg_similarity` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `pg_similarity` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_similarity_17*;
-yum install pg_similarity_16*;
-yum install pg_similarity_15*;
-yum install pg_similarity_14*;
-yum install pg_similarity_13*;
-yum install pg_similarity_12*;
+dnf install pg_similarity_17*;
+dnf install pg_similarity_16*;
+dnf install pg_similarity_15*;
+dnf install pg_similarity_14*;
+dnf install pg_similarity_13*;
+dnf install pg_similarity_12*;
 ```
 
 

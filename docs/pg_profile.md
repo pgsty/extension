@@ -73,12 +73,12 @@ Install `pg_profile` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pg_profile` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_profile_17*;
-yum install pg_profile_16*;
-yum install pg_profile_15*;
-yum install pg_profile_14*;
-yum install pg_profile_13*;
-yum install pg_profile_12*;
+dnf install pg_profile_17*;
+dnf install pg_profile_16*;
+dnf install pg_profile_15*;
+dnf install pg_profile_14*;
+dnf install pg_profile_13*;
+dnf install pg_profile_12*;
 ```
 
 

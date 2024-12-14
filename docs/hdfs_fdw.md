@@ -72,12 +72,12 @@ Install `hdfs_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `hdfs_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install hdfs_fdw_17*;
-yum install hdfs_fdw_16*;
-yum install hdfs_fdw_15*;
-yum install hdfs_fdw_14*;
-yum install hdfs_fdw_13*;
-yum install hdfs_fdw_12*;
+dnf install hdfs_fdw_17*;
+dnf install hdfs_fdw_16*;
+dnf install hdfs_fdw_15*;
+dnf install hdfs_fdw_14*;
+dnf install hdfs_fdw_13*;
+dnf install hdfs_fdw_12*;
 ```
 
 
@@ -87,9 +87,9 @@ yum install hdfs_fdw_12*;
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `hdfs_fdw_17*` | `hdfs_fdw_16*` | `hdfs_fdw_15*` | `hdfs_fdw_14*` | `hdfs_fdw_13*` | `hdfs_fdw_12*` |
 | `el9` | `hdfs_fdw_17*` | `hdfs_fdw_16*` | `hdfs_fdw_15*` | `hdfs_fdw_14*` | `hdfs_fdw_13*` | `hdfs_fdw_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

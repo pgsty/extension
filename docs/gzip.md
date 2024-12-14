@@ -73,12 +73,12 @@ Install `pg_gzip` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pg_gzip` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgsql_gzip_17*;
-yum install pgsql_gzip_16*;
-yum install pgsql_gzip_15*;
-yum install pgsql_gzip_14*;
-yum install pgsql_gzip_13*;
-yum install pgsql_gzip_12*;
+dnf install pgsql_gzip_17*;
+dnf install pgsql_gzip_16*;
+dnf install pgsql_gzip_15*;
+dnf install pgsql_gzip_14*;
+dnf install pgsql_gzip_13*;
+dnf install pgsql_gzip_12*;
 ```
 
 

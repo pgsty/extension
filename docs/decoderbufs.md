@@ -69,12 +69,12 @@ Install `decoderbufs` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 Install `decoderbufs` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install postgres-decoderbufs_17*;
-yum install postgres-decoderbufs_16*;
-yum install postgres-decoderbufs_15*;
-yum install postgres-decoderbufs_14*;
-yum install postgres-decoderbufs_13*;
-yum install postgres-decoderbufs_12*;
+dnf install postgres-decoderbufs_17*;
+dnf install postgres-decoderbufs_16*;
+dnf install postgres-decoderbufs_15*;
+dnf install postgres-decoderbufs_14*;
+dnf install postgres-decoderbufs_13*;
+dnf install postgres-decoderbufs_12*;
 ```
 
 

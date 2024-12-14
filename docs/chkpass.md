@@ -73,12 +73,12 @@ Install `chkpass` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `chkpass` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install chkpass_17*;
-yum install chkpass_16*;
-yum install chkpass_15*;
-yum install chkpass_14*;
-yum install chkpass_13*;
-yum install chkpass_12*;
+dnf install chkpass_17*;
+dnf install chkpass_16*;
+dnf install chkpass_15*;
+dnf install chkpass_14*;
+dnf install chkpass_13*;
+dnf install chkpass_12*;
 ```
 
 

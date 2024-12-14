@@ -73,12 +73,12 @@ Install `pg_vault` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pg_vault` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install vault_17*;
-yum install vault_16*;
-yum install vault_15*;
-yum install vault_14*;
-yum install vault_13*;
-yum install vault_12*;
+dnf install vault_17*;
+dnf install vault_16*;
+dnf install vault_15*;
+dnf install vault_14*;
+dnf install vault_13*;
+dnf install vault_12*;
 ```
 
 

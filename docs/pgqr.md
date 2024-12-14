@@ -73,12 +73,12 @@ Install `pgqr` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 Install `pgqr` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgqr_17*;
-yum install pgqr_16*;
-yum install pgqr_15*;
-yum install pgqr_14*;
-yum install pgqr_13*;
-yum install pgqr_12*;
+dnf install pgqr_17*;
+dnf install pgqr_16*;
+dnf install pgqr_15*;
+dnf install pgqr_14*;
+dnf install pgqr_13*;
+dnf install pgqr_12*;
 ```
 
 

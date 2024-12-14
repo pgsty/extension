@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -73,12 +73,11 @@ Install `ogr_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `ogr_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install ogr_fdw_17*;
-yum install ogr_fdw_16*;
-yum install ogr_fdw_15*;
-yum install ogr_fdw_14*;
-yum install ogr_fdw_13*;
-yum install ogr_fdw_12*;
+dnf install ogr_fdw_16*;
+dnf install ogr_fdw_15*;
+dnf install ogr_fdw_14*;
+dnf install ogr_fdw_13*;
+dnf install ogr_fdw_12*;
 ```
 
 
@@ -98,8 +97,8 @@ apt install postgresql-12-ogr-fdw;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `ogr_fdw_17*` | `ogr_fdw_16*` | `ogr_fdw_15*` | `ogr_fdw_14*` | `ogr_fdw_13*` | `ogr_fdw_12*` |
-| `el9` | `ogr_fdw_17*` | `ogr_fdw_16*` | `ogr_fdw_15*` | `ogr_fdw_14*` | `ogr_fdw_13*` | `ogr_fdw_12*` |
+| `el8` | <span class="tcred">✘</span> | `ogr_fdw_16*` | `ogr_fdw_15*` | `ogr_fdw_14*` | `ogr_fdw_13*` | `ogr_fdw_12*` |
+| `el9` | <span class="tcred">✘</span> | `ogr_fdw_16*` | `ogr_fdw_15*` | `ogr_fdw_14*` | `ogr_fdw_13*` | `ogr_fdw_12*` |
 | `d12` | `postgresql-17-ogr-fdw` | `postgresql-16-ogr-fdw` | `postgresql-15-ogr-fdw` | `postgresql-14-ogr-fdw` | `postgresql-13-ogr-fdw` | `postgresql-12-ogr-fdw` |
 | `u22` | `postgresql-17-ogr-fdw` | `postgresql-16-ogr-fdw` | `postgresql-15-ogr-fdw` | `postgresql-14-ogr-fdw` | `postgresql-13-ogr-fdw` | `postgresql-12-ogr-fdw` |
 | `u24` | `postgresql-17-ogr-fdw` | `postgresql-16-ogr-fdw` | `postgresql-15-ogr-fdw` | `postgresql-14-ogr-fdw` | `postgresql-13-ogr-fdw` | `postgresql-12-ogr-fdw` |

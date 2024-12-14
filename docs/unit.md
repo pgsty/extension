@@ -73,12 +73,12 @@ Install `pgunit` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `pgunit` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install postgresql-unit_17*;
-yum install postgresql-unit_16*;
-yum install postgresql-unit_15*;
-yum install postgresql-unit_14*;
-yum install postgresql-unit_13*;
-yum install postgresql-unit_12*;
+dnf install postgresql-unit_17*;
+dnf install postgresql-unit_16*;
+dnf install postgresql-unit_15*;
+dnf install postgresql-unit_14*;
+dnf install postgresql-unit_13*;
+dnf install postgresql-unit_12*;
 ```
 
 

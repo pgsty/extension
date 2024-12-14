@@ -73,12 +73,12 @@ Install `pg_ddlx` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pg_ddlx` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install ddlx_17*;
-yum install ddlx_16*;
-yum install ddlx_15*;
-yum install ddlx_14*;
-yum install ddlx_13*;
-yum install ddlx_12*;
+dnf install ddlx_17*;
+dnf install ddlx_16*;
+dnf install ddlx_15*;
+dnf install ddlx_14*;
+dnf install ddlx_13*;
+dnf install ddlx_12*;
 ```
 
 

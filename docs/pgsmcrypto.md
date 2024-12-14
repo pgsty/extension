@@ -73,12 +73,12 @@ Install `pgsmcrypto` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pgsmcrypto` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgsmcrypto_17;
-yum install pgsmcrypto_16;
-yum install pgsmcrypto_15;
-yum install pgsmcrypto_14;
-yum install pgsmcrypto_13;
-yum install pgsmcrypto_12;
+dnf install pgsmcrypto_17;
+dnf install pgsmcrypto_16;
+dnf install pgsmcrypto_15;
+dnf install pgsmcrypto_14;
+dnf install pgsmcrypto_13;
+dnf install pgsmcrypto_12;
 ```
 
 

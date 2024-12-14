@@ -73,12 +73,12 @@ Install `pglogical` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pglogical` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pglogical_17*;
-yum install pglogical_16*;
-yum install pglogical_15*;
-yum install pglogical_14*;
-yum install pglogical_13*;
-yum install pglogical_12*;
+dnf install pglogical_17*;
+dnf install pglogical_16*;
+dnf install pglogical_15*;
+dnf install pglogical_14*;
+dnf install pglogical_13*;
+dnf install pglogical_12*;
 ```
 
 

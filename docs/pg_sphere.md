@@ -73,12 +73,12 @@ Install `pgsphere` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pgsphere` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgsphere_17*;
-yum install pgsphere_16*;
-yum install pgsphere_15*;
-yum install pgsphere_14*;
-yum install pgsphere_13*;
-yum install pgsphere_12*;
+dnf install pgsphere_17*;
+dnf install pgsphere_16*;
+dnf install pgsphere_15*;
+dnf install pgsphere_14*;
+dnf install pgsphere_13*;
+dnf install pgsphere_12*;
 ```
 
 

@@ -80,8 +80,8 @@ apt install postgresql-$v-pg-rrule;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `` | `` | `` | `` | `` | `` |
-| `el9` | `` | `` | `` | `` | `` | `` |
+| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | `postgresql-17-pg-rrule` | `postgresql-16-pg-rrule` | `postgresql-15-pg-rrule` | `postgresql-14-pg-rrule` | `postgresql-13-pg-rrule` | `postgresql-12-pg-rrule` |
 | `u22` | `postgresql-17-pg-rrule` | `postgresql-16-pg-rrule` | `postgresql-15-pg-rrule` | `postgresql-14-pg-rrule` | `postgresql-13-pg-rrule` | `postgresql-12-pg-rrule` |
 | `u24` | `postgresql-17-pg-rrule` | `postgresql-16-pg-rrule` | `postgresql-15-pg-rrule` | `postgresql-14-pg-rrule` | `postgresql-13-pg-rrule` | `postgresql-12-pg-rrule` |

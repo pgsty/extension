@@ -73,12 +73,12 @@ Install `count_distinct` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `count_distinct` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install count_distinct_17*;
-yum install count_distinct_16*;
-yum install count_distinct_15*;
-yum install count_distinct_14*;
-yum install count_distinct_13*;
-yum install count_distinct_12*;
+dnf install count_distinct_17*;
+dnf install count_distinct_16*;
+dnf install count_distinct_15*;
+dnf install count_distinct_14*;
+dnf install count_distinct_13*;
+dnf install count_distinct_12*;
 ```
 
 

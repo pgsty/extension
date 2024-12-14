@@ -77,12 +77,12 @@ Install `plpgsql_check` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `plpgsql_check` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install plpgsql_check_17*;
-yum install plpgsql_check_16*;
-yum install plpgsql_check_15*;
-yum install plpgsql_check_14*;
-yum install plpgsql_check_13*;
-yum install plpgsql_check_12*;
+dnf install plpgsql_check_17*;
+dnf install plpgsql_check_16*;
+dnf install plpgsql_check_15*;
+dnf install plpgsql_check_14*;
+dnf install plpgsql_check_13*;
+dnf install plpgsql_check_12*;
 ```
 
 

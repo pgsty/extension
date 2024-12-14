@@ -73,12 +73,12 @@ Install `pg_permissions` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `pg_permissions` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_permissions_17*;
-yum install pg_permissions_16*;
-yum install pg_permissions_15*;
-yum install pg_permissions_14*;
-yum install pg_permissions_13*;
-yum install pg_permissions_12*;
+dnf install pg_permissions_17*;
+dnf install pg_permissions_16*;
+dnf install pg_permissions_15*;
+dnf install pg_permissions_14*;
+dnf install pg_permissions_13*;
+dnf install pg_permissions_12*;
 ```
 
 

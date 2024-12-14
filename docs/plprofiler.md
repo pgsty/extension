@@ -73,12 +73,12 @@ Install `plprofiler` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `plprofiler` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install plprofiler_17*;
-yum install plprofiler_16*;
-yum install plprofiler_15*;
-yum install plprofiler_14*;
-yum install plprofiler_13*;
-yum install plprofiler_12*;
+dnf install plprofiler_17*;
+dnf install plprofiler_16*;
+dnf install plprofiler_15*;
+dnf install plprofiler_14*;
+dnf install plprofiler_13*;
+dnf install plprofiler_12*;
 ```
 
 

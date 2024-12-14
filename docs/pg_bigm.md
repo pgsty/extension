@@ -73,12 +73,12 @@ Install `pg_bigm` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pg_bigm` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_bigm_17*;
-yum install pg_bigm_16*;
-yum install pg_bigm_15*;
-yum install pg_bigm_14*;
-yum install pg_bigm_13*;
-yum install pg_bigm_12*;
+dnf install pg_bigm_17*;
+dnf install pg_bigm_16*;
+dnf install pg_bigm_15*;
+dnf install pg_bigm_14*;
+dnf install pg_bigm_13*;
+dnf install pg_bigm_12*;
 ```
 
 

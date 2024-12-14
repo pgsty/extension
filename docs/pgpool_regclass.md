@@ -73,12 +73,12 @@ Install `pgpool` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `pgpool` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgpool-II-pg17-extensions;
-yum install pgpool-II-pg16-extensions;
-yum install pgpool-II-pg15-extensions;
-yum install pgpool-II-pg14-extensions;
-yum install pgpool-II-pg13-extensions;
-yum install pgpool-II-pg12-extensions;
+dnf install pgpool-II-pg17-extensions;
+dnf install pgpool-II-pg16-extensions;
+dnf install pgpool-II-pg15-extensions;
+dnf install pgpool-II-pg14-extensions;
+dnf install pgpool-II-pg13-extensions;
+dnf install pgpool-II-pg12-extensions;
 ```
 
 

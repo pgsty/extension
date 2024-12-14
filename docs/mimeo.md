@@ -73,12 +73,12 @@ Install `mimeo` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `mimeo` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install mimeo_17;
-yum install mimeo_16;
-yum install mimeo_15;
-yum install mimeo_14;
-yum install mimeo_13;
-yum install mimeo_12;
+dnf install mimeo_17;
+dnf install mimeo_16;
+dnf install mimeo_15;
+dnf install mimeo_14;
+dnf install mimeo_13;
+dnf install mimeo_12;
 ```
 
 

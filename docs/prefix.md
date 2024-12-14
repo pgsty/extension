@@ -73,12 +73,12 @@ Install `pg_prefix` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pg_prefix` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install prefix_17*;
-yum install prefix_16*;
-yum install prefix_15*;
-yum install prefix_14*;
-yum install prefix_13*;
-yum install prefix_12*;
+dnf install prefix_17*;
+dnf install prefix_16*;
+dnf install prefix_15*;
+dnf install prefix_14*;
+dnf install prefix_13*;
+dnf install prefix_12*;
 ```
 
 

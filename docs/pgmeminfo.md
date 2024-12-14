@@ -73,12 +73,12 @@ Install `pgmeminfo` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pgmeminfo` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgmeminfo_17*;
-yum install pgmeminfo_16*;
-yum install pgmeminfo_15*;
-yum install pgmeminfo_14*;
-yum install pgmeminfo_13*;
-yum install pgmeminfo_12*;
+dnf install pgmeminfo_17*;
+dnf install pgmeminfo_16*;
+dnf install pgmeminfo_15*;
+dnf install pgmeminfo_14*;
+dnf install pgmeminfo_13*;
+dnf install pgmeminfo_12*;
 ```
 
 

@@ -73,12 +73,12 @@ Install `pg_explain_ui` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `pg_explain_ui` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_explain_ui_17;
-yum install pg_explain_ui_16;
-yum install pg_explain_ui_15;
-yum install pg_explain_ui_14;
-yum install pg_explain_ui_13;
-yum install pg_explain_ui_12;
+dnf install pg_explain_ui_17;
+dnf install pg_explain_ui_16;
+dnf install pg_explain_ui_15;
+dnf install pg_explain_ui_14;
+dnf install pg_explain_ui_13;
+dnf install pg_explain_ui_12;
 ```
 
 

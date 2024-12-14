@@ -73,12 +73,12 @@ Install `pg_statement_rollback` via [Pigsty](https://pigsty.io/docs/pgext/usage/
 Install `pg_statement_rollback` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_statement_rollback_17*;
-yum install pg_statement_rollback_16*;
-yum install pg_statement_rollback_15*;
-yum install pg_statement_rollback_14*;
-yum install pg_statement_rollback_13*;
-yum install pg_statement_rollback_12*;
+dnf install pg_statement_rollback_17*;
+dnf install pg_statement_rollback_16*;
+dnf install pg_statement_rollback_15*;
+dnf install pg_statement_rollback_14*;
+dnf install pg_statement_rollback_13*;
+dnf install pg_statement_rollback_12*;
 ```
 
 

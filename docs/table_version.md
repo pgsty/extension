@@ -73,12 +73,12 @@ Install `table_version` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `table_version` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install table_version_17*;
-yum install table_version_16*;
-yum install table_version_15*;
-yum install table_version_14*;
-yum install table_version_13*;
-yum install table_version_12*;
+dnf install table_version_17*;
+dnf install table_version_16*;
+dnf install table_version_15*;
+dnf install table_version_14*;
+dnf install table_version_13*;
+dnf install table_version_12*;
 ```
 
 

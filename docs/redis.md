@@ -73,12 +73,12 @@ Install `pg_redis_pubsub` via [Pigsty](https://pigsty.io/docs/pgext/usage/instal
 Install `pg_redis_pubsub` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_redis_pubsub_17*;
-yum install pg_redis_pubsub_16*;
-yum install pg_redis_pubsub_15*;
-yum install pg_redis_pubsub_14*;
-yum install pg_redis_pubsub_13*;
-yum install pg_redis_pubsub_12*;
+dnf install pg_redis_pubsub_17*;
+dnf install pg_redis_pubsub_16*;
+dnf install pg_redis_pubsub_15*;
+dnf install pg_redis_pubsub_14*;
+dnf install pg_redis_pubsub_13*;
+dnf install pg_redis_pubsub_12*;
 ```
 
 

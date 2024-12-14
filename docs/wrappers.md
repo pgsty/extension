@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -73,12 +73,10 @@ Install `wrappers` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `wrappers` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install wrappers_17;
-yum install wrappers_16;
-yum install wrappers_15;
-yum install wrappers_14;
-yum install wrappers_13;
-yum install wrappers_12;
+dnf install wrappers_17;
+dnf install wrappers_16;
+dnf install wrappers_15;
+dnf install wrappers_14;
 ```
 
 
@@ -89,8 +87,6 @@ apt install postgresql-17-wrappers;
 apt install postgresql-16-wrappers;
 apt install postgresql-15-wrappers;
 apt install postgresql-14-wrappers;
-apt install postgresql-13-wrappers;
-apt install postgresql-12-wrappers;
 ```
 
 
@@ -98,11 +94,11 @@ apt install postgresql-12-wrappers;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `wrappers_17` | `wrappers_16` | `wrappers_15` | `wrappers_14` | `wrappers_13` | `wrappers_12` |
-| `el9` | `wrappers_17` | `wrappers_16` | `wrappers_15` | `wrappers_14` | `wrappers_13` | `wrappers_12` |
-| `d12` | `postgresql-17-wrappers` | `postgresql-16-wrappers` | `postgresql-15-wrappers` | `postgresql-14-wrappers` | `postgresql-13-wrappers` | `postgresql-12-wrappers` |
-| `u22` | `postgresql-17-wrappers` | `postgresql-16-wrappers` | `postgresql-15-wrappers` | `postgresql-14-wrappers` | `postgresql-13-wrappers` | `postgresql-12-wrappers` |
-| `u24` | `postgresql-17-wrappers` | `postgresql-16-wrappers` | `postgresql-15-wrappers` | `postgresql-14-wrappers` | `postgresql-13-wrappers` | `postgresql-12-wrappers` |
+| `el8` | `wrappers_17` | `wrappers_16` | `wrappers_15` | `wrappers_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `wrappers_17` | `wrappers_16` | `wrappers_15` | `wrappers_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-wrappers` | `postgresql-16-wrappers` | `postgresql-15-wrappers` | `postgresql-14-wrappers` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-wrappers` | `postgresql-16-wrappers` | `postgresql-15-wrappers` | `postgresql-14-wrappers` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-wrappers` | `postgresql-16-wrappers` | `postgresql-15-wrappers` | `postgresql-14-wrappers` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

@@ -38,9 +38,9 @@
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -73,12 +73,12 @@ Install `safeupdate` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `safeupdate` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install safeupdate_17*;
-yum install safeupdate_16*;
-yum install safeupdate_15*;
-yum install safeupdate_14*;
-yum install safeupdate_13*;
-yum install safeupdate_12*;
+dnf install safeupdate_17*;
+dnf install safeupdate_16*;
+dnf install safeupdate_15*;
+dnf install safeupdate_14*;
+dnf install safeupdate_13*;
+dnf install safeupdate_12*;
 ```
 
 
@@ -89,8 +89,6 @@ apt install postgresql-17-pg-safeupdate;
 apt install postgresql-16-pg-safeupdate;
 apt install postgresql-15-pg-safeupdate;
 apt install postgresql-14-pg-safeupdate;
-apt install postgresql-13-pg-safeupdate;
-apt install postgresql-12-pg-safeupdate;
 ```
 
 
@@ -100,9 +98,9 @@ apt install postgresql-12-pg-safeupdate;
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `safeupdate_17*` | `safeupdate_16*` | `safeupdate_15*` | `safeupdate_14*` | `safeupdate_13*` | `safeupdate_12*` |
 | `el9` | `safeupdate_17*` | `safeupdate_16*` | `safeupdate_15*` | `safeupdate_14*` | `safeupdate_13*` | `safeupdate_12*` |
-| `d12` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | `postgresql-13-pg-safeupdate` | `postgresql-12-pg-safeupdate` |
-| `u22` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | `postgresql-13-pg-safeupdate` | `postgresql-12-pg-safeupdate` |
-| `u24` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | `postgresql-13-pg-safeupdate` | `postgresql-12-pg-safeupdate` |
+| `d12` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

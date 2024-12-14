@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -73,12 +73,10 @@ Install `pg_graphql` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pg_graphql` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_graphql_17;
-yum install pg_graphql_16;
-yum install pg_graphql_15;
-yum install pg_graphql_14;
-yum install pg_graphql_13;
-yum install pg_graphql_12;
+dnf install pg_graphql_17;
+dnf install pg_graphql_16;
+dnf install pg_graphql_15;
+dnf install pg_graphql_14;
 ```
 
 
@@ -89,8 +87,6 @@ apt install postgresql-17-pg-graphql;
 apt install postgresql-16-pg-graphql;
 apt install postgresql-15-pg-graphql;
 apt install postgresql-14-pg-graphql;
-apt install postgresql-13-pg-graphql;
-apt install postgresql-12-pg-graphql;
 ```
 
 
@@ -98,11 +94,11 @@ apt install postgresql-12-pg-graphql;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_graphql_17` | `pg_graphql_16` | `pg_graphql_15` | `pg_graphql_14` | `pg_graphql_13` | `pg_graphql_12` |
-| `el9` | `pg_graphql_17` | `pg_graphql_16` | `pg_graphql_15` | `pg_graphql_14` | `pg_graphql_13` | `pg_graphql_12` |
-| `d12` | `postgresql-17-pg-graphql` | `postgresql-16-pg-graphql` | `postgresql-15-pg-graphql` | `postgresql-14-pg-graphql` | `postgresql-13-pg-graphql` | `postgresql-12-pg-graphql` |
-| `u22` | `postgresql-17-pg-graphql` | `postgresql-16-pg-graphql` | `postgresql-15-pg-graphql` | `postgresql-14-pg-graphql` | `postgresql-13-pg-graphql` | `postgresql-12-pg-graphql` |
-| `u24` | `postgresql-17-pg-graphql` | `postgresql-16-pg-graphql` | `postgresql-15-pg-graphql` | `postgresql-14-pg-graphql` | `postgresql-13-pg-graphql` | `postgresql-12-pg-graphql` |
+| `el8` | `pg_graphql_17` | `pg_graphql_16` | `pg_graphql_15` | `pg_graphql_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `pg_graphql_17` | `pg_graphql_16` | `pg_graphql_15` | `pg_graphql_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-pg-graphql` | `postgresql-16-pg-graphql` | `postgresql-15-pg-graphql` | `postgresql-14-pg-graphql` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pg-graphql` | `postgresql-16-pg-graphql` | `postgresql-15-pg-graphql` | `postgresql-14-pg-graphql` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pg-graphql` | `postgresql-16-pg-graphql` | `postgresql-15-pg-graphql` | `postgresql-14-pg-graphql` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

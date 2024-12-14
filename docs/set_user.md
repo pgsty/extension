@@ -73,12 +73,12 @@ Install `set_user` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `set_user` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install set_user_17*;
-yum install set_user_16*;
-yum install set_user_15*;
-yum install set_user_14*;
-yum install set_user_13*;
-yum install set_user_12*;
+dnf install set_user_17*;
+dnf install set_user_16*;
+dnf install set_user_15*;
+dnf install set_user_14*;
+dnf install set_user_13*;
+dnf install set_user_12*;
 ```
 
 

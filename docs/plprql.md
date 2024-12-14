@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -73,19 +73,17 @@ Install `plprql` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `plprql` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install plprql_17;
-yum install plprql_16;
-yum install plprql_15;
-yum install plprql_14;
-yum install plprql_13;
-yum install plprql_12;
+dnf install plprql_16;
+dnf install plprql_15;
+dnf install plprql_14;
+dnf install plprql_13;
+dnf install plprql_12;
 ```
 
 
 Install `plprql` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-plprql;
 apt install postgresql-16-plprql;
 apt install postgresql-15-plprql;
 apt install postgresql-14-plprql;
@@ -98,11 +96,11 @@ apt install postgresql-12-plprql;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `plprql_17` | `plprql_16` | `plprql_15` | `plprql_14` | `plprql_13` | `plprql_12` |
-| `el9` | `plprql_17` | `plprql_16` | `plprql_15` | `plprql_14` | `plprql_13` | `plprql_12` |
-| `d12` | `postgresql-17-plprql` | `postgresql-16-plprql` | `postgresql-15-plprql` | `postgresql-14-plprql` | `postgresql-13-plprql` | `postgresql-12-plprql` |
-| `u22` | `postgresql-17-plprql` | `postgresql-16-plprql` | `postgresql-15-plprql` | `postgresql-14-plprql` | `postgresql-13-plprql` | `postgresql-12-plprql` |
-| `u24` | `postgresql-17-plprql` | `postgresql-16-plprql` | `postgresql-15-plprql` | `postgresql-14-plprql` | `postgresql-13-plprql` | `postgresql-12-plprql` |
+| `el8` | <span class="tcred">✘</span> | `plprql_16` | `plprql_15` | `plprql_14` | `plprql_13` | `plprql_12` |
+| `el9` | <span class="tcred">✘</span> | `plprql_16` | `plprql_15` | `plprql_14` | `plprql_13` | `plprql_12` |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-plprql` | `postgresql-15-plprql` | `postgresql-14-plprql` | `postgresql-13-plprql` | `postgresql-12-plprql` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-plprql` | `postgresql-15-plprql` | `postgresql-14-plprql` | `postgresql-13-plprql` | `postgresql-12-plprql` |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-plprql` | `postgresql-15-plprql` | `postgresql-14-plprql` | `postgresql-13-plprql` | `postgresql-12-plprql` |
 
 
 

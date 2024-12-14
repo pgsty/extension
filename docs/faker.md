@@ -72,12 +72,12 @@ Install `faker` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `faker` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install postgresql_faker_17*;
-yum install postgresql_faker_16*;
-yum install postgresql_faker_15*;
-yum install postgresql_faker_14*;
-yum install postgresql_faker_13*;
-yum install postgresql_faker_12*;
+dnf install postgresql_faker_17*;
+dnf install postgresql_faker_16*;
+dnf install postgresql_faker_15*;
+dnf install postgresql_faker_14*;
+dnf install postgresql_faker_13*;
+dnf install postgresql_faker_12*;
 ```
 
 
@@ -87,9 +87,9 @@ yum install postgresql_faker_12*;
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `postgresql_faker_17*` | `postgresql_faker_16*` | `postgresql_faker_15*` | `postgresql_faker_14*` | `postgresql_faker_13*` | `postgresql_faker_12*` |
 | `el9` | `postgresql_faker_17*` | `postgresql_faker_16*` | `postgresql_faker_15*` | `postgresql_faker_14*` | `postgresql_faker_13*` | `postgresql_faker_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

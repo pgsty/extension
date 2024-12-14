@@ -69,12 +69,12 @@ Install `decoder_raw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 Install `decoder_raw` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install decoder_raw_17*;
-yum install decoder_raw_16*;
-yum install decoder_raw_15*;
-yum install decoder_raw_14*;
-yum install decoder_raw_13*;
-yum install decoder_raw_12*;
+dnf install decoder_raw_17*;
+dnf install decoder_raw_16*;
+dnf install decoder_raw_15*;
+dnf install decoder_raw_14*;
+dnf install decoder_raw_13*;
+dnf install decoder_raw_12*;
 ```
 
 

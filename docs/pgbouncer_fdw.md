@@ -72,12 +72,12 @@ Install `pgbouncer_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `pgbouncer_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgbouncer_fdw_17*;
-yum install pgbouncer_fdw_16*;
-yum install pgbouncer_fdw_15*;
-yum install pgbouncer_fdw_14*;
-yum install pgbouncer_fdw_13*;
-yum install pgbouncer_fdw_12*;
+dnf install pgbouncer_fdw_17*;
+dnf install pgbouncer_fdw_16*;
+dnf install pgbouncer_fdw_15*;
+dnf install pgbouncer_fdw_14*;
+dnf install pgbouncer_fdw_13*;
+dnf install pgbouncer_fdw_12*;
 ```
 
 
@@ -87,9 +87,9 @@ yum install pgbouncer_fdw_12*;
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `pgbouncer_fdw_17*` | `pgbouncer_fdw_16*` | `pgbouncer_fdw_15*` | `pgbouncer_fdw_14*` | `pgbouncer_fdw_13*` | `pgbouncer_fdw_12*` |
 | `el9` | `pgbouncer_fdw_17*` | `pgbouncer_fdw_16*` | `pgbouncer_fdw_15*` | `pgbouncer_fdw_14*` | `pgbouncer_fdw_13*` | `pgbouncer_fdw_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

@@ -73,12 +73,12 @@ Install `pg_summarize` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `pg_summarize` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_summarize_17;
-yum install pg_summarize_16;
-yum install pg_summarize_15;
-yum install pg_summarize_14;
-yum install pg_summarize_13;
-yum install pg_summarize_12;
+dnf install pg_summarize_17;
+dnf install pg_summarize_16;
+dnf install pg_summarize_15;
+dnf install pg_summarize_14;
+dnf install pg_summarize_13;
+dnf install pg_summarize_12;
 ```
 
 

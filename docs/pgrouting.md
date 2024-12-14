@@ -73,12 +73,12 @@ Install `pgrouting` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pgrouting` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgrouting_17*;
-yum install pgrouting_16*;
-yum install pgrouting_15*;
-yum install pgrouting_14*;
-yum install pgrouting_13*;
-yum install pgrouting_12*;
+dnf install pgrouting_17*;
+dnf install pgrouting_16*;
+dnf install pgrouting_15*;
+dnf install pgrouting_14*;
+dnf install pgrouting_13*;
+dnf install pgrouting_12*;
 ```
 
 

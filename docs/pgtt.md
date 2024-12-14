@@ -73,12 +73,12 @@ Install `pgtt` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 Install `pgtt` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgtt_17*;
-yum install pgtt_16*;
-yum install pgtt_15*;
-yum install pgtt_14*;
-yum install pgtt_13*;
-yum install pgtt_12*;
+dnf install pgtt_17*;
+dnf install pgtt_16*;
+dnf install pgtt_15*;
+dnf install pgtt_14*;
+dnf install pgtt_13*;
+dnf install pgtt_12*;
 ```
 
 

@@ -73,12 +73,12 @@ Install `pg_hint_plan` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `pg_hint_plan` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_hint_plan_17*;
-yum install pg_hint_plan_16*;
-yum install pg_hint_plan_15*;
-yum install pg_hint_plan_14*;
-yum install pg_hint_plan_13*;
-yum install pg_hint_plan_12*;
+dnf install pg_hint_plan_17*;
+dnf install pg_hint_plan_16*;
+dnf install pg_hint_plan_15*;
+dnf install pg_hint_plan_14*;
+dnf install pg_hint_plan_13*;
+dnf install pg_hint_plan_12*;
 ```
 
 

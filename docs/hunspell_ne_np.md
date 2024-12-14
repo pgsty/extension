@@ -73,12 +73,12 @@ Install `hunspell_ne_np` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `hunspell_ne_np` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install hunspell_ne_np_17;
-yum install hunspell_ne_np_16;
-yum install hunspell_ne_np_15;
-yum install hunspell_ne_np_14;
-yum install hunspell_ne_np_13;
-yum install hunspell_ne_np_12;
+dnf install hunspell_ne_np_17;
+dnf install hunspell_ne_np_16;
+dnf install hunspell_ne_np_15;
+dnf install hunspell_ne_np_14;
+dnf install hunspell_ne_np_13;
+dnf install hunspell_ne_np_12;
 ```
 
 

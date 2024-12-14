@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -73,19 +73,17 @@ Install `powa` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 Install `powa` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install powa_17*;
-yum install powa_16*;
-yum install powa_15*;
-yum install powa_14*;
-yum install powa_13*;
-yum install powa_12*;
+dnf install powa_16*;
+dnf install powa_15*;
+dnf install powa_14*;
+dnf install powa_13*;
+dnf install powa_12*;
 ```
 
 
 Install `powa` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-powa;
 apt install postgresql-16-powa;
 apt install postgresql-15-powa;
 apt install postgresql-14-powa;
@@ -98,11 +96,11 @@ apt install postgresql-12-powa;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `powa_17*` | `powa_16*` | `powa_15*` | `powa_14*` | `powa_13*` | `powa_12*` |
-| `el9` | `powa_17*` | `powa_16*` | `powa_15*` | `powa_14*` | `powa_13*` | `powa_12*` |
-| `d12` | `postgresql-17-powa` | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` | `postgresql-12-powa` |
-| `u22` | `postgresql-17-powa` | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` | `postgresql-12-powa` |
-| `u24` | `postgresql-17-powa` | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` | `postgresql-12-powa` |
+| `el8` | <span class="tcred">✘</span> | `powa_16*` | `powa_15*` | `powa_14*` | `powa_13*` | `powa_12*` |
+| `el9` | <span class="tcred">✘</span> | `powa_16*` | `powa_15*` | `powa_14*` | `powa_13*` | `powa_12*` |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` | `postgresql-12-powa` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` | `postgresql-12-powa` |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` | `postgresql-12-powa` |
 
 
 

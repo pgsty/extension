@@ -73,12 +73,12 @@ Install `pg_financial` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `pg_financial` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_financial_17*;
-yum install pg_financial_16*;
-yum install pg_financial_15*;
-yum install pg_financial_14*;
-yum install pg_financial_13*;
-yum install pg_financial_12*;
+dnf install pg_financial_17*;
+dnf install pg_financial_16*;
+dnf install pg_financial_15*;
+dnf install pg_financial_14*;
+dnf install pg_financial_13*;
+dnf install pg_financial_12*;
 ```
 
 

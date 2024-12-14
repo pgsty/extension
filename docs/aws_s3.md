@@ -73,12 +73,12 @@ Install `aws_s3` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `aws_s3` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install aws_s3_17;
-yum install aws_s3_16;
-yum install aws_s3_15;
-yum install aws_s3_14;
-yum install aws_s3_13;
-yum install aws_s3_12;
+dnf install aws_s3_17;
+dnf install aws_s3_16;
+dnf install aws_s3_15;
+dnf install aws_s3_14;
+dnf install aws_s3_13;
+dnf install aws_s3_12;
 ```
 
 

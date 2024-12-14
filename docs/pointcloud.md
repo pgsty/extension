@@ -73,12 +73,12 @@ Install `pointcloud` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pointcloud` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pointcloud_17*;
-yum install pointcloud_16*;
-yum install pointcloud_15*;
-yum install pointcloud_14*;
-yum install pointcloud_13*;
-yum install pointcloud_12*;
+dnf install pointcloud_17*;
+dnf install pointcloud_16*;
+dnf install pointcloud_15*;
+dnf install pointcloud_14*;
+dnf install pointcloud_13*;
+dnf install pointcloud_12*;
 ```
 
 

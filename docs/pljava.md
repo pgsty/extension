@@ -73,12 +73,12 @@ Install `pljava` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `pljava` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pljava_17*;
-yum install pljava_16*;
-yum install pljava_15*;
-yum install pljava_14*;
-yum install pljava_13*;
-yum install pljava_12*;
+dnf install pljava_17*;
+dnf install pljava_16*;
+dnf install pljava_15*;
+dnf install pljava_14*;
+dnf install pljava_13*;
+dnf install pljava_12*;
 ```
 
 
@@ -98,7 +98,7 @@ apt install postgresql-12-pljava;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pljava_17*` | `pljava_16*` | `pljava_15*` | `pljava_14*` | `pljava_13*` | `pljava_12*` |
+| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `el9` | `pljava_17*` | `pljava_16*` | `pljava_15*` | `pljava_14*` | `pljava_13*` | `pljava_12*` |
 | `d12` | `postgresql-17-pljava` | `postgresql-16-pljava` | `postgresql-15-pljava` | `postgresql-14-pljava` | `postgresql-13-pljava` | `postgresql-12-pljava` |
 | `u22` | `postgresql-17-pljava` | `postgresql-16-pljava` | `postgresql-15-pljava` | `postgresql-14-pljava` | `postgresql-13-pljava` | `postgresql-12-pljava` |

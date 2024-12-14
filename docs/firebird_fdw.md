@@ -73,12 +73,12 @@ Install `firebird_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `firebird_fdw` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install firebird_fdw_17;
-yum install firebird_fdw_16;
-yum install firebird_fdw_15;
-yum install firebird_fdw_14;
-yum install firebird_fdw_13;
-yum install firebird_fdw_12;
+dnf install firebird_fdw_17;
+dnf install firebird_fdw_16;
+dnf install firebird_fdw_15;
+dnf install firebird_fdw_14;
+dnf install firebird_fdw_13;
+dnf install firebird_fdw_12;
 ```
 
 

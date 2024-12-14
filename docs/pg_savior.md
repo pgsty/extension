@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -73,12 +73,11 @@ Install `pg_savior` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pg_savior` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_savior_17*;
-yum install pg_savior_16*;
-yum install pg_savior_15*;
-yum install pg_savior_14*;
-yum install pg_savior_13*;
-yum install pg_savior_12*;
+dnf install pg_savior_17*;
+dnf install pg_savior_16*;
+dnf install pg_savior_15*;
+dnf install pg_savior_14*;
+dnf install pg_savior_13*;
 ```
 
 
@@ -90,7 +89,6 @@ apt install postgresql-16-pg-savior;
 apt install postgresql-15-pg-savior;
 apt install postgresql-14-pg-savior;
 apt install postgresql-13-pg-savior;
-apt install postgresql-12-pg-savior;
 ```
 
 
@@ -98,11 +96,11 @@ apt install postgresql-12-pg-savior;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_savior_17*` | `pg_savior_16*` | `pg_savior_15*` | `pg_savior_14*` | `pg_savior_13*` | `pg_savior_12*` |
-| `el9` | `pg_savior_17*` | `pg_savior_16*` | `pg_savior_15*` | `pg_savior_14*` | `pg_savior_13*` | `pg_savior_12*` |
-| `d12` | `postgresql-17-pg-savior` | `postgresql-16-pg-savior` | `postgresql-15-pg-savior` | `postgresql-14-pg-savior` | `postgresql-13-pg-savior` | `postgresql-12-pg-savior` |
-| `u22` | `postgresql-17-pg-savior` | `postgresql-16-pg-savior` | `postgresql-15-pg-savior` | `postgresql-14-pg-savior` | `postgresql-13-pg-savior` | `postgresql-12-pg-savior` |
-| `u24` | `postgresql-17-pg-savior` | `postgresql-16-pg-savior` | `postgresql-15-pg-savior` | `postgresql-14-pg-savior` | `postgresql-13-pg-savior` | `postgresql-12-pg-savior` |
+| `el8` | `pg_savior_17*` | `pg_savior_16*` | `pg_savior_15*` | `pg_savior_14*` | `pg_savior_13*` | <span class="tcred">✘</span> |
+| `el9` | `pg_savior_17*` | `pg_savior_16*` | `pg_savior_15*` | `pg_savior_14*` | `pg_savior_13*` | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-pg-savior` | `postgresql-16-pg-savior` | `postgresql-15-pg-savior` | `postgresql-14-pg-savior` | `postgresql-13-pg-savior` | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pg-savior` | `postgresql-16-pg-savior` | `postgresql-15-pg-savior` | `postgresql-14-pg-savior` | `postgresql-13-pg-savior` | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pg-savior` | `postgresql-16-pg-savior` | `postgresql-15-pg-savior` | `postgresql-14-pg-savior` | `postgresql-13-pg-savior` | <span class="tcred">✘</span> |
 
 
 

@@ -77,12 +77,12 @@ Install `pgpdf` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `pgpdf` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgpdf_17*;
-yum install pgpdf_16*;
-yum install pgpdf_15*;
-yum install pgpdf_14*;
-yum install pgpdf_13*;
-yum install pgpdf_12*;
+dnf install pgpdf_17*;
+dnf install pgpdf_16*;
+dnf install pgpdf_15*;
+dnf install pgpdf_14*;
+dnf install pgpdf_13*;
+dnf install pgpdf_12*;
 ```
 
 

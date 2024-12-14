@@ -73,12 +73,12 @@ Install `bgw_replstatus` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `bgw_replstatus` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install bgw_replstatus_17*;
-yum install bgw_replstatus_16*;
-yum install bgw_replstatus_15*;
-yum install bgw_replstatus_14*;
-yum install bgw_replstatus_13*;
-yum install bgw_replstatus_12*;
+dnf install bgw_replstatus_17*;
+dnf install bgw_replstatus_16*;
+dnf install bgw_replstatus_15*;
+dnf install bgw_replstatus_14*;
+dnf install bgw_replstatus_13*;
+dnf install bgw_replstatus_12*;
 ```
 
 

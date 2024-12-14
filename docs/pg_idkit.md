@@ -73,12 +73,12 @@ Install `pg_idkit` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pg_idkit` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_idkit_17;
-yum install pg_idkit_16;
-yum install pg_idkit_15;
-yum install pg_idkit_14;
-yum install pg_idkit_13;
-yum install pg_idkit_12;
+dnf install pg_idkit_17;
+dnf install pg_idkit_16;
+dnf install pg_idkit_15;
+dnf install pg_idkit_14;
+dnf install pg_idkit_13;
+dnf install pg_idkit_12;
 ```
 
 

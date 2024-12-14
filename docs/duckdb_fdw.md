@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION duckdb_fdw;
 ```
-> **Comment**: conflict on libduckdb with pg_duckdb/pg_mooncake
+> **Comment**: conflict on libduckdb with pg_duckdb
 -----------
 
 
@@ -73,12 +73,12 @@ Install `duckdb_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `duckdb_fdw` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install duckdb_fdw_17*;
-yum install duckdb_fdw_16*;
-yum install duckdb_fdw_15*;
-yum install duckdb_fdw_14*;
-yum install duckdb_fdw_13*;
-yum install duckdb_fdw_12*;
+dnf install duckdb_fdw_17*;
+dnf install duckdb_fdw_16*;
+dnf install duckdb_fdw_15*;
+dnf install duckdb_fdw_14*;
+dnf install duckdb_fdw_13*;
+dnf install duckdb_fdw_12*;
 ```
 
 

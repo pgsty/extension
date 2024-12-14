@@ -73,12 +73,12 @@ Install `pg_relusage` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 Install `pg_relusage` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_relusage_17;
-yum install pg_relusage_16;
-yum install pg_relusage_15;
-yum install pg_relusage_14;
-yum install pg_relusage_13;
-yum install pg_relusage_12;
+dnf install pg_relusage_17;
+dnf install pg_relusage_16;
+dnf install pg_relusage_15;
+dnf install pg_relusage_14;
+dnf install pg_relusage_13;
+dnf install pg_relusage_12;
 ```
 
 

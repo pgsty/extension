@@ -73,12 +73,12 @@ Install `mysql_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `mysql_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install mysql_fdw_17*;
-yum install mysql_fdw_16*;
-yum install mysql_fdw_15*;
-yum install mysql_fdw_14*;
-yum install mysql_fdw_13*;
-yum install mysql_fdw_12*;
+dnf install mysql_fdw_17*;
+dnf install mysql_fdw_16*;
+dnf install mysql_fdw_15*;
+dnf install mysql_fdw_14*;
+dnf install mysql_fdw_13*;
+dnf install mysql_fdw_12*;
 ```
 
 

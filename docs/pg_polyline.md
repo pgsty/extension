@@ -73,12 +73,12 @@ Install `pg_polyline` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 Install `pg_polyline` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_polyline_17;
-yum install pg_polyline_16;
-yum install pg_polyline_15;
-yum install pg_polyline_14;
-yum install pg_polyline_13;
-yum install pg_polyline_12;
+dnf install pg_polyline_17;
+dnf install pg_polyline_16;
+dnf install pg_polyline_15;
+dnf install pg_polyline_14;
+dnf install pg_polyline_13;
+dnf install pg_polyline_12;
 ```
 
 

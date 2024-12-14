@@ -77,12 +77,12 @@ Install `pg_failover_slots` via [Pigsty](https://pigsty.io/docs/pgext/usage/inst
 Install `pg_failover_slots` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_failover_slots_17*;
-yum install pg_failover_slots_16*;
-yum install pg_failover_slots_15*;
-yum install pg_failover_slots_14*;
-yum install pg_failover_slots_13*;
-yum install pg_failover_slots_12*;
+dnf install pg_failover_slots_17*;
+dnf install pg_failover_slots_16*;
+dnf install pg_failover_slots_15*;
+dnf install pg_failover_slots_14*;
+dnf install pg_failover_slots_13*;
+dnf install pg_failover_slots_12*;
 ```
 
 

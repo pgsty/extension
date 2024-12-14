@@ -73,12 +73,12 @@ Install `pgnodemx` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pgnodemx` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgnodemx_17;
-yum install pgnodemx_16;
-yum install pgnodemx_15;
-yum install pgnodemx_14;
-yum install pgnodemx_13;
-yum install pgnodemx_12;
+dnf install pgnodemx_17;
+dnf install pgnodemx_16;
+dnf install pgnodemx_15;
+dnf install pgnodemx_14;
+dnf install pgnodemx_13;
+dnf install pgnodemx_12;
 ```
 
 

@@ -73,12 +73,12 @@ Install `sequential_uuids` via [Pigsty](https://pigsty.io/docs/pgext/usage/insta
 Install `sequential_uuids` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install sequential_uuids_17;
-yum install sequential_uuids_16;
-yum install sequential_uuids_15;
-yum install sequential_uuids_14;
-yum install sequential_uuids_13;
-yum install sequential_uuids_12;
+dnf install sequential_uuids_17;
+dnf install sequential_uuids_16;
+dnf install sequential_uuids_15;
+dnf install sequential_uuids_14;
+dnf install sequential_uuids_13;
+dnf install sequential_uuids_12;
 ```
 
 

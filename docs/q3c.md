@@ -73,12 +73,12 @@ Install `q3c` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook
 Install `q3c` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install q3c_17*;
-yum install q3c_16*;
-yum install q3c_15*;
-yum install q3c_14*;
-yum install q3c_13*;
-yum install q3c_12*;
+dnf install q3c_17*;
+dnf install q3c_16*;
+dnf install q3c_15*;
+dnf install q3c_14*;
+dnf install q3c_13*;
+dnf install q3c_12*;
 ```
 
 

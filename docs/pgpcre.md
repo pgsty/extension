@@ -73,12 +73,12 @@ Install `pgpcre` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `pgpcre` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgpcre_17;
-yum install pgpcre_16;
-yum install pgpcre_15;
-yum install pgpcre_14;
-yum install pgpcre_13;
-yum install pgpcre_12;
+dnf install pgpcre_17;
+dnf install pgpcre_16;
+dnf install pgpcre_15;
+dnf install pgpcre_14;
+dnf install pgpcre_13;
+dnf install pgpcre_12;
 ```
 
 

@@ -72,12 +72,12 @@ Install `pg_dbms_job` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 Install `pg_dbms_job` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_dbms_job_17*;
-yum install pg_dbms_job_16*;
-yum install pg_dbms_job_15*;
-yum install pg_dbms_job_14*;
-yum install pg_dbms_job_13*;
-yum install pg_dbms_job_12*;
+dnf install pg_dbms_job_17*;
+dnf install pg_dbms_job_16*;
+dnf install pg_dbms_job_15*;
+dnf install pg_dbms_job_14*;
+dnf install pg_dbms_job_13*;
+dnf install pg_dbms_job_12*;
 ```
 
 
@@ -85,11 +85,11 @@ yum install pg_dbms_job_12*;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_dbms_job_17*` | `pg_dbms_job_16*` | `pg_dbms_job_15*` | `pg_dbms_job_14*` | `pg_dbms_job_13*` | `pg_dbms_job_12*` |
-| `el9` | `pg_dbms_job_17*` | `pg_dbms_job_16*` | `pg_dbms_job_15*` | `pg_dbms_job_14*` | `pg_dbms_job_13*` | `pg_dbms_job_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

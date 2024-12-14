@@ -73,12 +73,12 @@ Install `tdigest` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `tdigest` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install tdigest_17*;
-yum install tdigest_16*;
-yum install tdigest_15*;
-yum install tdigest_14*;
-yum install tdigest_13*;
-yum install tdigest_12*;
+dnf install tdigest_17*;
+dnf install tdigest_16*;
+dnf install tdigest_15*;
+dnf install tdigest_14*;
+dnf install tdigest_13*;
+dnf install tdigest_12*;
 ```
 
 

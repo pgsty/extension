@@ -73,12 +73,12 @@ Install `pgagent` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pgagent` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgagent_17*;
-yum install pgagent_16*;
-yum install pgagent_15*;
-yum install pgagent_14*;
-yum install pgagent_13*;
-yum install pgagent_12*;
+dnf install pgagent_17*;
+dnf install pgagent_16*;
+dnf install pgagent_15*;
+dnf install pgagent_14*;
+dnf install pgagent_13*;
+dnf install pgagent_12*;
 ```
 
 

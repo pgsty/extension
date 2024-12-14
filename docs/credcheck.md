@@ -73,12 +73,12 @@ Install `credcheck` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `credcheck` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install credcheck_17*;
-yum install credcheck_16*;
-yum install credcheck_15*;
-yum install credcheck_14*;
-yum install credcheck_13*;
-yum install credcheck_12*;
+dnf install credcheck_17*;
+dnf install credcheck_16*;
+dnf install credcheck_15*;
+dnf install credcheck_14*;
+dnf install credcheck_13*;
+dnf install credcheck_12*;
 ```
 
 

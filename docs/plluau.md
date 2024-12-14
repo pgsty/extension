@@ -73,12 +73,12 @@ Install `pllua` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `pllua` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pllua_17*;
-yum install pllua_16*;
-yum install pllua_15*;
-yum install pllua_14*;
-yum install pllua_13*;
-yum install pllua_12*;
+dnf install pllua_17*;
+dnf install pllua_16*;
+dnf install pllua_15*;
+dnf install pllua_14*;
+dnf install pllua_13*;
+dnf install pllua_12*;
 ```
 
 

@@ -73,12 +73,12 @@ Install `pg4ml` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `pg4ml` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg4ml_17;
-yum install pg4ml_16;
-yum install pg4ml_15;
-yum install pg4ml_14;
-yum install pg4ml_13;
-yum install pg4ml_12;
+dnf install pg4ml_17;
+dnf install pg4ml_16;
+dnf install pg4ml_15;
+dnf install pg4ml_14;
+dnf install pg4ml_13;
+dnf install pg4ml_12;
 ```
 
 

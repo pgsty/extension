@@ -73,12 +73,12 @@ Install `pg_fkpart` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pg_fkpart` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_fkpart_17*;
-yum install pg_fkpart_16*;
-yum install pg_fkpart_15*;
-yum install pg_fkpart_14*;
-yum install pg_fkpart_13*;
-yum install pg_fkpart_12*;
+dnf install pg_fkpart_17*;
+dnf install pg_fkpart_16*;
+dnf install pg_fkpart_15*;
+dnf install pg_fkpart_14*;
+dnf install pg_fkpart_13*;
+dnf install pg_fkpart_12*;
 ```
 
 

@@ -77,12 +77,12 @@ Install `pg_wait_sampling` via [Pigsty](https://pigsty.io/docs/pgext/usage/insta
 Install `pg_wait_sampling` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_wait_sampling_17*;
-yum install pg_wait_sampling_16*;
-yum install pg_wait_sampling_15*;
-yum install pg_wait_sampling_14*;
-yum install pg_wait_sampling_13*;
-yum install pg_wait_sampling_12*;
+dnf install pg_wait_sampling_17*;
+dnf install pg_wait_sampling_16*;
+dnf install pg_wait_sampling_15*;
+dnf install pg_wait_sampling_14*;
+dnf install pg_wait_sampling_13*;
+dnf install pg_wait_sampling_12*;
 ```
 
 

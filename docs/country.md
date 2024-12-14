@@ -73,12 +73,12 @@ Install `pg_country` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pg_country` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_country_17*;
-yum install pg_country_16*;
-yum install pg_country_15*;
-yum install pg_country_14*;
-yum install pg_country_13*;
-yum install pg_country_12*;
+dnf install pg_country_17*;
+dnf install pg_country_16*;
+dnf install pg_country_15*;
+dnf install pg_country_14*;
+dnf install pg_country_13*;
+dnf install pg_country_12*;
 ```
 
 

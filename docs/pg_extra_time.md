@@ -73,12 +73,12 @@ Install `pg_extra_time` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `pg_extra_time` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_extra_time_17*;
-yum install pg_extra_time_16*;
-yum install pg_extra_time_15*;
-yum install pg_extra_time_14*;
-yum install pg_extra_time_13*;
-yum install pg_extra_time_12*;
+dnf install pg_extra_time_17*;
+dnf install pg_extra_time_16*;
+dnf install pg_extra_time_15*;
+dnf install pg_extra_time_14*;
+dnf install pg_extra_time_13*;
+dnf install pg_extra_time_12*;
 ```
 
 

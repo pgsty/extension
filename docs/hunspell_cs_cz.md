@@ -73,12 +73,12 @@ Install `hunspell_cs_cz` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `hunspell_cs_cz` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install hunspell_cs_cz_17;
-yum install hunspell_cs_cz_16;
-yum install hunspell_cs_cz_15;
-yum install hunspell_cs_cz_14;
-yum install hunspell_cs_cz_13;
-yum install hunspell_cs_cz_12;
+dnf install hunspell_cs_cz_17;
+dnf install hunspell_cs_cz_16;
+dnf install hunspell_cs_cz_15;
+dnf install hunspell_cs_cz_14;
+dnf install hunspell_cs_cz_13;
+dnf install hunspell_cs_cz_12;
 ```
 
 

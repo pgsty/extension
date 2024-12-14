@@ -73,12 +73,12 @@ Install `geoip` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `geoip` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install geoip_17*;
-yum install geoip_16*;
-yum install geoip_15*;
-yum install geoip_14*;
-yum install geoip_13*;
-yum install geoip_12*;
+dnf install geoip_17*;
+dnf install geoip_16*;
+dnf install geoip_15*;
+dnf install geoip_14*;
+dnf install geoip_13*;
+dnf install geoip_12*;
 ```
 
 

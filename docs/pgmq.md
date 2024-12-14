@@ -73,12 +73,12 @@ Install `pgmq` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 Install `pgmq` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgmq_17;
-yum install pgmq_16;
-yum install pgmq_15;
-yum install pgmq_14;
-yum install pgmq_13;
-yum install pgmq_12;
+dnf install pgmq_17;
+dnf install pgmq_16;
+dnf install pgmq_15;
+dnf install pgmq_14;
+dnf install pgmq_13;
+dnf install pgmq_12;
 ```
 
 

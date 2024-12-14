@@ -73,12 +73,12 @@ Install `hll` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook
 Install `hll` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install hll_17*;
-yum install hll_16*;
-yum install hll_15*;
-yum install hll_14*;
-yum install hll_13*;
-yum install hll_12*;
+dnf install hll_17*;
+dnf install hll_16*;
+dnf install hll_15*;
+dnf install hll_14*;
+dnf install hll_13*;
+dnf install hll_12*;
 ```
 
 

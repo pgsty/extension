@@ -73,12 +73,12 @@ Install `numeral` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `numeral` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install numeral_17*;
-yum install numeral_16*;
-yum install numeral_15*;
-yum install numeral_14*;
-yum install numeral_13*;
-yum install numeral_12*;
+dnf install numeral_17*;
+dnf install numeral_16*;
+dnf install numeral_15*;
+dnf install numeral_14*;
+dnf install numeral_13*;
+dnf install numeral_12*;
 ```
 
 

@@ -72,12 +72,12 @@ Install `pg_dbms_lock` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `pg_dbms_lock` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_dbms_lock_17*;
-yum install pg_dbms_lock_16*;
-yum install pg_dbms_lock_15*;
-yum install pg_dbms_lock_14*;
-yum install pg_dbms_lock_13*;
-yum install pg_dbms_lock_12*;
+dnf install pg_dbms_lock_17*;
+dnf install pg_dbms_lock_16*;
+dnf install pg_dbms_lock_15*;
+dnf install pg_dbms_lock_14*;
+dnf install pg_dbms_lock_13*;
+dnf install pg_dbms_lock_12*;
 ```
 
 
@@ -87,9 +87,9 @@ yum install pg_dbms_lock_12*;
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `pg_dbms_lock_17*` | `pg_dbms_lock_16*` | `pg_dbms_lock_15*` | `pg_dbms_lock_14*` | `pg_dbms_lock_13*` | `pg_dbms_lock_12*` |
 | `el9` | `pg_dbms_lock_17*` | `pg_dbms_lock_16*` | `pg_dbms_lock_15*` | `pg_dbms_lock_14*` | `pg_dbms_lock_13*` | `pg_dbms_lock_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

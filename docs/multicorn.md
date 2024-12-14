@@ -72,12 +72,12 @@ Install `multicorn` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `multicorn` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install multicorn2_17*;
-yum install multicorn2_16*;
-yum install multicorn2_15*;
-yum install multicorn2_14*;
-yum install multicorn2_13*;
-yum install multicorn2_12*;
+dnf install multicorn2_17*;
+dnf install multicorn2_16*;
+dnf install multicorn2_15*;
+dnf install multicorn2_14*;
+dnf install multicorn2_13*;
+dnf install multicorn2_12*;
 ```
 
 
@@ -87,9 +87,9 @@ yum install multicorn2_12*;
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `multicorn2_17*` | `multicorn2_16*` | `multicorn2_15*` | `multicorn2_14*` | `multicorn2_13*` | `multicorn2_12*` |
 | `el9` | `multicorn2_17*` | `multicorn2_16*` | `multicorn2_15*` | `multicorn2_14*` | `multicorn2_13*` | `multicorn2_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

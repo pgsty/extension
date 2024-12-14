@@ -73,12 +73,12 @@ Install `pgl_ddl_deploy` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `pgl_ddl_deploy` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgl_ddl_deploy_17*;
-yum install pgl_ddl_deploy_16*;
-yum install pgl_ddl_deploy_15*;
-yum install pgl_ddl_deploy_14*;
-yum install pgl_ddl_deploy_13*;
-yum install pgl_ddl_deploy_12*;
+dnf install pgl_ddl_deploy_17*;
+dnf install pgl_ddl_deploy_16*;
+dnf install pgl_ddl_deploy_15*;
+dnf install pgl_ddl_deploy_14*;
+dnf install pgl_ddl_deploy_13*;
+dnf install pgl_ddl_deploy_12*;
 ```
 
 

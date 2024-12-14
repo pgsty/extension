@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -73,19 +73,17 @@ Install `repmgr` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `repmgr` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install repmgr_17*;
-yum install repmgr_16*;
-yum install repmgr_15*;
-yum install repmgr_14*;
-yum install repmgr_13*;
-yum install repmgr_12*;
+dnf install repmgr_16*;
+dnf install repmgr_15*;
+dnf install repmgr_14*;
+dnf install repmgr_13*;
+dnf install repmgr_12*;
 ```
 
 
 Install `repmgr` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-repmgr;
 apt install postgresql-16-repmgr;
 apt install postgresql-15-repmgr;
 apt install postgresql-14-repmgr;
@@ -98,11 +96,11 @@ apt install postgresql-12-repmgr;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `repmgr_17*` | `repmgr_16*` | `repmgr_15*` | `repmgr_14*` | `repmgr_13*` | `repmgr_12*` |
-| `el9` | `repmgr_17*` | `repmgr_16*` | `repmgr_15*` | `repmgr_14*` | `repmgr_13*` | `repmgr_12*` |
-| `d12` | `postgresql-17-repmgr` | `postgresql-16-repmgr` | `postgresql-15-repmgr` | `postgresql-14-repmgr` | `postgresql-13-repmgr` | `postgresql-12-repmgr` |
-| `u22` | `postgresql-17-repmgr` | `postgresql-16-repmgr` | `postgresql-15-repmgr` | `postgresql-14-repmgr` | `postgresql-13-repmgr` | `postgresql-12-repmgr` |
-| `u24` | `postgresql-17-repmgr` | `postgresql-16-repmgr` | `postgresql-15-repmgr` | `postgresql-14-repmgr` | `postgresql-13-repmgr` | `postgresql-12-repmgr` |
+| `el8` | <span class="tcred">✘</span> | `repmgr_16*` | `repmgr_15*` | `repmgr_14*` | `repmgr_13*` | `repmgr_12*` |
+| `el9` | <span class="tcred">✘</span> | `repmgr_16*` | `repmgr_15*` | `repmgr_14*` | `repmgr_13*` | `repmgr_12*` |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-repmgr` | `postgresql-15-repmgr` | `postgresql-14-repmgr` | `postgresql-13-repmgr` | `postgresql-12-repmgr` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-repmgr` | `postgresql-15-repmgr` | `postgresql-14-repmgr` | `postgresql-13-repmgr` | `postgresql-12-repmgr` |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-repmgr` | `postgresql-15-repmgr` | `postgresql-14-repmgr` | `postgresql-13-repmgr` | `postgresql-12-repmgr` |
 
 
 

@@ -73,12 +73,12 @@ Install `system_stats` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `system_stats` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install system_stats_17*;
-yum install system_stats_16*;
-yum install system_stats_15*;
-yum install system_stats_14*;
-yum install system_stats_13*;
-yum install system_stats_12*;
+dnf install system_stats_17*;
+dnf install system_stats_16*;
+dnf install system_stats_15*;
+dnf install system_stats_14*;
+dnf install system_stats_13*;
+dnf install system_stats_12*;
 ```
 
 

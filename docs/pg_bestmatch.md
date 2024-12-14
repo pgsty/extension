@@ -77,12 +77,12 @@ Install `pg_bestmatch` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `pg_bestmatch` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_bestmatch_17;
-yum install pg_bestmatch_16;
-yum install pg_bestmatch_15;
-yum install pg_bestmatch_14;
-yum install pg_bestmatch_13;
-yum install pg_bestmatch_12;
+dnf install pg_bestmatch_17;
+dnf install pg_bestmatch_16;
+dnf install pg_bestmatch_15;
+dnf install pg_bestmatch_14;
+dnf install pg_bestmatch_13;
+dnf install pg_bestmatch_12;
 ```
 
 

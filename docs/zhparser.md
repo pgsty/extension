@@ -73,12 +73,12 @@ Install `zhparser` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `zhparser` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install zhparser_17*;
-yum install zhparser_16*;
-yum install zhparser_15*;
-yum install zhparser_14*;
-yum install zhparser_13*;
-yum install zhparser_12*;
+dnf install zhparser_17*;
+dnf install zhparser_16*;
+dnf install zhparser_15*;
+dnf install zhparser_14*;
+dnf install zhparser_13*;
+dnf install zhparser_12*;
 ```
 
 

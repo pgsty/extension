@@ -73,12 +73,12 @@ Install `pg_base36` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pg_base36` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_base36_17*;
-yum install pg_base36_16*;
-yum install pg_base36_15*;
-yum install pg_base36_14*;
-yum install pg_base36_13*;
-yum install pg_base36_12*;
+dnf install pg_base36_17*;
+dnf install pg_base36_16*;
+dnf install pg_base36_15*;
+dnf install pg_base36_14*;
+dnf install pg_base36_13*;
+dnf install pg_base36_12*;
 ```
 
 

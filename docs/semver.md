@@ -73,12 +73,12 @@ Install `pg_semver` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pg_semver` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install semver_17*;
-yum install semver_16*;
-yum install semver_15*;
-yum install semver_14*;
-yum install semver_13*;
-yum install semver_12*;
+dnf install semver_17*;
+dnf install semver_16*;
+dnf install semver_15*;
+dnf install semver_14*;
+dnf install semver_13*;
+dnf install semver_12*;
 ```
 
 

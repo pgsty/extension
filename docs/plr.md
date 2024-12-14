@@ -73,12 +73,12 @@ Install `plr` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook
 Install `plr` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install plr_17*;
-yum install plr_16*;
-yum install plr_15*;
-yum install plr_14*;
-yum install plr_13*;
-yum install plr_12*;
+dnf install plr_17*;
+dnf install plr_16*;
+dnf install plr_15*;
+dnf install plr_14*;
+dnf install plr_13*;
+dnf install plr_12*;
 ```
 
 

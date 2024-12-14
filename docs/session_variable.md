@@ -73,12 +73,12 @@ Install `session_variable` via [Pigsty](https://pigsty.io/docs/pgext/usage/insta
 Install `session_variable` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install session_variable_17*;
-yum install session_variable_16*;
-yum install session_variable_15*;
-yum install session_variable_14*;
-yum install session_variable_13*;
-yum install session_variable_12*;
+dnf install session_variable_17*;
+dnf install session_variable_16*;
+dnf install session_variable_15*;
+dnf install session_variable_14*;
+dnf install session_variable_13*;
+dnf install session_variable_12*;
 ```
 
 

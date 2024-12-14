@@ -72,12 +72,12 @@ Install `dbt2` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 Install `dbt2` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install dbt2-pg17-extensions*;
-yum install dbt2-pg16-extensions*;
-yum install dbt2-pg15-extensions*;
-yum install dbt2-pg14-extensions*;
-yum install dbt2-pg13-extensions*;
-yum install dbt2-pg12-extensions*;
+dnf install dbt2-pg17-extensions*;
+dnf install dbt2-pg16-extensions*;
+dnf install dbt2-pg15-extensions*;
+dnf install dbt2-pg14-extensions*;
+dnf install dbt2-pg13-extensions*;
+dnf install dbt2-pg12-extensions*;
 ```
 
 
@@ -87,9 +87,9 @@ yum install dbt2-pg12-extensions*;
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `dbt2-pg17-extensions*` | `dbt2-pg16-extensions*` | `dbt2-pg15-extensions*` | `dbt2-pg14-extensions*` | `dbt2-pg13-extensions*` | `dbt2-pg12-extensions*` |
 | `el9` | `dbt2-pg17-extensions*` | `dbt2-pg16-extensions*` | `dbt2-pg15-extensions*` | `dbt2-pg14-extensions*` | `dbt2-pg13-extensions*` | `dbt2-pg12-extensions*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -73,12 +73,9 @@ Install `extra_window_functions` via [Pigsty](https://pigsty.io/docs/pgext/usage
 Install `extra_window_functions` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install extra_window_functions_17*;
-yum install extra_window_functions_16*;
-yum install extra_window_functions_15*;
-yum install extra_window_functions_14*;
-yum install extra_window_functions_13*;
-yum install extra_window_functions_12*;
+dnf install extra_window_functions_17*;
+dnf install extra_window_functions_16*;
+dnf install extra_window_functions_15*;
 ```
 
 
@@ -98,8 +95,8 @@ apt install postgresql-12-extra-window-functions;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | `extra_window_functions_14*` | `extra_window_functions_13*` | `extra_window_functions_12*` |
-| `el9` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | `extra_window_functions_14*` | `extra_window_functions_13*` | `extra_window_functions_12*` |
+| `el8` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
 | `u22` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
 | `u24` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |

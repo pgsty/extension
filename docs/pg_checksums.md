@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -69,12 +69,11 @@ Install `pg_checksums` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `pg_checksums` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_checksums_17*;
-yum install pg_checksums_16*;
-yum install pg_checksums_15*;
-yum install pg_checksums_14*;
-yum install pg_checksums_13*;
-yum install pg_checksums_12*;
+dnf install pg_checksums_16*;
+dnf install pg_checksums_15*;
+dnf install pg_checksums_14*;
+dnf install pg_checksums_13*;
+dnf install pg_checksums_12*;
 ```
 
 
@@ -94,8 +93,8 @@ apt install postgresql-12-pg-checksums;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_checksums_17*` | `pg_checksums_16*` | `pg_checksums_15*` | `pg_checksums_14*` | `pg_checksums_13*` | `pg_checksums_12*` |
-| `el9` | `pg_checksums_17*` | `pg_checksums_16*` | `pg_checksums_15*` | `pg_checksums_14*` | `pg_checksums_13*` | `pg_checksums_12*` |
+| `el8` | <span class="tcred">✘</span> | `pg_checksums_16*` | `pg_checksums_15*` | `pg_checksums_14*` | `pg_checksums_13*` | `pg_checksums_12*` |
+| `el9` | <span class="tcred">✘</span> | `pg_checksums_16*` | `pg_checksums_15*` | `pg_checksums_14*` | `pg_checksums_13*` | `pg_checksums_12*` |
 | `d12` | `postgresql-17-pg-checksums` | `postgresql-16-pg-checksums` | `postgresql-15-pg-checksums` | `postgresql-14-pg-checksums` | `postgresql-13-pg-checksums` | `postgresql-12-pg-checksums` |
 | `u22` | `postgresql-17-pg-checksums` | `postgresql-16-pg-checksums` | `postgresql-15-pg-checksums` | `postgresql-14-pg-checksums` | `postgresql-13-pg-checksums` | `postgresql-12-pg-checksums` |
 | `u24` | `postgresql-17-pg-checksums` | `postgresql-16-pg-checksums` | `postgresql-15-pg-checksums` | `postgresql-14-pg-checksums` | `postgresql-13-pg-checksums` | `postgresql-12-pg-checksums` |

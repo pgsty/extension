@@ -73,12 +73,12 @@ Install `pgcryptokey` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 Install `pgcryptokey` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgcryptokey_17;
-yum install pgcryptokey_16;
-yum install pgcryptokey_15;
-yum install pgcryptokey_14;
-yum install pgcryptokey_13;
-yum install pgcryptokey_12;
+dnf install pgcryptokey_17;
+dnf install pgcryptokey_16;
+dnf install pgcryptokey_15;
+dnf install pgcryptokey_14;
+dnf install pgcryptokey_13;
+dnf install pgcryptokey_12;
 ```
 
 

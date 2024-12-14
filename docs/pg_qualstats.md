@@ -77,12 +77,12 @@ Install `pg_qualstats` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `pg_qualstats` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_qualstats_17*;
-yum install pg_qualstats_16*;
-yum install pg_qualstats_15*;
-yum install pg_qualstats_14*;
-yum install pg_qualstats_13*;
-yum install pg_qualstats_12*;
+dnf install pg_qualstats_17*;
+dnf install pg_qualstats_16*;
+dnf install pg_qualstats_15*;
+dnf install pg_qualstats_14*;
+dnf install pg_qualstats_13*;
+dnf install pg_qualstats_12*;
 ```
 
 

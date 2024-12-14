@@ -73,12 +73,12 @@ Install `pg_cheat_funcs` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `pg_cheat_funcs` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_cheat_funcs_17*;
-yum install pg_cheat_funcs_16*;
-yum install pg_cheat_funcs_15*;
-yum install pg_cheat_funcs_14*;
-yum install pg_cheat_funcs_13*;
-yum install pg_cheat_funcs_12*;
+dnf install pg_cheat_funcs_17*;
+dnf install pg_cheat_funcs_16*;
+dnf install pg_cheat_funcs_15*;
+dnf install pg_cheat_funcs_14*;
+dnf install pg_cheat_funcs_13*;
+dnf install pg_cheat_funcs_12*;
 ```
 
 

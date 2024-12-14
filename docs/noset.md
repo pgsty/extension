@@ -77,12 +77,12 @@ Install `pg_noset` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pg_noset` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install noset_17*;
-yum install noset_16*;
-yum install noset_15*;
-yum install noset_14*;
-yum install noset_13*;
-yum install noset_12*;
+dnf install noset_17*;
+dnf install noset_16*;
+dnf install noset_15*;
+dnf install noset_14*;
+dnf install noset_13*;
+dnf install noset_12*;
 ```
 
 

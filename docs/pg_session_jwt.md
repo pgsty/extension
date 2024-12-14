@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -73,12 +73,10 @@ Install `pg_session_jwt` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `pg_session_jwt` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_session_jwt_17;
-yum install pg_session_jwt_16;
-yum install pg_session_jwt_15;
-yum install pg_session_jwt_14;
-yum install pg_session_jwt_13;
-yum install pg_session_jwt_12;
+dnf install pg_session_jwt_17;
+dnf install pg_session_jwt_16;
+dnf install pg_session_jwt_15;
+dnf install pg_session_jwt_14;
 ```
 
 
@@ -89,8 +87,6 @@ apt install postgresql-17-pg-session-jwt;
 apt install postgresql-16-pg-session-jwt;
 apt install postgresql-15-pg-session-jwt;
 apt install postgresql-14-pg-session-jwt;
-apt install postgresql-13-pg-session-jwt;
-apt install postgresql-12-pg-session-jwt;
 ```
 
 
@@ -98,11 +94,11 @@ apt install postgresql-12-pg-session-jwt;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_session_jwt_17` | `pg_session_jwt_16` | `pg_session_jwt_15` | `pg_session_jwt_14` | `pg_session_jwt_13` | `pg_session_jwt_12` |
-| `el9` | `pg_session_jwt_17` | `pg_session_jwt_16` | `pg_session_jwt_15` | `pg_session_jwt_14` | `pg_session_jwt_13` | `pg_session_jwt_12` |
-| `d12` | `postgresql-17-pg-session-jwt` | `postgresql-16-pg-session-jwt` | `postgresql-15-pg-session-jwt` | `postgresql-14-pg-session-jwt` | `postgresql-13-pg-session-jwt` | `postgresql-12-pg-session-jwt` |
-| `u22` | `postgresql-17-pg-session-jwt` | `postgresql-16-pg-session-jwt` | `postgresql-15-pg-session-jwt` | `postgresql-14-pg-session-jwt` | `postgresql-13-pg-session-jwt` | `postgresql-12-pg-session-jwt` |
-| `u24` | `postgresql-17-pg-session-jwt` | `postgresql-16-pg-session-jwt` | `postgresql-15-pg-session-jwt` | `postgresql-14-pg-session-jwt` | `postgresql-13-pg-session-jwt` | `postgresql-12-pg-session-jwt` |
+| `el8` | `pg_session_jwt_17` | `pg_session_jwt_16` | `pg_session_jwt_15` | `pg_session_jwt_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `pg_session_jwt_17` | `pg_session_jwt_16` | `pg_session_jwt_15` | `pg_session_jwt_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-pg-session-jwt` | `postgresql-16-pg-session-jwt` | `postgresql-15-pg-session-jwt` | `postgresql-14-pg-session-jwt` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pg-session-jwt` | `postgresql-16-pg-session-jwt` | `postgresql-15-pg-session-jwt` | `postgresql-14-pg-session-jwt` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pg-session-jwt` | `postgresql-16-pg-session-jwt` | `postgresql-15-pg-session-jwt` | `postgresql-14-pg-session-jwt` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

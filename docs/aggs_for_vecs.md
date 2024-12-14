@@ -73,12 +73,12 @@ Install `aggs_for_vecs` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `aggs_for_vecs` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install aggs_for_vecs_17*;
-yum install aggs_for_vecs_16*;
-yum install aggs_for_vecs_15*;
-yum install aggs_for_vecs_14*;
-yum install aggs_for_vecs_13*;
-yum install aggs_for_vecs_12*;
+dnf install aggs_for_vecs_17*;
+dnf install aggs_for_vecs_16*;
+dnf install aggs_for_vecs_15*;
+dnf install aggs_for_vecs_14*;
+dnf install aggs_for_vecs_13*;
+dnf install aggs_for_vecs_12*;
 ```
 
 

@@ -77,12 +77,12 @@ Install `pg_stat_kcache` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `pg_stat_kcache` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_stat_kcache_17*;
-yum install pg_stat_kcache_16*;
-yum install pg_stat_kcache_15*;
-yum install pg_stat_kcache_14*;
-yum install pg_stat_kcache_13*;
-yum install pg_stat_kcache_12*;
+dnf install pg_stat_kcache_17*;
+dnf install pg_stat_kcache_16*;
+dnf install pg_stat_kcache_15*;
+dnf install pg_stat_kcache_14*;
+dnf install pg_stat_kcache_13*;
+dnf install pg_stat_kcache_12*;
 ```
 
 

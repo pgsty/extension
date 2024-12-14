@@ -73,12 +73,12 @@ Install `pg_acl` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `pg_acl` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install acl_17*;
-yum install acl_16*;
-yum install acl_15*;
-yum install acl_14*;
-yum install acl_13*;
-yum install acl_12*;
+dnf install acl_17*;
+dnf install acl_16*;
+dnf install acl_15*;
+dnf install acl_14*;
+dnf install acl_13*;
+dnf install acl_12*;
 ```
 
 

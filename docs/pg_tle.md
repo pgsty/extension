@@ -77,12 +77,12 @@ Install `pg_tle` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `pg_tle` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_tle_17*;
-yum install pg_tle_16*;
-yum install pg_tle_15*;
-yum install pg_tle_14*;
-yum install pg_tle_13*;
-yum install pg_tle_12*;
+dnf install pg_tle_17*;
+dnf install pg_tle_16*;
+dnf install pg_tle_15*;
+dnf install pg_tle_14*;
+dnf install pg_tle_13*;
+dnf install pg_tle_12*;
 ```
 
 

@@ -73,12 +73,12 @@ Install `first_last_agg` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `first_last_agg` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install first_last_agg_17;
-yum install first_last_agg_16;
-yum install first_last_agg_15;
-yum install first_last_agg_14;
-yum install first_last_agg_13;
-yum install first_last_agg_12;
+dnf install first_last_agg_17;
+dnf install first_last_agg_16;
+dnf install first_last_agg_15;
+dnf install first_last_agg_14;
+dnf install first_last_agg_13;
+dnf install first_last_agg_12;
 ```
 
 

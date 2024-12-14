@@ -73,12 +73,12 @@ Install `login_hook` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `login_hook` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install login_hook_17*;
-yum install login_hook_16*;
-yum install login_hook_15*;
-yum install login_hook_14*;
-yum install login_hook_13*;
-yum install login_hook_12*;
+dnf install login_hook_17*;
+dnf install login_hook_16*;
+dnf install login_hook_15*;
+dnf install login_hook_14*;
+dnf install login_hook_13*;
+dnf install login_hook_12*;
 ```
 
 

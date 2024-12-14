@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -73,12 +73,9 @@ Install `pgmemcache` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pgmemcache` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgmemcache_17*;
-yum install pgmemcache_16*;
-yum install pgmemcache_15*;
-yum install pgmemcache_14*;
-yum install pgmemcache_13*;
-yum install pgmemcache_12*;
+dnf install pgmemcache_17*;
+dnf install pgmemcache_16*;
+dnf install pgmemcache_15*;
 ```
 
 
@@ -98,8 +95,8 @@ apt install postgresql-12-pgmemcache;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgmemcache_17*` | `pgmemcache_16*` | `pgmemcache_15*` | `pgmemcache_14*` | `pgmemcache_13*` | `pgmemcache_12*` |
-| `el9` | `pgmemcache_17*` | `pgmemcache_16*` | `pgmemcache_15*` | `pgmemcache_14*` | `pgmemcache_13*` | `pgmemcache_12*` |
+| `el8` | `pgmemcache_17*` | `pgmemcache_16*` | `pgmemcache_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `pgmemcache_17*` | `pgmemcache_16*` | `pgmemcache_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | `postgresql-17-pgmemcache` | `postgresql-16-pgmemcache` | `postgresql-15-pgmemcache` | `postgresql-14-pgmemcache` | `postgresql-13-pgmemcache` | `postgresql-12-pgmemcache` |
 | `u22` | `postgresql-17-pgmemcache` | `postgresql-16-pgmemcache` | `postgresql-15-pgmemcache` | `postgresql-14-pgmemcache` | `postgresql-13-pgmemcache` | `postgresql-12-pgmemcache` |
 | `u24` | `postgresql-17-pgmemcache` | `postgresql-16-pgmemcache` | `postgresql-15-pgmemcache` | `postgresql-14-pgmemcache` | `postgresql-13-pgmemcache` | `postgresql-12-pgmemcache` |

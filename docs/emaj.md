@@ -73,12 +73,12 @@ Install `emaj` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 Install `emaj` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install e-maj_17*;
-yum install e-maj_16*;
-yum install e-maj_15*;
-yum install e-maj_14*;
-yum install e-maj_13*;
-yum install e-maj_12*;
+dnf install e-maj_17*;
+dnf install e-maj_16*;
+dnf install e-maj_15*;
+dnf install e-maj_14*;
+dnf install e-maj_13*;
+dnf install e-maj_12*;
 ```
 
 

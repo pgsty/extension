@@ -73,12 +73,12 @@ Install `toastinfo` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `toastinfo` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install toastinfo_17*;
-yum install toastinfo_16*;
-yum install toastinfo_15*;
-yum install toastinfo_14*;
-yum install toastinfo_13*;
-yum install toastinfo_12*;
+dnf install toastinfo_17*;
+dnf install toastinfo_16*;
+dnf install toastinfo_15*;
+dnf install toastinfo_14*;
+dnf install toastinfo_13*;
+dnf install toastinfo_12*;
 ```
 
 

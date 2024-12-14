@@ -73,12 +73,12 @@ Install `plv8` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 Install `plv8` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install plv8_17*;
-yum install plv8_16*;
-yum install plv8_15*;
-yum install plv8_14*;
-yum install plv8_13*;
-yum install plv8_12*;
+dnf install plv8_17*;
+dnf install plv8_16*;
+dnf install plv8_15*;
+dnf install plv8_14*;
+dnf install plv8_13*;
+dnf install plv8_12*;
 ```
 
 

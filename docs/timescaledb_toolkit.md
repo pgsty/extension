@@ -36,10 +36,10 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
@@ -73,19 +73,17 @@ Install `timescaledb_toolkit` via [Pigsty](https://pigsty.io/docs/pgext/usage/in
 Install `timescaledb_toolkit` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install timescaledb-toolkit-postgresql-17;
-yum install timescaledb-toolkit-postgresql-16;
-yum install timescaledb-toolkit-postgresql-15;
-yum install timescaledb-toolkit-postgresql-14;
-yum install timescaledb-toolkit-postgresql-13;
-yum install timescaledb-toolkit-postgresql-12;
+dnf install timescaledb-toolkit-postgresql-16;
+dnf install timescaledb-toolkit-postgresql-15;
+dnf install timescaledb-toolkit-postgresql-14;
+dnf install timescaledb-toolkit-postgresql-13;
+dnf install timescaledb-toolkit-postgresql-12;
 ```
 
 
 Install `timescaledb_toolkit` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install timescaledb-toolkit-postgresql-17;
 apt install timescaledb-toolkit-postgresql-16;
 apt install timescaledb-toolkit-postgresql-15;
 apt install timescaledb-toolkit-postgresql-14;
@@ -98,11 +96,11 @@ apt install timescaledb-toolkit-postgresql-12;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
-| `el9` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
-| `d12` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
-| `u22` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
-| `u24` | `timescaledb-toolkit-postgresql-17` | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `el8` | <span class="tcred">✘</span> | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `el9` | <span class="tcred">✘</span> | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `d12` | <span class="tcred">✘</span> | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `u22` | <span class="tcred">✘</span> | `timescaledb-toolkit-postgresql-16` | `timescaledb-toolkit-postgresql-15` | `timescaledb-toolkit-postgresql-14` | `timescaledb-toolkit-postgresql-13` | `timescaledb-toolkit-postgresql-12` |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

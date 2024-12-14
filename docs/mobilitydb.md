@@ -80,8 +80,8 @@ apt install postgresql-$v-mobilitydb;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `` | `` | `` | `` | `` | `` |
-| `el9` | `` | `` | `` | `` | `` | `` |
+| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | `postgresql-17-mobilitydb` | `postgresql-16-mobilitydb` | `postgresql-15-mobilitydb` | `postgresql-14-mobilitydb` | `postgresql-13-mobilitydb` | `postgresql-12-mobilitydb` |
 | `u22` | `postgresql-17-mobilitydb` | `postgresql-16-mobilitydb` | `postgresql-15-mobilitydb` | `postgresql-14-mobilitydb` | `postgresql-13-mobilitydb` | `postgresql-12-mobilitydb` |
 | `u24` | `postgresql-17-mobilitydb` | `postgresql-16-mobilitydb` | `postgresql-15-mobilitydb` | `postgresql-14-mobilitydb` | `postgresql-13-mobilitydb` | `postgresql-12-mobilitydb` |

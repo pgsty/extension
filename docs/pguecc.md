@@ -73,12 +73,12 @@ Install `pg_ecdsa` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pg_ecdsa` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_ecdsa_17*;
-yum install pg_ecdsa_16*;
-yum install pg_ecdsa_15*;
-yum install pg_ecdsa_14*;
-yum install pg_ecdsa_13*;
-yum install pg_ecdsa_12*;
+dnf install pg_ecdsa_17*;
+dnf install pg_ecdsa_16*;
+dnf install pg_ecdsa_15*;
+dnf install pg_ecdsa_14*;
+dnf install pg_ecdsa_13*;
+dnf install pg_ecdsa_12*;
 ```
 
 

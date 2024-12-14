@@ -73,12 +73,12 @@ Install `md5hash` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `md5hash` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install md5hash_17*;
-yum install md5hash_16*;
-yum install md5hash_15*;
-yum install md5hash_14*;
-yum install md5hash_13*;
-yum install md5hash_12*;
+dnf install md5hash_17*;
+dnf install md5hash_16*;
+dnf install md5hash_15*;
+dnf install md5hash_14*;
+dnf install md5hash_13*;
+dnf install md5hash_12*;
 ```
 
 

@@ -77,12 +77,12 @@ Install `timescaledb` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 Install `timescaledb` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install timescaledb-2-postgresql-17*;
-yum install timescaledb-2-postgresql-16*;
-yum install timescaledb-2-postgresql-15*;
-yum install timescaledb-2-postgresql-14*;
-yum install timescaledb-2-postgresql-13*;
-yum install timescaledb-2-postgresql-12*;
+dnf install timescaledb-2-postgresql-17*;
+dnf install timescaledb-2-postgresql-16*;
+dnf install timescaledb-2-postgresql-15*;
+dnf install timescaledb-2-postgresql-14*;
+dnf install timescaledb-2-postgresql-13*;
+dnf install timescaledb-2-postgresql-12*;
 ```
 
 
@@ -106,7 +106,7 @@ apt install timescaledb-2-postgresql-12;
 | `el9` | `timescaledb-2-postgresql-17*` | `timescaledb-2-postgresql-16*` | `timescaledb-2-postgresql-15*` | `timescaledb-2-postgresql-14*` | `timescaledb-2-postgresql-13*` | `timescaledb-2-postgresql-12*` |
 | `d12` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | `timescaledb-2-postgresql-12` |
 | `u22` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | `timescaledb-2-postgresql-12` |
-| `u24` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | `timescaledb-2-postgresql-12` |
+| `u24` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | `timescaledb-2-postgresql-13` | <span class="tcred">✘</span> |
 
 
 

@@ -73,12 +73,12 @@ Install `pg_uuidv7` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pg_uuidv7` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_uuidv7_17*;
-yum install pg_uuidv7_16*;
-yum install pg_uuidv7_15*;
-yum install pg_uuidv7_14*;
-yum install pg_uuidv7_13*;
-yum install pg_uuidv7_12*;
+dnf install pg_uuidv7_17*;
+dnf install pg_uuidv7_16*;
+dnf install pg_uuidv7_15*;
+dnf install pg_uuidv7_14*;
+dnf install pg_uuidv7_13*;
+dnf install pg_uuidv7_12*;
 ```
 
 

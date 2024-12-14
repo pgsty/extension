@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
@@ -73,12 +73,11 @@ Install `pg_partman` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pg_partman` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_partman_17*;
-yum install pg_partman_16*;
-yum install pg_partman_15*;
-yum install pg_partman_14*;
-yum install pg_partman_13*;
-yum install pg_partman_12*;
+dnf install pg_partman_16*;
+dnf install pg_partman_15*;
+dnf install pg_partman_14*;
+dnf install pg_partman_13*;
+dnf install pg_partman_12*;
 ```
 
 
@@ -98,11 +97,11 @@ apt install postgresql-12-partman;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_partman_17*` | `pg_partman_16*` | `pg_partman_15*` | `pg_partman_14*` | `pg_partman_13*` | `pg_partman_12*` |
-| `el9` | `pg_partman_17*` | `pg_partman_16*` | `pg_partman_15*` | `pg_partman_14*` | `pg_partman_13*` | `pg_partman_12*` |
+| `el8` | <span class="tcred">✘</span> | `pg_partman_16*` | `pg_partman_15*` | `pg_partman_14*` | `pg_partman_13*` | `pg_partman_12*` |
+| `el9` | <span class="tcred">✘</span> | `pg_partman_16*` | `pg_partman_15*` | `pg_partman_14*` | `pg_partman_13*` | `pg_partman_12*` |
 | `d12` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | `postgresql-13-partman` | `postgresql-12-partman` |
 | `u22` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | `postgresql-13-partman` | `postgresql-12-partman` |
-| `u24` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | `postgresql-13-partman` | `postgresql-12-partman` |
+| `u24` | `postgresql-17-partman` | `postgresql-16-partman` | `postgresql-15-partman` | `postgresql-14-partman` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

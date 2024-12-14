@@ -73,12 +73,12 @@ Install `tds_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `tds_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install tds_fdw_17*;
-yum install tds_fdw_16*;
-yum install tds_fdw_15*;
-yum install tds_fdw_14*;
-yum install tds_fdw_13*;
-yum install tds_fdw_12*;
+dnf install tds_fdw_17*;
+dnf install tds_fdw_16*;
+dnf install tds_fdw_15*;
+dnf install tds_fdw_14*;
+dnf install tds_fdw_13*;
+dnf install tds_fdw_12*;
 ```
 
 

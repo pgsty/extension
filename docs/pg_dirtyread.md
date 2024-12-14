@@ -73,12 +73,12 @@ Install `pg_dirtyread` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `pg_dirtyread` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_dirtyread_17*;
-yum install pg_dirtyread_16*;
-yum install pg_dirtyread_15*;
-yum install pg_dirtyread_14*;
-yum install pg_dirtyread_13*;
-yum install pg_dirtyread_12*;
+dnf install pg_dirtyread_17*;
+dnf install pg_dirtyread_16*;
+dnf install pg_dirtyread_15*;
+dnf install pg_dirtyread_14*;
+dnf install pg_dirtyread_13*;
+dnf install pg_dirtyread_12*;
 ```
 
 

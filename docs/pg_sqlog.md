@@ -73,12 +73,12 @@ Install `pg_sqlog` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pg_sqlog` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_sqlog_17*;
-yum install pg_sqlog_16*;
-yum install pg_sqlog_15*;
-yum install pg_sqlog_14*;
-yum install pg_sqlog_13*;
-yum install pg_sqlog_12*;
+dnf install pg_sqlog_17*;
+dnf install pg_sqlog_16*;
+dnf install pg_sqlog_15*;
+dnf install pg_sqlog_14*;
+dnf install pg_sqlog_13*;
+dnf install pg_sqlog_12*;
 ```
 
 

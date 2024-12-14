@@ -73,12 +73,12 @@ Install `pg_html5_email_address` via [Pigsty](https://pigsty.io/docs/pgext/usage
 Install `pg_html5_email_address` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_html5_email_address_17;
-yum install pg_html5_email_address_16;
-yum install pg_html5_email_address_15;
-yum install pg_html5_email_address_14;
-yum install pg_html5_email_address_13;
-yum install pg_html5_email_address_12;
+dnf install pg_html5_email_address_17;
+dnf install pg_html5_email_address_16;
+dnf install pg_html5_email_address_15;
+dnf install pg_html5_email_address_14;
+dnf install pg_html5_email_address_13;
+dnf install pg_html5_email_address_12;
 ```
 
 

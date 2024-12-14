@@ -73,12 +73,12 @@ Install `plproxy` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `plproxy` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install plproxy_17*;
-yum install plproxy_16*;
-yum install plproxy_15*;
-yum install plproxy_14*;
-yum install plproxy_13*;
-yum install plproxy_12*;
+dnf install plproxy_17*;
+dnf install plproxy_16*;
+dnf install plproxy_15*;
+dnf install plproxy_14*;
+dnf install plproxy_13*;
+dnf install plproxy_12*;
 ```
 
 

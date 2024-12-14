@@ -73,12 +73,12 @@ Install `hunspell_de_de` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `hunspell_de_de` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install hunspell_de_de_17;
-yum install hunspell_de_de_16;
-yum install hunspell_de_de_15;
-yum install hunspell_de_de_14;
-yum install hunspell_de_de_13;
-yum install hunspell_de_de_12;
+dnf install hunspell_de_de_17;
+dnf install hunspell_de_de_16;
+dnf install hunspell_de_de_15;
+dnf install hunspell_de_de_14;
+dnf install hunspell_de_de_13;
+dnf install hunspell_de_de_12;
 ```
 
 

@@ -73,12 +73,12 @@ Install `pgfincore` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pgfincore` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgfincore_17*;
-yum install pgfincore_16*;
-yum install pgfincore_15*;
-yum install pgfincore_14*;
-yum install pgfincore_13*;
-yum install pgfincore_12*;
+dnf install pgfincore_17*;
+dnf install pgfincore_16*;
+dnf install pgfincore_15*;
+dnf install pgfincore_14*;
+dnf install pgfincore_13*;
+dnf install pgfincore_12*;
 ```
 
 

@@ -73,12 +73,12 @@ Install `pgauditlogtofile` via [Pigsty](https://pigsty.io/docs/pgext/usage/insta
 Install `pgauditlogtofile` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgauditlogtofile_17*;
-yum install pgauditlogtofile_16*;
-yum install pgauditlogtofile_15*;
-yum install pgauditlogtofile_14*;
-yum install pgauditlogtofile_13*;
-yum install pgauditlogtofile_12*;
+dnf install pgauditlogtofile_17*;
+dnf install pgauditlogtofile_16*;
+dnf install pgauditlogtofile_15*;
+dnf install pgauditlogtofile_14*;
+dnf install pgauditlogtofile_13*;
+dnf install pgauditlogtofile_12*;
 ```
 
 

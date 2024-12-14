@@ -73,12 +73,12 @@ Install `asn1oid` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `asn1oid` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install asn1oid_17*;
-yum install asn1oid_16*;
-yum install asn1oid_15*;
-yum install asn1oid_14*;
-yum install asn1oid_13*;
-yum install asn1oid_12*;
+dnf install asn1oid_17*;
+dnf install asn1oid_16*;
+dnf install asn1oid_15*;
+dnf install asn1oid_14*;
+dnf install asn1oid_13*;
+dnf install asn1oid_12*;
 ```
 
 

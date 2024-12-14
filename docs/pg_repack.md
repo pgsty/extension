@@ -73,12 +73,12 @@ Install `pg_repack` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pg_repack` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_repack_17*;
-yum install pg_repack_16*;
-yum install pg_repack_15*;
-yum install pg_repack_14*;
-yum install pg_repack_13*;
-yum install pg_repack_12*;
+dnf install pg_repack_17*;
+dnf install pg_repack_16*;
+dnf install pg_repack_15*;
+dnf install pg_repack_14*;
+dnf install pg_repack_13*;
+dnf install pg_repack_12*;
 ```
 
 

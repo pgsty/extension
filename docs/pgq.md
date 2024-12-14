@@ -73,12 +73,12 @@ Install `pgq` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook
 Install `pgq` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgq_17*;
-yum install pgq_16*;
-yum install pgq_15*;
-yum install pgq_14*;
-yum install pgq_13*;
-yum install pgq_12*;
+dnf install pgq_17*;
+dnf install pgq_16*;
+dnf install pgq_15*;
+dnf install pgq_14*;
+dnf install pgq_13*;
+dnf install pgq_12*;
 ```
 
 

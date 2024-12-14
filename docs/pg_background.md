@@ -73,12 +73,12 @@ Install `pg_background` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `pg_background` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_background_17*;
-yum install pg_background_16*;
-yum install pg_background_15*;
-yum install pg_background_14*;
-yum install pg_background_13*;
-yum install pg_background_12*;
+dnf install pg_background_17*;
+dnf install pg_background_16*;
+dnf install pg_background_15*;
+dnf install pg_background_14*;
+dnf install pg_background_13*;
+dnf install pg_background_12*;
 ```
 
 

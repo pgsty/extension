@@ -73,12 +73,12 @@ Install `envvar` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `envvar` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_envvar_17*;
-yum install pg_envvar_16*;
-yum install pg_envvar_15*;
-yum install pg_envvar_14*;
-yum install pg_envvar_13*;
-yum install pg_envvar_12*;
+dnf install pg_envvar_17*;
+dnf install pg_envvar_16*;
+dnf install pg_envvar_15*;
+dnf install pg_envvar_14*;
+dnf install pg_envvar_13*;
+dnf install pg_envvar_12*;
 ```
 
 

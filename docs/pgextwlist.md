@@ -73,12 +73,12 @@ Install `pgextwlist` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pgextwlist` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgextwlist_17*;
-yum install pgextwlist_16*;
-yum install pgextwlist_15*;
-yum install pgextwlist_14*;
-yum install pgextwlist_13*;
-yum install pgextwlist_12*;
+dnf install pgextwlist_17*;
+dnf install pgextwlist_16*;
+dnf install pgextwlist_15*;
+dnf install pgextwlist_14*;
+dnf install pgextwlist_13*;
+dnf install pgextwlist_12*;
 ```
 
 

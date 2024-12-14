@@ -38,8 +38,8 @@
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
@@ -73,19 +73,18 @@ Install `topn` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 Install `topn` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install topn_17*;
-yum install topn_16*;
-yum install topn_15*;
-yum install topn_14*;
-yum install topn_13*;
-yum install topn_12*;
+dnf install topn_17*;
+dnf install topn_16*;
+dnf install topn_15*;
+dnf install topn_14*;
+dnf install topn_13*;
+dnf install topn_12*;
 ```
 
 
 Install `topn` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-topn;
 apt install postgresql-16-topn;
 apt install postgresql-15-topn;
 apt install postgresql-14-topn;
@@ -100,9 +99,9 @@ apt install postgresql-12-topn;
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `topn_17*` | `topn_16*` | `topn_15*` | `topn_14*` | `topn_13*` | `topn_12*` |
 | `el9` | `topn_17*` | `topn_16*` | `topn_15*` | `topn_14*` | `topn_13*` | `topn_12*` |
-| `d12` | `postgresql-17-topn` | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` | `postgresql-12-topn` |
-| `u22` | `postgresql-17-topn` | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` | `postgresql-12-topn` |
-| `u24` | `postgresql-17-topn` | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` | `postgresql-12-topn` |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` | `postgresql-12-topn` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` | `postgresql-12-topn` |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

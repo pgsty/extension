@@ -73,12 +73,12 @@ Install `table_log` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `table_log` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install table_log_17;
-yum install table_log_16;
-yum install table_log_15;
-yum install table_log_14;
-yum install table_log_13;
-yum install table_log_12;
+dnf install table_log_17;
+dnf install table_log_16;
+dnf install table_log_15;
+dnf install table_log_14;
+dnf install table_log_13;
+dnf install table_log_12;
 ```
 
 

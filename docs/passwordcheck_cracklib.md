@@ -73,12 +73,12 @@ Install `passwordcheck` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `passwordcheck` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install passwordcheck_cracklib_17*;
-yum install passwordcheck_cracklib_16*;
-yum install passwordcheck_cracklib_15*;
-yum install passwordcheck_cracklib_14*;
-yum install passwordcheck_cracklib_13*;
-yum install passwordcheck_cracklib_12*;
+dnf install passwordcheck_cracklib_17*;
+dnf install passwordcheck_cracklib_16*;
+dnf install passwordcheck_cracklib_15*;
+dnf install passwordcheck_cracklib_14*;
+dnf install passwordcheck_cracklib_13*;
+dnf install passwordcheck_cracklib_12*;
 ```
 
 

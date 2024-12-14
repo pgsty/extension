@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -73,12 +73,11 @@ Install `pg_h3` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `pg_h3` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install h3-pg_17*;
-yum install h3-pg_16*;
-yum install h3-pg_15*;
-yum install h3-pg_14*;
-yum install h3-pg_13*;
-yum install h3-pg_12*;
+dnf install h3-pg_16*;
+dnf install h3-pg_15*;
+dnf install h3-pg_14*;
+dnf install h3-pg_13*;
+dnf install h3-pg_12*;
 ```
 
 
@@ -98,8 +97,8 @@ apt install postgresql-12-h3;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `h3-pg_17*` | `h3-pg_16*` | `h3-pg_15*` | `h3-pg_14*` | `h3-pg_13*` | `h3-pg_12*` |
-| `el9` | `h3-pg_17*` | `h3-pg_16*` | `h3-pg_15*` | `h3-pg_14*` | `h3-pg_13*` | `h3-pg_12*` |
+| `el8` | <span class="tcred">✘</span> | `h3-pg_16*` | `h3-pg_15*` | `h3-pg_14*` | `h3-pg_13*` | `h3-pg_12*` |
+| `el9` | <span class="tcred">✘</span> | `h3-pg_16*` | `h3-pg_15*` | `h3-pg_14*` | `h3-pg_13*` | `h3-pg_12*` |
 | `d12` | `postgresql-17-h3` | `postgresql-16-h3` | `postgresql-15-h3` | `postgresql-14-h3` | `postgresql-13-h3` | `postgresql-12-h3` |
 | `u22` | `postgresql-17-h3` | `postgresql-16-h3` | `postgresql-15-h3` | `postgresql-14-h3` | `postgresql-13-h3` | `postgresql-12-h3` |
 | `u24` | `postgresql-17-h3` | `postgresql-16-h3` | `postgresql-15-h3` | `postgresql-14-h3` | `postgresql-13-h3` | `postgresql-12-h3` |

@@ -73,12 +73,12 @@ Install `plsh` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 Install `plsh` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install plsh_17*;
-yum install plsh_16*;
-yum install plsh_15*;
-yum install plsh_14*;
-yum install plsh_13*;
-yum install plsh_12*;
+dnf install plsh_17*;
+dnf install plsh_16*;
+dnf install plsh_15*;
+dnf install plsh_14*;
+dnf install plsh_13*;
+dnf install plsh_12*;
 ```
 
 

@@ -73,12 +73,12 @@ Install `oracle_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `oracle_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install oracle_fdw_17*;
-yum install oracle_fdw_16*;
-yum install oracle_fdw_15*;
-yum install oracle_fdw_14*;
-yum install oracle_fdw_13*;
-yum install oracle_fdw_12*;
+dnf install oracle_fdw_17*;
+dnf install oracle_fdw_16*;
+dnf install oracle_fdw_15*;
+dnf install oracle_fdw_14*;
+dnf install oracle_fdw_13*;
+dnf install oracle_fdw_12*;
 ```
 
 

@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 | `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
@@ -72,12 +72,10 @@ Install `jdbc_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `jdbc_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install jdbc_fdw_17*;
-yum install jdbc_fdw_16*;
-yum install jdbc_fdw_15*;
-yum install jdbc_fdw_14*;
-yum install jdbc_fdw_13*;
-yum install jdbc_fdw_12*;
+dnf install jdbc_fdw_16*;
+dnf install jdbc_fdw_15*;
+dnf install jdbc_fdw_14*;
+dnf install jdbc_fdw_13*;
 ```
 
 
@@ -85,11 +83,11 @@ yum install jdbc_fdw_12*;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `jdbc_fdw_17*` | `jdbc_fdw_16*` | `jdbc_fdw_15*` | `jdbc_fdw_14*` | `jdbc_fdw_13*` | `jdbc_fdw_12*` |
-| `el9` | `jdbc_fdw_17*` | `jdbc_fdw_16*` | `jdbc_fdw_15*` | `jdbc_fdw_14*` | `jdbc_fdw_13*` | `jdbc_fdw_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| `el8` | <span class="tcred">✘</span> | `jdbc_fdw_16*` | `jdbc_fdw_15*` | `jdbc_fdw_14*` | `jdbc_fdw_13*` | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | `jdbc_fdw_16*` | `jdbc_fdw_15*` | `jdbc_fdw_14*` | `jdbc_fdw_13*` | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

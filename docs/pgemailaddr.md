@@ -73,12 +73,12 @@ Install `pgemailaddr` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 Install `pgemailaddr` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_emailaddr_17*;
-yum install pg_emailaddr_16*;
-yum install pg_emailaddr_15*;
-yum install pg_emailaddr_14*;
-yum install pg_emailaddr_13*;
-yum install pg_emailaddr_12*;
+dnf install pg_emailaddr_17*;
+dnf install pg_emailaddr_16*;
+dnf install pg_emailaddr_15*;
+dnf install pg_emailaddr_14*;
+dnf install pg_emailaddr_13*;
+dnf install pg_emailaddr_12*;
 ```
 
 

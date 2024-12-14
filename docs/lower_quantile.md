@@ -73,12 +73,12 @@ Install `lower_quantile` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `lower_quantile` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install lower_quantile_17*;
-yum install lower_quantile_16*;
-yum install lower_quantile_15*;
-yum install lower_quantile_14*;
-yum install lower_quantile_13*;
-yum install lower_quantile_12*;
+dnf install lower_quantile_17*;
+dnf install lower_quantile_16*;
+dnf install lower_quantile_15*;
+dnf install lower_quantile_14*;
+dnf install lower_quantile_13*;
+dnf install lower_quantile_12*;
 ```
 
 

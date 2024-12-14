@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -73,12 +73,9 @@ Install `pg_prioritize` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `pg_prioritize` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_prioritize_17*;
-yum install pg_prioritize_16*;
-yum install pg_prioritize_15*;
-yum install pg_prioritize_14*;
-yum install pg_prioritize_13*;
-yum install pg_prioritize_12*;
+dnf install pg_prioritize_17*;
+dnf install pg_prioritize_16*;
+dnf install pg_prioritize_15*;
 ```
 
 
@@ -98,8 +95,8 @@ apt install postgresql-12-prioritize;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_prioritize_17*` | `pg_prioritize_16*` | `pg_prioritize_15*` | `pg_prioritize_14*` | `pg_prioritize_13*` | `pg_prioritize_12*` |
-| `el9` | `pg_prioritize_17*` | `pg_prioritize_16*` | `pg_prioritize_15*` | `pg_prioritize_14*` | `pg_prioritize_13*` | `pg_prioritize_12*` |
+| `el8` | `pg_prioritize_17*` | `pg_prioritize_16*` | `pg_prioritize_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `pg_prioritize_17*` | `pg_prioritize_16*` | `pg_prioritize_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | `postgresql-17-prioritize` | `postgresql-16-prioritize` | `postgresql-15-prioritize` | `postgresql-14-prioritize` | `postgresql-13-prioritize` | `postgresql-12-prioritize` |
 | `u22` | `postgresql-17-prioritize` | `postgresql-16-prioritize` | `postgresql-15-prioritize` | `postgresql-14-prioritize` | `postgresql-13-prioritize` | `postgresql-12-prioritize` |
 | `u24` | `postgresql-17-prioritize` | `postgresql-16-prioritize` | `postgresql-15-prioritize` | `postgresql-14-prioritize` | `postgresql-13-prioritize` | `postgresql-12-prioritize` |

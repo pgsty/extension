@@ -73,12 +73,12 @@ Install `pg_currency` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 Install `pg_currency` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_currency_17*;
-yum install pg_currency_16*;
-yum install pg_currency_15*;
-yum install pg_currency_14*;
-yum install pg_currency_13*;
-yum install pg_currency_12*;
+dnf install pg_currency_17*;
+dnf install pg_currency_16*;
+dnf install pg_currency_15*;
+dnf install pg_currency_14*;
+dnf install pg_currency_13*;
+dnf install pg_currency_12*;
 ```
 
 

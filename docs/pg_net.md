@@ -77,12 +77,12 @@ Install `pg_net` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `pg_net` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_net_17*;
-yum install pg_net_16*;
-yum install pg_net_15*;
-yum install pg_net_14*;
-yum install pg_net_13*;
-yum install pg_net_12*;
+dnf install pg_net_17*;
+dnf install pg_net_16*;
+dnf install pg_net_15*;
+dnf install pg_net_14*;
+dnf install pg_net_13*;
+dnf install pg_net_12*;
 ```
 
 

@@ -38,9 +38,9 @@
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -73,19 +73,18 @@ Install `sqlite_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `sqlite_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install sqlite_fdw_17*;
-yum install sqlite_fdw_16*;
-yum install sqlite_fdw_15*;
-yum install sqlite_fdw_14*;
-yum install sqlite_fdw_13*;
-yum install sqlite_fdw_12*;
+dnf install sqlite_fdw_17*;
+dnf install sqlite_fdw_16*;
+dnf install sqlite_fdw_15*;
+dnf install sqlite_fdw_14*;
+dnf install sqlite_fdw_13*;
+dnf install sqlite_fdw_12*;
 ```
 
 
 Install `sqlite_fdw` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-sqlite-fdw;
 apt install postgresql-16-sqlite-fdw;
 apt install postgresql-15-sqlite-fdw;
 apt install postgresql-14-sqlite-fdw;
@@ -100,9 +99,9 @@ apt install postgresql-12-sqlite-fdw;
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `sqlite_fdw_17*` | `sqlite_fdw_16*` | `sqlite_fdw_15*` | `sqlite_fdw_14*` | `sqlite_fdw_13*` | `sqlite_fdw_12*` |
 | `el9` | `sqlite_fdw_17*` | `sqlite_fdw_16*` | `sqlite_fdw_15*` | `sqlite_fdw_14*` | `sqlite_fdw_13*` | `sqlite_fdw_12*` |
-| `d12` | `postgresql-17-sqlite-fdw` | `postgresql-16-sqlite-fdw` | `postgresql-15-sqlite-fdw` | `postgresql-14-sqlite-fdw` | `postgresql-13-sqlite-fdw` | `postgresql-12-sqlite-fdw` |
-| `u22` | `postgresql-17-sqlite-fdw` | `postgresql-16-sqlite-fdw` | `postgresql-15-sqlite-fdw` | `postgresql-14-sqlite-fdw` | `postgresql-13-sqlite-fdw` | `postgresql-12-sqlite-fdw` |
-| `u24` | `postgresql-17-sqlite-fdw` | `postgresql-16-sqlite-fdw` | `postgresql-15-sqlite-fdw` | `postgresql-14-sqlite-fdw` | `postgresql-13-sqlite-fdw` | `postgresql-12-sqlite-fdw` |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-sqlite-fdw` | `postgresql-15-sqlite-fdw` | `postgresql-14-sqlite-fdw` | `postgresql-13-sqlite-fdw` | `postgresql-12-sqlite-fdw` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-sqlite-fdw` | `postgresql-15-sqlite-fdw` | `postgresql-14-sqlite-fdw` | `postgresql-13-sqlite-fdw` | `postgresql-12-sqlite-fdw` |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-sqlite-fdw` | `postgresql-15-sqlite-fdw` | `postgresql-14-sqlite-fdw` | `postgresql-13-sqlite-fdw` | `postgresql-12-sqlite-fdw` |
 
 
 

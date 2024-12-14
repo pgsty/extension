@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -73,12 +73,10 @@ Install `pg_search` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pg_search` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_search_17;
-yum install pg_search_16;
-yum install pg_search_15;
-yum install pg_search_14;
-yum install pg_search_13;
-yum install pg_search_12;
+dnf install pg_search_17;
+dnf install pg_search_16;
+dnf install pg_search_15;
+dnf install pg_search_14;
 ```
 
 
@@ -89,8 +87,6 @@ apt install postgresql-17-pg-search;
 apt install postgresql-16-pg-search;
 apt install postgresql-15-pg-search;
 apt install postgresql-14-pg-search;
-apt install postgresql-13-pg-search;
-apt install postgresql-12-pg-search;
 ```
 
 
@@ -98,11 +94,11 @@ apt install postgresql-12-pg-search;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_search_17` | `pg_search_16` | `pg_search_15` | `pg_search_14` | `pg_search_13` | `pg_search_12` |
-| `el9` | `pg_search_17` | `pg_search_16` | `pg_search_15` | `pg_search_14` | `pg_search_13` | `pg_search_12` |
-| `d12` | `postgresql-17-pg-search` | `postgresql-16-pg-search` | `postgresql-15-pg-search` | `postgresql-14-pg-search` | `postgresql-13-pg-search` | `postgresql-12-pg-search` |
-| `u22` | `postgresql-17-pg-search` | `postgresql-16-pg-search` | `postgresql-15-pg-search` | `postgresql-14-pg-search` | `postgresql-13-pg-search` | `postgresql-12-pg-search` |
-| `u24` | `postgresql-17-pg-search` | `postgresql-16-pg-search` | `postgresql-15-pg-search` | `postgresql-14-pg-search` | `postgresql-13-pg-search` | `postgresql-12-pg-search` |
+| `el8` | `pg_search_17` | `pg_search_16` | `pg_search_15` | `pg_search_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `pg_search_17` | `pg_search_16` | `pg_search_15` | `pg_search_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-pg-search` | `postgresql-16-pg-search` | `postgresql-15-pg-search` | `postgresql-14-pg-search` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pg-search` | `postgresql-16-pg-search` | `postgresql-15-pg-search` | `postgresql-14-pg-search` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pg-search` | `postgresql-16-pg-search` | `postgresql-15-pg-search` | `postgresql-14-pg-search` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

@@ -73,12 +73,12 @@ Install `sslutils` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `sslutils` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install sslutils_17*;
-yum install sslutils_16*;
-yum install sslutils_15*;
-yum install sslutils_14*;
-yum install sslutils_13*;
-yum install sslutils_12*;
+dnf install sslutils_17*;
+dnf install sslutils_16*;
+dnf install sslutils_15*;
+dnf install sslutils_14*;
+dnf install sslutils_13*;
+dnf install sslutils_12*;
 ```
 
 

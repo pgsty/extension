@@ -73,12 +73,12 @@ Install `url_encode` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `url_encode` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install url_encode_17*;
-yum install url_encode_16*;
-yum install url_encode_15*;
-yum install url_encode_14*;
-yum install url_encode_13*;
-yum install url_encode_12*;
+dnf install url_encode_17*;
+dnf install url_encode_16*;
+dnf install url_encode_15*;
+dnf install url_encode_14*;
+dnf install url_encode_13*;
+dnf install url_encode_12*;
 ```
 
 

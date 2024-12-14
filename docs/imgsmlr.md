@@ -73,12 +73,12 @@ Install `imgsmlr` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `imgsmlr` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install imgsmlr_17*;
-yum install imgsmlr_16*;
-yum install imgsmlr_15*;
-yum install imgsmlr_14*;
-yum install imgsmlr_13*;
-yum install imgsmlr_12*;
+dnf install imgsmlr_17*;
+dnf install imgsmlr_16*;
+dnf install imgsmlr_15*;
+dnf install imgsmlr_14*;
+dnf install imgsmlr_13*;
+dnf install imgsmlr_12*;
 ```
 
 

@@ -73,12 +73,12 @@ Install `pgvector` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pgvector` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgvector_17*;
-yum install pgvector_16*;
-yum install pgvector_15*;
-yum install pgvector_14*;
-yum install pgvector_13*;
-yum install pgvector_12*;
+dnf install pgvector_17*;
+dnf install pgvector_16*;
+dnf install pgvector_15*;
+dnf install pgvector_14*;
+dnf install pgvector_13*;
+dnf install pgvector_12*;
 ```
 
 

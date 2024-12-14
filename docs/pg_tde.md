@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -77,24 +77,14 @@ Install `pg_tde` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `pg_tde` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_tde_17*;
-yum install pg_tde_16*;
-yum install pg_tde_15*;
-yum install pg_tde_14*;
-yum install pg_tde_13*;
-yum install pg_tde_12*;
+dnf install pg_tde_16*;
 ```
 
 
 Install `pg_tde` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-pg-tde;
 apt install postgresql-16-pg-tde;
-apt install postgresql-15-pg-tde;
-apt install postgresql-14-pg-tde;
-apt install postgresql-13-pg-tde;
-apt install postgresql-12-pg-tde;
 ```
 
 
@@ -102,11 +92,11 @@ apt install postgresql-12-pg-tde;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_tde_17*` | `pg_tde_16*` | `pg_tde_15*` | `pg_tde_14*` | `pg_tde_13*` | `pg_tde_12*` |
-| `el9` | `pg_tde_17*` | `pg_tde_16*` | `pg_tde_15*` | `pg_tde_14*` | `pg_tde_13*` | `pg_tde_12*` |
-| `d12` | `postgresql-17-pg-tde` | `postgresql-16-pg-tde` | `postgresql-15-pg-tde` | `postgresql-14-pg-tde` | `postgresql-13-pg-tde` | `postgresql-12-pg-tde` |
-| `u22` | `postgresql-17-pg-tde` | `postgresql-16-pg-tde` | `postgresql-15-pg-tde` | `postgresql-14-pg-tde` | `postgresql-13-pg-tde` | `postgresql-12-pg-tde` |
-| `u24` | `postgresql-17-pg-tde` | `postgresql-16-pg-tde` | `postgresql-15-pg-tde` | `postgresql-14-pg-tde` | `postgresql-13-pg-tde` | `postgresql-12-pg-tde` |
+| `el8` | <span class="tcred">✘</span> | `pg_tde_16*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | `pg_tde_16*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-pg-tde` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-pg-tde` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-pg-tde` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

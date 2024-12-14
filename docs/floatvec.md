@@ -73,12 +73,12 @@ Install `floatvec` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `floatvec` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install floatvec_17*;
-yum install floatvec_16*;
-yum install floatvec_15*;
-yum install floatvec_14*;
-yum install floatvec_13*;
-yum install floatvec_12*;
+dnf install floatvec_17*;
+dnf install floatvec_16*;
+dnf install floatvec_15*;
+dnf install floatvec_14*;
+dnf install floatvec_13*;
+dnf install floatvec_12*;
 ```
 
 

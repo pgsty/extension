@@ -38,9 +38,9 @@
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -80,11 +80,11 @@ apt install postgresql-$v-rdkit;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `` | `` | `` | `` | `` | `` |
-| `el9` | `` | `` | `` | `` | `` | `` |
-| `d12` | `postgresql-17-rdkit` | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
-| `u22` | `postgresql-17-rdkit` | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
-| `u24` | `postgresql-17-rdkit` | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
+| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-rdkit` | `postgresql-15-rdkit` | `postgresql-14-rdkit` | `postgresql-13-rdkit` | `postgresql-12-rdkit` |
 
 
 

@@ -88,11 +88,11 @@ apt install babelfishpg-tds;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` |
-| `el9` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` |
-| `d12` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` |
-| `u22` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` |
-| `u24` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` | `wiltondb` |
+| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | `wiltondb` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | `wiltondb` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | `wiltondb` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | `wiltondb` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | `wiltondb` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

@@ -80,8 +80,8 @@ apt install postgresql-$v-debversion;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `` | `` | `` | `` | `` | `` |
-| `el9` | `` | `` | `` | `` | `` | `` |
+| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | `postgresql-17-debversion` | `postgresql-16-debversion` | `postgresql-15-debversion` | `postgresql-14-debversion` | `postgresql-13-debversion` | `postgresql-12-debversion` |
 | `u22` | `postgresql-17-debversion` | `postgresql-16-debversion` | `postgresql-15-debversion` | `postgresql-14-debversion` | `postgresql-13-debversion` | `postgresql-12-debversion` |
 | `u24` | `postgresql-17-debversion` | `postgresql-16-debversion` | `postgresql-15-debversion` | `postgresql-14-debversion` | `postgresql-13-debversion` | `postgresql-12-debversion` |

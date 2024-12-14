@@ -73,12 +73,12 @@ Install `pguint` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `pguint` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pguint_17*;
-yum install pguint_16*;
-yum install pguint_15*;
-yum install pguint_14*;
-yum install pguint_13*;
-yum install pguint_12*;
+dnf install pguint_17*;
+dnf install pguint_16*;
+dnf install pguint_15*;
+dnf install pguint_14*;
+dnf install pguint_13*;
+dnf install pguint_12*;
 ```
 
 

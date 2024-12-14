@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -73,19 +73,14 @@ Install `age` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook
 Install `age` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install apache-age_17*;
-yum install apache-age_16*;
-yum install apache-age_15*;
-yum install apache-age_14*;
-yum install apache-age_13*;
-yum install apache-age_12*;
+dnf install apache-age_16*;
+dnf install apache-age_15*;
 ```
 
 
 Install `age` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-age;
 apt install postgresql-16-age;
 apt install postgresql-15-age;
 apt install postgresql-14-age;
@@ -98,11 +93,11 @@ apt install postgresql-12-age;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `apache-age_17*` | `apache-age_16*` | `apache-age_15*` | `apache-age_14*` | `apache-age_13*` | `apache-age_12*` |
-| `el9` | `apache-age_17*` | `apache-age_16*` | `apache-age_15*` | `apache-age_14*` | `apache-age_13*` | `apache-age_12*` |
-| `d12` | `postgresql-17-age` | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` | `postgresql-12-age` |
-| `u22` | `postgresql-17-age` | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` | `postgresql-12-age` |
-| `u24` | `postgresql-17-age` | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` | `postgresql-12-age` |
+| `el8` | <span class="tcred">✘</span> | `apache-age_16*` | `apache-age_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | `apache-age_16*` | `apache-age_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` | `postgresql-12-age` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` | `postgresql-12-age` |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` | `postgresql-12-age` |
 
 
 

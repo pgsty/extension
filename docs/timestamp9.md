@@ -73,12 +73,12 @@ Install `timestamp9` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `timestamp9` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install timestamp9_17*;
-yum install timestamp9_16*;
-yum install timestamp9_15*;
-yum install timestamp9_14*;
-yum install timestamp9_13*;
-yum install timestamp9_12*;
+dnf install timestamp9_17*;
+dnf install timestamp9_16*;
+dnf install timestamp9_15*;
+dnf install timestamp9_14*;
+dnf install timestamp9_13*;
+dnf install timestamp9_12*;
 ```
 
 

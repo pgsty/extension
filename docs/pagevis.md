@@ -73,12 +73,12 @@ Install `pagevis` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pagevis` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pagevis_17;
-yum install pagevis_16;
-yum install pagevis_15;
-yum install pagevis_14;
-yum install pagevis_13;
-yum install pagevis_12;
+dnf install pagevis_17;
+dnf install pagevis_16;
+dnf install pagevis_15;
+dnf install pagevis_14;
+dnf install pagevis_13;
+dnf install pagevis_12;
 ```
 
 

@@ -77,12 +77,12 @@ Install `pglite_fusion` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `pglite_fusion` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pglite_fusion_17;
-yum install pglite_fusion_16;
-yum install pglite_fusion_15;
-yum install pglite_fusion_14;
-yum install pglite_fusion_13;
-yum install pglite_fusion_12;
+dnf install pglite_fusion_17;
+dnf install pglite_fusion_16;
+dnf install pglite_fusion_15;
+dnf install pglite_fusion_14;
+dnf install pglite_fusion_13;
+dnf install pglite_fusion_12;
 ```
 
 

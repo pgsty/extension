@@ -73,12 +73,12 @@ Install `pgsql_tweaks` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `pgsql_tweaks` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgsql_tweaks_17*;
-yum install pgsql_tweaks_16*;
-yum install pgsql_tweaks_15*;
-yum install pgsql_tweaks_14*;
-yum install pgsql_tweaks_13*;
-yum install pgsql_tweaks_12*;
+dnf install pgsql_tweaks_17*;
+dnf install pgsql_tweaks_16*;
+dnf install pgsql_tweaks_15*;
+dnf install pgsql_tweaks_14*;
+dnf install pgsql_tweaks_13*;
+dnf install pgsql_tweaks_12*;
 ```
 
 

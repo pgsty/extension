@@ -73,12 +73,12 @@ Install `redis_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `redis_fdw` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install redis_fdw_17*;
-yum install redis_fdw_16*;
-yum install redis_fdw_15*;
-yum install redis_fdw_14*;
-yum install redis_fdw_13*;
-yum install redis_fdw_12*;
+dnf install redis_fdw_17*;
+dnf install redis_fdw_16*;
+dnf install redis_fdw_15*;
+dnf install redis_fdw_14*;
+dnf install redis_fdw_13*;
+dnf install redis_fdw_12*;
 ```
 
 

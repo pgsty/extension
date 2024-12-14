@@ -73,12 +73,12 @@ Install `pg_hashids` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pg_hashids` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_hashids_17*;
-yum install pg_hashids_16*;
-yum install pg_hashids_15*;
-yum install pg_hashids_14*;
-yum install pg_hashids_13*;
-yum install pg_hashids_12*;
+dnf install pg_hashids_17*;
+dnf install pg_hashids_16*;
+dnf install pg_hashids_15*;
+dnf install pg_hashids_14*;
+dnf install pg_hashids_13*;
+dnf install pg_hashids_12*;
 ```
 
 

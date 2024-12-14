@@ -73,12 +73,12 @@ Install `pldebugger` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pldebugger` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pldebugger_17*;
-yum install pldebugger_16*;
-yum install pldebugger_15*;
-yum install pldebugger_14*;
-yum install pldebugger_13*;
-yum install pldebugger_12*;
+dnf install pldebugger_17*;
+dnf install pldebugger_16*;
+dnf install pldebugger_15*;
+dnf install pldebugger_14*;
+dnf install pldebugger_13*;
+dnf install pldebugger_12*;
 ```
 
 

@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -73,12 +73,10 @@ Install `jsquery` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `jsquery` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install jsquery_17*;
-yum install jsquery_16*;
-yum install jsquery_15*;
-yum install jsquery_14*;
-yum install jsquery_13*;
-yum install jsquery_12*;
+dnf install jsquery_17*;
+dnf install jsquery_16*;
+dnf install jsquery_15*;
+dnf install jsquery_14*;
 ```
 
 
@@ -98,8 +96,8 @@ apt install postgresql-12-jsquery;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `jsquery_17*` | `jsquery_16*` | `jsquery_15*` | `jsquery_14*` | `jsquery_13*` | `jsquery_12*` |
-| `el9` | `jsquery_17*` | `jsquery_16*` | `jsquery_15*` | `jsquery_14*` | `jsquery_13*` | `jsquery_12*` |
+| `el8` | `jsquery_17*` | `jsquery_16*` | `jsquery_15*` | `jsquery_14*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `jsquery_17*` | `jsquery_16*` | `jsquery_15*` | `jsquery_14*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | `postgresql-17-jsquery` | `postgresql-16-jsquery` | `postgresql-15-jsquery` | `postgresql-14-jsquery` | `postgresql-13-jsquery` | `postgresql-12-jsquery` |
 | `u22` | `postgresql-17-jsquery` | `postgresql-16-jsquery` | `postgresql-15-jsquery` | `postgresql-14-jsquery` | `postgresql-13-jsquery` | `postgresql-12-jsquery` |
 | `u24` | `postgresql-17-jsquery` | `postgresql-16-jsquery` | `postgresql-15-jsquery` | `postgresql-14-jsquery` | `postgresql-13-jsquery` | `postgresql-12-jsquery` |

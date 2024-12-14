@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -73,12 +73,11 @@ Install `pgtap` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `pgtap` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgtap_17*;
-yum install pgtap_16*;
-yum install pgtap_15*;
-yum install pgtap_14*;
-yum install pgtap_13*;
-yum install pgtap_12*;
+dnf install pgtap_16*;
+dnf install pgtap_15*;
+dnf install pgtap_14*;
+dnf install pgtap_13*;
+dnf install pgtap_12*;
 ```
 
 
@@ -98,8 +97,8 @@ apt install postgresql-12-pgtap;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgtap_17*` | `pgtap_16*` | `pgtap_15*` | `pgtap_14*` | `pgtap_13*` | `pgtap_12*` |
-| `el9` | `pgtap_17*` | `pgtap_16*` | `pgtap_15*` | `pgtap_14*` | `pgtap_13*` | `pgtap_12*` |
+| `el8` | <span class="tcred">✘</span> | `pgtap_16*` | `pgtap_15*` | `pgtap_14*` | `pgtap_13*` | `pgtap_12*` |
+| `el9` | <span class="tcred">✘</span> | `pgtap_16*` | `pgtap_15*` | `pgtap_14*` | `pgtap_13*` | `pgtap_12*` |
 | `d12` | `postgresql-17-pgtap` | `postgresql-16-pgtap` | `postgresql-15-pgtap` | `postgresql-14-pgtap` | `postgresql-13-pgtap` | `postgresql-12-pgtap` |
 | `u22` | `postgresql-17-pgtap` | `postgresql-16-pgtap` | `postgresql-15-pgtap` | `postgresql-14-pgtap` | `postgresql-13-pgtap` | `postgresql-12-pgtap` |
 | `u24` | `postgresql-17-pgtap` | `postgresql-16-pgtap` | `postgresql-15-pgtap` | `postgresql-14-pgtap` | `postgresql-13-pgtap` | `postgresql-12-pgtap` |

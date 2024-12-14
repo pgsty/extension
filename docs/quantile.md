@@ -73,12 +73,12 @@ Install `quantile` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `quantile` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install quantile_17*;
-yum install quantile_16*;
-yum install quantile_15*;
-yum install quantile_14*;
-yum install quantile_13*;
-yum install quantile_12*;
+dnf install quantile_17*;
+dnf install quantile_16*;
+dnf install quantile_15*;
+dnf install quantile_14*;
+dnf install quantile_13*;
+dnf install quantile_12*;
 ```
 
 

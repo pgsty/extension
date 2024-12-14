@@ -73,12 +73,12 @@ Install `pg_uri` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `pg_uri` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_uri_17*;
-yum install pg_uri_16*;
-yum install pg_uri_15*;
-yum install pg_uri_14*;
-yum install pg_uri_13*;
-yum install pg_uri_12*;
+dnf install pg_uri_17*;
+dnf install pg_uri_16*;
+dnf install pg_uri_15*;
+dnf install pg_uri_14*;
+dnf install pg_uri_13*;
+dnf install pg_uri_12*;
 ```
 
 

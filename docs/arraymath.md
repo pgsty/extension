@@ -73,12 +73,12 @@ Install `pg_arraymath` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `pg_arraymath` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_arraymath_17*;
-yum install pg_arraymath_16*;
-yum install pg_arraymath_15*;
-yum install pg_arraymath_14*;
-yum install pg_arraymath_13*;
-yum install pg_arraymath_12*;
+dnf install pg_arraymath_17*;
+dnf install pg_arraymath_16*;
+dnf install pg_arraymath_15*;
+dnf install pg_arraymath_14*;
+dnf install pg_arraymath_13*;
+dnf install pg_arraymath_12*;
 ```
 
 

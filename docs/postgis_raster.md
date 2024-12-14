@@ -73,12 +73,12 @@ Install `postgis` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `postgis` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install postgis35_17*;
-yum install postgis35_16*;
-yum install postgis35_15*;
-yum install postgis35_14*;
-yum install postgis35_13*;
-yum install postgis35_12*;
+dnf install postgis35_17*;
+dnf install postgis35_16*;
+dnf install postgis35_15*;
+dnf install postgis35_14*;
+dnf install postgis35_13*;
+dnf install postgis35_12*;
 ```
 
 

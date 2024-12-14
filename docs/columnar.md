@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -73,24 +73,20 @@ Install `hydra` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `hydra` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install hydra_17*;
-yum install hydra_16*;
-yum install hydra_15*;
-yum install hydra_14*;
-yum install hydra_13*;
-yum install hydra_12*;
+dnf install hydra_16*;
+dnf install hydra_15*;
+dnf install hydra_14*;
+dnf install hydra_13*;
 ```
 
 
 Install `hydra` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-hydra;
 apt install postgresql-16-hydra;
 apt install postgresql-15-hydra;
 apt install postgresql-14-hydra;
 apt install postgresql-13-hydra;
-apt install postgresql-12-hydra;
 ```
 
 
@@ -98,11 +94,11 @@ apt install postgresql-12-hydra;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `hydra_17*` | `hydra_16*` | `hydra_15*` | `hydra_14*` | `hydra_13*` | `hydra_12*` |
-| `el9` | `hydra_17*` | `hydra_16*` | `hydra_15*` | `hydra_14*` | `hydra_13*` | `hydra_12*` |
-| `d12` | `postgresql-17-hydra` | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | `postgresql-12-hydra` |
-| `u22` | `postgresql-17-hydra` | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | `postgresql-12-hydra` |
-| `u24` | `postgresql-17-hydra` | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | `postgresql-12-hydra` |
+| `el8` | <span class="tcred">✘</span> | `hydra_16*` | `hydra_15*` | `hydra_14*` | `hydra_13*` | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | `hydra_16*` | `hydra_15*` | `hydra_14*` | `hydra_13*` | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-hydra` | `postgresql-15-hydra` | `postgresql-14-hydra` | `postgresql-13-hydra` | <span class="tcred">✘</span> |
 
 
 

@@ -73,12 +73,12 @@ Install `pg_zstd` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pg_zstd` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_zstd_17*;
-yum install pg_zstd_16*;
-yum install pg_zstd_15*;
-yum install pg_zstd_14*;
-yum install pg_zstd_13*;
-yum install pg_zstd_12*;
+dnf install pg_zstd_17*;
+dnf install pg_zstd_16*;
+dnf install pg_zstd_15*;
+dnf install pg_zstd_14*;
+dnf install pg_zstd_13*;
+dnf install pg_zstd_12*;
 ```
 
 

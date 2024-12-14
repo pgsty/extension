@@ -38,9 +38,9 @@
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -73,12 +73,12 @@ Install `pgfaceting` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pgfaceting` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgfaceting_17;
-yum install pgfaceting_16;
-yum install pgfaceting_15;
-yum install pgfaceting_14;
-yum install pgfaceting_13;
-yum install pgfaceting_12;
+dnf install pgfaceting_17;
+dnf install pgfaceting_16;
+dnf install pgfaceting_15;
+dnf install pgfaceting_14;
+dnf install pgfaceting_13;
+dnf install pgfaceting_12;
 ```
 
 
@@ -89,8 +89,6 @@ apt install postgresql-17-pgfaceting;
 apt install postgresql-16-pgfaceting;
 apt install postgresql-15-pgfaceting;
 apt install postgresql-14-pgfaceting;
-apt install postgresql-13-pgfaceting;
-apt install postgresql-12-pgfaceting;
 ```
 
 
@@ -100,9 +98,9 @@ apt install postgresql-12-pgfaceting;
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `pgfaceting_17` | `pgfaceting_16` | `pgfaceting_15` | `pgfaceting_14` | `pgfaceting_13` | `pgfaceting_12` |
 | `el9` | `pgfaceting_17` | `pgfaceting_16` | `pgfaceting_15` | `pgfaceting_14` | `pgfaceting_13` | `pgfaceting_12` |
-| `d12` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | `postgresql-13-pgfaceting` | `postgresql-12-pgfaceting` |
-| `u22` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | `postgresql-13-pgfaceting` | `postgresql-12-pgfaceting` |
-| `u24` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | `postgresql-13-pgfaceting` | `postgresql-12-pgfaceting` |
+| `d12` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

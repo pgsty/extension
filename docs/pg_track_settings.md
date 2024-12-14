@@ -73,12 +73,12 @@ Install `pg_track_settings` via [Pigsty](https://pigsty.io/docs/pgext/usage/inst
 Install `pg_track_settings` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_track_settings_17*;
-yum install pg_track_settings_16*;
-yum install pg_track_settings_15*;
-yum install pg_track_settings_14*;
-yum install pg_track_settings_13*;
-yum install pg_track_settings_12*;
+dnf install pg_track_settings_17*;
+dnf install pg_track_settings_16*;
+dnf install pg_track_settings_15*;
+dnf install pg_track_settings_14*;
+dnf install pg_track_settings_13*;
+dnf install pg_track_settings_12*;
 ```
 
 

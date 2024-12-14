@@ -73,12 +73,12 @@ Install `pgcozy` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `pgcozy` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgcozy_17;
-yum install pgcozy_16;
-yum install pgcozy_15;
-yum install pgcozy_14;
-yum install pgcozy_13;
-yum install pgcozy_12;
+dnf install pgcozy_17;
+dnf install pgcozy_16;
+dnf install pgcozy_15;
+dnf install pgcozy_14;
+dnf install pgcozy_13;
+dnf install pgcozy_12;
 ```
 
 

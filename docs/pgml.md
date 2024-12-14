@@ -36,10 +36,10 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
@@ -77,24 +77,18 @@ Install `pgml` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 Install `pgml` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgml_17;
-yum install pgml_16;
-yum install pgml_15;
-yum install pgml_14;
-yum install pgml_13;
-yum install pgml_12;
+dnf install pgml_16;
+dnf install pgml_15;
+dnf install pgml_14;
 ```
 
 
 Install `pgml` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-pgml;
 apt install postgresql-16-pgml;
 apt install postgresql-15-pgml;
 apt install postgresql-14-pgml;
-apt install postgresql-13-pgml;
-apt install postgresql-12-pgml;
 ```
 
 
@@ -102,11 +96,11 @@ apt install postgresql-12-pgml;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgml_17` | `pgml_16` | `pgml_15` | `pgml_14` | `pgml_13` | `pgml_12` |
-| `el9` | `pgml_17` | `pgml_16` | `pgml_15` | `pgml_14` | `pgml_13` | `pgml_12` |
-| `d12` | `postgresql-17-pgml` | `postgresql-16-pgml` | `postgresql-15-pgml` | `postgresql-14-pgml` | `postgresql-13-pgml` | `postgresql-12-pgml` |
-| `u22` | `postgresql-17-pgml` | `postgresql-16-pgml` | `postgresql-15-pgml` | `postgresql-14-pgml` | `postgresql-13-pgml` | `postgresql-12-pgml` |
-| `u24` | `postgresql-17-pgml` | `postgresql-16-pgml` | `postgresql-15-pgml` | `postgresql-14-pgml` | `postgresql-13-pgml` | `postgresql-12-pgml` |
+| `el8` | <span class="tcred">✘</span> | `pgml_16` | `pgml_15` | `pgml_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | `pgml_16` | `pgml_15` | `pgml_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-pgml` | `postgresql-15-pgml` | `postgresql-14-pgml` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-pgml` | `postgresql-15-pgml` | `postgresql-14-pgml` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

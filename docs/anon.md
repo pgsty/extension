@@ -77,12 +77,12 @@ Install `pg_anon` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pg_anon` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install postgresql_anonymizer_17*;
-yum install postgresql_anonymizer_16*;
-yum install postgresql_anonymizer_15*;
-yum install postgresql_anonymizer_14*;
-yum install postgresql_anonymizer_13*;
-yum install postgresql_anonymizer_12*;
+dnf install postgresql_anonymizer_17*;
+dnf install postgresql_anonymizer_16*;
+dnf install postgresql_anonymizer_15*;
+dnf install postgresql_anonymizer_14*;
+dnf install postgresql_anonymizer_13*;
+dnf install postgresql_anonymizer_12*;
 ```
 
 

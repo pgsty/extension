@@ -73,12 +73,12 @@ Install `pgjwt` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `pgjwt` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgjwt_17*;
-yum install pgjwt_16*;
-yum install pgjwt_15*;
-yum install pgjwt_14*;
-yum install pgjwt_13*;
-yum install pgjwt_12*;
+dnf install pgjwt_17*;
+dnf install pgjwt_16*;
+dnf install pgjwt_15*;
+dnf install pgjwt_14*;
+dnf install pgjwt_13*;
+dnf install pgjwt_12*;
 ```
 
 

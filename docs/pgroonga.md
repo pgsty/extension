@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -73,12 +73,9 @@ Install `pgroonga` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pgroonga` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install postgresql17-pgdg-pgroonga;
-yum install postgresql16-pgdg-pgroonga;
-yum install postgresql15-pgdg-pgroonga;
-yum install postgresql14-pgdg-pgroonga;
-yum install postgresql13-pgdg-pgroonga;
-yum install postgresql12-pgdg-pgroonga;
+dnf install postgresql17-pgdg-pgroonga;
+dnf install postgresql16-pgdg-pgroonga;
+dnf install postgresql15-pgdg-pgroonga;
 ```
 
 
@@ -98,8 +95,8 @@ apt install postgresql-12-pgdg-pgroonga;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `postgresql17-pgdg-pgroonga` | `postgresql16-pgdg-pgroonga` | `postgresql15-pgdg-pgroonga` | `postgresql14-pgdg-pgroonga` | `postgresql13-pgdg-pgroonga` | `postgresql12-pgdg-pgroonga` |
-| `el9` | `postgresql17-pgdg-pgroonga` | `postgresql16-pgdg-pgroonga` | `postgresql15-pgdg-pgroonga` | `postgresql14-pgdg-pgroonga` | `postgresql13-pgdg-pgroonga` | `postgresql12-pgdg-pgroonga` |
+| `el8` | `postgresql17-pgdg-pgroonga` | `postgresql16-pgdg-pgroonga` | `postgresql15-pgdg-pgroonga` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `postgresql17-pgdg-pgroonga` | `postgresql16-pgdg-pgroonga` | `postgresql15-pgdg-pgroonga` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `d12` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` | `postgresql-12-pgdg-pgroonga` |
 | `u22` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` | `postgresql-12-pgdg-pgroonga` |
 | `u24` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` | `postgresql-12-pgdg-pgroonga` |

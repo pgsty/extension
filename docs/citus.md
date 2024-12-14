@@ -36,10 +36,10 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> |
 | `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> |
 
 
@@ -79,19 +79,17 @@ Install `citus` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `citus` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install citus_17*;
-yum install citus_16*;
-yum install citus_15*;
-yum install citus_14*;
-yum install citus_13*;
-yum install citus_12*;
+dnf install citus_16*;
+dnf install citus_15*;
+dnf install citus_14*;
+dnf install citus_13*;
+dnf install citus_12*;
 ```
 
 
 Install `citus` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-citus-12.1;
 apt install postgresql-16-citus-12.1;
 apt install postgresql-15-citus-12.1;
 apt install postgresql-14-citus-12.1;
@@ -104,11 +102,11 @@ apt install postgresql-12-citus-10.2;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `citus_17*` | `citus_16*` | `citus_15*` | `citus_14*` | `citus_13*` | `citus_12*` |
-| `el9` | `citus_17*` | `citus_16*` | `citus_15*` | `citus_14*` | `citus_13*` | `citus_12*` |
-| `d12` | `postgresql-17-citus-12.1` | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | `postgresql-13-citus-11.3` | `postgresql-12-citus-10.2` |
-| `u22` | `postgresql-17-citus-12.1` | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | `postgresql-13-citus-11.3` | `postgresql-12-citus-10.2` |
-| `u24` | `postgresql-17-citus-12.1` | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | `postgresql-13-citus-11.3` | `postgresql-12-citus-10.2` |
+| `el8` | <span class="tcred">✘</span> | `citus_16*` | `citus_15*` | `citus_14*` | `citus_13*` | `citus_12*` |
+| `el9` | <span class="tcred">✘</span> | `citus_16*` | `citus_15*` | `citus_14*` | `citus_13*` | `citus_12*` |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | `postgresql-13-citus-11.3` | `postgresql-12-citus-10.2` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | `postgresql-13-citus-11.3` | `postgresql-12-citus-10.2` |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

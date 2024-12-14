@@ -72,12 +72,12 @@ Install `pg_strom` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pg_strom` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_strom_17*;
-yum install pg_strom_16*;
-yum install pg_strom_15*;
-yum install pg_strom_14*;
-yum install pg_strom_13*;
-yum install pg_strom_12*;
+dnf install pg_strom_17*;
+dnf install pg_strom_16*;
+dnf install pg_strom_15*;
+dnf install pg_strom_14*;
+dnf install pg_strom_13*;
+dnf install pg_strom_12*;
 ```
 
 
@@ -87,9 +87,9 @@ yum install pg_strom_12*;
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `pg_strom_17*` | `pg_strom_16*` | `pg_strom_15*` | `pg_strom_14*` | `pg_strom_13*` | `pg_strom_12*` |
 | `el9` | `pg_strom_17*` | `pg_strom_16*` | `pg_strom_15*` | `pg_strom_14*` | `pg_strom_13*` | `pg_strom_12*` |
-| `d12` | `` | `` | `` | `` | `` | `` |
-| `u22` | `` | `` | `` | `` | `` | `` |
-| `u24` | `` | `` | `` | `` | `` | `` |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

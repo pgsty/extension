@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -77,12 +77,11 @@ Install `pgautofailover` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `pgautofailover` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_auto_failover_17*;
-yum install pg_auto_failover_16*;
-yum install pg_auto_failover_15*;
-yum install pg_auto_failover_14*;
-yum install pg_auto_failover_13*;
-yum install pg_auto_failover_12*;
+dnf install pg_auto_failover_16*;
+dnf install pg_auto_failover_15*;
+dnf install pg_auto_failover_14*;
+dnf install pg_auto_failover_13*;
+dnf install pg_auto_failover_12*;
 ```
 
 
@@ -102,8 +101,8 @@ apt install postgresql-12-auto-failover;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_auto_failover_17*` | `pg_auto_failover_16*` | `pg_auto_failover_15*` | `pg_auto_failover_14*` | `pg_auto_failover_13*` | `pg_auto_failover_12*` |
-| `el9` | `pg_auto_failover_17*` | `pg_auto_failover_16*` | `pg_auto_failover_15*` | `pg_auto_failover_14*` | `pg_auto_failover_13*` | `pg_auto_failover_12*` |
+| `el8` | <span class="tcred">✘</span> | `pg_auto_failover_16*` | `pg_auto_failover_15*` | `pg_auto_failover_14*` | `pg_auto_failover_13*` | `pg_auto_failover_12*` |
+| `el9` | <span class="tcred">✘</span> | `pg_auto_failover_16*` | `pg_auto_failover_15*` | `pg_auto_failover_14*` | `pg_auto_failover_13*` | `pg_auto_failover_12*` |
 | `d12` | `postgresql-17-auto-failover` | `postgresql-16-auto-failover` | `postgresql-15-auto-failover` | `postgresql-14-auto-failover` | `postgresql-13-auto-failover` | `postgresql-12-auto-failover` |
 | `u22` | `postgresql-17-auto-failover` | `postgresql-16-auto-failover` | `postgresql-15-auto-failover` | `postgresql-14-auto-failover` | `postgresql-13-auto-failover` | `postgresql-12-auto-failover` |
 | `u24` | `postgresql-17-auto-failover` | `postgresql-16-auto-failover` | `postgresql-15-auto-failover` | `postgresql-14-auto-failover` | `postgresql-13-auto-failover` | `postgresql-12-auto-failover` |

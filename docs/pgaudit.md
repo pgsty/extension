@@ -81,12 +81,12 @@ Install `pgaudit` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pgaudit` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pgaudit_17*;
-yum install pgaudit_16*;
-yum install pgaudit17_15*;
-yum install pgaudit16_14*;
-yum install pgaudit15_13*;
-yum install pgaudit14_12*;
+dnf install pgaudit_17*;
+dnf install pgaudit_16*;
+dnf install pgaudit17_15*;
+dnf install pgaudit16_14*;
+dnf install pgaudit15_13*;
+dnf install pgaudit14_12*;
 ```
 
 

@@ -73,12 +73,12 @@ Install `pg_math` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pg_math` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_math_17*;
-yum install pg_math_16*;
-yum install pg_math_15*;
-yum install pg_math_14*;
-yum install pg_math_13*;
-yum install pg_math_12*;
+dnf install pg_math_17*;
+dnf install pg_math_16*;
+dnf install pg_math_15*;
+dnf install pg_math_14*;
+dnf install pg_math_13*;
+dnf install pg_math_12*;
 ```
 
 

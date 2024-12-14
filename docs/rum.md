@@ -73,12 +73,12 @@ Install `rum` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook
 Install `rum` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install rum_17;
-yum install rum_16;
-yum install rum_15;
-yum install rum_14;
-yum install rum_13;
-yum install rum_12;
+dnf install rum_17;
+dnf install rum_16;
+dnf install rum_15;
+dnf install rum_14;
+dnf install rum_13;
+dnf install rum_12;
 ```
 
 

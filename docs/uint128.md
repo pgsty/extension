@@ -73,12 +73,12 @@ Install `pg_uint128` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pg_uint128` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_uint128_17*;
-yum install pg_uint128_16*;
-yum install pg_uint128_15*;
-yum install pg_uint128_14*;
-yum install pg_uint128_13*;
-yum install pg_uint128_12*;
+dnf install pg_uint128_17*;
+dnf install pg_uint128_16*;
+dnf install pg_uint128_15*;
+dnf install pg_uint128_14*;
+dnf install pg_uint128_13*;
+dnf install pg_uint128_12*;
 ```
 
 

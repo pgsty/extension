@@ -73,12 +73,12 @@ Install `aggs_for_arrays` via [Pigsty](https://pigsty.io/docs/pgext/usage/instal
 Install `aggs_for_arrays` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install aggs_for_arrays_17*;
-yum install aggs_for_arrays_16*;
-yum install aggs_for_arrays_15*;
-yum install aggs_for_arrays_14*;
-yum install aggs_for_arrays_13*;
-yum install aggs_for_arrays_12*;
+dnf install aggs_for_arrays_17*;
+dnf install aggs_for_arrays_16*;
+dnf install aggs_for_arrays_15*;
+dnf install aggs_for_arrays_14*;
+dnf install aggs_for_arrays_13*;
+dnf install aggs_for_arrays_12*;
 ```
 
 

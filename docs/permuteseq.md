@@ -73,12 +73,12 @@ Install `permuteseq` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `permuteseq` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install permuteseq_17*;
-yum install permuteseq_16*;
-yum install permuteseq_15*;
-yum install permuteseq_14*;
-yum install permuteseq_13*;
-yum install permuteseq_12*;
+dnf install permuteseq_17*;
+dnf install permuteseq_16*;
+dnf install permuteseq_15*;
+dnf install permuteseq_14*;
+dnf install permuteseq_13*;
+dnf install permuteseq_12*;
 ```
 
 

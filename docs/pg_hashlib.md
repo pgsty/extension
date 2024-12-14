@@ -73,12 +73,12 @@ Install `pg_hashlib` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pg_hashlib` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_hashlib_17;
-yum install pg_hashlib_16;
-yum install pg_hashlib_15;
-yum install pg_hashlib_14;
-yum install pg_hashlib_13;
-yum install pg_hashlib_12;
+dnf install pg_hashlib_17;
+dnf install pg_hashlib_16;
+dnf install pg_hashlib_15;
+dnf install pg_hashlib_14;
+dnf install pg_hashlib_13;
+dnf install pg_hashlib_12;
 ```
 
 

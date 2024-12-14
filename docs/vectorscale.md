@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -73,12 +73,11 @@ Install `pgvectorscale` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `pgvectorscale` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgvectorscale_17;
-yum install pgvectorscale_16;
-yum install pgvectorscale_15;
-yum install pgvectorscale_14;
-yum install pgvectorscale_13;
-yum install pgvectorscale_12;
+dnf install pgvectorscale_17;
+dnf install pgvectorscale_16;
+dnf install pgvectorscale_15;
+dnf install pgvectorscale_14;
+dnf install pgvectorscale_13;
 ```
 
 
@@ -90,7 +89,6 @@ apt install postgresql-16-pgvectorscale;
 apt install postgresql-15-pgvectorscale;
 apt install postgresql-14-pgvectorscale;
 apt install postgresql-13-pgvectorscale;
-apt install postgresql-12-pgvectorscale;
 ```
 
 
@@ -98,11 +96,11 @@ apt install postgresql-12-pgvectorscale;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgvectorscale_17` | `pgvectorscale_16` | `pgvectorscale_15` | `pgvectorscale_14` | `pgvectorscale_13` | `pgvectorscale_12` |
-| `el9` | `pgvectorscale_17` | `pgvectorscale_16` | `pgvectorscale_15` | `pgvectorscale_14` | `pgvectorscale_13` | `pgvectorscale_12` |
-| `d12` | `postgresql-17-pgvectorscale` | `postgresql-16-pgvectorscale` | `postgresql-15-pgvectorscale` | `postgresql-14-pgvectorscale` | `postgresql-13-pgvectorscale` | `postgresql-12-pgvectorscale` |
-| `u22` | `postgresql-17-pgvectorscale` | `postgresql-16-pgvectorscale` | `postgresql-15-pgvectorscale` | `postgresql-14-pgvectorscale` | `postgresql-13-pgvectorscale` | `postgresql-12-pgvectorscale` |
-| `u24` | `postgresql-17-pgvectorscale` | `postgresql-16-pgvectorscale` | `postgresql-15-pgvectorscale` | `postgresql-14-pgvectorscale` | `postgresql-13-pgvectorscale` | `postgresql-12-pgvectorscale` |
+| `el8` | `pgvectorscale_17` | `pgvectorscale_16` | `pgvectorscale_15` | `pgvectorscale_14` | `pgvectorscale_13` | <span class="tcred">✘</span> |
+| `el9` | `pgvectorscale_17` | `pgvectorscale_16` | `pgvectorscale_15` | `pgvectorscale_14` | `pgvectorscale_13` | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-pgvectorscale` | `postgresql-16-pgvectorscale` | `postgresql-15-pgvectorscale` | `postgresql-14-pgvectorscale` | `postgresql-13-pgvectorscale` | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pgvectorscale` | `postgresql-16-pgvectorscale` | `postgresql-15-pgvectorscale` | `postgresql-14-pgvectorscale` | `postgresql-13-pgvectorscale` | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pgvectorscale` | `postgresql-16-pgvectorscale` | `postgresql-15-pgvectorscale` | `postgresql-14-pgvectorscale` | `postgresql-13-pgvectorscale` | <span class="tcred">✘</span> |
 
 
 

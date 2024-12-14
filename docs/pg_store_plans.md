@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -77,19 +77,17 @@ Install `pg_store_plans` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 Install `pg_store_plans` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_store_plans_17*;
-yum install pg_store_plans_16*;
-yum install pg_store_plans_15*;
-yum install pg_store_plans_14*;
-yum install pg_store_plans_13*;
-yum install pg_store_plans_12*;
+dnf install pg_store_plans_16*;
+dnf install pg_store_plans_15*;
+dnf install pg_store_plans_14*;
+dnf install pg_store_plans_13*;
+dnf install pg_store_plans_12*;
 ```
 
 
 Install `pg_store_plans` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-pg-store-plan;
 apt install postgresql-16-pg-store-plan;
 apt install postgresql-15-pg-store-plan;
 apt install postgresql-14-pg-store-plan;
@@ -102,11 +100,11 @@ apt install postgresql-12-pg-store-plan;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_store_plans_17*` | `pg_store_plans_16*` | `pg_store_plans_15*` | `pg_store_plans_14*` | `pg_store_plans_13*` | `pg_store_plans_12*` |
-| `el9` | `pg_store_plans_17*` | `pg_store_plans_16*` | `pg_store_plans_15*` | `pg_store_plans_14*` | `pg_store_plans_13*` | `pg_store_plans_12*` |
-| `d12` | `postgresql-17-pg-store-plan` | `postgresql-16-pg-store-plan` | `postgresql-15-pg-store-plan` | `postgresql-14-pg-store-plan` | `postgresql-13-pg-store-plan` | `postgresql-12-pg-store-plan` |
-| `u22` | `postgresql-17-pg-store-plan` | `postgresql-16-pg-store-plan` | `postgresql-15-pg-store-plan` | `postgresql-14-pg-store-plan` | `postgresql-13-pg-store-plan` | `postgresql-12-pg-store-plan` |
-| `u24` | `postgresql-17-pg-store-plan` | `postgresql-16-pg-store-plan` | `postgresql-15-pg-store-plan` | `postgresql-14-pg-store-plan` | `postgresql-13-pg-store-plan` | `postgresql-12-pg-store-plan` |
+| `el8` | <span class="tcred">✘</span> | `pg_store_plans_16*` | `pg_store_plans_15*` | `pg_store_plans_14*` | `pg_store_plans_13*` | `pg_store_plans_12*` |
+| `el9` | <span class="tcred">✘</span> | `pg_store_plans_16*` | `pg_store_plans_15*` | `pg_store_plans_14*` | `pg_store_plans_13*` | `pg_store_plans_12*` |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-pg-store-plan` | `postgresql-15-pg-store-plan` | `postgresql-14-pg-store-plan` | `postgresql-13-pg-store-plan` | `postgresql-12-pg-store-plan` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-pg-store-plan` | `postgresql-15-pg-store-plan` | `postgresql-14-pg-store-plan` | `postgresql-13-pg-store-plan` | `postgresql-12-pg-store-plan` |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-pg-store-plan` | `postgresql-15-pg-store-plan` | `postgresql-14-pg-store-plan` | `postgresql-13-pg-store-plan` | `postgresql-12-pg-store-plan` |
 
 
 

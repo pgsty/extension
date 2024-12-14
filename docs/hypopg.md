@@ -73,12 +73,12 @@ Install `hypopg` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `hypopg` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install hypopg_17*;
-yum install hypopg_16*;
-yum install hypopg_15*;
-yum install hypopg_14*;
-yum install hypopg_13*;
-yum install hypopg_12*;
+dnf install hypopg_17*;
+dnf install hypopg_16*;
+dnf install hypopg_15*;
+dnf install hypopg_14*;
+dnf install hypopg_13*;
+dnf install hypopg_12*;
 ```
 
 

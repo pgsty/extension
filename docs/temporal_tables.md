@@ -73,12 +73,12 @@ Install `temporal_tables` via [Pigsty](https://pigsty.io/docs/pgext/usage/instal
 Install `temporal_tables` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install temporal_tables_17*;
-yum install temporal_tables_16*;
-yum install temporal_tables_15*;
-yum install temporal_tables_14*;
-yum install temporal_tables_13*;
-yum install temporal_tables_12*;
+dnf install temporal_tables_17*;
+dnf install temporal_tables_16*;
+dnf install temporal_tables_15*;
+dnf install temporal_tables_14*;
+dnf install temporal_tables_13*;
+dnf install temporal_tables_12*;
 ```
 
 

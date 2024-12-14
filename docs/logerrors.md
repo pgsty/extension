@@ -73,12 +73,12 @@ Install `logerrors` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `logerrors` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install logerrors_17*;
-yum install logerrors_16*;
-yum install logerrors_15*;
-yum install logerrors_14*;
-yum install logerrors_13*;
-yum install logerrors_12*;
+dnf install logerrors_17*;
+dnf install logerrors_16*;
+dnf install logerrors_15*;
+dnf install logerrors_14*;
+dnf install logerrors_13*;
+dnf install logerrors_12*;
 ```
 
 

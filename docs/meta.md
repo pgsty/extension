@@ -73,12 +73,12 @@ Install `pg_meta` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pg_meta` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_meta_17;
-yum install pg_meta_16;
-yum install pg_meta_15;
-yum install pg_meta_14;
-yum install pg_meta_13;
-yum install pg_meta_12;
+dnf install pg_meta_17;
+dnf install pg_meta_16;
+dnf install pg_meta_15;
+dnf install pg_meta_14;
+dnf install pg_meta_13;
+dnf install pg_meta_12;
 ```
 
 

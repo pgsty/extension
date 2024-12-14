@@ -73,12 +73,12 @@ Install `shacrypt` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `shacrypt` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install postgres_shacrypt_17*;
-yum install postgres_shacrypt_16*;
-yum install postgres_shacrypt_15*;
-yum install postgres_shacrypt_14*;
-yum install postgres_shacrypt_13*;
-yum install postgres_shacrypt_12*;
+dnf install postgres_shacrypt_17*;
+dnf install postgres_shacrypt_16*;
+dnf install postgres_shacrypt_15*;
+dnf install postgres_shacrypt_14*;
+dnf install postgres_shacrypt_13*;
+dnf install postgres_shacrypt_12*;
 ```
 
 

@@ -73,12 +73,12 @@ Install `pg_geohash` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pg_geohash` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_geohash_17*;
-yum install pg_geohash_16*;
-yum install pg_geohash_15*;
-yum install pg_geohash_14*;
-yum install pg_geohash_13*;
-yum install pg_geohash_12*;
+dnf install pg_geohash_17*;
+dnf install pg_geohash_16*;
+dnf install pg_geohash_15*;
+dnf install pg_geohash_14*;
+dnf install pg_geohash_13*;
+dnf install pg_geohash_12*;
 ```
 
 

@@ -77,12 +77,12 @@ Install `pg_stat_monitor` via [Pigsty](https://pigsty.io/docs/pgext/usage/instal
 Install `pg_stat_monitor` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-yum install pg_stat_monitor_17*;
-yum install pg_stat_monitor_16*;
-yum install pg_stat_monitor_15*;
-yum install pg_stat_monitor_14*;
-yum install pg_stat_monitor_13*;
-yum install pg_stat_monitor_12*;
+dnf install pg_stat_monitor_17*;
+dnf install pg_stat_monitor_16*;
+dnf install pg_stat_monitor_15*;
+dnf install pg_stat_monitor_14*;
+dnf install pg_stat_monitor_13*;
+dnf install pg_stat_monitor_12*;
 ```
 
 

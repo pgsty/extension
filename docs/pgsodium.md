@@ -77,12 +77,12 @@ Install `pgsodium` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pgsodium` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pgsodium_17*;
-yum install pgsodium_16*;
-yum install pgsodium_15*;
-yum install pgsodium_14*;
-yum install pgsodium_13*;
-yum install pgsodium_12*;
+dnf install pgsodium_17*;
+dnf install pgsodium_16*;
+dnf install pgsodium_15*;
+dnf install pgsodium_14*;
+dnf install pgsodium_13*;
+dnf install pgsodium_12*;
 ```
 
 
