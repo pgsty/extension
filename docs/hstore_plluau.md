@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION hstore_plluau CASCADE;
 ```
-
+> **Comment**: missing pg12-15 on el.aarch64
 -----------
 
 

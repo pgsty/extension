@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pgmemcache;
 ```
-> **Comment**: missing 14,13,12 on el pgdg
+> **Comment**: missing pg12-14 on el.aarch64
 -----------
 
 

@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -58,8 +58,8 @@ CREATE EXTENSION pg_analytics;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_analytics_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
-| [DEB](/deb) | 0.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-analytics` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| [RPM](/rpm) | 0.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_analytics_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
+| [DEB](/deb) | 0.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-analytics` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
 
 
 
@@ -77,7 +77,6 @@ dnf install pg_analytics_17;
 dnf install pg_analytics_16;
 dnf install pg_analytics_15;
 dnf install pg_analytics_14;
-dnf install pg_analytics_13;
 ```
 
 
@@ -88,7 +87,6 @@ apt install postgresql-17-pg-analytics;
 apt install postgresql-16-pg-analytics;
 apt install postgresql-15-pg-analytics;
 apt install postgresql-14-pg-analytics;
-apt install postgresql-13-pg-analytics;
 ```
 
 
@@ -96,11 +94,11 @@ apt install postgresql-13-pg-analytics;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_analytics_17` | `pg_analytics_16` | `pg_analytics_15` | `pg_analytics_14` | `pg_analytics_13` | <span class="tcred">✘</span> |
-| `el9` | `pg_analytics_17` | `pg_analytics_16` | `pg_analytics_15` | `pg_analytics_14` | `pg_analytics_13` | <span class="tcred">✘</span> |
-| `d12` | `postgresql-17-pg-analytics` | `postgresql-16-pg-analytics` | `postgresql-15-pg-analytics` | `postgresql-14-pg-analytics` | `postgresql-13-pg-analytics` | <span class="tcred">✘</span> |
-| `u22` | `postgresql-17-pg-analytics` | `postgresql-16-pg-analytics` | `postgresql-15-pg-analytics` | `postgresql-14-pg-analytics` | `postgresql-13-pg-analytics` | <span class="tcred">✘</span> |
-| `u24` | `postgresql-17-pg-analytics` | `postgresql-16-pg-analytics` | `postgresql-15-pg-analytics` | `postgresql-14-pg-analytics` | `postgresql-13-pg-analytics` | <span class="tcred">✘</span> |
+| `el8` | `pg_analytics_17` | `pg_analytics_16` | `pg_analytics_15` | `pg_analytics_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `pg_analytics_17` | `pg_analytics_16` | `pg_analytics_15` | `pg_analytics_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-pg-analytics` | `postgresql-16-pg-analytics` | `postgresql-15-pg-analytics` | `postgresql-14-pg-analytics` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pg-analytics` | `postgresql-16-pg-analytics` | `postgresql-15-pg-analytics` | `postgresql-14-pg-analytics` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pg-analytics` | `postgresql-16-pg-analytics` | `postgresql-15-pg-analytics` | `postgresql-14-pg-analytics` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

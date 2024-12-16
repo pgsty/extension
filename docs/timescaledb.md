@@ -53,7 +53,7 @@ shared_preload_libraries = 'timescaledb'; # add this extension to postgresql.con
 ```sql
 CREATE EXTENSION timescaledb;
 ```
-> **Comment**: missing arm64 on el, pg12=2.11.2, pg13=2.15.3
+> **Comment**: pg12=2.11.2, pg13=2.15.3, degrade to oss ver on el.aarch64
 -----------
 
 

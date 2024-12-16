@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pgroonga;
 ```
-> **Comment**: missing 12-14 support on el, missing aarch64 on el
+> **Comment**: missing 12-14 support on el, missing el.arm
 -----------
 
 

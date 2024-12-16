@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION timescaledb_toolkit;
 ```
-
+> **Comment**: missing u24, missing on el.arm
 -----------
 
 

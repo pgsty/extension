@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION jdbc_fdw;
 ```
-
+> **Comment**: missing el.aarch64
 -----------
 
 
