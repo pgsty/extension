@@ -1,14 +1,14 @@
 # Extension List
 
-There are **341** available extensions, including **335** [**RPM**](/rpm) extensions available in EL, and **328** [**DEB**](/deb) available in Debian/Ubuntu.
+There are **340** available extensions, including **334** [**RPM**](/rpm) extensions available in EL, and **327** [**DEB**](/deb) available in Debian/Ubuntu.
 
-There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **271** additional third-party extensions provide by PGDG & Pigsty. 
+There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **270** additional third-party extensions provide by PGDG & Pigsty. 
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 335 | 114 | 147 | 70 | 4 | 6 | 305 | 331 | 334 | 322 | 304 | 292 |
-| DEB Extension | 328 | 104 | 148 | 70 | 4 | 13 | 306 | 324 | 327 | 320 | 301 | 292 |
+| RPM Extension | 334 | 114 | 146 | 70 | 4 | 6 | 305 | 330 | 333 | 321 | 303 | 291 |
+| DEB Extension | 327 | 104 | 147 | 70 | 4 | 13 | 306 | 323 | 326 | 319 | 300 | 291 |
 
 
 
@@ -23,7 +23,6 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | Category | ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
 |:--------:|:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
 | [TIME](/time) | 1000 | [timescaledb](/timescaledb) | 2.17.2 | [timescaledb](/timescaledb) | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/timescaledb) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data |
-| [TIME](/time) | 1010 | [timescaledb_toolkit](/timescaledb_toolkit) | 1.18.0 | [timescaledb_toolkit](/timescaledb_toolkit) | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/timescaledb-toolkit) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Library of analytical hyperfunctions, time-series pipelining, and other SQL utilities |
 | [TIME](/time) | 1020 | [timeseries](/timeseries) | 0.1.6 | [pg_timeseries](/timeseries) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pg_timeseries) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Convenience API for Tembo time series stack |
 | [TIME](/time) | 1030 | [periods](/periods) | 1.2 | [periods](/periods) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/xocolatl/periods) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |
 | [TIME](/time) | 1040 | [temporal_tables](/temporal_tables) | 1.2.2 | [temporal_tables](/temporal_tables) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://pgxn.org/dist/temporal_tables/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | temporal tables |
@@ -377,7 +376,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 8 Compatible OS (el8)
 
 ```yaml
-- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit #pg_timeseries
+- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries
 - postgis pgrouting pointcloud q3c geoip pg_polyline pg_geohash #pg_h3 #ogr_fdw #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -398,7 +397,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 9 Compatible OS (el9)
 
 ```yaml
-- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit #pg_timeseries
+- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries
 - postgis pgrouting pointcloud q3c geoip pg_polyline pg_geohash #pg_h3 #ogr_fdw #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -419,7 +418,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Debian 12 bookworm Compatible OS (d12)
 
 ```yaml
-- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit #pg_timeseries
+- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -440,7 +439,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 jammy Compatible OS (u22)
 
 ```yaml
-- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit #pg_timeseries
+- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -461,7 +460,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 noble Compatible OS (u24)
 
 ```yaml
-- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit #pg_timeseries
+- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -487,7 +486,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 8 Compatible OS (el8)
 
 ```yaml
-- timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -508,7 +507,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 9 Compatible OS (el9)
 
 ```yaml
-- timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -529,7 +528,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Debian 12 bookworm Compatible OS (d12)
 
 ```yaml
-- timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -550,7 +549,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 jammy Compatible OS (u22)
 
 ```yaml
-- timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -571,7 +570,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 noble Compatible OS (u24)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -597,7 +596,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 8 Compatible OS (el8)
 
 ```yaml
-- timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -618,7 +617,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 9 Compatible OS (el9)
 
 ```yaml
-- timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -639,7 +638,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Debian 12 bookworm Compatible OS (d12)
 
 ```yaml
-- timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -660,7 +659,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 jammy Compatible OS (u22)
 
 ```yaml
-- timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -681,7 +680,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 noble Compatible OS (u24)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -707,7 +706,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 8 Compatible OS (el8)
 
 ```yaml
-- timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -728,7 +727,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 9 Compatible OS (el9)
 
 ```yaml
-- timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -749,7 +748,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Debian 12 bookworm Compatible OS (d12)
 
 ```yaml
-- timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -770,7 +769,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 jammy Compatible OS (u22)
 
 ```yaml
-- timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -791,7 +790,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 noble Compatible OS (u24)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -817,7 +816,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 8 Compatible OS (el8)
 
 ```yaml
-- timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
+- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
@@ -838,7 +837,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 9 Compatible OS (el9)
 
 ```yaml
-- timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
+- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
@@ -859,7 +858,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Debian 12 bookworm Compatible OS (d12)
 
 ```yaml
-- timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
+- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
@@ -880,7 +879,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 jammy Compatible OS (u22)
 
 ```yaml
-- timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
+- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
@@ -901,7 +900,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 noble Compatible OS (u24)
 
 ```yaml
-- periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb #timescaledb_toolkit #pg_timeseries
+- periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb #pg_timeseries
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
@@ -927,7 +926,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 8 Compatible OS (el8)
 
 ```yaml
-- timescaledb_toolkit periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_timeseries #pg_later
+- periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_timeseries #pg_later
 - postgis34 pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #vchord #pgvectorscale #pg_vectorize #smlar #pgml
 - pg_bigm zhparser pg_bestmatch hunspell #pg_search #pgroonga
@@ -948,7 +947,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 9 Compatible OS (el9)
 
 ```yaml
-- timescaledb_toolkit periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_timeseries #pg_later
+- periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_timeseries #pg_later
 - postgis34 pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #vchord #pgvectorscale #pg_vectorize #smlar #pgml
 - pg_bigm zhparser pg_bestmatch hunspell #pg_search #pgroonga
@@ -969,7 +968,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Debian 12 bookworm Compatible OS (d12)
 
 ```yaml
-- timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_later
+- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_later
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #vchord #pgvectorscale #pg_vectorize #smlar #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
@@ -990,7 +989,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 jammy Compatible OS (u22)
 
 ```yaml
-- timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_later
+- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_later
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #vchord #pgvectorscale #pg_vectorize #smlar #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
@@ -1011,7 +1010,7 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 noble Compatible OS (u24)
 
 ```yaml
-- periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #timescaledb_toolkit #pg_timeseries #pg_later
+- periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_timeseries #pg_later
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #vchord #pgvectorscale #pg_vectorize #smlar #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search

@@ -5,12 +5,11 @@ All PostgreSQL are divided into 15 categories, shown below:
 
 --------
 ## [**TIME**](/time)
-> TIME: TimescaleDB, Versioning & Temporal Table, Crontab, Async & Background Job Scheduler, ... (10 extensions)
+> TIME: TimescaleDB, Versioning & Temporal Table, Crontab, Async & Background Job Scheduler, ... (9 extensions)
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | Description | Comment |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|-------------|---------|
 | 1000 | [timescaledb](/timescaledb) | 2.17.2 | [timescaledb](/timescaledb) | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/timescaledb) | Enables scalable inserts and complex queries for time-series data | degrade to oss ver on el.aarch64 |
-| 1010 | [timescaledb_toolkit](/timescaledb_toolkit) | 1.18.0 | [timescaledb_toolkit](/timescaledb_toolkit) | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/timescaledb-toolkit) | Library of analytical hyperfunctions, time-series pipelining, and other SQL utilities | missing u24, missing on el.arm |
 | 1020 | [timeseries](/timeseries) | 0.1.6 | [pg_timeseries](/timeseries) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pg_timeseries) | Convenience API for Tembo time series stack | unmet deps: hydra17 not ready, pg_partman17/pg_ivm12 on el not ready |
 | 1030 | [periods](/periods) | 1.2 | [periods](/periods) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/xocolatl/periods) | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |  |
 | 1040 | [temporal_tables](/temporal_tables) | 1.2.2 | [temporal_tables](/temporal_tables) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://pgxn.org/dist/temporal_tables/) | temporal tables | no pg17 on el8/9 pgdg repo |
