@@ -7,8 +7,8 @@ There are **70** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 334 | 114 | 146 | 70 | 4 | 6 | 305 | 330 | 333 | 321 | 303 | 291 |
-| DEB Extension | 327 | 104 | 147 | 70 | 4 | 13 | 306 | 323 | 326 | 319 | 300 | 291 |
+| RPM Extension | 334 | 114 | 146 | 70 | 4 | 6 | 304 | 330 | 333 | 321 | 303 | 291 |
+| DEB Extension | 327 | 104 | 147 | 70 | 4 | 13 | 305 | 323 | 326 | 319 | 300 | 291 |
 
 
 

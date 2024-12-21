@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -58,8 +58,8 @@ CREATE EXTENSION old_snapshot;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** |  |  |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** |  |  |  |
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` |  | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** |  |  |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` |  | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** |  |  |  |
 
 
 
@@ -73,7 +73,6 @@ Install `old_snapshot` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/)
 Install `old_snapshot` [RPM](/rpm) from the **<span class="tcblue">CONTRIB</span>** **YUM** repo:
 
 ```bash
-dnf install postgresql17-contrib;
 dnf install postgresql16-contrib;
 dnf install postgresql15-contrib;
 dnf install postgresql14-contrib;
@@ -83,7 +82,6 @@ dnf install postgresql14-contrib;
 Install `old_snapshot` [DEB](/deb) from the **<span class="tcblue">CONTRIB</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17;
 apt install postgresql-16;
 apt install postgresql-15;
 apt install postgresql-14;
@@ -94,11 +92,11 @@ apt install postgresql-14;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `postgresql17-contrib` | `postgresql16-contrib` | `postgresql15-contrib` | `postgresql14-contrib` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | `postgresql17-contrib` | `postgresql16-contrib` | `postgresql15-contrib` | `postgresql14-contrib` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `d12` | `postgresql-17` | `postgresql-16` | `postgresql-15` | `postgresql-14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u22` | `postgresql-17` | `postgresql-16` | `postgresql-15` | `postgresql-14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u24` | `postgresql-17` | `postgresql-16` | `postgresql-15` | `postgresql-14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el8` | <span class="tcred">✘</span> | `postgresql16-contrib` | `postgresql15-contrib` | `postgresql14-contrib` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | `postgresql16-contrib` | `postgresql15-contrib` | `postgresql14-contrib` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16` | `postgresql-15` | `postgresql-14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16` | `postgresql-15` | `postgresql-14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16` | `postgresql-15` | `postgresql-14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

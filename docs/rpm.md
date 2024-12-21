@@ -4,12 +4,12 @@ There are **334** extensions available on EL compatible systems, **6** of them a
 
 There are **70** built-in [**contrib**](contrib) extensions, in addition to **114** rpm extensions provided by PGDG YUM repository, and **146** extensions provided by Pigsty.
 
-There are **330** extensions available in the current major version PostgreSQL 16, and **305** ready for the latest PostgreSQL 17.
+There are **330** extensions available in the current major version PostgreSQL 16, and **304** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 334 | 114 | 146 | 70 | 4 | 6 | 305 | 330 | 333 | 321 | 303 | 291 |
+| RPM Extension | 334 | 114 | 146 | 70 | 4 | 6 | 304 | 330 | 333 | 321 | 303 | 291 |
 | RPM Package | 251 | 102 | 145 | 1 | 4 | 1 | 224 | 247 | 250 | 241 | 226 | 214 |
 
 

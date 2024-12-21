@@ -4,12 +4,12 @@ There are **327** extensions available on Debian/Ubuntu compatible systems, **13
 
 There are **70** built-in [**contrib**](contrib) extensions, in addition to **104** deb extensions provided by PGDG YUM repository, and **147** extensions provided by Pigsty.
 
-There are **323** extensions available in the current major version PostgreSQL 16, and **306** ready for the latest PostgreSQL 17.
+There are **323** extensions available in the current major version PostgreSQL 16, and **305** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| DEB Extension | 327 | 104 | 147 | 70 | 4 | 13 | 306 | 323 | 326 | 319 | 300 | 291 |
+| DEB Extension | 327 | 104 | 147 | 70 | 4 | 13 | 305 | 323 | 326 | 319 | 300 | 291 |
 | DEB Package | 242 | 90 | 146 | 1 | 4 | 1 | 222 | 238 | 241 | 237 | 221 | 212 |
 
 
