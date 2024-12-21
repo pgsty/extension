@@ -11,8 +11,8 @@ Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS d
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 335 | 114 | 147 | 70 | 4 | 6 | 305 | 331 | 334 | 321 | 306 | 295 |
-| DEB Extension | 328 | 104 | 148 | 70 | 4 | 13 | 306 | 324 | 327 | 320 | 304 | 295 |
+| RPM Extension | 335 | 114 | 147 | 70 | 4 | 6 | 305 | 331 | 334 | 322 | 304 | 292 |
+| DEB Extension | 328 | 104 | 148 | 70 | 4 | 13 | 306 | 324 | 327 | 320 | 301 | 292 |
 
 
 
@@ -98,6 +98,11 @@ Linux x86_64/amd64 [Extension](/list) packages for PostgreSQL 12 - 17, on El8, E
 You can edit the [`pigsty.csv`](https://github.com/pgsty/extension/blob/main/data/pigsty.csv) raw data and create a pull request to update the metadata in case of any error.
 
 If you have any suggestions on including new extensions or bumping to new versions, PR or [Issue](https://github.com/pgsty/extension/issues/new) are always welcome!
+
+
+----------------
+
+## Limitation
 
 
 

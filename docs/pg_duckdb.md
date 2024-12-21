@@ -53,7 +53,7 @@ shared_preload_libraries = 'pg_duckdb'; # add this extension to postgresql.conf
 ```sql
 CREATE EXTENSION pg_duckdb;
 ```
-> **Comment**: conflict on libduckdb with duckdb_fdw
+> **Comment**: broken on el8 (libstdc++ too low), conflict with duckdb_fdw
 -----------
 
 

@@ -24,7 +24,7 @@
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
 
 
 
@@ -49,10 +49,6 @@ shared_preload_libraries = 'sepgsql'; # add this extension to postgresql.conf
 ```
 
 
-
-```sql
-CREATE EXTENSION sepgsql;
-```
 
 -----------
 

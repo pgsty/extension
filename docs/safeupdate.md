@@ -24,7 +24,7 @@
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+|  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
 
 
 
@@ -45,10 +45,6 @@
 
 
 
-
-```sql
-CREATE EXTENSION safeupdate;
-```
 
 -----------
 

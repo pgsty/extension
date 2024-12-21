@@ -6,7 +6,7 @@
 - [PG Contribs](/contrib)
 - [**Repo Usage**](/usage)
 - [**Roadmap**](/roadmap)
-
+- [**Changelog**](/changelog)
 - [**Categories**](/categories)
 
   - [Category: TIME](/time)

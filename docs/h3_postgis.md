@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION h3_postgis CASCADE;
 ```
-> **Comment**: pg17 on el8/9 not ready yet
+
 -----------
 
 

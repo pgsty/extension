@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pgroonga;
 ```
-> **Comment**: missing 12-14 support on el, missing el.arm
+
 -----------
 
 
@@ -58,8 +58,8 @@ CREATE EXTENSION pgroonga;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.2.5 | BSD-3 | **<span class="tcwarn">PIGSTY</span>** | `postgresql$v-pgdg-pgroonga` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  | `groonga-libs` |
-| [DEB](/deb) | 3.2.5 | BSD-3 | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgdg-pgroonga` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  | `libgroonga0` |
+| [RPM](/rpm) | 3.2.5 | BSD-3 | **<span class="tcwarn">PIGSTY</span>** | `pgroonga_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | `groonga-libs` |
+| [DEB](/deb) | 3.2.5 | BSD-3 | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgdg-pgroonga` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | `libgroonga0` |
 
 
 
@@ -73,9 +73,11 @@ Install `pgroonga` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pgroonga` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install postgresql17-pgdg-pgroonga;
-dnf install postgresql16-pgdg-pgroonga;
-dnf install postgresql15-pgdg-pgroonga;
+dnf install pgroonga_17*;
+dnf install pgroonga_16*;
+dnf install pgroonga_15*;
+dnf install pgroonga_14*;
+dnf install pgroonga_13*;
 ```
 
 
@@ -95,8 +97,8 @@ apt install postgresql-12-pgdg-pgroonga;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `postgresql17-pgdg-pgroonga` | `postgresql16-pgdg-pgroonga` | `postgresql15-pgdg-pgroonga` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | `postgresql17-pgdg-pgroonga` | `postgresql16-pgdg-pgroonga` | `postgresql15-pgdg-pgroonga` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el8` | `pgroonga_17*` | `pgroonga_16*` | `pgroonga_15*` | `pgroonga_14*` | `pgroonga_13*` | <span class="tcred">✘</span> |
+| `el9` | `pgroonga_17*` | `pgroonga_16*` | `pgroonga_15*` | `pgroonga_14*` | `pgroonga_13*` | <span class="tcred">✘</span> |
 | `d12` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` | `postgresql-12-pgdg-pgroonga` |
 | `u22` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` | `postgresql-12-pgdg-pgroonga` |
 | `u24` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` | `postgresql-12-pgdg-pgroonga` |

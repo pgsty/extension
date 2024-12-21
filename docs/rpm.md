@@ -9,8 +9,8 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 335 | 114 | 147 | 70 | 4 | 6 | 305 | 331 | 334 | 321 | 306 | 295 |
-| RPM Package | 252 | 102 | 146 | 1 | 4 | 1 | 224 | 248 | 251 | 241 | 228 | 217 |
+| RPM Extension | 335 | 114 | 147 | 70 | 4 | 6 | 305 | 331 | 334 | 322 | 304 | 292 |
+| RPM Package | 252 | 102 | 146 | 1 | 4 | 1 | 224 | 248 | 251 | 242 | 227 | 215 |
 
 
 
@@ -24,7 +24,7 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 | Category | Package | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | 12 | Description |
 |:--------:|---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|-------------|
-| [TIME](/time) | [timescaledb](/timescaledb) | 2.17.2 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-2-postgresql-$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Enables scalable inserts and complex queries for time-series data |
+| [TIME](/time) | [timescaledb](/timescaledb) | 2.17.2 | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | `pg_timescaledb_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | Enables scalable inserts and complex queries for time-series data |
 | [TIME](/time) | [timescaledb_toolkit](/timescaledb_toolkit) | 1.18.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-toolkit-postgresql-$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Library of analytical hyperfunctions, time-series pipelining, and other SQL utilities |
 | [TIME](/time) | [pg_timeseries](/timeseries) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_timeseries_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Convenience API for Tembo time series stack |
 | [TIME](/time) | [periods](/periods) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `periods_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |
@@ -54,7 +54,7 @@ There are **331** extensions available in the current major version PostgreSQL 1
 | [RAG](/rag) | [pg4ml](/pg4ml) | 2.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg4ml_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Machine learning framework for PostgreSQL |
 | [RAG](/rag) | [pgml](/pgml) | 2.9.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgml_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | PostgresML: Run AL/ML workloads with SQL interface |
 | [FTS](/fts) | [pg_search](/pg_search) | 0.13.1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_search_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | pg_search: Full text search for PostgreSQL using BM25 |
-| [FTS](/fts) | [pgroonga](/pgroonga) | 3.2.5 | BSD-3 | **<span class="tcwarn">PIGSTY</span>** | `postgresql$v-pgdg-pgroonga` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  | Use Groonga as index, fast full text search platform for all languages! |
+| [FTS](/fts) | [pgroonga](/pgroonga) | 3.2.5 | BSD-3 | **<span class="tcwarn">PIGSTY</span>** | `pgroonga_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Use Groonga as index, fast full text search platform for all languages! |
 | [FTS](/fts) | [pg_bigm](/pg_bigm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_bigm_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | create 2-gram (bigram) index for faster full text search. |
 | [FTS](/fts) | [zhparser](/zhparser) | 2.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `zhparser_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | a parser for full-text search of Chinese |
 | [FTS](/fts) | [pg_bestmatch](/pg_bestmatch) | 0.0.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_bestmatch_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Generate BM25 sparse vector inside PostgreSQL |
@@ -68,7 +68,7 @@ There are **331** extensions available in the current major version PostgreSQL 1
 | [FTS](/fts) | [hunspell_pt_pt](/hunspell_pt_pt) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `hunspell_pt_pt_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Portuguese Hunspell Dictionary |
 | [FTS](/fts) | [hunspell_ru_ru](/hunspell_ru_ru) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `hunspell_ru_ru_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Russian Hunspell Dictionary |
 | [FTS](/fts) | [hunspell_ru_ru_aot](/hunspell_ru_ru_aot) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `hunspell_ru_ru_aot_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Russian Hunspell Dictionary (from AOT.ru group) |
-| [OLAP](/olap) | [citus](/citus) | 12.1-1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `citus_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Distributed PostgreSQL as an extension |
+| [OLAP](/olap) | [citus](/citus) | 12.1-1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `citus_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  | Distributed PostgreSQL as an extension |
 | [OLAP](/olap) | [hydra](/columnar) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `hydra_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Hydra Columnar extension |
 | [OLAP](/olap) | [pg_analytics](/pg_analytics) | 0.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_analytics_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | Postgres for analytics, powered by DuckDB |
 | [OLAP](/olap) | [pg_duckdb](/pg_duckdb) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_duckdb_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | DuckDB Embedded in Postgres |
@@ -287,10 +287,10 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql17*                                                                                                                                                   # PostgreSQL 17
-- timescaledb-2-postgresql-17* periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #timescaledb-toolkit-postgresql-17 #pg_timeseries_17
+- pg_timescaledb_17* periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #timescaledb-toolkit-postgresql-17 #pg_timeseries_17
 - postgis35_17* pgrouting_17* pointcloud_17* q3c_17* geoip_17* pg_polyline_17 pg_geohash_17* #h3-pg_17* #ogr_fdw_17*
 - pgvector_17* vchord_17 pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pgml_17
-- pg_search_17 postgresql17-pgdg-pgroonga pg_bigm_17* zhparser_17* pg_bestmatch_17 hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
+- pg_search_17 pgroonga_17* pg_bigm_17* zhparser_17* pg_bestmatch_17 hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
 - pg_analytics_17 pg_duckdb_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17* plproxy_17* #citus_17* #hydra_17* #pg_partman_17* #pg_strom_17*
 - hll_17* rum_17 pg_graphql_17 pg_jsonschema_17 jsquery_17* pg_hint_plan_17* hypopg_17* index_advisor_17 pg_plan_filter_17* imgsmlr_17* pg_ivm_17* pgmq_17 pgq_17* pg_cardano_17 #apache-age_17*
 - pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* #plprql_17 #pljava_17* #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
@@ -309,10 +309,10 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql17*                                                                                                                                                   # PostgreSQL 17
-- timescaledb-2-postgresql-17* periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #timescaledb-toolkit-postgresql-17 #pg_timeseries_17
+- pg_timescaledb_17* periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #timescaledb-toolkit-postgresql-17 #pg_timeseries_17
 - postgis35_17* pgrouting_17* pointcloud_17* q3c_17* geoip_17* pg_polyline_17 pg_geohash_17* #h3-pg_17* #ogr_fdw_17*
 - pgvector_17* vchord_17 pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pgml_17
-- pg_search_17 postgresql17-pgdg-pgroonga pg_bigm_17* zhparser_17* pg_bestmatch_17 hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
+- pg_search_17 pgroonga_17* pg_bigm_17* zhparser_17* pg_bestmatch_17 hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
 - pg_analytics_17 pg_duckdb_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17* plproxy_17* #citus_17* #hydra_17* #pg_partman_17* #pg_strom_17*
 - hll_17* rum_17 pg_graphql_17 pg_jsonschema_17 jsquery_17* pg_hint_plan_17* hypopg_17* index_advisor_17 pg_plan_filter_17* imgsmlr_17* pg_ivm_17* pgmq_17 pgq_17* pg_cardano_17 #apache-age_17*
 - pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* pljava_17* #plprql_17 #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
@@ -336,10 +336,10 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql16*                                                                                                                                                   # PostgreSQL 16
-- timescaledb-2-postgresql-16* timescaledb-toolkit-postgresql-16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16*
+- pg_timescaledb_16* timescaledb-toolkit-postgresql-16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16*
 - postgis35_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* geoip_16* pg_polyline_16 pg_geohash_16*
 - pgvector_16* vchord_16 pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pg4ml_16 pgml_16
-- pg_search_16 postgresql16-pgdg-pgroonga pg_bigm_16* zhparser_16* pg_bestmatch_16 hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
+- pg_search_16 pgroonga_16* pg_bigm_16* zhparser_16* pg_bestmatch_16 hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
 - citus_16* hydra_16* pg_analytics_16 pg_duckdb_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16* pg_partman_16* plproxy_16* #pg_strom_16*
 - apache-age_16* hll_16* rum_16 pg_graphql_16 pg_jsonschema_16 jsquery_16* pg_hint_plan_16* hypopg_16* index_advisor_16 pg_plan_filter_16* imgsmlr_16* pg_ivm_16* pgmq_16 pgq_16* pg_cardano_16
 - pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* plprofiler_16* plsh_16* #pljava_16* #plr_16* #pgtap_16* #postgresql_faker_16* #dbt2-pg16-extensions*
@@ -358,10 +358,10 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql16*                                                                                                                                                   # PostgreSQL 16
-- timescaledb-2-postgresql-16* timescaledb-toolkit-postgresql-16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16*
+- pg_timescaledb_16* timescaledb-toolkit-postgresql-16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16*
 - postgis35_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* geoip_16* pg_polyline_16 pg_geohash_16*
 - pgvector_16* vchord_16 pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pg4ml_16 pgml_16
-- pg_search_16 postgresql16-pgdg-pgroonga pg_bigm_16* zhparser_16* pg_bestmatch_16 hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
+- pg_search_16 pgroonga_16* pg_bigm_16* zhparser_16* pg_bestmatch_16 hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
 - citus_16* hydra_16* pg_analytics_16 pg_duckdb_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16* pg_partman_16* plproxy_16* #pg_strom_16*
 - apache-age_16* hll_16* rum_16 pg_graphql_16 pg_jsonschema_16 jsquery_16* pg_hint_plan_16* hypopg_16* index_advisor_16 pg_plan_filter_16* imgsmlr_16* pg_ivm_16* pgmq_16 pgq_16* pg_cardano_16
 - pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* plprofiler_16* plsh_16* pljava_16* #plr_16* #pgtap_16* #postgresql_faker_16* #dbt2-pg16-extensions*
@@ -385,10 +385,10 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql15*                                                                                                                                                   # PostgreSQL 15
-- timescaledb-2-postgresql-15* timescaledb-toolkit-postgresql-15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15*
+- pg_timescaledb_15* timescaledb-toolkit-postgresql-15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15*
 - postgis35_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15* pg_polyline_15 pg_geohash_15*
 - pgvector_15* vchord_15 pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pg4ml_15 pgml_15
-- pg_search_15 postgresql15-pgdg-pgroonga pg_bigm_15* zhparser_15* pg_bestmatch_15 hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
+- pg_search_15 pgroonga_15* pg_bigm_15* zhparser_15* pg_bestmatch_15 hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
 - citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15* pg_partman_15* plproxy_15* #pg_strom_15*
 - apache-age_15* hll_15* rum_15 pg_graphql_15 pg_jsonschema_15 jsquery_15* pg_hint_plan_15* hypopg_15* index_advisor_15 pg_plan_filter_15* imgsmlr_15* pg_ivm_15* pgmq_15 pgq_15* pg_cardano_15
 - pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* #pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
@@ -407,10 +407,10 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql15*                                                                                                                                                   # PostgreSQL 15
-- timescaledb-2-postgresql-15* timescaledb-toolkit-postgresql-15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15*
+- pg_timescaledb_15* timescaledb-toolkit-postgresql-15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15*
 - postgis35_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15* pg_polyline_15 pg_geohash_15*
 - pgvector_15* vchord_15 pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pg4ml_15 pgml_15
-- pg_search_15 postgresql15-pgdg-pgroonga pg_bigm_15* zhparser_15* pg_bestmatch_15 hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
+- pg_search_15 pgroonga_15* pg_bigm_15* zhparser_15* pg_bestmatch_15 hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
 - citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15* pg_partman_15* plproxy_15* #pg_strom_15*
 - apache-age_15* hll_15* rum_15 pg_graphql_15 pg_jsonschema_15 jsquery_15* pg_hint_plan_15* hypopg_15* index_advisor_15 pg_plan_filter_15* imgsmlr_15* pg_ivm_15* pgmq_15 pgq_15* pg_cardano_15
 - pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
@@ -434,10 +434,10 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql14*                                                                                                                                                   # PostgreSQL 14
-- timescaledb-2-postgresql-14* timescaledb-toolkit-postgresql-14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14*
+- pg_timescaledb_14* timescaledb-toolkit-postgresql-14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14*
 - postgis35_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14* pg_polyline_14 pg_geohash_14*
 - pgvector_14* vchord_14 pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pg4ml_14 pgml_14
-- pg_search_14 pg_bigm_14* zhparser_14* pg_bestmatch_14 hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14 #postgresql14-pgdg-pgroonga
+- pg_search_14 pgroonga_14* pg_bigm_14* zhparser_14* pg_bestmatch_14 hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14
 - citus_14* hydra_14* pg_analytics_14 pg_duckdb_14* duckdb_fdw_14* pg_parquet_14 pg_fkpart_14* pg_partman_14* plproxy_14* #pg_strom_14*
 - hll_14* rum_14 pg_graphql_14 pg_jsonschema_14 jsquery_14* pg_hint_plan_14* hypopg_14* index_advisor_14 pg_plan_filter_14* imgsmlr_14* pg_ivm_14* pgmq_14 pgq_14* pg_cardano_14 #apache-age_14*
 - pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* #pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
@@ -456,10 +456,10 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql14*                                                                                                                                                   # PostgreSQL 14
-- timescaledb-2-postgresql-14* timescaledb-toolkit-postgresql-14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14*
+- pg_timescaledb_14* timescaledb-toolkit-postgresql-14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14*
 - postgis35_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14* pg_polyline_14 pg_geohash_14*
 - pgvector_14* vchord_14 pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pg4ml_14 pgml_14
-- pg_search_14 pg_bigm_14* zhparser_14* pg_bestmatch_14 hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14 #postgresql14-pgdg-pgroonga
+- pg_search_14 pgroonga_14* pg_bigm_14* zhparser_14* pg_bestmatch_14 hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14
 - citus_14* hydra_14* pg_analytics_14 pg_duckdb_14* duckdb_fdw_14* pg_parquet_14 pg_fkpart_14* pg_partman_14* plproxy_14* #pg_strom_14*
 - hll_14* rum_14 pg_graphql_14 pg_jsonschema_14 jsquery_14* pg_hint_plan_14* hypopg_14* index_advisor_14 pg_plan_filter_14* imgsmlr_14* pg_ivm_14* pgmq_14 pgq_14* pg_cardano_14 #apache-age_14*
 - pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
@@ -483,11 +483,11 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql13*                                                                                                                                                   # PostgreSQL 13
-- timescaledb-2-postgresql-13* timescaledb-toolkit-postgresql-13 pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_later_13 pg_background_13*
+- timescaledb-toolkit-postgresql-13 pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_later_13 pg_background_13* #pg_timescaledb_13*
 - postgis35_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13*
 - pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #vchord_13 #pg_vectorize_13 #pgml_13
-- pg_bigm_13* zhparser_13* pg_bestmatch_13 hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13 #postgresql13-pgdg-pgroonga
-- citus_13* hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* #pg_analytics_13 #pg_duckdb_13* #pg_parquet_13 #pg_strom_13*
+- pgroonga_13* pg_bigm_13* zhparser_13* pg_bestmatch_13 hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13
+- hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* #citus_13* #pg_analytics_13 #pg_duckdb_13* #pg_parquet_13 #pg_strom_13*
 - hll_13* rum_13 pg_jsonschema_13 pg_hint_plan_13* hypopg_13* index_advisor_13 pg_plan_filter_13* imgsmlr_13* pg_ivm_13* pgmq_13 pgq_13* pg_cardano_13 #apache-age_13* #pg_graphql_13 #jsquery_13*
 - pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* #pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
 - prefix_13* semver_13* postgresql-unit_13* pgpdf_13* pglite_fusion_13 md5hash_13* asn1oid_13* pg_roaringbitmap_13* pgfaceting_13 pgsphere_13* pg_country_13* pg_currency_13* numeral_13* pg_rational_13* pguint_13* pg_uint128_13* ip4r_13* pg_uri_13* pg_emailaddr_13* acl_13* timestamp9_13* chkpass_13* #pgmp_13*
@@ -505,11 +505,11 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql13*                                                                                                                                                   # PostgreSQL 13
-- timescaledb-2-postgresql-13* timescaledb-toolkit-postgresql-13 pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_later_13 pg_background_13*
+- timescaledb-toolkit-postgresql-13 pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_later_13 pg_background_13* #pg_timescaledb_13*
 - postgis35_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13*
 - pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #vchord_13 #pg_vectorize_13 #pgml_13
-- pg_bigm_13* zhparser_13* pg_bestmatch_13 hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13 #postgresql13-pgdg-pgroonga
-- citus_13* hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* #pg_analytics_13 #pg_duckdb_13* #pg_parquet_13 #pg_strom_13*
+- pgroonga_13* pg_bigm_13* zhparser_13* pg_bestmatch_13 hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13
+- hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* #citus_13* #pg_analytics_13 #pg_duckdb_13* #pg_parquet_13 #pg_strom_13*
 - hll_13* rum_13 pg_jsonschema_13 pg_hint_plan_13* hypopg_13* index_advisor_13 pg_plan_filter_13* imgsmlr_13* pg_ivm_13* pgmq_13 pgq_13* pg_cardano_13 #apache-age_13* #pg_graphql_13 #jsquery_13*
 - pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
 - prefix_13* semver_13* postgresql-unit_13* pgpdf_13* pglite_fusion_13 md5hash_13* asn1oid_13* pg_roaringbitmap_13* pgfaceting_13 pgsphere_13* pg_country_13* pg_currency_13* numeral_13* pg_rational_13* pguint_13* pg_uint128_13* ip4r_13* pg_uri_13* pg_emailaddr_13* acl_13* timestamp9_13* chkpass_13* #pgmp_13*
@@ -532,11 +532,11 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql12*                                                                                                                                                   # PostgreSQL 12
-- timescaledb-2-postgresql-12* timescaledb-toolkit-postgresql-12 periods_12* temporal_tables_12* e-maj_12* table_version_12* pg_cron_12* pg_background_12* #pg_timeseries_12 #pg_later_12
+- timescaledb-toolkit-postgresql-12 periods_12* temporal_tables_12* e-maj_12* table_version_12* pg_cron_12* pg_background_12* #pg_timescaledb_12* #pg_timeseries_12 #pg_later_12
 - postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12*
 - pgvector_12* pg_similarity_12* pg_summarize_12 pg_tiktoken_12 pg4ml_12 #vchord_12 #pgvectorscale_12 #pg_vectorize_12 #smlar_12* #pgml_12
-- pg_bigm_12* zhparser_12* pg_bestmatch_12 hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12 #postgresql12-pgdg-pgroonga
-- citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_parquet_12 #pg_strom_12*
+- pg_bigm_12* zhparser_12* pg_bestmatch_12 hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12 #pgroonga_12*
+- duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* #citus_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_parquet_12 #pg_strom_12*
 - hll_12* rum_12 pg_jsonschema_12 pg_hint_plan_12* hypopg_12* index_advisor_12 pg_plan_filter_12* imgsmlr_12* pgmq_12 pgq_12* pg_cardano_12 #apache-age_12* #pg_graphql_12 #jsquery_12* #pg_ivm_12*
 - pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* #pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
 - prefix_12* semver_12* postgresql-unit_12* pgpdf_12* pglite_fusion_12 md5hash_12* asn1oid_12* pg_roaringbitmap_12* pgfaceting_12 pgsphere_12* pg_country_12* pg_currency_12* numeral_12* pg_rational_12* pguint_12* pg_uint128_12* ip4r_12* pg_uri_12* pg_emailaddr_12* acl_12* timestamp9_12* chkpass_12* #pgmp_12*
@@ -554,11 +554,11 @@ There are **331** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql12*                                                                                                                                                   # PostgreSQL 12
-- timescaledb-2-postgresql-12* timescaledb-toolkit-postgresql-12 periods_12* temporal_tables_12* e-maj_12* table_version_12* pg_cron_12* pg_background_12* #pg_timeseries_12 #pg_later_12
+- timescaledb-toolkit-postgresql-12 periods_12* temporal_tables_12* e-maj_12* table_version_12* pg_cron_12* pg_background_12* #pg_timescaledb_12* #pg_timeseries_12 #pg_later_12
 - postgis34_12* pgrouting_12* pointcloud_12* h3-pg_12* q3c_12* ogr_fdw_12* geoip_12* pg_polyline_12 pg_geohash_12*
 - pgvector_12* pg_similarity_12* pg_summarize_12 pg_tiktoken_12 pg4ml_12 #vchord_12 #pgvectorscale_12 #pg_vectorize_12 #smlar_12* #pgml_12
-- pg_bigm_12* zhparser_12* pg_bestmatch_12 hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12 #postgresql12-pgdg-pgroonga
-- citus_12* duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_parquet_12 #pg_strom_12*
+- pg_bigm_12* zhparser_12* pg_bestmatch_12 hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12 #pgroonga_12*
+- duckdb_fdw_12* pg_fkpart_12* pg_partman_12* plproxy_12* #citus_12* #hydra_12* #pg_analytics_12 #pg_duckdb_12* #pg_parquet_12 #pg_strom_12*
 - hll_12* rum_12 pg_jsonschema_12 pg_hint_plan_12* hypopg_12* index_advisor_12 pg_plan_filter_12* imgsmlr_12* pgmq_12 pgq_12* pg_cardano_12 #apache-age_12* #pg_graphql_12 #jsquery_12* #pg_ivm_12*
 - pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
 - prefix_12* semver_12* postgresql-unit_12* pgpdf_12* pglite_fusion_12 md5hash_12* asn1oid_12* pg_roaringbitmap_12* pgfaceting_12 pgsphere_12* pg_country_12* pg_currency_12* numeral_12* pg_rational_12* pguint_12* pg_uint128_12* ip4r_12* pg_uri_12* pg_emailaddr_12* acl_12* timestamp9_12* chkpass_12* #pgmp_12*

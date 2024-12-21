@@ -12,7 +12,7 @@ There are 10 available extensions in this category:
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
-| 1000 | [timescaledb](/timescaledb) | 2.17.2 | [timescaledb](/timescaledb) | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/timescaledb) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data |
+| 1000 | [timescaledb](/timescaledb) | 2.17.2 | [timescaledb](/timescaledb) | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/timescaledb) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data |
 | 1010 | [timescaledb_toolkit](/timescaledb_toolkit) | 1.18.0 | [timescaledb_toolkit](/timescaledb_toolkit) | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/timescaledb-toolkit) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Library of analytical hyperfunctions, time-series pipelining, and other SQL utilities |
 | 1020 | [timeseries](/timeseries) | 0.1.6 | [pg_timeseries](/timeseries) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pg_timeseries) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Convenience API for Tembo time series stack |
 | 1030 | [periods](/periods) | 1.2 | [periods](/periods) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/xocolatl/periods) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |
@@ -32,8 +32,8 @@ pg17: timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg
 pg16: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 pg15: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 pg14: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
-pg13: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
-pg12: timescaledb timescaledb_toolkit periods temporal_tables emaj table_version pg_cron pg_background #pg_timeseries #pg_later
+pg13: timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
+pg12: timescaledb_toolkit periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_timeseries #pg_later
 ```
 
 
@@ -44,8 +44,8 @@ pg17: timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg
 pg16: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 pg15: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 pg14: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
-pg13: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
-pg12: timescaledb timescaledb_toolkit periods temporal_tables emaj table_version pg_cron pg_background #pg_timeseries #pg_later
+pg13: timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
+pg12: timescaledb_toolkit periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_timeseries #pg_later
 ```
 
 
@@ -56,8 +56,8 @@ pg17: timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg
 pg16: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 pg15: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 pg14: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
-pg13: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
-pg12: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #pg_later
+pg13: timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
+pg12: timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_later
 ```
 
 
@@ -68,8 +68,8 @@ pg17: timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg
 pg16: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 pg15: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
 pg14: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
-pg13: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
-pg12: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #pg_later
+pg13: timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
+pg12: timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_later
 ```
 
 
@@ -80,7 +80,7 @@ pg17: timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg
 pg16: timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit
 pg15: timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit
 pg14: timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit
-pg13: timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb_toolkit #pg_timeseries
+pg13: periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb #timescaledb_toolkit #pg_timeseries
 pg12: periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #timescaledb_toolkit #pg_timeseries #pg_later
 ```
 
@@ -93,7 +93,7 @@ pg12: periods temporal_tables emaj table_version pg_cron pg_background #timescal
 
 | Package | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | 12 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|-------------|
-| [timescaledb](/timescaledb) | 2.17.2 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-2-postgresql-$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Enables scalable inserts and complex queries for time-series data |
+| [timescaledb](/timescaledb) | 2.17.2 | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | `pg_timescaledb_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | Enables scalable inserts and complex queries for time-series data |
 | [timescaledb_toolkit](/timescaledb_toolkit) | 1.18.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-toolkit-postgresql-$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Library of analytical hyperfunctions, time-series pipelining, and other SQL utilities |
 | [pg_timeseries](/timeseries) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_timeseries_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Convenience API for Tembo time series stack |
 | [periods](/periods) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `periods_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |
@@ -109,24 +109,24 @@ pg12: periods temporal_tables emaj table_version pg_cron pg_background #timescal
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: timescaledb-2-postgresql-17* periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #timescaledb-toolkit-postgresql-17 #pg_timeseries_17
-pg16: timescaledb-2-postgresql-16* timescaledb-toolkit-postgresql-16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16*
-pg15: timescaledb-2-postgresql-15* timescaledb-toolkit-postgresql-15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15*
-pg14: timescaledb-2-postgresql-14* timescaledb-toolkit-postgresql-14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14*
-pg13: timescaledb-2-postgresql-13* timescaledb-toolkit-postgresql-13 pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_later_13 pg_background_13*
-pg12: timescaledb-2-postgresql-12* timescaledb-toolkit-postgresql-12 periods_12* temporal_tables_12* e-maj_12* table_version_12* pg_cron_12* pg_background_12* #pg_timeseries_12 #pg_later_12
+pg17: pg_timescaledb_17* periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #timescaledb-toolkit-postgresql-17 #pg_timeseries_17
+pg16: pg_timescaledb_16* timescaledb-toolkit-postgresql-16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16*
+pg15: pg_timescaledb_15* timescaledb-toolkit-postgresql-15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15*
+pg14: pg_timescaledb_14* timescaledb-toolkit-postgresql-14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14*
+pg13: timescaledb-toolkit-postgresql-13 pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_later_13 pg_background_13* #pg_timescaledb_13*
+pg12: timescaledb-toolkit-postgresql-12 periods_12* temporal_tables_12* e-maj_12* table_version_12* pg_cron_12* pg_background_12* #pg_timescaledb_12* #pg_timeseries_12 #pg_later_12
 ```
 
 
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: timescaledb-2-postgresql-17* periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #timescaledb-toolkit-postgresql-17 #pg_timeseries_17
-pg16: timescaledb-2-postgresql-16* timescaledb-toolkit-postgresql-16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16*
-pg15: timescaledb-2-postgresql-15* timescaledb-toolkit-postgresql-15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15*
-pg14: timescaledb-2-postgresql-14* timescaledb-toolkit-postgresql-14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14*
-pg13: timescaledb-2-postgresql-13* timescaledb-toolkit-postgresql-13 pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_later_13 pg_background_13*
-pg12: timescaledb-2-postgresql-12* timescaledb-toolkit-postgresql-12 periods_12* temporal_tables_12* e-maj_12* table_version_12* pg_cron_12* pg_background_12* #pg_timeseries_12 #pg_later_12
+pg17: pg_timescaledb_17* periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #timescaledb-toolkit-postgresql-17 #pg_timeseries_17
+pg16: pg_timescaledb_16* timescaledb-toolkit-postgresql-16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16*
+pg15: pg_timescaledb_15* timescaledb-toolkit-postgresql-15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15*
+pg14: pg_timescaledb_14* timescaledb-toolkit-postgresql-14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14*
+pg13: timescaledb-toolkit-postgresql-13 pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_later_13 pg_background_13* #pg_timescaledb_13*
+pg12: timescaledb-toolkit-postgresql-12 periods_12* temporal_tables_12* e-maj_12* table_version_12* pg_cron_12* pg_background_12* #pg_timescaledb_12* #pg_timeseries_12 #pg_later_12
 ```
 
 
@@ -138,7 +138,7 @@ pg12: timescaledb-2-postgresql-12* timescaledb-toolkit-postgresql-12 periods_12*
 
 | Package | Version | License | DEB | DEB Package | 17 | 16 | 15 | 14 | 13 | 12 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|-------------|
-| [timescaledb](/timescaledb) | 2.17.2 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-2-postgresql-$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Enables scalable inserts and complex queries for time-series data |
+| [timescaledb](/timescaledb) | 2.17.2 | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-2-postgresql-$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | Enables scalable inserts and complex queries for time-series data |
 | [timescaledb_toolkit](/timescaledb_toolkit) | 1.18.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-toolkit-postgresql-$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Library of analytical hyperfunctions, time-series pipelining, and other SQL utilities |
 | [pg_timeseries](/timeseries) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-timeseries` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Convenience API for Tembo time series stack |
 | [periods](/periods) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-periods` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |
@@ -158,8 +158,8 @@ pg17: timescaledb-2-postgresql-17 postgresql-17-periods postgresql-17-temporal-t
 pg16: timescaledb-2-postgresql-16 timescaledb-toolkit-postgresql-16 postgresql-16-pg-timeseries postgresql-16-periods postgresql-16-temporal-tables postgresql-16-emaj postgresql-16-tableversion postgresql-16-cron postgresql-16-pg-later postgresql-16-pg-background
 pg15: timescaledb-2-postgresql-15 timescaledb-toolkit-postgresql-15 postgresql-15-pg-timeseries postgresql-15-periods postgresql-15-temporal-tables postgresql-15-emaj postgresql-15-tableversion postgresql-15-cron postgresql-15-pg-later postgresql-15-pg-background
 pg14: timescaledb-2-postgresql-14 timescaledb-toolkit-postgresql-14 postgresql-14-pg-timeseries postgresql-14-periods postgresql-14-temporal-tables postgresql-14-emaj postgresql-14-tableversion postgresql-14-cron postgresql-14-pg-later postgresql-14-pg-background
-pg13: timescaledb-2-postgresql-13 timescaledb-toolkit-postgresql-13 postgresql-13-pg-timeseries postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-later postgresql-13-pg-background
-pg12: timescaledb-2-postgresql-12 timescaledb-toolkit-postgresql-12 postgresql-12-pg-timeseries postgresql-12-periods postgresql-12-temporal-tables postgresql-12-emaj postgresql-12-tableversion postgresql-12-cron postgresql-12-pg-background #postgresql-12-pg-later
+pg13: timescaledb-toolkit-postgresql-13 postgresql-13-pg-timeseries postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-later postgresql-13-pg-background #timescaledb-2-postgresql-13
+pg12: timescaledb-toolkit-postgresql-12 postgresql-12-pg-timeseries postgresql-12-periods postgresql-12-temporal-tables postgresql-12-emaj postgresql-12-tableversion postgresql-12-cron postgresql-12-pg-background #timescaledb-2-postgresql-12 #postgresql-12-pg-later
 ```
 
 
@@ -170,8 +170,8 @@ pg17: timescaledb-2-postgresql-17 postgresql-17-periods postgresql-17-temporal-t
 pg16: timescaledb-2-postgresql-16 timescaledb-toolkit-postgresql-16 postgresql-16-pg-timeseries postgresql-16-periods postgresql-16-temporal-tables postgresql-16-emaj postgresql-16-tableversion postgresql-16-cron postgresql-16-pg-later postgresql-16-pg-background
 pg15: timescaledb-2-postgresql-15 timescaledb-toolkit-postgresql-15 postgresql-15-pg-timeseries postgresql-15-periods postgresql-15-temporal-tables postgresql-15-emaj postgresql-15-tableversion postgresql-15-cron postgresql-15-pg-later postgresql-15-pg-background
 pg14: timescaledb-2-postgresql-14 timescaledb-toolkit-postgresql-14 postgresql-14-pg-timeseries postgresql-14-periods postgresql-14-temporal-tables postgresql-14-emaj postgresql-14-tableversion postgresql-14-cron postgresql-14-pg-later postgresql-14-pg-background
-pg13: timescaledb-2-postgresql-13 timescaledb-toolkit-postgresql-13 postgresql-13-pg-timeseries postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-later postgresql-13-pg-background
-pg12: timescaledb-2-postgresql-12 timescaledb-toolkit-postgresql-12 postgresql-12-pg-timeseries postgresql-12-periods postgresql-12-temporal-tables postgresql-12-emaj postgresql-12-tableversion postgresql-12-cron postgresql-12-pg-background #postgresql-12-pg-later
+pg13: timescaledb-toolkit-postgresql-13 postgresql-13-pg-timeseries postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-later postgresql-13-pg-background #timescaledb-2-postgresql-13
+pg12: timescaledb-toolkit-postgresql-12 postgresql-12-pg-timeseries postgresql-12-periods postgresql-12-temporal-tables postgresql-12-emaj postgresql-12-tableversion postgresql-12-cron postgresql-12-pg-background #timescaledb-2-postgresql-12 #postgresql-12-pg-later
 ```
 
 
@@ -182,7 +182,7 @@ pg17: timescaledb-2-postgresql-17 postgresql-17-periods postgresql-17-temporal-t
 pg16: timescaledb-2-postgresql-16 postgresql-16-pg-timeseries postgresql-16-periods postgresql-16-temporal-tables postgresql-16-emaj postgresql-16-tableversion postgresql-16-cron postgresql-16-pg-later postgresql-16-pg-background #timescaledb-toolkit-postgresql-16
 pg15: timescaledb-2-postgresql-15 postgresql-15-pg-timeseries postgresql-15-periods postgresql-15-temporal-tables postgresql-15-emaj postgresql-15-tableversion postgresql-15-cron postgresql-15-pg-later postgresql-15-pg-background #timescaledb-toolkit-postgresql-15
 pg14: timescaledb-2-postgresql-14 postgresql-14-pg-timeseries postgresql-14-periods postgresql-14-temporal-tables postgresql-14-emaj postgresql-14-tableversion postgresql-14-cron postgresql-14-pg-later postgresql-14-pg-background #timescaledb-toolkit-postgresql-14
-pg13: timescaledb-2-postgresql-13 postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-later postgresql-13-pg-background #timescaledb-toolkit-postgresql-13 #postgresql-13-pg-timeseries
+pg13: postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-later postgresql-13-pg-background #timescaledb-2-postgresql-13 #timescaledb-toolkit-postgresql-13 #postgresql-13-pg-timeseries
 pg12: postgresql-12-periods postgresql-12-temporal-tables postgresql-12-emaj postgresql-12-tableversion postgresql-12-cron postgresql-12-pg-background #timescaledb-2-postgresql-12 #timescaledb-toolkit-postgresql-12 #postgresql-12-pg-timeseries #postgresql-12-pg-later
 ```
 

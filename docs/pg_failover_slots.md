@@ -24,7 +24,7 @@
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  | <span class="tcblue">✔</span> |
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  | <span class="tcblue">✔</span> |
 
 
 
@@ -49,10 +49,6 @@ shared_preload_libraries = 'pg_failover_slots'; # add this extension to postgres
 ```
 
 
-
-```sql
-CREATE EXTENSION pg_failover_slots;
-```
 
 -----------
 

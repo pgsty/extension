@@ -38,8 +38,8 @@ There are 17 available extensions in this category:
 pg17: pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
 pg16: pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
 pg15: pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
-pg14: pg_search pg_bigm zhparser pg_bestmatch hunspell #pgroonga
-pg13: pg_bigm zhparser pg_bestmatch hunspell #pg_search #pgroonga
+pg14: pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
+pg13: pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
 pg12: pg_bigm zhparser pg_bestmatch hunspell #pg_search #pgroonga
 ```
 
@@ -50,8 +50,8 @@ pg12: pg_bigm zhparser pg_bestmatch hunspell #pg_search #pgroonga
 pg17: pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
 pg16: pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
 pg15: pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
-pg14: pg_search pg_bigm zhparser pg_bestmatch hunspell #pgroonga
-pg13: pg_bigm zhparser pg_bestmatch hunspell #pg_search #pgroonga
+pg14: pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
+pg13: pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
 pg12: pg_bigm zhparser pg_bestmatch hunspell #pg_search #pgroonga
 ```
 
@@ -101,7 +101,7 @@ pg12: pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
 | Package | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | 12 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|-------------|
 | [pg_search](/pg_search) | 0.13.1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_search_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | pg_search: Full text search for PostgreSQL using BM25 |
-| [pgroonga](/pgroonga) | 3.2.5 | BSD-3 | **<span class="tcwarn">PIGSTY</span>** | `postgresql$v-pgdg-pgroonga` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  | Use Groonga as index, fast full text search platform for all languages! |
+| [pgroonga](/pgroonga) | 3.2.5 | BSD-3 | **<span class="tcwarn">PIGSTY</span>** | `pgroonga_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Use Groonga as index, fast full text search platform for all languages! |
 | [pg_bigm](/pg_bigm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_bigm_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | create 2-gram (bigram) index for faster full text search. |
 | [zhparser](/zhparser) | 2.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `zhparser_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | a parser for full-text search of Chinese |
 | [pg_bestmatch](/pg_bestmatch) | 0.0.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_bestmatch_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Generate BM25 sparse vector inside PostgreSQL |
@@ -123,24 +123,24 @@ pg12: pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: pg_search_17 postgresql17-pgdg-pgroonga pg_bigm_17* zhparser_17* pg_bestmatch_17 hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
-pg16: pg_search_16 postgresql16-pgdg-pgroonga pg_bigm_16* zhparser_16* pg_bestmatch_16 hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
-pg15: pg_search_15 postgresql15-pgdg-pgroonga pg_bigm_15* zhparser_15* pg_bestmatch_15 hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
-pg14: pg_search_14 pg_bigm_14* zhparser_14* pg_bestmatch_14 hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14 #postgresql14-pgdg-pgroonga
-pg13: pg_bigm_13* zhparser_13* pg_bestmatch_13 hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13 #postgresql13-pgdg-pgroonga
-pg12: pg_bigm_12* zhparser_12* pg_bestmatch_12 hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12 #postgresql12-pgdg-pgroonga
+pg17: pg_search_17 pgroonga_17* pg_bigm_17* zhparser_17* pg_bestmatch_17 hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
+pg16: pg_search_16 pgroonga_16* pg_bigm_16* zhparser_16* pg_bestmatch_16 hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
+pg15: pg_search_15 pgroonga_15* pg_bigm_15* zhparser_15* pg_bestmatch_15 hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
+pg14: pg_search_14 pgroonga_14* pg_bigm_14* zhparser_14* pg_bestmatch_14 hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14
+pg13: pgroonga_13* pg_bigm_13* zhparser_13* pg_bestmatch_13 hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13
+pg12: pg_bigm_12* zhparser_12* pg_bestmatch_12 hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12 #pgroonga_12*
 ```
 
 
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: pg_search_17 postgresql17-pgdg-pgroonga pg_bigm_17* zhparser_17* pg_bestmatch_17 hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
-pg16: pg_search_16 postgresql16-pgdg-pgroonga pg_bigm_16* zhparser_16* pg_bestmatch_16 hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
-pg15: pg_search_15 postgresql15-pgdg-pgroonga pg_bigm_15* zhparser_15* pg_bestmatch_15 hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
-pg14: pg_search_14 pg_bigm_14* zhparser_14* pg_bestmatch_14 hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14 #postgresql14-pgdg-pgroonga
-pg13: pg_bigm_13* zhparser_13* pg_bestmatch_13 hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13 #postgresql13-pgdg-pgroonga
-pg12: pg_bigm_12* zhparser_12* pg_bestmatch_12 hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12 #postgresql12-pgdg-pgroonga
+pg17: pg_search_17 pgroonga_17* pg_bigm_17* zhparser_17* pg_bestmatch_17 hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
+pg16: pg_search_16 pgroonga_16* pg_bigm_16* zhparser_16* pg_bestmatch_16 hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
+pg15: pg_search_15 pgroonga_15* pg_bigm_15* zhparser_15* pg_bestmatch_15 hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
+pg14: pg_search_14 pgroonga_14* pg_bigm_14* zhparser_14* pg_bestmatch_14 hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14
+pg13: pgroonga_13* pg_bigm_13* zhparser_13* pg_bestmatch_13 hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13
+pg12: pg_bigm_12* zhparser_12* pg_bestmatch_12 hunspell_cs_cz_12 hunspell_de_de_12 hunspell_en_us_12 hunspell_fr_12 hunspell_ne_np_12 hunspell_nl_nl_12 hunspell_nn_no_12 hunspell_pt_pt_12 hunspell_ru_ru_12 hunspell_ru_ru_aot_12 #pg_search_12 #pgroonga_12*
 ```
 
 

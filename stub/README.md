@@ -82,6 +82,11 @@ You can edit the [`pigsty.csv`](https://github.com/pgsty/extension/blob/main/dat
 If you have any suggestions on including new extensions or bumping to new versions, PR or [Issue](https://github.com/pgsty/extension/issues/new) are always welcome!
 
 
+----------------
+
+## Limitation
+
+
 
 ----------------
 

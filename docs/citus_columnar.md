@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -58,8 +58,8 @@ CREATE EXTENSION citus_columnar;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| Distro-citus | 12.1-1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `citus_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| Distro-citus | 12.1-1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcgreen">CITUS</span>** | `postgresql-$v-citus-12.1` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro-citus | 12.1-1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `citus_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |
+| Distro-citus | 12.1-1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcgreen">CITUS</span>** | `postgresql-$v-citus-12.1` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |
 
 
 
@@ -76,8 +76,6 @@ Install `citus` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM*
 dnf install citus_16*;
 dnf install citus_15*;
 dnf install citus_14*;
-dnf install citus_13*;
-dnf install citus_12*;
 ```
 
 
@@ -87,8 +85,6 @@ Install `citus` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT*
 apt install postgresql-16-citus-12.1;
 apt install postgresql-15-citus-12.1;
 apt install postgresql-14-citus-12.1;
-apt install postgresql-13-citus-12.1;
-apt install postgresql-12-citus-12.1;
 ```
 
 
@@ -96,11 +92,11 @@ apt install postgresql-12-citus-12.1;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | `citus_16*` | `citus_15*` | `citus_14*` | `citus_13*` | `citus_12*` |
-| `el9` | <span class="tcred">✘</span> | `citus_16*` | `citus_15*` | `citus_14*` | `citus_13*` | `citus_12*` |
-| `d12` | <span class="tcred">✘</span> | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | `postgresql-13-citus-12.1` | `postgresql-12-citus-12.1` |
-| `u22` | <span class="tcred">✘</span> | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | `postgresql-13-citus-12.1` | `postgresql-12-citus-12.1` |
-| `u24` | <span class="tcred">✘</span> | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | `postgresql-13-citus-12.1` | `postgresql-12-citus-12.1` |
+| `el8` | <span class="tcred">✘</span> | `citus_16*` | `citus_15*` | `citus_14*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcred">✘</span> | `citus_16*` | `citus_15*` | `citus_14*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-citus-12.1` | `postgresql-15-citus-12.1` | `postgresql-14-citus-12.1` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

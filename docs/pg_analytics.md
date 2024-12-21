@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_analytics;
 ```
-> **Comment**: pg13=0.2.1, pgrx 0.12.7
+> **Comment**: pgrx 0.12.7
 -----------
 
 
