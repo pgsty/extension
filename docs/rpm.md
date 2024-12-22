@@ -2,14 +2,14 @@
 
 There are **334** extensions available on EL compatible systems, **6** of them are EL exclusive, and missing **6** Debian exclusive extensions.
 
-There are **70** built-in [**contrib**](contrib) extensions, in addition to **114** rpm extensions provided by PGDG YUM repository, and **146** extensions provided by Pigsty.
+There are **69** built-in [**contrib**](contrib) extensions, in addition to **114** rpm extensions provided by PGDG YUM repository, and **147** extensions provided by Pigsty.
 
-There are **330** extensions available in the current major version PostgreSQL 16, and **304** ready for the latest PostgreSQL 17.
+There are **330** extensions available in the current major version PostgreSQL 16, and **303** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 334 | 114 | 146 | 70 | 4 | 6 | 304 | 330 | 333 | 321 | 303 | 291 |
+| RPM Extension | 334 | 114 | 147 | 69 | 4 | 6 | 303 | 330 | 333 | 321 | 303 | 290 |
 | RPM Package | 251 | 102 | 145 | 1 | 4 | 1 | 224 | 247 | 250 | 241 | 226 | 214 |
 
 
@@ -53,7 +53,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 | [RAG](/rag) | [pg4ml](/pg4ml) | 2.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg4ml_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Machine learning framework for PostgreSQL |
 | [RAG](/rag) | [pgml](/pgml) | 2.9.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgml_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | PostgresML: Run AL/ML workloads with SQL interface |
 | [FTS](/fts) | [pg_search](/pg_search) | 0.13.1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_search_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | pg_search: Full text search for PostgreSQL using BM25 |
-| [FTS](/fts) | [pgroonga](/pgroonga) | 3.2.5 | BSD-3 | **<span class="tcwarn">PIGSTY</span>** | `pgroonga_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Use Groonga as index, fast full text search platform for all languages! |
+| [FTS](/fts) | [pgroonga](/pgroonga) | 3.2.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgroonga_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Use Groonga as index, fast full text search platform for all languages! |
 | [FTS](/fts) | [pg_bigm](/pg_bigm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_bigm_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | create 2-gram (bigram) index for faster full text search. |
 | [FTS](/fts) | [zhparser](/zhparser) | 2.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `zhparser_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | a parser for full-text search of Chinese |
 | [FTS](/fts) | [pg_bestmatch](/pg_bestmatch) | 0.0.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_bestmatch_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Generate BM25 sparse vector inside PostgreSQL |

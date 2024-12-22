@@ -1,9 +1,9 @@
-# test_decoding
+# pgoutput
 
 
-> [test_decoding](https://www.postgresql.org/docs/current/test-decoding.html): SQL-based test/example module for WAL logical decoding
+> [pgoutput](https://www.postgresql.org/docs/current/protocol-logical-replication.html): Logical Replication output plugin
 >
-> https://www.postgresql.org/docs/current/test-decoding.html
+> https://www.postgresql.org/docs/current/protocol-logical-replication.html
 
 
 
@@ -18,19 +18,19 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [test_decoding](https://www.postgresql.org/docs/current/test-decoding.html) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | `C` |
+| [pgoutput](https://www.postgresql.org/docs/current/protocol-logical-replication.html) | - | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | `C` |
 
 
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |  |
+|  |  | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
 
 
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [test_decoding](/test_decoding) |  |  |  |  |
+| [pgoutput](/pgoutput) |  |  |  |  |
 
 
 
@@ -59,14 +59,14 @@
 
 
 
-Install `test_decoding` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
+Install `pgoutput` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["test_decoding"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgoutput"]}'
 ```
 
 
-Install `test_decoding` [RPM](/rpm) from the **<span class="tcblue">CONTRIB</span>** **YUM** repo:
+Install `pgoutput` [RPM](/rpm) from the **<span class="tcblue">CONTRIB</span>** **YUM** repo:
 
 ```bash
 dnf install postgresql17-contrib;
@@ -78,7 +78,7 @@ dnf install postgresql12-contrib;
 ```
 
 
-Install `test_decoding` [DEB](/deb) from the **<span class="tcblue">CONTRIB</span>** **APT** repo:
+Install `pgoutput` [DEB](/deb) from the **<span class="tcblue">CONTRIB</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17;

@@ -67,12 +67,13 @@ All PostgreSQL are divided into 15 categories, shown below:
 
 --------
 ## [**FTS**](/fts)
-> FTS: ElasticSearch Alternative with BM25, 2-gram/3-gram Fuzzy Search, Zhparser & Hunspell Segregation Dicts, etc... (17 extensions)
+> FTS: ElasticSearch Alternative with BM25, 2-gram/3-gram Fuzzy Search, Zhparser & Hunspell Segregation Dicts, etc... (18 extensions)
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | Description | Comment |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|-------------|---------|
 | 1300 | [pg_search](/pg_search) | 0.13.1 | [pg_search](/pg_search) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/paradedb/paradedb/tree/dev/pg_search) | pg_search: Full text search for PostgreSQL using BM25 |  |
-| 1310 | [pgroonga](/pgroonga) | 3.2.5 | [pgroonga](/pgroonga) | BSD-3 | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgroonga/pgroonga) | Use Groonga as index, fast full text search platform for all languages! |  |
+| 1310 | [pgroonga](/pgroonga) | 3.2.5 | [pgroonga](/pgroonga) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgroonga/pgroonga) | Use Groonga as index, fast full text search platform for all languages! |  |
+| 1311 | [pgroonga_database](/pgroonga_database) | 3.2.5 | [pgroonga](/pgroonga_database) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgroonga/pgroonga) | PGroonga database management module |  |
 | 1320 | [pg_bigm](/pg_bigm) | 1.2 | [pg_bigm](/pg_bigm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgbigm/pg_bigm) | create 2-gram (bigram) index for faster full text search. |  |
 | 1330 | [zhparser](/zhparser) | 2.2 | [zhparser](/zhparser) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/amutu/zhparser) | a parser for full-text search of Chinese |  |
 | 1340 | [pg_bestmatch](/pg_bestmatch) | 0.0.1 | [pg_bestmatch](/pg_bestmatch) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tensorchord/pg_bestmatch.rs) | Generate BM25 sparse vector inside PostgreSQL |  |
@@ -96,8 +97,8 @@ All PostgreSQL are divided into 15 categories, shown below:
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | Description | Comment |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|-------------|---------|
-| 1500 | [citus](/citus) | 12.1-1 | [citus](/citus) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcgreen">CITUS</span>** | [LINK](https://github.com/citusdata/citus) | Distributed PostgreSQL as an extension | conflict with hydra, no pg17, no noble, no conflict with hydra columnar, no pg17, no noble, no arm64 |
-| 1501 | [citus_columnar](/citus_columnar) | 11.3-1 | [citus](/citus_columnar) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcgreen">CITUS</span>** | [LINK](https://github.com/citusdata/citus) | Citus columnar storage engine | conflict with hydra columnar, no pg17, no noble, no arm64 |
+| 1500 | [citus](/citus) | 12.1-1 | [citus](/citus) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/citusdata/citus) | Distributed PostgreSQL as an extension | conflict with hydra, no pg17, no noble, no conflict with hydra columnar, no pg17, no noble, no arm64 |
+| 1501 | [citus_columnar](/citus_columnar) | 11.3-1 | [citus](/citus_columnar) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/citusdata/citus) | Citus columnar storage engine | conflict with hydra columnar, no pg17, no noble, no arm64 |
 | 1510 | [columnar](/columnar) | 11.1-11 | [hydra](/columnar) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/hydradatabase/hydra) | Hydra Columnar extension | conflict with citus columnar |
 | 1520 | [pg_analytics](/pg_analytics) | 0.2.3 | [pg_analytics](/pg_analytics) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/paradedb/pg_analytics) | Postgres for analytics, powered by DuckDB | pgrx 0.12.7 |
 | 1530 | [pg_duckdb](/pg_duckdb) | 0.2.0 | [pg_duckdb](/pg_duckdb) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/duckdb/pg_duckdb) | DuckDB Embedded in Postgres | broken on el8 (libstdc++ too low), conflict with duckdb_fdw |
@@ -280,7 +281,7 @@ All PostgreSQL are divided into 15 categories, shown below:
 
 --------
 ## [**ADMIN**](/admin)
-> ADMIN: Utilities for Bloat Control, DirtyRead, BufferInspect, DDL Generate, ChecksumVerify, Permission, Priority, Catalog,... (34 extensions)
+> ADMIN: Utilities for Bloat Control, DirtyRead, BufferInspect, DDL Generate, ChecksumVerify, Permission, Priority, Catalog,... (32 extensions)
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | Description | Comment |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|-------------|---------|
@@ -308,9 +309,7 @@ All PostgreSQL are divided into 15 categories, shown below:
 | 5301 | [pgpool_recovery](/pgpool_recovery) | 1.4 | [pgpool](/pgpool_recovery) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://pgpool.net/) | recovery functions for pgpool-II for V4.3 |  |
 | 5302 | [pgpool_regclass](/pgpool_regclass) | 1.0 | [pgpool](/pgpool_regclass) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://pgpool.net/) | replacement for regclass |  |
 | 5310 | [pgagent](/pgagent) | 4.2 | [pgagent](/pgagent) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://www.pgadmin.org/docs/pgadmin4/development/pgagent.html) | A PostgreSQL job scheduler |  |
-| 5900 | [vacuumlo](/vacuumlo) | - | [vacuumlo](/vacuumlo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/vacuumlo.html) | utility program that will remove any orphaned large objects from a PostgreSQL database |  |
 | 5910 | [pg_prewarm](/pg_prewarm) | 1.2 | [pg_prewarm](/pg_prewarm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/pgprewarm.html) | prewarm relation data |  |
-| 5920 | [oid2name](/oid2name) | - | [oid2name](/oid2name) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/oid2name.html) | utility program that helps administrators to examine the file structure used by PostgreSQL |  |
 | 5930 | [lo](/lo) | 1.1 | [lo](/lo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/lo.html) | Large Object maintenance |  |
 | 5940 | [basic_archive](/basic_archive) | - | [basic_archive](/basic_archive) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/basic-archive.html) | an example of an archive module |  |
 | 5950 | [basebackup_to_shell](/basebackup_to_shell) | - | [basebackup_to_shell](/basebackup_to_shell) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/basebackup-to-shell.html) | adds a custom basebackup target called shell |  |
@@ -443,7 +442,7 @@ All PostgreSQL are divided into 15 categories, shown below:
 
 --------
 ## [**ETL**](/etl)
-> ETL: Logical Replication, Decoding, CDC in protobuf/JSON/Mongo format, Copy & Load & Compare Postgres Databases,... (14 extensions)
+> ETL: Logical Replication, Decoding, CDC in protobuf/JSON/Mongo format, Copy & Load & Compare Postgres Databases,... (15 extensions)
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | Description | Comment |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|-------------|---------|
@@ -456,6 +455,7 @@ All PostgreSQL are divided into 15 categories, shown below:
 | 9640 | [wal2mongo](/wal2mongo) | 1.0.7 | [wal2mongo](/wal2mongo) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/HighgoSoftware/wal2mongo) | PostgreSQL logical decoding output plugin for MongoDB |  |
 | 9650 | [decoderbufs](/decoderbufs) | 0.1.0 | [decoderbufs](/decoderbufs) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/debezium/postgres-decoderbufs) | Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format |  |
 | 9660 | [decoder_raw](/decoder_raw) | 1.0 | [decoder_raw](/decoder_raw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/michaelpq/pg_plugins/blob/main/decoder_raw/) | Output plugin for logical replication in Raw SQL format |  |
+| 9680 | [pgoutput](/pgoutput) | - | [pgoutput](/pgoutput) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/protocol-logical-replication.html) | Logical Replication output plugin |  |
 | 9690 | [test_decoding](/test_decoding) | - | [test_decoding](/test_decoding) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/test-decoding.html) | SQL-based test/example module for WAL logical decoding |  |
 | 9700 | [mimeo](/mimeo) | 1.5.1 | [mimeo](/mimeo) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/omniti-labs/mimeo) | Extension for specialized, per-table replication between PostgreSQL instances | name conflict with pg_partman |
 | 9710 | [repmgr](/repmgr) | 5.4 | [repmgr](/repmgr) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/EnterpriseDB/repmgr) | Replication manager for PostgreSQL |  |
