@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION zstd;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1.0 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_zstd_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.1.0 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-zstd` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1.0 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_zstd_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.1.0 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-zstd` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `zstd` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add zstd
+```
 
 
 Install `pg_zstd` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-pg-zstd;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_zstd_17*` | `pg_zstd_16*` | `pg_zstd_15*` | `pg_zstd_14*` | `pg_zstd_13*` | `pg_zstd_12*` |
-| `el9` | `pg_zstd_17*` | `pg_zstd_16*` | `pg_zstd_15*` | `pg_zstd_14*` | `pg_zstd_13*` | `pg_zstd_12*` |
-| `d12` | `postgresql-17-pg-zstd` | `postgresql-16-pg-zstd` | `postgresql-15-pg-zstd` | `postgresql-14-pg-zstd` | `postgresql-13-pg-zstd` | `postgresql-12-pg-zstd` |
-| `u22` | `postgresql-17-pg-zstd` | `postgresql-16-pg-zstd` | `postgresql-15-pg-zstd` | `postgresql-14-pg-zstd` | `postgresql-13-pg-zstd` | `postgresql-12-pg-zstd` |
-| `u24` | `postgresql-17-pg-zstd` | `postgresql-16-pg-zstd` | `postgresql-15-pg-zstd` | `postgresql-14-pg-zstd` | `postgresql-13-pg-zstd` | `postgresql-12-pg-zstd` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_zstd_17*` | `pg_zstd_16*` | `pg_zstd_15*` | `pg_zstd_14*` | `pg_zstd_13*` |
+| `el9` | `pg_zstd_17*` | `pg_zstd_16*` | `pg_zstd_15*` | `pg_zstd_14*` | `pg_zstd_13*` |
+| `d12` | `postgresql-17-pg-zstd` | `postgresql-16-pg-zstd` | `postgresql-15-pg-zstd` | `postgresql-14-pg-zstd` | `postgresql-13-pg-zstd` |
+| `u22` | `postgresql-17-pg-zstd` | `postgresql-16-pg-zstd` | `postgresql-15-pg-zstd` | `postgresql-14-pg-zstd` | `postgresql-13-pg-zstd` |
+| `u24` | `postgresql-17-pg-zstd` | `postgresql-16-pg-zstd` | `postgresql-15-pg-zstd` | `postgresql-14-pg-zstd` | `postgresql-13-pg-zstd` |
 
 
 

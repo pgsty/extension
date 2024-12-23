@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pg_summarize;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_summarize_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-summarize` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_summarize_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-summarize` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `pg_summarize` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pg_summarize
+```
 
 
 Install `pg_summarize` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-pg-summarize;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_summarize_17` | `pg_summarize_16` | `pg_summarize_15` | `pg_summarize_14` | `pg_summarize_13` | `pg_summarize_12` |
-| `el9` | `pg_summarize_17` | `pg_summarize_16` | `pg_summarize_15` | `pg_summarize_14` | `pg_summarize_13` | `pg_summarize_12` |
-| `d12` | `postgresql-17-pg-summarize` | `postgresql-16-pg-summarize` | `postgresql-15-pg-summarize` | `postgresql-14-pg-summarize` | `postgresql-13-pg-summarize` | `postgresql-12-pg-summarize` |
-| `u22` | `postgresql-17-pg-summarize` | `postgresql-16-pg-summarize` | `postgresql-15-pg-summarize` | `postgresql-14-pg-summarize` | `postgresql-13-pg-summarize` | `postgresql-12-pg-summarize` |
-| `u24` | `postgresql-17-pg-summarize` | `postgresql-16-pg-summarize` | `postgresql-15-pg-summarize` | `postgresql-14-pg-summarize` | `postgresql-13-pg-summarize` | `postgresql-12-pg-summarize` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_summarize_17` | `pg_summarize_16` | `pg_summarize_15` | `pg_summarize_14` | `pg_summarize_13` |
+| `el9` | `pg_summarize_17` | `pg_summarize_16` | `pg_summarize_15` | `pg_summarize_14` | `pg_summarize_13` |
+| `d12` | `postgresql-17-pg-summarize` | `postgresql-16-pg-summarize` | `postgresql-15-pg-summarize` | `postgresql-14-pg-summarize` | `postgresql-13-pg-summarize` |
+| `u22` | `postgresql-17-pg-summarize` | `postgresql-16-pg-summarize` | `postgresql-15-pg-summarize` | `postgresql-14-pg-summarize` | `postgresql-13-pg-summarize` |
+| `u24` | `postgresql-17-pg-summarize` | `postgresql-16-pg-summarize` | `postgresql-15-pg-summarize` | `postgresql-14-pg-summarize` | `postgresql-13-pg-summarize` |
 
 
 

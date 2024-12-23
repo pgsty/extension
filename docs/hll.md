@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION hll;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.18 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `hll_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 2.18 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-hll` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.18 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `hll_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.18 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-hll` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `hll` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add hll
+```
 
 
 Install `hll` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-hll;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `hll_17*` | `hll_16*` | `hll_15*` | `hll_14*` | `hll_13*` | `hll_12*` |
-| `el9` | `hll_17*` | `hll_16*` | `hll_15*` | `hll_14*` | `hll_13*` | `hll_12*` |
-| `d12` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` | `postgresql-12-hll` |
-| `u22` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` | `postgresql-12-hll` |
-| `u24` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` | `postgresql-12-hll` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `hll_17*` | `hll_16*` | `hll_15*` | `hll_14*` | `hll_13*` |
+| `el9` | `hll_17*` | `hll_16*` | `hll_15*` | `hll_14*` | `hll_13*` |
+| `d12` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` |
+| `u22` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` |
+| `u24` | `postgresql-17-hll` | `postgresql-16-hll` | `postgresql-15-hll` | `postgresql-14-hll` | `postgresql-13-hll` |
 
 
 

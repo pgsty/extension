@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION table_log;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.6.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `table_log_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.6.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-tablelog` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.6.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `table_log_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.6.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-tablelog` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `table_log` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add table_log
+```
 
 
 Install `table_log` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-tablelog;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `table_log_17` | `table_log_16` | `table_log_15` | `table_log_14` | `table_log_13` | `table_log_12` |
-| `el9` | `table_log_17` | `table_log_16` | `table_log_15` | `table_log_14` | `table_log_13` | `table_log_12` |
-| `d12` | `postgresql-17-tablelog` | `postgresql-16-tablelog` | `postgresql-15-tablelog` | `postgresql-14-tablelog` | `postgresql-13-tablelog` | `postgresql-12-tablelog` |
-| `u22` | `postgresql-17-tablelog` | `postgresql-16-tablelog` | `postgresql-15-tablelog` | `postgresql-14-tablelog` | `postgresql-13-tablelog` | `postgresql-12-tablelog` |
-| `u24` | `postgresql-17-tablelog` | `postgresql-16-tablelog` | `postgresql-15-tablelog` | `postgresql-14-tablelog` | `postgresql-13-tablelog` | `postgresql-12-tablelog` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `table_log_17` | `table_log_16` | `table_log_15` | `table_log_14` | `table_log_13` |
+| `el9` | `table_log_17` | `table_log_16` | `table_log_15` | `table_log_14` | `table_log_13` |
+| `d12` | `postgresql-17-tablelog` | `postgresql-16-tablelog` | `postgresql-15-tablelog` | `postgresql-14-tablelog` | `postgresql-13-tablelog` |
+| `u22` | `postgresql-17-tablelog` | `postgresql-16-tablelog` | `postgresql-15-tablelog` | `postgresql-14-tablelog` | `postgresql-13-tablelog` |
+| `u24` | `postgresql-17-tablelog` | `postgresql-16-tablelog` | `postgresql-15-tablelog` | `postgresql-14-tablelog` | `postgresql-13-tablelog` |
 
 
 

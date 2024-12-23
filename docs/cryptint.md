@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION cryptint;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `cryptint_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-cryptint` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `cryptint_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-cryptint` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `cryptint` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add cryptint
+```
 
 
 Install `cryptint` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-cryptint;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `cryptint_17*` | `cryptint_16*` | `cryptint_15*` | `cryptint_14*` | `cryptint_13*` | `cryptint_12*` |
-| `el9` | `cryptint_17*` | `cryptint_16*` | `cryptint_15*` | `cryptint_14*` | `cryptint_13*` | `cryptint_12*` |
-| `d12` | `postgresql-17-cryptint` | `postgresql-16-cryptint` | `postgresql-15-cryptint` | `postgresql-14-cryptint` | `postgresql-13-cryptint` | `postgresql-12-cryptint` |
-| `u22` | `postgresql-17-cryptint` | `postgresql-16-cryptint` | `postgresql-15-cryptint` | `postgresql-14-cryptint` | `postgresql-13-cryptint` | `postgresql-12-cryptint` |
-| `u24` | `postgresql-17-cryptint` | `postgresql-16-cryptint` | `postgresql-15-cryptint` | `postgresql-14-cryptint` | `postgresql-13-cryptint` | `postgresql-12-cryptint` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `cryptint_17*` | `cryptint_16*` | `cryptint_15*` | `cryptint_14*` | `cryptint_13*` |
+| `el9` | `cryptint_17*` | `cryptint_16*` | `cryptint_15*` | `cryptint_14*` | `cryptint_13*` |
+| `d12` | `postgresql-17-cryptint` | `postgresql-16-cryptint` | `postgresql-15-cryptint` | `postgresql-14-cryptint` | `postgresql-13-cryptint` |
+| `u22` | `postgresql-17-cryptint` | `postgresql-16-cryptint` | `postgresql-15-cryptint` | `postgresql-14-cryptint` | `postgresql-13-cryptint` |
+| `u24` | `postgresql-17-cryptint` | `postgresql-16-cryptint` | `postgresql-15-cryptint` | `postgresql-14-cryptint` | `postgresql-13-cryptint` |
 
 
 

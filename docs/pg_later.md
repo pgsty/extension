@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pg_later CASCADE;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_later_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | `pgmq_$v` |
-| [DEB](/deb) | 0.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-later` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | `postgresql-$v-pgmq` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_later_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `pgmq_$v` |
+| [DEB](/deb) | 0.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-later` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `postgresql-$v-pgmq` |
 
+
+
+Install `pg_later` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pg_later
+```
 
 
 Install `pg_later` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -94,13 +101,13 @@ apt install postgresql-13-pg-later;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_later_17` | `pg_later_16` | `pg_later_15` | `pg_later_14` | `pg_later_13` | <span class="tcred">✘</span> |
-| `el9` | `pg_later_17` | `pg_later_16` | `pg_later_15` | `pg_later_14` | `pg_later_13` | <span class="tcred">✘</span> |
-| `d12` | `postgresql-17-pg-later` | `postgresql-16-pg-later` | `postgresql-15-pg-later` | `postgresql-14-pg-later` | `postgresql-13-pg-later` | <span class="tcred">✘</span> |
-| `u22` | `postgresql-17-pg-later` | `postgresql-16-pg-later` | `postgresql-15-pg-later` | `postgresql-14-pg-later` | `postgresql-13-pg-later` | <span class="tcred">✘</span> |
-| `u24` | `postgresql-17-pg-later` | `postgresql-16-pg-later` | `postgresql-15-pg-later` | `postgresql-14-pg-later` | `postgresql-13-pg-later` | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_later_17` | `pg_later_16` | `pg_later_15` | `pg_later_14` | `pg_later_13` |
+| `el9` | `pg_later_17` | `pg_later_16` | `pg_later_15` | `pg_later_14` | `pg_later_13` |
+| `d12` | `postgresql-17-pg-later` | `postgresql-16-pg-later` | `postgresql-15-pg-later` | `postgresql-14-pg-later` | `postgresql-13-pg-later` |
+| `u22` | `postgresql-17-pg-later` | `postgresql-16-pg-later` | `postgresql-15-pg-later` | `postgresql-14-pg-later` | `postgresql-13-pg-later` |
+| `u24` | `postgresql-17-pg-later` | `postgresql-16-pg-later` | `postgresql-15-pg-later` | `postgresql-14-pg-later` | `postgresql-13-pg-later` |
 
 
 

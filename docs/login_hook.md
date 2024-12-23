@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION login_hook;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.6 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `login_hook_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.6 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-login-hook` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.6 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `login_hook_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.6 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-login-hook` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `login_hook` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add login_hook
+```
 
 
 Install `login_hook` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-login-hook;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `login_hook_17*` | `login_hook_16*` | `login_hook_15*` | `login_hook_14*` | `login_hook_13*` | `login_hook_12*` |
-| `el9` | `login_hook_17*` | `login_hook_16*` | `login_hook_15*` | `login_hook_14*` | `login_hook_13*` | `login_hook_12*` |
-| `d12` | `postgresql-17-login-hook` | `postgresql-16-login-hook` | `postgresql-15-login-hook` | `postgresql-14-login-hook` | `postgresql-13-login-hook` | `postgresql-12-login-hook` |
-| `u22` | `postgresql-17-login-hook` | `postgresql-16-login-hook` | `postgresql-15-login-hook` | `postgresql-14-login-hook` | `postgresql-13-login-hook` | `postgresql-12-login-hook` |
-| `u24` | `postgresql-17-login-hook` | `postgresql-16-login-hook` | `postgresql-15-login-hook` | `postgresql-14-login-hook` | `postgresql-13-login-hook` | `postgresql-12-login-hook` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `login_hook_17*` | `login_hook_16*` | `login_hook_15*` | `login_hook_14*` | `login_hook_13*` |
+| `el9` | `login_hook_17*` | `login_hook_16*` | `login_hook_15*` | `login_hook_14*` | `login_hook_13*` |
+| `d12` | `postgresql-17-login-hook` | `postgresql-16-login-hook` | `postgresql-15-login-hook` | `postgresql-14-login-hook` | `postgresql-13-login-hook` |
+| `u22` | `postgresql-17-login-hook` | `postgresql-16-login-hook` | `postgresql-15-login-hook` | `postgresql-14-login-hook` | `postgresql-13-login-hook` |
+| `u24` | `postgresql-17-login-hook` | `postgresql-16-login-hook` | `postgresql-15-login-hook` | `postgresql-14-login-hook` | `postgresql-13-login-hook` |
 
 
 

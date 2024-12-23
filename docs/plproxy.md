@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION plproxy;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.11.0 | **<span class="tcblue">BSD-0</span>** | **<span class="tcwarn">PIGSTY</span>** | `plproxy_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 2.11.0 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plproxy` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.11.0 | **<span class="tcblue">BSD-0</span>** | **<span class="tcwarn">PIGSTY</span>** | `plproxy_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 2.11.0 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plproxy` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `plproxy` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add plproxy
+```
 
 
 Install `plproxy` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-plproxy;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `plproxy_17*` | `plproxy_16*` | `plproxy_15*` | `plproxy_14*` | `plproxy_13*` | `plproxy_12*` |
-| `el9` | `plproxy_17*` | `plproxy_16*` | `plproxy_15*` | `plproxy_14*` | `plproxy_13*` | `plproxy_12*` |
-| `d12` | `postgresql-17-plproxy` | `postgresql-16-plproxy` | `postgresql-15-plproxy` | `postgresql-14-plproxy` | `postgresql-13-plproxy` | `postgresql-12-plproxy` |
-| `u22` | `postgresql-17-plproxy` | `postgresql-16-plproxy` | `postgresql-15-plproxy` | `postgresql-14-plproxy` | `postgresql-13-plproxy` | `postgresql-12-plproxy` |
-| `u24` | `postgresql-17-plproxy` | `postgresql-16-plproxy` | `postgresql-15-plproxy` | `postgresql-14-plproxy` | `postgresql-13-plproxy` | `postgresql-12-plproxy` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `plproxy_17*` | `plproxy_16*` | `plproxy_15*` | `plproxy_14*` | `plproxy_13*` |
+| `el9` | `plproxy_17*` | `plproxy_16*` | `plproxy_15*` | `plproxy_14*` | `plproxy_13*` |
+| `d12` | `postgresql-17-plproxy` | `postgresql-16-plproxy` | `postgresql-15-plproxy` | `postgresql-14-plproxy` | `postgresql-13-plproxy` |
+| `u22` | `postgresql-17-plproxy` | `postgresql-16-plproxy` | `postgresql-15-plproxy` | `postgresql-14-plproxy` | `postgresql-13-plproxy` |
+| `u24` | `postgresql-17-plproxy` | `postgresql-16-plproxy` | `postgresql-15-plproxy` | `postgresql-14-plproxy` | `postgresql-13-plproxy` |
 
 
 

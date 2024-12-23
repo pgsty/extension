@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -60,11 +60,18 @@ CREATE EXTENSION pg_stat_monitor;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_stat_monitor_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 2.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-stat-monitor` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_stat_monitor_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-stat-monitor` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `pg_stat_monitor` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pg_stat_monitor
+```
 
 
 Install `pg_stat_monitor` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -100,13 +107,13 @@ apt install postgresql-12-pg-stat-monitor;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_stat_monitor_17*` | `pg_stat_monitor_16*` | `pg_stat_monitor_15*` | `pg_stat_monitor_14*` | `pg_stat_monitor_13*` | `pg_stat_monitor_12*` |
-| `el9` | `pg_stat_monitor_17*` | `pg_stat_monitor_16*` | `pg_stat_monitor_15*` | `pg_stat_monitor_14*` | `pg_stat_monitor_13*` | `pg_stat_monitor_12*` |
-| `d12` | `postgresql-17-pg-stat-monitor` | `postgresql-16-pg-stat-monitor` | `postgresql-15-pg-stat-monitor` | `postgresql-14-pg-stat-monitor` | `postgresql-13-pg-stat-monitor` | `postgresql-12-pg-stat-monitor` |
-| `u22` | `postgresql-17-pg-stat-monitor` | `postgresql-16-pg-stat-monitor` | `postgresql-15-pg-stat-monitor` | `postgresql-14-pg-stat-monitor` | `postgresql-13-pg-stat-monitor` | `postgresql-12-pg-stat-monitor` |
-| `u24` | `postgresql-17-pg-stat-monitor` | `postgresql-16-pg-stat-monitor` | `postgresql-15-pg-stat-monitor` | `postgresql-14-pg-stat-monitor` | `postgresql-13-pg-stat-monitor` | `postgresql-12-pg-stat-monitor` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_stat_monitor_17*` | `pg_stat_monitor_16*` | `pg_stat_monitor_15*` | `pg_stat_monitor_14*` | `pg_stat_monitor_13*` |
+| `el9` | `pg_stat_monitor_17*` | `pg_stat_monitor_16*` | `pg_stat_monitor_15*` | `pg_stat_monitor_14*` | `pg_stat_monitor_13*` |
+| `d12` | `postgresql-17-pg-stat-monitor` | `postgresql-16-pg-stat-monitor` | `postgresql-15-pg-stat-monitor` | `postgresql-14-pg-stat-monitor` | `postgresql-13-pg-stat-monitor` |
+| `u22` | `postgresql-17-pg-stat-monitor` | `postgresql-16-pg-stat-monitor` | `postgresql-15-pg-stat-monitor` | `postgresql-14-pg-stat-monitor` | `postgresql-13-pg-stat-monitor` |
+| `u24` | `postgresql-17-pg-stat-monitor` | `postgresql-16-pg-stat-monitor` | `postgresql-15-pg-stat-monitor` | `postgresql-14-pg-stat-monitor` | `postgresql-13-pg-stat-monitor` |
 
 
 

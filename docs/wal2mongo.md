@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -52,11 +52,18 @@
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0.7 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `wal2mongo_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
-| [DEB](/deb) | 1.0.7 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-wal2mongo` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.7 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `wal2mongo_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0.7 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-wal2mongo` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `wal2mongo` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add wal2mongo
+```
 
 
 Install `wal2mongo` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -88,13 +95,13 @@ apt install postgresql-13-wal2mongo;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | `wal2mongo_16*` | `wal2mongo_15*` | `wal2mongo_14*` | `wal2mongo_13*` | <span class="tcred">✘</span> |
-| `el9` | <span class="tcred">✘</span> | `wal2mongo_16*` | `wal2mongo_15*` | `wal2mongo_14*` | `wal2mongo_13*` | <span class="tcred">✘</span> |
-| `d12` | <span class="tcred">✘</span> | `postgresql-16-wal2mongo` | `postgresql-15-wal2mongo` | `postgresql-14-wal2mongo` | `postgresql-13-wal2mongo` | <span class="tcred">✘</span> |
-| `u22` | <span class="tcred">✘</span> | `postgresql-16-wal2mongo` | `postgresql-15-wal2mongo` | `postgresql-14-wal2mongo` | `postgresql-13-wal2mongo` | <span class="tcred">✘</span> |
-| `u24` | <span class="tcred">✘</span> | `postgresql-16-wal2mongo` | `postgresql-15-wal2mongo` | `postgresql-14-wal2mongo` | `postgresql-13-wal2mongo` | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | `wal2mongo_16*` | `wal2mongo_15*` | `wal2mongo_14*` | `wal2mongo_13*` |
+| `el9` | <span class="tcred">✘</span> | `wal2mongo_16*` | `wal2mongo_15*` | `wal2mongo_14*` | `wal2mongo_13*` |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-wal2mongo` | `postgresql-15-wal2mongo` | `postgresql-14-wal2mongo` | `postgresql-13-wal2mongo` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-wal2mongo` | `postgresql-15-wal2mongo` | `postgresql-14-wal2mongo` | `postgresql-13-wal2mongo` |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-wal2mongo` | `postgresql-15-wal2mongo` | `postgresql-14-wal2mongo` | `postgresql-13-wal2mongo` |
 
 
 

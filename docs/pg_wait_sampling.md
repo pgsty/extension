@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -60,11 +60,18 @@ CREATE EXTENSION pg_wait_sampling;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_wait_sampling_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-wait-sampling` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_wait_sampling_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-wait-sampling` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `pg_wait_sampling` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pg_wait_sampling
+```
 
 
 Install `pg_wait_sampling` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -100,13 +107,13 @@ apt install postgresql-12-pg-wait-sampling;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_wait_sampling_17*` | `pg_wait_sampling_16*` | `pg_wait_sampling_15*` | `pg_wait_sampling_14*` | `pg_wait_sampling_13*` | `pg_wait_sampling_12*` |
-| `el9` | `pg_wait_sampling_17*` | `pg_wait_sampling_16*` | `pg_wait_sampling_15*` | `pg_wait_sampling_14*` | `pg_wait_sampling_13*` | `pg_wait_sampling_12*` |
-| `d12` | `postgresql-17-pg-wait-sampling` | `postgresql-16-pg-wait-sampling` | `postgresql-15-pg-wait-sampling` | `postgresql-14-pg-wait-sampling` | `postgresql-13-pg-wait-sampling` | `postgresql-12-pg-wait-sampling` |
-| `u22` | `postgresql-17-pg-wait-sampling` | `postgresql-16-pg-wait-sampling` | `postgresql-15-pg-wait-sampling` | `postgresql-14-pg-wait-sampling` | `postgresql-13-pg-wait-sampling` | `postgresql-12-pg-wait-sampling` |
-| `u24` | `postgresql-17-pg-wait-sampling` | `postgresql-16-pg-wait-sampling` | `postgresql-15-pg-wait-sampling` | `postgresql-14-pg-wait-sampling` | `postgresql-13-pg-wait-sampling` | `postgresql-12-pg-wait-sampling` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_wait_sampling_17*` | `pg_wait_sampling_16*` | `pg_wait_sampling_15*` | `pg_wait_sampling_14*` | `pg_wait_sampling_13*` |
+| `el9` | `pg_wait_sampling_17*` | `pg_wait_sampling_16*` | `pg_wait_sampling_15*` | `pg_wait_sampling_14*` | `pg_wait_sampling_13*` |
+| `d12` | `postgresql-17-pg-wait-sampling` | `postgresql-16-pg-wait-sampling` | `postgresql-15-pg-wait-sampling` | `postgresql-14-pg-wait-sampling` | `postgresql-13-pg-wait-sampling` |
+| `u22` | `postgresql-17-pg-wait-sampling` | `postgresql-16-pg-wait-sampling` | `postgresql-15-pg-wait-sampling` | `postgresql-14-pg-wait-sampling` | `postgresql-13-pg-wait-sampling` |
+| `u24` | `postgresql-17-pg-wait-sampling` | `postgresql-16-pg-wait-sampling` | `postgresql-15-pg-wait-sampling` | `postgresql-14-pg-wait-sampling` | `postgresql-13-pg-wait-sampling` |
 
 
 

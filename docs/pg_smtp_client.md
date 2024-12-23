@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pg_smtp_client;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_smtp_client_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
-| [DEB](/deb) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-smtp-client` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_smtp_client_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| [DEB](/deb) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-smtp-client` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
 
+
+
+Install `pg_smtp_client` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pg_smtp_client
+```
 
 
 Install `pg_smtp_client` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -92,13 +99,13 @@ apt install postgresql-14-pg-smtp-client;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_smtp_client_17` | `pg_smtp_client_16` | `pg_smtp_client_15` | `pg_smtp_client_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | `pg_smtp_client_17` | `pg_smtp_client_16` | `pg_smtp_client_15` | `pg_smtp_client_14` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `d12` | `postgresql-17-pg-smtp-client` | `postgresql-16-pg-smtp-client` | `postgresql-15-pg-smtp-client` | `postgresql-14-pg-smtp-client` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u22` | `postgresql-17-pg-smtp-client` | `postgresql-16-pg-smtp-client` | `postgresql-15-pg-smtp-client` | `postgresql-14-pg-smtp-client` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u24` | `postgresql-17-pg-smtp-client` | `postgresql-16-pg-smtp-client` | `postgresql-15-pg-smtp-client` | `postgresql-14-pg-smtp-client` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_smtp_client_17` | `pg_smtp_client_16` | `pg_smtp_client_15` | `pg_smtp_client_14` | <span class="tcred">✘</span> |
+| `el9` | `pg_smtp_client_17` | `pg_smtp_client_16` | `pg_smtp_client_15` | `pg_smtp_client_14` | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-pg-smtp-client` | `postgresql-16-pg-smtp-client` | `postgresql-15-pg-smtp-client` | `postgresql-14-pg-smtp-client` | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pg-smtp-client` | `postgresql-16-pg-smtp-client` | `postgresql-15-pg-smtp-client` | `postgresql-14-pg-smtp-client` | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pg-smtp-client` | `postgresql-16-pg-smtp-client` | `postgresql-15-pg-smtp-client` | `postgresql-14-pg-smtp-client` | <span class="tcred">✘</span> |
 
 
 

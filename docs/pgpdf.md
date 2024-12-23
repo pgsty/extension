@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -60,11 +60,18 @@ CREATE EXTENSION pgpdf;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgpdf_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgpdf` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgpdf_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgpdf` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `pgpdf` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pgpdf
+```
 
 
 Install `pgpdf` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -100,13 +107,13 @@ apt install postgresql-12-pgpdf;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgpdf_17*` | `pgpdf_16*` | `pgpdf_15*` | `pgpdf_14*` | `pgpdf_13*` | `pgpdf_12*` |
-| `el9` | `pgpdf_17*` | `pgpdf_16*` | `pgpdf_15*` | `pgpdf_14*` | `pgpdf_13*` | `pgpdf_12*` |
-| `d12` | `postgresql-17-pgpdf` | `postgresql-16-pgpdf` | `postgresql-15-pgpdf` | `postgresql-14-pgpdf` | `postgresql-13-pgpdf` | `postgresql-12-pgpdf` |
-| `u22` | `postgresql-17-pgpdf` | `postgresql-16-pgpdf` | `postgresql-15-pgpdf` | `postgresql-14-pgpdf` | `postgresql-13-pgpdf` | `postgresql-12-pgpdf` |
-| `u24` | `postgresql-17-pgpdf` | `postgresql-16-pgpdf` | `postgresql-15-pgpdf` | `postgresql-14-pgpdf` | `postgresql-13-pgpdf` | `postgresql-12-pgpdf` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgpdf_17*` | `pgpdf_16*` | `pgpdf_15*` | `pgpdf_14*` | `pgpdf_13*` |
+| `el9` | `pgpdf_17*` | `pgpdf_16*` | `pgpdf_15*` | `pgpdf_14*` | `pgpdf_13*` |
+| `d12` | `postgresql-17-pgpdf` | `postgresql-16-pgpdf` | `postgresql-15-pgpdf` | `postgresql-14-pgpdf` | `postgresql-13-pgpdf` |
+| `u22` | `postgresql-17-pgpdf` | `postgresql-16-pgpdf` | `postgresql-15-pgpdf` | `postgresql-14-pgpdf` | `postgresql-13-pgpdf` |
+| `u24` | `postgresql-17-pgpdf` | `postgresql-16-pgpdf` | `postgresql-15-pgpdf` | `postgresql-14-pgpdf` | `postgresql-13-pgpdf` |
 
 
 

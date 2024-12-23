@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION topn;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.7.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `topn_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 2.6.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-topn` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.7.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `topn_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.6.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-topn` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `topn` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add topn
+```
 
 
 Install `topn` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -95,13 +102,13 @@ apt install postgresql-12-topn;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `topn_17*` | `topn_16*` | `topn_15*` | `topn_14*` | `topn_13*` | `topn_12*` |
-| `el9` | `topn_17*` | `topn_16*` | `topn_15*` | `topn_14*` | `topn_13*` | `topn_12*` |
-| `d12` | <span class="tcred">✘</span> | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` | `postgresql-12-topn` |
-| `u22` | <span class="tcred">✘</span> | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` | `postgresql-12-topn` |
-| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `topn_17*` | `topn_16*` | `topn_15*` | `topn_14*` | `topn_13*` |
+| `el9` | `topn_17*` | `topn_16*` | `topn_15*` | `topn_14*` | `topn_13*` |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` |
+| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
 

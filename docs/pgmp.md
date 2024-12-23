@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pgmp;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pgmp_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
-| [DEB](/deb) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgmp` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pgmp_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |
+| [DEB](/deb) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgmp` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |
 
+
+
+Install `pgmp` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pgmp
+```
 
 
 Install `pgmp` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -93,13 +100,13 @@ apt install postgresql-12-pgmp;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgmp_17*` | `pgmp_16*` | `pgmp_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | `pgmp_17*` | `pgmp_16*` | `pgmp_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `d12` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` | `postgresql-12-pgmp` |
-| `u22` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` | `postgresql-12-pgmp` |
-| `u24` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` | `postgresql-12-pgmp` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgmp_17*` | `pgmp_16*` | `pgmp_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `pgmp_17*` | `pgmp_16*` | `pgmp_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` |
+| `u22` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` |
+| `u24` | `postgresql-17-pgmp` | `postgresql-16-pgmp` | `postgresql-15-pgmp` | `postgresql-14-pgmp` | `postgresql-13-pgmp` |
 
 
 

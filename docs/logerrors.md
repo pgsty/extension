@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION logerrors;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `logerrors_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 2.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-logerrors` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `logerrors_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-logerrors` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `logerrors` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add logerrors
+```
 
 
 Install `logerrors` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-logerrors;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `logerrors_17*` | `logerrors_16*` | `logerrors_15*` | `logerrors_14*` | `logerrors_13*` | `logerrors_12*` |
-| `el9` | `logerrors_17*` | `logerrors_16*` | `logerrors_15*` | `logerrors_14*` | `logerrors_13*` | `logerrors_12*` |
-| `d12` | `postgresql-17-logerrors` | `postgresql-16-logerrors` | `postgresql-15-logerrors` | `postgresql-14-logerrors` | `postgresql-13-logerrors` | `postgresql-12-logerrors` |
-| `u22` | `postgresql-17-logerrors` | `postgresql-16-logerrors` | `postgresql-15-logerrors` | `postgresql-14-logerrors` | `postgresql-13-logerrors` | `postgresql-12-logerrors` |
-| `u24` | `postgresql-17-logerrors` | `postgresql-16-logerrors` | `postgresql-15-logerrors` | `postgresql-14-logerrors` | `postgresql-13-logerrors` | `postgresql-12-logerrors` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `logerrors_17*` | `logerrors_16*` | `logerrors_15*` | `logerrors_14*` | `logerrors_13*` |
+| `el9` | `logerrors_17*` | `logerrors_16*` | `logerrors_15*` | `logerrors_14*` | `logerrors_13*` |
+| `d12` | `postgresql-17-logerrors` | `postgresql-16-logerrors` | `postgresql-15-logerrors` | `postgresql-14-logerrors` | `postgresql-13-logerrors` |
+| `u22` | `postgresql-17-logerrors` | `postgresql-16-logerrors` | `postgresql-15-logerrors` | `postgresql-14-logerrors` | `postgresql-13-logerrors` |
+| `u24` | `postgresql-17-logerrors` | `postgresql-16-logerrors` | `postgresql-15-logerrors` | `postgresql-14-logerrors` | `postgresql-13-logerrors` |
 
 
 

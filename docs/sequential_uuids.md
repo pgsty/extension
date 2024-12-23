@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION sequential_uuids;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0.2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `sequential_uuids_$v` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.0.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-sequential-uuids` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `sequential_uuids_$v` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.0.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-sequential-uuids` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `sequential_uuids` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add sequential_uuids
+```
 
 
 Install `sequential_uuids` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-sequential-uuids;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `sequential_uuids_17` | `sequential_uuids_16` | `sequential_uuids_15` | `sequential_uuids_14` | `sequential_uuids_13` | `sequential_uuids_12` |
-| `el9` | `sequential_uuids_17` | `sequential_uuids_16` | `sequential_uuids_15` | `sequential_uuids_14` | `sequential_uuids_13` | `sequential_uuids_12` |
-| `d12` | `postgresql-17-sequential-uuids` | `postgresql-16-sequential-uuids` | `postgresql-15-sequential-uuids` | `postgresql-14-sequential-uuids` | `postgresql-13-sequential-uuids` | `postgresql-12-sequential-uuids` |
-| `u22` | `postgresql-17-sequential-uuids` | `postgresql-16-sequential-uuids` | `postgresql-15-sequential-uuids` | `postgresql-14-sequential-uuids` | `postgresql-13-sequential-uuids` | `postgresql-12-sequential-uuids` |
-| `u24` | `postgresql-17-sequential-uuids` | `postgresql-16-sequential-uuids` | `postgresql-15-sequential-uuids` | `postgresql-14-sequential-uuids` | `postgresql-13-sequential-uuids` | `postgresql-12-sequential-uuids` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `sequential_uuids_17` | `sequential_uuids_16` | `sequential_uuids_15` | `sequential_uuids_14` | `sequential_uuids_13` |
+| `el9` | `sequential_uuids_17` | `sequential_uuids_16` | `sequential_uuids_15` | `sequential_uuids_14` | `sequential_uuids_13` |
+| `d12` | `postgresql-17-sequential-uuids` | `postgresql-16-sequential-uuids` | `postgresql-15-sequential-uuids` | `postgresql-14-sequential-uuids` | `postgresql-13-sequential-uuids` |
+| `u22` | `postgresql-17-sequential-uuids` | `postgresql-16-sequential-uuids` | `postgresql-15-sequential-uuids` | `postgresql-14-sequential-uuids` | `postgresql-13-sequential-uuids` |
+| `u24` | `postgresql-17-sequential-uuids` | `postgresql-16-sequential-uuids` | `postgresql-15-sequential-uuids` | `postgresql-14-sequential-uuids` | `postgresql-13-sequential-uuids` |
 
 
 

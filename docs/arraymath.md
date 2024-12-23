@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION arraymath;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_arraymath_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-arraymath` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_arraymath_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-arraymath` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `arraymath` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add arraymath
+```
 
 
 Install `pg_arraymath` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-pg-arraymath;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_arraymath_17*` | `pg_arraymath_16*` | `pg_arraymath_15*` | `pg_arraymath_14*` | `pg_arraymath_13*` | `pg_arraymath_12*` |
-| `el9` | `pg_arraymath_17*` | `pg_arraymath_16*` | `pg_arraymath_15*` | `pg_arraymath_14*` | `pg_arraymath_13*` | `pg_arraymath_12*` |
-| `d12` | `postgresql-17-pg-arraymath` | `postgresql-16-pg-arraymath` | `postgresql-15-pg-arraymath` | `postgresql-14-pg-arraymath` | `postgresql-13-pg-arraymath` | `postgresql-12-pg-arraymath` |
-| `u22` | `postgresql-17-pg-arraymath` | `postgresql-16-pg-arraymath` | `postgresql-15-pg-arraymath` | `postgresql-14-pg-arraymath` | `postgresql-13-pg-arraymath` | `postgresql-12-pg-arraymath` |
-| `u24` | `postgresql-17-pg-arraymath` | `postgresql-16-pg-arraymath` | `postgresql-15-pg-arraymath` | `postgresql-14-pg-arraymath` | `postgresql-13-pg-arraymath` | `postgresql-12-pg-arraymath` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_arraymath_17*` | `pg_arraymath_16*` | `pg_arraymath_15*` | `pg_arraymath_14*` | `pg_arraymath_13*` |
+| `el9` | `pg_arraymath_17*` | `pg_arraymath_16*` | `pg_arraymath_15*` | `pg_arraymath_14*` | `pg_arraymath_13*` |
+| `d12` | `postgresql-17-pg-arraymath` | `postgresql-16-pg-arraymath` | `postgresql-15-pg-arraymath` | `postgresql-14-pg-arraymath` | `postgresql-13-pg-arraymath` |
+| `u22` | `postgresql-17-pg-arraymath` | `postgresql-16-pg-arraymath` | `postgresql-15-pg-arraymath` | `postgresql-14-pg-arraymath` | `postgresql-13-pg-arraymath` |
+| `u24` | `postgresql-17-pg-arraymath` | `postgresql-16-pg-arraymath` | `postgresql-15-pg-arraymath` | `postgresql-14-pg-arraymath` | `postgresql-13-pg-arraymath` |
 
 
 

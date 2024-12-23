@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pgfaceting CASCADE;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.2.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgfaceting_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.2.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgfaceting` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.2.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgfaceting_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.2.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgfaceting` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `pgfaceting` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pgfaceting
+```
 
 
 Install `pgfaceting` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -94,13 +101,13 @@ apt install postgresql-14-pgfaceting;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgfaceting_17` | `pgfaceting_16` | `pgfaceting_15` | `pgfaceting_14` | `pgfaceting_13` | `pgfaceting_12` |
-| `el9` | `pgfaceting_17` | `pgfaceting_16` | `pgfaceting_15` | `pgfaceting_14` | `pgfaceting_13` | `pgfaceting_12` |
-| `d12` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u22` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u24` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgfaceting_17` | `pgfaceting_16` | `pgfaceting_15` | `pgfaceting_14` | `pgfaceting_13` |
+| `el9` | `pgfaceting_17` | `pgfaceting_16` | `pgfaceting_15` | `pgfaceting_14` | `pgfaceting_13` |
+| `d12` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pgfaceting` | `postgresql-16-pgfaceting` | `postgresql-15-pgfaceting` | `postgresql-14-pgfaceting` | <span class="tcred">✘</span> |
 
 
 

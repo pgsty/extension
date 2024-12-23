@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -60,11 +60,18 @@ CREATE EXTENSION pg_squeeze;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `pg_squeeze_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-squeeze` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `pg_squeeze_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-squeeze` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `pg_squeeze` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pg_squeeze
+```
 
 
 Install `pg_squeeze` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -100,13 +107,13 @@ apt install postgresql-12-squeeze;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_squeeze_17*` | `pg_squeeze_16*` | `pg_squeeze_15*` | `pg_squeeze_14*` | `pg_squeeze_13*` | `pg_squeeze_12*` |
-| `el9` | `pg_squeeze_17*` | `pg_squeeze_16*` | `pg_squeeze_15*` | `pg_squeeze_14*` | `pg_squeeze_13*` | `pg_squeeze_12*` |
-| `d12` | `postgresql-17-squeeze` | `postgresql-16-squeeze` | `postgresql-15-squeeze` | `postgresql-14-squeeze` | `postgresql-13-squeeze` | `postgresql-12-squeeze` |
-| `u22` | `postgresql-17-squeeze` | `postgresql-16-squeeze` | `postgresql-15-squeeze` | `postgresql-14-squeeze` | `postgresql-13-squeeze` | `postgresql-12-squeeze` |
-| `u24` | `postgresql-17-squeeze` | `postgresql-16-squeeze` | `postgresql-15-squeeze` | `postgresql-14-squeeze` | `postgresql-13-squeeze` | `postgresql-12-squeeze` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_squeeze_17*` | `pg_squeeze_16*` | `pg_squeeze_15*` | `pg_squeeze_14*` | `pg_squeeze_13*` |
+| `el9` | `pg_squeeze_17*` | `pg_squeeze_16*` | `pg_squeeze_15*` | `pg_squeeze_14*` | `pg_squeeze_13*` |
+| `d12` | `postgresql-17-squeeze` | `postgresql-16-squeeze` | `postgresql-15-squeeze` | `postgresql-14-squeeze` | `postgresql-13-squeeze` |
+| `u22` | `postgresql-17-squeeze` | `postgresql-16-squeeze` | `postgresql-15-squeeze` | `postgresql-14-squeeze` | `postgresql-13-squeeze` |
+| `u24` | `postgresql-17-squeeze` | `postgresql-16-squeeze` | `postgresql-15-squeeze` | `postgresql-14-squeeze` | `postgresql-13-squeeze` |
 
 
 

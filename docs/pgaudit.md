@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> | <span class="tcwarn">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -60,11 +60,18 @@ CREATE EXTENSION pgaudit;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 17.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgaudit_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 17.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgaudit` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 17.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgaudit_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 17.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgaudit` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `pgaudit` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pgaudit
+```
 
 
 Install `pgaudit` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -74,7 +81,6 @@ Install `pgaudit` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit17"]}' # pg15 @ el
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit16"]}' # pg14 @ el
 ./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit15"]}' # pg13 @ el
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit14"]}' # pg12 @ el
 ```
 
 
@@ -86,7 +92,7 @@ dnf install pgaudit_16*;
 dnf install pgaudit17_15*;
 dnf install pgaudit16_14*;
 dnf install pgaudit15_13*;
-dnf install pgaudit14_12*;
+dnf install pgaudit_12*;
 ```
 
 
@@ -104,13 +110,13 @@ apt install postgresql-12-pgaudit;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgaudit_17*` | `pgaudit_16*` | `pgaudit17_15*` | `pgaudit16_14*` | `pgaudit15_13*` | `pgaudit14_12*` |
-| `el9` | `pgaudit_17*` | `pgaudit_16*` | `pgaudit17_15*` | `pgaudit16_14*` | `pgaudit15_13*` | `pgaudit14_12*` |
-| `d12` | `postgresql-17-pgaudit` | `postgresql-16-pgaudit` | `postgresql-15-pgaudit` | `postgresql-14-pgaudit` | `postgresql-13-pgaudit` | `postgresql-12-pgaudit` |
-| `u22` | `postgresql-17-pgaudit` | `postgresql-16-pgaudit` | `postgresql-15-pgaudit` | `postgresql-14-pgaudit` | `postgresql-13-pgaudit` | `postgresql-12-pgaudit` |
-| `u24` | `postgresql-17-pgaudit` | `postgresql-16-pgaudit` | `postgresql-15-pgaudit` | `postgresql-14-pgaudit` | `postgresql-13-pgaudit` | `postgresql-12-pgaudit` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgaudit_17*` | `pgaudit_16*` | `pgaudit17_15*` | `pgaudit16_14*` | `pgaudit15_13*` |
+| `el9` | `pgaudit_17*` | `pgaudit_16*` | `pgaudit17_15*` | `pgaudit16_14*` | `pgaudit15_13*` |
+| `d12` | `postgresql-17-pgaudit` | `postgresql-16-pgaudit` | `postgresql-15-pgaudit` | `postgresql-14-pgaudit` | `postgresql-13-pgaudit` |
+| `u22` | `postgresql-17-pgaudit` | `postgresql-16-pgaudit` | `postgresql-15-pgaudit` | `postgresql-14-pgaudit` | `postgresql-13-pgaudit` |
+| `u24` | `postgresql-17-pgaudit` | `postgresql-16-pgaudit` | `postgresql-15-pgaudit` | `postgresql-14-pgaudit` | `postgresql-13-pgaudit` |
 
 
 

@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pgcryptokey CASCADE;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgcryptokey_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgcryptokey` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgcryptokey_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgcryptokey` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `pgcryptokey` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pgcryptokey
+```
 
 
 Install `pgcryptokey` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-pgcryptokey;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgcryptokey_17` | `pgcryptokey_16` | `pgcryptokey_15` | `pgcryptokey_14` | `pgcryptokey_13` | `pgcryptokey_12` |
-| `el9` | `pgcryptokey_17` | `pgcryptokey_16` | `pgcryptokey_15` | `pgcryptokey_14` | `pgcryptokey_13` | `pgcryptokey_12` |
-| `d12` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` | `postgresql-12-pgcryptokey` |
-| `u22` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` | `postgresql-12-pgcryptokey` |
-| `u24` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` | `postgresql-12-pgcryptokey` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgcryptokey_17` | `pgcryptokey_16` | `pgcryptokey_15` | `pgcryptokey_14` | `pgcryptokey_13` |
+| `el9` | `pgcryptokey_17` | `pgcryptokey_16` | `pgcryptokey_15` | `pgcryptokey_14` | `pgcryptokey_13` |
+| `d12` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` |
+| `u22` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` |
+| `u24` | `postgresql-17-pgcryptokey` | `postgresql-16-pgcryptokey` | `postgresql-15-pgcryptokey` | `postgresql-14-pgcryptokey` | `postgresql-13-pgcryptokey` |
 
 
 

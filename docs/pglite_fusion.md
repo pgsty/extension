@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -60,11 +60,18 @@ CREATE EXTENSION pglite_fusion;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.0.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pglite_fusion_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.0.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pglite-fusion` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pglite_fusion_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.0.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pglite-fusion` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `pglite_fusion` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pglite_fusion
+```
 
 
 Install `pglite_fusion` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -100,13 +107,13 @@ apt install postgresql-12-pglite-fusion;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pglite_fusion_17` | `pglite_fusion_16` | `pglite_fusion_15` | `pglite_fusion_14` | `pglite_fusion_13` | `pglite_fusion_12` |
-| `el9` | `pglite_fusion_17` | `pglite_fusion_16` | `pglite_fusion_15` | `pglite_fusion_14` | `pglite_fusion_13` | `pglite_fusion_12` |
-| `d12` | `postgresql-17-pglite-fusion` | `postgresql-16-pglite-fusion` | `postgresql-15-pglite-fusion` | `postgresql-14-pglite-fusion` | `postgresql-13-pglite-fusion` | `postgresql-12-pglite-fusion` |
-| `u22` | `postgresql-17-pglite-fusion` | `postgresql-16-pglite-fusion` | `postgresql-15-pglite-fusion` | `postgresql-14-pglite-fusion` | `postgresql-13-pglite-fusion` | `postgresql-12-pglite-fusion` |
-| `u24` | `postgresql-17-pglite-fusion` | `postgresql-16-pglite-fusion` | `postgresql-15-pglite-fusion` | `postgresql-14-pglite-fusion` | `postgresql-13-pglite-fusion` | `postgresql-12-pglite-fusion` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pglite_fusion_17` | `pglite_fusion_16` | `pglite_fusion_15` | `pglite_fusion_14` | `pglite_fusion_13` |
+| `el9` | `pglite_fusion_17` | `pglite_fusion_16` | `pglite_fusion_15` | `pglite_fusion_14` | `pglite_fusion_13` |
+| `d12` | `postgresql-17-pglite-fusion` | `postgresql-16-pglite-fusion` | `postgresql-15-pglite-fusion` | `postgresql-14-pglite-fusion` | `postgresql-13-pglite-fusion` |
+| `u22` | `postgresql-17-pglite-fusion` | `postgresql-16-pglite-fusion` | `postgresql-15-pglite-fusion` | `postgresql-14-pglite-fusion` | `postgresql-13-pglite-fusion` |
+| `u24` | `postgresql-17-pglite-fusion` | `postgresql-16-pglite-fusion` | `postgresql-15-pglite-fusion` | `postgresql-14-pglite-fusion` | `postgresql-13-pglite-fusion` |
 
 
 

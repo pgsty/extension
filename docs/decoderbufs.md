@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -52,11 +52,18 @@
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgres-decoderbufs_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-decoderbufs` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgres-decoderbufs_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-decoderbufs` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `decoderbufs` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add decoderbufs
+```
 
 
 Install `decoderbufs` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -92,13 +99,13 @@ apt install postgresql-12-decoderbufs;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `postgres-decoderbufs_17*` | `postgres-decoderbufs_16*` | `postgres-decoderbufs_15*` | `postgres-decoderbufs_14*` | `postgres-decoderbufs_13*` | `postgres-decoderbufs_12*` |
-| `el9` | `postgres-decoderbufs_17*` | `postgres-decoderbufs_16*` | `postgres-decoderbufs_15*` | `postgres-decoderbufs_14*` | `postgres-decoderbufs_13*` | `postgres-decoderbufs_12*` |
-| `d12` | `postgresql-17-decoderbufs` | `postgresql-16-decoderbufs` | `postgresql-15-decoderbufs` | `postgresql-14-decoderbufs` | `postgresql-13-decoderbufs` | `postgresql-12-decoderbufs` |
-| `u22` | `postgresql-17-decoderbufs` | `postgresql-16-decoderbufs` | `postgresql-15-decoderbufs` | `postgresql-14-decoderbufs` | `postgresql-13-decoderbufs` | `postgresql-12-decoderbufs` |
-| `u24` | `postgresql-17-decoderbufs` | `postgresql-16-decoderbufs` | `postgresql-15-decoderbufs` | `postgresql-14-decoderbufs` | `postgresql-13-decoderbufs` | `postgresql-12-decoderbufs` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `postgres-decoderbufs_17*` | `postgres-decoderbufs_16*` | `postgres-decoderbufs_15*` | `postgres-decoderbufs_14*` | `postgres-decoderbufs_13*` |
+| `el9` | `postgres-decoderbufs_17*` | `postgres-decoderbufs_16*` | `postgres-decoderbufs_15*` | `postgres-decoderbufs_14*` | `postgres-decoderbufs_13*` |
+| `d12` | `postgresql-17-decoderbufs` | `postgresql-16-decoderbufs` | `postgresql-15-decoderbufs` | `postgresql-14-decoderbufs` | `postgresql-13-decoderbufs` |
+| `u22` | `postgresql-17-decoderbufs` | `postgresql-16-decoderbufs` | `postgresql-15-decoderbufs` | `postgresql-14-decoderbufs` | `postgresql-13-decoderbufs` |
+| `u24` | `postgresql-17-decoderbufs` | `postgresql-16-decoderbufs` | `postgresql-15-decoderbufs` | `postgresql-14-decoderbufs` | `postgresql-13-decoderbufs` |
 
 
 

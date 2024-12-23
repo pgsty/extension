@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pg_jsonschema;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_jsonschema_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-jsonschema` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_jsonschema_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.3.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-jsonschema` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `pg_jsonschema` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pg_jsonschema
+```
 
 
 Install `pg_jsonschema` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-pg-jsonschema;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_jsonschema_17` | `pg_jsonschema_16` | `pg_jsonschema_15` | `pg_jsonschema_14` | `pg_jsonschema_13` | `pg_jsonschema_12` |
-| `el9` | `pg_jsonschema_17` | `pg_jsonschema_16` | `pg_jsonschema_15` | `pg_jsonschema_14` | `pg_jsonschema_13` | `pg_jsonschema_12` |
-| `d12` | `postgresql-17-pg-jsonschema` | `postgresql-16-pg-jsonschema` | `postgresql-15-pg-jsonschema` | `postgresql-14-pg-jsonschema` | `postgresql-13-pg-jsonschema` | `postgresql-12-pg-jsonschema` |
-| `u22` | `postgresql-17-pg-jsonschema` | `postgresql-16-pg-jsonschema` | `postgresql-15-pg-jsonschema` | `postgresql-14-pg-jsonschema` | `postgresql-13-pg-jsonschema` | `postgresql-12-pg-jsonschema` |
-| `u24` | `postgresql-17-pg-jsonschema` | `postgresql-16-pg-jsonschema` | `postgresql-15-pg-jsonschema` | `postgresql-14-pg-jsonschema` | `postgresql-13-pg-jsonschema` | `postgresql-12-pg-jsonschema` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_jsonschema_17` | `pg_jsonschema_16` | `pg_jsonschema_15` | `pg_jsonschema_14` | `pg_jsonschema_13` |
+| `el9` | `pg_jsonschema_17` | `pg_jsonschema_16` | `pg_jsonschema_15` | `pg_jsonschema_14` | `pg_jsonschema_13` |
+| `d12` | `postgresql-17-pg-jsonschema` | `postgresql-16-pg-jsonschema` | `postgresql-15-pg-jsonschema` | `postgresql-14-pg-jsonschema` | `postgresql-13-pg-jsonschema` |
+| `u22` | `postgresql-17-pg-jsonschema` | `postgresql-16-pg-jsonschema` | `postgresql-15-pg-jsonschema` | `postgresql-14-pg-jsonschema` | `postgresql-13-pg-jsonschema` |
+| `u24` | `postgresql-17-pg-jsonschema` | `postgresql-16-pg-jsonschema` | `postgresql-15-pg-jsonschema` | `postgresql-14-pg-jsonschema` | `postgresql-13-pg-jsonschema` |
 
 
 

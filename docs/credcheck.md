@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION credcheck;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.8.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `credcheck_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 2.8.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-credcheck` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 2.8.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `credcheck_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.8.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-credcheck` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `credcheck` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add credcheck
+```
 
 
 Install `credcheck` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-credcheck;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `credcheck_17*` | `credcheck_16*` | `credcheck_15*` | `credcheck_14*` | `credcheck_13*` | `credcheck_12*` |
-| `el9` | `credcheck_17*` | `credcheck_16*` | `credcheck_15*` | `credcheck_14*` | `credcheck_13*` | `credcheck_12*` |
-| `d12` | `postgresql-17-credcheck` | `postgresql-16-credcheck` | `postgresql-15-credcheck` | `postgresql-14-credcheck` | `postgresql-13-credcheck` | `postgresql-12-credcheck` |
-| `u22` | `postgresql-17-credcheck` | `postgresql-16-credcheck` | `postgresql-15-credcheck` | `postgresql-14-credcheck` | `postgresql-13-credcheck` | `postgresql-12-credcheck` |
-| `u24` | `postgresql-17-credcheck` | `postgresql-16-credcheck` | `postgresql-15-credcheck` | `postgresql-14-credcheck` | `postgresql-13-credcheck` | `postgresql-12-credcheck` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `credcheck_17*` | `credcheck_16*` | `credcheck_15*` | `credcheck_14*` | `credcheck_13*` |
+| `el9` | `credcheck_17*` | `credcheck_16*` | `credcheck_15*` | `credcheck_14*` | `credcheck_13*` |
+| `d12` | `postgresql-17-credcheck` | `postgresql-16-credcheck` | `postgresql-15-credcheck` | `postgresql-14-credcheck` | `postgresql-13-credcheck` |
+| `u22` | `postgresql-17-credcheck` | `postgresql-16-credcheck` | `postgresql-15-credcheck` | `postgresql-14-credcheck` | `postgresql-13-credcheck` |
+| `u24` | `postgresql-17-credcheck` | `postgresql-16-credcheck` | `postgresql-15-credcheck` | `postgresql-14-credcheck` | `postgresql-13-credcheck` |
 
 
 

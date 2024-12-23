@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pgroonga;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.2.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgroonga_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | `groonga-libs` |
-| [DEB](/deb) | 3.2.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgdg-pgroonga` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | `libgroonga0` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 3.2.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgroonga_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `groonga-libs` |
+| [DEB](/deb) | 3.2.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgdg-pgroonga` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libgroonga0` |
 
+
+
+Install `pgroonga` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pgroonga
+```
 
 
 Install `pgroonga` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -95,13 +102,13 @@ apt install postgresql-12-pgdg-pgroonga;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgroonga_17*` | `pgroonga_16*` | `pgroonga_15*` | `pgroonga_14*` | `pgroonga_13*` | <span class="tcred">✘</span> |
-| `el9` | `pgroonga_17*` | `pgroonga_16*` | `pgroonga_15*` | `pgroonga_14*` | `pgroonga_13*` | <span class="tcred">✘</span> |
-| `d12` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` | `postgresql-12-pgdg-pgroonga` |
-| `u22` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` | `postgresql-12-pgdg-pgroonga` |
-| `u24` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` | `postgresql-12-pgdg-pgroonga` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgroonga_17*` | `pgroonga_16*` | `pgroonga_15*` | `pgroonga_14*` | `pgroonga_13*` |
+| `el9` | `pgroonga_17*` | `pgroonga_16*` | `pgroonga_15*` | `pgroonga_14*` | `pgroonga_13*` |
+| `d12` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` |
+| `u22` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` |
+| `u24` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` |
 
 
 

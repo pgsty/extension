@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ shared_preload_libraries = 'pg_statement_rollback'; # add this extension to post
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `pg_statement_rollback_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-statement-rollback` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `pg_statement_rollback_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-statement-rollback` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `pg_statement_rollback` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pg_statement_rollback
+```
 
 
 Install `pg_statement_rollback` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-pg-statement-rollback;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_statement_rollback_17*` | `pg_statement_rollback_16*` | `pg_statement_rollback_15*` | `pg_statement_rollback_14*` | `pg_statement_rollback_13*` | `pg_statement_rollback_12*` |
-| `el9` | `pg_statement_rollback_17*` | `pg_statement_rollback_16*` | `pg_statement_rollback_15*` | `pg_statement_rollback_14*` | `pg_statement_rollback_13*` | `pg_statement_rollback_12*` |
-| `d12` | `postgresql-17-pg-statement-rollback` | `postgresql-16-pg-statement-rollback` | `postgresql-15-pg-statement-rollback` | `postgresql-14-pg-statement-rollback` | `postgresql-13-pg-statement-rollback` | `postgresql-12-pg-statement-rollback` |
-| `u22` | `postgresql-17-pg-statement-rollback` | `postgresql-16-pg-statement-rollback` | `postgresql-15-pg-statement-rollback` | `postgresql-14-pg-statement-rollback` | `postgresql-13-pg-statement-rollback` | `postgresql-12-pg-statement-rollback` |
-| `u24` | `postgresql-17-pg-statement-rollback` | `postgresql-16-pg-statement-rollback` | `postgresql-15-pg-statement-rollback` | `postgresql-14-pg-statement-rollback` | `postgresql-13-pg-statement-rollback` | `postgresql-12-pg-statement-rollback` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_statement_rollback_17*` | `pg_statement_rollback_16*` | `pg_statement_rollback_15*` | `pg_statement_rollback_14*` | `pg_statement_rollback_13*` |
+| `el9` | `pg_statement_rollback_17*` | `pg_statement_rollback_16*` | `pg_statement_rollback_15*` | `pg_statement_rollback_14*` | `pg_statement_rollback_13*` |
+| `d12` | `postgresql-17-pg-statement-rollback` | `postgresql-16-pg-statement-rollback` | `postgresql-15-pg-statement-rollback` | `postgresql-14-pg-statement-rollback` | `postgresql-13-pg-statement-rollback` |
+| `u22` | `postgresql-17-pg-statement-rollback` | `postgresql-16-pg-statement-rollback` | `postgresql-15-pg-statement-rollback` | `postgresql-14-pg-statement-rollback` | `postgresql-13-pg-statement-rollback` |
+| `u24` | `postgresql-17-pg-statement-rollback` | `postgresql-16-pg-statement-rollback` | `postgresql-15-pg-statement-rollback` | `postgresql-14-pg-statement-rollback` | `postgresql-13-pg-statement-rollback` |
 
 
 

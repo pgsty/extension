@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pg_auth_mon;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pg_auth_mon_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-auth-mon` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pg_auth_mon_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-auth-mon` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `pg_auth_mon` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pg_auth_mon
+```
 
 
 Install `pg_auth_mon` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-pg-auth-mon;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_auth_mon_17*` | `pg_auth_mon_16*` | `pg_auth_mon_15*` | `pg_auth_mon_14*` | `pg_auth_mon_13*` | `pg_auth_mon_12*` |
-| `el9` | `pg_auth_mon_17*` | `pg_auth_mon_16*` | `pg_auth_mon_15*` | `pg_auth_mon_14*` | `pg_auth_mon_13*` | `pg_auth_mon_12*` |
-| `d12` | `postgresql-17-pg-auth-mon` | `postgresql-16-pg-auth-mon` | `postgresql-15-pg-auth-mon` | `postgresql-14-pg-auth-mon` | `postgresql-13-pg-auth-mon` | `postgresql-12-pg-auth-mon` |
-| `u22` | `postgresql-17-pg-auth-mon` | `postgresql-16-pg-auth-mon` | `postgresql-15-pg-auth-mon` | `postgresql-14-pg-auth-mon` | `postgresql-13-pg-auth-mon` | `postgresql-12-pg-auth-mon` |
-| `u24` | `postgresql-17-pg-auth-mon` | `postgresql-16-pg-auth-mon` | `postgresql-15-pg-auth-mon` | `postgresql-14-pg-auth-mon` | `postgresql-13-pg-auth-mon` | `postgresql-12-pg-auth-mon` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_auth_mon_17*` | `pg_auth_mon_16*` | `pg_auth_mon_15*` | `pg_auth_mon_14*` | `pg_auth_mon_13*` |
+| `el9` | `pg_auth_mon_17*` | `pg_auth_mon_16*` | `pg_auth_mon_15*` | `pg_auth_mon_14*` | `pg_auth_mon_13*` |
+| `d12` | `postgresql-17-pg-auth-mon` | `postgresql-16-pg-auth-mon` | `postgresql-15-pg-auth-mon` | `postgresql-14-pg-auth-mon` | `postgresql-13-pg-auth-mon` |
+| `u22` | `postgresql-17-pg-auth-mon` | `postgresql-16-pg-auth-mon` | `postgresql-15-pg-auth-mon` | `postgresql-14-pg-auth-mon` | `postgresql-13-pg-auth-mon` |
+| `u24` | `postgresql-17-pg-auth-mon` | `postgresql-16-pg-auth-mon` | `postgresql-15-pg-auth-mon` | `postgresql-14-pg-auth-mon` | `postgresql-13-pg-auth-mon` |
 
 
 

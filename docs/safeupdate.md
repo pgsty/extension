@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -52,11 +52,18 @@
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `safeupdate_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-safeupdate` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `safeupdate_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-safeupdate` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `safeupdate` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add safeupdate
+```
 
 
 Install `safeupdate` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -90,13 +97,13 @@ apt install postgresql-14-pg-safeupdate;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `safeupdate_17*` | `safeupdate_16*` | `safeupdate_15*` | `safeupdate_14*` | `safeupdate_13*` | `safeupdate_12*` |
-| `el9` | `safeupdate_17*` | `safeupdate_16*` | `safeupdate_15*` | `safeupdate_14*` | `safeupdate_13*` | `safeupdate_12*` |
-| `d12` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u22` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `u24` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `safeupdate_17*` | `safeupdate_16*` | `safeupdate_15*` | `safeupdate_14*` | `safeupdate_13*` |
+| `el9` | `safeupdate_17*` | `safeupdate_16*` | `safeupdate_15*` | `safeupdate_14*` | `safeupdate_13*` |
+| `d12` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pg-safeupdate` | `postgresql-16-pg-safeupdate` | `postgresql-15-pg-safeupdate` | `postgresql-14-pg-safeupdate` | <span class="tcred">✘</span> |
 
 
 

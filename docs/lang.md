@@ -54,7 +54,6 @@ pg16: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava 
 pg15: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
 pg14: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
 pg13: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
-pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
 ```
 
 
@@ -66,7 +65,6 @@ pg16: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #
 pg15: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 pg14: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 pg13: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
-pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 ```
 
 
@@ -78,7 +76,6 @@ pg16: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #
 pg15: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 pg14: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 pg13: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
-pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 ```
 
 
@@ -90,7 +87,6 @@ pg16: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #
 pg15: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 pg14: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 pg13: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
-pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 ```
 
 
@@ -102,7 +98,6 @@ pg16: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #
 pg15: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 pg14: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 pg13: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
-pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 ```
 
 
@@ -112,26 +107,26 @@ pg12: pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #
 ## RPM Packages
 
 
-| Package | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | 12 | Description |
-|---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|-------------|
-| [pg_tle](/pg_tle) | 1.2.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_tle_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Trusted Language Extensions for PostgreSQL |
-| [plv8](/plv8) | 3.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `plv8_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | PL/JavaScript (v8) trusted procedural language |
-| [pllua](/pllua) | 2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pllua_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Lua as a procedural language |
-| [plprql](/plprql) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `plprql_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Use PRQL in PostgreSQL - Pipelined Relational Query Language |
-| [pldebugger](/pldbgapi) | 1.1 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `pldebugger_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | server-side support for debugging PL/pgSQL functions |
-| [plpgsql_check](/plpgsql_check) | 2.7 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `plpgsql_check_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | extended check for plpgsql functions |
-| [plprofiler](/plprofiler) | 4.2 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `plprofiler_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | server-side support for profiling PL/pgSQL functions |
-| [plsh](/plsh) | 2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `plsh_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PL/sh procedural language |
-| [pljava](/pljava) | 1.6.8 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pljava_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PL/Java procedural language (https://tada.github.io/pljava/) |
-| [plr](/plr) | 8.4.6 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `plr_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | load R interpreter and execute R script from within a database |
-| [pgtap](/pgtap) | 1.3.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgtap_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Unit testing for PostgreSQL |
-| [faker](/faker) | 0.5.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql_faker_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Wrapper for the Faker Python library |
-| [dbt2](/dbt2) | 0.45.0 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `dbt2-pg$v-extensions*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | OSDL-DBT-2 test kit |
-| [pltcl](/pltcl) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/Tcl procedural language |
-| [plperl](/plperl) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/Perl procedural language |
-| [plperlu](/plperlu) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/PerlU untrusted procedural language |
-| [plpgsql](/plpgsql) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/pgSQL procedural language |
-| [plpython3u](/plpython3u) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/Python3U untrusted procedural language |
+| Package | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | Description |
+|---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
+| [pg_tle](/pg_tle) | 1.2.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_tle_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Trusted Language Extensions for PostgreSQL |
+| [plv8](/plv8) | 3.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `plv8_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | PL/JavaScript (v8) trusted procedural language |
+| [pllua](/pllua) | 2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pllua_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Lua as a procedural language |
+| [plprql](/plprql) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `plprql_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Use PRQL in PostgreSQL - Pipelined Relational Query Language |
+| [pldebugger](/pldbgapi) | 1.1 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `pldebugger_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | server-side support for debugging PL/pgSQL functions |
+| [plpgsql_check](/plpgsql_check) | 2.7 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `plpgsql_check_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | extended check for plpgsql functions |
+| [plprofiler](/plprofiler) | 4.2 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `plprofiler_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | server-side support for profiling PL/pgSQL functions |
+| [plsh](/plsh) | 2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `plsh_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PL/sh procedural language |
+| [pljava](/pljava) | 1.6.8 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pljava_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PL/Java procedural language (https://tada.github.io/pljava/) |
+| [plr](/plr) | 8.4.6 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `plr_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | load R interpreter and execute R script from within a database |
+| [pgtap](/pgtap) | 1.3.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgtap_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Unit testing for PostgreSQL |
+| [faker](/faker) | 0.5.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql_faker_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Wrapper for the Faker Python library |
+| [dbt2](/dbt2) | 0.45.0 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `dbt2-pg$v-extensions*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | OSDL-DBT-2 test kit |
+| [pltcl](/pltcl) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/Tcl procedural language |
+| [plperl](/plperl) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/Perl procedural language |
+| [plperlu](/plperlu) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/PerlU untrusted procedural language |
+| [plpgsql](/plpgsql) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/pgSQL procedural language |
+| [plpython3u](/plpython3u) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/Python3U untrusted procedural language |
 
 
 
@@ -143,7 +138,6 @@ pg16: pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* p
 pg15: pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* #pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
 pg14: pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* #pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
 pg13: pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* #pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
-pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* #pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
 ```
 
 
@@ -155,7 +149,6 @@ pg16: pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* p
 pg15: pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
 pg14: pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
 pg13: pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
-pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* plprofiler_12* plsh_12* pljava_12* #plr_12* #pgtap_12* #postgresql_faker_12* #dbt2-pg12-extensions*
 ```
 
 
@@ -165,24 +158,24 @@ pg12: pg_tle_12* plv8_12* pllua_12* plprql_12 pldebugger_12* plpgsql_check_12* p
 ## DEB Packages
 
 
-| Package | Version | License | DEB | DEB Package | 17 | 16 | 15 | 14 | 13 | 12 | Description |
-|---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|:--:|-------------|
-| [pg_tle](/pg_tle) | 1.4.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-tle` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Trusted Language Extensions for PostgreSQL |
-| [plv8](/plv8) | 3.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-plv8` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | PL/JavaScript (v8) trusted procedural language |
-| [pllua](/pllua) | 2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pllua` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Lua as a procedural language |
-| [plprql](/plprql) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-plprql` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Use PRQL in PostgreSQL - Pipelined Relational Query Language |
-| [pldebugger](/pldbgapi) | 1.1 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pldebugger` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | server-side support for debugging PL/pgSQL functions |
-| [plpgsql_check](/plpgsql_check) | 2.7 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plpgsql-check` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | extended check for plpgsql functions |
-| [plprofiler](/plprofiler) | 4.2 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plprofiler` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | server-side support for profiling PL/pgSQL functions |
-| [plsh](/plsh) | 2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plsh` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PL/sh procedural language |
-| [pljava](/pljava) | 1.6.8 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pljava` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PL/Java procedural language (https://tada.github.io/pljava/) |
-| [plr](/plr) | 8.4.6 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plr` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | load R interpreter and execute R script from within a database |
-| [pgtap](/pgtap) | 1.3.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgtap` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Unit testing for PostgreSQL |
-| [pltcl](/pltcl) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/Tcl procedural language |
-| [plperl](/plperl) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/Perl procedural language |
-| [plperlu](/plperlu) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/PerlU untrusted procedural language |
-| [plpgsql](/plpgsql) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/pgSQL procedural language |
-| [plpython3u](/plpython3u) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/Python3U untrusted procedural language |
+| Package | Version | License | DEB | DEB Package | 17 | 16 | 15 | 14 | 13 | Description |
+|---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
+| [pg_tle](/pg_tle) | 1.4.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-tle` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Trusted Language Extensions for PostgreSQL |
+| [plv8](/plv8) | 3.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-plv8` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | PL/JavaScript (v8) trusted procedural language |
+| [pllua](/pllua) | 2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pllua` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Lua as a procedural language |
+| [plprql](/plprql) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-plprql` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Use PRQL in PostgreSQL - Pipelined Relational Query Language |
+| [pldebugger](/pldbgapi) | 1.1 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pldebugger` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | server-side support for debugging PL/pgSQL functions |
+| [plpgsql_check](/plpgsql_check) | 2.7 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plpgsql-check` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | extended check for plpgsql functions |
+| [plprofiler](/plprofiler) | 4.2 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plprofiler` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | server-side support for profiling PL/pgSQL functions |
+| [plsh](/plsh) | 2 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plsh` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PL/sh procedural language |
+| [pljava](/pljava) | 1.6.8 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pljava` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PL/Java procedural language (https://tada.github.io/pljava/) |
+| [plr](/plr) | 8.4.6 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-plr` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | load R interpreter and execute R script from within a database |
+| [pgtap](/pgtap) | 1.3.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgtap` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Unit testing for PostgreSQL |
+| [pltcl](/pltcl) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/Tcl procedural language |
+| [plperl](/plperl) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/Perl procedural language |
+| [plperlu](/plperlu) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/PerlU untrusted procedural language |
+| [plpgsql](/plpgsql) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/pgSQL procedural language |
+| [plpython3u](/plpython3u) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | PL/Python3U untrusted procedural language |
 
 
 
@@ -194,7 +187,6 @@ pg16: postgresql-16-pg-tle postgresql-16-plv8 postgresql-16-pllua postgresql-16-
 pg15: postgresql-15-pg-tle postgresql-15-plv8 postgresql-15-pllua postgresql-15-plprql postgresql-15-pldebugger postgresql-15-plpgsql-check postgresql-15-plprofiler postgresql-15-plsh postgresql-15-pljava #postgresql-15-plr #postgresql-15-pgtap
 pg14: postgresql-14-pg-tle postgresql-14-plv8 postgresql-14-pllua postgresql-14-plprql postgresql-14-pldebugger postgresql-14-plpgsql-check postgresql-14-plprofiler postgresql-14-plsh postgresql-14-pljava #postgresql-14-plr #postgresql-14-pgtap
 pg13: postgresql-13-pg-tle postgresql-13-plv8 postgresql-13-pllua postgresql-13-plprql postgresql-13-pldebugger postgresql-13-plpgsql-check postgresql-13-plprofiler postgresql-13-plsh postgresql-13-pljava #postgresql-13-plr #postgresql-13-pgtap
-pg12: postgresql-12-pg-tle postgresql-12-plv8 postgresql-12-pllua postgresql-12-plprql postgresql-12-pldebugger postgresql-12-plpgsql-check postgresql-12-plprofiler postgresql-12-plsh postgresql-12-pljava #postgresql-12-plr #postgresql-12-pgtap
 ```
 
 
@@ -206,7 +198,6 @@ pg16: postgresql-16-pg-tle postgresql-16-plv8 postgresql-16-pllua postgresql-16-
 pg15: postgresql-15-pg-tle postgresql-15-plv8 postgresql-15-pllua postgresql-15-plprql postgresql-15-pldebugger postgresql-15-plpgsql-check postgresql-15-plprofiler postgresql-15-plsh postgresql-15-pljava #postgresql-15-plr #postgresql-15-pgtap
 pg14: postgresql-14-pg-tle postgresql-14-plv8 postgresql-14-pllua postgresql-14-plprql postgresql-14-pldebugger postgresql-14-plpgsql-check postgresql-14-plprofiler postgresql-14-plsh postgresql-14-pljava #postgresql-14-plr #postgresql-14-pgtap
 pg13: postgresql-13-pg-tle postgresql-13-plv8 postgresql-13-pllua postgresql-13-plprql postgresql-13-pldebugger postgresql-13-plpgsql-check postgresql-13-plprofiler postgresql-13-plsh postgresql-13-pljava #postgresql-13-plr #postgresql-13-pgtap
-pg12: postgresql-12-pg-tle postgresql-12-plv8 postgresql-12-pllua postgresql-12-plprql postgresql-12-pldebugger postgresql-12-plpgsql-check postgresql-12-plprofiler postgresql-12-plsh postgresql-12-pljava #postgresql-12-plr #postgresql-12-pgtap
 ```
 
 
@@ -218,7 +209,6 @@ pg16: postgresql-16-pg-tle postgresql-16-plv8 postgresql-16-pllua postgresql-16-
 pg15: postgresql-15-pg-tle postgresql-15-plv8 postgresql-15-pllua postgresql-15-plprql postgresql-15-pldebugger postgresql-15-plpgsql-check postgresql-15-plprofiler postgresql-15-plsh postgresql-15-pljava #postgresql-15-plr #postgresql-15-pgtap
 pg14: postgresql-14-pg-tle postgresql-14-plv8 postgresql-14-pllua postgresql-14-plprql postgresql-14-pldebugger postgresql-14-plpgsql-check postgresql-14-plprofiler postgresql-14-plsh postgresql-14-pljava #postgresql-14-plr #postgresql-14-pgtap
 pg13: postgresql-13-pg-tle postgresql-13-plv8 postgresql-13-pllua postgresql-13-plprql postgresql-13-pldebugger postgresql-13-plpgsql-check postgresql-13-plprofiler postgresql-13-plsh postgresql-13-pljava #postgresql-13-plr #postgresql-13-pgtap
-pg12: postgresql-12-pg-tle postgresql-12-plv8 postgresql-12-pllua postgresql-12-plprql postgresql-12-pldebugger postgresql-12-plpgsql-check postgresql-12-plprofiler postgresql-12-plsh postgresql-12-pljava #postgresql-12-plr #postgresql-12-pgtap
 ```
 
 

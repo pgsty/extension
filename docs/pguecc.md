@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pguecc;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_ecdsa_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-ecdsa` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_ecdsa_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-ecdsa` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `pguecc` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pguecc
+```
 
 
 Install `pg_ecdsa` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-pg-ecdsa;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_ecdsa_17*` | `pg_ecdsa_16*` | `pg_ecdsa_15*` | `pg_ecdsa_14*` | `pg_ecdsa_13*` | `pg_ecdsa_12*` |
-| `el9` | `pg_ecdsa_17*` | `pg_ecdsa_16*` | `pg_ecdsa_15*` | `pg_ecdsa_14*` | `pg_ecdsa_13*` | `pg_ecdsa_12*` |
-| `d12` | `postgresql-17-pg-ecdsa` | `postgresql-16-pg-ecdsa` | `postgresql-15-pg-ecdsa` | `postgresql-14-pg-ecdsa` | `postgresql-13-pg-ecdsa` | `postgresql-12-pg-ecdsa` |
-| `u22` | `postgresql-17-pg-ecdsa` | `postgresql-16-pg-ecdsa` | `postgresql-15-pg-ecdsa` | `postgresql-14-pg-ecdsa` | `postgresql-13-pg-ecdsa` | `postgresql-12-pg-ecdsa` |
-| `u24` | `postgresql-17-pg-ecdsa` | `postgresql-16-pg-ecdsa` | `postgresql-15-pg-ecdsa` | `postgresql-14-pg-ecdsa` | `postgresql-13-pg-ecdsa` | `postgresql-12-pg-ecdsa` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_ecdsa_17*` | `pg_ecdsa_16*` | `pg_ecdsa_15*` | `pg_ecdsa_14*` | `pg_ecdsa_13*` |
+| `el9` | `pg_ecdsa_17*` | `pg_ecdsa_16*` | `pg_ecdsa_15*` | `pg_ecdsa_14*` | `pg_ecdsa_13*` |
+| `d12` | `postgresql-17-pg-ecdsa` | `postgresql-16-pg-ecdsa` | `postgresql-15-pg-ecdsa` | `postgresql-14-pg-ecdsa` | `postgresql-13-pg-ecdsa` |
+| `u22` | `postgresql-17-pg-ecdsa` | `postgresql-16-pg-ecdsa` | `postgresql-15-pg-ecdsa` | `postgresql-14-pg-ecdsa` | `postgresql-13-pg-ecdsa` |
+| `u24` | `postgresql-17-pg-ecdsa` | `postgresql-16-pg-ecdsa` | `postgresql-15-pg-ecdsa` | `postgresql-14-pg-ecdsa` | `postgresql-13-pg-ecdsa` |
 
 
 

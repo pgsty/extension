@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION firebird_fdw;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.4.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `firebird_fdw_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libfq` |
-| [DEB](/deb) | 1.4.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-firebird-fdw` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libfq` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.4.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `firebird_fdw_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libfq` |
+| [DEB](/deb) | 1.4.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-firebird-fdw` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libfq` |
 
+
+
+Install `firebird_fdw` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add firebird_fdw
+```
 
 
 Install `firebird_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-firebird-fdw;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `firebird_fdw_17` | `firebird_fdw_16` | `firebird_fdw_15` | `firebird_fdw_14` | `firebird_fdw_13` | `firebird_fdw_12` |
-| `el9` | `firebird_fdw_17` | `firebird_fdw_16` | `firebird_fdw_15` | `firebird_fdw_14` | `firebird_fdw_13` | `firebird_fdw_12` |
-| `d12` | `postgresql-17-firebird-fdw` | `postgresql-16-firebird-fdw` | `postgresql-15-firebird-fdw` | `postgresql-14-firebird-fdw` | `postgresql-13-firebird-fdw` | `postgresql-12-firebird-fdw` |
-| `u22` | `postgresql-17-firebird-fdw` | `postgresql-16-firebird-fdw` | `postgresql-15-firebird-fdw` | `postgresql-14-firebird-fdw` | `postgresql-13-firebird-fdw` | `postgresql-12-firebird-fdw` |
-| `u24` | `postgresql-17-firebird-fdw` | `postgresql-16-firebird-fdw` | `postgresql-15-firebird-fdw` | `postgresql-14-firebird-fdw` | `postgresql-13-firebird-fdw` | `postgresql-12-firebird-fdw` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `firebird_fdw_17` | `firebird_fdw_16` | `firebird_fdw_15` | `firebird_fdw_14` | `firebird_fdw_13` |
+| `el9` | `firebird_fdw_17` | `firebird_fdw_16` | `firebird_fdw_15` | `firebird_fdw_14` | `firebird_fdw_13` |
+| `d12` | `postgresql-17-firebird-fdw` | `postgresql-16-firebird-fdw` | `postgresql-15-firebird-fdw` | `postgresql-14-firebird-fdw` | `postgresql-13-firebird-fdw` |
+| `u22` | `postgresql-17-firebird-fdw` | `postgresql-16-firebird-fdw` | `postgresql-15-firebird-fdw` | `postgresql-14-firebird-fdw` | `postgresql-13-firebird-fdw` |
+| `u24` | `postgresql-17-firebird-fdw` | `postgresql-16-firebird-fdw` | `postgresql-15-firebird-fdw` | `postgresql-14-firebird-fdw` | `postgresql-13-firebird-fdw` |
 
 
 

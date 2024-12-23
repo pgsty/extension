@@ -13,7 +13,7 @@ CATE_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'data', 'category.csv
 DOCS_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'docs'))
 STUB_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'stub'))
 
-PG_VERS = ['17', '16', '15', '14', '13', '12']
+PG_VERS = ['17', '16', '15', '14', '13']
 DISTROS = ['el8', 'el9', 'd12', 'u22', 'u24']
 DEB_OS = ['d12', 'u22', 'u24']
 RPM_OS = ['el8', 'el9']
@@ -168,13 +168,11 @@ COLS = {
     "r15":        {'header': '15'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['rpm_repo'], BLUE_CHECK) if '15' in row['rpm_pg'] else '' },
     "r14":        {'header': '14'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['rpm_repo'], BLUE_CHECK) if '14' in row['rpm_pg'] else '' },
     "r13":        {'header': '13'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['rpm_repo'], BLUE_CHECK) if '13' in row['rpm_pg'] else '' },
-    "r12":        {'header': '12'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['rpm_repo'], BLUE_CHECK) if '12' in row['rpm_pg'] else '' },
     "d17":        {'header': '17'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if '17' in row['deb_pg'] else '' },
     "d16":        {'header': '16'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if '16' in row['deb_pg'] else '' },
     "d15":        {'header': '15'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if '15' in row['deb_pg'] else '' },
     "d14":        {'header': '14'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if '14' in row['deb_pg'] else '' },
     "d13":        {'header': '13'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if '13' in row['deb_pg'] else '' },
-    "d12":        {'header': '12'         ,"center": True,  "func": lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if '12' in row['deb_pg'] else '' },
     "bin":        {'header': '`Bin`'      ,'center': True,  'func': lambda row: REPO_CHECK_COLOR.get(row['deb_repo'], BLUE_CHECK) if row['utility'] else ''   },
     "load":       {'header': '`LOAD`'     ,"center": True,  "func": lambda row: '' if row['need_load'] is None else (RED_EXCLAM if row['need_load'] else '' ) },
     "ddl":        {'header': '`DDL`'      ,"center": True,  "func": lambda row: '' if row['need_ddl' ] is None else (BLUE_CHECK if row['need_ddl' ] else WARN_CROSS) },
@@ -253,7 +251,6 @@ def load_data(filepath=DATA_PATH):
             row['has_rpm'] = True if row['rpm_repo'] else False
             row['has_deb'] = True if row['deb_repo'] else False
             row['has_both'] = True if row['deb_repo'] and row['deb_repo'] else False
-            row['pg12'] = True if '12' in row['pg_ver'] else False
             row['pg13'] = True if '13' in row['pg_ver'] else False
             row['pg14'] = True if '14' in row['pg_ver'] else False
             row['pg15'] = True if '15' in row['pg_ver'] else False
@@ -301,7 +298,6 @@ def stat_data(data):
     res["rpm_ext"]["contrib"]= len([i['name'] for i in data if i['contrib'] ])
     res["rpm_ext"]["misc"]   = len([i['name'] for i in data if i['has_rpm'] and i['rpm_misc']])
     res["rpm_ext"]["miss"]   = len([i['name'] for i in data if not i['has_rpm']])
-    res["rpm_ext"]["pg12"]   = len([i['name'] for i in data if i['has_rpm'] and '12' in i['rpm_pg'] ])
     res["rpm_ext"]["pg13"]   = len([i['name'] for i in data if i['has_rpm'] and '13' in i['rpm_pg'] ])
     res["rpm_ext"]["pg14"]   = len([i['name'] for i in data if i['has_rpm'] and '14' in i['rpm_pg'] ])
     res["rpm_ext"]["pg15"]   = len([i['name'] for i in data if i['has_rpm'] and '15' in i['rpm_pg'] ])
@@ -313,7 +309,6 @@ def stat_data(data):
     res["rpm_pkg"]["contrib"]= 1
     res["rpm_pkg"]["misc"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and i['rpm_misc']]))
     res["rpm_pkg"]["miss"]   = len(set([i['rpm_pkg'] for i in data if not i['has_rpm']]))
-    res["rpm_pkg"]["pg12"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and '12' in i['rpm_pg']]))
     res["rpm_pkg"]["pg13"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and '13' in i['rpm_pg']]))
     res["rpm_pkg"]["pg14"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and '14' in i['rpm_pg']]))
     res["rpm_pkg"]["pg15"]   = len(set([i['rpm_pkg'] for i in data if i['has_rpm'] and '15' in i['rpm_pg']]))
@@ -325,7 +320,6 @@ def stat_data(data):
     res["deb_ext"]["contrib"]= len([i['name'] for i in data if i['contrib'] ])
     res["deb_ext"]["misc"]   = len([i['name'] for i in data if i['has_deb'] and i['deb_misc']])
     res["deb_ext"]["miss"]   = len([i['name'] for i in data if not i['has_deb']])
-    res["deb_ext"]["pg12"]   = len([i['name'] for i in data if i['has_deb'] and '12' in i['deb_pg']])
     res["deb_ext"]["pg13"]   = len([i['name'] for i in data if i['has_deb'] and '13' in i['deb_pg']])
     res["deb_ext"]["pg14"]   = len([i['name'] for i in data if i['has_deb'] and '14' in i['deb_pg']])
     res["deb_ext"]["pg15"]   = len([i['name'] for i in data if i['has_deb'] and '15' in i['deb_pg']])
@@ -337,7 +331,6 @@ def stat_data(data):
     res["deb_pkg"]["contrib"]= 1
     res["deb_pkg"]["misc"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and i['deb_misc']]))
     res["deb_pkg"]["miss"]   = len(set([i['deb_pkg'] for i in data if not i['has_deb']]))
-    res["deb_pkg"]["pg12"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and '12' in i['deb_pg'] ]))
     res["deb_pkg"]["pg13"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and '13' in i['deb_pg'] ]))
     res["deb_pkg"]["pg14"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and '14' in i['deb_pg'] ]))
     res["deb_pkg"]["pg15"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and '15' in i['deb_pg'] ]))
@@ -369,8 +362,8 @@ def tabulate_stats(todolist):
         'rpm_pkg': 'RPM Package',
         'deb_pkg': 'DEB Package'
     }
-    filters = ['all', 'pgdg', 'pigsty', 'contrib', 'misc', 'miss', 'pg17', 'pg16', 'pg15', 'pg14', 'pg13', 'pg12']
-    headers = ['Entry / Filter', 'All', 'PGDG', 'PIGSTY', 'CONTRIB', 'MISC', 'MISS', 'PG17', 'PG16', 'PG15', 'PG14', 'PG13', 'PG12']
+    filters = ['all', 'pgdg', 'pigsty', 'contrib', 'misc', 'miss', 'pg17', 'pg16', 'pg15', 'pg14', 'pg13']
+    headers = ['Entry / Filter', 'All', 'PGDG', 'PIGSTY', 'CONTRIB', 'MISC', 'MISS', 'PG17', 'PG16', 'PG15', 'PG14', 'PG13']
     markdown = '|' + ' | '.join(headers) + '|\n'
     markdown += '|' + '|'.join([':----:' for _ in headers]) + '|\n'
     for key in todolist:
@@ -395,22 +388,16 @@ def process_ext(ver, distro, ext):
         hide_pkg, hide_ext = False, False
 
     # rename extension field in certain cases
-    if name == 'pgaudit' and distro in RPM_OS and ver in ['12','13','14','15']:
-        # pgaudit bad case: pg16+ = pgaudit, pg15=pgaudit17, pg14=pgaudit16 pg13=pgaudit15 pg12=pgaudit14
+    if name == 'pgaudit' and distro in RPM_OS and ver in ['13','14','15']:
+        # pgaudit bad case: pg16+ = pgaudit, pg15=pgaudit17, pg14=pgaudit16 pg13=pgaudit15
         package, extension = package.replace('pgaudit', 'pgaudit' + str(int(ver)+2)), alias + str(int(ver)+2)
-    if name == 'citus' and distro in DEB_OS and ver in ['12', '13']:
-        package, extension = package.replace('citus-12.1', 'citus-' + ('10.2' if ver == '12' else '11.3') ), alias + str(int(ver)-2)
-    if name == 'postgis' and distro in ['el8', 'el9'] and ver == '12': # el8/9 will use postgis34 for pg12
-        package, extension = package.replace('postgis35', 'postgis34'), 'postgis34'
     if name == 'postgis' and distro == 'el7': # el7 with postgis33
         package, extension = package.replace('postgis35', 'postgis33'), 'postgis33'
     if name in ['pg_mooncake', 'citus']:
         hide_ext = True
 
     # ubuntu 24.04 bad case
-    if distro == 'u24' and name == 'timescaledb' and ver == '12': # no timescaledb 12 for ubuntu24
-        hide_pkg, hide_ext = True, True
-    if distro == 'u24' and name in ['pg_partman', 'timeseries'] and ver in ['12','13']: # not pg_partman 12,13 for u24
+    if distro == 'u24' and name in ['pg_partman', 'timeseries'] and ver in ['13']: # not pg_partman 12,13 for u24
         hide_pkg, hide_ext = True, True
 
     # version ad hoc logic
@@ -461,20 +448,15 @@ def judge_ext(ver, distro, ext):
     if name in DISTRO_MISS[distro]:
         avail = False
     # rename extension field in certain cases
-    if name == 'pgaudit' and distro in RPM_OS and ver in ['12','13','14','15']:
-        # pgaudit bad case: pg16+ = pgaudit, pg15=pgaudit17, pg14=pgaudit16 pg13=pgaudit15 pg12=pgaudit14
+    if name == 'pgaudit' and distro in RPM_OS and ver in ['13','14','15']:
+        # pgaudit bad case: pg16+ = pgaudit, pg15=pgaudit17, pg14=pgaudit16 pg13=pgaudit15
         package, extension = package.replace('pgaudit', 'pgaudit' + str(int(ver)+2)), alias + str(int(ver)+2)
-    if name == 'citus' and distro in DEB_OS and ver in ['12', '13']:
-        package, extension = package.replace('citus-12.1', 'citus-' + ('10.2' if ver == '12' else '11.3') ), alias + str(int(ver)-2)
-    if name == 'postgis' and distro in ['el8', 'el9'] and ver == '12': # el8/9 will use postgis34 for pg12
-        package, extension = package.replace('postgis35', 'postgis34'), 'postgis34'
     if name == 'postgis' and distro == 'el7': # el7 with postgis33
         package, extension = package.replace('postgis35', 'postgis33'), 'postgis33'
     if name.startswith('babelfishpg'):
         package, extension = 'wiltondb', 'wiltondb'
     # ubuntu 24.04 bad case
-    if distro == 'u24' and name == 'timescaledb' and ver == '12': avail = False
-    if distro == 'u24' and name in ['pg_partman', 'timeseries'] and ver in ['12','13']: avail = False
+    if distro == 'u24' and name in ['pg_partman', 'timeseries'] and ver in ['13']: avail = False
     if alias in THROW_LIST: avail = False
 
     return package, extension, avail
@@ -483,7 +465,7 @@ def judge_ext(ver, distro, ext):
 
 def avail_matrix(extname, cell='avail'):
     ext = EXT_MAP[extname]
-    header = ['Distro / Ver', 'PG17', 'PG16', 'PG15', 'PG14', 'PG13', 'PG12']
+    header = ['Distro / Ver', 'PG17', 'PG16', 'PG15', 'PG14', 'PG13']
     data = []
     for distro in DISTROS:
         row = ['`%s`' % distro]
@@ -623,7 +605,7 @@ def generate_all_list():
 
 def generate_rpm_list():
     rpm_table = tabulate(
-        Columns([ "cat", "pkg","rpmver", "lic", "rpmrepo", "rpmpkg", "r17", "r16", "r15", "r14", "r13", "r12", "en_desc"]),
+        Columns([ "cat", "pkg","rpmver", "lic", "rpmrepo", "rpmpkg", "r17", "r16", "r15", "r14", "r13", "en_desc"]),
         lambda row: row['has_rpm'] and row['repo'] != 'CONTRIB' and row['lead']
     )
     ver_sections = []
@@ -650,7 +632,7 @@ def generate_rpm_list():
 
 def generate_deb_list():
     deb_table = tabulate(
-        Columns(["cat", "pkg", "debver", "lic", "debrepo", "debpkg", "d17", "d16", "d15", "d14", "d13", "d12", "en_desc"]),
+        Columns(["cat", "pkg", "debver", "lic", "debrepo", "debpkg", "d17", "d16", "d15", "d14", "d13", "en_desc"]),
         lambda row: row['has_deb'] and row['repo'] != 'CONTRIB' and row['lead']
     )
     ver_sections = []
@@ -676,7 +658,7 @@ def generate_deb_list():
 
 def generate_contrib_list():
     contrib_table = tabulate(
-        Columns(["cat", "id", "ext2", "ver", "pkg", "r17", "r16", "r15", "r14", "r13", "r12","bin", "load", "dylib", "ddl","trust", "reloc", "en_desc"]),
+        Columns(["cat", "id", "ext2", "ver", "pkg", "r17", "r16", "r15", "r14", "r13", "bin", "load", "dylib", "ddl","trust", "reloc", "en_desc"]),
         lambda row: row['repo'] == 'CONTRIB'
     )
     CONTRIB_TEMPLATE = open(os.path.join(STUB_PATH, 'contrib.md')).read()
@@ -701,11 +683,11 @@ def generate_category():
             lambda row: row['category'] == cate
         )
         rpm_table = tabulate(
-            Columns(["pkg", "rpmver", "lic", "rpmrepo", "rpmpkg3", "r17", "r16", "r15", "r14", "r13", "r12", "en_desc"]),
+            Columns(["pkg", "rpmver", "lic", "rpmrepo", "rpmpkg3", "r17", "r16", "r15", "r14", "r13", "en_desc"]),
             lambda row: row['has_rpm'] and row['lead'] and row['category'] == cate
         )
         deb_table = tabulate(
-            Columns(["pkg", "debver", "lic", "debrepo", "debpkg3", "d17", "d16", "d15", "d14", "d13", "d12", "en_desc"]),
+            Columns(["pkg", "debver", "lic", "debrepo", "debpkg3", "d17", "d16", "d15", "d14", "d13","en_desc"]),
             lambda row: row['has_deb'] and row['lead'] and row['category'] == cate
         )
 
@@ -772,11 +754,11 @@ def generate_extension():
 
         # part 2: package table
         rpm_table = tabulate(
-            Columns(["distro", "rpmver", "lic", "rpmrepo2", "rpmpkg2", "r17", "r16", "r15", "r14", "r13", "r12", "rpmdep"]),
+            Columns(["distro", "rpmver", "lic", "rpmrepo2", "rpmpkg2", "r17", "r16", "r15", "r14", "r13", "rpmdep"]),
             lambda row: row['has_rpm'] and row['lead'] and row['alias'] == alias
         )
         deb_table = tabulate(
-            Columns(["distro", "debver", "lic", "debrepo2", "debpkg2", "r17", "r16", "r15", "r14", "r13", "r12", "debdep"]),
+            Columns(["distro", "debver", "lic", "debrepo2", "debpkg2", "r17", "r16", "r15", "r14", "r13", "debdep"]),
             lambda row: row['has_deb'] and row['lead'] and row['alias'] == alias
         )
         rpm_table = rpm_table.replace('Distro-'+name, '[RPM](/rpm)')
@@ -785,13 +767,15 @@ def generate_extension():
 
 
         # install info
+        pig_install_preface = '\nInstall `%s` via the [`pig`](https://github.com/pgsty/pig) cli tool:\n\n' % getcol("name", ext)
+        pig_install_cmd = """```bash\npig ext add %s\n```\n\n""" % name
+
         pigsty_install_preface = '\nInstall `%s` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:\n\n' % getcol("alias", ext)
         if name not in ['postgis', 'citus', 'pgaudit']:
             pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["%s"]}'\n```\n\n""" % alias
         else:
-            if name == 'postgis': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis"]}'   # postgis35, common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis34"]}' # pg12 @ el8/9 \n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis33"]}' # el7\n```\n\n"""
-            if name == 'pgaudit': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit"]}'   # common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit17"]}' # pg15 @ el\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit16"]}' # pg14 @ el\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit15"]}' # pg13 @ el\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit14"]}' # pg12 @ el\n```\n\n"""
-            if name == 'citus': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["citus"]}'     # common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["citus11"]}'   # pg13 @ deb\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["citus10"]}'   # pg12 @ deb\n```\n\n"""
+            if name == 'postgis': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis"]}'   # postgis35, common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis33"]}' # el7\n```\n\n"""
+            if name == 'pgaudit': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit"]}'   # common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit17"]}' # pg15 @ el\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit16"]}' # pg14 @ el\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pgaudit15"]}' # pg13 @ el\n```\n\n"""
 
         yum_install_preface = '\nInstall `%s` [RPM](/rpm) from the %s **YUM** repo:\n\n' % (getcol("alias", ext), getcol("rpmrepo", ext))
         if '$v' not in ext['rpm_pkg']:
@@ -806,7 +790,7 @@ def generate_extension():
         else:
             pkgs = [ judge_ext(ver, 'u22', ext)[0] for ver in ext['deb_pg'] ]
             apt_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'apt install ' + pkg + ';' for pkg in pkgs ])
-        install_tmpl = pigsty_install_preface + pigsty_install_cmd
+        install_tmpl = pig_install_preface + pig_install_cmd + pigsty_install_preface + pigsty_install_cmd
         if ext['has_rpm']: install_tmpl = install_tmpl + yum_install_preface + yum_install_tmpl
         if ext['has_deb']: install_tmpl = install_tmpl + apt_install_preface + apt_install_tmpl
         package_distro_matrix = avail_matrix(name,'pkg')

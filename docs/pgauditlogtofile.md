@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pgauditlogtofile;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgauditlogtofile_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgauditlogtofile` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgauditlogtofile_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgauditlogtofile` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `pgauditlogtofile` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pgauditlogtofile
+```
 
 
 Install `pgauditlogtofile` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-pgauditlogtofile;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgauditlogtofile_17*` | `pgauditlogtofile_16*` | `pgauditlogtofile_15*` | `pgauditlogtofile_14*` | `pgauditlogtofile_13*` | `pgauditlogtofile_12*` |
-| `el9` | `pgauditlogtofile_17*` | `pgauditlogtofile_16*` | `pgauditlogtofile_15*` | `pgauditlogtofile_14*` | `pgauditlogtofile_13*` | `pgauditlogtofile_12*` |
-| `d12` | `postgresql-17-pgauditlogtofile` | `postgresql-16-pgauditlogtofile` | `postgresql-15-pgauditlogtofile` | `postgresql-14-pgauditlogtofile` | `postgresql-13-pgauditlogtofile` | `postgresql-12-pgauditlogtofile` |
-| `u22` | `postgresql-17-pgauditlogtofile` | `postgresql-16-pgauditlogtofile` | `postgresql-15-pgauditlogtofile` | `postgresql-14-pgauditlogtofile` | `postgresql-13-pgauditlogtofile` | `postgresql-12-pgauditlogtofile` |
-| `u24` | `postgresql-17-pgauditlogtofile` | `postgresql-16-pgauditlogtofile` | `postgresql-15-pgauditlogtofile` | `postgresql-14-pgauditlogtofile` | `postgresql-13-pgauditlogtofile` | `postgresql-12-pgauditlogtofile` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgauditlogtofile_17*` | `pgauditlogtofile_16*` | `pgauditlogtofile_15*` | `pgauditlogtofile_14*` | `pgauditlogtofile_13*` |
+| `el9` | `pgauditlogtofile_17*` | `pgauditlogtofile_16*` | `pgauditlogtofile_15*` | `pgauditlogtofile_14*` | `pgauditlogtofile_13*` |
+| `d12` | `postgresql-17-pgauditlogtofile` | `postgresql-16-pgauditlogtofile` | `postgresql-15-pgauditlogtofile` | `postgresql-14-pgauditlogtofile` | `postgresql-13-pgauditlogtofile` |
+| `u22` | `postgresql-17-pgauditlogtofile` | `postgresql-16-pgauditlogtofile` | `postgresql-15-pgauditlogtofile` | `postgresql-14-pgauditlogtofile` | `postgresql-13-pgauditlogtofile` |
+| `u24` | `postgresql-17-pgauditlogtofile` | `postgresql-16-pgauditlogtofile` | `postgresql-15-pgauditlogtofile` | `postgresql-14-pgauditlogtofile` | `postgresql-13-pgauditlogtofile` |
 
 
 

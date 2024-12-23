@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ shared_preload_libraries = 'pgextwlist'; # add this extension to postgresql.conf
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.17 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgextwlist_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.17 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgextwlist` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.17 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgextwlist_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.17 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgextwlist` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `pgextwlist` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pgextwlist
+```
 
 
 Install `pgextwlist` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-pgextwlist;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgextwlist_17*` | `pgextwlist_16*` | `pgextwlist_15*` | `pgextwlist_14*` | `pgextwlist_13*` | `pgextwlist_12*` |
-| `el9` | `pgextwlist_17*` | `pgextwlist_16*` | `pgextwlist_15*` | `pgextwlist_14*` | `pgextwlist_13*` | `pgextwlist_12*` |
-| `d12` | `postgresql-17-pgextwlist` | `postgresql-16-pgextwlist` | `postgresql-15-pgextwlist` | `postgresql-14-pgextwlist` | `postgresql-13-pgextwlist` | `postgresql-12-pgextwlist` |
-| `u22` | `postgresql-17-pgextwlist` | `postgresql-16-pgextwlist` | `postgresql-15-pgextwlist` | `postgresql-14-pgextwlist` | `postgresql-13-pgextwlist` | `postgresql-12-pgextwlist` |
-| `u24` | `postgresql-17-pgextwlist` | `postgresql-16-pgextwlist` | `postgresql-15-pgextwlist` | `postgresql-14-pgextwlist` | `postgresql-13-pgextwlist` | `postgresql-12-pgextwlist` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pgextwlist_17*` | `pgextwlist_16*` | `pgextwlist_15*` | `pgextwlist_14*` | `pgextwlist_13*` |
+| `el9` | `pgextwlist_17*` | `pgextwlist_16*` | `pgextwlist_15*` | `pgextwlist_14*` | `pgextwlist_13*` |
+| `d12` | `postgresql-17-pgextwlist` | `postgresql-16-pgextwlist` | `postgresql-15-pgextwlist` | `postgresql-14-pgextwlist` | `postgresql-13-pgextwlist` |
+| `u22` | `postgresql-17-pgextwlist` | `postgresql-16-pgextwlist` | `postgresql-15-pgextwlist` | `postgresql-14-pgextwlist` | `postgresql-13-pgextwlist` |
+| `u24` | `postgresql-17-pgextwlist` | `postgresql-16-pgextwlist` | `postgresql-15-pgextwlist` | `postgresql-14-pgextwlist` | `postgresql-13-pgextwlist` |
 
 
 

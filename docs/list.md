@@ -5,10 +5,10 @@ There are **340** available extensions, including **334** [**RPM**](/rpm) extens
 There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **271** additional third-party extensions provide by PGDG & Pigsty. 
 
 
-|Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 | PG12|
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 334 | 114 | 147 | 69 | 4 | 6 | 303 | 330 | 333 | 321 | 303 | 290 |
-| DEB Extension | 327 | 104 | 150 | 69 | 4 | 13 | 304 | 323 | 326 | 319 | 300 | 291 |
+|Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| RPM Extension | 334 | 114 | 147 | 69 | 4 | 6 | 303 | 330 | 333 | 321 | 303 |
+| DEB Extension | 327 | 104 | 150 | 69 | 4 | 13 | 304 | 323 | 326 | 319 | 300 |
 
 
 
@@ -862,7 +862,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
-- hydra duckdb_fdw pg_fkpart pg_partman plproxy #citus11 #pg_analytics #pg_duckdb #pg_parquet #pg_strom
+- hydra duckdb_fdw pg_fkpart pg_partman plproxy #citus #pg_analytics #pg_duckdb #pg_parquet #pg_strom
 - age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit #pg_graphql
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass #pgfaceting
@@ -883,7 +883,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
-- hydra duckdb_fdw pg_fkpart pg_partman plproxy #citus11 #pg_analytics #pg_duckdb #pg_parquet #pg_strom
+- hydra duckdb_fdw pg_fkpart pg_partman plproxy #citus #pg_analytics #pg_duckdb #pg_parquet #pg_strom
 - age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit #pg_graphql
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass #pgfaceting
@@ -904,7 +904,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
-- hydra duckdb_fdw pg_fkpart plproxy #citus11 #pg_analytics #pg_duckdb #pg_parquet #pg_partman #pg_strom
+- hydra duckdb_fdw pg_fkpart plproxy #citus #pg_analytics #pg_duckdb #pg_parquet #pg_partman #pg_strom
 - age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit #pg_graphql
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass #pgfaceting
@@ -916,116 +916,6 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 #wrappers #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw #log_fdw
 - orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
 - pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json wal2mongo decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #repmgr
-```
-
---------
-
-## PostgreSQL 12
-
-
-### RHEL 8 Compatible OS (el8)
-
-```yaml
-- periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_timeseries #pg_later
-- postgis34 pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
-- pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #vchord #pgvectorscale #pg_vectorize #smlar #pgml
-- pg_bigm zhparser pg_bestmatch hunspell #pg_search #pgroonga
-- duckdb_fdw pg_fkpart pg_partman plproxy #citus #hydra #pg_analytics #pg_duckdb #pg_parquet #pg_strom
-- hll rum pg_jsonschema pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pgmq pgq pg_cardano #age #pg_graphql #jsquery #pg_ivm #rdkit
-- pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
-- pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pgmp #debversion #pg_rrule
-- topn pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client #extra_window_functions
-- pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio #pg_prioritize #pg_savior #pgpool #pgagent
-- pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
-- passwordcheck pgsodium pg_vault pg_anon pgsmcrypto pgaudit14 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #supautils #pg_session_jwt #pg_tde
-- multicorn mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw mongo_fdw redis_fdw pg_redis_pubsub kafka_fdw hdfs_fdw firebird_fdw aws_s3 #wrappers #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #log_fdw
-- orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #pg_dbms_job #wiltondb #pgmemcache
-- pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #wal2mongo #repmgr
-```
-
-### RHEL 9 Compatible OS (el9)
-
-```yaml
-- periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_timeseries #pg_later
-- postgis34 pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
-- pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #vchord #pgvectorscale #pg_vectorize #smlar #pgml
-- pg_bigm zhparser pg_bestmatch hunspell #pg_search #pgroonga
-- duckdb_fdw pg_fkpart pg_partman plproxy #citus #hydra #pg_analytics #pg_duckdb #pg_parquet #pg_strom
-- hll rum pg_jsonschema pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pgmq pgq pg_cardano #age #pg_graphql #jsquery #pg_ivm #rdkit
-- pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
-- pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pgmp #debversion #pg_rrule
-- topn pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client #extra_window_functions
-- pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio #pg_prioritize #pg_savior #pgpool #pgagent
-- pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
-- passwordcheck pgsodium pg_vault pg_anon pgsmcrypto pgaudit14 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #supautils #pg_session_jwt #pg_tde
-- multicorn mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw mongo_fdw redis_fdw pg_redis_pubsub kafka_fdw hdfs_fdw firebird_fdw aws_s3 #wrappers #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #log_fdw
-- orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #pg_dbms_job #wiltondb #pgmemcache
-- pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader pg_bulkload #wal2mongo #repmgr
-```
-
-### Debian 12 bookworm Compatible OS (d12)
-
-```yaml
-- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_later
-- postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
-- pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #vchord #pgvectorscale #pg_vectorize #smlar #pgml
-- pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
-- duckdb_fdw pg_fkpart pg_partman plproxy #citus10 #hydra #pg_analytics #pg_duckdb #pg_parquet #pg_strom
-- age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pgmq pgq pg_cardano rdkit #pg_graphql #pg_ivm
-- pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
-- pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass #pgfaceting
-- topn pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client
-- pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio #safeupdate #pg_savior #pgpool #pgagent
-- pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
-- passwordcheck pgsodium pg_vault pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #supautils #pg_session_jwt #pg_tde
-- mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 #wrappers #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw #log_fdw
-- orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
-- pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader #wal2mongo #repmgr #pg_bulkload
-```
-
-### Ubuntu 24.04 jammy Compatible OS (u22)
-
-```yaml
-- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_later
-- postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
-- pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #vchord #pgvectorscale #pg_vectorize #smlar #pgml
-- pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
-- duckdb_fdw pg_fkpart pg_partman plproxy #citus10 #hydra #pg_analytics #pg_duckdb #pg_parquet #pg_strom
-- age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pgmq pgq pg_cardano rdkit #pg_graphql #pg_ivm
-- pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
-- pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass #pgfaceting
-- topn pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client
-- pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio #safeupdate #pg_savior #pgpool #pgagent
-- pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
-- passwordcheck pgsodium pg_vault pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #supautils #pg_session_jwt #pg_tde
-- mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 #wrappers #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw #log_fdw
-- orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
-- pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader #wal2mongo #repmgr #pg_bulkload
-```
-
-### Ubuntu 24.04 noble Compatible OS (u24)
-
-```yaml
-- periods temporal_tables emaj table_version pg_cron pg_background #timescaledb #pg_timeseries #pg_later
-- postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
-- pgvector pg_similarity pg_summarize pg_tiktoken pg4ml #vchord #pgvectorscale #pg_vectorize #smlar #pgml
-- pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
-- duckdb_fdw pg_fkpart plproxy #citus10 #hydra #pg_analytics #pg_duckdb #pg_parquet #pg_partman #pg_strom
-- age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pgmq pgq pg_cardano rdkit #pg_graphql #pg_ivm
-- pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
-- pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass #pgfaceting
-- pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #topn #pg_smtp_client
-- pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs table_log pg_fio #safeupdate #pg_savior #pgpool #pgagent
-- pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
-- passwordcheck pgsodium pg_vault pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #supautils #pg_session_jwt #pg_tde
-- mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 #wrappers #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw #log_fdw
-- orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
-- pglogical pglogical_ticker pgl_ddl_deploy pg_failover_slots wal2json decoderbufs decoder_raw mimeo pg_fact_loader #wal2mongo #repmgr #pg_bulkload
 ```
 
 

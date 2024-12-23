@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -52,11 +52,18 @@
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `pg_checksums_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.1 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-checksums` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `pg_checksums_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.1 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-checksums` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `pg_checksums` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pg_checksums
+```
 
 
 Install `pg_checksums` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -91,13 +98,13 @@ apt install postgresql-12-pg-checksums;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | `pg_checksums_16*` | `pg_checksums_15*` | `pg_checksums_14*` | `pg_checksums_13*` | `pg_checksums_12*` |
-| `el9` | <span class="tcred">✘</span> | `pg_checksums_16*` | `pg_checksums_15*` | `pg_checksums_14*` | `pg_checksums_13*` | `pg_checksums_12*` |
-| `d12` | `postgresql-17-pg-checksums` | `postgresql-16-pg-checksums` | `postgresql-15-pg-checksums` | `postgresql-14-pg-checksums` | `postgresql-13-pg-checksums` | `postgresql-12-pg-checksums` |
-| `u22` | `postgresql-17-pg-checksums` | `postgresql-16-pg-checksums` | `postgresql-15-pg-checksums` | `postgresql-14-pg-checksums` | `postgresql-13-pg-checksums` | `postgresql-12-pg-checksums` |
-| `u24` | `postgresql-17-pg-checksums` | `postgresql-16-pg-checksums` | `postgresql-15-pg-checksums` | `postgresql-14-pg-checksums` | `postgresql-13-pg-checksums` | `postgresql-12-pg-checksums` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | `pg_checksums_16*` | `pg_checksums_15*` | `pg_checksums_14*` | `pg_checksums_13*` |
+| `el9` | <span class="tcred">✘</span> | `pg_checksums_16*` | `pg_checksums_15*` | `pg_checksums_14*` | `pg_checksums_13*` |
+| `d12` | `postgresql-17-pg-checksums` | `postgresql-16-pg-checksums` | `postgresql-15-pg-checksums` | `postgresql-14-pg-checksums` | `postgresql-13-pg-checksums` |
+| `u22` | `postgresql-17-pg-checksums` | `postgresql-16-pg-checksums` | `postgresql-15-pg-checksums` | `postgresql-14-pg-checksums` | `postgresql-13-pg-checksums` |
+| `u24` | `postgresql-17-pg-checksums` | `postgresql-16-pg-checksums` | `postgresql-15-pg-checksums` | `postgresql-14-pg-checksums` | `postgresql-13-pg-checksums` |
 
 
 

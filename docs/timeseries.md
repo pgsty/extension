@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION timeseries CASCADE;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_timeseries_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | `hydra_$v`, `pg_cron_$v`, `pg_ivm_$v`, `pg_partman_$v` |
-| [DEB](/deb) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-timeseries` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_timeseries_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `hydra_$v`, `pg_cron_$v`, `pg_ivm_$v`, `pg_partman_$v` |
+| [DEB](/deb) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-timeseries` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `timeseries` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add timeseries
+```
 
 
 Install `pg_timeseries` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -93,13 +100,13 @@ apt install postgresql-12-pg-timeseries;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | `pg_timeseries_16` | `pg_timeseries_15` | `pg_timeseries_14` | `pg_timeseries_13` | <span class="tcred">✘</span> |
-| `el9` | <span class="tcred">✘</span> | `pg_timeseries_16` | `pg_timeseries_15` | `pg_timeseries_14` | `pg_timeseries_13` | <span class="tcred">✘</span> |
-| `d12` | <span class="tcred">✘</span> | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | `postgresql-13-pg-timeseries` | `postgresql-12-pg-timeseries` |
-| `u22` | <span class="tcred">✘</span> | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | `postgresql-13-pg-timeseries` | `postgresql-12-pg-timeseries` |
-| `u24` | <span class="tcred">✘</span> | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | `pg_timeseries_16` | `pg_timeseries_15` | `pg_timeseries_14` | `pg_timeseries_13` |
+| `el9` | <span class="tcred">✘</span> | `pg_timeseries_16` | `pg_timeseries_15` | `pg_timeseries_14` | `pg_timeseries_13` |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | `postgresql-13-pg-timeseries` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | `postgresql-13-pg-timeseries` |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | <span class="tcred">✘</span> |
 
 
 

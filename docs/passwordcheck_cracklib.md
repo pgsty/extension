@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ shared_preload_libraries = 'passwordcheck_cracklib'; # add this extension to pos
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.0.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tccyan">PGDG</span>** | `passwordcheck_cracklib_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 3.0.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-passwordcheck-cracklib` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 3.0.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tccyan">PGDG</span>** | `passwordcheck_cracklib_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 3.0.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-passwordcheck-cracklib` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `passwordcheck_cracklib` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add passwordcheck_cracklib
+```
 
 
 Install `passwordcheck` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-passwordcheck-cracklib;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `passwordcheck_cracklib_17*` | `passwordcheck_cracklib_16*` | `passwordcheck_cracklib_15*` | `passwordcheck_cracklib_14*` | `passwordcheck_cracklib_13*` | `passwordcheck_cracklib_12*` |
-| `el9` | `passwordcheck_cracklib_17*` | `passwordcheck_cracklib_16*` | `passwordcheck_cracklib_15*` | `passwordcheck_cracklib_14*` | `passwordcheck_cracklib_13*` | `passwordcheck_cracklib_12*` |
-| `d12` | `postgresql-17-passwordcheck-cracklib` | `postgresql-16-passwordcheck-cracklib` | `postgresql-15-passwordcheck-cracklib` | `postgresql-14-passwordcheck-cracklib` | `postgresql-13-passwordcheck-cracklib` | `postgresql-12-passwordcheck-cracklib` |
-| `u22` | `postgresql-17-passwordcheck-cracklib` | `postgresql-16-passwordcheck-cracklib` | `postgresql-15-passwordcheck-cracklib` | `postgresql-14-passwordcheck-cracklib` | `postgresql-13-passwordcheck-cracklib` | `postgresql-12-passwordcheck-cracklib` |
-| `u24` | `postgresql-17-passwordcheck-cracklib` | `postgresql-16-passwordcheck-cracklib` | `postgresql-15-passwordcheck-cracklib` | `postgresql-14-passwordcheck-cracklib` | `postgresql-13-passwordcheck-cracklib` | `postgresql-12-passwordcheck-cracklib` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `passwordcheck_cracklib_17*` | `passwordcheck_cracklib_16*` | `passwordcheck_cracklib_15*` | `passwordcheck_cracklib_14*` | `passwordcheck_cracklib_13*` |
+| `el9` | `passwordcheck_cracklib_17*` | `passwordcheck_cracklib_16*` | `passwordcheck_cracklib_15*` | `passwordcheck_cracklib_14*` | `passwordcheck_cracklib_13*` |
+| `d12` | `postgresql-17-passwordcheck-cracklib` | `postgresql-16-passwordcheck-cracklib` | `postgresql-15-passwordcheck-cracklib` | `postgresql-14-passwordcheck-cracklib` | `postgresql-13-passwordcheck-cracklib` |
+| `u22` | `postgresql-17-passwordcheck-cracklib` | `postgresql-16-passwordcheck-cracklib` | `postgresql-15-passwordcheck-cracklib` | `postgresql-14-passwordcheck-cracklib` | `postgresql-13-passwordcheck-cracklib` |
+| `u24` | `postgresql-17-passwordcheck-cracklib` | `postgresql-16-passwordcheck-cracklib` | `postgresql-15-passwordcheck-cracklib` | `postgresql-14-passwordcheck-cracklib` | `postgresql-13-passwordcheck-cracklib` |
 
 
 

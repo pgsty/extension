@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pg_bulkload;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.1.21 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_bulkload_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 3.1.21 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-bulkload` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 3.1.21 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_bulkload_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 3.1.21 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-bulkload` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `pg_bulkload` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pg_bulkload
+```
 
 
 Install `pg_bulkload` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -93,13 +100,13 @@ apt install postgresql-13-pg-bulkload;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | `pg_bulkload_16*` | `pg_bulkload_15*` | `pg_bulkload_14*` | `pg_bulkload_13*` | `pg_bulkload_12*` |
-| `el9` | <span class="tcred">✘</span> | `pg_bulkload_16*` | `pg_bulkload_15*` | `pg_bulkload_14*` | `pg_bulkload_13*` | `pg_bulkload_12*` |
-| `d12` | <span class="tcred">✘</span> | `postgresql-16-pg-bulkload` | `postgresql-15-pg-bulkload` | `postgresql-14-pg-bulkload` | `postgresql-13-pg-bulkload` | <span class="tcred">✘</span> |
-| `u22` | <span class="tcred">✘</span> | `postgresql-16-pg-bulkload` | `postgresql-15-pg-bulkload` | `postgresql-14-pg-bulkload` | `postgresql-13-pg-bulkload` | <span class="tcred">✘</span> |
-| `u24` | <span class="tcred">✘</span> | `postgresql-16-pg-bulkload` | `postgresql-15-pg-bulkload` | `postgresql-14-pg-bulkload` | `postgresql-13-pg-bulkload` | <span class="tcred">✘</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | `pg_bulkload_16*` | `pg_bulkload_15*` | `pg_bulkload_14*` | `pg_bulkload_13*` |
+| `el9` | <span class="tcred">✘</span> | `pg_bulkload_16*` | `pg_bulkload_15*` | `pg_bulkload_14*` | `pg_bulkload_13*` |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-pg-bulkload` | `postgresql-15-pg-bulkload` | `postgresql-14-pg-bulkload` | `postgresql-13-pg-bulkload` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-pg-bulkload` | `postgresql-15-pg-bulkload` | `postgresql-14-pg-bulkload` | `postgresql-13-pg-bulkload` |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-pg-bulkload` | `postgresql-15-pg-bulkload` | `postgresql-14-pg-bulkload` | `postgresql-13-pg-bulkload` |
 
 
 

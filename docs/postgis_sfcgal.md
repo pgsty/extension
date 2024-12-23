@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION postgis_sfcgal CASCADE;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| Distro-postgis | 3.5.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgis35_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| Distro-postgis | 3.5.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-postgis-3 postgresql-$v-postgis-3-scripts` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| Distro-postgis | 3.5.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgis35_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| Distro-postgis | 3.5.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-postgis-3 postgresql-$v-postgis-3-scripts` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `postgis_sfcgal` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add postgis_sfcgal
+```
 
 
 Install `postgis` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-postgis-3 postgresql-12-postgis-3-scripts;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `postgis35_17*` | `postgis35_16*` | `postgis35_15*` | `postgis35_14*` | `postgis35_13*` | `postgis35_12*` |
-| `el9` | `postgis35_17*` | `postgis35_16*` | `postgis35_15*` | `postgis35_14*` | `postgis35_13*` | `postgis35_12*` |
-| `d12` | `postgresql-17-postgis-3`<br>`postgresql-17-postgis-3-scripts` | `postgresql-16-postgis-3`<br>`postgresql-16-postgis-3-scripts` | `postgresql-15-postgis-3`<br>`postgresql-15-postgis-3-scripts` | `postgresql-14-postgis-3`<br>`postgresql-14-postgis-3-scripts` | `postgresql-13-postgis-3`<br>`postgresql-13-postgis-3-scripts` | `postgresql-12-postgis-3`<br>`postgresql-12-postgis-3-scripts` |
-| `u22` | `postgresql-17-postgis-3`<br>`postgresql-17-postgis-3-scripts` | `postgresql-16-postgis-3`<br>`postgresql-16-postgis-3-scripts` | `postgresql-15-postgis-3`<br>`postgresql-15-postgis-3-scripts` | `postgresql-14-postgis-3`<br>`postgresql-14-postgis-3-scripts` | `postgresql-13-postgis-3`<br>`postgresql-13-postgis-3-scripts` | `postgresql-12-postgis-3`<br>`postgresql-12-postgis-3-scripts` |
-| `u24` | `postgresql-17-postgis-3`<br>`postgresql-17-postgis-3-scripts` | `postgresql-16-postgis-3`<br>`postgresql-16-postgis-3-scripts` | `postgresql-15-postgis-3`<br>`postgresql-15-postgis-3-scripts` | `postgresql-14-postgis-3`<br>`postgresql-14-postgis-3-scripts` | `postgresql-13-postgis-3`<br>`postgresql-13-postgis-3-scripts` | `postgresql-12-postgis-3`<br>`postgresql-12-postgis-3-scripts` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `postgis35_17*` | `postgis35_16*` | `postgis35_15*` | `postgis35_14*` | `postgis35_13*` |
+| `el9` | `postgis35_17*` | `postgis35_16*` | `postgis35_15*` | `postgis35_14*` | `postgis35_13*` |
+| `d12` | `postgresql-17-postgis-3`<br>`postgresql-17-postgis-3-scripts` | `postgresql-16-postgis-3`<br>`postgresql-16-postgis-3-scripts` | `postgresql-15-postgis-3`<br>`postgresql-15-postgis-3-scripts` | `postgresql-14-postgis-3`<br>`postgresql-14-postgis-3-scripts` | `postgresql-13-postgis-3`<br>`postgresql-13-postgis-3-scripts` |
+| `u22` | `postgresql-17-postgis-3`<br>`postgresql-17-postgis-3-scripts` | `postgresql-16-postgis-3`<br>`postgresql-16-postgis-3-scripts` | `postgresql-15-postgis-3`<br>`postgresql-15-postgis-3-scripts` | `postgresql-14-postgis-3`<br>`postgresql-14-postgis-3-scripts` | `postgresql-13-postgis-3`<br>`postgresql-13-postgis-3-scripts` |
+| `u24` | `postgresql-17-postgis-3`<br>`postgresql-17-postgis-3-scripts` | `postgresql-16-postgis-3`<br>`postgresql-16-postgis-3-scripts` | `postgresql-15-postgis-3`<br>`postgresql-15-postgis-3-scripts` | `postgresql-14-postgis-3`<br>`postgresql-14-postgis-3-scripts` | `postgresql-13-postgis-3`<br>`postgresql-13-postgis-3-scripts` |
 
 
 

@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION pgemailaddr;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_emailaddr_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-emailaddr` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_emailaddr_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-emailaddr` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `pgemailaddr` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pgemailaddr
+```
 
 
 Install `pgemailaddr` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-pg-emailaddr;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_emailaddr_17*` | `pg_emailaddr_16*` | `pg_emailaddr_15*` | `pg_emailaddr_14*` | `pg_emailaddr_13*` | `pg_emailaddr_12*` |
-| `el9` | `pg_emailaddr_17*` | `pg_emailaddr_16*` | `pg_emailaddr_15*` | `pg_emailaddr_14*` | `pg_emailaddr_13*` | `pg_emailaddr_12*` |
-| `d12` | `postgresql-17-pg-emailaddr` | `postgresql-16-pg-emailaddr` | `postgresql-15-pg-emailaddr` | `postgresql-14-pg-emailaddr` | `postgresql-13-pg-emailaddr` | `postgresql-12-pg-emailaddr` |
-| `u22` | `postgresql-17-pg-emailaddr` | `postgresql-16-pg-emailaddr` | `postgresql-15-pg-emailaddr` | `postgresql-14-pg-emailaddr` | `postgresql-13-pg-emailaddr` | `postgresql-12-pg-emailaddr` |
-| `u24` | `postgresql-17-pg-emailaddr` | `postgresql-16-pg-emailaddr` | `postgresql-15-pg-emailaddr` | `postgresql-14-pg-emailaddr` | `postgresql-13-pg-emailaddr` | `postgresql-12-pg-emailaddr` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_emailaddr_17*` | `pg_emailaddr_16*` | `pg_emailaddr_15*` | `pg_emailaddr_14*` | `pg_emailaddr_13*` |
+| `el9` | `pg_emailaddr_17*` | `pg_emailaddr_16*` | `pg_emailaddr_15*` | `pg_emailaddr_14*` | `pg_emailaddr_13*` |
+| `d12` | `postgresql-17-pg-emailaddr` | `postgresql-16-pg-emailaddr` | `postgresql-15-pg-emailaddr` | `postgresql-14-pg-emailaddr` | `postgresql-13-pg-emailaddr` |
+| `u22` | `postgresql-17-pg-emailaddr` | `postgresql-16-pg-emailaddr` | `postgresql-15-pg-emailaddr` | `postgresql-14-pg-emailaddr` | `postgresql-13-pg-emailaddr` |
+| `u24` | `postgresql-17-pg-emailaddr` | `postgresql-16-pg-emailaddr` | `postgresql-15-pg-emailaddr` | `postgresql-14-pg-emailaddr` | `postgresql-13-pg-emailaddr` |
 
 
 

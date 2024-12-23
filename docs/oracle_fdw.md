@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION oracle_fdw;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `oracle_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-oracle-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `oracle_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-oracle-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `oracle_fdw` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add oracle_fdw
+```
 
 
 Install `oracle_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-oracle-fdw;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `oracle_fdw_17*` | `oracle_fdw_16*` | `oracle_fdw_15*` | `oracle_fdw_14*` | `oracle_fdw_13*` | `oracle_fdw_12*` |
-| `el9` | `oracle_fdw_17*` | `oracle_fdw_16*` | `oracle_fdw_15*` | `oracle_fdw_14*` | `oracle_fdw_13*` | `oracle_fdw_12*` |
-| `d12` | `postgresql-17-oracle-fdw` | `postgresql-16-oracle-fdw` | `postgresql-15-oracle-fdw` | `postgresql-14-oracle-fdw` | `postgresql-13-oracle-fdw` | `postgresql-12-oracle-fdw` |
-| `u22` | `postgresql-17-oracle-fdw` | `postgresql-16-oracle-fdw` | `postgresql-15-oracle-fdw` | `postgresql-14-oracle-fdw` | `postgresql-13-oracle-fdw` | `postgresql-12-oracle-fdw` |
-| `u24` | `postgresql-17-oracle-fdw` | `postgresql-16-oracle-fdw` | `postgresql-15-oracle-fdw` | `postgresql-14-oracle-fdw` | `postgresql-13-oracle-fdw` | `postgresql-12-oracle-fdw` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `oracle_fdw_17*` | `oracle_fdw_16*` | `oracle_fdw_15*` | `oracle_fdw_14*` | `oracle_fdw_13*` |
+| `el9` | `oracle_fdw_17*` | `oracle_fdw_16*` | `oracle_fdw_15*` | `oracle_fdw_14*` | `oracle_fdw_13*` |
+| `d12` | `postgresql-17-oracle-fdw` | `postgresql-16-oracle-fdw` | `postgresql-15-oracle-fdw` | `postgresql-14-oracle-fdw` | `postgresql-13-oracle-fdw` |
+| `u22` | `postgresql-17-oracle-fdw` | `postgresql-16-oracle-fdw` | `postgresql-15-oracle-fdw` | `postgresql-14-oracle-fdw` | `postgresql-13-oracle-fdw` |
+| `u24` | `postgresql-17-oracle-fdw` | `postgresql-16-oracle-fdw` | `postgresql-15-oracle-fdw` | `postgresql-14-oracle-fdw` | `postgresql-13-oracle-fdw` |
 
 
 

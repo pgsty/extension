@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION imgsmlr;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `imgsmlr_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-imgsmlr` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `imgsmlr_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-imgsmlr` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `imgsmlr` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add imgsmlr
+```
 
 
 Install `imgsmlr` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-imgsmlr;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `imgsmlr_17*` | `imgsmlr_16*` | `imgsmlr_15*` | `imgsmlr_14*` | `imgsmlr_13*` | `imgsmlr_12*` |
-| `el9` | `imgsmlr_17*` | `imgsmlr_16*` | `imgsmlr_15*` | `imgsmlr_14*` | `imgsmlr_13*` | `imgsmlr_12*` |
-| `d12` | `postgresql-17-imgsmlr` | `postgresql-16-imgsmlr` | `postgresql-15-imgsmlr` | `postgresql-14-imgsmlr` | `postgresql-13-imgsmlr` | `postgresql-12-imgsmlr` |
-| `u22` | `postgresql-17-imgsmlr` | `postgresql-16-imgsmlr` | `postgresql-15-imgsmlr` | `postgresql-14-imgsmlr` | `postgresql-13-imgsmlr` | `postgresql-12-imgsmlr` |
-| `u24` | `postgresql-17-imgsmlr` | `postgresql-16-imgsmlr` | `postgresql-15-imgsmlr` | `postgresql-14-imgsmlr` | `postgresql-13-imgsmlr` | `postgresql-12-imgsmlr` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `imgsmlr_17*` | `imgsmlr_16*` | `imgsmlr_15*` | `imgsmlr_14*` | `imgsmlr_13*` |
+| `el9` | `imgsmlr_17*` | `imgsmlr_16*` | `imgsmlr_15*` | `imgsmlr_14*` | `imgsmlr_13*` |
+| `d12` | `postgresql-17-imgsmlr` | `postgresql-16-imgsmlr` | `postgresql-15-imgsmlr` | `postgresql-14-imgsmlr` | `postgresql-13-imgsmlr` |
+| `u22` | `postgresql-17-imgsmlr` | `postgresql-16-imgsmlr` | `postgresql-15-imgsmlr` | `postgresql-14-imgsmlr` | `postgresql-13-imgsmlr` |
+| `u24` | `postgresql-17-imgsmlr` | `postgresql-16-imgsmlr` | `postgresql-15-imgsmlr` | `postgresql-14-imgsmlr` | `postgresql-13-imgsmlr` |
 
 
 

@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION extra_window_functions;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `extra_window_functions_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-extra-window-functions` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `extra_window_functions_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-extra-window-functions` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  |
 
+
+
+Install `extra_window_functions` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add extra_window_functions
+```
 
 
 Install `extra_window_functions` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -93,13 +100,13 @@ apt install postgresql-12-extra-window-functions;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `d12` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
-| `u22` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
-| `u24` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` | `postgresql-12-extra-window-functions` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el9` | `extra_window_functions_17*` | `extra_window_functions_16*` | `extra_window_functions_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` |
+| `u22` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` |
+| `u24` | `postgresql-17-extra-window-functions` | `postgresql-16-extra-window-functions` | `postgresql-15-extra-window-functions` | `postgresql-14-extra-window-functions` | `postgresql-13-extra-window-functions` |
 
 
 

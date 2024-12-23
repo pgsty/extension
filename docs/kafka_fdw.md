@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION kafka_fdw;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `kafka_fdw_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-kafka-fdw` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `kafka_fdw_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-kafka-fdw` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `kafka_fdw` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add kafka_fdw
+```
 
 
 Install `kafka_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -94,13 +101,13 @@ apt install postgresql-12-kafka-fdw;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | `kafka_fdw_16` | `kafka_fdw_15` | `kafka_fdw_14` | `kafka_fdw_13` | `kafka_fdw_12` |
-| `el9` | <span class="tcred">✘</span> | `kafka_fdw_16` | `kafka_fdw_15` | `kafka_fdw_14` | `kafka_fdw_13` | `kafka_fdw_12` |
-| `d12` | <span class="tcred">✘</span> | `postgresql-16-kafka-fdw` | `postgresql-15-kafka-fdw` | `postgresql-14-kafka-fdw` | `postgresql-13-kafka-fdw` | `postgresql-12-kafka-fdw` |
-| `u22` | <span class="tcred">✘</span> | `postgresql-16-kafka-fdw` | `postgresql-15-kafka-fdw` | `postgresql-14-kafka-fdw` | `postgresql-13-kafka-fdw` | `postgresql-12-kafka-fdw` |
-| `u24` | <span class="tcred">✘</span> | `postgresql-16-kafka-fdw` | `postgresql-15-kafka-fdw` | `postgresql-14-kafka-fdw` | `postgresql-13-kafka-fdw` | `postgresql-12-kafka-fdw` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcred">✘</span> | `kafka_fdw_16` | `kafka_fdw_15` | `kafka_fdw_14` | `kafka_fdw_13` |
+| `el9` | <span class="tcred">✘</span> | `kafka_fdw_16` | `kafka_fdw_15` | `kafka_fdw_14` | `kafka_fdw_13` |
+| `d12` | <span class="tcred">✘</span> | `postgresql-16-kafka-fdw` | `postgresql-15-kafka-fdw` | `postgresql-14-kafka-fdw` | `postgresql-13-kafka-fdw` |
+| `u22` | <span class="tcred">✘</span> | `postgresql-16-kafka-fdw` | `postgresql-15-kafka-fdw` | `postgresql-14-kafka-fdw` | `postgresql-13-kafka-fdw` |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-kafka-fdw` | `postgresql-15-kafka-fdw` | `postgresql-14-kafka-fdw` | `postgresql-13-kafka-fdw` |
 
 
 

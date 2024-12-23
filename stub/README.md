@@ -5,7 +5,7 @@
 
 The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://pigsty.io)
 
-Provide [%s](/list) available extensions as [RPM](/rpm) / [DEB](/deb) for PostgreSQL **12** - **17** in addition to the official PGDG repo.
+Provide [%s](/list) available extensions as [RPM](/rpm) / [DEB](/deb) for PostgreSQL **13** - **17** in addition to the official PGDG repo.
 
 Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS distros, and `x86_64` & `ARM64` architectures. 
 
@@ -86,6 +86,25 @@ If you have any suggestions on including new extensions or bumping to new versio
 
 ## Limitation
 
+Here are some bad cases that each distro has:
+
+```yaml
+el8:
+  amd64: [pljava]
+  arm64: [pljava, jdbc_fdw, pllua: [15, 14, 13], topn: [13]]
+el9:
+  amd64: []
+  arm64: [jdbc_fdw, pllua: [15, 14, 13], topn: [13]]
+u24:
+  amd64: [citus, topn, pg_partman: [13], timeseries: [13]]
+  arm64: [citus, topn, pg_partman: [13], timeseries: [13]]
+u22:
+  amd64: []
+  arm64: [topn, citus]
+d12:
+  amd64: [babelfishpg_common, babelfishpg_tsql, babelfishpg_tds, babelfishpg_money]
+  arm64: [babelfishpg_common, babelfishpg_tsql, babelfishpg_tds, babelfishpg_money, topn, citus]
+```
 
 
 ----------------

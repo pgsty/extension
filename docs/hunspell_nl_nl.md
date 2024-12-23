@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION hunspell_nl_nl;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `hunspell_nl_nl_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-hunspell-nl-nl` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `hunspell_nl_nl_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-hunspell-nl-nl` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
+
+
+Install `hunspell_nl_nl` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add hunspell_nl_nl
+```
 
 
 Install `hunspell_nl_nl` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-hunspell-nl-nl;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `hunspell_nl_nl_17` | `hunspell_nl_nl_16` | `hunspell_nl_nl_15` | `hunspell_nl_nl_14` | `hunspell_nl_nl_13` | `hunspell_nl_nl_12` |
-| `el9` | `hunspell_nl_nl_17` | `hunspell_nl_nl_16` | `hunspell_nl_nl_15` | `hunspell_nl_nl_14` | `hunspell_nl_nl_13` | `hunspell_nl_nl_12` |
-| `d12` | `postgresql-17-hunspell-nl-nl` | `postgresql-16-hunspell-nl-nl` | `postgresql-15-hunspell-nl-nl` | `postgresql-14-hunspell-nl-nl` | `postgresql-13-hunspell-nl-nl` | `postgresql-12-hunspell-nl-nl` |
-| `u22` | `postgresql-17-hunspell-nl-nl` | `postgresql-16-hunspell-nl-nl` | `postgresql-15-hunspell-nl-nl` | `postgresql-14-hunspell-nl-nl` | `postgresql-13-hunspell-nl-nl` | `postgresql-12-hunspell-nl-nl` |
-| `u24` | `postgresql-17-hunspell-nl-nl` | `postgresql-16-hunspell-nl-nl` | `postgresql-15-hunspell-nl-nl` | `postgresql-14-hunspell-nl-nl` | `postgresql-13-hunspell-nl-nl` | `postgresql-12-hunspell-nl-nl` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `hunspell_nl_nl_17` | `hunspell_nl_nl_16` | `hunspell_nl_nl_15` | `hunspell_nl_nl_14` | `hunspell_nl_nl_13` |
+| `el9` | `hunspell_nl_nl_17` | `hunspell_nl_nl_16` | `hunspell_nl_nl_15` | `hunspell_nl_nl_14` | `hunspell_nl_nl_13` |
+| `d12` | `postgresql-17-hunspell-nl-nl` | `postgresql-16-hunspell-nl-nl` | `postgresql-15-hunspell-nl-nl` | `postgresql-14-hunspell-nl-nl` | `postgresql-13-hunspell-nl-nl` |
+| `u22` | `postgresql-17-hunspell-nl-nl` | `postgresql-16-hunspell-nl-nl` | `postgresql-15-hunspell-nl-nl` | `postgresql-14-hunspell-nl-nl` | `postgresql-13-hunspell-nl-nl` |
+| `u24` | `postgresql-17-hunspell-nl-nl` | `postgresql-16-hunspell-nl-nl` | `postgresql-15-hunspell-nl-nl` | `postgresql-14-hunspell-nl-nl` | `postgresql-13-hunspell-nl-nl` |
 
 
 

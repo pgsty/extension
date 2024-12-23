@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ CREATE EXTENSION duckdb_fdw;
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `duckdb_fdw_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libduckdb` |
-| [DEB](/deb) | 1.1.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-duckdb-fdw` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libduckdb` |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `duckdb_fdw_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libduckdb` |
+| [DEB](/deb) | 1.1.2 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-duckdb-fdw` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libduckdb` |
 
+
+
+Install `duckdb_fdw` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add duckdb_fdw
+```
 
 
 Install `duckdb_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-duckdb-fdw;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `duckdb_fdw_17*` | `duckdb_fdw_16*` | `duckdb_fdw_15*` | `duckdb_fdw_14*` | `duckdb_fdw_13*` | `duckdb_fdw_12*` |
-| `el9` | `duckdb_fdw_17*` | `duckdb_fdw_16*` | `duckdb_fdw_15*` | `duckdb_fdw_14*` | `duckdb_fdw_13*` | `duckdb_fdw_12*` |
-| `d12` | `postgresql-17-duckdb-fdw` | `postgresql-16-duckdb-fdw` | `postgresql-15-duckdb-fdw` | `postgresql-14-duckdb-fdw` | `postgresql-13-duckdb-fdw` | `postgresql-12-duckdb-fdw` |
-| `u22` | `postgresql-17-duckdb-fdw` | `postgresql-16-duckdb-fdw` | `postgresql-15-duckdb-fdw` | `postgresql-14-duckdb-fdw` | `postgresql-13-duckdb-fdw` | `postgresql-12-duckdb-fdw` |
-| `u24` | `postgresql-17-duckdb-fdw` | `postgresql-16-duckdb-fdw` | `postgresql-15-duckdb-fdw` | `postgresql-14-duckdb-fdw` | `postgresql-13-duckdb-fdw` | `postgresql-12-duckdb-fdw` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `duckdb_fdw_17*` | `duckdb_fdw_16*` | `duckdb_fdw_15*` | `duckdb_fdw_14*` | `duckdb_fdw_13*` |
+| `el9` | `duckdb_fdw_17*` | `duckdb_fdw_16*` | `duckdb_fdw_15*` | `duckdb_fdw_14*` | `duckdb_fdw_13*` |
+| `d12` | `postgresql-17-duckdb-fdw` | `postgresql-16-duckdb-fdw` | `postgresql-15-duckdb-fdw` | `postgresql-14-duckdb-fdw` | `postgresql-13-duckdb-fdw` |
+| `u22` | `postgresql-17-duckdb-fdw` | `postgresql-16-duckdb-fdw` | `postgresql-15-duckdb-fdw` | `postgresql-14-duckdb-fdw` | `postgresql-13-duckdb-fdw` |
+| `u24` | `postgresql-17-duckdb-fdw` | `postgresql-16-duckdb-fdw` | `postgresql-15-duckdb-fdw` | `postgresql-14-duckdb-fdw` | `postgresql-13-duckdb-fdw` |
 
 
 

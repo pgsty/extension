@@ -4,7 +4,7 @@
 
 ### [`ext.pigsty.io`](https://ext.pigsty.io)
 
-- 342 extensions!
+- 340 extensions!
 - As Binary Packages
 - For PostgreSQL 12 - 17
 - On Ubuntu 22/24 / Debian 12

@@ -34,13 +34,13 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -56,11 +56,18 @@ shared_preload_libraries = 'bgw_replstatus'; # add this extension to postgresql.
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `bgw_replstatus_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.0.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-bgw-replstatus` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `bgw_replstatus_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.0.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-bgw-replstatus` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
+
+
+Install `bgw_replstatus` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add bgw_replstatus
+```
 
 
 Install `bgw_replstatus` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -96,13 +103,13 @@ apt install postgresql-12-bgw-replstatus;
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `bgw_replstatus_17*` | `bgw_replstatus_16*` | `bgw_replstatus_15*` | `bgw_replstatus_14*` | `bgw_replstatus_13*` | `bgw_replstatus_12*` |
-| `el9` | `bgw_replstatus_17*` | `bgw_replstatus_16*` | `bgw_replstatus_15*` | `bgw_replstatus_14*` | `bgw_replstatus_13*` | `bgw_replstatus_12*` |
-| `d12` | `postgresql-17-bgw-replstatus` | `postgresql-16-bgw-replstatus` | `postgresql-15-bgw-replstatus` | `postgresql-14-bgw-replstatus` | `postgresql-13-bgw-replstatus` | `postgresql-12-bgw-replstatus` |
-| `u22` | `postgresql-17-bgw-replstatus` | `postgresql-16-bgw-replstatus` | `postgresql-15-bgw-replstatus` | `postgresql-14-bgw-replstatus` | `postgresql-13-bgw-replstatus` | `postgresql-12-bgw-replstatus` |
-| `u24` | `postgresql-17-bgw-replstatus` | `postgresql-16-bgw-replstatus` | `postgresql-15-bgw-replstatus` | `postgresql-14-bgw-replstatus` | `postgresql-13-bgw-replstatus` | `postgresql-12-bgw-replstatus` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `bgw_replstatus_17*` | `bgw_replstatus_16*` | `bgw_replstatus_15*` | `bgw_replstatus_14*` | `bgw_replstatus_13*` |
+| `el9` | `bgw_replstatus_17*` | `bgw_replstatus_16*` | `bgw_replstatus_15*` | `bgw_replstatus_14*` | `bgw_replstatus_13*` |
+| `d12` | `postgresql-17-bgw-replstatus` | `postgresql-16-bgw-replstatus` | `postgresql-15-bgw-replstatus` | `postgresql-14-bgw-replstatus` | `postgresql-13-bgw-replstatus` |
+| `u22` | `postgresql-17-bgw-replstatus` | `postgresql-16-bgw-replstatus` | `postgresql-15-bgw-replstatus` | `postgresql-14-bgw-replstatus` | `postgresql-13-bgw-replstatus` |
+| `u24` | `postgresql-17-bgw-replstatus` | `postgresql-16-bgw-replstatus` | `postgresql-15-bgw-replstatus` | `postgresql-14-bgw-replstatus` | `postgresql-13-bgw-replstatus` |
 
 
 
