@@ -1,5 +1,6 @@
 
 - [Home](/)
+- [**Pig CLI**](/pig)
 - [**Extension List**](/list)
 - [RPM Package](/rpm)
 - [DEB Package](/deb)
