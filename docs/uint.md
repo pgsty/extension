@@ -1,4 +1,4 @@
-# pguint
+# uint
 
 
 > [pguint](https://github.com/petere/pguint): unsigned integer types
@@ -85,7 +85,6 @@ dnf install pguint_16*;
 dnf install pguint_15*;
 dnf install pguint_14*;
 dnf install pguint_13*;
-dnf install pguint_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pguint;
 apt install postgresql-15-pguint;
 apt install postgresql-14-pguint;
 apt install postgresql-13-pguint;
-apt install postgresql-12-pguint;
 ```
 
 

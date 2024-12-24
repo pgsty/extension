@@ -85,7 +85,6 @@ dnf install pgsql_tweaks_16*;
 dnf install pgsql_tweaks_15*;
 dnf install pgsql_tweaks_14*;
 dnf install pgsql_tweaks_13*;
-dnf install pgsql_tweaks_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgsql-tweaks;
 apt install postgresql-15-pgsql-tweaks;
 apt install postgresql-14-pgsql-tweaks;
 apt install postgresql-13-pgsql-tweaks;
-apt install postgresql-12-pgsql-tweaks;
 ```
 
 

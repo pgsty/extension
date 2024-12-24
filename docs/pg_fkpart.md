@@ -85,7 +85,6 @@ dnf install pg_fkpart_16*;
 dnf install pg_fkpart_15*;
 dnf install pg_fkpart_14*;
 dnf install pg_fkpart_13*;
-dnf install pg_fkpart_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-fkpart;
 apt install postgresql-15-pg-fkpart;
 apt install postgresql-14-pg-fkpart;
 apt install postgresql-13-pg-fkpart;
-apt install postgresql-12-pg-fkpart;
 ```
 
 

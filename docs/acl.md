@@ -1,4 +1,4 @@
-# pg_acl
+# acl
 
 
 > [pg_acl](https://github.com/arkhipov/acl): ACL Data type
@@ -85,7 +85,6 @@ dnf install acl_16*;
 dnf install acl_15*;
 dnf install acl_14*;
 dnf install acl_13*;
-dnf install acl_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-acl;
 apt install postgresql-15-acl;
 apt install postgresql-14-acl;
 apt install postgresql-13-acl;
-apt install postgresql-12-acl;
 ```
 
 

@@ -1,4 +1,4 @@
-# pg_semver
+# semver
 
 
 > [pg_semver](https://github.com/theory/pg-semver): Semantic version data type
@@ -85,7 +85,6 @@ dnf install semver_16*;
 dnf install semver_15*;
 dnf install semver_14*;
 dnf install semver_13*;
-dnf install semver_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-semver;
 apt install postgresql-15-semver;
 apt install postgresql-14-semver;
 apt install postgresql-13-semver;
-apt install postgresql-12-semver;
 ```
 
 

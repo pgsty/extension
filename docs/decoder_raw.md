@@ -81,7 +81,6 @@ dnf install decoder_raw_16*;
 dnf install decoder_raw_15*;
 dnf install decoder_raw_14*;
 dnf install decoder_raw_13*;
-dnf install decoder_raw_12*;
 ```
 
 
@@ -93,7 +92,6 @@ apt install postgresql-16-decoder-raw;
 apt install postgresql-15-decoder-raw;
 apt install postgresql-14-decoder-raw;
 apt install postgresql-13-decoder-raw;
-apt install postgresql-12-decoder-raw;
 ```
 
 

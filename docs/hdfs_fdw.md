@@ -84,7 +84,6 @@ dnf install hdfs_fdw_16*;
 dnf install hdfs_fdw_15*;
 dnf install hdfs_fdw_14*;
 dnf install hdfs_fdw_13*;
-dnf install hdfs_fdw_12*;
 ```
 
 

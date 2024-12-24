@@ -89,7 +89,6 @@ dnf install pg_stat_monitor_16*;
 dnf install pg_stat_monitor_15*;
 dnf install pg_stat_monitor_14*;
 dnf install pg_stat_monitor_13*;
-dnf install pg_stat_monitor_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-pg-stat-monitor;
 apt install postgresql-15-pg-stat-monitor;
 apt install postgresql-14-pg-stat-monitor;
 apt install postgresql-13-pg-stat-monitor;
-apt install postgresql-12-pg-stat-monitor;
 ```
 
 

@@ -1,4 +1,4 @@
-# passwordcheck
+# passwordcheck_cracklib
 
 
 > [passwordcheck](https://github.com/devrimgunduz/passwordcheck_cracklib): Strengthen PostgreSQL user password checks with cracklib
@@ -85,7 +85,6 @@ dnf install passwordcheck_cracklib_16*;
 dnf install passwordcheck_cracklib_15*;
 dnf install passwordcheck_cracklib_14*;
 dnf install passwordcheck_cracklib_13*;
-dnf install passwordcheck_cracklib_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-passwordcheck-cracklib;
 apt install postgresql-15-passwordcheck-cracklib;
 apt install postgresql-14-passwordcheck-cracklib;
 apt install postgresql-13-passwordcheck-cracklib;
-apt install postgresql-12-passwordcheck-cracklib;
 ```
 
 

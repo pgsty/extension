@@ -1,4 +1,4 @@
-# pg_base62
+# base62
 
 
 > [pg_base62](https://github.com/adjust/pg-base62): Base62 extension for PostgreSQL
@@ -85,7 +85,6 @@ dnf install pg_base62_16*;
 dnf install pg_base62_15*;
 dnf install pg_base62_14*;
 dnf install pg_base62_13*;
-dnf install pg_base62_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-base62;
 apt install postgresql-15-base62;
 apt install postgresql-14-base62;
 apt install postgresql-13-base62;
-apt install postgresql-12-base62;
 ```
 
 

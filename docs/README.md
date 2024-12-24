@@ -25,7 +25,16 @@ Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS d
 
 ## Get Started
 
-All rpm/deb packages are signed with GPG key `B9BD8B20` (`9592A7BC7A682E7333376E09E7935D8DB9BD8B20` ).
+### Pig CLI
+
+You can use the [`pig`](/pig) cli tool (pg package manager) or just use the traditional way. It's up to you.
+
+```bash
+curl -fsSL https://repo.pigsty.io/pig | bash  # install pig rpm/deb package
+$ pig repo add pigsty pgdg -u                 # add pgdg & pigsty repo, update cache      
+$ pig ext install pg17                        # install PostgreSQL 17 kernels with PGDG native packages
+$ pig ext install pg_duckdb                   # install the pg_duckdb extension (for current pg17)
+```
 
 ### APT Repo
 
@@ -35,7 +44,9 @@ All rpm/deb packages are signed with GPG key `B9BD8B20` (`9592A7BC7A682E7333376E
 [![Ubuntu Support: 22](https://img.shields.io/badge/Ubuntu-22/jammy-%23E95420?style=flat&logo=ubuntu&logoColor=%23E95420)](https://pigsty.io/docs/pgext/list/deb/)
 [![Debian Support: 12](https://img.shields.io/badge/Debian-12/bookworm-%23A81D33?style=flat&logo=debian&logoColor=%23A81D33)](https://pigsty.io/docs/reference/compatibility/)
 
-For Ubuntu 22.04 / 24.04 & Debian 12 or any compatible platforms, use the following commands to add the APT repo:
+All rpm/deb packages are signed with GPG key `B9BD8B20` (`9592A7BC7A682E7333376E09E7935D8DB9BD8B20` ).
+
+For Ubuntu 22.04 / 24.04 & Debian 12 or any compatible platforms, use the following commands:
 
 ```bash
 curl -fsSL https://repo.pigsty.io/key | sudo gpg --dearmor -o /etc/apt/keyrings/pigsty.gpg  # add gpg key
@@ -43,14 +54,15 @@ sudo tee /etc/apt/sources.list.d/pigsty-io.list > /dev/null <<EOF
 deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/infra generic main 
 deb [signed-by=/etc/apt/keyrings/pigsty.gpg] https://repo.pigsty.io/apt/pgsql/$(lsb_release -cs) $(lsb_release -cs) main
 EOF
-sudo apt update
+sudo apt update;  # sudo apt install pig
 ```
 
 ### YUM Repo
 
 [![Linux x86_64](https://img.shields.io/badge/Linux-x86_64-%23FCC624?style=flat&logo=linux&labelColor=FCC624&logoColor=black)](https://pigsty.io/docs/node)
 [![Linux AARCH64](https://img.shields.io/badge/Linux-Aarch64-%23FCC624?style=flat&logo=linux&labelColor=FCC624&logoColor=black)](https://pigsty.io/docs/node)
-[![RHEL Support: 8/9](https://img.shields.io/badge/EL-7/8/9-red?style=flat&logo=redhat&logoColor=red)](https://pigsty.io/docs/pgext/list/rpm/)
+[![RHEL Support: 8](https://img.shields.io/badge/EL-8-red?style=flat&logo=redhat&logoColor=red)](https://pigsty.io/docs/pgext/list/rpm/)
+[![RHEL Support: 9](https://img.shields.io/badge/EL-9-red?style=flat&logo=redhat&logoColor=red)](https://pigsty.io/docs/pgext/list/rpm/)
 [![RHEL](https://img.shields.io/badge/RHEL-slategray?style=flat&logo=redhat&logoColor=red)](https://pigsty.io/docs/pgext/list/rpm/)
 [![CentOS](https://img.shields.io/badge/CentOS-slategray?style=flat&logo=centos&logoColor=%23262577)](https://almalinux.org/)
 [![RockyLinux](https://img.shields.io/badge/RockyLinux-slategray?style=flat&logo=rockylinux&logoColor=%2310B981)](https://almalinux.org/)
@@ -62,7 +74,7 @@ For EL 8/9 and compatible platforms, use the following commands to add the YUM r
 ```bash
 curl -fsSL https://repo.pigsty.io/key      | sudo tee /etc/pki/rpm-gpg/RPM-GPG-KEY-pigsty >/dev/null  # add gpg key
 curl -fsSL https://repo.pigsty.io/yum/repo | sudo tee /etc/yum.repos.d/pigsty.repo        >/dev/null  # add repo file
-sudo yum makecache
+sudo yum makecache; # sudo yum install pig 
 ```
 
 -------
@@ -100,29 +112,30 @@ You can edit the [`pigsty.csv`](https://github.com/pgsty/extension/blob/main/dat
 If you have any suggestions on including new extensions or bumping to new versions, PR or [Issue](https://github.com/pgsty/extension/issues/new) are always welcome!
 
 
-----------------
+--------
 
-## Limitation
+## Compatibility
 
-Here are some bad cases that each distro has:
+`pig` runs on: RHEL 8/9, Ubuntu 22.04/24.04, and Debian 12, on both `amd64/arm64` arch
 
-```yaml
-el8:
-  amd64: [pljava]
-  arm64: [pljava, jdbc_fdw, pllua: [15, 14, 13], topn: [13]]
-el9:
-  amd64: []
-  arm64: [jdbc_fdw, pllua: [15, 14, 13], topn: [13]]
-u24:
-  amd64: [citus, topn, pg_partman: [13], timeseries: [13]]
-  arm64: [citus, topn, pg_partman: [13], timeseries: [13]]
-u22:
-  amd64: []
-  arm64: [topn, citus]
-d12:
-  amd64: [babelfishpg_common, babelfishpg_tsql, babelfishpg_tds, babelfishpg_money]
-  arm64: [babelfishpg_common, babelfishpg_tsql, babelfishpg_tds, babelfishpg_money, topn, citus]
-```
+|  Code   | Distribution                   |  `x86_64`  | `aarch64`  |
+|:-------:|--------------------------------|:----------:|:----------:|
+| **el9** | RHEL 9 / Rocky9 / Alma9  / ... | PG 17 - 13 | PG 17 - 13 |
+| **el8** | RHEL 8 / Rocky8 / Alma8 / ...  | PG 17 - 13 | PG 17 - 13 |
+| **u24** | Ubuntu 24.04 (`noble`)         | PG 17 - 13 | PG 17 - 13 |
+| **u22** | Ubuntu 22.04 (`jammy`)         | PG 17 - 13 | PG 17 - 13 |
+| **d12** | Debian 12 (`bookworm`)         | PG 17 - 13 | PG 17 - 13 |
+
+Here are some bad cases and limitation for above distros:
+
+- [`citus`](https://ext.pigsty.io/#/citus) is not available on `aarch64` (deb)
+- [`pljava`](https://ext.pigsty.io/#/pljava) is missing on `el8`
+- [`jdbc_fdw`](https://ext.pigsty.io/#/jdbc_fdw) is missing on `el8.aarch64` and `el9.aarch64`
+- [`pllua`](https://ext.pigsty.io/#/pllua) is missing on `el8.aarch64` for pg 13,14,15
+- [`topn`](https://ext.pigsty.io/#/topn) is missing on `el8.aarch64` and `el9.aarch64` for pg13, and all `deb.aarch64`
+- [`pg_partman`](https://ext.pigsty.io/#/pg_partman) and [`timeseries`](https://ext.pigsty.io/#/timeseries) is missing on `u24` for pg13
+- [`wiltondb`](https://ext.pigsty.io/#/wiltondb) is missing on `d12`
+
 
 
 ----------------

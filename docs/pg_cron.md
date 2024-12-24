@@ -89,7 +89,6 @@ dnf install pg_cron_16*;
 dnf install pg_cron_15*;
 dnf install pg_cron_14*;
 dnf install pg_cron_13*;
-dnf install pg_cron_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-cron;
 apt install postgresql-15-cron;
 apt install postgresql-14-cron;
 apt install postgresql-13-cron;
-apt install postgresql-12-cron;
 ```
 
 

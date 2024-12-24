@@ -84,7 +84,6 @@ dnf install postgresql_faker_16*;
 dnf install postgresql_faker_15*;
 dnf install postgresql_faker_14*;
 dnf install postgresql_faker_13*;
-dnf install postgresql_faker_12*;
 ```
 
 

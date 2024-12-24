@@ -85,7 +85,6 @@ dnf install pg_hashids_16*;
 dnf install pg_hashids_15*;
 dnf install pg_hashids_14*;
 dnf install pg_hashids_13*;
-dnf install pg_hashids_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-hashids;
 apt install postgresql-15-pg-hashids;
 apt install postgresql-14-pg-hashids;
 apt install postgresql-13-pg-hashids;
-apt install postgresql-12-pg-hashids;
 ```
 
 

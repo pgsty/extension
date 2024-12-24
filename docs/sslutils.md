@@ -85,7 +85,6 @@ dnf install sslutils_16*;
 dnf install sslutils_15*;
 dnf install sslutils_14*;
 dnf install sslutils_13*;
-dnf install sslutils_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-sslutils;
 apt install postgresql-15-sslutils;
 apt install postgresql-14-sslutils;
 apt install postgresql-13-sslutils;
-apt install postgresql-12-sslutils;
 ```
 
 

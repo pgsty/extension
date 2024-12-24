@@ -85,7 +85,6 @@ dnf install tdigest_16*;
 dnf install tdigest_15*;
 dnf install tdigest_14*;
 dnf install tdigest_13*;
-dnf install tdigest_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-tdigest;
 apt install postgresql-15-tdigest;
 apt install postgresql-14-tdigest;
 apt install postgresql-13-tdigest;
-apt install postgresql-12-tdigest;
 ```
 
 

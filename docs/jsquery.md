@@ -95,7 +95,6 @@ apt install postgresql-16-jsquery;
 apt install postgresql-15-jsquery;
 apt install postgresql-14-jsquery;
 apt install postgresql-13-jsquery;
-apt install postgresql-12-jsquery;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install hypopg_16*;
 dnf install hypopg_15*;
 dnf install hypopg_14*;
 dnf install hypopg_13*;
-dnf install hypopg_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-hypopg;
 apt install postgresql-15-hypopg;
 apt install postgresql-14-hypopg;
 apt install postgresql-13-hypopg;
-apt install postgresql-12-hypopg;
 ```
 
 

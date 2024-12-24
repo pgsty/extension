@@ -85,7 +85,6 @@ dnf install pgtt_16*;
 dnf install pgtt_15*;
 dnf install pgtt_14*;
 dnf install pgtt_13*;
-dnf install pgtt_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgtt;
 apt install postgresql-15-pgtt;
 apt install postgresql-14-pgtt;
 apt install postgresql-13-pgtt;
-apt install postgresql-12-pgtt;
 ```
 
 

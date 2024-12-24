@@ -89,7 +89,6 @@ dnf install pglite_fusion_16;
 dnf install pglite_fusion_15;
 dnf install pglite_fusion_14;
 dnf install pglite_fusion_13;
-dnf install pglite_fusion_12;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-pglite-fusion;
 apt install postgresql-15-pglite-fusion;
 apt install postgresql-14-pglite-fusion;
 apt install postgresql-13-pglite-fusion;
-apt install postgresql-12-pglite-fusion;
 ```
 
 

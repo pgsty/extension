@@ -85,7 +85,6 @@ dnf install hll_16*;
 dnf install hll_15*;
 dnf install hll_14*;
 dnf install hll_13*;
-dnf install hll_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-hll;
 apt install postgresql-15-hll;
 apt install postgresql-14-hll;
 apt install postgresql-13-hll;
-apt install postgresql-12-hll;
 ```
 
 

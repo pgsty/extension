@@ -1,4 +1,4 @@
-# pg_base36
+# base36
 
 
 > [pg_base36](https://github.com/adjust/pg-base36): Integer Base36 types
@@ -85,7 +85,6 @@ dnf install pg_base36_16*;
 dnf install pg_base36_15*;
 dnf install pg_base36_14*;
 dnf install pg_base36_13*;
-dnf install pg_base36_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-base36;
 apt install postgresql-15-base36;
 apt install postgresql-14-base36;
 apt install postgresql-13-base36;
-apt install postgresql-12-base36;
 ```
 
 

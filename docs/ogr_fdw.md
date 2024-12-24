@@ -84,7 +84,6 @@ dnf install ogr_fdw_16*;
 dnf install ogr_fdw_15*;
 dnf install ogr_fdw_14*;
 dnf install ogr_fdw_13*;
-dnf install ogr_fdw_12*;
 ```
 
 
@@ -96,7 +95,6 @@ apt install postgresql-16-ogr-fdw;
 apt install postgresql-15-ogr-fdw;
 apt install postgresql-14-ogr-fdw;
 apt install postgresql-13-ogr-fdw;
-apt install postgresql-12-ogr-fdw;
 ```
 
 

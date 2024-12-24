@@ -85,7 +85,6 @@ dnf install pg_math_16*;
 dnf install pg_math_15*;
 dnf install pg_math_14*;
 dnf install pg_math_13*;
-dnf install pg_math_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-math;
 apt install postgresql-15-pg-math;
 apt install postgresql-14-pg-math;
 apt install postgresql-13-pg-math;
-apt install postgresql-12-pg-math;
 ```
 
 

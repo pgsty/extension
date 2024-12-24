@@ -1,4 +1,4 @@
-# pg_anon
+# anon
 
 
 > [pg_anon](https://postgresql-anonymizer.readthedocs.io/en/stable/): Data anonymization tools
@@ -89,7 +89,6 @@ dnf install postgresql_anonymizer_16*;
 dnf install postgresql_anonymizer_15*;
 dnf install postgresql_anonymizer_14*;
 dnf install postgresql_anonymizer_13*;
-dnf install postgresql_anonymizer_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-anonymizer;
 apt install postgresql-15-anonymizer;
 apt install postgresql-14-anonymizer;
 apt install postgresql-13-anonymizer;
-apt install postgresql-12-anonymizer;
 ```
 
 

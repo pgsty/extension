@@ -1,4 +1,4 @@
-# pg_vectorize
+# vectorize
 
 
 > [pg_vectorize](https://github.com/tembo-io/pg_vectorize): The simplest way to do vector search on Postgres

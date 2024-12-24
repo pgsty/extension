@@ -1,4 +1,4 @@
-# pg_gzip
+# gzip
 
 
 > [pg_gzip](https://github.com/pramsey/pgsql-gzip): gzip and gunzip functions.
@@ -85,7 +85,6 @@ dnf install pgsql_gzip_16*;
 dnf install pgsql_gzip_15*;
 dnf install pgsql_gzip_14*;
 dnf install pgsql_gzip_13*;
-dnf install pgsql_gzip_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-gzip;
 apt install postgresql-15-gzip;
 apt install postgresql-14-gzip;
 apt install postgresql-13-gzip;
-apt install postgresql-12-gzip;
 ```
 
 

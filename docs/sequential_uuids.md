@@ -85,7 +85,6 @@ dnf install sequential_uuids_16;
 dnf install sequential_uuids_15;
 dnf install sequential_uuids_14;
 dnf install sequential_uuids_13;
-dnf install sequential_uuids_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-sequential-uuids;
 apt install postgresql-15-sequential-uuids;
 apt install postgresql-14-sequential-uuids;
 apt install postgresql-13-sequential-uuids;
-apt install postgresql-12-sequential-uuids;
 ```
 
 

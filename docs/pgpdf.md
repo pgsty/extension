@@ -89,7 +89,6 @@ dnf install pgpdf_16*;
 dnf install pgpdf_15*;
 dnf install pgpdf_14*;
 dnf install pgpdf_13*;
-dnf install pgpdf_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-pgpdf;
 apt install postgresql-15-pgpdf;
 apt install postgresql-14-pgpdf;
 apt install postgresql-13-pgpdf;
-apt install postgresql-12-pgpdf;
 ```
 
 

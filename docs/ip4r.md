@@ -85,7 +85,6 @@ dnf install ip4r_16*;
 dnf install ip4r_15*;
 dnf install ip4r_14*;
 dnf install ip4r_13*;
-dnf install ip4r_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-ip4r;
 apt install postgresql-15-ip4r;
 apt install postgresql-14-ip4r;
 apt install postgresql-13-ip4r;
-apt install postgresql-12-ip4r;
 ```
 
 

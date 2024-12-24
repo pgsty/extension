@@ -85,7 +85,6 @@ dnf install hunspell_en_us_16;
 dnf install hunspell_en_us_15;
 dnf install hunspell_en_us_14;
 dnf install hunspell_en_us_13;
-dnf install hunspell_en_us_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-hunspell-en-us;
 apt install postgresql-15-hunspell-en-us;
 apt install postgresql-14-hunspell-en-us;
 apt install postgresql-13-hunspell-en-us;
-apt install postgresql-12-hunspell-en-us;
 ```
 
 

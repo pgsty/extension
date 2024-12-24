@@ -85,7 +85,6 @@ dnf install tds_fdw_16*;
 dnf install tds_fdw_15*;
 dnf install tds_fdw_14*;
 dnf install tds_fdw_13*;
-dnf install tds_fdw_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-tds-fdw;
 apt install postgresql-15-tds-fdw;
 apt install postgresql-14-tds-fdw;
 apt install postgresql-13-tds-fdw;
-apt install postgresql-12-tds-fdw;
 ```
 
 

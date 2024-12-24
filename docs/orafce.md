@@ -85,7 +85,6 @@ dnf install orafce_16*;
 dnf install orafce_15*;
 dnf install orafce_14*;
 dnf install orafce_13*;
-dnf install orafce_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-orafce;
 apt install postgresql-15-orafce;
 apt install postgresql-14-orafce;
 apt install postgresql-13-orafce;
-apt install postgresql-12-orafce;
 ```
 
 

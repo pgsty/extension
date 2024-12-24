@@ -84,7 +84,6 @@ dnf install pg_dbms_metadata_16*;
 dnf install pg_dbms_metadata_15*;
 dnf install pg_dbms_metadata_14*;
 dnf install pg_dbms_metadata_13*;
-dnf install pg_dbms_metadata_12*;
 ```
 
 

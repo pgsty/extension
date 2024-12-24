@@ -85,7 +85,6 @@ dnf install pg_tiktoken_16;
 dnf install pg_tiktoken_15;
 dnf install pg_tiktoken_14;
 dnf install pg_tiktoken_13;
-dnf install pg_tiktoken_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-tiktoken;
 apt install postgresql-15-pg-tiktoken;
 apt install postgresql-14-pg-tiktoken;
 apt install postgresql-13-pg-tiktoken;
-apt install postgresql-12-pg-tiktoken;
 ```
 
 

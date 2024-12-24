@@ -1,4 +1,4 @@
-# pg_ecdsa
+# pguecc
 
 
 > [pg_ecdsa](https://github.com/ameensol/pg-ecdsa): uECC bindings for Postgres
@@ -85,7 +85,6 @@ dnf install pg_ecdsa_16*;
 dnf install pg_ecdsa_15*;
 dnf install pg_ecdsa_14*;
 dnf install pg_ecdsa_13*;
-dnf install pg_ecdsa_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-ecdsa;
 apt install postgresql-15-pg-ecdsa;
 apt install postgresql-14-pg-ecdsa;
 apt install postgresql-13-pg-ecdsa;
-apt install postgresql-12-pg-ecdsa;
 ```
 
 

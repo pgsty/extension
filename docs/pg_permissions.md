@@ -85,7 +85,6 @@ dnf install pg_permissions_16*;
 dnf install pg_permissions_15*;
 dnf install pg_permissions_14*;
 dnf install pg_permissions_13*;
-dnf install pg_permissions_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-permissions;
 apt install postgresql-15-pg-permissions;
 apt install postgresql-14-pg-permissions;
 apt install postgresql-13-pg-permissions;
-apt install postgresql-12-pg-permissions;
 ```
 
 

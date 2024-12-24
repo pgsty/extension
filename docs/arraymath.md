@@ -1,4 +1,4 @@
-# pg_arraymath
+# arraymath
 
 
 > [pg_arraymath](https://github.com/pramsey/pgsql-arraymath): Array math and operators that work element by element on the contents of arrays
@@ -85,7 +85,6 @@ dnf install pg_arraymath_16*;
 dnf install pg_arraymath_15*;
 dnf install pg_arraymath_14*;
 dnf install pg_arraymath_13*;
-dnf install pg_arraymath_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-arraymath;
 apt install postgresql-15-pg-arraymath;
 apt install postgresql-14-pg-arraymath;
 apt install postgresql-13-pg-arraymath;
-apt install postgresql-12-pg-arraymath;
 ```
 
 

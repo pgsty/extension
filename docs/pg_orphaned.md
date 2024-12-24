@@ -85,7 +85,6 @@ dnf install pg_orphaned_16*;
 dnf install pg_orphaned_15*;
 dnf install pg_orphaned_14*;
 dnf install pg_orphaned_13*;
-dnf install pg_orphaned_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-orphaned;
 apt install postgresql-15-pg-orphaned;
 apt install postgresql-14-pg-orphaned;
 apt install postgresql-13-pg-orphaned;
-apt install postgresql-12-pg-orphaned;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install pg_fact_loader_16*;
 dnf install pg_fact_loader_15*;
 dnf install pg_fact_loader_14*;
 dnf install pg_fact_loader_13*;
-dnf install pg_fact_loader_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-fact-loader;
 apt install postgresql-15-pg-fact-loader;
 apt install postgresql-14-pg-fact-loader;
 apt install postgresql-13-pg-fact-loader;
-apt install postgresql-12-pg-fact-loader;
 ```
 
 

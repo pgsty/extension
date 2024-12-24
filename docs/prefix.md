@@ -1,4 +1,4 @@
-# pg_prefix
+# prefix
 
 
 > [pg_prefix](https://github.com/dimitri/prefix): Prefix Range module for PostgreSQL
@@ -85,7 +85,6 @@ dnf install prefix_16*;
 dnf install prefix_15*;
 dnf install prefix_14*;
 dnf install prefix_13*;
-dnf install prefix_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-prefix;
 apt install postgresql-15-prefix;
 apt install postgresql-14-prefix;
 apt install postgresql-13-prefix;
-apt install postgresql-12-prefix;
 ```
 
 

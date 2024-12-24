@@ -1,4 +1,4 @@
-# pg_explain_ui
+# explain_ui
 
 
 > [pg_explain_ui](https://github.com/davidgomes/pg-explain-ui): easily jump into a visual plan UI for any SQL query
@@ -85,7 +85,6 @@ dnf install pg_explain_ui_16;
 dnf install pg_explain_ui_15;
 dnf install pg_explain_ui_14;
 dnf install pg_explain_ui_13;
-dnf install pg_explain_ui_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-explain-ui;
 apt install postgresql-15-pg-explain-ui;
 apt install postgresql-14-pg-explain-ui;
 apt install postgresql-13-pg-explain-ui;
-apt install postgresql-12-pg-explain-ui;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install pg_rational_16*;
 dnf install pg_rational_15*;
 dnf install pg_rational_14*;
 dnf install pg_rational_13*;
-dnf install pg_rational_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-rational;
 apt install postgresql-15-rational;
 apt install postgresql-14-rational;
 apt install postgresql-13-rational;
-apt install postgresql-12-rational;
 ```
 
 

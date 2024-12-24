@@ -1,4 +1,4 @@
-# pg_uri
+# uri
 
 
 > [pg_uri](https://github.com/petere/pguri): URI Data type for PostgreSQL
@@ -85,7 +85,6 @@ dnf install pg_uri_16*;
 dnf install pg_uri_15*;
 dnf install pg_uri_14*;
 dnf install pg_uri_13*;
-dnf install pg_uri_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-uri;
 apt install postgresql-15-pg-uri;
 apt install postgresql-14-pg-uri;
 apt install postgresql-13-pg-uri;
-apt install postgresql-12-pg-uri;
 ```
 
 

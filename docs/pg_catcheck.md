@@ -85,7 +85,6 @@ dnf install pg_catcheck_16*;
 dnf install pg_catcheck_15*;
 dnf install pg_catcheck_14*;
 dnf install pg_catcheck_13*;
-dnf install pg_catcheck_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-catcheck;
 apt install postgresql-15-pg-catcheck;
 apt install postgresql-14-pg-catcheck;
 apt install postgresql-13-pg-catcheck;
-apt install postgresql-12-pg-catcheck;
 ```
 
 

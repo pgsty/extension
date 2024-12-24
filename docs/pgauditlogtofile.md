@@ -85,7 +85,6 @@ dnf install pgauditlogtofile_16*;
 dnf install pgauditlogtofile_15*;
 dnf install pgauditlogtofile_14*;
 dnf install pgauditlogtofile_13*;
-dnf install pgauditlogtofile_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgauditlogtofile;
 apt install postgresql-15-pgauditlogtofile;
 apt install postgresql-14-pgauditlogtofile;
 apt install postgresql-13-pgauditlogtofile;
-apt install postgresql-12-pgauditlogtofile;
 ```
 
 

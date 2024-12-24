@@ -85,7 +85,6 @@ dnf install pgsmcrypto_16;
 dnf install pgsmcrypto_15;
 dnf install pgsmcrypto_14;
 dnf install pgsmcrypto_13;
-dnf install pgsmcrypto_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgsmcrypto;
 apt install postgresql-15-pgsmcrypto;
 apt install postgresql-14-pgsmcrypto;
 apt install postgresql-13-pgsmcrypto;
-apt install postgresql-12-pgsmcrypto;
 ```
 
 

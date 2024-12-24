@@ -85,7 +85,6 @@ dnf install pg_cardano_16;
 dnf install pg_cardano_15;
 dnf install pg_cardano_14;
 dnf install pg_cardano_13;
-dnf install pg_cardano_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-cardano;
 apt install postgresql-15-pg-cardano;
 apt install postgresql-14-pg-cardano;
 apt install postgresql-13-pg-cardano;
-apt install postgresql-12-pg-cardano;
 ```
 
 

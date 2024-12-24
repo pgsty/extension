@@ -85,7 +85,6 @@ dnf install pg_background_16*;
 dnf install pg_background_15*;
 dnf install pg_background_14*;
 dnf install pg_background_13*;
-dnf install pg_background_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-background;
 apt install postgresql-15-pg-background;
 apt install postgresql-14-pg-background;
 apt install postgresql-13-pg-background;
-apt install postgresql-12-pg-background;
 ```
 
 

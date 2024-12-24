@@ -89,7 +89,6 @@ dnf install pg_bestmatch_16;
 dnf install pg_bestmatch_15;
 dnf install pg_bestmatch_14;
 dnf install pg_bestmatch_13;
-dnf install pg_bestmatch_12;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-pg-bestmatch;
 apt install postgresql-15-pg-bestmatch;
 apt install postgresql-14-pg-bestmatch;
 apt install postgresql-13-pg-bestmatch;
-apt install postgresql-12-pg-bestmatch;
 ```
 
 

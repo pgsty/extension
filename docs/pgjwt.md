@@ -85,7 +85,6 @@ dnf install pgjwt_16*;
 dnf install pgjwt_15*;
 dnf install pgjwt_14*;
 dnf install pgjwt_13*;
-dnf install pgjwt_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgjwt;
 apt install postgresql-15-pgjwt;
 apt install postgresql-14-pgjwt;
 apt install postgresql-13-pgjwt;
-apt install postgresql-12-pgjwt;
 ```
 
 

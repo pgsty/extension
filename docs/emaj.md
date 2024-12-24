@@ -85,7 +85,6 @@ dnf install e-maj_16*;
 dnf install e-maj_15*;
 dnf install e-maj_14*;
 dnf install e-maj_13*;
-dnf install e-maj_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-emaj;
 apt install postgresql-15-emaj;
 apt install postgresql-14-emaj;
 apt install postgresql-13-emaj;
-apt install postgresql-12-emaj;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install pg4ml_16;
 dnf install pg4ml_15;
 dnf install pg4ml_14;
 dnf install pg4ml_13;
-dnf install pg4ml_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg4ml;
 apt install postgresql-15-pg4ml;
 apt install postgresql-14-pg4ml;
 apt install postgresql-13-pg4ml;
-apt install postgresql-12-pg4ml;
 ```
 
 

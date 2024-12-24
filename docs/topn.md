@@ -85,7 +85,6 @@ dnf install topn_16*;
 dnf install topn_15*;
 dnf install topn_14*;
 dnf install topn_13*;
-dnf install topn_12*;
 ```
 
 
@@ -96,7 +95,6 @@ apt install postgresql-16-topn;
 apt install postgresql-15-topn;
 apt install postgresql-14-topn;
 apt install postgresql-13-topn;
-apt install postgresql-12-topn;
 ```
 
 

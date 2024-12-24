@@ -85,7 +85,6 @@ dnf install pagevis_16;
 dnf install pagevis_15;
 dnf install pagevis_14;
 dnf install pagevis_13;
-dnf install pagevis_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pagevis;
 apt install postgresql-15-pagevis;
 apt install postgresql-14-pagevis;
 apt install postgresql-13-pagevis;
-apt install postgresql-12-pagevis;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install lower_quantile_16*;
 dnf install lower_quantile_15*;
 dnf install lower_quantile_14*;
 dnf install lower_quantile_13*;
-dnf install lower_quantile_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-lower-quantile;
 apt install postgresql-15-lower-quantile;
 apt install postgresql-14-lower-quantile;
 apt install postgresql-13-lower-quantile;
-apt install postgresql-12-lower-quantile;
 ```
 
 

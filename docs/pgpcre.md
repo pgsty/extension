@@ -85,7 +85,6 @@ dnf install pgpcre_16;
 dnf install pgpcre_15;
 dnf install pgpcre_14;
 dnf install pgpcre_13;
-dnf install pgpcre_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgpcre;
 apt install postgresql-15-pgpcre;
 apt install postgresql-14-pgpcre;
 apt install postgresql-13-pgpcre;
-apt install postgresql-12-pgpcre;
 ```
 
 

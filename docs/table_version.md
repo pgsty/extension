@@ -85,7 +85,6 @@ dnf install table_version_16*;
 dnf install table_version_15*;
 dnf install table_version_14*;
 dnf install table_version_13*;
-dnf install table_version_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-tableversion;
 apt install postgresql-15-tableversion;
 apt install postgresql-14-tableversion;
 apt install postgresql-13-tableversion;
-apt install postgresql-12-tableversion;
 ```
 
 

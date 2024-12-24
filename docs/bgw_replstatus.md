@@ -85,7 +85,6 @@ dnf install bgw_replstatus_16*;
 dnf install bgw_replstatus_15*;
 dnf install bgw_replstatus_14*;
 dnf install bgw_replstatus_13*;
-dnf install bgw_replstatus_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-bgw-replstatus;
 apt install postgresql-15-bgw-replstatus;
 apt install postgresql-14-bgw-replstatus;
 apt install postgresql-13-bgw-replstatus;
-apt install postgresql-12-bgw-replstatus;
 ```
 
 

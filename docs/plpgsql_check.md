@@ -89,7 +89,6 @@ dnf install plpgsql_check_16*;
 dnf install plpgsql_check_15*;
 dnf install plpgsql_check_14*;
 dnf install plpgsql_check_13*;
-dnf install plpgsql_check_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-plpgsql-check;
 apt install postgresql-15-plpgsql-check;
 apt install postgresql-14-plpgsql-check;
 apt install postgresql-13-plpgsql-check;
-apt install postgresql-12-plpgsql-check;
 ```
 
 

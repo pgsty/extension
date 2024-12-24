@@ -85,7 +85,6 @@ dnf install pg_protobuf_16;
 dnf install pg_protobuf_15;
 dnf install pg_protobuf_14;
 dnf install pg_protobuf_13;
-dnf install pg_protobuf_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-protobuf;
 apt install postgresql-15-pg-protobuf;
 apt install postgresql-14-pg-protobuf;
 apt install postgresql-13-pg-protobuf;
-apt install postgresql-12-pg-protobuf;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install credcheck_16*;
 dnf install credcheck_15*;
 dnf install credcheck_14*;
 dnf install credcheck_13*;
-dnf install credcheck_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-credcheck;
 apt install postgresql-15-credcheck;
 apt install postgresql-14-credcheck;
 apt install postgresql-13-credcheck;
-apt install postgresql-12-credcheck;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install sqlite_fdw_16*;
 dnf install sqlite_fdw_15*;
 dnf install sqlite_fdw_14*;
 dnf install sqlite_fdw_13*;
-dnf install sqlite_fdw_12*;
 ```
 
 
@@ -96,7 +95,6 @@ apt install postgresql-16-sqlite-fdw;
 apt install postgresql-15-sqlite-fdw;
 apt install postgresql-14-sqlite-fdw;
 apt install postgresql-13-sqlite-fdw;
-apt install postgresql-12-sqlite-fdw;
 ```
 
 

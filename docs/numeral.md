@@ -85,7 +85,6 @@ dnf install numeral_16*;
 dnf install numeral_15*;
 dnf install numeral_14*;
 dnf install numeral_13*;
-dnf install numeral_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-numeral;
 apt install postgresql-15-numeral;
 apt install postgresql-14-numeral;
 apt install postgresql-13-numeral;
-apt install postgresql-12-numeral;
 ```
 
 

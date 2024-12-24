@@ -85,7 +85,6 @@ dnf install table_log_16;
 dnf install table_log_15;
 dnf install table_log_14;
 dnf install table_log_13;
-dnf install table_log_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-tablelog;
 apt install postgresql-15-tablelog;
 apt install postgresql-14-tablelog;
 apt install postgresql-13-tablelog;
-apt install postgresql-12-tablelog;
 ```
 
 

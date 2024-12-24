@@ -85,7 +85,6 @@ dnf install pllua_16*;
 dnf install pllua_15*;
 dnf install pllua_14*;
 dnf install pllua_13*;
-dnf install pllua_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pllua;
 apt install postgresql-15-pllua;
 apt install postgresql-14-pllua;
 apt install postgresql-13-pllua;
-apt install postgresql-12-pllua;
 ```
 
 

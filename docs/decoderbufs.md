@@ -81,7 +81,6 @@ dnf install postgres-decoderbufs_16*;
 dnf install postgres-decoderbufs_15*;
 dnf install postgres-decoderbufs_14*;
 dnf install postgres-decoderbufs_13*;
-dnf install postgres-decoderbufs_12*;
 ```
 
 
@@ -93,7 +92,6 @@ apt install postgresql-16-decoderbufs;
 apt install postgresql-15-decoderbufs;
 apt install postgresql-14-decoderbufs;
 apt install postgresql-13-decoderbufs;
-apt install postgresql-12-decoderbufs;
 ```
 
 

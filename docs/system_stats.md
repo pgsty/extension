@@ -85,7 +85,6 @@ dnf install system_stats_16*;
 dnf install system_stats_15*;
 dnf install system_stats_14*;
 dnf install system_stats_13*;
-dnf install system_stats_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-system-stats;
 apt install postgresql-15-system-stats;
 apt install postgresql-14-system-stats;
 apt install postgresql-13-system-stats;
-apt install postgresql-12-system-stats;
 ```
 
 

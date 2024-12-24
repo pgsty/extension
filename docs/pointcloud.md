@@ -85,7 +85,6 @@ dnf install pointcloud_16*;
 dnf install pointcloud_15*;
 dnf install pointcloud_14*;
 dnf install pointcloud_13*;
-dnf install pointcloud_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pointcloud;
 apt install postgresql-15-pointcloud;
 apt install postgresql-14-pointcloud;
 apt install postgresql-13-pointcloud;
-apt install postgresql-12-pointcloud;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install rum_16;
 dnf install rum_15;
 dnf install rum_14;
 dnf install rum_13;
-dnf install rum_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-rum;
 apt install postgresql-15-rum;
 apt install postgresql-14-rum;
 apt install postgresql-13-rum;
-apt install postgresql-12-rum;
 ```
 
 

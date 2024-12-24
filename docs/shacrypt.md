@@ -85,7 +85,6 @@ dnf install postgres_shacrypt_16*;
 dnf install postgres_shacrypt_15*;
 dnf install postgres_shacrypt_14*;
 dnf install postgres_shacrypt_13*;
-dnf install postgres_shacrypt_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-shacrypt;
 apt install postgresql-15-shacrypt;
 apt install postgresql-14-shacrypt;
 apt install postgresql-13-shacrypt;
-apt install postgresql-12-shacrypt;
 ```
 
 

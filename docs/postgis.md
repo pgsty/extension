@@ -86,7 +86,6 @@ dnf install postgis35_16*;
 dnf install postgis35_15*;
 dnf install postgis35_14*;
 dnf install postgis35_13*;
-dnf install postgis35_12*;
 ```
 
 
@@ -98,7 +97,6 @@ apt install postgresql-16-postgis-3 postgresql-16-postgis-3-scripts;
 apt install postgresql-15-postgis-3 postgresql-15-postgis-3-scripts;
 apt install postgresql-14-postgis-3 postgresql-14-postgis-3-scripts;
 apt install postgresql-13-postgis-3 postgresql-13-postgis-3-scripts;
-apt install postgresql-12-postgis-3 postgresql-12-postgis-3-scripts;
 ```
 
 

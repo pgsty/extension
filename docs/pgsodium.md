@@ -89,7 +89,6 @@ dnf install pgsodium_16*;
 dnf install pgsodium_15*;
 dnf install pgsodium_14*;
 dnf install pgsodium_13*;
-dnf install pgsodium_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-pgsodium;
 apt install postgresql-15-pgsodium;
 apt install postgresql-14-pgsodium;
 apt install postgresql-13-pgsodium;
-apt install postgresql-12-pgsodium;
 ```
 
 

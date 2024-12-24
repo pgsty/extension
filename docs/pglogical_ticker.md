@@ -89,7 +89,6 @@ dnf install pglogical_ticker_16*;
 dnf install pglogical_ticker_15*;
 dnf install pglogical_ticker_14*;
 dnf install pglogical_ticker_13*;
-dnf install pglogical_ticker_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-pglogical-ticker;
 apt install postgresql-15-pglogical-ticker;
 apt install postgresql-14-pglogical-ticker;
 apt install postgresql-13-pglogical-ticker;
-apt install postgresql-12-pglogical-ticker;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install pg_jobmon_16*;
 dnf install pg_jobmon_15*;
 dnf install pg_jobmon_14*;
 dnf install pg_jobmon_13*;
-dnf install pg_jobmon_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-jobmon;
 apt install postgresql-15-pg-jobmon;
 apt install postgresql-14-pg-jobmon;
 apt install postgresql-13-pg-jobmon;
-apt install postgresql-12-pg-jobmon;
 ```
 
 

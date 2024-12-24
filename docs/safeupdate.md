@@ -81,7 +81,6 @@ dnf install safeupdate_16*;
 dnf install safeupdate_15*;
 dnf install safeupdate_14*;
 dnf install safeupdate_13*;
-dnf install safeupdate_12*;
 ```
 
 

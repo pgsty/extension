@@ -85,7 +85,6 @@ dnf install pg_summarize_16;
 dnf install pg_summarize_15;
 dnf install pg_summarize_14;
 dnf install pg_summarize_13;
-dnf install pg_summarize_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-summarize;
 apt install postgresql-15-pg-summarize;
 apt install postgresql-14-pg-summarize;
 apt install postgresql-13-pg-summarize;
-apt install postgresql-12-pg-summarize;
 ```
 
 

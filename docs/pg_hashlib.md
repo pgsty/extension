@@ -85,7 +85,6 @@ dnf install pg_hashlib_16;
 dnf install pg_hashlib_15;
 dnf install pg_hashlib_14;
 dnf install pg_hashlib_13;
-dnf install pg_hashlib_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-hashlib;
 apt install postgresql-15-pg-hashlib;
 apt install postgresql-14-pg-hashlib;
 apt install postgresql-13-pg-hashlib;
-apt install postgresql-12-pg-hashlib;
 ```
 
 

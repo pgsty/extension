@@ -85,7 +85,6 @@ dnf install icu_ext_16*;
 dnf install icu_ext_15*;
 dnf install icu_ext_14*;
 dnf install icu_ext_13*;
-dnf install icu_ext_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-icu-ext;
 apt install postgresql-15-icu-ext;
 apt install postgresql-14-icu-ext;
 apt install postgresql-13-icu-ext;
-apt install postgresql-12-icu-ext;
 ```
 
 

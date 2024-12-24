@@ -85,7 +85,6 @@ dnf install pg_emailaddr_16*;
 dnf install pg_emailaddr_15*;
 dnf install pg_emailaddr_14*;
 dnf install pg_emailaddr_13*;
-dnf install pg_emailaddr_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-emailaddr;
 apt install postgresql-15-pg-emailaddr;
 apt install postgresql-14-pg-emailaddr;
 apt install postgresql-13-pg-emailaddr;
-apt install postgresql-12-pg-emailaddr;
 ```
 
 

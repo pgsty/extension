@@ -85,7 +85,6 @@ dnf install permuteseq_16*;
 dnf install permuteseq_15*;
 dnf install permuteseq_14*;
 dnf install permuteseq_13*;
-dnf install permuteseq_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-permuteseq;
 apt install postgresql-15-permuteseq;
 apt install postgresql-14-permuteseq;
 apt install postgresql-13-permuteseq;
-apt install postgresql-12-permuteseq;
 ```
 
 

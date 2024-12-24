@@ -85,7 +85,6 @@ dnf install pgl_ddl_deploy_16*;
 dnf install pgl_ddl_deploy_15*;
 dnf install pgl_ddl_deploy_14*;
 dnf install pgl_ddl_deploy_13*;
-dnf install pgl_ddl_deploy_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgl-ddl-deploy;
 apt install postgresql-15-pgl-ddl-deploy;
 apt install postgresql-14-pgl-ddl-deploy;
 apt install postgresql-13-pgl-ddl-deploy;
-apt install postgresql-12-pgl-ddl-deploy;
 ```
 
 

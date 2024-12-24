@@ -88,7 +88,6 @@ dnf install pg_auto_failover_16*;
 dnf install pg_auto_failover_15*;
 dnf install pg_auto_failover_14*;
 dnf install pg_auto_failover_13*;
-dnf install pg_auto_failover_12*;
 ```
 
 
@@ -100,7 +99,6 @@ apt install postgresql-16-auto-failover;
 apt install postgresql-15-auto-failover;
 apt install postgresql-14-auto-failover;
 apt install postgresql-13-auto-failover;
-apt install postgresql-12-auto-failover;
 ```
 
 

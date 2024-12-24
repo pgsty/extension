@@ -85,7 +85,6 @@ dnf install pg_roaringbitmap_16*;
 dnf install pg_roaringbitmap_15*;
 dnf install pg_roaringbitmap_14*;
 dnf install pg_roaringbitmap_13*;
-dnf install pg_roaringbitmap_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-roaringbitmap;
 apt install postgresql-15-roaringbitmap;
 apt install postgresql-14-roaringbitmap;
 apt install postgresql-13-roaringbitmap;
-apt install postgresql-12-roaringbitmap;
 ```
 
 

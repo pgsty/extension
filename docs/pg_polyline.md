@@ -85,7 +85,6 @@ dnf install pg_polyline_16;
 dnf install pg_polyline_15;
 dnf install pg_polyline_14;
 dnf install pg_polyline_13;
-dnf install pg_polyline_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-polyline;
 apt install postgresql-15-pg-polyline;
 apt install postgresql-14-pg-polyline;
 apt install postgresql-13-pg-polyline;
-apt install postgresql-12-pg-polyline;
 ```
 
 

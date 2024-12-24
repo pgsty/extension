@@ -1,4 +1,4 @@
-# pg_vault
+# supabase_vault
 
 
 > [pg_vault](https://github.com/supabase/vault): Supabase Vault Extension
@@ -85,7 +85,6 @@ dnf install vault_16*;
 dnf install vault_15*;
 dnf install vault_14*;
 dnf install vault_13*;
-dnf install vault_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-vault;
 apt install postgresql-15-vault;
 apt install postgresql-14-vault;
 apt install postgresql-13-vault;
-apt install postgresql-12-vault;
 ```
 
 

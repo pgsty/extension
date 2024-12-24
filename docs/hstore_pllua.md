@@ -1,4 +1,4 @@
-# pllua
+# hstore_pllua
 
 
 > [pllua](https://github.com/pllua/pllua): Hstore transform for Lua

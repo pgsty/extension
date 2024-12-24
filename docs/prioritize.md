@@ -1,4 +1,4 @@
-# pg_prioritize
+# prioritize
 
 
 > [pg_prioritize](https://github.com/schmiddy/pg_prioritize): get and set the priority of PostgreSQL backends
@@ -94,7 +94,6 @@ apt install postgresql-16-prioritize;
 apt install postgresql-15-prioritize;
 apt install postgresql-14-prioritize;
 apt install postgresql-13-prioritize;
-apt install postgresql-12-prioritize;
 ```
 
 

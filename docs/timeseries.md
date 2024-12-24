@@ -1,4 +1,4 @@
-# pg_timeseries
+# timeseries
 
 
 > [pg_timeseries](https://github.com/tembo-io/pg_timeseries): Convenience API for Tembo time series stack
@@ -94,7 +94,6 @@ apt install postgresql-16-pg-timeseries;
 apt install postgresql-15-pg-timeseries;
 apt install postgresql-14-pg-timeseries;
 apt install postgresql-13-pg-timeseries;
-apt install postgresql-12-pg-timeseries;
 ```
 
 

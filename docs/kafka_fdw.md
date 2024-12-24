@@ -84,7 +84,6 @@ dnf install kafka_fdw_16;
 dnf install kafka_fdw_15;
 dnf install kafka_fdw_14;
 dnf install kafka_fdw_13;
-dnf install kafka_fdw_12;
 ```
 
 
@@ -95,7 +94,6 @@ apt install postgresql-16-kafka-fdw;
 apt install postgresql-15-kafka-fdw;
 apt install postgresql-14-kafka-fdw;
 apt install postgresql-13-kafka-fdw;
-apt install postgresql-12-kafka-fdw;
 ```
 
 

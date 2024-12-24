@@ -1,4 +1,4 @@
-# preprepare
+# pre_prepare
 
 
 > [preprepare](https://github.com/dimitri/preprepare): Pre Prepare your Statement server side
@@ -85,7 +85,6 @@ dnf install preprepare_16*;
 dnf install preprepare_15*;
 dnf install preprepare_14*;
 dnf install preprepare_13*;
-dnf install preprepare_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-preprepare;
 apt install postgresql-15-preprepare;
 apt install postgresql-14-preprepare;
 apt install postgresql-13-preprepare;
-apt install postgresql-12-preprepare;
 ```
 
 

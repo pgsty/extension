@@ -85,7 +85,6 @@ dnf install pg_snakeoil_16*;
 dnf install pg_snakeoil_15*;
 dnf install pg_snakeoil_14*;
 dnf install pg_snakeoil_13*;
-dnf install pg_snakeoil_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-snakeoil;
 apt install postgresql-15-snakeoil;
 apt install postgresql-14-snakeoil;
 apt install postgresql-13-snakeoil;
-apt install postgresql-12-snakeoil;
 ```
 
 

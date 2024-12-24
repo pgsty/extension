@@ -83,7 +83,6 @@ dnf install db2_fdw_16*;
 dnf install db2_fdw_15*;
 dnf install db2_fdw_14*;
 dnf install db2_fdw_13*;
-dnf install db2_fdw_12*;
 ```
 
 

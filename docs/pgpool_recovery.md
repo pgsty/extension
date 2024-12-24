@@ -1,4 +1,4 @@
-# pgpool
+# pgpool_recovery
 
 
 > [pgpool](https://pgpool.net/): recovery functions for pgpool-II for V4.3
@@ -85,7 +85,6 @@ dnf install pgpool-II-pg16-extensions;
 dnf install pgpool-II-pg15-extensions;
 dnf install pgpool-II-pg14-extensions;
 dnf install pgpool-II-pg13-extensions;
-dnf install pgpool-II-pg12-extensions;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgpool2;
 apt install postgresql-15-pgpool2;
 apt install postgresql-14-pgpool2;
 apt install postgresql-13-pgpool2;
-apt install postgresql-12-pgpool2;
 ```
 
 

@@ -1,4 +1,4 @@
-# pg_h3
+# h3_postgis
 
 
 > [pg_h3](https://github.com/zachasme/h3-pg): H3 PostGIS integration
@@ -84,7 +84,6 @@ dnf install h3-pg_16*;
 dnf install h3-pg_15*;
 dnf install h3-pg_14*;
 dnf install h3-pg_13*;
-dnf install h3-pg_12*;
 ```
 
 
@@ -96,7 +95,6 @@ apt install postgresql-16-h3;
 apt install postgresql-15-h3;
 apt install postgresql-14-h3;
 apt install postgresql-13-h3;
-apt install postgresql-12-h3;
 ```
 
 

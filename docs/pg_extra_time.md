@@ -85,7 +85,6 @@ dnf install pg_extra_time_16*;
 dnf install pg_extra_time_15*;
 dnf install pg_extra_time_14*;
 dnf install pg_extra_time_13*;
-dnf install pg_extra_time_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-extra-time;
 apt install postgresql-15-pg-extra-time;
 apt install postgresql-14-pg-extra-time;
 apt install postgresql-13-pg-extra-time;
-apt install postgresql-12-pg-extra-time;
 ```
 
 

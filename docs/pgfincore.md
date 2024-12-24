@@ -85,7 +85,6 @@ dnf install pgfincore_16*;
 dnf install pgfincore_15*;
 dnf install pgfincore_14*;
 dnf install pgfincore_13*;
-dnf install pgfincore_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgfincore;
 apt install postgresql-15-pgfincore;
 apt install postgresql-14-pgfincore;
 apt install postgresql-13-pgfincore;
-apt install postgresql-12-pgfincore;
 ```
 
 

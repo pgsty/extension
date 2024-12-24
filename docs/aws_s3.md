@@ -85,7 +85,6 @@ dnf install aws_s3_16;
 dnf install aws_s3_15;
 dnf install aws_s3_14;
 dnf install aws_s3_13;
-dnf install aws_s3_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-aws-s3;
 apt install postgresql-15-aws-s3;
 apt install postgresql-14-aws-s3;
 apt install postgresql-13-aws-s3;
-apt install postgresql-12-aws-s3;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install redis_fdw_16*;
 dnf install redis_fdw_15*;
 dnf install redis_fdw_14*;
 dnf install redis_fdw_13*;
-dnf install redis_fdw_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-redis-fdw;
 apt install postgresql-15-redis-fdw;
 apt install postgresql-14-redis-fdw;
 apt install postgresql-13-redis-fdw;
-apt install postgresql-12-redis-fdw;
 ```
 
 

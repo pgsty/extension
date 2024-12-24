@@ -85,7 +85,6 @@ dnf install chkpass_16*;
 dnf install chkpass_15*;
 dnf install chkpass_14*;
 dnf install chkpass_13*;
-dnf install chkpass_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-chkpass;
 apt install postgresql-15-chkpass;
 apt install postgresql-14-chkpass;
 apt install postgresql-13-chkpass;
-apt install postgresql-12-chkpass;
 ```
 
 

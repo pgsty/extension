@@ -85,7 +85,6 @@ dnf install set_user_16*;
 dnf install set_user_15*;
 dnf install set_user_14*;
 dnf install set_user_13*;
-dnf install set_user_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-set-user;
 apt install postgresql-15-set-user;
 apt install postgresql-14-set-user;
 apt install postgresql-13-set-user;
-apt install postgresql-12-set-user;
 ```
 
 

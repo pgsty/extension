@@ -85,7 +85,6 @@ dnf install pg_crash_16*;
 dnf install pg_crash_15*;
 dnf install pg_crash_14*;
 dnf install pg_crash_13*;
-dnf install pg_crash_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-crash;
 apt install postgresql-15-pg-crash;
 apt install postgresql-14-pg-crash;
 apt install postgresql-13-pg-crash;
-apt install postgresql-12-pg-crash;
 ```
 
 

@@ -1,4 +1,4 @@
-# hydra
+# columnar
 
 
 > [hydra](https://github.com/hydradatabase/hydra): Hydra Columnar extension

@@ -85,7 +85,6 @@ dnf install zhparser_16*;
 dnf install zhparser_15*;
 dnf install zhparser_14*;
 dnf install zhparser_13*;
-dnf install zhparser_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-zhparser;
 apt install postgresql-15-zhparser;
 apt install postgresql-14-zhparser;
 apt install postgresql-13-zhparser;
-apt install postgresql-12-zhparser;
 ```
 
 

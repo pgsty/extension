@@ -1,4 +1,4 @@
-# pg_random
+# random
 
 
 > [pg_random](https://github.com/tvondra/random): random data generator
@@ -85,7 +85,6 @@ dnf install pg_random_16*;
 dnf install pg_random_15*;
 dnf install pg_random_14*;
 dnf install pg_random_13*;
-dnf install pg_random_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-random;
 apt install postgresql-15-random;
 apt install postgresql-14-random;
 apt install postgresql-13-random;
-apt install postgresql-12-random;
 ```
 
 

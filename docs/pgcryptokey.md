@@ -85,7 +85,6 @@ dnf install pgcryptokey_16;
 dnf install pgcryptokey_15;
 dnf install pgcryptokey_14;
 dnf install pgcryptokey_13;
-dnf install pgcryptokey_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgcryptokey;
 apt install postgresql-15-pgcryptokey;
 apt install postgresql-14-pgcryptokey;
 apt install postgresql-13-pgcryptokey;
-apt install postgresql-12-pgcryptokey;
 ```
 
 

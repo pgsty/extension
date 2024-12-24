@@ -85,7 +85,6 @@ dnf install floatvec_16*;
 dnf install floatvec_15*;
 dnf install floatvec_14*;
 dnf install floatvec_13*;
-dnf install floatvec_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-floatvec;
 apt install postgresql-15-floatvec;
 apt install postgresql-14-floatvec;
 apt install postgresql-13-floatvec;
-apt install postgresql-12-floatvec;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install pg_cheat_funcs_16*;
 dnf install pg_cheat_funcs_15*;
 dnf install pg_cheat_funcs_14*;
 dnf install pg_cheat_funcs_13*;
-dnf install pg_cheat_funcs_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-cheat-funcs;
 apt install postgresql-15-pg-cheat-funcs;
 apt install postgresql-14-pg-cheat-funcs;
 apt install postgresql-13-pg-cheat-funcs;
-apt install postgresql-12-pg-cheat-funcs;
 ```
 
 

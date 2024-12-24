@@ -85,7 +85,6 @@ dnf install duckdb_fdw_16*;
 dnf install duckdb_fdw_15*;
 dnf install duckdb_fdw_14*;
 dnf install duckdb_fdw_13*;
-dnf install duckdb_fdw_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-duckdb-fdw;
 apt install postgresql-15-duckdb-fdw;
 apt install postgresql-14-duckdb-fdw;
 apt install postgresql-13-duckdb-fdw;
-apt install postgresql-12-duckdb-fdw;
 ```
 
 

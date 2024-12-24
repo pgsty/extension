@@ -94,7 +94,6 @@ apt install postgresql-16-pgmp;
 apt install postgresql-15-pgmp;
 apt install postgresql-14-pgmp;
 apt install postgresql-13-pgmp;
-apt install postgresql-12-pgmp;
 ```
 
 

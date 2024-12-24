@@ -85,7 +85,6 @@ dnf install count_distinct_16*;
 dnf install count_distinct_15*;
 dnf install count_distinct_14*;
 dnf install count_distinct_13*;
-dnf install count_distinct_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-count-distinct;
 apt install postgresql-15-count-distinct;
 apt install postgresql-14-count-distinct;
 apt install postgresql-13-count-distinct;
-apt install postgresql-12-count-distinct;
 ```
 
 

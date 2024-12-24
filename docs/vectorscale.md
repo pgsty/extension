@@ -1,4 +1,4 @@
-# pgvectorscale
+# vectorscale
 
 
 > [pgvectorscale](https://github.com/timescale/pgvectorscale): pgvectorscale:  Advanced indexing for vector data

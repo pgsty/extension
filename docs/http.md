@@ -1,4 +1,4 @@
-# pg_http
+# http
 
 
 > [pg_http](https://github.com/pramsey/pgsql-http): HTTP client for PostgreSQL, allows web page retrieval inside the database.
@@ -85,7 +85,6 @@ dnf install pgsql_http_16*;
 dnf install pgsql_http_15*;
 dnf install pgsql_http_14*;
 dnf install pgsql_http_13*;
-dnf install pgsql_http_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-http;
 apt install postgresql-15-http;
 apt install postgresql-14-http;
 apt install postgresql-13-http;
-apt install postgresql-12-http;
 ```
 
 

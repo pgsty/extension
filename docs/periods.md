@@ -85,7 +85,6 @@ dnf install periods_16*;
 dnf install periods_15*;
 dnf install periods_14*;
 dnf install periods_13*;
-dnf install periods_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-periods;
 apt install postgresql-15-periods;
 apt install postgresql-14-periods;
 apt install postgresql-13-periods;
-apt install postgresql-12-periods;
 ```
 
 

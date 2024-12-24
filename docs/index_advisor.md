@@ -85,7 +85,6 @@ dnf install index_advisor_16;
 dnf install index_advisor_15;
 dnf install index_advisor_14;
 dnf install index_advisor_13;
-dnf install index_advisor_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-index-advisor;
 apt install postgresql-15-index-advisor;
 apt install postgresql-14-index-advisor;
 apt install postgresql-13-index-advisor;
-apt install postgresql-12-index-advisor;
 ```
 
 

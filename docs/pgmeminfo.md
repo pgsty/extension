@@ -85,7 +85,6 @@ dnf install pgmeminfo_16*;
 dnf install pgmeminfo_15*;
 dnf install pgmeminfo_14*;
 dnf install pgmeminfo_13*;
-dnf install pgmeminfo_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgmeminfo;
 apt install postgresql-15-pgmeminfo;
 apt install postgresql-14-pgmeminfo;
 apt install postgresql-13-pgmeminfo;
-apt install postgresql-12-pgmeminfo;
 ```
 
 

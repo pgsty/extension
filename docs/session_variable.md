@@ -85,7 +85,6 @@ dnf install session_variable_16*;
 dnf install session_variable_15*;
 dnf install session_variable_14*;
 dnf install session_variable_13*;
-dnf install session_variable_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-session-variable;
 apt install postgresql-15-session-variable;
 apt install postgresql-14-session-variable;
 apt install postgresql-13-session-variable;
-apt install postgresql-12-session-variable;
 ```
 
 

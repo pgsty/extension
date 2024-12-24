@@ -85,7 +85,6 @@ dnf install quantile_16*;
 dnf install quantile_15*;
 dnf install quantile_14*;
 dnf install quantile_13*;
-dnf install quantile_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-quantile;
 apt install postgresql-15-quantile;
 apt install postgresql-14-quantile;
 apt install postgresql-13-quantile;
-apt install postgresql-12-quantile;
 ```
 
 

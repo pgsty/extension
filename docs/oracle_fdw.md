@@ -85,7 +85,6 @@ dnf install oracle_fdw_16*;
 dnf install oracle_fdw_15*;
 dnf install oracle_fdw_14*;
 dnf install oracle_fdw_13*;
-dnf install oracle_fdw_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-oracle-fdw;
 apt install postgresql-15-oracle-fdw;
 apt install postgresql-14-oracle-fdw;
 apt install postgresql-13-oracle-fdw;
-apt install postgresql-12-oracle-fdw;
 ```
 
 

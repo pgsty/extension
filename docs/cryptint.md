@@ -85,7 +85,6 @@ dnf install cryptint_16*;
 dnf install cryptint_15*;
 dnf install cryptint_14*;
 dnf install cryptint_13*;
-dnf install cryptint_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-cryptint;
 apt install postgresql-15-cryptint;
 apt install postgresql-14-cryptint;
 apt install postgresql-13-cryptint;
-apt install postgresql-12-cryptint;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install plv8_16*;
 dnf install plv8_15*;
 dnf install plv8_14*;
 dnf install plv8_13*;
-dnf install plv8_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-plv8;
 apt install postgresql-15-plv8;
 apt install postgresql-14-plv8;
 apt install postgresql-13-plv8;
-apt install postgresql-12-plv8;
 ```
 
 

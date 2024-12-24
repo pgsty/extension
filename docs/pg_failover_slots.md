@@ -85,7 +85,6 @@ dnf install pg_failover_slots_16*;
 dnf install pg_failover_slots_15*;
 dnf install pg_failover_slots_14*;
 dnf install pg_failover_slots_13*;
-dnf install pg_failover_slots_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-failover-slots;
 apt install postgresql-15-pg-failover-slots;
 apt install postgresql-14-pg-failover-slots;
 apt install postgresql-13-pg-failover-slots;
-apt install postgresql-12-pg-failover-slots;
 ```
 
 

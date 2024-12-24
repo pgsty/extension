@@ -85,14 +85,12 @@ dnf install pgagent_16*;
 dnf install pgagent_15*;
 dnf install pgagent_14*;
 dnf install pgagent_13*;
-dnf install pgagent_12*;
 ```
 
 
 Install `pgagent` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
-apt install pgagent;
 apt install pgagent;
 apt install pgagent;
 apt install pgagent;

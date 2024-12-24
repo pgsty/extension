@@ -1,4 +1,4 @@
-# pg_uint128
+# uint128
 
 
 > [pg_uint128](https://github.com/pg-uint/pg-uint128): Native uint128 type
@@ -85,7 +85,6 @@ dnf install pg_uint128_16*;
 dnf install pg_uint128_15*;
 dnf install pg_uint128_14*;
 dnf install pg_uint128_13*;
-dnf install pg_uint128_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-uint128;
 apt install postgresql-15-pg-uint128;
 apt install postgresql-14-pg-uint128;
 apt install postgresql-13-pg-uint128;
-apt install postgresql-12-pg-uint128;
 ```
 
 

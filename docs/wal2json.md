@@ -81,7 +81,6 @@ dnf install wal2json_16*;
 dnf install wal2json_15*;
 dnf install wal2json_14*;
 dnf install wal2json_13*;
-dnf install wal2json_12*;
 ```
 
 
@@ -93,7 +92,6 @@ apt install postgresql-16-wal2json;
 apt install postgresql-15-wal2json;
 apt install postgresql-14-wal2json;
 apt install postgresql-13-wal2json;
-apt install postgresql-12-wal2json;
 ```
 
 

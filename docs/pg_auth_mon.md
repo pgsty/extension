@@ -85,7 +85,6 @@ dnf install pg_auth_mon_16*;
 dnf install pg_auth_mon_15*;
 dnf install pg_auth_mon_14*;
 dnf install pg_auth_mon_13*;
-dnf install pg_auth_mon_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-auth-mon;
 apt install postgresql-15-pg-auth-mon;
 apt install postgresql-14-pg-auth-mon;
 apt install postgresql-13-pg-auth-mon;
-apt install postgresql-12-pg-auth-mon;
 ```
 
 

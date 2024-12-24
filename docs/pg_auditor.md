@@ -85,7 +85,6 @@ dnf install pg_auditor_16;
 dnf install pg_auditor_15;
 dnf install pg_auditor_14;
 dnf install pg_auditor_13;
-dnf install pg_auditor_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-auditor;
 apt install postgresql-15-pg-auditor;
 apt install postgresql-14-pg-auditor;
 apt install postgresql-13-pg-auditor;
-apt install postgresql-12-pg-auditor;
 ```
 
 

@@ -1,4 +1,4 @@
-# pgvector
+# vector
 
 
 > [pgvector](https://github.com/pgvector/pgvector): vector data type and ivfflat and hnsw access methods
@@ -85,7 +85,6 @@ dnf install pgvector_16*;
 dnf install pgvector_15*;
 dnf install pgvector_14*;
 dnf install pgvector_13*;
-dnf install pgvector_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgvector;
 apt install postgresql-15-pgvector;
 apt install postgresql-14-pgvector;
 apt install postgresql-13-pgvector;
-apt install postgresql-12-pgvector;
 ```
 
 

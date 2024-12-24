@@ -1,4 +1,4 @@
-# pg_meta
+# meta
 
 
 > [pg_meta](https://github.com/aquameta/meta): Normalized, friendlier system catalog for PostgreSQL
@@ -85,7 +85,6 @@ dnf install pg_meta_16;
 dnf install pg_meta_15;
 dnf install pg_meta_14;
 dnf install pg_meta_13;
-dnf install pg_meta_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-meta;
 apt install postgresql-15-pg-meta;
 apt install postgresql-14-pg-meta;
 apt install postgresql-13-pg-meta;
-apt install postgresql-12-pg-meta;
 ```
 
 

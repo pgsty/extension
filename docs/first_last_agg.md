@@ -85,7 +85,6 @@ dnf install first_last_agg_16;
 dnf install first_last_agg_15;
 dnf install first_last_agg_14;
 dnf install first_last_agg_13;
-dnf install first_last_agg_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-first-last-agg;
 apt install postgresql-15-first-last-agg;
 apt install postgresql-14-first-last-agg;
 apt install postgresql-13-first-last-agg;
-apt install postgresql-12-first-last-agg;
 ```
 
 

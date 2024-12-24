@@ -84,7 +84,6 @@ dnf install pg_dbms_lock_16*;
 dnf install pg_dbms_lock_15*;
 dnf install pg_dbms_lock_14*;
 dnf install pg_dbms_lock_13*;
-dnf install pg_dbms_lock_12*;
 ```
 
 

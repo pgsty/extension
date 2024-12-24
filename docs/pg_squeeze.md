@@ -89,7 +89,6 @@ dnf install pg_squeeze_16*;
 dnf install pg_squeeze_15*;
 dnf install pg_squeeze_14*;
 dnf install pg_squeeze_13*;
-dnf install pg_squeeze_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-squeeze;
 apt install postgresql-15-squeeze;
 apt install postgresql-14-squeeze;
 apt install postgresql-13-squeeze;
-apt install postgresql-12-squeeze;
 ```
 
 

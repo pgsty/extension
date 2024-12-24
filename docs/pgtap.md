@@ -84,7 +84,6 @@ dnf install pgtap_16*;
 dnf install pgtap_15*;
 dnf install pgtap_14*;
 dnf install pgtap_13*;
-dnf install pgtap_12*;
 ```
 
 
@@ -96,7 +95,6 @@ apt install postgresql-16-pgtap;
 apt install postgresql-15-pgtap;
 apt install postgresql-14-pgtap;
 apt install postgresql-13-pgtap;
-apt install postgresql-12-pgtap;
 ```
 
 

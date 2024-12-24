@@ -85,7 +85,6 @@ dnf install plsh_16*;
 dnf install plsh_15*;
 dnf install plsh_14*;
 dnf install plsh_13*;
-dnf install plsh_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-plsh;
 apt install postgresql-15-plsh;
 apt install postgresql-14-plsh;
 apt install postgresql-13-plsh;
-apt install postgresql-12-plsh;
 ```
 
 

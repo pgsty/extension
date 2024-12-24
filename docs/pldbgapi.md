@@ -1,4 +1,4 @@
-# pldebugger
+# pldbgapi
 
 
 > [pldebugger](https://github.com/EnterpriseDB/pldebugger): server-side support for debugging PL/pgSQL functions
@@ -85,7 +85,6 @@ dnf install pldebugger_16*;
 dnf install pldebugger_15*;
 dnf install pldebugger_14*;
 dnf install pldebugger_13*;
-dnf install pldebugger_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pldebugger;
 apt install postgresql-15-pldebugger;
 apt install postgresql-14-pldebugger;
 apt install postgresql-13-pldebugger;
-apt install postgresql-12-pldebugger;
 ```
 
 

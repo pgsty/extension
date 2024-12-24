@@ -89,7 +89,6 @@ dnf install pg_tle_16*;
 dnf install pg_tle_15*;
 dnf install pg_tle_14*;
 dnf install pg_tle_13*;
-dnf install pg_tle_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-pg-tle;
 apt install postgresql-15-pg-tle;
 apt install postgresql-14-pg-tle;
 apt install postgresql-13-pg-tle;
-apt install postgresql-12-pg-tle;
 ```
 
 

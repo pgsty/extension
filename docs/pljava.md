@@ -85,7 +85,6 @@ dnf install pljava_16*;
 dnf install pljava_15*;
 dnf install pljava_14*;
 dnf install pljava_13*;
-dnf install pljava_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pljava;
 apt install postgresql-15-pljava;
 apt install postgresql-14-pljava;
 apt install postgresql-13-pljava;
-apt install postgresql-12-pljava;
 ```
 
 

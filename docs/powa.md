@@ -84,7 +84,6 @@ dnf install powa_16*;
 dnf install powa_15*;
 dnf install powa_14*;
 dnf install powa_13*;
-dnf install powa_12*;
 ```
 
 
@@ -95,7 +94,6 @@ apt install postgresql-16-powa;
 apt install postgresql-15-powa;
 apt install postgresql-14-powa;
 apt install postgresql-13-powa;
-apt install postgresql-12-powa;
 ```
 
 

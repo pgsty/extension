@@ -85,7 +85,6 @@ dnf install pgnodemx_16;
 dnf install pgnodemx_15;
 dnf install pgnodemx_14;
 dnf install pgnodemx_13;
-dnf install pgnodemx_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgnodemx;
 apt install postgresql-15-pgnodemx;
 apt install postgresql-14-pgnodemx;
 apt install postgresql-13-pgnodemx;
-apt install postgresql-12-pgnodemx;
 ```
 
 

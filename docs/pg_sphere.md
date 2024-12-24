@@ -1,4 +1,4 @@
-# pgsphere
+# pg_sphere
 
 
 > [pgsphere](https://github.com/postgrespro/pgsphere): spherical objects with useful functions, operators and index support
@@ -85,7 +85,6 @@ dnf install pgsphere_16*;
 dnf install pgsphere_15*;
 dnf install pgsphere_14*;
 dnf install pgsphere_13*;
-dnf install pgsphere_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgsphere;
 apt install postgresql-15-pgsphere;
 apt install postgresql-14-pgsphere;
 apt install postgresql-13-pgsphere;
-apt install postgresql-12-pgsphere;
 ```
 
 

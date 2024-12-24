@@ -85,7 +85,6 @@ dnf install pgfaceting_16;
 dnf install pgfaceting_15;
 dnf install pgfaceting_14;
 dnf install pgfaceting_13;
-dnf install pgfaceting_12;
 ```
 
 

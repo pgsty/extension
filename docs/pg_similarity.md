@@ -85,7 +85,6 @@ dnf install pg_similarity_16*;
 dnf install pg_similarity_15*;
 dnf install pg_similarity_14*;
 dnf install pg_similarity_13*;
-dnf install pg_similarity_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-similarity;
 apt install postgresql-15-similarity;
 apt install postgresql-14-similarity;
 apt install postgresql-13-similarity;
-apt install postgresql-12-similarity;
 ```
 
 

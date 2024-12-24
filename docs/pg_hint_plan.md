@@ -85,7 +85,6 @@ dnf install pg_hint_plan_16*;
 dnf install pg_hint_plan_15*;
 dnf install pg_hint_plan_14*;
 dnf install pg_hint_plan_13*;
-dnf install pg_hint_plan_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-hint-plan;
 apt install postgresql-15-pg-hint-plan;
 apt install postgresql-14-pg-hint-plan;
 apt install postgresql-13-pg-hint-plan;
-apt install postgresql-12-pg-hint-plan;
 ```
 
 

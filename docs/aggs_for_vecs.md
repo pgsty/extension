@@ -85,7 +85,6 @@ dnf install aggs_for_vecs_16*;
 dnf install aggs_for_vecs_15*;
 dnf install aggs_for_vecs_14*;
 dnf install aggs_for_vecs_13*;
-dnf install aggs_for_vecs_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-aggs-for-vecs;
 apt install postgresql-15-aggs-for-vecs;
 apt install postgresql-14-aggs-for-vecs;
 apt install postgresql-13-aggs-for-vecs;
-apt install postgresql-12-aggs-for-vecs;
 ```
 
 

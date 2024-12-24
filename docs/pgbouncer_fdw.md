@@ -84,7 +84,6 @@ dnf install pgbouncer_fdw_16*;
 dnf install pgbouncer_fdw_15*;
 dnf install pgbouncer_fdw_14*;
 dnf install pgbouncer_fdw_13*;
-dnf install pgbouncer_fdw_12*;
 ```
 
 

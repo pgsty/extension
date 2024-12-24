@@ -1,4 +1,4 @@
-# pg_country
+# country
 
 
 > [pg_country](https://github.com/adjust/pg-country): Country data type, ISO 3166-1
@@ -85,7 +85,6 @@ dnf install pg_country_16*;
 dnf install pg_country_15*;
 dnf install pg_country_14*;
 dnf install pg_country_13*;
-dnf install pg_country_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-country;
 apt install postgresql-15-pg-country;
 apt install postgresql-14-pg-country;
 apt install postgresql-13-pg-country;
-apt install postgresql-12-pg-country;
 ```
 
 

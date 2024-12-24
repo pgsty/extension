@@ -85,7 +85,6 @@ dnf install pgrouting_16*;
 dnf install pgrouting_15*;
 dnf install pgrouting_14*;
 dnf install pgrouting_13*;
-dnf install pgrouting_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgrouting postgresql-16-pgrouting-scripts;
 apt install postgresql-15-pgrouting postgresql-15-pgrouting-scripts;
 apt install postgresql-14-pgrouting postgresql-14-pgrouting-scripts;
 apt install postgresql-13-pgrouting postgresql-13-pgrouting-scripts;
-apt install postgresql-12-pgrouting postgresql-12-pgrouting-scripts;
 ```
 
 

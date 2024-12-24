@@ -85,7 +85,6 @@ dnf install pgextwlist_16*;
 dnf install pgextwlist_15*;
 dnf install pgextwlist_14*;
 dnf install pgextwlist_13*;
-dnf install pgextwlist_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgextwlist;
 apt install postgresql-15-pgextwlist;
 apt install postgresql-14-pgextwlist;
 apt install postgresql-13-pgextwlist;
-apt install postgresql-12-pgextwlist;
 ```
 
 

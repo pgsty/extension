@@ -85,7 +85,6 @@ dnf install pgcozy_16;
 dnf install pgcozy_15;
 dnf install pgcozy_14;
 dnf install pgcozy_13;
-dnf install pgcozy_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgcozy;
 apt install postgresql-15-pgcozy;
 apt install postgresql-14-pgcozy;
 apt install postgresql-13-pgcozy;
-apt install postgresql-12-pgcozy;
 ```
 
 

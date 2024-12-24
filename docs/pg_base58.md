@@ -85,7 +85,6 @@ dnf install pg_base58_16;
 dnf install pg_base58_15;
 dnf install pg_base58_14;
 dnf install pg_base58_13;
-dnf install pg_base58_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-base58;
 apt install postgresql-15-pg-base58;
 apt install postgresql-14-pg-base58;
 apt install postgresql-13-pg-base58;
-apt install postgresql-12-pg-base58;
 ```
 
 

@@ -730,7 +730,7 @@ def generate_extension():
         ext_path = os.path.join(DOCS_PATH, name + '.md')
         stub_path = os.path.join(STUB_PATH, name + '.md')
 
-        header = """# %s\n\n\n> %s: %s\n>\n> %s\n\n\n""" % (ext['alias'], getcol('pkg2', ext ) ,ext['en_desc'],  ext['url'])
+        header = """# %s\n\n\n> %s: %s\n>\n> %s\n\n\n""" % (ext['name'], getcol('pkg2', ext ) ,ext['en_desc'],  ext['url'])
         # part 1: extension table
         ext_table = tabulate(
             Columns(["ext", "ver", "lic", "rpmrepo", "debrepo", "lan"]),

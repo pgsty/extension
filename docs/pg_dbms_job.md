@@ -84,7 +84,6 @@ dnf install pg_dbms_job_16*;
 dnf install pg_dbms_job_15*;
 dnf install pg_dbms_job_14*;
 dnf install pg_dbms_job_13*;
-dnf install pg_dbms_job_12*;
 ```
 
 

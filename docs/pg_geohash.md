@@ -85,7 +85,6 @@ dnf install pg_geohash_16*;
 dnf install pg_geohash_15*;
 dnf install pg_geohash_14*;
 dnf install pg_geohash_13*;
-dnf install pg_geohash_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-geohash;
 apt install postgresql-15-pg-geohash;
 apt install postgresql-14-pg-geohash;
 apt install postgresql-13-pg-geohash;
-apt install postgresql-12-pg-geohash;
 ```
 
 

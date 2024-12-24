@@ -85,7 +85,6 @@ dnf install q3c_16*;
 dnf install q3c_15*;
 dnf install q3c_14*;
 dnf install q3c_13*;
-dnf install q3c_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-q3c;
 apt install postgresql-15-q3c;
 apt install postgresql-14-q3c;
 apt install postgresql-13-q3c;
-apt install postgresql-12-q3c;
 ```
 
 

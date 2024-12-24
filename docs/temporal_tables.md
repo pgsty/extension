@@ -85,7 +85,6 @@ dnf install temporal_tables_16*;
 dnf install temporal_tables_15*;
 dnf install temporal_tables_14*;
 dnf install temporal_tables_13*;
-dnf install temporal_tables_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-temporal-tables;
 apt install postgresql-15-temporal-tables;
 apt install postgresql-14-temporal-tables;
 apt install postgresql-13-temporal-tables;
-apt install postgresql-12-temporal-tables;
 ```
 
 

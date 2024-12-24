@@ -84,7 +84,6 @@ dnf install repmgr_16*;
 dnf install repmgr_15*;
 dnf install repmgr_14*;
 dnf install repmgr_13*;
-dnf install repmgr_12*;
 ```
 
 
@@ -95,7 +94,6 @@ apt install postgresql-16-repmgr;
 apt install postgresql-15-repmgr;
 apt install postgresql-14-repmgr;
 apt install postgresql-13-repmgr;
-apt install postgresql-12-repmgr;
 ```
 
 

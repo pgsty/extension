@@ -85,7 +85,6 @@ dnf install pg_uuidv7_16*;
 dnf install pg_uuidv7_15*;
 dnf install pg_uuidv7_14*;
 dnf install pg_uuidv7_13*;
-dnf install pg_uuidv7_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-uuidv7;
 apt install postgresql-15-pg-uuidv7;
 apt install postgresql-14-pg-uuidv7;
 apt install postgresql-13-pg-uuidv7;
-apt install postgresql-12-pg-uuidv7;
 ```
 
 

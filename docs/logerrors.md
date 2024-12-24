@@ -85,7 +85,6 @@ dnf install logerrors_16*;
 dnf install logerrors_15*;
 dnf install logerrors_14*;
 dnf install logerrors_13*;
-dnf install logerrors_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-logerrors;
 apt install postgresql-15-logerrors;
 apt install postgresql-14-logerrors;
 apt install postgresql-13-logerrors;
-apt install postgresql-12-logerrors;
 ```
 
 

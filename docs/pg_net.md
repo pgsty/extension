@@ -89,7 +89,6 @@ dnf install pg_net_16*;
 dnf install pg_net_15*;
 dnf install pg_net_14*;
 dnf install pg_net_13*;
-dnf install pg_net_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-pg-net;
 apt install postgresql-15-pg-net;
 apt install postgresql-14-pg-net;
 apt install postgresql-13-pg-net;
-apt install postgresql-12-pg-net;
 ```
 
 

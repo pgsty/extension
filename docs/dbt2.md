@@ -84,7 +84,6 @@ dnf install dbt2-pg16-extensions*;
 dnf install dbt2-pg15-extensions*;
 dnf install dbt2-pg14-extensions*;
 dnf install dbt2-pg13-extensions*;
-dnf install dbt2-pg12-extensions*;
 ```
 
 

@@ -89,7 +89,6 @@ dnf install postgresql16-contrib;
 dnf install postgresql15-contrib;
 dnf install postgresql14-contrib;
 dnf install postgresql13-contrib;
-dnf install postgresql12-contrib;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16;
 apt install postgresql-15;
 apt install postgresql-14;
 apt install postgresql-13;
-apt install postgresql-12;
 ```
 
 

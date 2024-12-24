@@ -85,7 +85,6 @@ dnf install url_encode_16*;
 dnf install url_encode_15*;
 dnf install url_encode_14*;
 dnf install url_encode_13*;
-dnf install url_encode_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-url-encode;
 apt install postgresql-15-url-encode;
 apt install postgresql-14-url-encode;
 apt install postgresql-13-url-encode;
-apt install postgresql-12-url-encode;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install pg_repack_16*;
 dnf install pg_repack_15*;
 dnf install pg_repack_14*;
 dnf install pg_repack_13*;
-dnf install pg_repack_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-repack;
 apt install postgresql-15-repack;
 apt install postgresql-14-repack;
 apt install postgresql-13-repack;
-apt install postgresql-12-repack;
 ```
 
 

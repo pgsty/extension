@@ -85,7 +85,6 @@ dnf install login_hook_16*;
 dnf install login_hook_15*;
 dnf install login_hook_14*;
 dnf install login_hook_13*;
-dnf install login_hook_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-login-hook;
 apt install postgresql-15-login-hook;
 apt install postgresql-14-login-hook;
 apt install postgresql-13-login-hook;
-apt install postgresql-12-login-hook;
 ```
 
 

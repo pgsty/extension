@@ -1,4 +1,4 @@
-# pllua
+# hstore_plluau
 
 
 > [pllua](https://github.com/pllua/pllua): Hstore transform for untrusted Lua

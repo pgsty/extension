@@ -85,7 +85,6 @@ dnf install geoip_16*;
 dnf install geoip_15*;
 dnf install geoip_14*;
 dnf install geoip_13*;
-dnf install geoip_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-geoip;
 apt install postgresql-15-geoip;
 apt install postgresql-14-geoip;
 apt install postgresql-13-geoip;
-apt install postgresql-12-geoip;
 ```
 
 

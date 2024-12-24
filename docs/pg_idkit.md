@@ -85,7 +85,6 @@ dnf install pg_idkit_16;
 dnf install pg_idkit_15;
 dnf install pg_idkit_14;
 dnf install pg_idkit_13;
-dnf install pg_idkit_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-idkit;
 apt install postgresql-15-pg-idkit;
 apt install postgresql-14-pg-idkit;
 apt install postgresql-13-pg-idkit;
-apt install postgresql-12-pg-idkit;
 ```
 
 

@@ -84,7 +84,6 @@ dnf install pg_bulkload_16*;
 dnf install pg_bulkload_15*;
 dnf install pg_bulkload_14*;
 dnf install pg_bulkload_13*;
-dnf install pg_bulkload_12*;
 ```
 
 

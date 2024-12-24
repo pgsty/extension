@@ -89,7 +89,6 @@ dnf install pg_stat_kcache_16*;
 dnf install pg_stat_kcache_15*;
 dnf install pg_stat_kcache_14*;
 dnf install pg_stat_kcache_13*;
-dnf install pg_stat_kcache_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-pg-stat-kcache;
 apt install postgresql-15-pg-stat-kcache;
 apt install postgresql-14-pg-stat-kcache;
 apt install postgresql-13-pg-stat-kcache;
-apt install postgresql-12-pg-stat-kcache;
 ```
 
 

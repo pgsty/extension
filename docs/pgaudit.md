@@ -92,7 +92,6 @@ dnf install pgaudit_16*;
 dnf install pgaudit17_15*;
 dnf install pgaudit16_14*;
 dnf install pgaudit15_13*;
-dnf install pgaudit_12*;
 ```
 
 
@@ -104,7 +103,6 @@ apt install postgresql-16-pgaudit;
 apt install postgresql-15-pgaudit;
 apt install postgresql-14-pgaudit;
 apt install postgresql-13-pgaudit;
-apt install postgresql-12-pgaudit;
 ```
 
 

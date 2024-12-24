@@ -85,7 +85,6 @@ dnf install toastinfo_16*;
 dnf install toastinfo_15*;
 dnf install toastinfo_14*;
 dnf install toastinfo_13*;
-dnf install toastinfo_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-toastinfo;
 apt install postgresql-15-toastinfo;
 apt install postgresql-14-toastinfo;
 apt install postgresql-13-toastinfo;
-apt install postgresql-12-toastinfo;
 ```
 
 

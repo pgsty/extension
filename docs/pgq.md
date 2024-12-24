@@ -85,7 +85,6 @@ dnf install pgq_16*;
 dnf install pgq_15*;
 dnf install pgq_14*;
 dnf install pgq_13*;
-dnf install pgq_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pgq3;
 apt install postgresql-15-pgq3;
 apt install postgresql-14-pgq3;
 apt install postgresql-13-pgq3;
-apt install postgresql-12-pgq3;
 ```
 
 

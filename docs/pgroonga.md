@@ -96,7 +96,6 @@ apt install postgresql-16-pgdg-pgroonga;
 apt install postgresql-15-pgdg-pgroonga;
 apt install postgresql-14-pgdg-pgroonga;
 apt install postgresql-13-pgdg-pgroonga;
-apt install postgresql-12-pgdg-pgroonga;
 ```
 
 

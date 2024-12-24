@@ -85,7 +85,6 @@ dnf install pg_relusage_16;
 dnf install pg_relusage_15;
 dnf install pg_relusage_14;
 dnf install pg_relusage_13;
-dnf install pg_relusage_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-relusage;
 apt install postgresql-15-pg-relusage;
 apt install postgresql-14-pg-relusage;
 apt install postgresql-13-pg-relusage;
-apt install postgresql-12-pg-relusage;
 ```
 
 

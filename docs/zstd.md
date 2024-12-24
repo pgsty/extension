@@ -1,4 +1,4 @@
-# pg_zstd
+# zstd
 
 
 > [pg_zstd](https://github.com/grahamedgecombe/pgzstd): Zstandard compression algorithm implementation in PostgreSQL
@@ -85,7 +85,6 @@ dnf install pg_zstd_16*;
 dnf install pg_zstd_15*;
 dnf install pg_zstd_14*;
 dnf install pg_zstd_13*;
-dnf install pg_zstd_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-zstd;
 apt install postgresql-15-pg-zstd;
 apt install postgresql-14-pg-zstd;
 apt install postgresql-13-pg-zstd;
-apt install postgresql-12-pg-zstd;
 ```
 
 

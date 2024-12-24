@@ -85,7 +85,6 @@ dnf install pg_profile_16*;
 dnf install pg_profile_15*;
 dnf install pg_profile_14*;
 dnf install pg_profile_13*;
-dnf install pg_profile_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-profile;
 apt install postgresql-15-pg-profile;
 apt install postgresql-14-pg-profile;
 apt install postgresql-13-pg-profile;
-apt install postgresql-12-pg-profile;
 ```
 
 

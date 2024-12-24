@@ -1,4 +1,4 @@
-# pg_noset
+# noset
 
 
 > [pg_noset](https://gitlab.com/ongresinc/extensions/noset): Module for blocking SET variables for non-super users.
@@ -89,7 +89,6 @@ dnf install noset_16*;
 dnf install noset_15*;
 dnf install noset_14*;
 dnf install noset_13*;
-dnf install noset_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-noset;
 apt install postgresql-15-noset;
 apt install postgresql-14-noset;
 apt install postgresql-13-noset;
-apt install postgresql-12-noset;
 ```
 
 

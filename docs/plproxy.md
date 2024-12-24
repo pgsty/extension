@@ -85,7 +85,6 @@ dnf install plproxy_16*;
 dnf install plproxy_15*;
 dnf install plproxy_14*;
 dnf install plproxy_13*;
-dnf install plproxy_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-plproxy;
 apt install postgresql-15-plproxy;
 apt install postgresql-14-plproxy;
 apt install postgresql-13-plproxy;
-apt install postgresql-12-plproxy;
 ```
 
 

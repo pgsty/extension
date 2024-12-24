@@ -94,7 +94,6 @@ apt install postgresql-16-pgmemcache;
 apt install postgresql-15-pgmemcache;
 apt install postgresql-14-pgmemcache;
 apt install postgresql-13-pgmemcache;
-apt install postgresql-12-pgmemcache;
 ```
 
 

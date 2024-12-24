@@ -85,7 +85,6 @@ dnf install pg_statement_rollback_16*;
 dnf install pg_statement_rollback_15*;
 dnf install pg_statement_rollback_14*;
 dnf install pg_statement_rollback_13*;
-dnf install pg_statement_rollback_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-statement-rollback;
 apt install postgresql-15-pg-statement-rollback;
 apt install postgresql-14-pg-statement-rollback;
 apt install postgresql-13-pg-statement-rollback;
-apt install postgresql-12-pg-statement-rollback;
 ```
 
 

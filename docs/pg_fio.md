@@ -85,7 +85,6 @@ dnf install pg_fio_16;
 dnf install pg_fio_15;
 dnf install pg_fio_14;
 dnf install pg_fio_13;
-dnf install pg_fio_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-fio;
 apt install postgresql-15-pg-fio;
 apt install postgresql-14-pg-fio;
 apt install postgresql-13-pg-fio;
-apt install postgresql-12-pg-fio;
 ```
 
 

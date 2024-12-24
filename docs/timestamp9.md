@@ -85,7 +85,6 @@ dnf install timestamp9_16*;
 dnf install timestamp9_15*;
 dnf install timestamp9_14*;
 dnf install timestamp9_13*;
-dnf install timestamp9_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-timestamp9;
 apt install postgresql-15-timestamp9;
 apt install postgresql-14-timestamp9;
 apt install postgresql-13-timestamp9;
-apt install postgresql-12-timestamp9;
 ```
 
 

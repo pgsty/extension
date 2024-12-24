@@ -85,7 +85,6 @@ dnf install imgsmlr_16*;
 dnf install imgsmlr_15*;
 dnf install imgsmlr_14*;
 dnf install imgsmlr_13*;
-dnf install imgsmlr_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-imgsmlr;
 apt install postgresql-15-imgsmlr;
 apt install postgresql-14-imgsmlr;
 apt install postgresql-13-imgsmlr;
-apt install postgresql-12-imgsmlr;
 ```
 
 

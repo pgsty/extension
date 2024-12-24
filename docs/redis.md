@@ -1,4 +1,4 @@
-# pg_redis_pubsub
+# redis
 
 
 > [pg_redis_pubsub](https://github.com/brettlaforge/pg_redis_pubsub): Send redis pub/sub messages to Redis from PostgreSQL Directly
@@ -85,7 +85,6 @@ dnf install pg_redis_pubsub_16*;
 dnf install pg_redis_pubsub_15*;
 dnf install pg_redis_pubsub_14*;
 dnf install pg_redis_pubsub_13*;
-dnf install pg_redis_pubsub_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-redis-pubsub;
 apt install postgresql-15-pg-redis-pubsub;
 apt install postgresql-14-pg-redis-pubsub;
 apt install postgresql-13-pg-redis-pubsub;
-apt install postgresql-12-pg-redis-pubsub;
 ```
 
 

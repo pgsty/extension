@@ -85,7 +85,6 @@ dnf install pg_envvar_16*;
 dnf install pg_envvar_15*;
 dnf install pg_envvar_14*;
 dnf install pg_envvar_13*;
-dnf install pg_envvar_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-envvar;
 apt install postgresql-15-pg-envvar;
 apt install postgresql-14-pg-envvar;
 apt install postgresql-13-pg-envvar;
-apt install postgresql-12-pg-envvar;
 ```
 
 

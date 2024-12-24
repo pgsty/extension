@@ -85,7 +85,6 @@ dnf install aggs_for_arrays_16*;
 dnf install aggs_for_arrays_15*;
 dnf install aggs_for_arrays_14*;
 dnf install aggs_for_arrays_13*;
-dnf install aggs_for_arrays_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-aggs-for-arrays;
 apt install postgresql-15-aggs-for-arrays;
 apt install postgresql-14-aggs-for-arrays;
 apt install postgresql-13-aggs-for-arrays;
-apt install postgresql-12-aggs-for-arrays;
 ```
 
 

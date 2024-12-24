@@ -1,4 +1,4 @@
-# pglogical
+# pglogical_origin
 
 
 > [pglogical](https://github.com/2ndQuadrant/pglogical): Dummy extension for compatibility when upgrading from Postgres 9.4
@@ -85,7 +85,6 @@ dnf install pglogical_16*;
 dnf install pglogical_15*;
 dnf install pglogical_14*;
 dnf install pglogical_13*;
-dnf install pglogical_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pglogical;
 apt install postgresql-15-pglogical;
 apt install postgresql-14-pglogical;
 apt install postgresql-13-pglogical;
-apt install postgresql-12-pglogical;
 ```
 
 

@@ -85,7 +85,6 @@ dnf install pg_dirtyread_16*;
 dnf install pg_dirtyread_15*;
 dnf install pg_dirtyread_14*;
 dnf install pg_dirtyread_13*;
-dnf install pg_dirtyread_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-dirtyread;
 apt install postgresql-15-dirtyread;
 apt install postgresql-14-dirtyread;
 apt install postgresql-13-dirtyread;
-apt install postgresql-12-dirtyread;
 ```
 
 

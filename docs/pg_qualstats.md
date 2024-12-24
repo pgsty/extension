@@ -89,7 +89,6 @@ dnf install pg_qualstats_16*;
 dnf install pg_qualstats_15*;
 dnf install pg_qualstats_14*;
 dnf install pg_qualstats_13*;
-dnf install pg_qualstats_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-pg-qualstats;
 apt install postgresql-15-pg-qualstats;
 apt install postgresql-14-pg-qualstats;
 apt install postgresql-13-pg-qualstats;
-apt install postgresql-12-pg-qualstats;
 ```
 
 

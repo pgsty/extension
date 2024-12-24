@@ -85,7 +85,6 @@ dnf install pg_track_settings_16*;
 dnf install pg_track_settings_15*;
 dnf install pg_track_settings_14*;
 dnf install pg_track_settings_13*;
-dnf install pg_track_settings_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-track-settings;
 apt install postgresql-15-pg-track-settings;
 apt install postgresql-14-pg-track-settings;
 apt install postgresql-13-pg-track-settings;
-apt install postgresql-12-pg-track-settings;
 ```
 
 

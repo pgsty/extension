@@ -1,4 +1,4 @@
-# pg_currency
+# currency
 
 
 > [pg_currency](https://github.com/adjust/pg-currency): Custom PostgreSQL currency type in 1Byte
@@ -85,7 +85,6 @@ dnf install pg_currency_16*;
 dnf install pg_currency_15*;
 dnf install pg_currency_14*;
 dnf install pg_currency_13*;
-dnf install pg_currency_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-currency;
 apt install postgresql-15-pg-currency;
 apt install postgresql-14-pg-currency;
 apt install postgresql-13-pg-currency;
-apt install postgresql-12-pg-currency;
 ```
 
 

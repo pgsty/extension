@@ -94,7 +94,6 @@ apt install postgresql-16-extra-window-functions;
 apt install postgresql-15-extra-window-functions;
 apt install postgresql-14-extra-window-functions;
 apt install postgresql-13-extra-window-functions;
-apt install postgresql-12-extra-window-functions;
 ```
 
 

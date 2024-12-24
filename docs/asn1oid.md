@@ -85,7 +85,6 @@ dnf install asn1oid_16*;
 dnf install asn1oid_15*;
 dnf install asn1oid_14*;
 dnf install asn1oid_13*;
-dnf install asn1oid_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-asn1oid;
 apt install postgresql-15-asn1oid;
 apt install postgresql-14-asn1oid;
 apt install postgresql-13-asn1oid;
-apt install postgresql-12-asn1oid;
 ```
 
 

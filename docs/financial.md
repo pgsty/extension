@@ -1,4 +1,4 @@
-# pg_financial
+# financial
 
 
 > [pg_financial](https://github.com/intgr/pg_financial): Financial aggregate functions
@@ -85,7 +85,6 @@ dnf install pg_financial_16*;
 dnf install pg_financial_15*;
 dnf install pg_financial_14*;
 dnf install pg_financial_13*;
-dnf install pg_financial_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-financial;
 apt install postgresql-15-pg-financial;
 apt install postgresql-14-pg-financial;
 apt install postgresql-13-pg-financial;
-apt install postgresql-12-pg-financial;
 ```
 
 

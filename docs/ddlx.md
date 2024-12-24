@@ -1,4 +1,4 @@
-# pg_ddlx
+# ddlx
 
 
 > [pg_ddlx](https://github.com/lacanoid/pgddl): DDL eXtractor functions
@@ -85,7 +85,6 @@ dnf install ddlx_16*;
 dnf install ddlx_15*;
 dnf install ddlx_14*;
 dnf install ddlx_13*;
-dnf install ddlx_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-ddlx;
 apt install postgresql-15-ddlx;
 apt install postgresql-14-ddlx;
 apt install postgresql-13-ddlx;
-apt install postgresql-12-ddlx;
 ```
 
 

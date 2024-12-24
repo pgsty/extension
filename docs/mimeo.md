@@ -85,7 +85,6 @@ dnf install mimeo_16;
 dnf install mimeo_15;
 dnf install mimeo_14;
 dnf install mimeo_13;
-dnf install mimeo_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-mimeo;
 apt install postgresql-15-mimeo;
 apt install postgresql-14-mimeo;
 apt install postgresql-13-mimeo;
-apt install postgresql-12-mimeo;
 ```
 
 

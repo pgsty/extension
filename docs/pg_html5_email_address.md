@@ -85,7 +85,6 @@ dnf install pg_html5_email_address_16;
 dnf install pg_html5_email_address_15;
 dnf install pg_html5_email_address_14;
 dnf install pg_html5_email_address_13;
-dnf install pg_html5_email_address_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-html5-email-address;
 apt install postgresql-15-pg-html5-email-address;
 apt install postgresql-14-pg-html5-email-address;
 apt install postgresql-13-pg-html5-email-address;
-apt install postgresql-12-pg-html5-email-address;
 ```
 
 

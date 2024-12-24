@@ -92,7 +92,6 @@ apt install postgresql-16-age;
 apt install postgresql-15-age;
 apt install postgresql-14-age;
 apt install postgresql-13-age;
-apt install postgresql-12-age;
 ```
 
 

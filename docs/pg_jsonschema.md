@@ -85,7 +85,6 @@ dnf install pg_jsonschema_16;
 dnf install pg_jsonschema_15;
 dnf install pg_jsonschema_14;
 dnf install pg_jsonschema_13;
-dnf install pg_jsonschema_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-jsonschema;
 apt install postgresql-15-pg-jsonschema;
 apt install postgresql-14-pg-jsonschema;
 apt install postgresql-13-pg-jsonschema;
-apt install postgresql-12-pg-jsonschema;
 ```
 
 

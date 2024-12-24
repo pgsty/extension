@@ -85,7 +85,6 @@ dnf install firebird_fdw_16;
 dnf install firebird_fdw_15;
 dnf install firebird_fdw_14;
 dnf install firebird_fdw_13;
-dnf install firebird_fdw_12;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-firebird-fdw;
 apt install postgresql-15-firebird-fdw;
 apt install postgresql-14-firebird-fdw;
 apt install postgresql-13-firebird-fdw;
-apt install postgresql-12-firebird-fdw;
 ```
 
 

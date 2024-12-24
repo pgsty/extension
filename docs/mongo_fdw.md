@@ -83,7 +83,6 @@ dnf install mongo_fdw_16*;
 dnf install mongo_fdw_15*;
 dnf install mongo_fdw_14*;
 dnf install mongo_fdw_13*;
-dnf install mongo_fdw_12*;
 ```
 
 

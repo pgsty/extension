@@ -85,7 +85,6 @@ dnf install md5hash_16*;
 dnf install md5hash_15*;
 dnf install md5hash_14*;
 dnf install md5hash_13*;
-dnf install md5hash_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-md5hash;
 apt install postgresql-15-md5hash;
 apt install postgresql-14-md5hash;
 apt install postgresql-13-md5hash;
-apt install postgresql-12-md5hash;
 ```
 
 

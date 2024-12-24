@@ -84,7 +84,6 @@ dnf install pg_strom_16*;
 dnf install pg_strom_15*;
 dnf install pg_strom_14*;
 dnf install pg_strom_13*;
-dnf install pg_strom_12*;
 ```
 
 

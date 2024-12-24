@@ -1,4 +1,4 @@
-# pg_plan_filter
+# plan_filter
 
 
 > [pg_plan_filter](https://github.com/pgexperts/pg_plan_filter): filter statements by their execution plans.
@@ -85,7 +85,6 @@ dnf install pg_plan_filter_16*;
 dnf install pg_plan_filter_15*;
 dnf install pg_plan_filter_14*;
 dnf install pg_plan_filter_13*;
-dnf install pg_plan_filter_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-pg-plan-filter;
 apt install postgresql-15-pg-plan-filter;
 apt install postgresql-14-pg-plan-filter;
 apt install postgresql-13-pg-plan-filter;
-apt install postgresql-12-pg-plan-filter;
 ```
 
 

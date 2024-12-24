@@ -1,4 +1,4 @@
-# pgunit
+# unit
 
 
 > [pgunit](https://github.com/df7cb/postgresql-unit): SI units extension
@@ -85,7 +85,6 @@ dnf install postgresql-unit_16*;
 dnf install postgresql-unit_15*;
 dnf install postgresql-unit_14*;
 dnf install postgresql-unit_13*;
-dnf install postgresql-unit_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-unit;
 apt install postgresql-15-unit;
 apt install postgresql-14-unit;
 apt install postgresql-13-unit;
-apt install postgresql-12-unit;
 ```
 
 

@@ -84,7 +84,6 @@ dnf install multicorn2_16*;
 dnf install multicorn2_15*;
 dnf install multicorn2_14*;
 dnf install multicorn2_13*;
-dnf install multicorn2_12*;
 ```
 
 

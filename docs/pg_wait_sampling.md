@@ -89,7 +89,6 @@ dnf install pg_wait_sampling_16*;
 dnf install pg_wait_sampling_15*;
 dnf install pg_wait_sampling_14*;
 dnf install pg_wait_sampling_13*;
-dnf install pg_wait_sampling_12*;
 ```
 
 
@@ -101,7 +100,6 @@ apt install postgresql-16-pg-wait-sampling;
 apt install postgresql-15-pg-wait-sampling;
 apt install postgresql-14-pg-wait-sampling;
 apt install postgresql-13-pg-wait-sampling;
-apt install postgresql-12-pg-wait-sampling;
 ```
 
 

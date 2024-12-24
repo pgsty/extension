@@ -85,7 +85,6 @@ dnf install plprofiler_16*;
 dnf install plprofiler_15*;
 dnf install plprofiler_14*;
 dnf install plprofiler_13*;
-dnf install plprofiler_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-plprofiler;
 apt install postgresql-15-plprofiler;
 apt install postgresql-14-plprofiler;
 apt install postgresql-13-plprofiler;
-apt install postgresql-12-plprofiler;
 ```
 
 

@@ -88,7 +88,6 @@ dnf install pg_store_plans_16*;
 dnf install pg_store_plans_15*;
 dnf install pg_store_plans_14*;
 dnf install pg_store_plans_13*;
-dnf install pg_store_plans_12*;
 ```
 
 
@@ -99,7 +98,6 @@ apt install postgresql-16-pg-store-plan;
 apt install postgresql-15-pg-store-plan;
 apt install postgresql-14-pg-store-plan;
 apt install postgresql-13-pg-store-plan;
-apt install postgresql-12-pg-store-plan;
 ```
 
 

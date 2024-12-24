@@ -85,7 +85,6 @@ dnf install mysql_fdw_16*;
 dnf install mysql_fdw_15*;
 dnf install mysql_fdw_14*;
 dnf install mysql_fdw_13*;
-dnf install mysql_fdw_12*;
 ```
 
 
@@ -97,7 +96,6 @@ apt install postgresql-16-mysql-fdw;
 apt install postgresql-15-mysql-fdw;
 apt install postgresql-14-mysql-fdw;
 apt install postgresql-13-mysql-fdw;
-apt install postgresql-12-mysql-fdw;
 ```
 
 
