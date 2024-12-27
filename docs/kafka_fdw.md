@@ -1,7 +1,7 @@
 # kafka_fdw
 
 
-> [kafka_fdw](https://github.com/adjust/kafka_fdw): kafka Foreign Data Wrapper for CSV formated messages
+> [kafka_fdw](https://github.com/adjust/kafka_fdw): kafka Foreign Data Wrapper for CSV formatted messages
 >
 > https://github.com/adjust/kafka_fdw
 
