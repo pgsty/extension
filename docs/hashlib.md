@@ -1,9 +1,9 @@
-# intarray
+# hashlib
 
 
-> [intarray](https://www.postgresql.org/docs/current/intarray.html): functions, operators, and index support for 1-D arrays of integers
+> [pg_hashlib](https://github.com/markokr/pghashlib): Stable hash functions for Postgres
 >
-> https://www.postgresql.org/docs/current/intarray.html
+> https://github.com/markokr/pghashlib
 
 
 
@@ -18,19 +18,19 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [intarray](https://www.postgresql.org/docs/current/intarray.html) | 1.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | `C` |
+| [hashlib](https://github.com/markokr/pghashlib) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |  |
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [intarray](/intarray) |  |  |  |  |
+| [pg_hashlib](/hashlib) |  |  |  |  |
 
 
 
@@ -47,7 +47,7 @@
 
 
 ```sql
-CREATE EXTENSION intarray;
+CREATE EXTENSION hashlib;
 ```
 
 -----------
@@ -58,44 +58,44 @@ CREATE EXTENSION intarray;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** |  |
-| [DEB](/deb) | 1.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** |  |
+| [RPM](/rpm) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_hashlib_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-hashlib` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 
-Install `intarray` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+Install `hashlib` via the [`pig`](https://github.com/pgsty/pig) cli tool:
 
 ```bash
-pig ext add intarray
+pig ext add hashlib
 ```
 
 
-Install `intarray` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
+Install `pg_hashlib` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["intarray"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_hashlib"]}'
 ```
 
 
-Install `intarray` [RPM](/rpm) from the **<span class="tcblue">CONTRIB</span>** **YUM** repo:
+Install `pg_hashlib` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install postgresql17-contrib;
-dnf install postgresql16-contrib;
-dnf install postgresql15-contrib;
-dnf install postgresql14-contrib;
-dnf install postgresql13-contrib;
+dnf install pg_hashlib_17;
+dnf install pg_hashlib_16;
+dnf install pg_hashlib_15;
+dnf install pg_hashlib_14;
+dnf install pg_hashlib_13;
 ```
 
 
-Install `intarray` [DEB](/deb) from the **<span class="tcblue">CONTRIB</span>** **APT** repo:
+Install `pg_hashlib` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17;
-apt install postgresql-16;
-apt install postgresql-15;
-apt install postgresql-14;
-apt install postgresql-13;
+apt install postgresql-17-pg-hashlib;
+apt install postgresql-16-pg-hashlib;
+apt install postgresql-15-pg-hashlib;
+apt install postgresql-14-pg-hashlib;
+apt install postgresql-13-pg-hashlib;
 ```
 
 
@@ -103,11 +103,11 @@ apt install postgresql-13;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `postgresql17-contrib` | `postgresql16-contrib` | `postgresql15-contrib` | `postgresql14-contrib` | `postgresql13-contrib` |
-| `el9` | `postgresql17-contrib` | `postgresql16-contrib` | `postgresql15-contrib` | `postgresql14-contrib` | `postgresql13-contrib` |
-| `d12` | `postgresql-17` | `postgresql-16` | `postgresql-15` | `postgresql-14` | `postgresql-13` |
-| `u22` | `postgresql-17` | `postgresql-16` | `postgresql-15` | `postgresql-14` | `postgresql-13` |
-| `u24` | `postgresql-17` | `postgresql-16` | `postgresql-15` | `postgresql-14` | `postgresql-13` |
+| `el8` | `pg_hashlib_17` | `pg_hashlib_16` | `pg_hashlib_15` | `pg_hashlib_14` | `pg_hashlib_13` |
+| `el9` | `pg_hashlib_17` | `pg_hashlib_16` | `pg_hashlib_15` | `pg_hashlib_14` | `pg_hashlib_13` |
+| `d12` | `postgresql-17-pg-hashlib` | `postgresql-16-pg-hashlib` | `postgresql-15-pg-hashlib` | `postgresql-14-pg-hashlib` | `postgresql-13-pg-hashlib` |
+| `u22` | `postgresql-17-pg-hashlib` | `postgresql-16-pg-hashlib` | `postgresql-15-pg-hashlib` | `postgresql-14-pg-hashlib` | `postgresql-13-pg-hashlib` |
+| `u24` | `postgresql-17-pg-hashlib` | `postgresql-16-pg-hashlib` | `postgresql-15-pg-hashlib` | `postgresql-14-pg-hashlib` | `postgresql-13-pg-hashlib` |
 
 
 

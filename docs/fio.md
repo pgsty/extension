@@ -1,9 +1,9 @@
-# pre_prepare
+# fio
 
 
-> [preprepare](https://github.com/dimitri/preprepare): Pre Prepare your Statement server side
+> [pg_fio](https://github.com/csimsek/pgsql-fio): PostgreSQL File I/O Functions
 >
-> https://github.com/dimitri/preprepare
+> https://github.com/csimsek/pgsql-fio
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pre_prepare](https://github.com/dimitri/preprepare) | 0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** |  |
+| [fio](https://github.com/csimsek/pgsql-fio) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [preprepare](/pre_prepare) |  |  |  |  |
+| [pg_fio](/fio) |  |  |  |  |
 
 
 
@@ -47,7 +47,7 @@
 
 
 ```sql
-CREATE EXTENSION pre_prepare;
+CREATE EXTENSION fio;
 ```
 
 -----------
@@ -58,44 +58,44 @@ CREATE EXTENSION pre_prepare;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `preprepare_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-preprepare` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [RPM](/rpm) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_fio_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-fio` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 
-Install `pre_prepare` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+Install `fio` via the [`pig`](https://github.com/pgsty/pig) cli tool:
 
 ```bash
-pig ext add pre_prepare
+pig ext add fio
 ```
 
 
-Install `preprepare` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
+Install `pg_fio` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["preprepare"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_fio"]}'
 ```
 
 
-Install `preprepare` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
+Install `pg_fio` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install preprepare_17*;
-dnf install preprepare_16*;
-dnf install preprepare_15*;
-dnf install preprepare_14*;
-dnf install preprepare_13*;
+dnf install pg_fio_17;
+dnf install pg_fio_16;
+dnf install pg_fio_15;
+dnf install pg_fio_14;
+dnf install pg_fio_13;
 ```
 
 
-Install `preprepare` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+Install `pg_fio` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-preprepare;
-apt install postgresql-16-preprepare;
-apt install postgresql-15-preprepare;
-apt install postgresql-14-preprepare;
-apt install postgresql-13-preprepare;
+apt install postgresql-17-pg-fio;
+apt install postgresql-16-pg-fio;
+apt install postgresql-15-pg-fio;
+apt install postgresql-14-pg-fio;
+apt install postgresql-13-pg-fio;
 ```
 
 
@@ -103,11 +103,11 @@ apt install postgresql-13-preprepare;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `preprepare_17*` | `preprepare_16*` | `preprepare_15*` | `preprepare_14*` | `preprepare_13*` |
-| `el9` | `preprepare_17*` | `preprepare_16*` | `preprepare_15*` | `preprepare_14*` | `preprepare_13*` |
-| `d12` | `postgresql-17-preprepare` | `postgresql-16-preprepare` | `postgresql-15-preprepare` | `postgresql-14-preprepare` | `postgresql-13-preprepare` |
-| `u22` | `postgresql-17-preprepare` | `postgresql-16-preprepare` | `postgresql-15-preprepare` | `postgresql-14-preprepare` | `postgresql-13-preprepare` |
-| `u24` | `postgresql-17-preprepare` | `postgresql-16-preprepare` | `postgresql-15-preprepare` | `postgresql-14-preprepare` | `postgresql-13-preprepare` |
+| `el8` | `pg_fio_17` | `pg_fio_16` | `pg_fio_15` | `pg_fio_14` | `pg_fio_13` |
+| `el9` | `pg_fio_17` | `pg_fio_16` | `pg_fio_15` | `pg_fio_14` | `pg_fio_13` |
+| `d12` | `postgresql-17-pg-fio` | `postgresql-16-pg-fio` | `postgresql-15-pg-fio` | `postgresql-14-pg-fio` | `postgresql-13-pg-fio` |
+| `u22` | `postgresql-17-pg-fio` | `postgresql-16-pg-fio` | `postgresql-15-pg-fio` | `postgresql-14-pg-fio` | `postgresql-13-pg-fio` |
+| `u24` | `postgresql-17-pg-fio` | `postgresql-16-pg-fio` | `postgresql-15-pg-fio` | `postgresql-14-pg-fio` | `postgresql-13-pg-fio` |
 
 
 
