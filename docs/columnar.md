@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [columnar](https://github.com/hydradatabase/hydra) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
+| [columnar](https://github.com/hydradatabase/hydra) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION columnar;
 ```
-> **Comment**: conflict with citus columnar
+> **Comment**: conflict with citus columnar, no pg17
 -----------
 
 

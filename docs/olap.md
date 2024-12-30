@@ -15,7 +15,7 @@ There are 12 available extensions in this category:
 | 1500 | [citus](/citus) | 12.1-1 | [citus](/citus) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/citusdata/citus) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Distributed PostgreSQL as an extension |
 | 1501 | [citus_columnar](/citus_columnar) | 11.3-1 | [citus](/citus_columnar) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/citusdata/citus) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Citus columnar storage engine |
 | 1510 | [columnar](/columnar) | 11.1-11 | [hydra](/columnar) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/hydradatabase/hydra) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Hydra Columnar extension |
-| 1520 | [pg_analytics](/pg_analytics) | 0.2.3 | [pg_analytics](/pg_analytics) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/paradedb/pg_analytics) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Postgres for analytics, powered by DuckDB |
+| 1520 | [pg_analytics](/pg_analytics) | 0.2.4 | [pg_analytics](/pg_analytics) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/paradedb/pg_analytics) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Postgres for analytics, powered by DuckDB |
 | 1530 | [pg_duckdb](/pg_duckdb) | 0.2.0 | [pg_duckdb](/pg_duckdb) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/duckdb/pg_duckdb) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | DuckDB Embedded in Postgres |
 | 1550 | [duckdb_fdw](/duckdb_fdw) | 1.1.2 | [duckdb_fdw](/duckdb_fdw) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/alitrack/duckdb_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | DuckDB Foreign Data Wrapper |
 | 1560 | [pg_parquet](/pg_parquet) | 0.1.1 | [pg_parquet](/pg_parquet) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/CrunchyData/pg_parquet/) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | copy data between Postgres and Parquet |
@@ -92,7 +92,7 @@ pg13: hydra duckdb_fdw pg_fkpart plproxy #citus #pg_analytics #pg_duckdb #pg_par
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
 | [citus](/citus) | 12.1.6 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `citus_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  | Distributed PostgreSQL as an extension |
 | [hydra](/columnar) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `hydra_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Hydra Columnar extension |
-| [pg_analytics](/pg_analytics) | 0.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_analytics_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Postgres for analytics, powered by DuckDB |
+| [pg_analytics](/pg_analytics) | 0.2.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_analytics_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Postgres for analytics, powered by DuckDB |
 | [pg_duckdb](/pg_duckdb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_duckdb_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | DuckDB Embedded in Postgres |
 | [duckdb_fdw](/duckdb_fdw) | 1.0.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `duckdb_fdw_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | DuckDB Foreign Data Wrapper |
 | [pg_parquet](/pg_parquet) | 0.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_parquet_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | copy data between Postgres and Parquet |
@@ -134,7 +134,7 @@ pg13: hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* #citus_1
 
 | Package | Version | License | DEB | DEB Package | 17 | 16 | 15 | 14 | 13 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
-| [citus](/citus) | 12.1.6 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-citus-12.1` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Distributed PostgreSQL as an extension |
+| [citus](/citus) | 12.1.6 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-citus` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Distributed PostgreSQL as an extension |
 | [hydra](/columnar) | 11.1-11 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-hydra` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Hydra Columnar extension |
 | [pg_analytics](/pg_analytics) | 0.2.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-analytics` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Postgres for analytics, powered by DuckDB |
 | [pg_duckdb](/pg_duckdb) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-duckdb` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | DuckDB Embedded in Postgres |
@@ -150,33 +150,33 @@ pg13: hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* #citus_1
 ### Debian 12 bookworm Compatible (d12)
 
 ```yaml
-pg17: postgresql-17-pg-analytics postgresql-17-pg-duckdb postgresql-17-duckdb-fdw postgresql-17-pg-parquet postgresql-17-pg-fkpart postgresql-17-partman postgresql-17-plproxy #postgresql-17-citus-12.1 #postgresql-17-hydra
-pg16: postgresql-16-citus-12.1 postgresql-16-hydra postgresql-16-pg-analytics postgresql-16-pg-duckdb postgresql-16-duckdb-fdw postgresql-16-pg-parquet postgresql-16-pg-fkpart postgresql-16-partman postgresql-16-plproxy
-pg15: postgresql-15-citus-12.1 postgresql-15-hydra postgresql-15-pg-analytics postgresql-15-pg-duckdb postgresql-15-duckdb-fdw postgresql-15-pg-parquet postgresql-15-pg-fkpart postgresql-15-partman postgresql-15-plproxy
-pg14: postgresql-14-citus-12.1 postgresql-14-hydra postgresql-14-pg-analytics postgresql-14-pg-duckdb postgresql-14-duckdb-fdw postgresql-14-pg-parquet postgresql-14-pg-fkpart postgresql-14-partman postgresql-14-plproxy
-pg13: postgresql-13-hydra postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postgresql-13-partman postgresql-13-plproxy #postgresql-13-citus-12.1 #postgresql-13-pg-analytics #postgresql-13-pg-duckdb #postgresql-13-pg-parquet
+pg17: postgresql-17-pg-analytics postgresql-17-pg-duckdb postgresql-17-duckdb-fdw postgresql-17-pg-parquet postgresql-17-pg-fkpart postgresql-17-partman postgresql-17-plproxy #postgresql-17-citus #postgresql-17-hydra
+pg16: postgresql-16-citus postgresql-16-hydra postgresql-16-pg-analytics postgresql-16-pg-duckdb postgresql-16-duckdb-fdw postgresql-16-pg-parquet postgresql-16-pg-fkpart postgresql-16-partman postgresql-16-plproxy
+pg15: postgresql-15-citus postgresql-15-hydra postgresql-15-pg-analytics postgresql-15-pg-duckdb postgresql-15-duckdb-fdw postgresql-15-pg-parquet postgresql-15-pg-fkpart postgresql-15-partman postgresql-15-plproxy
+pg14: postgresql-14-citus postgresql-14-hydra postgresql-14-pg-analytics postgresql-14-pg-duckdb postgresql-14-duckdb-fdw postgresql-14-pg-parquet postgresql-14-pg-fkpart postgresql-14-partman postgresql-14-plproxy
+pg13: postgresql-13-hydra postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postgresql-13-partman postgresql-13-plproxy #postgresql-13-citus #postgresql-13-pg-analytics #postgresql-13-pg-duckdb #postgresql-13-pg-parquet
 ```
 
 
 ### Ubuntu 24.04 jammy Compatible (u22)
 
 ```yaml
-pg17: postgresql-17-pg-analytics postgresql-17-pg-duckdb postgresql-17-duckdb-fdw postgresql-17-pg-parquet postgresql-17-pg-fkpart postgresql-17-partman postgresql-17-plproxy #postgresql-17-citus-12.1 #postgresql-17-hydra
-pg16: postgresql-16-citus-12.1 postgresql-16-hydra postgresql-16-pg-analytics postgresql-16-pg-duckdb postgresql-16-duckdb-fdw postgresql-16-pg-parquet postgresql-16-pg-fkpart postgresql-16-partman postgresql-16-plproxy
-pg15: postgresql-15-citus-12.1 postgresql-15-hydra postgresql-15-pg-analytics postgresql-15-pg-duckdb postgresql-15-duckdb-fdw postgresql-15-pg-parquet postgresql-15-pg-fkpart postgresql-15-partman postgresql-15-plproxy
-pg14: postgresql-14-citus-12.1 postgresql-14-hydra postgresql-14-pg-analytics postgresql-14-pg-duckdb postgresql-14-duckdb-fdw postgresql-14-pg-parquet postgresql-14-pg-fkpart postgresql-14-partman postgresql-14-plproxy
-pg13: postgresql-13-hydra postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postgresql-13-partman postgresql-13-plproxy #postgresql-13-citus-12.1 #postgresql-13-pg-analytics #postgresql-13-pg-duckdb #postgresql-13-pg-parquet
+pg17: postgresql-17-pg-analytics postgresql-17-pg-duckdb postgresql-17-duckdb-fdw postgresql-17-pg-parquet postgresql-17-pg-fkpart postgresql-17-partman postgresql-17-plproxy #postgresql-17-citus #postgresql-17-hydra
+pg16: postgresql-16-citus postgresql-16-hydra postgresql-16-pg-analytics postgresql-16-pg-duckdb postgresql-16-duckdb-fdw postgresql-16-pg-parquet postgresql-16-pg-fkpart postgresql-16-partman postgresql-16-plproxy
+pg15: postgresql-15-citus postgresql-15-hydra postgresql-15-pg-analytics postgresql-15-pg-duckdb postgresql-15-duckdb-fdw postgresql-15-pg-parquet postgresql-15-pg-fkpart postgresql-15-partman postgresql-15-plproxy
+pg14: postgresql-14-citus postgresql-14-hydra postgresql-14-pg-analytics postgresql-14-pg-duckdb postgresql-14-duckdb-fdw postgresql-14-pg-parquet postgresql-14-pg-fkpart postgresql-14-partman postgresql-14-plproxy
+pg13: postgresql-13-hydra postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postgresql-13-partman postgresql-13-plproxy #postgresql-13-citus #postgresql-13-pg-analytics #postgresql-13-pg-duckdb #postgresql-13-pg-parquet
 ```
 
 
 ### Ubuntu 24.04 noble Compatible (u24)
 
 ```yaml
-pg17: postgresql-17-pg-analytics postgresql-17-pg-duckdb postgresql-17-duckdb-fdw postgresql-17-pg-parquet postgresql-17-pg-fkpart postgresql-17-partman postgresql-17-plproxy #postgresql-17-citus-12.1 #postgresql-17-hydra
-pg16: postgresql-16-hydra postgresql-16-pg-analytics postgresql-16-pg-duckdb postgresql-16-duckdb-fdw postgresql-16-pg-parquet postgresql-16-pg-fkpart postgresql-16-partman postgresql-16-plproxy #postgresql-16-citus-12.1
-pg15: postgresql-15-hydra postgresql-15-pg-analytics postgresql-15-pg-duckdb postgresql-15-duckdb-fdw postgresql-15-pg-parquet postgresql-15-pg-fkpart postgresql-15-partman postgresql-15-plproxy #postgresql-15-citus-12.1
-pg14: postgresql-14-hydra postgresql-14-pg-analytics postgresql-14-pg-duckdb postgresql-14-duckdb-fdw postgresql-14-pg-parquet postgresql-14-pg-fkpart postgresql-14-partman postgresql-14-plproxy #postgresql-14-citus-12.1
-pg13: postgresql-13-hydra postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postgresql-13-plproxy #postgresql-13-citus-12.1 #postgresql-13-pg-analytics #postgresql-13-pg-duckdb #postgresql-13-pg-parquet #postgresql-13-partman
+pg17: postgresql-17-pg-analytics postgresql-17-pg-duckdb postgresql-17-duckdb-fdw postgresql-17-pg-parquet postgresql-17-pg-fkpart postgresql-17-partman postgresql-17-plproxy #postgresql-17-citus #postgresql-17-hydra
+pg16: postgresql-16-hydra postgresql-16-pg-analytics postgresql-16-pg-duckdb postgresql-16-duckdb-fdw postgresql-16-pg-parquet postgresql-16-pg-fkpart postgresql-16-partman postgresql-16-plproxy #postgresql-16-citus
+pg15: postgresql-15-hydra postgresql-15-pg-analytics postgresql-15-pg-duckdb postgresql-15-duckdb-fdw postgresql-15-pg-parquet postgresql-15-pg-fkpart postgresql-15-partman postgresql-15-plproxy #postgresql-15-citus
+pg14: postgresql-14-hydra postgresql-14-pg-analytics postgresql-14-pg-duckdb postgresql-14-duckdb-fdw postgresql-14-pg-parquet postgresql-14-pg-fkpart postgresql-14-partman postgresql-14-plproxy #postgresql-14-citus
+pg13: postgresql-13-hydra postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postgresql-13-plproxy #postgresql-13-citus #postgresql-13-pg-analytics #postgresql-13-pg-duckdb #postgresql-13-pg-parquet #postgresql-13-partman
 ```
 
 

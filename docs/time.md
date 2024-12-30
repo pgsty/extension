@@ -129,7 +129,7 @@ pg13: pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_1
 
 | Package | Version | License | DEB | DEB Package | 17 | 16 | 15 | 14 | 13 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
-| [timescaledb](/timescaledb) | 2.17.2 | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-2-postgresql-$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Enables scalable inserts and complex queries for time-series data |
+| [timescaledb](/timescaledb) | 2.17.2 | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-timescaledb` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Enables scalable inserts and complex queries for time-series data |
 | [pg_timeseries](/timeseries) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-timeseries` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Convenience API for Tembo time series stack |
 | [periods](/periods) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-periods` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |
 | [temporal_tables](/temporal_tables) | 1.2.2 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-temporal-tables` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | temporal tables |
@@ -144,33 +144,33 @@ pg13: pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_1
 ### Debian 12 bookworm Compatible (d12)
 
 ```yaml
-pg17: timescaledb-2-postgresql-17 postgresql-17-periods postgresql-17-temporal-tables postgresql-17-emaj postgresql-17-tableversion postgresql-17-cron postgresql-17-pg-later postgresql-17-pg-background #postgresql-17-pg-timeseries
-pg16: timescaledb-2-postgresql-16 postgresql-16-pg-timeseries postgresql-16-periods postgresql-16-temporal-tables postgresql-16-emaj postgresql-16-tableversion postgresql-16-cron postgresql-16-pg-later postgresql-16-pg-background
-pg15: timescaledb-2-postgresql-15 postgresql-15-pg-timeseries postgresql-15-periods postgresql-15-temporal-tables postgresql-15-emaj postgresql-15-tableversion postgresql-15-cron postgresql-15-pg-later postgresql-15-pg-background
-pg14: timescaledb-2-postgresql-14 postgresql-14-pg-timeseries postgresql-14-periods postgresql-14-temporal-tables postgresql-14-emaj postgresql-14-tableversion postgresql-14-cron postgresql-14-pg-later postgresql-14-pg-background
-pg13: postgresql-13-pg-timeseries postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-later postgresql-13-pg-background #timescaledb-2-postgresql-13
+pg17: postgresql-17-timescaledb postgresql-17-periods postgresql-17-temporal-tables postgresql-17-emaj postgresql-17-tableversion postgresql-17-cron postgresql-17-pg-later postgresql-17-pg-background #postgresql-17-pg-timeseries
+pg16: postgresql-16-timescaledb postgresql-16-pg-timeseries postgresql-16-periods postgresql-16-temporal-tables postgresql-16-emaj postgresql-16-tableversion postgresql-16-cron postgresql-16-pg-later postgresql-16-pg-background
+pg15: postgresql-15-timescaledb postgresql-15-pg-timeseries postgresql-15-periods postgresql-15-temporal-tables postgresql-15-emaj postgresql-15-tableversion postgresql-15-cron postgresql-15-pg-later postgresql-15-pg-background
+pg14: postgresql-14-timescaledb postgresql-14-pg-timeseries postgresql-14-periods postgresql-14-temporal-tables postgresql-14-emaj postgresql-14-tableversion postgresql-14-cron postgresql-14-pg-later postgresql-14-pg-background
+pg13: postgresql-13-pg-timeseries postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-later postgresql-13-pg-background #postgresql-13-timescaledb
 ```
 
 
 ### Ubuntu 24.04 jammy Compatible (u22)
 
 ```yaml
-pg17: timescaledb-2-postgresql-17 postgresql-17-periods postgresql-17-temporal-tables postgresql-17-emaj postgresql-17-tableversion postgresql-17-cron postgresql-17-pg-later postgresql-17-pg-background #postgresql-17-pg-timeseries
-pg16: timescaledb-2-postgresql-16 postgresql-16-pg-timeseries postgresql-16-periods postgresql-16-temporal-tables postgresql-16-emaj postgresql-16-tableversion postgresql-16-cron postgresql-16-pg-later postgresql-16-pg-background
-pg15: timescaledb-2-postgresql-15 postgresql-15-pg-timeseries postgresql-15-periods postgresql-15-temporal-tables postgresql-15-emaj postgresql-15-tableversion postgresql-15-cron postgresql-15-pg-later postgresql-15-pg-background
-pg14: timescaledb-2-postgresql-14 postgresql-14-pg-timeseries postgresql-14-periods postgresql-14-temporal-tables postgresql-14-emaj postgresql-14-tableversion postgresql-14-cron postgresql-14-pg-later postgresql-14-pg-background
-pg13: postgresql-13-pg-timeseries postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-later postgresql-13-pg-background #timescaledb-2-postgresql-13
+pg17: postgresql-17-timescaledb postgresql-17-periods postgresql-17-temporal-tables postgresql-17-emaj postgresql-17-tableversion postgresql-17-cron postgresql-17-pg-later postgresql-17-pg-background #postgresql-17-pg-timeseries
+pg16: postgresql-16-timescaledb postgresql-16-pg-timeseries postgresql-16-periods postgresql-16-temporal-tables postgresql-16-emaj postgresql-16-tableversion postgresql-16-cron postgresql-16-pg-later postgresql-16-pg-background
+pg15: postgresql-15-timescaledb postgresql-15-pg-timeseries postgresql-15-periods postgresql-15-temporal-tables postgresql-15-emaj postgresql-15-tableversion postgresql-15-cron postgresql-15-pg-later postgresql-15-pg-background
+pg14: postgresql-14-timescaledb postgresql-14-pg-timeseries postgresql-14-periods postgresql-14-temporal-tables postgresql-14-emaj postgresql-14-tableversion postgresql-14-cron postgresql-14-pg-later postgresql-14-pg-background
+pg13: postgresql-13-pg-timeseries postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-later postgresql-13-pg-background #postgresql-13-timescaledb
 ```
 
 
 ### Ubuntu 24.04 noble Compatible (u24)
 
 ```yaml
-pg17: timescaledb-2-postgresql-17 postgresql-17-periods postgresql-17-temporal-tables postgresql-17-emaj postgresql-17-tableversion postgresql-17-cron postgresql-17-pg-later postgresql-17-pg-background #postgresql-17-pg-timeseries
-pg16: timescaledb-2-postgresql-16 postgresql-16-pg-timeseries postgresql-16-periods postgresql-16-temporal-tables postgresql-16-emaj postgresql-16-tableversion postgresql-16-cron postgresql-16-pg-later postgresql-16-pg-background
-pg15: timescaledb-2-postgresql-15 postgresql-15-pg-timeseries postgresql-15-periods postgresql-15-temporal-tables postgresql-15-emaj postgresql-15-tableversion postgresql-15-cron postgresql-15-pg-later postgresql-15-pg-background
-pg14: timescaledb-2-postgresql-14 postgresql-14-pg-timeseries postgresql-14-periods postgresql-14-temporal-tables postgresql-14-emaj postgresql-14-tableversion postgresql-14-cron postgresql-14-pg-later postgresql-14-pg-background
-pg13: postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-later postgresql-13-pg-background #timescaledb-2-postgresql-13 #postgresql-13-pg-timeseries
+pg17: postgresql-17-timescaledb postgresql-17-periods postgresql-17-temporal-tables postgresql-17-emaj postgresql-17-tableversion postgresql-17-cron postgresql-17-pg-later postgresql-17-pg-background #postgresql-17-pg-timeseries
+pg16: postgresql-16-timescaledb postgresql-16-pg-timeseries postgresql-16-periods postgresql-16-temporal-tables postgresql-16-emaj postgresql-16-tableversion postgresql-16-cron postgresql-16-pg-later postgresql-16-pg-background
+pg15: postgresql-15-timescaledb postgresql-15-pg-timeseries postgresql-15-periods postgresql-15-temporal-tables postgresql-15-emaj postgresql-15-tableversion postgresql-15-cron postgresql-15-pg-later postgresql-15-pg-background
+pg14: postgresql-14-timescaledb postgresql-14-pg-timeseries postgresql-14-periods postgresql-14-temporal-tables postgresql-14-emaj postgresql-14-tableversion postgresql-14-cron postgresql-14-pg-later postgresql-14-pg-background
+pg13: postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-later postgresql-13-pg-background #postgresql-13-timescaledb #postgresql-13-pg-timeseries
 ```
 
 

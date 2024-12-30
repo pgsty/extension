@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [timescaledb](/timescaledb) |  |  |  |  |
+| [timescaledb](/timescaledb) |  | `timescaledb_information`, `timescaledb_experimental` |  |  |
 
 
 
@@ -63,7 +63,7 @@ CREATE EXTENSION timescaledb;
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
 | [RPM](/rpm) | 2.17.2 | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | `pg_timescaledb_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
-| [DEB](/deb) | 2.17.2 | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-2-postgresql-$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| [DEB](/deb) | 2.17.2 | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-timescaledb` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
 
 
 
@@ -94,10 +94,10 @@ dnf install pg_timescaledb_14*;
 Install `timescaledb` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install timescaledb-2-postgresql-17;
-apt install timescaledb-2-postgresql-16;
-apt install timescaledb-2-postgresql-15;
-apt install timescaledb-2-postgresql-14;
+apt install postgresql-17-timescaledb;
+apt install postgresql-16-timescaledb;
+apt install postgresql-15-timescaledb;
+apt install postgresql-14-timescaledb;
 ```
 
 
@@ -107,9 +107,9 @@ apt install timescaledb-2-postgresql-14;
 |:------------:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `pg_timescaledb_17*` | `pg_timescaledb_16*` | `pg_timescaledb_15*` | `pg_timescaledb_14*` | <span class="tcred">✘</span> |
 | `el9` | `pg_timescaledb_17*` | `pg_timescaledb_16*` | `pg_timescaledb_15*` | `pg_timescaledb_14*` | <span class="tcred">✘</span> |
-| `d12` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | <span class="tcred">✘</span> |
-| `u22` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | <span class="tcred">✘</span> |
-| `u24` | `timescaledb-2-postgresql-17` | `timescaledb-2-postgresql-16` | `timescaledb-2-postgresql-15` | `timescaledb-2-postgresql-14` | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-timescaledb` | `postgresql-16-timescaledb` | `postgresql-15-timescaledb` | `postgresql-14-timescaledb` | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-timescaledb` | `postgresql-16-timescaledb` | `postgresql-15-timescaledb` | `postgresql-14-timescaledb` | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-timescaledb` | `postgresql-16-timescaledb` | `postgresql-15-timescaledb` | `postgresql-14-timescaledb` | <span class="tcred">✘</span> |
 
 
 

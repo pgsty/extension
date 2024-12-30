@@ -59,7 +59,7 @@ CREATE EXTENSION pgroonga_database;
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
 | Distro-pgroonga | 3.2.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgroonga_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `groonga-libs` |
-| Distro-pgroonga | 3.2.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgdg-pgroonga` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libgroonga0` |
+| Distro-pgroonga | 3.2.5 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgroonga` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `libgroonga0` |
 
 
 
@@ -91,11 +91,11 @@ dnf install pgroonga_13*;
 Install `pgroonga` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-pgdg-pgroonga;
-apt install postgresql-16-pgdg-pgroonga;
-apt install postgresql-15-pgdg-pgroonga;
-apt install postgresql-14-pgdg-pgroonga;
-apt install postgresql-13-pgdg-pgroonga;
+apt install postgresql-17-pgroonga;
+apt install postgresql-16-pgroonga;
+apt install postgresql-15-pgroonga;
+apt install postgresql-14-pgroonga;
+apt install postgresql-13-pgroonga;
 ```
 
 
@@ -105,9 +105,9 @@ apt install postgresql-13-pgdg-pgroonga;
 |:------------:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `pgroonga_17*` | `pgroonga_16*` | `pgroonga_15*` | `pgroonga_14*` | `pgroonga_13*` |
 | `el9` | `pgroonga_17*` | `pgroonga_16*` | `pgroonga_15*` | `pgroonga_14*` | `pgroonga_13*` |
-| `d12` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` |
-| `u22` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` |
-| `u24` | `postgresql-17-pgdg-pgroonga` | `postgresql-16-pgdg-pgroonga` | `postgresql-15-pgdg-pgroonga` | `postgresql-14-pgdg-pgroonga` | `postgresql-13-pgdg-pgroonga` |
+| `d12` | `postgresql-17-pgroonga` | `postgresql-16-pgroonga` | `postgresql-15-pgroonga` | `postgresql-14-pgroonga` | `postgresql-13-pgroonga` |
+| `u22` | `postgresql-17-pgroonga` | `postgresql-16-pgroonga` | `postgresql-15-pgroonga` | `postgresql-14-pgroonga` | `postgresql-13-pgroonga` |
+| `u24` | `postgresql-17-pgroonga` | `postgresql-16-pgroonga` | `postgresql-15-pgroonga` | `postgresql-14-pgroonga` | `postgresql-13-pgroonga` |
 
 
 
