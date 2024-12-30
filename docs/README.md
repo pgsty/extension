@@ -10,10 +10,10 @@ Provide [340](/list) available extensions as [RPM](/rpm) / [DEB](/deb) for Postg
 
 Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS distros, and `x86_64` & `ARM64` architectures. 
 
-|Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 334 | 114 | 147 | 69 | 4 | 6 | 303 | 330 | 333 | 321 | 303 |
-| DEB Extension | 327 | 104 | 150 | 69 | 4 | 13 | 304 | 323 | 326 | 319 | 300 |
+| Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:--------------:|:---:|:----:|:------:|:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| RPM Extension  | 334 | 114  |  147   |   69    |  4   |  6   | 303  | 330  | 333  | 321  | 303  |
+| DEB Extension  | 327 | 104  |  150   |   69    |  4   |  13  | 304  | 323  | 326  | 319  | 300  |
 
 
 
@@ -129,14 +129,12 @@ If you have any suggestions on including new extensions or bumping to new versio
 
 Here are some bad cases and limitation for above distros:
 
-- [`citus`](https://ext.pigsty.io/#/citus) is not available on `aarch64` (deb)
-- [`pljava`](https://ext.pigsty.io/#/pljava) is missing on `el8`
+- [`topn`](https://ext.pigsty.io/#/topn) is missing on `el8.aarch64` and `el9.aarch64` for pg13, and all `deb.aarch64`
 - [`jdbc_fdw`](https://ext.pigsty.io/#/jdbc_fdw) is missing on `el8.aarch64` and `el9.aarch64`
 - [`pllua`](https://ext.pigsty.io/#/pllua) is missing on `el8.aarch64` for pg 13,14,15
-- [`topn`](https://ext.pigsty.io/#/topn) is missing on `el8.aarch64` and `el9.aarch64` for pg13, and all `deb.aarch64`
 - [`pg_partman`](https://ext.pigsty.io/#/pg_partman) and [`timeseries`](https://ext.pigsty.io/#/timeseries) is missing on `u24` for pg13
 - [`wiltondb`](https://ext.pigsty.io/#/wiltondb) is missing on `d12`
-
+- [`pljava`](https://ext.pigsty.io/#/pljava) is missing on `el8`
 
 
 ----------------
