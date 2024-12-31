@@ -25,14 +25,14 @@ NOP_LIST = {
     "el9": ["plr", "pg_dbms_job", "pgtap", "faker", "dbt2", "pgpool", "pgagent", "repmgr", "slony", "pg_strom", "oracle_fdw", "db2_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
 
     "deb": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
-    "u24": ["plr",           "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "pgml", "citus", "topn", "timescaledb_toolkit"],
+    "u24": ["plr",           "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money", "pgml",  "topn", "timescaledb_toolkit"],
     "u22": ["plr",           "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
     "u20": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
     "d12": ["plr",           "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
     "d11": ["plr", "pljava", "pgtap", "pgpool", "pgagent", "repmgr", "slony", "oracle_fdw", "babelfishpg_common", "babelfishpg_tsql", "babelfishpg_tds", "babelfishpg_money"],
 }
 
-EXT_NOP_LIST = ["pg_mooncake", "citus"]
+EXT_NOP_LIST = []
 
 CATES = {
     "TIME": "TIME: TimescaleDB, Versioning & Temporal Table, Crontab, Async & Background Job Scheduler, ...",
@@ -155,9 +155,6 @@ def pkg_ext_list(ver, distro):
                     if name == 'pgaudit' and os_type == 'rpm' and ver in ['12','13','14','15']: #pg15=pgaudit17, pg14=pgaudit16 pg13=pgaudit15 pg12=pgaudit14
                         pkg = pkg.replace('$v', ver).replace('pgaudit', 'pgaudit' + str(int(ver)+2))
                         alias = alias + str(int(ver)+2)
-                    elif name == 'citus' and os_type == 'deb' and ver in ['12','13']: #pg12=10.2, pg13=11.3
-                        pkg = ext[PKG_KEY].replace('$v', ver).replace('citus-12.1', 'citus-' + ('10.2' if ver == '12' else '11.3') )
-                        alias = ext['alias'] + str(int(ver)-2)
                     elif name == 'citus_columnar':
                         continue
                     elif name == 'postgis' and os_type == 'rpm' and (ver in ['12']): #pg12=34(el8/9),33(el7)

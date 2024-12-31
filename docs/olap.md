@@ -173,9 +173,9 @@ pg13: postgresql-13-hydra postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postg
 
 ```yaml
 pg17: postgresql-17-pg-analytics postgresql-17-pg-duckdb postgresql-17-duckdb-fdw postgresql-17-pg-parquet postgresql-17-pg-fkpart postgresql-17-partman postgresql-17-plproxy #postgresql-17-citus #postgresql-17-hydra
-pg16: postgresql-16-hydra postgresql-16-pg-analytics postgresql-16-pg-duckdb postgresql-16-duckdb-fdw postgresql-16-pg-parquet postgresql-16-pg-fkpart postgresql-16-partman postgresql-16-plproxy #postgresql-16-citus
-pg15: postgresql-15-hydra postgresql-15-pg-analytics postgresql-15-pg-duckdb postgresql-15-duckdb-fdw postgresql-15-pg-parquet postgresql-15-pg-fkpart postgresql-15-partman postgresql-15-plproxy #postgresql-15-citus
-pg14: postgresql-14-hydra postgresql-14-pg-analytics postgresql-14-pg-duckdb postgresql-14-duckdb-fdw postgresql-14-pg-parquet postgresql-14-pg-fkpart postgresql-14-partman postgresql-14-plproxy #postgresql-14-citus
+pg16: postgresql-16-citus postgresql-16-hydra postgresql-16-pg-analytics postgresql-16-pg-duckdb postgresql-16-duckdb-fdw postgresql-16-pg-parquet postgresql-16-pg-fkpart postgresql-16-partman postgresql-16-plproxy
+pg15: postgresql-15-citus postgresql-15-hydra postgresql-15-pg-analytics postgresql-15-pg-duckdb postgresql-15-duckdb-fdw postgresql-15-pg-parquet postgresql-15-pg-fkpart postgresql-15-partman postgresql-15-plproxy
+pg14: postgresql-14-citus postgresql-14-hydra postgresql-14-pg-analytics postgresql-14-pg-duckdb postgresql-14-duckdb-fdw postgresql-14-pg-parquet postgresql-14-pg-fkpart postgresql-14-partman postgresql-14-plproxy
 pg13: postgresql-13-hydra postgresql-13-duckdb-fdw postgresql-13-pg-fkpart postgresql-13-plproxy #postgresql-13-citus #postgresql-13-pg-analytics #postgresql-13-pg-duckdb #postgresql-13-pg-parquet #postgresql-13-partman
 ```
 

@@ -40,7 +40,7 @@
 | `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 | `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 | `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -107,7 +107,7 @@ apt install postgresql-14-citus;
 | `el9` | <span class="tcred">✘</span> | `citus_16*` | `citus_15*` | `citus_14*` | <span class="tcred">✘</span> |
 | `d12` | <span class="tcred">✘</span> | `postgresql-16-citus` | `postgresql-15-citus` | `postgresql-14-citus` | <span class="tcred">✘</span> |
 | `u22` | <span class="tcred">✘</span> | `postgresql-16-citus` | `postgresql-15-citus` | `postgresql-14-citus` | <span class="tcred">✘</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcred">✘</span> | `postgresql-16-citus` | `postgresql-15-citus` | `postgresql-14-citus` | <span class="tcred">✘</span> |
 
 
 

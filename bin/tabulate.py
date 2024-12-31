@@ -69,7 +69,7 @@ DISTRO_MISS = {
     "el7": ["pg_dbms_job", "pljava"],
     "el8": ["pg_dbms_job", "pljava"],
     "el9": ["pg_dbms_job" ],
-    "u24": ["pgml", "citus", "topn", "timescaledb_toolkit"],
+    "u24": ["pgml",  "topn", "timescaledb_toolkit"],
     "u22": [],
     "u20": ["pljava"],
     "d12": [],

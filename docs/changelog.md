@@ -1,5 +1,12 @@
 # Changelog
 
+**2024-12-30**
+
+- Build citus on all deb distros (amd/arm)
+- Build pgroonga on all deb distros (amd/arm)
+- Build timescaledb on all deb distros (amd/arm)
+- Add synchdb v1.0 for pg16 on ubuntu distros ()
+
 **2024-12-24**
 
 - Build citus for el aarch64 distros
