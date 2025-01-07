@@ -20,7 +20,7 @@ There are 12 available extensions in this category:
 | 1550 | [duckdb_fdw](/duckdb_fdw) | 1.1.2 | [duckdb_fdw](/duckdb_fdw) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/alitrack/duckdb_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | DuckDB Foreign Data Wrapper |
 | 1560 | [pg_parquet](/pg_parquet) | 0.1.1 | [pg_parquet](/pg_parquet) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/CrunchyData/pg_parquet/) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | copy data between Postgres and Parquet |
 | 1600 | [pg_fkpart](/pg_fkpart) | 1.7 | [pg_fkpart](/pg_fkpart) | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/lemoineat/pg_fkpart) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Table partitioning by foreign key utility |
-| 1610 | [pg_partman](/pg_partman) | 5.1.0 | [pg_partman](/pg_partman) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgpartman/pg_partman) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to manage partitioned tables by time or ID |
+| 1610 | [pg_partman](/pg_partman) | 5.2.4 | [pg_partman](/pg_partman) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgpartman/pg_partman) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Extension to manage partitioned tables by time or ID |
 | 1620 | [plproxy](/plproxy) | 2.11.0 | [plproxy](/plproxy) | **<span class="tcblue">BSD-0</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/plproxy/plproxy) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Database partitioning implemented as procedural language |
 | 1630 | [pg_strom](/pg_strom) | 5.1 | [pg_strom](/pg_strom) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/heterodb/pg-strom) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PG-Strom - big-data processing acceleration using GPU and NVME |
 | 1690 | [tablefunc](/tablefunc) | 1.0 | [tablefunc](/tablefunc) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/tablefunc.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions that manipulate whole tables, including crosstab |
@@ -30,7 +30,7 @@ There are 12 available extensions in this category:
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart plproxy #citus #hydra #pg_partman #pg_strom
+pg17: pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #hydra #pg_strom
 pg16: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_strom
 pg15: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_strom
 pg14: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_strom
@@ -41,7 +41,7 @@ pg13: hydra duckdb_fdw pg_fkpart pg_partman plproxy #citus #pg_analytics #pg_duc
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart plproxy #citus #hydra #pg_partman #pg_strom
+pg17: pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #hydra #pg_strom
 pg16: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_strom
 pg15: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_strom
 pg14: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_strom
@@ -97,7 +97,7 @@ pg13: hydra duckdb_fdw pg_fkpart plproxy #citus #pg_analytics #pg_duckdb #pg_par
 | [duckdb_fdw](/duckdb_fdw) | 1.0.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `duckdb_fdw_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | DuckDB Foreign Data Wrapper |
 | [pg_parquet](/pg_parquet) | 0.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_parquet_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | copy data between Postgres and Parquet |
 | [pg_fkpart](/pg_fkpart) | 1.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_fkpart_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Table partitioning by foreign key utility |
-| [pg_partman](/pg_partman) | 5.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_partman_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Extension to manage partitioned tables by time or ID |
+| [pg_partman](/pg_partman) | 5.2.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_partman_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Extension to manage partitioned tables by time or ID |
 | [plproxy](/plproxy) | 2.11.0 | **<span class="tcblue">BSD-0</span>** | **<span class="tcwarn">PIGSTY</span>** | `plproxy_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Database partitioning implemented as procedural language |
 | [pg_strom](/pg_strom) | 5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_strom_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PG-Strom - big-data processing acceleration using GPU and NVME |
 | [tablefunc](/tablefunc) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | functions that manipulate whole tables, including crosstab |
@@ -107,7 +107,7 @@ pg13: hydra duckdb_fdw pg_fkpart plproxy #citus #pg_analytics #pg_duckdb #pg_par
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: pg_analytics_17 pg_duckdb_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17* plproxy_17* #citus_17* #hydra_17* #pg_partman_17* #pg_strom_17*
+pg17: pg_analytics_17 pg_duckdb_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17* pg_partman_17* plproxy_17* #citus_17* #hydra_17* #pg_strom_17*
 pg16: citus_16* hydra_16* pg_analytics_16 pg_duckdb_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16* pg_partman_16* plproxy_16* #pg_strom_16*
 pg15: citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15* pg_partman_15* plproxy_15* #pg_strom_15*
 pg14: citus_14* hydra_14* pg_analytics_14 pg_duckdb_14* duckdb_fdw_14* pg_parquet_14 pg_fkpart_14* pg_partman_14* plproxy_14* #pg_strom_14*
@@ -118,7 +118,7 @@ pg13: hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* #citus_1
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: pg_analytics_17 pg_duckdb_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17* plproxy_17* #citus_17* #hydra_17* #pg_partman_17* #pg_strom_17*
+pg17: pg_analytics_17 pg_duckdb_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17* pg_partman_17* plproxy_17* #citus_17* #hydra_17* #pg_strom_17*
 pg16: citus_16* hydra_16* pg_analytics_16 pg_duckdb_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16* pg_partman_16* plproxy_16* #pg_strom_16*
 pg15: citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15* pg_partman_15* plproxy_15* #pg_strom_15*
 pg14: citus_14* hydra_14* pg_analytics_14 pg_duckdb_14* duckdb_fdw_14* pg_parquet_14 pg_fkpart_14* pg_partman_14* plproxy_14* #pg_strom_14*

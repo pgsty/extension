@@ -1,5 +1,17 @@
 # Changelog
 
+**2025-01-07**
+
+- pg_partman 5.2.4
+- credcheck 3.0
+- ogr_fdw 1.1.5
+- ddlx 0.29
+- postgis 3.5.1
+- tdigest 1.4.3
+- pgrepack 1.5.2
+
+
+
 **2024-12-30**
 
 - Build citus on all deb distros (amd/arm)
