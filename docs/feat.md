@@ -57,7 +57,7 @@ pg13: hll rum pg_jsonschema pg_hint_plan hypopg index_advisor pg_plan_filter img
 ### Debian 12 bookworm Compatible (d12)
 
 ```yaml
-pg17: hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #age #rdkit
+pg17: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #rdkit
 pg16: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit
 pg15: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit
 pg14: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit
@@ -68,7 +68,7 @@ pg13: age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_pla
 ### Ubuntu 24.04 jammy Compatible (u22)
 
 ```yaml
-pg17: hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #age #rdkit
+pg17: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #rdkit
 pg16: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit
 pg15: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit
 pg14: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit
@@ -79,7 +79,7 @@ pg13: age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_pla
 ### Ubuntu 24.04 noble Compatible (u24)
 
 ```yaml
-pg17: hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #age #rdkit
+pg17: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano #rdkit
 pg16: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit
 pg15: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit
 pg14: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano rdkit
@@ -144,7 +144,7 @@ pg13: hll_13* rum_13 pg_jsonschema_13 pg_hint_plan_13* hypopg_13* index_advisor_
 
 | Package | Version | License | DEB | DEB Package | 17 | 16 | 15 | 14 | 13 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
-| [age](/age) | 1.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-age` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | AGE graph database extension |
+| [age](/age) | 1.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-age` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | AGE graph database extension |
 | [hll](/hll) | 2.18 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-hll` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | type for storing hyperloglog data |
 | [rum](/rum) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-rum` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | RUM index access method |
 | [pg_graphql](/pg_graphql) | 1.5.9 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-graphql` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | pg_graphql: GraphQL support |
@@ -167,7 +167,7 @@ pg13: hll_13* rum_13 pg_jsonschema_13 pg_hint_plan_13* hypopg_13* index_advisor_
 ### Debian 12 bookworm Compatible (d12)
 
 ```yaml
-pg17: postgresql-17-hll postgresql-17-rum postgresql-17-pg-graphql postgresql-17-pg-jsonschema postgresql-17-jsquery postgresql-17-pg-hint-plan postgresql-17-hypopg postgresql-17-index-advisor postgresql-17-pg-plan-filter postgresql-17-imgsmlr postgresql-17-pg-ivm postgresql-17-pgmq postgresql-17-pgq3 postgresql-17-pg-cardano #postgresql-17-age #postgresql-17-rdkit
+pg17: postgresql-17-age postgresql-17-hll postgresql-17-rum postgresql-17-pg-graphql postgresql-17-pg-jsonschema postgresql-17-jsquery postgresql-17-pg-hint-plan postgresql-17-hypopg postgresql-17-index-advisor postgresql-17-pg-plan-filter postgresql-17-imgsmlr postgresql-17-pg-ivm postgresql-17-pgmq postgresql-17-pgq3 postgresql-17-pg-cardano #postgresql-17-rdkit
 pg16: postgresql-16-age postgresql-16-hll postgresql-16-rum postgresql-16-pg-graphql postgresql-16-pg-jsonschema postgresql-16-jsquery postgresql-16-pg-hint-plan postgresql-16-hypopg postgresql-16-index-advisor postgresql-16-pg-plan-filter postgresql-16-imgsmlr postgresql-16-pg-ivm postgresql-16-pgmq postgresql-16-pgq3 postgresql-16-pg-cardano postgresql-16-rdkit
 pg15: postgresql-15-age postgresql-15-hll postgresql-15-rum postgresql-15-pg-graphql postgresql-15-pg-jsonschema postgresql-15-jsquery postgresql-15-pg-hint-plan postgresql-15-hypopg postgresql-15-index-advisor postgresql-15-pg-plan-filter postgresql-15-imgsmlr postgresql-15-pg-ivm postgresql-15-pgmq postgresql-15-pgq3 postgresql-15-pg-cardano postgresql-15-rdkit
 pg14: postgresql-14-age postgresql-14-hll postgresql-14-rum postgresql-14-pg-graphql postgresql-14-pg-jsonschema postgresql-14-jsquery postgresql-14-pg-hint-plan postgresql-14-hypopg postgresql-14-index-advisor postgresql-14-pg-plan-filter postgresql-14-imgsmlr postgresql-14-pg-ivm postgresql-14-pgmq postgresql-14-pgq3 postgresql-14-pg-cardano postgresql-14-rdkit
@@ -178,7 +178,7 @@ pg13: postgresql-13-age postgresql-13-hll postgresql-13-rum postgresql-13-pg-jso
 ### Ubuntu 24.04 jammy Compatible (u22)
 
 ```yaml
-pg17: postgresql-17-hll postgresql-17-rum postgresql-17-pg-graphql postgresql-17-pg-jsonschema postgresql-17-jsquery postgresql-17-pg-hint-plan postgresql-17-hypopg postgresql-17-index-advisor postgresql-17-pg-plan-filter postgresql-17-imgsmlr postgresql-17-pg-ivm postgresql-17-pgmq postgresql-17-pgq3 postgresql-17-pg-cardano #postgresql-17-age #postgresql-17-rdkit
+pg17: postgresql-17-age postgresql-17-hll postgresql-17-rum postgresql-17-pg-graphql postgresql-17-pg-jsonschema postgresql-17-jsquery postgresql-17-pg-hint-plan postgresql-17-hypopg postgresql-17-index-advisor postgresql-17-pg-plan-filter postgresql-17-imgsmlr postgresql-17-pg-ivm postgresql-17-pgmq postgresql-17-pgq3 postgresql-17-pg-cardano #postgresql-17-rdkit
 pg16: postgresql-16-age postgresql-16-hll postgresql-16-rum postgresql-16-pg-graphql postgresql-16-pg-jsonschema postgresql-16-jsquery postgresql-16-pg-hint-plan postgresql-16-hypopg postgresql-16-index-advisor postgresql-16-pg-plan-filter postgresql-16-imgsmlr postgresql-16-pg-ivm postgresql-16-pgmq postgresql-16-pgq3 postgresql-16-pg-cardano postgresql-16-rdkit
 pg15: postgresql-15-age postgresql-15-hll postgresql-15-rum postgresql-15-pg-graphql postgresql-15-pg-jsonschema postgresql-15-jsquery postgresql-15-pg-hint-plan postgresql-15-hypopg postgresql-15-index-advisor postgresql-15-pg-plan-filter postgresql-15-imgsmlr postgresql-15-pg-ivm postgresql-15-pgmq postgresql-15-pgq3 postgresql-15-pg-cardano postgresql-15-rdkit
 pg14: postgresql-14-age postgresql-14-hll postgresql-14-rum postgresql-14-pg-graphql postgresql-14-pg-jsonschema postgresql-14-jsquery postgresql-14-pg-hint-plan postgresql-14-hypopg postgresql-14-index-advisor postgresql-14-pg-plan-filter postgresql-14-imgsmlr postgresql-14-pg-ivm postgresql-14-pgmq postgresql-14-pgq3 postgresql-14-pg-cardano postgresql-14-rdkit
@@ -189,7 +189,7 @@ pg13: postgresql-13-age postgresql-13-hll postgresql-13-rum postgresql-13-pg-jso
 ### Ubuntu 24.04 noble Compatible (u24)
 
 ```yaml
-pg17: postgresql-17-hll postgresql-17-rum postgresql-17-pg-graphql postgresql-17-pg-jsonschema postgresql-17-jsquery postgresql-17-pg-hint-plan postgresql-17-hypopg postgresql-17-index-advisor postgresql-17-pg-plan-filter postgresql-17-imgsmlr postgresql-17-pg-ivm postgresql-17-pgmq postgresql-17-pgq3 postgresql-17-pg-cardano #postgresql-17-age #postgresql-17-rdkit
+pg17: postgresql-17-age postgresql-17-hll postgresql-17-rum postgresql-17-pg-graphql postgresql-17-pg-jsonschema postgresql-17-jsquery postgresql-17-pg-hint-plan postgresql-17-hypopg postgresql-17-index-advisor postgresql-17-pg-plan-filter postgresql-17-imgsmlr postgresql-17-pg-ivm postgresql-17-pgmq postgresql-17-pgq3 postgresql-17-pg-cardano #postgresql-17-rdkit
 pg16: postgresql-16-age postgresql-16-hll postgresql-16-rum postgresql-16-pg-graphql postgresql-16-pg-jsonschema postgresql-16-jsquery postgresql-16-pg-hint-plan postgresql-16-hypopg postgresql-16-index-advisor postgresql-16-pg-plan-filter postgresql-16-imgsmlr postgresql-16-pg-ivm postgresql-16-pgmq postgresql-16-pgq3 postgresql-16-pg-cardano postgresql-16-rdkit
 pg15: postgresql-15-age postgresql-15-hll postgresql-15-rum postgresql-15-pg-graphql postgresql-15-pg-jsonschema postgresql-15-jsquery postgresql-15-pg-hint-plan postgresql-15-hypopg postgresql-15-index-advisor postgresql-15-pg-plan-filter postgresql-15-imgsmlr postgresql-15-pg-ivm postgresql-15-pgmq postgresql-15-pgq3 postgresql-15-pg-cardano postgresql-15-rdkit
 pg14: postgresql-14-age postgresql-14-hll postgresql-14-rum postgresql-14-pg-graphql postgresql-14-pg-jsonschema postgresql-14-jsquery postgresql-14-pg-hint-plan postgresql-14-hypopg postgresql-14-index-advisor postgresql-14-pg-plan-filter postgresql-14-imgsmlr postgresql-14-pg-ivm postgresql-14-pgmq postgresql-14-pgq3 postgresql-14-pg-cardano postgresql-14-rdkit

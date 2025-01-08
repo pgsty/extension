@@ -38,9 +38,9 @@
 |:------------:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION age;
 ```
-
+> **Comment**: no pg15,14,13 on el
 -----------
 
 
@@ -88,6 +88,7 @@ dnf install apache-age_15*;
 Install `age` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-age;
 apt install postgresql-16-age;
 apt install postgresql-15-age;
 apt install postgresql-14-age;
@@ -101,9 +102,9 @@ apt install postgresql-13-age;
 |:------------:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | <span class="tcred">✘</span> | `apache-age_16*` | `apache-age_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `el9` | <span class="tcred">✘</span> | `apache-age_16*` | `apache-age_15*` | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcred">✘</span> | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` |
-| `u22` | <span class="tcred">✘</span> | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` |
-| `u24` | <span class="tcred">✘</span> | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` |
+| `d12` | `postgresql-17-age` | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` |
+| `u22` | `postgresql-17-age` | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` |
+| `u24` | `postgresql-17-age` | `postgresql-16-age` | `postgresql-15-age` | `postgresql-14-age` | `postgresql-13-age` |
 
 
 

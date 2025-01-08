@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pgtap](https://github.com/theory/pgtap) | 1.3.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
+| [pgtap](https://github.com/theory/pgtap) | 1.3.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -58,8 +58,8 @@ CREATE EXTENSION pgtap;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.3.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgtap_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.3.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgtap` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm) | 1.3.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgtap_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.3.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgtap` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 
@@ -80,6 +80,7 @@ Install `pgtap` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `pgtap` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
+dnf install pgtap_17*;
 dnf install pgtap_16*;
 dnf install pgtap_15*;
 dnf install pgtap_14*;
@@ -102,8 +103,8 @@ apt install postgresql-13-pgtap;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | `pgtap_16*` | `pgtap_15*` | `pgtap_14*` | `pgtap_13*` |
-| `el9` | <span class="tcred">✘</span> | `pgtap_16*` | `pgtap_15*` | `pgtap_14*` | `pgtap_13*` |
+| `el8` | `pgtap_17*` | `pgtap_16*` | `pgtap_15*` | `pgtap_14*` | `pgtap_13*` |
+| `el9` | `pgtap_17*` | `pgtap_16*` | `pgtap_15*` | `pgtap_14*` | `pgtap_13*` |
 | `d12` | `postgresql-17-pgtap` | `postgresql-16-pgtap` | `postgresql-15-pgtap` | `postgresql-14-pgtap` | `postgresql-13-pgtap` |
 | `u22` | `postgresql-17-pgtap` | `postgresql-16-pgtap` | `postgresql-15-pgtap` | `postgresql-14-pgtap` | `postgresql-13-pgtap` |
 | `u24` | `postgresql-17-pgtap` | `postgresql-16-pgtap` | `postgresql-15-pgtap` | `postgresql-14-pgtap` | `postgresql-13-pgtap` |

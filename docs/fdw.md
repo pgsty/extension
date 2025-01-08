@@ -12,7 +12,7 @@ There are 21 available extensions in this category:
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
-| 8500 | [wrappers](/wrappers) | 0.4.3 | [wrappers](/wrappers) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/wrappers) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrappers developed by Supabase |
+| 8500 | [wrappers](/wrappers) | 0.4.4 | [wrappers](/wrappers) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/wrappers) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrappers developed by Supabase |
 | 8510 | [multicorn](/multicorn) | 3.0 | [multicorn](/multicorn) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/pgsql-io/multicorn2) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Fetch foreign data in Python in your PostgreSQL server. |
 | 8520 | [odbc_fdw](/odbc_fdw) | 0.5.1 | [odbc_fdw](/odbc_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/CartoDB/odbc_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for accessing remote databases using ODBC |
 | 8530 | [jdbc_fdw](/jdbc_fdw) | 1.2 | [jdbc_fdw](/jdbc_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/pgspider/jdbc_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for remote servers available over JDBC |
@@ -39,7 +39,7 @@ There are 21 available extensions in this category:
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: wrappers multicorn mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw redis_fdw pg_redis_pubsub hdfs_fdw firebird_fdw aws_s3 log_fdw #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #mongo_fdw #kafka_fdw
+pg17: wrappers multicorn odbc_fdw mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw redis_fdw pg_redis_pubsub hdfs_fdw firebird_fdw aws_s3 log_fdw #jdbc_fdw #oracle_fdw #db2_fdw #mongo_fdw #kafka_fdw
 pg16: wrappers multicorn odbc_fdw jdbc_fdw mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw mongo_fdw redis_fdw pg_redis_pubsub kafka_fdw hdfs_fdw firebird_fdw aws_s3 log_fdw #oracle_fdw #db2_fdw
 pg15: wrappers multicorn odbc_fdw jdbc_fdw mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw mongo_fdw redis_fdw pg_redis_pubsub kafka_fdw hdfs_fdw firebird_fdw aws_s3 log_fdw #oracle_fdw #db2_fdw
 pg14: wrappers multicorn odbc_fdw jdbc_fdw mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw mongo_fdw redis_fdw pg_redis_pubsub kafka_fdw hdfs_fdw firebird_fdw aws_s3 log_fdw #oracle_fdw #db2_fdw
@@ -50,7 +50,7 @@ pg13: multicorn odbc_fdw jdbc_fdw mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw mon
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: wrappers multicorn mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw redis_fdw pg_redis_pubsub hdfs_fdw firebird_fdw aws_s3 log_fdw #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #mongo_fdw #kafka_fdw
+pg17: wrappers multicorn odbc_fdw mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw redis_fdw pg_redis_pubsub hdfs_fdw firebird_fdw aws_s3 log_fdw #jdbc_fdw #oracle_fdw #db2_fdw #mongo_fdw #kafka_fdw
 pg16: wrappers multicorn odbc_fdw jdbc_fdw mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw mongo_fdw redis_fdw pg_redis_pubsub kafka_fdw hdfs_fdw firebird_fdw aws_s3 log_fdw #oracle_fdw #db2_fdw
 pg15: wrappers multicorn odbc_fdw jdbc_fdw mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw mongo_fdw redis_fdw pg_redis_pubsub kafka_fdw hdfs_fdw firebird_fdw aws_s3 log_fdw #oracle_fdw #db2_fdw
 pg14: wrappers multicorn odbc_fdw jdbc_fdw mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw mongo_fdw redis_fdw pg_redis_pubsub kafka_fdw hdfs_fdw firebird_fdw aws_s3 log_fdw #oracle_fdw #db2_fdw
@@ -99,9 +99,9 @@ pg13: mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_
 
 | Package | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
-| [wrappers](/wrappers) | 0.4.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `wrappers_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Foreign data wrappers developed by Supabase |
+| [wrappers](/wrappers) | 0.4.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `wrappers_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Foreign data wrappers developed by Supabase |
 | [multicorn](/multicorn) | 3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `multicorn2_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Fetch foreign data in Python in your PostgreSQL server. |
-| [odbc_fdw](/odbc_fdw) | 0.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `odbc_fdw_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Foreign data wrapper for accessing remote databases using ODBC |
+| [odbc_fdw](/odbc_fdw) | 0.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `odbc_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Foreign data wrapper for accessing remote databases using ODBC |
 | [jdbc_fdw](/jdbc_fdw) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `jdbc_fdw_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | foreign-data wrapper for remote servers available over JDBC |
 | [mysql_fdw](/mysql_fdw) | 1.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `mysql_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Foreign data wrapper for querying a MySQL server |
 | [oracle_fdw](/oracle_fdw) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `oracle_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | foreign data wrapper for Oracle access |
@@ -126,7 +126,7 @@ pg13: mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: wrappers_17 multicorn2_17* mysql_fdw_17* tds_fdw_17* sqlite_fdw_17* pgbouncer_fdw_17* redis_fdw_17* pg_redis_pubsub_17* hdfs_fdw_17* firebird_fdw_17 aws_s3_17 log_fdw_17* #odbc_fdw_17* #jdbc_fdw_17* #oracle_fdw_17* #db2_fdw_17* #mongo_fdw_17* #kafka_fdw_17
+pg17: wrappers_17 multicorn2_17* odbc_fdw_17* mysql_fdw_17* tds_fdw_17* sqlite_fdw_17* pgbouncer_fdw_17* redis_fdw_17* pg_redis_pubsub_17* hdfs_fdw_17* firebird_fdw_17 aws_s3_17 log_fdw_17* #jdbc_fdw_17* #oracle_fdw_17* #db2_fdw_17* #mongo_fdw_17* #kafka_fdw_17
 pg16: wrappers_16 multicorn2_16* odbc_fdw_16* jdbc_fdw_16* mysql_fdw_16* tds_fdw_16* sqlite_fdw_16* pgbouncer_fdw_16* mongo_fdw_16* redis_fdw_16* pg_redis_pubsub_16* kafka_fdw_16 hdfs_fdw_16* firebird_fdw_16 aws_s3_16 log_fdw_16* #oracle_fdw_16* #db2_fdw_16*
 pg15: wrappers_15 multicorn2_15* odbc_fdw_15* jdbc_fdw_15* mysql_fdw_15* tds_fdw_15* sqlite_fdw_15* pgbouncer_fdw_15* mongo_fdw_15* redis_fdw_15* pg_redis_pubsub_15* kafka_fdw_15 hdfs_fdw_15* firebird_fdw_15 aws_s3_15 log_fdw_15* #oracle_fdw_15* #db2_fdw_15*
 pg14: wrappers_14 multicorn2_14* odbc_fdw_14* jdbc_fdw_14* mysql_fdw_14* tds_fdw_14* sqlite_fdw_14* pgbouncer_fdw_14* mongo_fdw_14* redis_fdw_14* pg_redis_pubsub_14* kafka_fdw_14 hdfs_fdw_14* firebird_fdw_14 aws_s3_14 log_fdw_14* #oracle_fdw_14* #db2_fdw_14*
@@ -137,7 +137,7 @@ pg13: multicorn2_13* odbc_fdw_13* jdbc_fdw_13* mysql_fdw_13* tds_fdw_13* sqlite_
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: wrappers_17 multicorn2_17* mysql_fdw_17* tds_fdw_17* sqlite_fdw_17* pgbouncer_fdw_17* redis_fdw_17* pg_redis_pubsub_17* hdfs_fdw_17* firebird_fdw_17 aws_s3_17 log_fdw_17* #odbc_fdw_17* #jdbc_fdw_17* #oracle_fdw_17* #db2_fdw_17* #mongo_fdw_17* #kafka_fdw_17
+pg17: wrappers_17 multicorn2_17* odbc_fdw_17* mysql_fdw_17* tds_fdw_17* sqlite_fdw_17* pgbouncer_fdw_17* redis_fdw_17* pg_redis_pubsub_17* hdfs_fdw_17* firebird_fdw_17 aws_s3_17 log_fdw_17* #jdbc_fdw_17* #oracle_fdw_17* #db2_fdw_17* #mongo_fdw_17* #kafka_fdw_17
 pg16: wrappers_16 multicorn2_16* odbc_fdw_16* jdbc_fdw_16* mysql_fdw_16* tds_fdw_16* sqlite_fdw_16* pgbouncer_fdw_16* mongo_fdw_16* redis_fdw_16* pg_redis_pubsub_16* kafka_fdw_16 hdfs_fdw_16* firebird_fdw_16 aws_s3_16 log_fdw_16* #oracle_fdw_16* #db2_fdw_16*
 pg15: wrappers_15 multicorn2_15* odbc_fdw_15* jdbc_fdw_15* mysql_fdw_15* tds_fdw_15* sqlite_fdw_15* pgbouncer_fdw_15* mongo_fdw_15* redis_fdw_15* pg_redis_pubsub_15* kafka_fdw_15 hdfs_fdw_15* firebird_fdw_15 aws_s3_15 log_fdw_15* #oracle_fdw_15* #db2_fdw_15*
 pg14: wrappers_14 multicorn2_14* odbc_fdw_14* jdbc_fdw_14* mysql_fdw_14* tds_fdw_14* sqlite_fdw_14* pgbouncer_fdw_14* mongo_fdw_14* redis_fdw_14* pg_redis_pubsub_14* kafka_fdw_14 hdfs_fdw_14* firebird_fdw_14 aws_s3_14 log_fdw_14* #oracle_fdw_14* #db2_fdw_14*
@@ -153,7 +153,7 @@ pg13: multicorn2_13* odbc_fdw_13* jdbc_fdw_13* mysql_fdw_13* tds_fdw_13* sqlite_
 
 | Package | Version | License | DEB | DEB Package | 17 | 16 | 15 | 14 | 13 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
-| [wrappers](/wrappers) | 0.4.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-wrappers` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Foreign data wrappers developed by Supabase |
+| [wrappers](/wrappers) | 0.4.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-wrappers` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Foreign data wrappers developed by Supabase |
 | [mysql_fdw](/mysql_fdw) | 1.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-mysql-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Foreign data wrapper for querying a MySQL server |
 | [oracle_fdw](/oracle_fdw) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-oracle-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | foreign data wrapper for Oracle access |
 | [tds_fdw](/tds_fdw) | 2.0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-tds-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Foreign data wrapper for querying a TDS database (Sybase or Microsoft SQL Server) |

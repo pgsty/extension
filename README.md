@@ -115,12 +115,12 @@ request to update the metadata.
 
 Here are some bad cases and limitation for above distros:
 
-- [`topn`](https://ext.pigsty.io/#/topn) is missing on `el8.aarch64` and `el9.aarch64` for pg13, and all `deb.aarch64`
-- [`jdbc_fdw`](https://ext.pigsty.io/#/jdbc_fdw) is missing on `el8.aarch64` and `el9.aarch64`
+- [`pljava`](https://ext.pigsty.io/#/pljava) is missing on `el8`
+- [`jdbc_fdw`](https://ext.pigsty.io/#/jdbc_fdw) is missing on `el.aarch64`
 - [`pllua`](https://ext.pigsty.io/#/pllua) is missing on `el8.aarch64` for pg 13,14,15
 - [`pg_partman`](https://ext.pigsty.io/#/pg_partman) and [`timeseries`](https://ext.pigsty.io/#/timeseries) is missing on `u24` for pg13
 - [`wiltondb`](https://ext.pigsty.io/#/wiltondb) is missing on `d12`
-- [`pljava`](https://ext.pigsty.io/#/pljava) is missing on `el8`
+- [`pg_duckdb`](https://ext.pigsty.io/#/pg_duckdb) is broken on `el8` due to c++17 stdfs ABI issue
 
 
 ----------------

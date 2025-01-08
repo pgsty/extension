@@ -18,13 +18,13 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [repmgr](https://github.com/EnterpriseDB/repmgr) | 5.4 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
+| [repmgr](https://github.com/EnterpriseDB/repmgr) | 5.5 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | `C` |
 
 
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
 
 
 
@@ -38,9 +38,9 @@
 |:------------:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -58,8 +58,8 @@ CREATE EXTENSION repmgr;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 5.4 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `repmgr_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 5.4 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-repmgr` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm) | 5.5 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `repmgr_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 5.5 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-repmgr` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 
@@ -90,6 +90,7 @@ dnf install repmgr_13*;
 Install `repmgr` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-repmgr;
 apt install postgresql-16-repmgr;
 apt install postgresql-15-repmgr;
 apt install postgresql-14-repmgr;
@@ -103,9 +104,9 @@ apt install postgresql-13-repmgr;
 |:------------:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | <span class="tcred">✘</span> | `repmgr_16*` | `repmgr_15*` | `repmgr_14*` | `repmgr_13*` |
 | `el9` | <span class="tcred">✘</span> | `repmgr_16*` | `repmgr_15*` | `repmgr_14*` | `repmgr_13*` |
-| `d12` | <span class="tcred">✘</span> | `postgresql-16-repmgr` | `postgresql-15-repmgr` | `postgresql-14-repmgr` | `postgresql-13-repmgr` |
-| `u22` | <span class="tcred">✘</span> | `postgresql-16-repmgr` | `postgresql-15-repmgr` | `postgresql-14-repmgr` | `postgresql-13-repmgr` |
-| `u24` | <span class="tcred">✘</span> | `postgresql-16-repmgr` | `postgresql-15-repmgr` | `postgresql-14-repmgr` | `postgresql-13-repmgr` |
+| `d12` | `postgresql-17-repmgr` | `postgresql-16-repmgr` | `postgresql-15-repmgr` | `postgresql-14-repmgr` | `postgresql-13-repmgr` |
+| `u22` | `postgresql-17-repmgr` | `postgresql-16-repmgr` | `postgresql-15-repmgr` | `postgresql-14-repmgr` | `postgresql-13-repmgr` |
+| `u24` | `postgresql-17-repmgr` | `postgresql-16-repmgr` | `postgresql-15-repmgr` | `postgresql-14-repmgr` | `postgresql-13-repmgr` |
 
 
 

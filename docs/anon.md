@@ -1,9 +1,9 @@
 # anon
 
 
-> [pg_anon](https://postgresql-anonymizer.readthedocs.io/en/stable/): Data anonymization tools
+> [pg_anon](https://gitlab.com/dalibo/postgresql_anonymizer/): PostgreSQL Anonymizer (anon) extension
 >
-> https://postgresql-anonymizer.readthedocs.io/en/stable/
+> https://gitlab.com/dalibo/postgresql_anonymizer/
 
 
 
@@ -18,19 +18,19 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [anon](https://postgresql-anonymizer.readthedocs.io/en/stable/) | 1.3.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
+| [anon](https://gitlab.com/dalibo/postgresql_anonymizer/) | 2.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
 
 
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
+|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
 
 
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [pg_anon](/anon) | `pgdg-flaw` |  |  |  |
+| [pg_anon](/anon) |  | `anon` |  |  |
 
 
 
@@ -53,7 +53,7 @@ shared_preload_libraries = 'anon'; # add this extension to postgresql.conf
 ```sql
 CREATE EXTENSION anon;
 ```
-> **Comment**: miss pg17@el
+
 -----------
 
 
@@ -62,8 +62,8 @@ CREATE EXTENSION anon;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.3.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql_anonymizer_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.3.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-anonymizer` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [RPM](/rpm) | 2.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_anon_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 2.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-anon` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 
@@ -84,22 +84,22 @@ Install `pg_anon` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) play
 Install `pg_anon` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install postgresql_anonymizer_17*;
-dnf install postgresql_anonymizer_16*;
-dnf install postgresql_anonymizer_15*;
-dnf install postgresql_anonymizer_14*;
-dnf install postgresql_anonymizer_13*;
+dnf install pg_anon_17;
+dnf install pg_anon_16;
+dnf install pg_anon_15;
+dnf install pg_anon_14;
+dnf install pg_anon_13;
 ```
 
 
 Install `pg_anon` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-anonymizer;
-apt install postgresql-16-anonymizer;
-apt install postgresql-15-anonymizer;
-apt install postgresql-14-anonymizer;
-apt install postgresql-13-anonymizer;
+apt install postgresql-17-pg-anon;
+apt install postgresql-16-pg-anon;
+apt install postgresql-15-pg-anon;
+apt install postgresql-14-pg-anon;
+apt install postgresql-13-pg-anon;
 ```
 
 
@@ -107,11 +107,11 @@ apt install postgresql-13-anonymizer;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `postgresql_anonymizer_17*` | `postgresql_anonymizer_16*` | `postgresql_anonymizer_15*` | `postgresql_anonymizer_14*` | `postgresql_anonymizer_13*` |
-| `el9` | `postgresql_anonymizer_17*` | `postgresql_anonymizer_16*` | `postgresql_anonymizer_15*` | `postgresql_anonymizer_14*` | `postgresql_anonymizer_13*` |
-| `d12` | `postgresql-17-anonymizer` | `postgresql-16-anonymizer` | `postgresql-15-anonymizer` | `postgresql-14-anonymizer` | `postgresql-13-anonymizer` |
-| `u22` | `postgresql-17-anonymizer` | `postgresql-16-anonymizer` | `postgresql-15-anonymizer` | `postgresql-14-anonymizer` | `postgresql-13-anonymizer` |
-| `u24` | `postgresql-17-anonymizer` | `postgresql-16-anonymizer` | `postgresql-15-anonymizer` | `postgresql-14-anonymizer` | `postgresql-13-anonymizer` |
+| `el8` | `pg_anon_17` | `pg_anon_16` | `pg_anon_15` | `pg_anon_14` | `pg_anon_13` |
+| `el9` | `pg_anon_17` | `pg_anon_16` | `pg_anon_15` | `pg_anon_14` | `pg_anon_13` |
+| `d12` | `postgresql-17-pg-anon` | `postgresql-16-pg-anon` | `postgresql-15-pg-anon` | `postgresql-14-pg-anon` | `postgresql-13-pg-anon` |
+| `u22` | `postgresql-17-pg-anon` | `postgresql-16-pg-anon` | `postgresql-15-pg-anon` | `postgresql-14-pg-anon` | `postgresql-13-pg-anon` |
+| `u24` | `postgresql-17-pg-anon` | `postgresql-16-pg-anon` | `postgresql-15-pg-anon` | `postgresql-14-pg-anon` | `postgresql-13-pg-anon` |
 
 
 

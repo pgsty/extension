@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION rdkit;
 ```
-
+> **Comment**: u24 has rdkit for pg17
 -----------
 
 

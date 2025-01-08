@@ -1,5 +1,24 @@
 # Changelog
 
+**2025-01-08**
+
+- pg_anon 2.0.0 
+- pg_parquet 0.2.0 
+- wrappers 0.4.4 
+- pg_later 0.3.0 
+- topn fix for deb.arm64 (WIP)
+- add age 17 on debian (WIP)
+- powa + pg17, 5.0.1
+- h3 + pg17
+- ogr_fdw + pg17
+- age + pg17 1.5 on debian
+- rdkit + pg17 on u24
+- pgtap + pg17 1.3.3
+- repmgr
+- topn + pg17
+# add synchdb for ubuntu (TBD)
+
+
 **2025-01-07**
 
 - pg_partman 5.2.4
@@ -8,8 +27,7 @@
 - ddlx 0.29
 - postgis 3.5.1
 - tdigest 1.4.3
-- pgrepack 1.5.2
-
+- pg_repack 1.5.2
 
 
 **2024-12-30**

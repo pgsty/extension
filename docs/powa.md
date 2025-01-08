@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [powa](https://github.com/powa-team/powa) | 4.2.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
+| [powa](https://github.com/powa-team/powa) | 5.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** |  |
 
 
 
@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -58,8 +58,8 @@ CREATE EXTENSION powa CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 4.2.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `powa_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 4.2.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-powa` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm) | 5.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `powa_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 5.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-powa` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 
@@ -80,6 +80,7 @@ Install `powa` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 Install `powa` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
+dnf install powa_17*;
 dnf install powa_16*;
 dnf install powa_15*;
 dnf install powa_14*;
@@ -90,6 +91,7 @@ dnf install powa_13*;
 Install `powa` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-powa;
 apt install postgresql-16-powa;
 apt install postgresql-15-powa;
 apt install postgresql-14-powa;
@@ -101,11 +103,11 @@ apt install postgresql-13-powa;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | `powa_16*` | `powa_15*` | `powa_14*` | `powa_13*` |
-| `el9` | <span class="tcred">✘</span> | `powa_16*` | `powa_15*` | `powa_14*` | `powa_13*` |
-| `d12` | <span class="tcred">✘</span> | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` |
-| `u22` | <span class="tcred">✘</span> | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` |
-| `u24` | <span class="tcred">✘</span> | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` |
+| `el8` | `powa_17*` | `powa_16*` | `powa_15*` | `powa_14*` | `powa_13*` |
+| `el9` | `powa_17*` | `powa_16*` | `powa_15*` | `powa_14*` | `powa_13*` |
+| `d12` | `postgresql-17-powa` | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` |
+| `u22` | `postgresql-17-powa` | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` |
+| `u24` | `postgresql-17-powa` | `postgresql-16-powa` | `postgresql-15-powa` | `postgresql-14-powa` | `postgresql-13-powa` |
 
 
 

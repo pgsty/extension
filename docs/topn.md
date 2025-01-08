@@ -38,8 +38,8 @@
 |:------------:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION topn;
 ```
-> **Comment**: missing arm
+
 -----------
 
 
@@ -59,7 +59,7 @@ CREATE EXTENSION topn;
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
 | [RPM](/rpm) | 2.7.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `topn_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 2.6.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-topn` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 2.7.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-topn` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 
@@ -91,6 +91,7 @@ dnf install topn_13*;
 Install `topn` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-topn;
 apt install postgresql-16-topn;
 apt install postgresql-15-topn;
 apt install postgresql-14-topn;
@@ -104,8 +105,8 @@ apt install postgresql-13-topn;
 |:------------:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `topn_17*` | `topn_16*` | `topn_15*` | `topn_14*` | `topn_13*` |
 | `el9` | `topn_17*` | `topn_16*` | `topn_15*` | `topn_14*` | `topn_13*` |
-| `d12` | <span class="tcred">✘</span> | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` |
-| `u22` | <span class="tcred">✘</span> | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` |
+| `d12` | `postgresql-17-topn` | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` |
+| `u22` | `postgresql-17-topn` | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` |
 | `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
