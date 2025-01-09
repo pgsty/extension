@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [hstore](/hstore) |  |  |  | [`hstore_pllua`](/hstore_pllua), [`hstore_plluau`](/hstore_plluau), [`hstore_plpython3u`](/hstore_plpython3u) |
+| [hstore](/hstore) |  |  |  | [`hstore_pllua`](/hstore_pllua), [`hstore_plluau`](/hstore_plluau), [`hstore_plpython3u`](/hstore_plpython3u), [`pg_readme`](/pg_readme) |
 
 
 

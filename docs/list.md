@@ -1,14 +1,14 @@
 # Extension List
 
-There are **340** available extensions, including **334** [**RPM**](/rpm) extensions available in EL, and **327** [**DEB**](/deb) available in Debian/Ubuntu.
+There are **342** available extensions, including **336** [**RPM**](/rpm) extensions available in EL, and **327** [**DEB**](/deb) available in Debian/Ubuntu.
 
-There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **271** additional third-party extensions provide by PGDG & Pigsty. 
+There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **273** additional third-party extensions provide by PGDG & Pigsty. 
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 334 | 114 | 147 | 69 | 4 | 6 | 310 | 330 | 333 | 321 | 303 |
-| DEB Extension | 327 | 104 | 150 | 69 | 4 | 13 | 308 | 323 | 326 | 319 | 300 |
+| RPM Extension | 336 | 115 | 148 | 69 | 4 | 6 | 312 | 332 | 335 | 323 | 305 |
+| DEB Extension | 327 | 103 | 151 | 69 | 4 | 15 | 308 | 323 | 326 | 319 | 300 |
 
 
 
@@ -29,6 +29,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [TIME](/time) | 1050 | [emaj](/emaj) | 4.5.0 | [emaj](/emaj) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/dalibo/emaj) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables fine-grained write logging and time travel on subsets of the database. |
 | [TIME](/time) | 1060 | [table_version](/table_version) | 1.11.1 | [table_version](/table_version) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/linz/postgresql-tableversion) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgreSQL table versioning extension |
 | [TIME](/time) | 1070 | [pg_cron](/pg_cron) | 1.6 | [pg_cron](/pg_cron) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/citusdata/pg_cron) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Job scheduler for PostgreSQL |
+| [TIME](/time) | 1075 | [pg_task](/pg_task) | 1.0.0 | [pg_task](/pg_task) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/RekGRpth/pg_task) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | execute any sql command at any specific time at background |
 | [TIME](/time) | 1080 | [pg_later](/pg_later) | 0.3.0 | [pg_later](/pg_later) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pg_later) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_later: Run queries now and get results later |
 | [TIME](/time) | 1090 | [pg_background](/pg_background) | 1.3 | [pg_background](/pg_background) | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/vibhorkum/pg_background) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Run SQL queries in the background |
 | [GIS](/gis) | 1100 | [postgis](/postgis) | 3.5.1 | [postgis](/postgis) | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://git.osgeo.org/gitea/postgis/postgis) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostGIS geometry and geography spatial types and functions |
@@ -170,7 +171,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [TYPE](/type) | 2970 | [hstore](/hstore) | 1.8 | [hstore](/hstore) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/hstore.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for storing sets of (key, value) pairs |
 | [TYPE](/type) | 2980 | [citext](/citext) | 1.6 | [citext](/citext) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/citext.html) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | data type for case-insensitive character strings |
 | [TYPE](/type) | 2990 | [xml2](/xml2) | 1.1 | [xml2](/xml2) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/xml2.html) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | XPath querying and XSLT |
-| [FUNC](/func) | 3000 | [topn](/topn) | 2.7.0 | [topn](/topn) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/citusdata/postgresql-topn) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | type for top-n JSONB |
+| [FUNC](/func) | 3000 | [topn](/topn) | 2.7.0 | [topn](/topn) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/citusdata/postgresql-topn) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | type for top-n JSONB |
 | [FUNC](/func) | 3010 | [gzip](/gzip) | 1.0 | [pg_gzip](/gzip) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pramsey/pgsql-gzip) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | gzip and gunzip functions. |
 | [FUNC](/func) | 3020 | [zstd](/zstd) | 1.1.0 | [pg_zstd](/zstd) | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/grahamedgecombe/pgzstd) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Zstandard compression algorithm implementation in PostgreSQL |
 | [FUNC](/func) | 3030 | [http](/http) | 1.6 | [pg_http](/http) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pramsey/pgsql-http) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | HTTP client for PostgreSQL, allows web page retrieval inside the database. |
@@ -211,6 +212,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [FUNC](/func) | 3530 | [envvar](/envvar) | 1.0.0 | [envvar](/envvar) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/theory/pg-envvar) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Fetch the value of an environment variable |
 | [FUNC](/func) | 3540 | [pg_protobuf](/pg_protobuf) | 1.0 | [pg_protobuf](/pg_protobuf) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/afiskon/pg_protobuf) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Protobuf support for PostgreSQL |
 | [FUNC](/func) | 3550 | [url_encode](/url_encode) | 1.2 | [url_encode](/url_encode) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/okbob/url_encode) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | url_encode, url_decode functions |
+| [FUNC](/func) | 3560 | [pg_readme](/pg_readme) | 0.7.0 | [pg_readme](/pg_readme) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** |  | [LINK](https://github.com/bigsmoke/pg_readme) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Generate a README.md document for a database extension or schema |
 | [FUNC](/func) | 3840 | [refint](/refint) | 1.0 | [refint](/refint) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/contrib-spi.html#CONTRIB-SPI-REFINT) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for implementing referential integrity (obsolete) |
 | [FUNC](/func) | 3841 | [autoinc](/autoinc) | 1.0 | [autoinc](/autoinc) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/contrib-spi.html#CONTRIB-SPI-AUTOINC) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for autoincrementing fields |
 | [FUNC](/func) | 3842 | [insert_username](/insert_username) | 1.0 | [insert_username](/insert_username) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | [LINK](https://www.postgresql.org/docs/current/contrib-spi.html#CONTRIB-SPI-INSERT-USERNAME) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | functions for tracking who changed a table |
@@ -376,7 +378,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 8 Compatible OS (el8)
 
 ```yaml
-- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries
+- timescaledb periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background #pg_timeseries
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -385,7 +387,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh #plprql #pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #debversion #pg_rrule
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_readonly safeupdate pg_permissions pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pg_checksums #pgautofailover #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_store_plans
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -397,7 +399,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 9 Compatible OS (el9)
 
 ```yaml
-- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries
+- timescaledb periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background #pg_timeseries
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -406,7 +408,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh pljava #plprql #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #debversion #pg_rrule
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_readonly safeupdate pg_permissions pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pg_checksums #pgautofailover #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_store_plans
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -418,7 +420,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Debian 12 bookworm Compatible OS (d12)
 
 ```yaml
-- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries
+- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -427,7 +429,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh pljava #plprql #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_store_plans
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -439,7 +441,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 jammy Compatible OS (u22)
 
 ```yaml
-- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries
+- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -448,7 +450,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh pljava #plprql #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_store_plans
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -460,7 +462,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 noble Compatible OS (u24)
 
 ```yaml
-- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries
+- timescaledb periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_timeseries #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -469,7 +471,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua pldebugger plpgsql_check plprofiler plsh pljava #plprql #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass
 - pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #topn
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #topn #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa #pg_store_plans
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -486,7 +488,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 8 Compatible OS (el8)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -495,7 +497,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #debversion #pg_rrule
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pg_tde pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset
@@ -507,7 +509,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 9 Compatible OS (el9)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -516,7 +518,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #debversion #pg_rrule
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pg_tde pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset
@@ -528,7 +530,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Debian 12 bookworm Compatible OS (d12)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -537,7 +539,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pg_tde pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset
@@ -549,7 +551,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 jammy Compatible OS (u22)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -558,7 +560,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pg_tde pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset
@@ -570,7 +572,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 noble Compatible OS (u24)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -579,7 +581,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass
 - pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #topn
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #topn #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pg_tde pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset
@@ -596,7 +598,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 8 Compatible OS (el8)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -605,7 +607,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #debversion #pg_rrule
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit17 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -617,7 +619,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 9 Compatible OS (el9)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -626,7 +628,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #debversion #pg_rrule
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit17 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -638,7 +640,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Debian 12 bookworm Compatible OS (d12)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -647,7 +649,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -659,7 +661,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 jammy Compatible OS (u22)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -668,7 +670,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -680,7 +682,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 noble Compatible OS (u24)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -689,7 +691,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass
 - pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #topn
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #topn #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -706,7 +708,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 8 Compatible OS (el8)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -715,7 +717,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pgmp #debversion #pg_rrule
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #extra_window_functions
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode pg_readme #extra_window_functions
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pg_prioritize #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit16 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -727,7 +729,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 9 Compatible OS (el9)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -736,7 +738,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pgmp #debversion #pg_rrule
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #extra_window_functions
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode pg_readme #extra_window_functions
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pg_prioritize #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit16 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -748,7 +750,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Debian 12 bookworm Compatible OS (d12)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -757,7 +759,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -769,7 +771,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 jammy Compatible OS (u22)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -778,7 +780,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass
 - topn pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -790,7 +792,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 noble Compatible OS (u24)
 
 ```yaml
-- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background
+- timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch hunspell
@@ -799,7 +801,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass
 - pg_gzip pg_zstd pg_http pg_net pg_smtp_client pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #topn
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #topn #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_session_jwt pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_tde
@@ -816,7 +818,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 8 Compatible OS (el8)
 
 ```yaml
-- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
+- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background #timescaledb
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
@@ -825,7 +827,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh #pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pgmp #debversion #pg_rrule
 - topn pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client #extra_window_functions
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode pg_readme #pg_smtp_client #extra_window_functions
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pg_prioritize #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_anon pgsmcrypto pgaudit15 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_session_jwt #pg_tde
@@ -837,7 +839,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### RHEL 9 Compatible OS (el9)
 
 ```yaml
-- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
+- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background #timescaledb
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash #mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
@@ -846,7 +848,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pgmp #debversion #pg_rrule
 - topn pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client #extra_window_functions
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode pg_readme #pg_smtp_client #extra_window_functions
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_checksums pg_readonly safeupdate pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #pg_prioritize #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_anon pgsmcrypto pgaudit15 pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_session_jwt #pg_tde
@@ -858,7 +860,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Debian 12 bookworm Compatible OS (d12)
 
 ```yaml
-- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
+- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
@@ -867,7 +869,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass #pgfaceting
 - topn pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #safeupdate #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_session_jwt #pg_tde
@@ -879,7 +881,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 jammy Compatible OS (u22)
 
 ```yaml
-- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb
+- pg_timeseries periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
@@ -888,7 +890,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass #pgfaceting
 - topn pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #pg_smtp_client #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #safeupdate #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_session_jwt #pg_tde
@@ -900,7 +902,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ### Ubuntu 24.04 noble Compatible OS (u24)
 
 ```yaml
-- periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb #pg_timeseries
+- periods temporal_tables emaj table_version pg_cron pg_later pg_background #timescaledb #pg_timeseries #pg_task
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash mobilitydb
 - pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search
@@ -909,7 +911,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 - pg_tle plv8 pllua plprql pldebugger plpgsql_check plprofiler plsh pljava #plr #pgtap #faker #dbt2
 - pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl debversion pg_rrule timestamp9 chkpass #pgfaceting
 - pg_gzip pg_zstd pg_http pg_net pg_html5_email_address pgsql_tweaks pg_extra_time count_distinct extra_window_functions first_last_agg tdigest aggs_for_vecs aggs_for_arrays pg_arraymath quantile lower_quantile
-- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #topn #pg_smtp_client
+- pg_idkit pg_uuidv7 permuteseq pg_hashids sequential_uuids pg_math pg_random pg_base36 pg_base62 pg_base58 floatvec pg_financial pgjwt pg_hashlib shacrypt cryptint pg_ecdsa pgpcre icu_ext pgqr envvar pg_protobuf url_encode #topn #pg_smtp_client #pg_readme
 - pg_repack pg_squeeze pg_dirtyread pgfincore pg_ddlx pg_prioritize pg_checksums pg_readonly pg_permissions pgautofailover pg_catcheck preprepare pgcozy pg_orphaned pg_crash pg_cheat_funcs pg_savior table_log pg_fio #safeupdate #pgpool #pgagent
 - pg_profile pg_show_plans pg_stat_kcache pg_stat_monitor pg_qualstats pg_store_plans pg_track_settings pg_wait_sampling system_stats pg_meta pgnodemx pg_sqlog bgw_replstatus pgmeminfo toastinfo pg_explain_ui pg_relusage pagevis powa
 - passwordcheck supautils pgsodium pg_vault pg_anon pgsmcrypto pgaudit pgauditlogtofile pg_auth_mon credcheck pgcryptokey pg_jobmon logerrors login_hook set_user pg_snakeoil pgextwlist pg_auditor sslutils pg_noset #pg_session_jwt #pg_tde

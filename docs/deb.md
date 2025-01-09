@@ -1,16 +1,16 @@
 # DEB Extension Packages
 
-There are **327** extensions available on Debian/Ubuntu compatible systems, **13** of them are Debian exclusive, and missing **13** EL exclusive extensions.
+There are **327** extensions available on Debian/Ubuntu compatible systems, **15** of them are Debian exclusive, and missing **15** EL exclusive extensions.
 
-There are **69** built-in [**contrib**](contrib) extensions, in addition to **104** deb extensions provided by PGDG YUM repository, and **150** extensions provided by Pigsty.
+There are **69** built-in [**contrib**](contrib) extensions, in addition to **103** deb extensions provided by PGDG YUM repository, and **151** extensions provided by Pigsty.
 
 There are **323** extensions available in the current major version PostgreSQL 16, and **308** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| DEB Extension | 327 | 104 | 150 | 69 | 4 | 13 | 308 | 323 | 326 | 319 | 300 |
-| DEB Package | 242 | 90 | 147 | 1 | 4 | 1 | 226 | 238 | 241 | 237 | 221 |
+| DEB Extension | 327 | 103 | 151 | 69 | 4 | 15 | 308 | 323 | 326 | 319 | 300 |
+| DEB Package | 242 | 89 | 148 | 1 | 4 | 1 | 226 | 238 | 241 | 237 | 221 |
 
 
 
@@ -129,7 +129,7 @@ There are **323** extensions available in the current major version PostgreSQL 1
 | [TYPE](/type) | [pg_rrule](/pg_rrule) | 0.2.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-rrule` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | RRULE field type for PostgreSQL |
 | [TYPE](/type) | [timestamp9](/timestamp9) | 1.4.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-timestamp9` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | timestamp nanosecond resolution |
 | [TYPE](/type) | [chkpass](/chkpass) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-chkpass` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | data type for auto-encrypted passwords |
-| [FUNC](/func) | [topn](/topn) | 2.7.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-topn` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | type for top-n JSONB |
+| [FUNC](/func) | [topn](/topn) | 2.7.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-topn` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | type for top-n JSONB |
 | [FUNC](/func) | [pg_gzip](/gzip) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-gzip` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | gzip and gunzip functions. |
 | [FUNC](/func) | [pg_zstd](/zstd) | 1.1.0 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-zstd` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Zstandard compression algorithm implementation in PostgreSQL |
 | [FUNC](/func) | [pg_http](/http) | 1.6 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-http` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | HTTP client for PostgreSQL, allows web page retrieval inside the database. |

@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_bulkload;
 ```
-> **Comment**: pg17 not ready yet
+
 -----------
 
 

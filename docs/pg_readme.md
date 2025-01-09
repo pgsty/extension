@@ -1,9 +1,9 @@
-# topn
+# pg_readme
 
 
-> [topn](https://github.com/citusdata/postgresql-topn): type for top-n JSONB
+> [pg_readme](https://github.com/bigsmoke/pg_readme): Generate a README.md document for a database extension or schema
 >
-> https://github.com/citusdata/postgresql-topn
+> https://github.com/bigsmoke/pg_readme
 
 
 
@@ -18,19 +18,19 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [topn](https://github.com/citusdata/postgresql-topn) | 2.7.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [pg_readme](https://github.com/bigsmoke/pg_readme) | 0.7.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** |  | `C` |
 
 
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+|  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 
 
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [topn](/topn) |  |  |  |  |
+| [pg_readme](/pg_readme) |  |  | [`hstore`](hstore) |  |
 
 
 
@@ -38,8 +38,8 @@
 |:------------:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 
@@ -47,7 +47,7 @@
 
 
 ```sql
-CREATE EXTENSION topn;
+CREATE EXTENSION pg_readme CASCADE;
 ```
 
 -----------
@@ -58,44 +58,32 @@ CREATE EXTENSION topn;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.7.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `topn_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 2.7.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-topn` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm) | 0.7.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_readme_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 
-Install `topn` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+Install `pg_readme` via the [`pig`](https://github.com/pgsty/pig) cli tool:
 
 ```bash
-pig ext add topn
+pig ext add pg_readme
 ```
 
 
-Install `topn` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
+Install `pg_readme` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["topn"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_readme"]}'
 ```
 
 
-Install `topn` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
+Install `pg_readme` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install topn_17*;
-dnf install topn_16*;
-dnf install topn_15*;
-dnf install topn_14*;
-dnf install topn_13*;
-```
-
-
-Install `topn` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
-
-```bash
-apt install postgresql-17-topn;
-apt install postgresql-16-topn;
-apt install postgresql-15-topn;
-apt install postgresql-14-topn;
-apt install postgresql-13-topn;
+dnf install pg_readme_17;
+dnf install pg_readme_16;
+dnf install pg_readme_15;
+dnf install pg_readme_14;
+dnf install pg_readme_13;
 ```
 
 
@@ -103,10 +91,10 @@ apt install postgresql-13-topn;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `topn_17*` | `topn_16*` | `topn_15*` | `topn_14*` | `topn_13*` |
-| `el9` | `topn_17*` | `topn_16*` | `topn_15*` | `topn_14*` | `topn_13*` |
-| `d12` | `postgresql-17-topn` | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` |
-| `u22` | `postgresql-17-topn` | `postgresql-16-topn` | `postgresql-15-topn` | `postgresql-14-topn` | `postgresql-13-topn` |
+| `el8` | `pg_readme_17` | `pg_readme_16` | `pg_readme_15` | `pg_readme_14` | `pg_readme_13` |
+| `el9` | `pg_readme_17` | `pg_readme_16` | `pg_readme_15` | `pg_readme_14` | `pg_readme_13` |
+| `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 
 

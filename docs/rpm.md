@@ -1,16 +1,16 @@
 # RPM Extension Packages
 
-There are **334** extensions available on EL compatible systems, **6** of them are EL exclusive, and missing **6** Debian exclusive extensions.
+There are **336** extensions available on EL compatible systems, **6** of them are EL exclusive, and missing **6** Debian exclusive extensions.
 
-There are **69** built-in [**contrib**](contrib) extensions, in addition to **114** rpm extensions provided by PGDG YUM repository, and **147** extensions provided by Pigsty.
+There are **69** built-in [**contrib**](contrib) extensions, in addition to **115** rpm extensions provided by PGDG YUM repository, and **148** extensions provided by Pigsty.
 
-There are **330** extensions available in the current major version PostgreSQL 16, and **310** ready for the latest PostgreSQL 17.
+There are **332** extensions available in the current major version PostgreSQL 16, and **312** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 334 | 114 | 147 | 69 | 4 | 6 | 310 | 330 | 333 | 321 | 303 |
-| RPM Package | 251 | 102 | 145 | 1 | 4 | 1 | 230 | 247 | 250 | 241 | 226 |
+| RPM Extension | 336 | 115 | 148 | 69 | 4 | 6 | 312 | 332 | 335 | 323 | 305 |
+| RPM Package | 253 | 103 | 146 | 1 | 4 | 1 | 232 | 249 | 252 | 243 | 228 |
 
 
 
@@ -31,6 +31,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 | [TIME](/time) | [emaj](/emaj) | 4.5.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `e-maj_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Enables fine-grained write logging and time travel on subsets of the database. |
 | [TIME](/time) | [table_version](/table_version) | 1.11.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `table_version_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | PostgreSQL table versioning extension |
 | [TIME](/time) | [pg_cron](/pg_cron) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_cron_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Job scheduler for PostgreSQL |
+| [TIME](/time) | [pg_task](/pg_task) | 1.0.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pg_task_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | execute any sql command at any specific time at background |
 | [TIME](/time) | [pg_later](/pg_later) | 0.3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_later_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | pg_later: Run queries now and get results later |
 | [TIME](/time) | [pg_background](/pg_background) | 1.3 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pg_background_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Run SQL queries in the background |
 | [GIS](/gis) | [postgis](/postgis) | 3.5.1 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgis35_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PostGIS geometry and geography spatial types and functions |
@@ -169,6 +170,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 | [FUNC](/func) | [envvar](/envvar) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_envvar_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Fetch the value of an environment variable |
 | [FUNC](/func) | [pg_protobuf](/pg_protobuf) | 1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_protobuf_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Protobuf support for PostgreSQL |
 | [FUNC](/func) | [url_encode](/url_encode) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `url_encode_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | url_encode, url_decode functions |
+| [FUNC](/func) | [pg_readme](/pg_readme) | 0.7.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_readme_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Generate a README.md document for a database extension or schema |
 | [ADMIN](/admin) | [pg_repack](/pg_repack) | 1.5.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pg_repack_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Reorganize tables in PostgreSQL databases with minimal locks |
 | [ADMIN](/admin) | [pg_squeeze](/pg_squeeze) | 1.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tccyan">PGDG</span>** | `pg_squeeze_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | A tool to remove unused space from a relation. |
 | [ADMIN](/admin) | [pg_dirtyread](/pg_dirtyread) | 2 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_dirtyread_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Read dead but unvacuumed rows from table |
@@ -286,7 +288,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql17*                                                                                                                                                   # PostgreSQL 17
-- pg_timescaledb_17* periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #pg_timeseries_17
+- pg_timescaledb_17* periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_task_17* pg_later_17 pg_background_17* #pg_timeseries_17
 - postgis35_17* pgrouting_17* pointcloud_17* h3-pg_17* q3c_17* ogr_fdw_17* geoip_17* pg_polyline_17 pg_geohash_17*
 - pgvector_17* vchord_17 pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pgml_17
 - pg_search_17 pgroonga_17* pg_bigm_17* zhparser_17* pg_bestmatch_17 hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
@@ -295,7 +297,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 - pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* #plprql_17 #pljava_17* #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
 - prefix_17* semver_17* postgresql-unit_17* pgpdf_17* pglite_fusion_17 md5hash_17* asn1oid_17* pg_roaringbitmap_17* pgfaceting_17 pgsphere_17* pg_country_17* pg_currency_17* pgmp_17* numeral_17* pg_rational_17* pguint_17* pg_uint128_17* ip4r_17* pg_uri_17* pg_emailaddr_17* acl_17* timestamp9_17* chkpass_17*
 - topn_17* pgsql_gzip_17* pg_zstd_17* pgsql_http_17* pg_net_17* pg_smtp_client_17 pg_html5_email_address_17 pgsql_tweaks_17* pg_extra_time_17* count_distinct_17* extra_window_functions_17* first_last_agg_17 tdigest_17* aggs_for_vecs_17* aggs_for_arrays_17* pg_arraymath_17* quantile_17* lower_quantile_17*
-- pg_idkit_17 pg_uuidv7_17* permuteseq_17* pg_hashids_17* sequential_uuids_17 pg_math_17* pg_random_17* pg_base36_17* pg_base62_17* pg_base58_17 floatvec_17* pg_financial_17* pgjwt_17* pg_hashlib_17 postgres_shacrypt_17* cryptint_17* pg_ecdsa_17* pgpcre_17 icu_ext_17* pgqr_17* pg_envvar_17* pg_protobuf_17 url_encode_17*
+- pg_idkit_17 pg_uuidv7_17* permuteseq_17* pg_hashids_17* sequential_uuids_17 pg_math_17* pg_random_17* pg_base36_17* pg_base62_17* pg_base58_17 floatvec_17* pg_financial_17* pgjwt_17* pg_hashlib_17 postgres_shacrypt_17* cryptint_17* pg_ecdsa_17* pgpcre_17 icu_ext_17* pgqr_17* pg_envvar_17* pg_protobuf_17 url_encode_17* pg_readme_17
 - pg_repack_17* pg_squeeze_17* pg_dirtyread_17* pgfincore_17* ddlx_17* pg_prioritize_17* pg_readonly_17* safeupdate_17* pg_permissions_17* pg_catcheck_17* preprepare_17* pgcozy_17 pg_orphaned_17* pg_crash_17* pg_cheat_funcs_17* pg_savior_17* table_log_17 pg_fio_17 #pg_checksums_17* #pg_auto_failover_17* #pgpool-II-pg17-extensions #pgagent_17*
 - pg_profile_17* pg_show_plans_17* pg_stat_kcache_17* pg_stat_monitor_17* pg_qualstats_17* pg_track_settings_17* pg_wait_sampling_17* system_stats_17* pg_meta_17 pgnodemx_17 pg_sqlog_17* bgw_replstatus_17* pgmeminfo_17* toastinfo_17* pg_explain_ui_17 pg_relusage_17 pagevis_17 powa_17* #pg_store_plans_17*
 - passwordcheck_cracklib_17* supautils_17* pgsodium_17* vault_17* pg_session_jwt_17 pg_anon_17 pgsmcrypto_17 pgaudit_17* pgauditlogtofile_17* pg_auth_mon_17* credcheck_17* pgcryptokey_17 pg_jobmon_17* logerrors_17* login_hook_17* set_user_17* pg_snakeoil_17* pgextwlist_17* pg_auditor_17 sslutils_17* noset_17* #pg_tde_17*
@@ -308,7 +310,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql17*                                                                                                                                                   # PostgreSQL 17
-- pg_timescaledb_17* periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_later_17 pg_background_17* #pg_timeseries_17
+- pg_timescaledb_17* periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_task_17* pg_later_17 pg_background_17* #pg_timeseries_17
 - postgis35_17* pgrouting_17* pointcloud_17* h3-pg_17* q3c_17* ogr_fdw_17* geoip_17* pg_polyline_17 pg_geohash_17*
 - pgvector_17* vchord_17 pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pgml_17
 - pg_search_17 pgroonga_17* pg_bigm_17* zhparser_17* pg_bestmatch_17 hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
@@ -317,7 +319,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 - pg_tle_17* plv8_17* pllua_17* pldebugger_17* plpgsql_check_17* plprofiler_17* plsh_17* pljava_17* #plprql_17 #plr_17* #pgtap_17* #postgresql_faker_17* #dbt2-pg17-extensions*
 - prefix_17* semver_17* postgresql-unit_17* pgpdf_17* pglite_fusion_17 md5hash_17* asn1oid_17* pg_roaringbitmap_17* pgfaceting_17 pgsphere_17* pg_country_17* pg_currency_17* pgmp_17* numeral_17* pg_rational_17* pguint_17* pg_uint128_17* ip4r_17* pg_uri_17* pg_emailaddr_17* acl_17* timestamp9_17* chkpass_17*
 - topn_17* pgsql_gzip_17* pg_zstd_17* pgsql_http_17* pg_net_17* pg_smtp_client_17 pg_html5_email_address_17 pgsql_tweaks_17* pg_extra_time_17* count_distinct_17* extra_window_functions_17* first_last_agg_17 tdigest_17* aggs_for_vecs_17* aggs_for_arrays_17* pg_arraymath_17* quantile_17* lower_quantile_17*
-- pg_idkit_17 pg_uuidv7_17* permuteseq_17* pg_hashids_17* sequential_uuids_17 pg_math_17* pg_random_17* pg_base36_17* pg_base62_17* pg_base58_17 floatvec_17* pg_financial_17* pgjwt_17* pg_hashlib_17 postgres_shacrypt_17* cryptint_17* pg_ecdsa_17* pgpcre_17 icu_ext_17* pgqr_17* pg_envvar_17* pg_protobuf_17 url_encode_17*
+- pg_idkit_17 pg_uuidv7_17* permuteseq_17* pg_hashids_17* sequential_uuids_17 pg_math_17* pg_random_17* pg_base36_17* pg_base62_17* pg_base58_17 floatvec_17* pg_financial_17* pgjwt_17* pg_hashlib_17 postgres_shacrypt_17* cryptint_17* pg_ecdsa_17* pgpcre_17 icu_ext_17* pgqr_17* pg_envvar_17* pg_protobuf_17 url_encode_17* pg_readme_17
 - pg_repack_17* pg_squeeze_17* pg_dirtyread_17* pgfincore_17* ddlx_17* pg_prioritize_17* pg_readonly_17* safeupdate_17* pg_permissions_17* pg_catcheck_17* preprepare_17* pgcozy_17 pg_orphaned_17* pg_crash_17* pg_cheat_funcs_17* pg_savior_17* table_log_17 pg_fio_17 #pg_checksums_17* #pg_auto_failover_17* #pgpool-II-pg17-extensions #pgagent_17*
 - pg_profile_17* pg_show_plans_17* pg_stat_kcache_17* pg_stat_monitor_17* pg_qualstats_17* pg_track_settings_17* pg_wait_sampling_17* system_stats_17* pg_meta_17 pgnodemx_17 pg_sqlog_17* bgw_replstatus_17* pgmeminfo_17* toastinfo_17* pg_explain_ui_17 pg_relusage_17 pagevis_17 powa_17* #pg_store_plans_17*
 - passwordcheck_cracklib_17* supautils_17* pgsodium_17* vault_17* pg_session_jwt_17 pg_anon_17 pgsmcrypto_17 pgaudit_17* pgauditlogtofile_17* pg_auth_mon_17* credcheck_17* pgcryptokey_17 pg_jobmon_17* logerrors_17* login_hook_17* set_user_17* pg_snakeoil_17* pgextwlist_17* pg_auditor_17 sslutils_17* noset_17* #pg_tde_17*
@@ -335,7 +337,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql16*                                                                                                                                                   # PostgreSQL 16
-- pg_timescaledb_16* pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16*
+- pg_timescaledb_16* pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_task_16* pg_later_16 pg_background_16*
 - postgis35_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* geoip_16* pg_polyline_16 pg_geohash_16*
 - pgvector_16* vchord_16 pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pg4ml_16 pgml_16
 - pg_search_16 pgroonga_16* pg_bigm_16* zhparser_16* pg_bestmatch_16 hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
@@ -344,7 +346,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 - pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* plprofiler_16* plsh_16* #pljava_16* #plr_16* #pgtap_16* #postgresql_faker_16* #dbt2-pg16-extensions*
 - prefix_16* semver_16* postgresql-unit_16* pgpdf_16* pglite_fusion_16 md5hash_16* asn1oid_16* pg_roaringbitmap_16* pgfaceting_16 pgsphere_16* pg_country_16* pg_currency_16* pgmp_16* numeral_16* pg_rational_16* pguint_16* pg_uint128_16* ip4r_16* pg_uri_16* pg_emailaddr_16* acl_16* timestamp9_16* chkpass_16*
 - topn_16* pgsql_gzip_16* pg_zstd_16* pgsql_http_16* pg_net_16* pg_smtp_client_16 pg_html5_email_address_16 pgsql_tweaks_16* pg_extra_time_16* count_distinct_16* extra_window_functions_16* first_last_agg_16 tdigest_16* aggs_for_vecs_16* aggs_for_arrays_16* pg_arraymath_16* quantile_16* lower_quantile_16*
-- pg_idkit_16 pg_uuidv7_16* permuteseq_16* pg_hashids_16* sequential_uuids_16 pg_math_16* pg_random_16* pg_base36_16* pg_base62_16* pg_base58_16 floatvec_16* pg_financial_16* pgjwt_16* pg_hashlib_16 postgres_shacrypt_16* cryptint_16* pg_ecdsa_16* pgpcre_16 icu_ext_16* pgqr_16* pg_envvar_16* pg_protobuf_16 url_encode_16*
+- pg_idkit_16 pg_uuidv7_16* permuteseq_16* pg_hashids_16* sequential_uuids_16 pg_math_16* pg_random_16* pg_base36_16* pg_base62_16* pg_base58_16 floatvec_16* pg_financial_16* pgjwt_16* pg_hashlib_16 postgres_shacrypt_16* cryptint_16* pg_ecdsa_16* pgpcre_16 icu_ext_16* pgqr_16* pg_envvar_16* pg_protobuf_16 url_encode_16* pg_readme_16
 - pg_repack_16* pg_squeeze_16* pg_dirtyread_16* pgfincore_16* ddlx_16* pg_prioritize_16* pg_checksums_16* pg_readonly_16* safeupdate_16* pg_permissions_16* pg_auto_failover_16* pg_catcheck_16* preprepare_16* pgcozy_16 pg_orphaned_16* pg_crash_16* pg_cheat_funcs_16* pg_savior_16* table_log_16 pg_fio_16 #pgpool-II-pg16-extensions #pgagent_16*
 - pg_profile_16* pg_show_plans_16* pg_stat_kcache_16* pg_stat_monitor_16* pg_qualstats_16* pg_store_plans_16* pg_track_settings_16* pg_wait_sampling_16* system_stats_16* pg_meta_16 pgnodemx_16 pg_sqlog_16* bgw_replstatus_16* pgmeminfo_16* toastinfo_16* pg_explain_ui_16 pg_relusage_16 pagevis_16 powa_16*
 - passwordcheck_cracklib_16* supautils_16* pgsodium_16* vault_16* pg_session_jwt_16 pg_anon_16 pg_tde_16* pgsmcrypto_16 pgaudit_16* pgauditlogtofile_16* pg_auth_mon_16* credcheck_16* pgcryptokey_16 pg_jobmon_16* logerrors_16* login_hook_16* set_user_16* pg_snakeoil_16* pgextwlist_16* pg_auditor_16 sslutils_16* noset_16*
@@ -357,7 +359,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql16*                                                                                                                                                   # PostgreSQL 16
-- pg_timescaledb_16* pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_later_16 pg_background_16*
+- pg_timescaledb_16* pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_task_16* pg_later_16 pg_background_16*
 - postgis35_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* geoip_16* pg_polyline_16 pg_geohash_16*
 - pgvector_16* vchord_16 pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pg4ml_16 pgml_16
 - pg_search_16 pgroonga_16* pg_bigm_16* zhparser_16* pg_bestmatch_16 hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
@@ -366,7 +368,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 - pg_tle_16* plv8_16* pllua_16* plprql_16 pldebugger_16* plpgsql_check_16* plprofiler_16* plsh_16* pljava_16* #plr_16* #pgtap_16* #postgresql_faker_16* #dbt2-pg16-extensions*
 - prefix_16* semver_16* postgresql-unit_16* pgpdf_16* pglite_fusion_16 md5hash_16* asn1oid_16* pg_roaringbitmap_16* pgfaceting_16 pgsphere_16* pg_country_16* pg_currency_16* pgmp_16* numeral_16* pg_rational_16* pguint_16* pg_uint128_16* ip4r_16* pg_uri_16* pg_emailaddr_16* acl_16* timestamp9_16* chkpass_16*
 - topn_16* pgsql_gzip_16* pg_zstd_16* pgsql_http_16* pg_net_16* pg_smtp_client_16 pg_html5_email_address_16 pgsql_tweaks_16* pg_extra_time_16* count_distinct_16* extra_window_functions_16* first_last_agg_16 tdigest_16* aggs_for_vecs_16* aggs_for_arrays_16* pg_arraymath_16* quantile_16* lower_quantile_16*
-- pg_idkit_16 pg_uuidv7_16* permuteseq_16* pg_hashids_16* sequential_uuids_16 pg_math_16* pg_random_16* pg_base36_16* pg_base62_16* pg_base58_16 floatvec_16* pg_financial_16* pgjwt_16* pg_hashlib_16 postgres_shacrypt_16* cryptint_16* pg_ecdsa_16* pgpcre_16 icu_ext_16* pgqr_16* pg_envvar_16* pg_protobuf_16 url_encode_16*
+- pg_idkit_16 pg_uuidv7_16* permuteseq_16* pg_hashids_16* sequential_uuids_16 pg_math_16* pg_random_16* pg_base36_16* pg_base62_16* pg_base58_16 floatvec_16* pg_financial_16* pgjwt_16* pg_hashlib_16 postgres_shacrypt_16* cryptint_16* pg_ecdsa_16* pgpcre_16 icu_ext_16* pgqr_16* pg_envvar_16* pg_protobuf_16 url_encode_16* pg_readme_16
 - pg_repack_16* pg_squeeze_16* pg_dirtyread_16* pgfincore_16* ddlx_16* pg_prioritize_16* pg_checksums_16* pg_readonly_16* safeupdate_16* pg_permissions_16* pg_auto_failover_16* pg_catcheck_16* preprepare_16* pgcozy_16 pg_orphaned_16* pg_crash_16* pg_cheat_funcs_16* pg_savior_16* table_log_16 pg_fio_16 #pgpool-II-pg16-extensions #pgagent_16*
 - pg_profile_16* pg_show_plans_16* pg_stat_kcache_16* pg_stat_monitor_16* pg_qualstats_16* pg_store_plans_16* pg_track_settings_16* pg_wait_sampling_16* system_stats_16* pg_meta_16 pgnodemx_16 pg_sqlog_16* bgw_replstatus_16* pgmeminfo_16* toastinfo_16* pg_explain_ui_16 pg_relusage_16 pagevis_16 powa_16*
 - passwordcheck_cracklib_16* supautils_16* pgsodium_16* vault_16* pg_session_jwt_16 pg_anon_16 pg_tde_16* pgsmcrypto_16 pgaudit_16* pgauditlogtofile_16* pg_auth_mon_16* credcheck_16* pgcryptokey_16 pg_jobmon_16* logerrors_16* login_hook_16* set_user_16* pg_snakeoil_16* pgextwlist_16* pg_auditor_16 sslutils_16* noset_16*
@@ -384,7 +386,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql15*                                                                                                                                                   # PostgreSQL 15
-- pg_timescaledb_15* pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15*
+- pg_timescaledb_15* pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_task_15* pg_later_15 pg_background_15*
 - postgis35_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15* pg_polyline_15 pg_geohash_15*
 - pgvector_15* vchord_15 pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pg4ml_15 pgml_15
 - pg_search_15 pgroonga_15* pg_bigm_15* zhparser_15* pg_bestmatch_15 hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
@@ -393,7 +395,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 - pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* #pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
 - prefix_15* semver_15* postgresql-unit_15* pgpdf_15* pglite_fusion_15 md5hash_15* asn1oid_15* pg_roaringbitmap_15* pgfaceting_15 pgsphere_15* pg_country_15* pg_currency_15* pgmp_15* numeral_15* pg_rational_15* pguint_15* pg_uint128_15* ip4r_15* pg_uri_15* pg_emailaddr_15* acl_15* timestamp9_15* chkpass_15*
 - topn_15* pgsql_gzip_15* pg_zstd_15* pgsql_http_15* pg_net_15* pg_smtp_client_15 pg_html5_email_address_15 pgsql_tweaks_15* pg_extra_time_15* count_distinct_15* extra_window_functions_15* first_last_agg_15 tdigest_15* aggs_for_vecs_15* aggs_for_arrays_15* pg_arraymath_15* quantile_15* lower_quantile_15*
-- pg_idkit_15 pg_uuidv7_15* permuteseq_15* pg_hashids_15* sequential_uuids_15 pg_math_15* pg_random_15* pg_base36_15* pg_base62_15* pg_base58_15 floatvec_15* pg_financial_15* pgjwt_15* pg_hashlib_15 postgres_shacrypt_15* cryptint_15* pg_ecdsa_15* pgpcre_15 icu_ext_15* pgqr_15* pg_envvar_15* pg_protobuf_15 url_encode_15*
+- pg_idkit_15 pg_uuidv7_15* permuteseq_15* pg_hashids_15* sequential_uuids_15 pg_math_15* pg_random_15* pg_base36_15* pg_base62_15* pg_base58_15 floatvec_15* pg_financial_15* pgjwt_15* pg_hashlib_15 postgres_shacrypt_15* cryptint_15* pg_ecdsa_15* pgpcre_15 icu_ext_15* pgqr_15* pg_envvar_15* pg_protobuf_15 url_encode_15* pg_readme_15
 - pg_repack_15* pg_squeeze_15* pg_dirtyread_15* pgfincore_15* ddlx_15* pg_prioritize_15* pg_checksums_15* pg_readonly_15* safeupdate_15* pg_permissions_15* pg_auto_failover_15* pg_catcheck_15* preprepare_15* pgcozy_15 pg_orphaned_15* pg_crash_15* pg_cheat_funcs_15* pg_savior_15* table_log_15 pg_fio_15 #pgpool-II-pg15-extensions #pgagent_15*
 - pg_profile_15* pg_show_plans_15* pg_stat_kcache_15* pg_stat_monitor_15* pg_qualstats_15* pg_store_plans_15* pg_track_settings_15* pg_wait_sampling_15* system_stats_15* pg_meta_15 pgnodemx_15 pg_sqlog_15* bgw_replstatus_15* pgmeminfo_15* toastinfo_15* pg_explain_ui_15 pg_relusage_15 pagevis_15 powa_15*
 - passwordcheck_cracklib_15* supautils_15* pgsodium_15* vault_15* pg_session_jwt_15 pg_anon_15 pgsmcrypto_15 pgaudit17_15* pgauditlogtofile_15* pg_auth_mon_15* credcheck_15* pgcryptokey_15 pg_jobmon_15* logerrors_15* login_hook_15* set_user_15* pg_snakeoil_15* pgextwlist_15* pg_auditor_15 sslutils_15* noset_15* #pg_tde_15*
@@ -406,7 +408,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql15*                                                                                                                                                   # PostgreSQL 15
-- pg_timescaledb_15* pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_later_15 pg_background_15*
+- pg_timescaledb_15* pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_task_15* pg_later_15 pg_background_15*
 - postgis35_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15* pg_polyline_15 pg_geohash_15*
 - pgvector_15* vchord_15 pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pg4ml_15 pgml_15
 - pg_search_15 pgroonga_15* pg_bigm_15* zhparser_15* pg_bestmatch_15 hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
@@ -415,7 +417,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 - pg_tle_15* plv8_15* pllua_15* plprql_15 pldebugger_15* plpgsql_check_15* plprofiler_15* plsh_15* pljava_15* #plr_15* #pgtap_15* #postgresql_faker_15* #dbt2-pg15-extensions*
 - prefix_15* semver_15* postgresql-unit_15* pgpdf_15* pglite_fusion_15 md5hash_15* asn1oid_15* pg_roaringbitmap_15* pgfaceting_15 pgsphere_15* pg_country_15* pg_currency_15* pgmp_15* numeral_15* pg_rational_15* pguint_15* pg_uint128_15* ip4r_15* pg_uri_15* pg_emailaddr_15* acl_15* timestamp9_15* chkpass_15*
 - topn_15* pgsql_gzip_15* pg_zstd_15* pgsql_http_15* pg_net_15* pg_smtp_client_15 pg_html5_email_address_15 pgsql_tweaks_15* pg_extra_time_15* count_distinct_15* extra_window_functions_15* first_last_agg_15 tdigest_15* aggs_for_vecs_15* aggs_for_arrays_15* pg_arraymath_15* quantile_15* lower_quantile_15*
-- pg_idkit_15 pg_uuidv7_15* permuteseq_15* pg_hashids_15* sequential_uuids_15 pg_math_15* pg_random_15* pg_base36_15* pg_base62_15* pg_base58_15 floatvec_15* pg_financial_15* pgjwt_15* pg_hashlib_15 postgres_shacrypt_15* cryptint_15* pg_ecdsa_15* pgpcre_15 icu_ext_15* pgqr_15* pg_envvar_15* pg_protobuf_15 url_encode_15*
+- pg_idkit_15 pg_uuidv7_15* permuteseq_15* pg_hashids_15* sequential_uuids_15 pg_math_15* pg_random_15* pg_base36_15* pg_base62_15* pg_base58_15 floatvec_15* pg_financial_15* pgjwt_15* pg_hashlib_15 postgres_shacrypt_15* cryptint_15* pg_ecdsa_15* pgpcre_15 icu_ext_15* pgqr_15* pg_envvar_15* pg_protobuf_15 url_encode_15* pg_readme_15
 - pg_repack_15* pg_squeeze_15* pg_dirtyread_15* pgfincore_15* ddlx_15* pg_prioritize_15* pg_checksums_15* pg_readonly_15* safeupdate_15* pg_permissions_15* pg_auto_failover_15* pg_catcheck_15* preprepare_15* pgcozy_15 pg_orphaned_15* pg_crash_15* pg_cheat_funcs_15* pg_savior_15* table_log_15 pg_fio_15 #pgpool-II-pg15-extensions #pgagent_15*
 - pg_profile_15* pg_show_plans_15* pg_stat_kcache_15* pg_stat_monitor_15* pg_qualstats_15* pg_store_plans_15* pg_track_settings_15* pg_wait_sampling_15* system_stats_15* pg_meta_15 pgnodemx_15 pg_sqlog_15* bgw_replstatus_15* pgmeminfo_15* toastinfo_15* pg_explain_ui_15 pg_relusage_15 pagevis_15 powa_15*
 - passwordcheck_cracklib_15* supautils_15* pgsodium_15* vault_15* pg_session_jwt_15 pg_anon_15 pgsmcrypto_15 pgaudit17_15* pgauditlogtofile_15* pg_auth_mon_15* credcheck_15* pgcryptokey_15 pg_jobmon_15* logerrors_15* login_hook_15* set_user_15* pg_snakeoil_15* pgextwlist_15* pg_auditor_15 sslutils_15* noset_15* #pg_tde_15*
@@ -433,7 +435,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql14*                                                                                                                                                   # PostgreSQL 14
-- pg_timescaledb_14* pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14*
+- pg_timescaledb_14* pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_task_14* pg_later_14 pg_background_14*
 - postgis35_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14* pg_polyline_14 pg_geohash_14*
 - pgvector_14* vchord_14 pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pg4ml_14 pgml_14
 - pg_search_14 pgroonga_14* pg_bigm_14* zhparser_14* pg_bestmatch_14 hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14
@@ -442,7 +444,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 - pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* #pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
 - prefix_14* semver_14* postgresql-unit_14* pgpdf_14* pglite_fusion_14 md5hash_14* asn1oid_14* pg_roaringbitmap_14* pgfaceting_14 pgsphere_14* pg_country_14* pg_currency_14* numeral_14* pg_rational_14* pguint_14* pg_uint128_14* ip4r_14* pg_uri_14* pg_emailaddr_14* acl_14* timestamp9_14* chkpass_14* #pgmp_14*
 - topn_14* pgsql_gzip_14* pg_zstd_14* pgsql_http_14* pg_net_14* pg_smtp_client_14 pg_html5_email_address_14 pgsql_tweaks_14* pg_extra_time_14* count_distinct_14* first_last_agg_14 tdigest_14* aggs_for_vecs_14* aggs_for_arrays_14* pg_arraymath_14* quantile_14* lower_quantile_14*
-- pg_idkit_14 pg_uuidv7_14* permuteseq_14* pg_hashids_14* sequential_uuids_14 pg_math_14* pg_random_14* pg_base36_14* pg_base62_14* pg_base58_14 floatvec_14* pg_financial_14* pgjwt_14* pg_hashlib_14 postgres_shacrypt_14* cryptint_14* pg_ecdsa_14* pgpcre_14 icu_ext_14* pgqr_14* pg_envvar_14* pg_protobuf_14 url_encode_14* #extra_window_functions_14*
+- pg_idkit_14 pg_uuidv7_14* permuteseq_14* pg_hashids_14* sequential_uuids_14 pg_math_14* pg_random_14* pg_base36_14* pg_base62_14* pg_base58_14 floatvec_14* pg_financial_14* pgjwt_14* pg_hashlib_14 postgres_shacrypt_14* cryptint_14* pg_ecdsa_14* pgpcre_14 icu_ext_14* pgqr_14* pg_envvar_14* pg_protobuf_14 url_encode_14* pg_readme_14 #extra_window_functions_14*
 - pg_repack_14* pg_squeeze_14* pg_dirtyread_14* pgfincore_14* ddlx_14* pg_checksums_14* pg_readonly_14* safeupdate_14* pg_permissions_14* pg_auto_failover_14* pg_catcheck_14* preprepare_14* pgcozy_14 pg_orphaned_14* pg_crash_14* pg_cheat_funcs_14* pg_savior_14* table_log_14 pg_fio_14 #pg_prioritize_14* #pgpool-II-pg14-extensions #pgagent_14*
 - pg_profile_14* pg_show_plans_14* pg_stat_kcache_14* pg_stat_monitor_14* pg_qualstats_14* pg_store_plans_14* pg_track_settings_14* pg_wait_sampling_14* system_stats_14* pg_meta_14 pgnodemx_14 pg_sqlog_14* bgw_replstatus_14* pgmeminfo_14* toastinfo_14* pg_explain_ui_14 pg_relusage_14 pagevis_14 powa_14*
 - passwordcheck_cracklib_14* supautils_14* pgsodium_14* vault_14* pg_session_jwt_14 pg_anon_14 pgsmcrypto_14 pgaudit16_14* pgauditlogtofile_14* pg_auth_mon_14* credcheck_14* pgcryptokey_14 pg_jobmon_14* logerrors_14* login_hook_14* set_user_14* pg_snakeoil_14* pgextwlist_14* pg_auditor_14 sslutils_14* noset_14* #pg_tde_14*
@@ -455,7 +457,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql14*                                                                                                                                                   # PostgreSQL 14
-- pg_timescaledb_14* pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_later_14 pg_background_14*
+- pg_timescaledb_14* pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_task_14* pg_later_14 pg_background_14*
 - postgis35_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14* pg_polyline_14 pg_geohash_14*
 - pgvector_14* vchord_14 pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pg4ml_14 pgml_14
 - pg_search_14 pgroonga_14* pg_bigm_14* zhparser_14* pg_bestmatch_14 hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14
@@ -464,7 +466,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 - pg_tle_14* plv8_14* pllua_14* plprql_14 pldebugger_14* plpgsql_check_14* plprofiler_14* plsh_14* pljava_14* #plr_14* #pgtap_14* #postgresql_faker_14* #dbt2-pg14-extensions*
 - prefix_14* semver_14* postgresql-unit_14* pgpdf_14* pglite_fusion_14 md5hash_14* asn1oid_14* pg_roaringbitmap_14* pgfaceting_14 pgsphere_14* pg_country_14* pg_currency_14* numeral_14* pg_rational_14* pguint_14* pg_uint128_14* ip4r_14* pg_uri_14* pg_emailaddr_14* acl_14* timestamp9_14* chkpass_14* #pgmp_14*
 - topn_14* pgsql_gzip_14* pg_zstd_14* pgsql_http_14* pg_net_14* pg_smtp_client_14 pg_html5_email_address_14 pgsql_tweaks_14* pg_extra_time_14* count_distinct_14* first_last_agg_14 tdigest_14* aggs_for_vecs_14* aggs_for_arrays_14* pg_arraymath_14* quantile_14* lower_quantile_14*
-- pg_idkit_14 pg_uuidv7_14* permuteseq_14* pg_hashids_14* sequential_uuids_14 pg_math_14* pg_random_14* pg_base36_14* pg_base62_14* pg_base58_14 floatvec_14* pg_financial_14* pgjwt_14* pg_hashlib_14 postgres_shacrypt_14* cryptint_14* pg_ecdsa_14* pgpcre_14 icu_ext_14* pgqr_14* pg_envvar_14* pg_protobuf_14 url_encode_14* #extra_window_functions_14*
+- pg_idkit_14 pg_uuidv7_14* permuteseq_14* pg_hashids_14* sequential_uuids_14 pg_math_14* pg_random_14* pg_base36_14* pg_base62_14* pg_base58_14 floatvec_14* pg_financial_14* pgjwt_14* pg_hashlib_14 postgres_shacrypt_14* cryptint_14* pg_ecdsa_14* pgpcre_14 icu_ext_14* pgqr_14* pg_envvar_14* pg_protobuf_14 url_encode_14* pg_readme_14 #extra_window_functions_14*
 - pg_repack_14* pg_squeeze_14* pg_dirtyread_14* pgfincore_14* ddlx_14* pg_checksums_14* pg_readonly_14* safeupdate_14* pg_permissions_14* pg_auto_failover_14* pg_catcheck_14* preprepare_14* pgcozy_14 pg_orphaned_14* pg_crash_14* pg_cheat_funcs_14* pg_savior_14* table_log_14 pg_fio_14 #pg_prioritize_14* #pgpool-II-pg14-extensions #pgagent_14*
 - pg_profile_14* pg_show_plans_14* pg_stat_kcache_14* pg_stat_monitor_14* pg_qualstats_14* pg_store_plans_14* pg_track_settings_14* pg_wait_sampling_14* system_stats_14* pg_meta_14 pgnodemx_14 pg_sqlog_14* bgw_replstatus_14* pgmeminfo_14* toastinfo_14* pg_explain_ui_14 pg_relusage_14 pagevis_14 powa_14*
 - passwordcheck_cracklib_14* supautils_14* pgsodium_14* vault_14* pg_session_jwt_14 pg_anon_14 pgsmcrypto_14 pgaudit16_14* pgauditlogtofile_14* pg_auth_mon_14* credcheck_14* pgcryptokey_14 pg_jobmon_14* logerrors_14* login_hook_14* set_user_14* pg_snakeoil_14* pgextwlist_14* pg_auditor_14 sslutils_14* noset_14* #pg_tde_14*
@@ -482,7 +484,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql13*                                                                                                                                                   # PostgreSQL 13
-- pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_later_13 pg_background_13* #pg_timescaledb_13*
+- pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_task_13* pg_later_13 pg_background_13* #pg_timescaledb_13*
 - postgis35_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13*
 - pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #vchord_13 #pg_vectorize_13 #pgml_13
 - pgroonga_13* pg_bigm_13* zhparser_13* pg_bestmatch_13 hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13
@@ -491,7 +493,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 - pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* #pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
 - prefix_13* semver_13* postgresql-unit_13* pgpdf_13* pglite_fusion_13 md5hash_13* asn1oid_13* pg_roaringbitmap_13* pgfaceting_13 pgsphere_13* pg_country_13* pg_currency_13* numeral_13* pg_rational_13* pguint_13* pg_uint128_13* ip4r_13* pg_uri_13* pg_emailaddr_13* acl_13* timestamp9_13* chkpass_13* #pgmp_13*
 - topn_13* pgsql_gzip_13* pg_zstd_13* pgsql_http_13* pg_net_13* pg_html5_email_address_13 pgsql_tweaks_13* pg_extra_time_13* count_distinct_13* first_last_agg_13 tdigest_13* aggs_for_vecs_13* aggs_for_arrays_13* pg_arraymath_13* quantile_13* lower_quantile_13*
-- pg_idkit_13 pg_uuidv7_13* permuteseq_13* pg_hashids_13* sequential_uuids_13 pg_math_13* pg_random_13* pg_base36_13* pg_base62_13* pg_base58_13 floatvec_13* pg_financial_13* pgjwt_13* pg_hashlib_13 postgres_shacrypt_13* cryptint_13* pg_ecdsa_13* pgpcre_13 icu_ext_13* pgqr_13* pg_envvar_13* pg_protobuf_13 url_encode_13* #pg_smtp_client_13 #extra_window_functions_13*
+- pg_idkit_13 pg_uuidv7_13* permuteseq_13* pg_hashids_13* sequential_uuids_13 pg_math_13* pg_random_13* pg_base36_13* pg_base62_13* pg_base58_13 floatvec_13* pg_financial_13* pgjwt_13* pg_hashlib_13 postgres_shacrypt_13* cryptint_13* pg_ecdsa_13* pgpcre_13 icu_ext_13* pgqr_13* pg_envvar_13* pg_protobuf_13 url_encode_13* pg_readme_13 #pg_smtp_client_13 #extra_window_functions_13*
 - pg_repack_13* pg_squeeze_13* pg_dirtyread_13* pgfincore_13* ddlx_13* pg_checksums_13* pg_readonly_13* safeupdate_13* pg_permissions_13* pg_auto_failover_13* pg_catcheck_13* preprepare_13* pgcozy_13 pg_orphaned_13* pg_crash_13* pg_cheat_funcs_13* pg_savior_13* table_log_13 pg_fio_13 #pg_prioritize_13* #pgpool-II-pg13-extensions #pgagent_13*
 - pg_profile_13* pg_show_plans_13* pg_stat_kcache_13* pg_stat_monitor_13* pg_qualstats_13* pg_store_plans_13* pg_track_settings_13* pg_wait_sampling_13* system_stats_13* pg_meta_13 pgnodemx_13 pg_sqlog_13* bgw_replstatus_13* pgmeminfo_13* toastinfo_13* pg_explain_ui_13 pg_relusage_13 pagevis_13 powa_13*
 - passwordcheck_cracklib_13* supautils_13* pgsodium_13* vault_13* pg_anon_13 pgsmcrypto_13 pgaudit15_13* pgauditlogtofile_13* pg_auth_mon_13* credcheck_13* pgcryptokey_13 pg_jobmon_13* logerrors_13* login_hook_13* set_user_13* pg_snakeoil_13* pgextwlist_13* pg_auditor_13 sslutils_13* noset_13* #pg_session_jwt_13 #pg_tde_13*
@@ -504,7 +506,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 
 ```yaml
 - postgresql13*                                                                                                                                                   # PostgreSQL 13
-- pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_later_13 pg_background_13* #pg_timescaledb_13*
+- pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_task_13* pg_later_13 pg_background_13* #pg_timescaledb_13*
 - postgis35_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13* pg_polyline_13 pg_geohash_13*
 - pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #vchord_13 #pg_vectorize_13 #pgml_13
 - pgroonga_13* pg_bigm_13* zhparser_13* pg_bestmatch_13 hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13
@@ -513,7 +515,7 @@ There are **330** extensions available in the current major version PostgreSQL 1
 - pg_tle_13* plv8_13* pllua_13* plprql_13 pldebugger_13* plpgsql_check_13* plprofiler_13* plsh_13* pljava_13* #plr_13* #pgtap_13* #postgresql_faker_13* #dbt2-pg13-extensions*
 - prefix_13* semver_13* postgresql-unit_13* pgpdf_13* pglite_fusion_13 md5hash_13* asn1oid_13* pg_roaringbitmap_13* pgfaceting_13 pgsphere_13* pg_country_13* pg_currency_13* numeral_13* pg_rational_13* pguint_13* pg_uint128_13* ip4r_13* pg_uri_13* pg_emailaddr_13* acl_13* timestamp9_13* chkpass_13* #pgmp_13*
 - topn_13* pgsql_gzip_13* pg_zstd_13* pgsql_http_13* pg_net_13* pg_html5_email_address_13 pgsql_tweaks_13* pg_extra_time_13* count_distinct_13* first_last_agg_13 tdigest_13* aggs_for_vecs_13* aggs_for_arrays_13* pg_arraymath_13* quantile_13* lower_quantile_13*
-- pg_idkit_13 pg_uuidv7_13* permuteseq_13* pg_hashids_13* sequential_uuids_13 pg_math_13* pg_random_13* pg_base36_13* pg_base62_13* pg_base58_13 floatvec_13* pg_financial_13* pgjwt_13* pg_hashlib_13 postgres_shacrypt_13* cryptint_13* pg_ecdsa_13* pgpcre_13 icu_ext_13* pgqr_13* pg_envvar_13* pg_protobuf_13 url_encode_13* #pg_smtp_client_13 #extra_window_functions_13*
+- pg_idkit_13 pg_uuidv7_13* permuteseq_13* pg_hashids_13* sequential_uuids_13 pg_math_13* pg_random_13* pg_base36_13* pg_base62_13* pg_base58_13 floatvec_13* pg_financial_13* pgjwt_13* pg_hashlib_13 postgres_shacrypt_13* cryptint_13* pg_ecdsa_13* pgpcre_13 icu_ext_13* pgqr_13* pg_envvar_13* pg_protobuf_13 url_encode_13* pg_readme_13 #pg_smtp_client_13 #extra_window_functions_13*
 - pg_repack_13* pg_squeeze_13* pg_dirtyread_13* pgfincore_13* ddlx_13* pg_checksums_13* pg_readonly_13* safeupdate_13* pg_permissions_13* pg_auto_failover_13* pg_catcheck_13* preprepare_13* pgcozy_13 pg_orphaned_13* pg_crash_13* pg_cheat_funcs_13* pg_savior_13* table_log_13 pg_fio_13 #pg_prioritize_13* #pgpool-II-pg13-extensions #pgagent_13*
 - pg_profile_13* pg_show_plans_13* pg_stat_kcache_13* pg_stat_monitor_13* pg_qualstats_13* pg_store_plans_13* pg_track_settings_13* pg_wait_sampling_13* system_stats_13* pg_meta_13 pgnodemx_13 pg_sqlog_13* bgw_replstatus_13* pgmeminfo_13* toastinfo_13* pg_explain_ui_13 pg_relusage_13 pagevis_13 powa_13*
 - passwordcheck_cracklib_13* supautils_13* pgsodium_13* vault_13* pg_anon_13 pgsmcrypto_13 pgaudit15_13* pgauditlogtofile_13* pg_auth_mon_13* credcheck_13* pgcryptokey_13 pg_jobmon_13* logerrors_13* login_hook_13* set_user_13* pg_snakeoil_13* pgextwlist_13* pg_auditor_13 sslutils_13* noset_13* #pg_session_jwt_13 #pg_tde_13*
