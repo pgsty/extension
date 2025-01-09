@@ -3,11 +3,11 @@
 [![Webite: pigsty.io](https://img.shields.io/badge/website-ext.pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://ext.pigsty.io)
 [![Version: v0.0.1](https://img.shields.io/badge/version-v0.0.1-slategray?style=flat&logo=cilium&logoColor=white)](https://github.com/pgsty/pig/releases/tag/v0.0.1)
 [![License: Apache-2.0](https://img.shields.io/github/license/pgsty/pig?logo=opensourceinitiative&logoColor=green&color=slategray)](https://github.com/pgsty/pig/blob/main/LICENSE)
-[![Extensions: 340](https://img.shields.io/badge/extensions-340-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://ext.pigsty.io/#/list)
+[![Extensions: 350](https://img.shields.io/badge/extensions-350-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://ext.pigsty.io/#/list)
 
 [**pig**](https://github.com/pgsty/pig) is an open-source PostgreSQL Package Manager for [mainstream](#compatibility) Linux distro.
 
-Install PostgreSQL 13-17 with [340 extensions](https://ext.pigsty.io/#/list) on (`amd64` / `arm64`) x (EL/Debian/Ubuntu) with native package manager
+Install PostgreSQL 13-17 with [350 extensions](https://ext.pigsty.io/#/list) on (`amd64` / `arm64`) x (EL/Debian/Ubuntu) with native package manager
 
 [![pig](https://github.com/user-attachments/assets/e377ed91-37a9-4c27-8854-034c81fa1b29)](https://medium.com/@fengruohang/the-idea-way-to-deliver-postgresql-extensions-35646464bb71)
 
@@ -59,7 +59,7 @@ pg_duckdb  0.2.0    OLAP  -dsl--  MIT      PIGSTY  pg_duckdb_17*  DuckDB Embedde
 (1 Rows) (Flags: b = HasBin, d = HasDDL, s = HasSolib, l = NeedLoad, t = Trusted, r = Relocatable, x = Unknown)
 ```
 
-Check the [advanced usage](#advanced-usage) for details and [list 340 available extensions](https://ext.pigsty.io/#/list).
+Check the [advanced usage](#advanced-usage) for details and [list 350 available extensions](https://ext.pigsty.io/#/list).
 
 [![asciicast](https://asciinema.org/a/695902.svg)](https://asciinema.org/a/695902)
 

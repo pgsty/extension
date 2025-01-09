@@ -95,7 +95,8 @@ CATES = {
     "FEAT": "FEAT: OpenCypher with AGE, GraphQL, JsonSchema, Hints & Hypo Index, HLL, Rum, IVM, ChemRDKit, and Message Queues,...",
     "LANG": "LANG: Develop, Test, Package, and Deliver Stored Procedures written in various PL/Lanaguages: Java, Js, Lua, R, Sh, PRQL, ...",
     "TYPE": "TYPE: Dedicate New Data Types Like: prefix, sember, uint, SIUnit, RoaringBitmap, Rational, Sphere, Hash, RRule, and more...",
-    "FUNC": "FUNC: Functionality such as sync/async HTTP, GZIP, JWT, SaltedHash, Extra Window Aggs, PCRE, ICU, ID & Rand Generator, etc...",
+    "UTIL": "UTIL: Utilities such as send http request, perform gzip/zstd compress, send mails, Regex, ICU, encoding, docs, Encryption,...",
+    "FUNC": "FUNC: Function such as id generator, aggregations, sketches, vector functions, mathematical functions and digest functions...",
     "ADMIN": "ADMIN: Utilities for Bloat Control, DirtyRead, BufferInspect, DDL Generate, ChecksumVerify, Permission, Priority, Catalog,...",
     "STAT": "STAT: Observability Catalogs, Monitoring Metrics & Views, Statistics, Query Plans, WaitSampling, SlowLogs, and etc...",
     "SEC": "SEC: Auditing Logs, Enforce Passwords, Keep Secrets, TDE, SM Algorithm, Login Hooks, Log Erros, Extension White List, ...",
@@ -397,7 +398,13 @@ def process_ext(ver, distro, ext):
         hide_ext = True
 
     # ubuntu 24.04 bad case
-    if distro == 'u24' and name in ['pg_partman', 'timeseries'] and ver in ['13']: # not pg_partman 12,13 for u24
+    if distro == 'u24' and name in ['pg_partman'] and ver in ['13']: # not pg_partman 12,13 for u24
+        hide_pkg, hide_ext = True, True
+
+    # el8 bad case
+    if distro == 'el8' and name in ['h3', 'h3_postgis']:
+        hide_pkg, hide_ext = True, True
+    if distro == 'el8' and name in ['pg_duckdb']:
         hide_pkg, hide_ext = True, True
 
     # version ad hoc logic
@@ -568,8 +575,8 @@ def gen_param(ver, distro, indent=0, header=True):
         all_pkgs =  pgsql_packages
     pkg_str = '\n'.join([text_pad + i for i in all_pkgs])
     ext_str = '\n'.join([text_pad + i for i in ext_list])
-    pkg_str = pkg_str.replace('-lower-quantile ', '-lower-quantile\n' + text_pad).replace(' pg_idkit_','\n' + text_pad + 'pg_idkit_')
-    ext_str = ext_str.replace('lower_quantile ', 'lower_quantile\n' + text_pad)
+    # pkg_str = pkg_str.replace('-lower-quantile ', '-lower-quantile\n' + text_pad).replace(' pg_idkit_','\n' + text_pad + 'pg_idkit_')
+    # ext_str = ext_str.replace('lower_quantile ', 'lower_quantile\n' + text_pad)
     if header:
         return head_pad + 'repo_packages:\n%s' % pkg_str , head_pad + 'pg_extensions:\n%s' % ext_str
     else:

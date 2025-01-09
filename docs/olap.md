@@ -30,10 +30,10 @@ There are 12 available extensions in this category:
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #hydra #pg_strom
-pg16: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_strom
-pg15: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_strom
-pg14: hydra pg_analytics pg_duckdb duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_strom
+pg17: pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #hydra #pg_duckdb #pg_strom
+pg16: hydra pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_strom
+pg15: hydra pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_strom
+pg14: hydra pg_analytics duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #citus #pg_duckdb #pg_strom
 pg13: hydra duckdb_fdw pg_fkpart pg_partman plproxy #citus #pg_analytics #pg_duckdb #pg_parquet #pg_strom
 ```
 
@@ -107,10 +107,10 @@ pg13: hydra duckdb_fdw pg_fkpart plproxy #citus #pg_analytics #pg_duckdb #pg_par
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: pg_analytics_17 pg_duckdb_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17* pg_partman_17* plproxy_17* #citus_17* #hydra_17* #pg_strom_17*
-pg16: citus_16* hydra_16* pg_analytics_16 pg_duckdb_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16* pg_partman_16* plproxy_16* #pg_strom_16*
-pg15: citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15* pg_partman_15* plproxy_15* #pg_strom_15*
-pg14: citus_14* hydra_14* pg_analytics_14 pg_duckdb_14* duckdb_fdw_14* pg_parquet_14 pg_fkpart_14* pg_partman_14* plproxy_14* #pg_strom_14*
+pg17: pg_analytics_17 duckdb_fdw_17* pg_parquet_17 pg_fkpart_17* pg_partman_17* plproxy_17* #citus_17* #hydra_17* #pg_duckdb_17* #pg_strom_17*
+pg16: citus_16* hydra_16* pg_analytics_16 duckdb_fdw_16* pg_parquet_16 pg_fkpart_16* pg_partman_16* plproxy_16* #pg_duckdb_16* #pg_strom_16*
+pg15: citus_15* hydra_15* pg_analytics_15 duckdb_fdw_15* pg_parquet_15 pg_fkpart_15* pg_partman_15* plproxy_15* #pg_duckdb_15* #pg_strom_15*
+pg14: citus_14* hydra_14* pg_analytics_14 duckdb_fdw_14* pg_parquet_14 pg_fkpart_14* pg_partman_14* plproxy_14* #pg_duckdb_14* #pg_strom_14*
 pg13: hydra_13* duckdb_fdw_13* pg_fkpart_13* pg_partman_13* plproxy_13* #citus_13* #pg_analytics_13 #pg_duckdb_13* #pg_parquet_13 #pg_strom_13*
 ```
 

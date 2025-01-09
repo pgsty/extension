@@ -18,6 +18,7 @@
   - [Category: FEAT](/feat)
   - [Category: LANG](/lang)
   - [Category: TYPE](/type)
+  - [Category: UTIL](/util)
   - [Category: FUNC](/func)
   - [Category: ADMIN](/admin)
   - [Category: STAT](/stat)

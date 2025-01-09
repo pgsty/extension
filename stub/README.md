@@ -111,13 +111,14 @@ If you have any suggestions on including new extensions or bumping to new versio
 
 Here are some bad cases and limitation for above distros:
 
+- [`pg_duckdb`](https://ext.pigsty.io/#/pg_duckdb) `el8:*:*`
 - [`h3`](/#/h3): `el8.arm.pg17`
 - [`pljava`](https://ext.pigsty.io/#/pljava): `el8:*:*`
 - [`pllua`](https://ext.pigsty.io/#/pllua): `el8:arm:13,14,15`
 - [`jdbc_fdw`](https://ext.pigsty.io/#/jdbc_fdw): `el:arm:*`
 - [`pg_partman`](https://ext.pigsty.io/#/pg_partman) and [`timeseries`](https://ext.pigsty.io/#/timeseries): `u24:*:13`
 - [`wiltondb`](https://ext.pigsty.io/#/wiltondb): `d12:*:*`
- 
+
 
 ----------------
 

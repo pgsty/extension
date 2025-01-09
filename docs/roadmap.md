@@ -12,42 +12,33 @@ Extensions to be included and extensions will not be included
 - [pg-rag](https://github.com/nearform/pg-rag)
 - [onesparse](https://github.com/OneSparse/OneSparse)
 - [omnigres](https://omnigres.com/)
-- [synchdb](https://github.com/Hornetlabs/synchdb)
+- [synchdb](https://github.com/Hornetlabs/synchdb) (break deb packages)
 - [vchord-bm25](https://github.com/tensorchord/VectorChord-bm25)
+- [orioledb](https://github.com/orioledb/orioledb)
+- prometheus_fdw https://github.com/tembo-io/prometheus_fdw/
+
+**DONE**
+
 - [pg_task](https://github.com/RekGRpth/pg_task)
 - [pg_readme](https://github.com/bigsmoke/pg_readme)
-- [orioledb](https://github.com/orioledb/orioledb)
 - [vasco](https://github.com/Florents-Tselai/vasco) Maximal Information Coefficient (MIC) Extension for Postgres C GPL-3.0 FUNC
 - [ddsketch](https://github.com/tvondra/ddsketch)
 - [omnisketch](https://github.com/tvondra/omnisketch) PostgreSQL, C, omnisketch implemented as Postgres extension
 - [data_historization](https://github.com/rodo/postgresql-data-historization) 1.1.0  PLPGSQL Script to historize data in partitionned table (plpgsql)
-- [pg_upless](https://pgxn.org/dist/pg_upless/0.0.2/) PostgreSQL Extension to Detect Useless UPDATE 
+- [pg_upless](https://pgxn.org/dist/pg_upless/0.0.2/) PostgreSQL Extension to Detect Useless UPDATE
 - [floatfile](https://github.com/pjungwir/floatfile) 1.3.1 C MIT
 - [pg_duration](https://github.com/jkosh44/pg_duration/) 1.0.1 A PostgreSQL extension for a time based duration type.
-
-**New Version Bump**
-
-- pgmq https://github.com/tembo-io/pgmq/ 1.5.0
-- prometheus_fdw https://github.com/tembo-io/prometheus_fdw/
-- pg_later 0.3
-- floatvec 1.3.1
-- pg_partman 5.2.3
-
- 
 
 **Waiting on PostgreSQL 17 support**:
 
 - [plprql](https://github.com/kaspermarstal/plprql): wait on pg17
 - [timescaledb_toolkit](https://github.com/timescale/timescaledb-toolkit): [pg17 support](https://github.com/timescale/timescaledb-toolkit/issues/813), [ubuntu noble support](https://github.com/timescale/timescaledb-toolkit/issues/823)
-- [timeseries](https://github.com/tembo-io/pg_timeseries): waiting on hydra pg17 support
 - [citus](https://github.com/citusdata/citus) / citus_columnar: 
 - [hydra](https://github.com/hydradatabase/hydra): waiting on citus_columnar pg17 support
-- [age](https://github.com/apache/age)
+- [age](https://github.com/apache/age) missing EL
 - [pgml](https://github.com/postgresml/postgresml)
-- rdkit
+- rdkit (u24 has this rdkit)
 - [pg_store_plans](https://github.com/ossc-db/pg_store_plans): wait on pg17
-- plprql
-
 - powa
 - pg_tde
 - odbc_fdw
@@ -56,11 +47,10 @@ Extensions to be included and extensions will not be included
 - mongo_fdw
 - kafka_fdw
 - wal2mongo
-- decoderbufs
-- repmgr
 - pg_bulkload
 - wiltondb
 - [upid](https://github.com/carderne/upid): wait on pg17 https://github.com/carderne/upid/issues
+
 
 **Waiting on missing Ubuntu 24.04 support**:
 

@@ -1,18 +1,19 @@
 # PostgreSQL Extension Repo
 
 [![Webite: ext.pigsty.io](https://img.shields.io/badge/website-ext.pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://ext.pigsty.io)
-[![Extensions: 340](https://img.shields.io/badge/extensions-340-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
+[![Extensions: 350](https://img.shields.io/badge/extensions-350-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
 
 The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://pigsty.io)
 
-Provide 340 available [Extensions](https://ext.pigsty.io/#/list) as [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **13** - **17** in addition to the official PGDG repo.
+Provide 350 available [Extensions](https://ext.pigsty.io/#/list) as [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **13** - **17** in addition to the official PGDG repo.
 
 Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS distros, and `x86_64` & `ARM64` architectures.
 
-| Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 |
-|:--------------:|:---:|:----:|:------:|:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension  | 334 | 114  |  147   |   69    |  4   |  6   | 303  | 330  | 333  | 321  | 303  |
-| DEB Extension  | 327 | 104  |  150   |   69    |  4   |  13  | 304  | 323  | 326  | 319  | 300  |
+|Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| RPM Extension | 336 | 116 | 147 | 69 | 4 | 14 | 312 | 332 | 335 | 323 | 305 |
+| DEB Extension | 337 | 103 | 161 | 69 | 4 | 13 | 318 | 332 | 335 | 328 | 309 |
+
 
 **Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
 
@@ -115,12 +116,13 @@ request to update the metadata.
 
 Here are some bad cases and limitation for above distros:
 
-- [`pljava`](https://ext.pigsty.io/#/pljava) is missing on `el8`
-- [`jdbc_fdw`](https://ext.pigsty.io/#/jdbc_fdw) is missing on `el.aarch64`
-- [`pllua`](https://ext.pigsty.io/#/pllua) is missing on `el8.aarch64` for pg 13,14,15
-- [`pg_partman`](https://ext.pigsty.io/#/pg_partman) and [`timeseries`](https://ext.pigsty.io/#/timeseries) is missing on `u24` for pg13
-- [`wiltondb`](https://ext.pigsty.io/#/wiltondb) is missing on `d12`
-- [`pg_duckdb`](https://ext.pigsty.io/#/pg_duckdb) is broken on `el8` due to c++17 stdfs ABI issue
+- [`pg_duckdb`](https://ext.pigsty.io/#/pg_duckdb) `el8:*:*`
+- [`h3`](/#/h3): `el8.arm.pg17`
+- [`pljava`](https://ext.pigsty.io/#/pljava): `el8:*:*`
+- [`pllua`](https://ext.pigsty.io/#/pllua): `el8:arm:13,14,15`
+- [`jdbc_fdw`](https://ext.pigsty.io/#/jdbc_fdw): `el:arm:*`
+- [`pg_partman`](https://ext.pigsty.io/#/pg_partman) and [`timeseries`](https://ext.pigsty.io/#/timeseries): `u24:*:13`
+- [`wiltondb`](https://ext.pigsty.io/#/wiltondb): `d12:*:*`
 
 
 ----------------
