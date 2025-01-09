@@ -1,7 +1,7 @@
 # ddsketch
 
 
-> [ddsketch](https://github.com/tvondra/ddsketch): 
+> [ddsketch](https://github.com/tvondra/ddsketch): Provides ddsketch aggregate function
 >
 > https://github.com/tvondra/ddsketch
 
@@ -24,7 +24,7 @@
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  |  | <span class="tcblue">✔</span> |  |  | <span class="tcblue">✔</span> |
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -45,6 +45,10 @@
 
 
 
+
+```sql
+CREATE EXTENSION ddsketch;
+```
 
 -----------
 

@@ -1,7 +1,7 @@
 # pg_upless
 
 
-> [pg_upless](https://github.com/rodo/pg_upless): 
+> [pg_upless](https://github.com/rodo/pg_upless): Detect Useless UPDATE
 >
 > https://github.com/rodo/pg_upless
 
@@ -24,13 +24,13 @@
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  |  | <span class="tcwarn">✘</span> |  |  |  |
+|  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |
 
 
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [pg_upless](/pg_upless) |  |  |  |  |
+| [pg_upless](/pg_upless) |  |  | [`plpgsql`](plpgsql) |  |
 
 
 
@@ -45,6 +45,10 @@
 
 
 
+
+```sql
+CREATE EXTENSION pg_upless CASCADE;
+```
 
 -----------
 

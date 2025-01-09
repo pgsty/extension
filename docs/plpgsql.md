@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [plpgsql](/plpgsql) |  |  |  | [`table_version`](/table_version), [`pg4ml`](/pg4ml), [`plpgsql_check`](/plpgsql_check), [`unit`](/unit), [`pg_profile`](/pg_profile), [`powa`](/powa) |
+| [plpgsql](/plpgsql) |  |  |  | [`table_version`](/table_version), [`pg4ml`](/pg4ml), [`plpgsql_check`](/plpgsql_check), [`unit`](/unit), [`ddl_historization`](/ddl_historization), [`data_historization`](/data_historization), [`pg_upless`](/pg_upless), [`pg_profile`](/pg_profile), [`powa`](/powa) |
 
 
 

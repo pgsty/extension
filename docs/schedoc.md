@@ -1,9 +1,9 @@
-# ddl_historization
+# schedoc
 
 
-> [ddl_historization](https://github.com/rodo/pg_ddl_historization): Historize the ddl changes inside PostgreSQL database
+> [pg_schedoc](https://github.com/ZeroGachis/pg_schedoc): Cross documentation between Django and DBT projects
 >
-> https://github.com/rodo/pg_ddl_historization
+> https://github.com/ZeroGachis/pg_schedoc
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [ddl_historization](https://github.com/rodo/pg_ddl_historization) | 0.0.7 | **<span class="tcwarn">GPLv2</span>** |  | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
+| [schedoc](https://github.com/ZeroGachis/pg_schedoc) | 0.0.1 | **<span class="tcwarn">GPLv3</span>** |  | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [ddl_historization](/ddl_historization) |  |  | [`plpgsql`](plpgsql) | [`schedoc`](/schedoc) |
+| [pg_schedoc](/schedoc) |  |  | [`ddl_historization`](ddl_historization) |  |
 
 
 
@@ -47,7 +47,7 @@
 
 
 ```sql
-CREATE EXTENSION ddl_historization CASCADE;
+CREATE EXTENSION schedoc CASCADE;
 ```
 
 -----------
@@ -58,28 +58,28 @@ CREATE EXTENSION ddl_historization CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [DEB](/deb) | 0.0.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-ddl-historization` |  |  |  |  |  |  |
+| [DEB](/deb) | 0.0.1 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-schedoc` |  |  |  |  |  | `postgresql-$v-ddl-historization` |
 
 
 
-Install `ddl_historization` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+Install `schedoc` via the [`pig`](https://github.com/pgsty/pig) cli tool:
 
 ```bash
-pig ext add ddl_historization
+pig ext add schedoc
 ```
 
 
-Install `ddl_historization` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
+Install `pg_schedoc` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["ddl_historization"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["pg_schedoc"]}'
 ```
 
 
-Install `ddl_historization` [DEB](/deb) from the  **APT** repo:
+Install `pg_schedoc` [DEB](/deb) from the  **APT** repo:
 
 ```bash
-apt install postgresql-$v-ddl-historization;
+apt install postgresql-$v-pg-schedoc;
 ```
 
 
@@ -89,9 +89,9 @@ apt install postgresql-$v-ddl-historization;
 |:------------:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `d12` | `postgresql-17-ddl-historization` | `postgresql-16-ddl-historization` | `postgresql-15-ddl-historization` | `postgresql-14-ddl-historization` | `postgresql-13-ddl-historization` |
-| `u22` | `postgresql-17-ddl-historization` | `postgresql-16-ddl-historization` | `postgresql-15-ddl-historization` | `postgresql-14-ddl-historization` | `postgresql-13-ddl-historization` |
-| `u24` | `postgresql-17-ddl-historization` | `postgresql-16-ddl-historization` | `postgresql-15-ddl-historization` | `postgresql-14-ddl-historization` | `postgresql-13-ddl-historization` |
+| `d12` | `postgresql-17-pg-schedoc` | `postgresql-16-pg-schedoc` | `postgresql-15-pg-schedoc` | `postgresql-14-pg-schedoc` | `postgresql-13-pg-schedoc` |
+| `u22` | `postgresql-17-pg-schedoc` | `postgresql-16-pg-schedoc` | `postgresql-15-pg-schedoc` | `postgresql-14-pg-schedoc` | `postgresql-13-pg-schedoc` |
+| `u24` | `postgresql-17-pg-schedoc` | `postgresql-16-pg-schedoc` | `postgresql-15-pg-schedoc` | `postgresql-14-pg-schedoc` | `postgresql-13-pg-schedoc` |
 
 
 

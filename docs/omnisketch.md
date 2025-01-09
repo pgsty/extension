@@ -1,7 +1,7 @@
 # omnisketch
 
 
-> [omnisketch](https://github.com/tvondra/omnisketch): 
+> [omnisketch](https://github.com/tvondra/omnisketch): data structure for on-line agg of data into approximate sketch
 >
 > https://github.com/tvondra/omnisketch
 
@@ -24,7 +24,7 @@
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  |  | <span class="tcblue">✔</span> |  |  |  |
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 
@@ -45,6 +45,10 @@
 
 
 
+
+```sql
+CREATE EXTENSION omnisketch;
+```
 
 -----------
 
