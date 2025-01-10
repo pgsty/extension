@@ -135,7 +135,7 @@ Here are some bad cases and limitation for above distros:
 - [`pllua`](https://ext.pigsty.io/#/pllua): `el8:arm:13,14,15`
 - [`h3`](https://ext.pigsty.io/#/h3): `el8.amd.pg17`
 - [`jdbc_fdw`](https://ext.pigsty.io/#/jdbc_fdw): `el:arm:*`
-- [`pg_partman`](https://ext.pigsty.io/#/pg_partman) and [`timeseries`](https://ext.pigsty.io/#/timeseries): `u24:*:13`
+- [`pg_partman`](https://ext.pigsty.io/#/pg_partman): `u24:*:13`
 - [`wiltondb`](https://ext.pigsty.io/#/wiltondb): `d12:*:*`
 
 
