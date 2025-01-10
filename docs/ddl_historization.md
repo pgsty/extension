@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -58,8 +58,8 @@ CREATE EXTENSION ddl_historization CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.0.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `ddl_historization_$v` |  |  |  |  |  |  |
-| [DEB](/deb) | 0.0.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-ddl-historization` |  |  |  |  |  |  |
+| [RPM](/rpm) | 0.0.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `ddl_historization_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.0.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-ddl-historization` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 
@@ -80,7 +80,11 @@ Install `ddl_historization` via [Pigsty](https://pigsty.io/docs/pgext/usage/inst
 Install `ddl_historization` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-
+dnf install ddl_historization_17;
+dnf install ddl_historization_16;
+dnf install ddl_historization_15;
+dnf install ddl_historization_14;
+dnf install ddl_historization_13;
 ```
 
 
@@ -99,8 +103,8 @@ apt install postgresql-13-ddl-historization;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el8` | `ddl_historization_17` | `ddl_historization_16` | `ddl_historization_15` | `ddl_historization_14` | `ddl_historization_13` |
+| `el9` | `ddl_historization_17` | `ddl_historization_16` | `ddl_historization_15` | `ddl_historization_14` | `ddl_historization_13` |
 | `d12` | `postgresql-17-ddl-historization` | `postgresql-16-ddl-historization` | `postgresql-15-ddl-historization` | `postgresql-14-ddl-historization` | `postgresql-13-ddl-historization` |
 | `u22` | `postgresql-17-ddl-historization` | `postgresql-16-ddl-historization` | `postgresql-15-ddl-historization` | `postgresql-14-ddl-historization` | `postgresql-13-ddl-historization` |
 | `u24` | `postgresql-17-ddl-historization` | `postgresql-16-ddl-historization` | `postgresql-15-ddl-historization` | `postgresql-14-ddl-historization` | `postgresql-13-ddl-historization` |

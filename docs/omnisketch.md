@@ -36,8 +36,8 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
 | `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
@@ -58,8 +58,8 @@ CREATE EXTENSION omnisketch;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `omnisketch_$v*` |  |  |  |  |  |  |
-| [DEB](/deb) | 1.0.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-omnisketch` |  |  |  |  |  |  |
+| [RPM](/rpm) | 1.0.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `omnisketch_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.0.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-omnisketch` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 
@@ -80,7 +80,11 @@ Install `omnisketch` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `omnisketch` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-
+dnf install omnisketch_17*;
+dnf install omnisketch_16*;
+dnf install omnisketch_15*;
+dnf install omnisketch_14*;
+dnf install omnisketch_13*;
 ```
 
 
@@ -99,8 +103,8 @@ apt install postgresql-13-omnisketch;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `el8` | `omnisketch_17*` | `omnisketch_16*` | `omnisketch_15*` | `omnisketch_14*` | `omnisketch_13*` |
+| `el9` | `omnisketch_17*` | `omnisketch_16*` | `omnisketch_15*` | `omnisketch_14*` | `omnisketch_13*` |
 | `d12` | `postgresql-17-omnisketch` | `postgresql-16-omnisketch` | `postgresql-15-omnisketch` | `postgresql-14-omnisketch` | `postgresql-13-omnisketch` |
 | `u22` | `postgresql-17-omnisketch` | `postgresql-16-omnisketch` | `postgresql-15-omnisketch` | `postgresql-14-omnisketch` | `postgresql-13-omnisketch` |
 | `u24` | `postgresql-17-omnisketch` | `postgresql-16-omnisketch` | `postgresql-15-omnisketch` | `postgresql-14-omnisketch` | `postgresql-13-omnisketch` |

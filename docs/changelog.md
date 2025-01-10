@@ -1,5 +1,10 @@
 # Changelog
 
+**2025-01-10**
+
+- Add 10 el extensions
+- rename pg_timescaledb to timescaledb-tsl on el distros
+
 **2025-01-09**
 
 - lower_quantile 1.0.3
@@ -27,6 +32,7 @@ New extensions:
 ```bash
 make floatfile pg_upless vasco pg_xxhash pg_duration ddl_historization data_historization pg_schedoc lower_quantile quantile ddsketch omnisketch sequential_uuids pgmq floatvec pg_timeseries timescaledb #pg_task pg_readme
 make floatfile pg_upless vasco pg_xxhash pg_duration ddl_historization data_historization pg_schedoc
+make pg_schedoc pg_duration pg_xxhash
 ```
 
 **2025-01-08**

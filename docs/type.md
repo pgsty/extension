@@ -51,7 +51,7 @@ There are 33 available extensions in this category:
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pg_duration #debversion #pg_rrule
+pg17: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_duration pg_uri pgemailaddr pg_acl timestamp9 chkpass #debversion #pg_rrule
 pg16: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pg_duration #debversion #pg_rrule
 pg15: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pg_duration #debversion #pg_rrule
 pg14: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pgmp #pg_duration #debversion #pg_rrule
@@ -62,7 +62,7 @@ pg13: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitm
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pg_duration #debversion #pg_rrule
+pg17: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_duration pg_uri pgemailaddr pg_acl timestamp9 chkpass #debversion #pg_rrule
 pg16: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pg_duration #debversion #pg_rrule
 pg15: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency pgmp numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pg_duration #debversion #pg_rrule
 pg14: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitmap pgfaceting pgsphere pg_country pg_currency numeral pg_rational pguint pg_uint128 ip4r pg_uri pgemailaddr pg_acl timestamp9 chkpass #pgmp #pg_duration #debversion #pg_rrule
@@ -129,7 +129,7 @@ pg13: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitm
 | [pguint](/uint) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pguint_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | unsigned integer types |
 | [pg_uint128](/uint128) | 1.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_uint128_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Native uint128 type |
 | [ip4r](/ip4r) | 2.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `ip4r_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | IPv4/v6 and IPv4/v6 range index type for PostgreSQL |
-| [pg_duration](/pg_duration) | 1.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_duration_$v*` |  |  |  |  |  | data type for representing durations |
+| [pg_duration](/pg_duration) | 1.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_duration_$v*` | **<span class="tcwarn">✔</span>** |  |  |  |  | data type for representing durations |
 | [pg_uri](/uri) | 1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_uri_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | URI Data type for PostgreSQL |
 | [pgemailaddr](/emailaddr) | 0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_emailaddr_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Email address type for PostgreSQL |
 | [pg_acl](/acl) | 1.0.4 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `acl_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | ACL Data type |
@@ -148,7 +148,7 @@ pg13: pg_prefix pg_semver pgunit pgpdf pglite_fusion md5hash asn1oid roaringbitm
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: prefix_17* semver_17* postgresql-unit_17* pgpdf_17* pglite_fusion_17 md5hash_17* asn1oid_17* pg_roaringbitmap_17* pgfaceting_17 pgsphere_17* pg_country_17* pg_currency_17* pgmp_17* numeral_17* pg_rational_17* pguint_17* pg_uint128_17* ip4r_17* pg_uri_17* pg_emailaddr_17* acl_17* timestamp9_17* chkpass_17* #pg_duration_17*
+pg17: prefix_17* semver_17* postgresql-unit_17* pgpdf_17* pglite_fusion_17 md5hash_17* asn1oid_17* pg_roaringbitmap_17* pgfaceting_17 pgsphere_17* pg_country_17* pg_currency_17* pgmp_17* numeral_17* pg_rational_17* pguint_17* pg_uint128_17* ip4r_17* pg_duration_17* pg_uri_17* pg_emailaddr_17* acl_17* timestamp9_17* chkpass_17*
 pg16: prefix_16* semver_16* postgresql-unit_16* pgpdf_16* pglite_fusion_16 md5hash_16* asn1oid_16* pg_roaringbitmap_16* pgfaceting_16 pgsphere_16* pg_country_16* pg_currency_16* pgmp_16* numeral_16* pg_rational_16* pguint_16* pg_uint128_16* ip4r_16* pg_uri_16* pg_emailaddr_16* acl_16* timestamp9_16* chkpass_16* #pg_duration_16*
 pg15: prefix_15* semver_15* postgresql-unit_15* pgpdf_15* pglite_fusion_15 md5hash_15* asn1oid_15* pg_roaringbitmap_15* pgfaceting_15 pgsphere_15* pg_country_15* pg_currency_15* pgmp_15* numeral_15* pg_rational_15* pguint_15* pg_uint128_15* ip4r_15* pg_uri_15* pg_emailaddr_15* acl_15* timestamp9_15* chkpass_15* #pg_duration_15*
 pg14: prefix_14* semver_14* postgresql-unit_14* pgpdf_14* pglite_fusion_14 md5hash_14* asn1oid_14* pg_roaringbitmap_14* pgfaceting_14 pgsphere_14* pg_country_14* pg_currency_14* numeral_14* pg_rational_14* pguint_14* pg_uint128_14* ip4r_14* pg_uri_14* pg_emailaddr_14* acl_14* timestamp9_14* chkpass_14* #pgmp_14* #pg_duration_14*
@@ -159,7 +159,7 @@ pg13: prefix_13* semver_13* postgresql-unit_13* pgpdf_13* pglite_fusion_13 md5ha
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: prefix_17* semver_17* postgresql-unit_17* pgpdf_17* pglite_fusion_17 md5hash_17* asn1oid_17* pg_roaringbitmap_17* pgfaceting_17 pgsphere_17* pg_country_17* pg_currency_17* pgmp_17* numeral_17* pg_rational_17* pguint_17* pg_uint128_17* ip4r_17* pg_uri_17* pg_emailaddr_17* acl_17* timestamp9_17* chkpass_17* #pg_duration_17*
+pg17: prefix_17* semver_17* postgresql-unit_17* pgpdf_17* pglite_fusion_17 md5hash_17* asn1oid_17* pg_roaringbitmap_17* pgfaceting_17 pgsphere_17* pg_country_17* pg_currency_17* pgmp_17* numeral_17* pg_rational_17* pguint_17* pg_uint128_17* ip4r_17* pg_duration_17* pg_uri_17* pg_emailaddr_17* acl_17* timestamp9_17* chkpass_17*
 pg16: prefix_16* semver_16* postgresql-unit_16* pgpdf_16* pglite_fusion_16 md5hash_16* asn1oid_16* pg_roaringbitmap_16* pgfaceting_16 pgsphere_16* pg_country_16* pg_currency_16* pgmp_16* numeral_16* pg_rational_16* pguint_16* pg_uint128_16* ip4r_16* pg_uri_16* pg_emailaddr_16* acl_16* timestamp9_16* chkpass_16* #pg_duration_16*
 pg15: prefix_15* semver_15* postgresql-unit_15* pgpdf_15* pglite_fusion_15 md5hash_15* asn1oid_15* pg_roaringbitmap_15* pgfaceting_15 pgsphere_15* pg_country_15* pg_currency_15* pgmp_15* numeral_15* pg_rational_15* pguint_15* pg_uint128_15* ip4r_15* pg_uri_15* pg_emailaddr_15* acl_15* timestamp9_15* chkpass_15* #pg_duration_15*
 pg14: prefix_14* semver_14* postgresql-unit_14* pgpdf_14* pglite_fusion_14 md5hash_14* asn1oid_14* pg_roaringbitmap_14* pgfaceting_14 pgsphere_14* pg_country_14* pg_currency_14* numeral_14* pg_rational_14* pguint_14* pg_uint128_14* ip4r_14* pg_uri_14* pg_emailaddr_14* acl_14* timestamp9_14* chkpass_14* #pgmp_14* #pg_duration_14*
