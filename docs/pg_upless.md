@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pg_upless](https://github.com/rodo/pg_upless) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
+| [pg_upless](https://github.com/rodo/pg_upless) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
@@ -58,6 +58,7 @@ CREATE EXTENSION pg_upless CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_upless_$v` |  |  |  |  |  |  |
 | [DEB](/deb) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-upless` |  |  |  |  |  |  |
 
 
@@ -76,10 +77,21 @@ Install `pg_upless` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 ```
 
 
-Install `pg_upless` [DEB](/deb) from the  **APT** repo:
+Install `pg_upless` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-apt install postgresql-$v-pg-upless;
+
+```
+
+
+Install `pg_upless` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+
+```bash
+apt install postgresql-17-pg-upless;
+apt install postgresql-16-pg-upless;
+apt install postgresql-15-pg-upless;
+apt install postgresql-14-pg-upless;
+apt install postgresql-13-pg-upless;
 ```
 
 

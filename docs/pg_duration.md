@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pg_duration](https://github.com/jkosh44/pg_duration) | 1.0.1 | **<span class="tcblue">MIT</span>** |  | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [pg_duration](https://github.com/jkosh44/pg_duration) | 1.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
@@ -58,6 +58,7 @@ CREATE EXTENSION pg_duration;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_duration_$v*` |  |  |  |  |  |  |
 | [DEB](/deb) | 1.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-duration` |  |  |  |  |  |  |
 
 
@@ -76,10 +77,17 @@ Install `pg_duration` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 ```
 
 
-Install `pg_duration` [DEB](/deb) from the  **APT** repo:
+Install `pg_duration` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-apt install postgresql-$v-pg-duration;
+
+```
+
+
+Install `pg_duration` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+
+```bash
+apt install postgresql-17-pg-duration;
 ```
 
 

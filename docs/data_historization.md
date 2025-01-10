@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [data_historization](https://github.com/rodo/postgresql-data-historization) | 1.1.0 | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
+| [data_historization](https://github.com/rodo/postgresql-data-historization) | 1.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
@@ -58,6 +58,7 @@ CREATE EXTENSION data_historization CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `data_historization_$v` |  |  |  |  |  |  |
 | [DEB](/deb) | 1.1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-data-historization` |  |  |  |  |  |  |
 
 
@@ -76,10 +77,21 @@ Install `data_historization` via [Pigsty](https://pigsty.io/docs/pgext/usage/ins
 ```
 
 
-Install `data_historization` [DEB](/deb) from the  **APT** repo:
+Install `data_historization` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-apt install postgresql-$v-data-historization;
+
+```
+
+
+Install `data_historization` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+
+```bash
+apt install postgresql-17-data-historization;
+apt install postgresql-16-data-historization;
+apt install postgresql-15-data-historization;
+apt install postgresql-14-data-historization;
+apt install postgresql-13-data-historization;
 ```
 
 

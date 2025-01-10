@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [floatfile](https://github.com/pjungwir/floatfile) | 1.3.1 | **<span class="tcblue">MIT</span>** |  | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [floatfile](https://github.com/pjungwir/floatfile) | 1.3.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
@@ -58,6 +58,7 @@ CREATE EXTENSION floatfile;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 1.3.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `floatfile_$v*` |  |  |  |  |  |  |
 | [DEB](/deb) | 1.3.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-floatfile` |  |  |  |  |  |  |
 
 
@@ -76,10 +77,21 @@ Install `floatfile` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 ```
 
 
-Install `floatfile` [DEB](/deb) from the  **APT** repo:
+Install `floatfile` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-apt install postgresql-$v-floatfile;
+
+```
+
+
+Install `floatfile` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+
+```bash
+apt install postgresql-17-floatfile;
+apt install postgresql-16-floatfile;
+apt install postgresql-15-floatfile;
+apt install postgresql-14-floatfile;
+apt install postgresql-13-floatfile;
 ```
 
 

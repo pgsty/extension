@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [schedoc](https://github.com/ZeroGachis/pg_schedoc) | 0.0.1 | **<span class="tcwarn">GPLv3</span>** |  | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
+| [schedoc](https://github.com/ZeroGachis/pg_schedoc) | 0.0.1 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
@@ -58,6 +58,7 @@ CREATE EXTENSION schedoc CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.1 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `schedoc_$v` |  |  |  |  |  | `ddl_historization_$v` |
 | [DEB](/deb) | 0.0.1 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-schedoc` |  |  |  |  |  | `postgresql-$v-ddl-historization` |
 
 
@@ -76,10 +77,21 @@ Install `pg_schedoc` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 ```
 
 
-Install `pg_schedoc` [DEB](/deb) from the  **APT** repo:
+Install `pg_schedoc` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-apt install postgresql-$v-pg-schedoc;
+
+```
+
+
+Install `pg_schedoc` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+
+```bash
+apt install postgresql-17-pg-schedoc;
+apt install postgresql-16-pg-schedoc;
+apt install postgresql-15-pg-schedoc;
+apt install postgresql-14-pg-schedoc;
+apt install postgresql-13-pg-schedoc;
 ```
 
 

@@ -21,10 +21,12 @@ New extensions:
 - add pg_upless https://pgxn.org/dist/pg_upless/0.0.3/
 - add pg_task 1.0.0
 - add pg_readme 0.7.0
+- add vasco 0.1.0
+- add pg_xxhash 0.0.1
 
 ```bash
-make lower_quantile quantile ddsketch omnisketch sequential_uuids pgmq floatvec pg_timeseries timescaledb
-make floatfile pg_upless pg_task pg_readme vasco pg_xxhash pg_duration ddl_historization data_historization pg_schedoc
+make floatfile pg_upless vasco pg_xxhash pg_duration ddl_historization data_historization pg_schedoc lower_quantile quantile ddsketch omnisketch sequential_uuids pgmq floatvec pg_timeseries timescaledb #pg_task pg_readme
+make floatfile pg_upless vasco pg_xxhash pg_duration ddl_historization data_historization pg_schedoc
 ```
 
 **2025-01-08**

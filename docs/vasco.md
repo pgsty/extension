@@ -1,9 +1,9 @@
-# dict_xsyn
+# vasco
 
 
-> [dict_xsyn](https://www.postgresql.org/docs/current/dict-xsyn.html): text search dictionary template for extended synonym processing
+> [vasco](https://github.com/Florents-Tselai/vasco): discover hidden correlations in your data with MIC
 >
-> https://www.postgresql.org/docs/current/dict-xsyn.html
+> https://github.com/Florents-Tselai/vasco
 
 
 
@@ -18,19 +18,19 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [dict_xsyn](https://www.postgresql.org/docs/current/dict-xsyn.html) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | **<span class="tcblue">CONTRIB</span>** | `C` |
+| [vasco](https://github.com/Florents-Tselai/vasco) | 0.1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> |  |
+|  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> |
 
 
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [dict_xsyn](/dict_xsyn) |  |  |  |  |
+| [vasco](/vasco) | `beta` |  |  |  |
 
 
 
@@ -47,7 +47,7 @@
 
 
 ```sql
-CREATE EXTENSION dict_xsyn;
+CREATE EXTENSION vasco;
 ```
 
 -----------
@@ -58,44 +58,44 @@ CREATE EXTENSION dict_xsyn;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql$v-contrib` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** |  |
-| [DEB](/deb) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcblue">CONTRIB</span>** | `postgresql-$v` | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** | **<span class="tcblue">✔</span>** |  |
+| [RPM](/rpm) | 0.1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `vasco_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 0.1.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-vasco` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 
-Install `dict_xsyn` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+Install `vasco` via the [`pig`](https://github.com/pgsty/pig) cli tool:
 
 ```bash
-pig ext add dict_xsyn
+pig ext add vasco
 ```
 
 
-Install `dict_xsyn` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
+Install `vasco` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
 
 ```bash
-./pgsql.yml -t pg_extension -e '{"pg_extensions": ["dict_xsyn"]}'
+./pgsql.yml -t pg_extension -e '{"pg_extensions": ["vasco"]}'
 ```
 
 
-Install `dict_xsyn` [RPM](/rpm) from the **<span class="tcblue">CONTRIB</span>** **YUM** repo:
+Install `vasco` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install postgresql17-contrib;
-dnf install postgresql16-contrib;
-dnf install postgresql15-contrib;
-dnf install postgresql14-contrib;
-dnf install postgresql13-contrib;
+dnf install vasco_17*;
+dnf install vasco_16*;
+dnf install vasco_15*;
+dnf install vasco_14*;
+dnf install vasco_13*;
 ```
 
 
-Install `dict_xsyn` [DEB](/deb) from the **<span class="tcblue">CONTRIB</span>** **APT** repo:
+Install `vasco` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17;
-apt install postgresql-16;
-apt install postgresql-15;
-apt install postgresql-14;
-apt install postgresql-13;
+apt install postgresql-17-vasco;
+apt install postgresql-16-vasco;
+apt install postgresql-15-vasco;
+apt install postgresql-14-vasco;
+apt install postgresql-13-vasco;
 ```
 
 
@@ -103,11 +103,11 @@ apt install postgresql-13;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `postgresql17-contrib` | `postgresql16-contrib` | `postgresql15-contrib` | `postgresql14-contrib` | `postgresql13-contrib` |
-| `el9` | `postgresql17-contrib` | `postgresql16-contrib` | `postgresql15-contrib` | `postgresql14-contrib` | `postgresql13-contrib` |
-| `d12` | `postgresql-17` | `postgresql-16` | `postgresql-15` | `postgresql-14` | `postgresql-13` |
-| `u22` | `postgresql-17` | `postgresql-16` | `postgresql-15` | `postgresql-14` | `postgresql-13` |
-| `u24` | `postgresql-17` | `postgresql-16` | `postgresql-15` | `postgresql-14` | `postgresql-13` |
+| `el8` | `vasco_17*` | `vasco_16*` | `vasco_15*` | `vasco_14*` | `vasco_13*` |
+| `el9` | `vasco_17*` | `vasco_16*` | `vasco_15*` | `vasco_14*` | `vasco_13*` |
+| `d12` | `postgresql-17-vasco` | `postgresql-16-vasco` | `postgresql-15-vasco` | `postgresql-14-vasco` | `postgresql-13-vasco` |
+| `u22` | `postgresql-17-vasco` | `postgresql-16-vasco` | `postgresql-15-vasco` | `postgresql-14-vasco` | `postgresql-13-vasco` |
+| `u24` | `postgresql-17-vasco` | `postgresql-16-vasco` | `postgresql-15-vasco` | `postgresql-14-vasco` | `postgresql-13-vasco` |
 
 
 

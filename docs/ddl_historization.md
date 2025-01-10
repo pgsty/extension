@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [ddl_historization](https://github.com/rodo/pg_ddl_historization) | 0.0.7 | **<span class="tcwarn">GPLv2</span>** |  | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
+| [ddl_historization](https://github.com/rodo/pg_ddl_historization) | 0.0.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
@@ -58,6 +58,7 @@ CREATE EXTENSION ddl_historization CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.0.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `ddl_historization_$v` |  |  |  |  |  |  |
 | [DEB](/deb) | 0.0.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-ddl-historization` |  |  |  |  |  |  |
 
 
@@ -76,10 +77,21 @@ Install `ddl_historization` via [Pigsty](https://pigsty.io/docs/pgext/usage/inst
 ```
 
 
-Install `ddl_historization` [DEB](/deb) from the  **APT** repo:
+Install `ddl_historization` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-apt install postgresql-$v-ddl-historization;
+
+```
+
+
+Install `ddl_historization` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+
+```bash
+apt install postgresql-17-ddl-historization;
+apt install postgresql-16-ddl-historization;
+apt install postgresql-15-ddl-historization;
+apt install postgresql-14-ddl-historization;
+apt install postgresql-13-ddl-historization;
 ```
 
 
