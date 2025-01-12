@@ -58,7 +58,7 @@ CREATE EXTENSION schedoc CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.0.1 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `schedoc_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `ddl_historization_$v` |
+| [RPM](/rpm) | 0.0.1 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_schedoc_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `ddl_historization_$v` |
 | [DEB](/deb) | 0.0.1 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-schedoc` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `postgresql-$v-ddl-historization` |
 
 
@@ -80,11 +80,11 @@ Install `pg_schedoc` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 Install `pg_schedoc` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install schedoc_17;
-dnf install schedoc_16;
-dnf install schedoc_15;
-dnf install schedoc_14;
-dnf install schedoc_13;
+dnf install pg_schedoc_17;
+dnf install pg_schedoc_16;
+dnf install pg_schedoc_15;
+dnf install pg_schedoc_14;
+dnf install pg_schedoc_13;
 ```
 
 
@@ -103,8 +103,8 @@ apt install postgresql-13-pg-schedoc;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `schedoc_17` | `schedoc_16` | `schedoc_15` | `schedoc_14` | `schedoc_13` |
-| `el9` | `schedoc_17` | `schedoc_16` | `schedoc_15` | `schedoc_14` | `schedoc_13` |
+| `el8` | `pg_schedoc_17` | `pg_schedoc_16` | `pg_schedoc_15` | `pg_schedoc_14` | `pg_schedoc_13` |
+| `el9` | `pg_schedoc_17` | `pg_schedoc_16` | `pg_schedoc_15` | `pg_schedoc_14` | `pg_schedoc_13` |
 | `d12` | `postgresql-17-pg-schedoc` | `postgresql-16-pg-schedoc` | `postgresql-15-pg-schedoc` | `postgresql-14-pg-schedoc` | `postgresql-13-pg-schedoc` |
 | `u22` | `postgresql-17-pg-schedoc` | `postgresql-16-pg-schedoc` | `postgresql-15-pg-schedoc` | `postgresql-14-pg-schedoc` | `postgresql-13-pg-schedoc` |
 | `u24` | `postgresql-17-pg-schedoc` | `postgresql-16-pg-schedoc` | `postgresql-15-pg-schedoc` | `postgresql-14-pg-schedoc` | `postgresql-13-pg-schedoc` |
