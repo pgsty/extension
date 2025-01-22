@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [btree_gist](/btree_gist) |  |  |  | [`periods`](/periods), [`emaj`](/emaj), [`pgautofailover`](/pgautofailover), [`powa`](/powa) |
+| [btree_gist](/btree_gist) |  |  |  | [`periods`](/periods), [`emaj`](/emaj), [`omni_auth`](/omni_auth), [`pgautofailover`](/pgautofailover), [`powa`](/powa) |
 
 
 

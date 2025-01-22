@@ -1,7 +1,7 @@
 # pg_mooncake
 
 
-> [pg_mooncake](https://github.com/Mooncake-Labs/pg_mooncake): Columnstore Table in Postgres
+> [pg_mooncake](https://github.com/Mooncake-Labs/pg_mooncake): PostgreSQL列式存储表
 >
 > https://github.com/Mooncake-Labs/pg_mooncake
 
@@ -18,13 +18,13 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pg_mooncake](https://github.com/Mooncake-Labs/pg_mooncake) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C++` |
+| [pg_mooncake](https://github.com/Mooncake-Labs/pg_mooncake) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C++` |
 
 
 
 | `Bin` | `LOAD` | `DYLIB` | `DDL` | `TRUST` | `RELOC` |
 |:-----:|:------:|:-------:|:-----:|:-------:|:-------:|
-|  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
+|  |  | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> | <span class="tcwarn">✘</span> |
 
 
 
@@ -34,37 +34,36 @@
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
-```bash
-shared_preload_libraries = 'pg_mooncake'; # add this extension to postgresql.conf
-```
 
 
-
-```sql
-CREATE EXTENSION pg_mooncake;
-```
-> **Comment**: conflict on libduckdb with pg_duckdb/duckdb_fdw
 -----------
 
 
 ## Packages
 
 
-| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | 12 | Dependency |
-|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_mooncake_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |  |
-| [DEB](/deb) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-mooncake` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  |  |
+| OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
+|:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
+| [RPM](/rpm) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_mooncake_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| [DEB](/deb) | 0.1.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-mooncake` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
 
+
+
+Install `pg_mooncake` via the [`pig`](https://github.com/pgsty/pig) cli tool:
+
+```bash
+pig ext add pg_mooncake
+```
 
 
 Install `pg_mooncake` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:
@@ -77,12 +76,10 @@ Install `pg_mooncake` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 Install `pg_mooncake` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-yum install pg_mooncake_17*;
-yum install pg_mooncake_16*;
-yum install pg_mooncake_15*;
-yum install pg_mooncake_14*;
-yum install pg_mooncake_13*;
-yum install pg_mooncake_12*;
+dnf install pg_mooncake_17*;
+dnf install pg_mooncake_16*;
+dnf install pg_mooncake_15*;
+dnf install pg_mooncake_14*;
 ```
 
 
@@ -93,20 +90,18 @@ apt install postgresql-17-pg-mooncake;
 apt install postgresql-16-pg-mooncake;
 apt install postgresql-15-pg-mooncake;
 apt install postgresql-14-pg-mooncake;
-apt install postgresql-13-pg-mooncake;
-apt install postgresql-12-pg-mooncake;
 ```
 
 
 
 
-| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 | PG12 |
-|:------------:|:----:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_mooncake_17*` | `pg_mooncake_16*` | `pg_mooncake_15*` | `pg_mooncake_14*` | `pg_mooncake_13*` | `pg_mooncake_12*` |
-| `el9` | `pg_mooncake_17*` | `pg_mooncake_16*` | `pg_mooncake_15*` | `pg_mooncake_14*` | `pg_mooncake_13*` | `pg_mooncake_12*` |
-| `d12` | `postgresql-17-pg-mooncake` | `postgresql-16-pg-mooncake` | `postgresql-15-pg-mooncake` | `postgresql-14-pg-mooncake` | `postgresql-13-pg-mooncake` | `postgresql-12-pg-mooncake` |
-| `u22` | `postgresql-17-pg-mooncake` | `postgresql-16-pg-mooncake` | `postgresql-15-pg-mooncake` | `postgresql-14-pg-mooncake` | `postgresql-13-pg-mooncake` | `postgresql-12-pg-mooncake` |
-| `u24` | `postgresql-17-pg-mooncake` | `postgresql-16-pg-mooncake` | `postgresql-15-pg-mooncake` | `postgresql-14-pg-mooncake` | `postgresql-13-pg-mooncake` | `postgresql-12-pg-mooncake` |
+| Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:------------:|:----:|:----:|:----:|:----:|:----:|
+| `el8` | `pg_mooncake_17*` | `pg_mooncake_16*` | `pg_mooncake_15*` | `pg_mooncake_14*` | <span class="tcred">✘</span> |
+| `el9` | `pg_mooncake_17*` | `pg_mooncake_16*` | `pg_mooncake_15*` | `pg_mooncake_14*` | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-pg-mooncake` | `postgresql-16-pg-mooncake` | `postgresql-15-pg-mooncake` | `postgresql-14-pg-mooncake` | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-pg-mooncake` | `postgresql-16-pg-mooncake` | `postgresql-15-pg-mooncake` | `postgresql-14-pg-mooncake` | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-pg-mooncake` | `postgresql-16-pg-mooncake` | `postgresql-15-pg-mooncake` | `postgresql-14-pg-mooncake` | <span class="tcred">✘</span> |
 
 
 
@@ -116,6 +111,9 @@ apt install postgresql-12-pg-mooncake;
 --------
 
 ## Usage
+
+> THIS EXTENSION IS CONFLICT WITH pg_duckdb & duckdb_fdw, if it is under maintained, we may remove this extension in the future
+
 
 Beware that this package is conflict with the official `pg_duckdb` extension due to use the same `libduckdb.so` under same path.
 
@@ -133,6 +131,8 @@ INSERT INTO user_activity VALUES ....;
 SELECT * FROM user_activity LIMIT 5;
 ```
 
+
+--------
 
 ## Example
 

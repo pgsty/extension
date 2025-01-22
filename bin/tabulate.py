@@ -42,8 +42,6 @@ REPO_MAP = {
     "PIGSTY": '**<span class="tcwarn">PIGSTY</span>**',
     "CONTRIB": '**<span class="tcblue">CONTRIB</span>**',
     "WILTON": '**<span class="tcpurple">WILTON</span>**',
-    "CITUS": '**<span class="tcgreen">CITUS</span>**',
-    "TIMESCALE": '**<span class="tcwarn">TIMESCALE</span>**'
 }
 
 REPO_CHECK_COLOR = {
@@ -51,8 +49,6 @@ REPO_CHECK_COLOR = {
     "PIGSTY": '**<span class="tcwarn">✔</span>**',
     "CONTRIB": '**<span class="tcblue">✔</span>**',
     "WILTON": '**<span class="tcpurple">✔</span>**',
-    "CITUS": '**<span class="tcgreen">✔</span>**',
-    "TIMESCALE": '**<span class="tcwarn">✔</span>**'
 }
 
 BLUE_CHECK = '<span class="tcblue">✔</span>'
@@ -64,7 +60,7 @@ RED_EXCLAM = '<span class="tcred">❗</span>'
 
 THROW_LIST = []
 HIDE_LIST = ['pgpool', 'plr', 'pgagent', 'dbt2', 'pgtap', 'faker', 'repmgr', 'slony', 'oracle_fdw', 'pg_strom', 'db2_fdw']
-EXT_NOP_LIST = ["pg_mooncake", "citus"] # these extensions will be commented in pg_extensions due to conflict
+#EXT_NOP_LIST = ["pg_mooncake", "citus"] # these extensions will be commented in pg_extensions due to conflict
 DISTRO_MISS = {
     "el7": ["pg_dbms_job", "pljava"],
     "el8": ["pg_dbms_job", "pljava"],
@@ -97,6 +93,7 @@ CATES = {
     "TYPE": "TYPE: Dedicate New Data Types Like: prefix, sember, uint, SIUnit, RoaringBitmap, Rational, Sphere, Hash, RRule, and more...",
     "UTIL": "UTIL: Utilities such as send http request, perform gzip/zstd compress, send mails, Regex, ICU, encoding, docs, Encryption,...",
     "FUNC": "FUNC: Function such as id generator, aggregations, sketches, vector functions, mathematical functions and digest functions...",
+    # "OMNI": "OMNI: Omnigres extensions that turn PostgreSQL into a full-featured web application development platform...",
     "ADMIN": "ADMIN: Utilities for Bloat Control, DirtyRead, BufferInspect, DDL Generate, ChecksumVerify, Permission, Priority, Catalog,...",
     "STAT": "STAT: Observability Catalogs, Monitoring Metrics & Views, Statistics, Query Plans, WaitSampling, SlowLogs, and etc...",
     "SEC": "SEC: Auditing Logs, Enforce Passwords, Keep Secrets, TDE, SM Algorithm, Login Hooks, Log Erros, Extension White List, ...",

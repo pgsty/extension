@@ -29,12 +29,6 @@ New extensions:
 - add vasco 0.1.0
 - add pg_xxhash 0.0.1
 
-```bash
-make floatfile pg_upless vasco pg_xxhash pg_duration ddl_historization data_historization pg_schedoc lower_quantile quantile ddsketch omnisketch sequential_uuids pgmq floatvec pg_timeseries timescaledb #pg_task pg_readme
-make floatfile pg_upless vasco pg_xxhash pg_duration ddl_historization data_historization pg_schedoc
-make pg_schedoc pg_duration pg_xxhash
-```
-
 **2025-01-08**
 
 - pg_anon 2.0.0 

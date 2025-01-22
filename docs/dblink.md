@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [dblink](/dblink) |  |  |  | [`emaj`](/emaj), [`pg_profile`](/pg_profile), [`pg_jobmon`](/pg_jobmon), [`mimeo`](/mimeo) |
+| [dblink](/dblink) |  |  |  | [`emaj`](/emaj), [`omni_schema`](/omni_schema), [`omni_test`](/omni_test), [`omni_vfs_types_v1`](/omni_vfs_types_v1), [`pg_profile`](/pg_profile), [`pg_jobmon`](/pg_jobmon), [`mimeo`](/mimeo) |
 
 
 

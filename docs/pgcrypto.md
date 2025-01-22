@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [pgcrypto](/pgcrypto) |  |  |  | [`pgcryptokey`](/pgcryptokey) |
+| [pgcrypto](/pgcrypto) |  |  |  | [`omni_auth`](/omni_auth), [`omni_aws`](/omni_aws), [`omni_credentials`](/omni_credentials), [`omni_kube`](/omni_kube), [`omni_rest`](/omni_rest), [`pgcryptokey`](/pgcryptokey) |
 
 
 

@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [plpython3u](/plpython3u) |  | `pg_catalog` |  | [`pg4ml`](/pg4ml), [`jsonb_plpython3u`](/jsonb_plpython3u), [`ltree_plpython3u`](/ltree_plpython3u), [`hstore_plpython3u`](/hstore_plpython3u) |
+| [plpython3u](/plpython3u) |  | `pg_catalog` |  | [`pg4ml`](/pg4ml), [`omni_python`](/omni_python), [`jsonb_plpython3u`](/jsonb_plpython3u), [`ltree_plpython3u`](/ltree_plpython3u), [`hstore_plpython3u`](/hstore_plpython3u) |
 
 
 
