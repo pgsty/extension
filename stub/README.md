@@ -4,7 +4,7 @@
 [![Extensions: %s](https://img.shields.io/badge/extensions-%s-%%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
 [![License: Apache-2.0](https://img.shields.io/github/license/pgsty/extension?logo=opensourceinitiative&logoColor=green&color=slategray)](https://github.com/pgsty/pig/blob/main/LICENSE)
 
-The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://pigsty.io)
+The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://www.pigsty.io)
 
 Provide [%s](/list) available extensions as [RPM](/rpm) / [DEB](/deb) for PostgreSQL **13** - **17** in addition to the official PGDG repo.
 
@@ -118,7 +118,10 @@ Here are some bad cases and limitation for above distros:
 - [`jdbc_fdw`](https://ext.pigsty.io/#/jdbc_fdw): `el:arm:*`
 - [`pg_partman`](https://ext.pigsty.io/#/pg_partman): `u24:*:13`
 - [`wiltondb`](https://ext.pigsty.io/#/wiltondb): `d12:*:*`
-
+- `citus` and `hydra` are mutually exclusive
+- `pg_duckdb` and `pg_mooncake` are mutually exclusive
+- `pg_duckdb` will invalidate `duckdb_fdw`
+- `pg_anon` the new 2.0 rust version is conflict with previous 1.x C version
 
 ----------------
 

@@ -3,16 +3,16 @@
 [![Webite: ext.pigsty.io](https://img.shields.io/badge/website-ext.pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://ext.pigsty.io)
 [![Extensions: 386](https://img.shields.io/badge/extensions-386-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
 
-The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://pigsty.io)
+The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://www.pigsty.io)
 
-Provide 351 available [Extensions](https://ext.pigsty.io/#/list) as [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **13** - **17** in addition to the official PGDG repo.
+Provide 386 available [Extensions](https://ext.pigsty.io/#/list) as [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **13** - **17** in addition to the official PGDG repo.
 
 Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS distros, and `x86_64` & `ARM64` architectures.
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 345 | 116 | 156 | 69 | 4 | 6 | 321 | 340 | 343 | 331 | 313 |
-| DEB Extension | 338 | 103 | 162 | 69 | 4 | 13 | 319 | 333 | 336 | 329 | 310 |
+| RPM Extension | 380 | 114 | 193 | 69 | 4 | 6 | 356 | 375 | 378 | 366 | 347 |
+| DEB Extension | 373 | 103 | 197 | 69 | 4 | 13 | 354 | 368 | 371 | 364 | 344 |
 
 **Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
 
@@ -122,7 +122,10 @@ Here are some bad cases and limitation for above distros:
 - [`jdbc_fdw`](https://ext.pigsty.io/#/jdbc_fdw): `el:arm:*`
 - [`pg_partman`](https://ext.pigsty.io/#/pg_partman) and [`timeseries`](https://ext.pigsty.io/#/timeseries): `u24:*:13`
 - [`wiltondb`](https://ext.pigsty.io/#/wiltondb): `d12:*:*`
-
+- `citus` and `hydra` are mutually exclusive
+- `pg_duckdb` and `pg_mooncake` are mutually exclusive
+- `pg_duckdb` will invalidate `duckdb_fdw`
+- `pg_anon` the new 2.0 rust version is conflict with previous 1.x C version
 
 ----------------
 
