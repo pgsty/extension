@@ -1,18 +1,19 @@
 # PostgreSQL Extension Repo
 
 [![Webite: ext.pigsty.io](https://img.shields.io/badge/website-ext.pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://ext.pigsty.io)
-[![Extensions: 386](https://img.shields.io/badge/extensions-386-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
+[![Extensions: 390](https://img.shields.io/badge/extensions-390-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
 
 The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://www.pigsty.io)
 
-Provide 386 available [Extensions](https://ext.pigsty.io/#/list) as [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **13** - **17** in addition to the official PGDG repo.
+Provide 390 available [Extensions](https://ext.pigsty.io/#/list) as [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **13** - **17** in addition to the official PGDG repo.
 
 Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS distros, and `x86_64` & `ARM64` architectures.
 
+
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 380 | 114 | 193 | 69 | 4 | 6 | 356 | 375 | 378 | 366 | 347 |
-| DEB Extension | 373 | 103 | 197 | 69 | 4 | 13 | 354 | 368 | 371 | 364 | 344 |
+| RPM Extension | 384 | 116 | 195 | 69 | 4 | 6 | 362 | 379 | 381 | 369 | 349 |
+| DEB Extension | 377 | 103 | 201 | 69 | 4 | 13 | 359 | 372 | 374 | 367 | 346 |
 
 **Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
 
