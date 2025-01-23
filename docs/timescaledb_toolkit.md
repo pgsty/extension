@@ -40,7 +40,7 @@
 | `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 | `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 | `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -105,7 +105,7 @@ apt install postgresql-14-timescaledb-toolkit;
 | `el9` | `timescaledb-toolkit_17` | `timescaledb-toolkit_16` | `timescaledb-toolkit_15` | `timescaledb-toolkit_14` | <span class="tcred">✘</span> |
 | `d12` | `postgresql-17-timescaledb-toolkit` | `postgresql-16-timescaledb-toolkit` | `postgresql-15-timescaledb-toolkit` | `postgresql-14-timescaledb-toolkit` | <span class="tcred">✘</span> |
 | `u22` | `postgresql-17-timescaledb-toolkit` | `postgresql-16-timescaledb-toolkit` | `postgresql-15-timescaledb-toolkit` | `postgresql-14-timescaledb-toolkit` | <span class="tcred">✘</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-timescaledb-toolkit` | `postgresql-16-timescaledb-toolkit` | `postgresql-15-timescaledb-toolkit` | `postgresql-14-timescaledb-toolkit` | <span class="tcred">✘</span> |
 
 
 

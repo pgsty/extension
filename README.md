@@ -12,8 +12,9 @@ Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS d
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 384 | 116 | 195 | 69 | 4 | 6 | 362 | 379 | 381 | 369 | 349 |
-| DEB Extension | 377 | 103 | 201 | 69 | 4 | 13 | 359 | 372 | 374 | 367 | 346 |
+| RPM Extension | 383 | 116 | 194 | 69 | 4 | 7 | 363 | 378 | 380 | 368 | 349 |
+| DEB Extension | 377 | 103 | 201 | 69 | 4 | 13 | 362 | 372 | 374 | 367 | 346 |
+
 
 **Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
 

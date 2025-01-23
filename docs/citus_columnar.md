@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [citus_columnar](https://github.com/citusdata/citus) | 11.3-1 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [citus_columnar](https://github.com/citusdata/citus) | 13.0.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION citus_columnar;
 ```
-> **Comment**: conflict with hydra columnar, no pg17
+> **Comment**: conflict with hydra columnar
 -----------
 
 
@@ -58,8 +58,8 @@ CREATE EXTENSION citus_columnar;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| Distro-citus | 12.1.6 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `citus_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
-| Distro-citus | 12.1.6 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-citus` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| Distro-citus | 13.0.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `citus_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
+| Distro-citus | 13.0.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-citus` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |
 
 
 
@@ -80,6 +80,7 @@ Install `citus` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `citus` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
+dnf install citus_17*;
 dnf install citus_16*;
 dnf install citus_15*;
 dnf install citus_14*;
@@ -89,6 +90,7 @@ dnf install citus_14*;
 Install `citus` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-citus;
 apt install postgresql-16-citus;
 apt install postgresql-15-citus;
 apt install postgresql-14-citus;
@@ -99,11 +101,11 @@ apt install postgresql-14-citus;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | `citus_16*` | `citus_15*` | `citus_14*` | <span class="tcred">✘</span> |
-| `el9` | <span class="tcred">✘</span> | `citus_16*` | `citus_15*` | `citus_14*` | <span class="tcred">✘</span> |
-| `d12` | <span class="tcred">✘</span> | `postgresql-16-citus` | `postgresql-15-citus` | `postgresql-14-citus` | <span class="tcred">✘</span> |
-| `u22` | <span class="tcred">✘</span> | `postgresql-16-citus` | `postgresql-15-citus` | `postgresql-14-citus` | <span class="tcred">✘</span> |
-| `u24` | <span class="tcred">✘</span> | `postgresql-16-citus` | `postgresql-15-citus` | `postgresql-14-citus` | <span class="tcred">✘</span> |
+| `el8` | `citus_17*` | `citus_16*` | `citus_15*` | `citus_14*` | <span class="tcred">✘</span> |
+| `el9` | `citus_17*` | `citus_16*` | `citus_15*` | `citus_14*` | <span class="tcred">✘</span> |
+| `d12` | `postgresql-17-citus` | `postgresql-16-citus` | `postgresql-15-citus` | `postgresql-14-citus` | <span class="tcred">✘</span> |
+| `u22` | `postgresql-17-citus` | `postgresql-16-citus` | `postgresql-15-citus` | `postgresql-14-citus` | <span class="tcred">✘</span> |
+| `u24` | `postgresql-17-citus` | `postgresql-16-citus` | `postgresql-15-citus` | `postgresql-14-citus` | <span class="tcred">✘</span> |
 
 
 

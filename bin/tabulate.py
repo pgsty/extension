@@ -65,7 +65,7 @@ DISTRO_MISS = {
     "el7": ["pg_dbms_job", "pljava"],
     "el8": ["pg_dbms_job", "pljava"],
     "el9": ["pg_dbms_job" ],
-    "u24": ["pgml",  "topn", "timescaledb_toolkit"],
+    "u24": [],
     "u22": [],
     "u20": ["pljava"],
     "d12": [],
@@ -391,8 +391,6 @@ def process_ext(ver, distro, ext):
         package, extension = package.replace('pgaudit', 'pgaudit' + str(int(ver)+2)), alias + str(int(ver)+2)
     if name == 'postgis' and distro == 'el7': # el7 with postgis33
         package, extension = package.replace('postgis35', 'postgis33'), 'postgis33'
-    if name in ['pg_mooncake', 'citus']:
-        hide_ext = True
 
     # ubuntu 24.04 bad case
     if distro == 'u24' and name in ['pg_partman'] and ver in ['13']: # not pg_partman 12,13 for u24
@@ -775,7 +773,7 @@ def generate_extension():
         pig_install_cmd = """```bash\npig ext add %s\n```\n\n""" % name
 
         pigsty_install_preface = '\nInstall `%s` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbook:\n\n' % getcol("alias", ext)
-        if name not in ['postgis', 'citus', 'pgaudit']:
+        if name not in ['postgis', 'pgaudit']:
             pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["%s"]}'\n```\n\n""" % alias
         else:
             if name == 'postgis': pigsty_install_cmd = """```bash\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis"]}'   # postgis35, common case\n./pgsql.yml -t pg_extension -e '{"pg_extensions": ["postgis33"]}' # el7\n```\n\n"""

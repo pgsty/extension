@@ -21,17 +21,17 @@ There are 10 available extensions in this category:
 | 1860 | [pg_summarize](/pg_summarize) | 0.0.0 | [pg_summarize](/pg_summarize) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/HexaCluster/pg_summarize) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Text Summarization using LLMs. Built using pgrx |
 | 1870 | [pg_tiktoken](/pg_tiktoken) | 0.0.1 | [pg_tiktoken](/pg_tiktoken) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/kelvich/pg_tiktoken) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_tictoken: tiktoken tokenizer for use with OpenAI models in postgres |
 | 1880 | [pg4ml](/pg4ml) | 2.0 | [pg4ml](/pg4ml) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://gitee.com/guotiecheng/plpgsql_pg4ml) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Machine learning framework for PostgreSQL |
-| 1890 | [pgml](/pgml) | 2.10.0 | [pgml](/pgml) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/postgresml/postgresml) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgresML: Run AL/ML workloads with SQL interface |
+| 1890 | [pgml](/pgml) | 2.10.0 | [pgml](/pgml) | **<span class="tcblue">MIT</span>** |  | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/postgresml/postgresml) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgresML: Run AL/ML workloads with SQL interface |
 
 
 
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
-pg16: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
-pg15: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
-pg14: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
+pg17: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+pg16: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+pg15: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+pg14: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 pg13: pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 ```
 
@@ -39,10 +39,10 @@ pg13: pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml 
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
-pg16: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
-pg15: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
-pg14: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
+pg17: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+pg16: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+pg15: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+pg14: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
 pg13: pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 ```
 
@@ -50,7 +50,7 @@ pg13: pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml 
 ### Debian 12 bookworm Compatible (d12)
 
 ```yaml
-pg17: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+pg17: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 pg16: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 pg15: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 pg14: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
@@ -61,7 +61,7 @@ pg13: pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml 
 ### Ubuntu 24.04 jammy Compatible (u22)
 
 ```yaml
-pg17: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+pg17: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 pg16: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 pg15: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 pg14: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
@@ -72,10 +72,10 @@ pg13: pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml 
 ### Ubuntu 24.04 noble Compatible (u24)
 
 ```yaml
-pg17: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
-pg16: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
-pg15: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
-pg14: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+pg17: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
+pg16: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
+pg15: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
+pg14: pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 pg13: pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
 ```
 
@@ -97,29 +97,28 @@ pg13: pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml 
 | [pg_summarize](/pg_summarize) | 0.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_summarize_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Text Summarization using LLMs. Built using pgrx |
 | [pg_tiktoken](/pg_tiktoken) | 0.0.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_tiktoken_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | pg_tictoken: tiktoken tokenizer for use with OpenAI models in postgres |
 | [pg4ml](/pg4ml) | 2.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg4ml_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Machine learning framework for PostgreSQL |
-| [pgml](/pgml) | 2.10.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgml_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | PostgresML: Run AL/ML workloads with SQL interface |
 
 
 
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: pgvector_17* vchord_17 pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 pgml_17
-pg16: pgvector_16* vchord_16 pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pg4ml_16 pgml_16
-pg15: pgvector_15* vchord_15 pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pg4ml_15 pgml_15
-pg14: pgvector_14* vchord_14 pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pg4ml_14 pgml_14
-pg13: pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #vchord_13 #pg_vectorize_13 #pgml_13
+pg17: pgvector_17* vchord_17 pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17
+pg16: pgvector_16* vchord_16 pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pg4ml_16
+pg15: pgvector_15* vchord_15 pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pg4ml_15
+pg14: pgvector_14* vchord_14 pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pg4ml_14
+pg13: pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #vchord_13 #pg_vectorize_13
 ```
 
 
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: pgvector_17* vchord_17 pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 pgml_17
-pg16: pgvector_16* vchord_16 pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pg4ml_16 pgml_16
-pg15: pgvector_15* vchord_15 pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pg4ml_15 pgml_15
-pg14: pgvector_14* vchord_14 pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pg4ml_14 pgml_14
-pg13: pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #vchord_13 #pg_vectorize_13 #pgml_13
+pg17: pgvector_17* vchord_17 pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17
+pg16: pgvector_16* vchord_16 pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pg4ml_16
+pg15: pgvector_15* vchord_15 pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pg4ml_15
+pg14: pgvector_14* vchord_14 pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pg4ml_14
+pg13: pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #vchord_13 #pg_vectorize_13
 ```
 
 
@@ -140,14 +139,14 @@ pg13: pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 
 | [pg_summarize](/pg_summarize) | 0.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-summarize` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Text Summarization using LLMs. Built using pgrx |
 | [pg_tiktoken](/pg_tiktoken) | 0.0.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-tiktoken` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | pg_tictoken: tiktoken tokenizer for use with OpenAI models in postgres |
 | [pg4ml](/pg4ml) | 2.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg4ml` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Machine learning framework for PostgreSQL |
-| [pgml](/pgml) | 2.10.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgml` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | PostgresML: Run AL/ML workloads with SQL interface |
+| [pgml](/pgml) | 2.10.0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgml` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | PostgresML: Run AL/ML workloads with SQL interface |
 
 
 
 ### Debian 12 bookworm Compatible (d12)
 
 ```yaml
-pg17: postgresql-17-pgvector postgresql-17-vchord postgresql-17-pgvectorscale postgresql-17-pg-vectorize postgresql-17-similarity postgresql-17-smlar postgresql-17-pg-summarize postgresql-17-pg-tiktoken postgresql-17-pg4ml #postgresql-17-pgml
+pg17: postgresql-17-pgvector postgresql-17-vchord postgresql-17-pgvectorscale postgresql-17-pg-vectorize postgresql-17-similarity postgresql-17-smlar postgresql-17-pg-summarize postgresql-17-pg-tiktoken postgresql-17-pg4ml postgresql-17-pgml
 pg16: postgresql-16-pgvector postgresql-16-vchord postgresql-16-pgvectorscale postgresql-16-pg-vectorize postgresql-16-similarity postgresql-16-smlar postgresql-16-pg-summarize postgresql-16-pg-tiktoken postgresql-16-pg4ml postgresql-16-pgml
 pg15: postgresql-15-pgvector postgresql-15-vchord postgresql-15-pgvectorscale postgresql-15-pg-vectorize postgresql-15-similarity postgresql-15-smlar postgresql-15-pg-summarize postgresql-15-pg-tiktoken postgresql-15-pg4ml postgresql-15-pgml
 pg14: postgresql-14-pgvector postgresql-14-vchord postgresql-14-pgvectorscale postgresql-14-pg-vectorize postgresql-14-similarity postgresql-14-smlar postgresql-14-pg-summarize postgresql-14-pg-tiktoken postgresql-14-pg4ml postgresql-14-pgml
@@ -158,7 +157,7 @@ pg13: postgresql-13-pgvector postgresql-13-pgvectorscale postgresql-13-similarit
 ### Ubuntu 24.04 jammy Compatible (u22)
 
 ```yaml
-pg17: postgresql-17-pgvector postgresql-17-vchord postgresql-17-pgvectorscale postgresql-17-pg-vectorize postgresql-17-similarity postgresql-17-smlar postgresql-17-pg-summarize postgresql-17-pg-tiktoken postgresql-17-pg4ml #postgresql-17-pgml
+pg17: postgresql-17-pgvector postgresql-17-vchord postgresql-17-pgvectorscale postgresql-17-pg-vectorize postgresql-17-similarity postgresql-17-smlar postgresql-17-pg-summarize postgresql-17-pg-tiktoken postgresql-17-pg4ml postgresql-17-pgml
 pg16: postgresql-16-pgvector postgresql-16-vchord postgresql-16-pgvectorscale postgresql-16-pg-vectorize postgresql-16-similarity postgresql-16-smlar postgresql-16-pg-summarize postgresql-16-pg-tiktoken postgresql-16-pg4ml postgresql-16-pgml
 pg15: postgresql-15-pgvector postgresql-15-vchord postgresql-15-pgvectorscale postgresql-15-pg-vectorize postgresql-15-similarity postgresql-15-smlar postgresql-15-pg-summarize postgresql-15-pg-tiktoken postgresql-15-pg4ml postgresql-15-pgml
 pg14: postgresql-14-pgvector postgresql-14-vchord postgresql-14-pgvectorscale postgresql-14-pg-vectorize postgresql-14-similarity postgresql-14-smlar postgresql-14-pg-summarize postgresql-14-pg-tiktoken postgresql-14-pg4ml postgresql-14-pgml
@@ -169,10 +168,10 @@ pg13: postgresql-13-pgvector postgresql-13-pgvectorscale postgresql-13-similarit
 ### Ubuntu 24.04 noble Compatible (u24)
 
 ```yaml
-pg17: postgresql-17-pgvector postgresql-17-vchord postgresql-17-pgvectorscale postgresql-17-pg-vectorize postgresql-17-similarity postgresql-17-smlar postgresql-17-pg-summarize postgresql-17-pg-tiktoken postgresql-17-pg4ml #postgresql-17-pgml
-pg16: postgresql-16-pgvector postgresql-16-vchord postgresql-16-pgvectorscale postgresql-16-pg-vectorize postgresql-16-similarity postgresql-16-smlar postgresql-16-pg-summarize postgresql-16-pg-tiktoken postgresql-16-pg4ml #postgresql-16-pgml
-pg15: postgresql-15-pgvector postgresql-15-vchord postgresql-15-pgvectorscale postgresql-15-pg-vectorize postgresql-15-similarity postgresql-15-smlar postgresql-15-pg-summarize postgresql-15-pg-tiktoken postgresql-15-pg4ml #postgresql-15-pgml
-pg14: postgresql-14-pgvector postgresql-14-vchord postgresql-14-pgvectorscale postgresql-14-pg-vectorize postgresql-14-similarity postgresql-14-smlar postgresql-14-pg-summarize postgresql-14-pg-tiktoken postgresql-14-pg4ml #postgresql-14-pgml
+pg17: postgresql-17-pgvector postgresql-17-vchord postgresql-17-pgvectorscale postgresql-17-pg-vectorize postgresql-17-similarity postgresql-17-smlar postgresql-17-pg-summarize postgresql-17-pg-tiktoken postgresql-17-pg4ml postgresql-17-pgml
+pg16: postgresql-16-pgvector postgresql-16-vchord postgresql-16-pgvectorscale postgresql-16-pg-vectorize postgresql-16-similarity postgresql-16-smlar postgresql-16-pg-summarize postgresql-16-pg-tiktoken postgresql-16-pg4ml postgresql-16-pgml
+pg15: postgresql-15-pgvector postgresql-15-vchord postgresql-15-pgvectorscale postgresql-15-pg-vectorize postgresql-15-similarity postgresql-15-smlar postgresql-15-pg-summarize postgresql-15-pg-tiktoken postgresql-15-pg4ml postgresql-15-pgml
+pg14: postgresql-14-pgvector postgresql-14-vchord postgresql-14-pgvectorscale postgresql-14-pg-vectorize postgresql-14-similarity postgresql-14-smlar postgresql-14-pg-summarize postgresql-14-pg-tiktoken postgresql-14-pg4ml postgresql-14-pgml
 pg13: postgresql-13-pgvector postgresql-13-pgvectorscale postgresql-13-similarity postgresql-13-smlar postgresql-13-pg-summarize postgresql-13-pg-tiktoken postgresql-13-pg4ml #postgresql-13-vchord #postgresql-13-pg-vectorize #postgresql-13-pgml
 ```
 

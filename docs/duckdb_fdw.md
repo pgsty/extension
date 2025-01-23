@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [duckdb_fdw](/duckdb_fdw) |  |  |  |  |
+| [duckdb_fdw](/duckdb_fdw) | `duckdb` |  |  |  |
 
 
 

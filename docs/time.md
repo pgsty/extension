@@ -73,10 +73,10 @@ pg13: pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task p
 ### Ubuntu 24.04 noble Compatible (u24)
 
 ```yaml
-pg17: timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background #timescaledb_toolkit
-pg16: timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background #timescaledb_toolkit
-pg15: timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background #timescaledb_toolkit
-pg14: timescaledb pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background #timescaledb_toolkit
+pg17: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
+pg16: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
+pg15: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
+pg14: timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 pg13: pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background #timescaledb #timescaledb_toolkit
 ```
 
@@ -172,10 +172,10 @@ pg13: postgresql-13-pg-timeseries postgresql-13-periods postgresql-13-temporal-t
 ### Ubuntu 24.04 noble Compatible (u24)
 
 ```yaml
-pg17: postgresql-17-timescaledb-tsl postgresql-17-pg-timeseries postgresql-17-periods postgresql-17-temporal-tables postgresql-17-emaj postgresql-17-tableversion postgresql-17-cron postgresql-17-pg-task postgresql-17-pg-later postgresql-17-pg-background #postgresql-17-timescaledb-toolkit
-pg16: postgresql-16-timescaledb-tsl postgresql-16-pg-timeseries postgresql-16-periods postgresql-16-temporal-tables postgresql-16-emaj postgresql-16-tableversion postgresql-16-cron postgresql-16-pg-task postgresql-16-pg-later postgresql-16-pg-background #postgresql-16-timescaledb-toolkit
-pg15: postgresql-15-timescaledb-tsl postgresql-15-pg-timeseries postgresql-15-periods postgresql-15-temporal-tables postgresql-15-emaj postgresql-15-tableversion postgresql-15-cron postgresql-15-pg-task postgresql-15-pg-later postgresql-15-pg-background #postgresql-15-timescaledb-toolkit
-pg14: postgresql-14-timescaledb-tsl postgresql-14-pg-timeseries postgresql-14-periods postgresql-14-temporal-tables postgresql-14-emaj postgresql-14-tableversion postgresql-14-cron postgresql-14-pg-task postgresql-14-pg-later postgresql-14-pg-background #postgresql-14-timescaledb-toolkit
+pg17: postgresql-17-timescaledb-tsl postgresql-17-timescaledb-toolkit postgresql-17-pg-timeseries postgresql-17-periods postgresql-17-temporal-tables postgresql-17-emaj postgresql-17-tableversion postgresql-17-cron postgresql-17-pg-task postgresql-17-pg-later postgresql-17-pg-background
+pg16: postgresql-16-timescaledb-tsl postgresql-16-timescaledb-toolkit postgresql-16-pg-timeseries postgresql-16-periods postgresql-16-temporal-tables postgresql-16-emaj postgresql-16-tableversion postgresql-16-cron postgresql-16-pg-task postgresql-16-pg-later postgresql-16-pg-background
+pg15: postgresql-15-timescaledb-tsl postgresql-15-timescaledb-toolkit postgresql-15-pg-timeseries postgresql-15-periods postgresql-15-temporal-tables postgresql-15-emaj postgresql-15-tableversion postgresql-15-cron postgresql-15-pg-task postgresql-15-pg-later postgresql-15-pg-background
+pg14: postgresql-14-timescaledb-tsl postgresql-14-timescaledb-toolkit postgresql-14-pg-timeseries postgresql-14-periods postgresql-14-temporal-tables postgresql-14-emaj postgresql-14-tableversion postgresql-14-cron postgresql-14-pg-task postgresql-14-pg-later postgresql-14-pg-background
 pg13: postgresql-13-pg-timeseries postgresql-13-periods postgresql-13-temporal-tables postgresql-13-emaj postgresql-13-tableversion postgresql-13-cron postgresql-13-pg-task postgresql-13-pg-later postgresql-13-pg-background #postgresql-13-timescaledb-tsl #postgresql-13-timescaledb-toolkit
 ```
 

@@ -1,7 +1,7 @@
 # pg_mooncake
 
 
-> [pg_mooncake](https://github.com/Mooncake-Labs/pg_mooncake): PostgreSQL列式存储表
+> [pg_mooncake](https://github.com/Mooncake-Labs/pg_mooncake): Columnstore Table in Postgres
 >
 > https://github.com/Mooncake-Labs/pg_mooncake
 
@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [pg_mooncake](/pg_mooncake) |  |  |  |  |
+| [pg_mooncake](/pg_mooncake) | `duckdb` |  |  |  |
 
 
 
@@ -45,7 +45,7 @@
 
 
 
-
+> **Comment**: conflict on libduckdb with pg_duckdb/duckdb_fdw
 -----------
 
 

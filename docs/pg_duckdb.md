@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [pg_duckdb](/pg_duckdb) |  |  |  |  |
+| [pg_duckdb](/pg_duckdb) | `duckdb` |  |  |  |
 
 
 
@@ -53,7 +53,7 @@ shared_preload_libraries = 'pg_duckdb'; # add this extension to postgresql.conf
 ```sql
 CREATE EXTENSION pg_duckdb;
 ```
-> **Comment**: broken on el8 (libstdc++ too low), conflict with duckdb_fdw
+> **Comment**: conflict with pg_mooncake & duckdb_fdw, broken on el8 due to c++ too low
 -----------
 
 

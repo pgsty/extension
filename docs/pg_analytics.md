@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [pg_analytics](/pg_analytics) | `pgrx` | `paradedb` |  |  |
+| [pg_analytics](/pg_analytics) | `pgrx`, `duckdb` | `paradedb` |  |  |
 
 
 
