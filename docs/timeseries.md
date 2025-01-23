@@ -9,7 +9,7 @@
 
 
 
-[TIME](/time) extensions: [`timescaledb`](/timescaledb), [`timeseries`](/timeseries), [`periods`](/periods), [`temporal_tables`](/temporal_tables), [`emaj`](/emaj), [`table_version`](/table_version), [`pg_cron`](/pg_cron), [`pg_task`](/pg_task), [`pg_later`](/pg_later), [`pg_background`](/pg_background)
+[TIME](/time) extensions: [`timescaledb`](/timescaledb), [`timescaledb_toolkit`](/timescaledb_toolkit), [`timeseries`](/timeseries), [`periods`](/periods), [`temporal_tables`](/temporal_tables), [`emaj`](/emaj), [`table_version`](/table_version), [`pg_cron`](/pg_cron), [`pg_task`](/pg_task), [`pg_later`](/pg_later), [`pg_background`](/pg_background)
 
 
 -------
@@ -36,11 +36,11 @@
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `el9` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `d12` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u22` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
-| `u24` | <span class="tcred">✘</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
+| `el8` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `el9` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `d12` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u22` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> |
+| `u24` | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | <span class="tcred">✘</span> |
 
 
 
@@ -58,8 +58,8 @@ CREATE EXTENSION timeseries CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_timeseries_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `hydra_$v`, `pg_cron_$v`, `pg_ivm_$v`, `pg_partman_$v` |
-| [DEB](/deb) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-timeseries` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [RPM](/rpm) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_timeseries_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | `hydra_$v`, `pg_cron_$v`, `pg_ivm_$v`, `pg_partman_$v` |
+| [DEB](/deb) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-timeseries` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 
@@ -80,6 +80,7 @@ Install `pg_timeseries` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `pg_timeseries` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
+dnf install pg_timeseries_17;
 dnf install pg_timeseries_16;
 dnf install pg_timeseries_15;
 dnf install pg_timeseries_14;
@@ -90,6 +91,7 @@ dnf install pg_timeseries_13;
 Install `pg_timeseries` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
+apt install postgresql-17-pg-timeseries;
 apt install postgresql-16-pg-timeseries;
 apt install postgresql-15-pg-timeseries;
 apt install postgresql-14-pg-timeseries;
@@ -101,11 +103,11 @@ apt install postgresql-13-pg-timeseries;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | <span class="tcred">✘</span> | `pg_timeseries_16` | `pg_timeseries_15` | `pg_timeseries_14` | `pg_timeseries_13` |
-| `el9` | <span class="tcred">✘</span> | `pg_timeseries_16` | `pg_timeseries_15` | `pg_timeseries_14` | `pg_timeseries_13` |
-| `d12` | <span class="tcred">✘</span> | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | `postgresql-13-pg-timeseries` |
-| `u22` | <span class="tcred">✘</span> | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | `postgresql-13-pg-timeseries` |
-| `u24` | <span class="tcred">✘</span> | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | <span class="tcred">✘</span> |
+| `el8` | `pg_timeseries_17` | `pg_timeseries_16` | `pg_timeseries_15` | `pg_timeseries_14` | `pg_timeseries_13` |
+| `el9` | `pg_timeseries_17` | `pg_timeseries_16` | `pg_timeseries_15` | `pg_timeseries_14` | `pg_timeseries_13` |
+| `d12` | `postgresql-17-pg-timeseries` | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | `postgresql-13-pg-timeseries` |
+| `u22` | `postgresql-17-pg-timeseries` | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | `postgresql-13-pg-timeseries` |
+| `u24` | `postgresql-17-pg-timeseries` | `postgresql-16-pg-timeseries` | `postgresql-15-pg-timeseries` | `postgresql-14-pg-timeseries` | <span class="tcred">✘</span> |
 
 
 
