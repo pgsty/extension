@@ -1,9 +1,9 @@
 # omni_web
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Common web stack primitives
+> [omnigres](https://docs.omnigres.org/omni_web/intro/): Common web stack primitives
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_web/intro/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_web](https://github.com/omnigres/omnigres) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_web](https://docs.omnigres.org/omni_web/intro/) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

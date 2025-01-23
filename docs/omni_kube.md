@@ -1,9 +1,9 @@
 # omni_kube
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Kubernetes (k8s) integration
+> [omnigres](https://docs.omnigres.org/omni_kube/api/): Kubernetes (k8s) integration
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_kube/api/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_kube](https://github.com/omnigres/omnigres) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_kube](https://docs.omnigres.org/omni_kube/api/) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

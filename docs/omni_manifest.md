@@ -1,9 +1,9 @@
 # omni_manifest
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Package installation manifests
+> [omnigres](https://docs.omnigres.org/omni_manifest/usage/): Package installation manifests
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_manifest/usage/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_manifest](https://github.com/omnigres/omnigres) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_manifest](https://docs.omnigres.org/omni_manifest/usage/) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

@@ -1,9 +1,9 @@
 # omni_aws
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Amazon Web Services APIs (S3)
+> [omnigres](https://docs.omnigres.org/omni_aws/s3/): Amazon Web Services APIs (S3)
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_aws/s3/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_aws](https://github.com/omnigres/omnigres) | 0.1.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_aws](https://docs.omnigres.org/omni_aws/s3/) | 0.1.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

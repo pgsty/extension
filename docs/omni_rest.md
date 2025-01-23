@@ -1,9 +1,9 @@
 # omni_rest
 
 
-> [omnigres](https://github.com/omnigres/omnigres): REST API toolkit (with PostgREST support)
+> [omnigres](https://docs.omnigres.org/omni_rest/protocols/): REST API toolkit (with PostgREST support)
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_rest/protocols/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_rest](https://github.com/omnigres/omnigres) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_rest](https://docs.omnigres.org/omni_rest/protocols/) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

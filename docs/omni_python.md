@@ -1,9 +1,9 @@
 # omni_python
 
 
-> [omnigres](https://github.com/omnigres/omnigres): First-class Python support
+> [omnigres](https://docs.omnigres.org/omni_python/intro/): First-class Python support
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_python/intro/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_python](https://github.com/omnigres/omnigres) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_python](https://docs.omnigres.org/omni_python/intro/) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

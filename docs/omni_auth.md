@@ -1,9 +1,9 @@
 # omni_auth
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Basic session management
+> [omnigres](https://docs.omnigres.org/omni_auth/basics/): Basic session management
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_auth/basics/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_auth](https://github.com/omnigres/omnigres) | 0.1.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_auth](https://docs.omnigres.org/omni_auth/basics/) | 0.1.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

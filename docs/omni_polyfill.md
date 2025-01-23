@@ -1,9 +1,9 @@
 # omni_polyfill
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Postgres API polyfills
+> [omnigres](https://docs.omnigres.org/omni_polyfill/polyfills/): Postgres API polyfills
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_polyfill/polyfills/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_polyfill](https://github.com/omnigres/omnigres) | 0.2.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_polyfill](https://docs.omnigres.org/omni_polyfill/polyfills/) | 0.2.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

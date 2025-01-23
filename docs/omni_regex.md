@@ -1,9 +1,9 @@
 # omni_regex
 
 
-> [omnigres](https://github.com/omnigres/omnigres): PCRE-compatible regular expressions
+> [omnigres](https://docs.omnigres.org/omni_regex/regex/): PCRE-compatible regular expressions
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_regex/regex/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_regex](https://github.com/omnigres/omnigres) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_regex](https://docs.omnigres.org/omni_regex/regex/) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

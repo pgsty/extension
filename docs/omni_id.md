@@ -1,9 +1,9 @@
 # omni_id
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Identity types
+> [omnigres](https://docs.omnigres.org/omni_id/identity_type/): Identity types
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_id/identity_type/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_id](https://github.com/omnigres/omnigres) | 0.4.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_id](https://docs.omnigres.org/omni_id/identity_type/) | 0.4.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

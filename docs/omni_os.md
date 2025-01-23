@@ -1,9 +1,9 @@
 # omni_os
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Operating system integration
+> [omnigres](https://docs.omnigres.org/omni_os/intro/): Operating system integration
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_os/intro/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_os](https://github.com/omnigres/omnigres) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_os](https://docs.omnigres.org/omni_os/intro/) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

@@ -1,9 +1,9 @@
 # omni_test
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Testing framework
+> [omnigres](https://docs.omnigres.org/omni_test/guide/): Testing framework
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_test/guide/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_test](https://github.com/omnigres/omnigres) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_test](https://docs.omnigres.org/omni_test/guide/) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

@@ -1,9 +1,9 @@
 # omni_http
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Basic HTTP types
+> [omnigres](https://docs.omnigres.org/omni_httpc/reference/): Basic HTTP types
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_httpc/reference/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_http](https://github.com/omnigres/omnigres) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_http](https://docs.omnigres.org/omni_httpc/reference/) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

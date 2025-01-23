@@ -1,9 +1,9 @@
 # omni_var
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Scoped variables
+> [omnigres](https://docs.omnigres.org/omni_var/variables/): Scoped variables
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_var/variables/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_var](https://github.com/omnigres/omnigres) | 0.3.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_var](https://docs.omnigres.org/omni_var/variables/) | 0.3.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

@@ -1,9 +1,9 @@
 # omni_schema
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Advanced schema management tooling
+> [omnigres](https://docs.omnigres.org/omni_schema/reference/): Advanced schema management tooling
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_schema/reference/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_schema](https://github.com/omnigres/omnigres) | 0.2.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_schema](https://docs.omnigres.org/omni_schema/reference/) | 0.2.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

@@ -1,9 +1,9 @@
 # omni_mimetypes
 
 
-> [omnigres](https://github.com/omnigres/omnigres): MIME types
+> [omnigres](https://docs.omnigres.org/omni_mimetypes/reference/): MIME types
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_mimetypes/reference/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_mimetypes](https://github.com/omnigres/omnigres) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_mimetypes](https://docs.omnigres.org/omni_mimetypes/reference/) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

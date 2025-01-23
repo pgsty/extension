@@ -1,9 +1,9 @@
 # omni_types
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Advanced types
+> [omnigres](https://docs.omnigres.org/omni_types/function_signature_types/): Advanced types
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_types/function_signature_types/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_types](https://github.com/omnigres/omnigres) | 0.2.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_types](https://docs.omnigres.org/omni_types/function_signature_types/) | 0.2.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

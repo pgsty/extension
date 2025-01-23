@@ -1,9 +1,9 @@
 # omni_service
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Service management
+> [omnigres](https://docs.omnigres.org/omni_service/management/): Service management
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_service/management/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_service](https://github.com/omnigres/omnigres) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_service](https://docs.omnigres.org/omni_service/management/) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

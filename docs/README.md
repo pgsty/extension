@@ -137,7 +137,10 @@ Here are some bad cases and limitation for above distros:
 - [`jdbc_fdw`](https://ext.pigsty.io/#/jdbc_fdw): `el:arm:*`
 - [`pg_partman`](https://ext.pigsty.io/#/pg_partman): `u24:*:13`
 - [`wiltondb`](https://ext.pigsty.io/#/wiltondb): `d12:*:*`
-
+- `citus` and `hydra` are mutually exclusive
+- `pg_duckdb` and `pg_mooncake` are mutually exclusive
+- `pg_duckdb` will invalidate `duckdb_fdw`
+- `pg_anon` the new 2.0 rust version is conflict with previous 1.x C version
 
 ----------------
 

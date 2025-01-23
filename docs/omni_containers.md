@@ -1,9 +1,9 @@
 # omni_containers
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Docker container management
+> [omnigres](https://docs.omnigres.org/omni_containers/intro/): Docker container management
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_containers/intro/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_containers](https://github.com/omnigres/omnigres) | 0.2.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_containers](https://docs.omnigres.org/omni_containers/intro/) | 0.2.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

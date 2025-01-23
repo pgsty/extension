@@ -1,9 +1,9 @@
 # omni_vfs
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Virtual File System
+> [omnigres](https://docs.omnigres.org/omni_vfs/reference/): Virtual File System
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_vfs/reference/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_vfs](https://github.com/omnigres/omnigres) | 0.2.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_vfs](https://docs.omnigres.org/omni_vfs/reference/) | 0.2.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

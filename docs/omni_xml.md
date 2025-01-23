@@ -1,9 +1,9 @@
 # omni_xml
 
 
-> [omnigres](https://github.com/omnigres/omnigres): XML toolkit
+> [omnigres](https://docs.omnigres.org/omni_xml/overview/): XML toolkit
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_xml/overview/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_xml](https://github.com/omnigres/omnigres) | 0.1.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_xml](https://docs.omnigres.org/omni_xml/overview/) | 0.1.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

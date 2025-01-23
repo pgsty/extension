@@ -1,9 +1,9 @@
 # omni_credentials
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Application credential management
+> [omnigres](https://docs.omnigres.org/omni_credentials/credentials/): Application credential management
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_credentials/credentials/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_credentials](https://github.com/omnigres/omnigres) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_credentials](https://docs.omnigres.org/omni_credentials/credentials/) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

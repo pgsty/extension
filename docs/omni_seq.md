@@ -1,9 +1,9 @@
 # omni_seq
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Distributed integer sequences
+> [omnigres](https://docs.omnigres.org/omni_seq/id/): Distributed integer sequences
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_seq/id/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_seq](https://github.com/omnigres/omnigres) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_seq](https://docs.omnigres.org/omni_seq/id/) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

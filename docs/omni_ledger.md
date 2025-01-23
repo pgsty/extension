@@ -1,9 +1,9 @@
 # omni_ledger
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Financial ledger
+> [omnigres](https://docs.omnigres.org/omni_ledger/basics/): Financial ledger
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_ledger/basics/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_ledger](https://github.com/omnigres/omnigres) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_ledger](https://docs.omnigres.org/omni_ledger/basics/) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

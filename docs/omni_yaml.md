@@ -1,9 +1,9 @@
 # omni_yaml
 
 
-> [omnigres](https://github.com/omnigres/omnigres): YAML toolkit
+> [omnigres](https://docs.omnigres.org/omni_yaml/yaml/): YAML toolkit
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_yaml/yaml/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_yaml](https://github.com/omnigres/omnigres) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_yaml](https://docs.omnigres.org/omni_yaml/yaml/) | 0.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

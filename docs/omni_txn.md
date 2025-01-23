@@ -1,9 +1,9 @@
 # omni_txn
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Transaction management
+> [omnigres](https://docs.omnigres.org/omni_txn/linearize/): Transaction management
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_txn/linearize/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_txn](https://github.com/omnigres/omnigres) | 0.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_txn](https://docs.omnigres.org/omni_txn/linearize/) | 0.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

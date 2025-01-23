@@ -1,9 +1,9 @@
 # omni_session
 
 
-> [omnigres](https://github.com/omnigres/omnigres): Session management
+> [omnigres](https://docs.omnigres.org/omni_session/session_management/): Session management
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_session/session_management/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_session](https://github.com/omnigres/omnigres) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_session](https://docs.omnigres.org/omni_session/session_management/) | 0.1.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 

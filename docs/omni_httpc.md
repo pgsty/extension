@@ -1,9 +1,9 @@
 # omni_httpc
 
 
-> [omnigres](https://github.com/omnigres/omnigres): HTTP client
+> [omnigres](https://docs.omnigres.org/omni_httpc/reference/): HTTP client
 >
-> https://github.com/omnigres/omnigres
+> https://docs.omnigres.org/omni_httpc/reference/
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [omni_httpc](https://github.com/omnigres/omnigres) | 0.1.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [omni_httpc](https://docs.omnigres.org/omni_httpc/reference/) | 0.1.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
