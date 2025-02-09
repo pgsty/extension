@@ -6,19 +6,27 @@ Extensions to be included and extensions will not be included
 
 ## TODO
 
-**Working in Progress**:
+**TBD**:
 
 - [pgai](https://github.com/timescale/pgai)
 - [pg-rag](https://github.com/nearform/pg-rag)
 - [onesparse](https://github.com/OneSparse/OneSparse)
-- [omnigres](https://omnigres.com/)
 - [synchdb](https://github.com/Hornetlabs/synchdb) (break deb packages)
-- [vchord-bm25](https://github.com/tensorchord/VectorChord-bm25)
 - [orioledb](https://github.com/orioledb/orioledb)
-- prometheus_fdw https://github.com/tembo-io/prometheus_fdw/
 
-**DONE**
+**Recently Added**:
 
+- [omnigres](https://omnigres.com/)
+- [pg_documentdb_core](https://github.com/microsoft/documentdb/tree/main/pg_documentdb_core), and ferretdb
+- [pg_tracing](https://github.com/DataDog/pg_tracing) 0.1.2
+- [pg_curl](https://github.com/RekGRpth/pg_curl) 2.4
+- [pgxicor](https://github.com/Florents-Tselai/pgxicor) 0.1.0
+- [sparql](https://github.com/lacanoid/pgsparql) 1.0
+- [pgjq](https://github.com/Florents-Tselai/pgJQ) 0.1.0
+- [hashtypes](https://github.com/adjust/hashtypes/) 0.1.5
+- [db_migrator](https://github.com/cybertec-postgresql/db_migrator) 1.0.0
+- [vchord_bm25](https://github.com/tensorchord/VectorChord-bm25) (vchord_bm25) 0.1.0
+- [prometheus_fdw](https://github.com/tembo-io/prometheus_fdw/) 0.2.1
 - [pg_task](https://github.com/RekGRpth/pg_task)
 - [pg_readme](https://github.com/bigsmoke/pg_readme)
 - [vasco](https://github.com/Florents-Tselai/vasco) Maximal Information Coefficient (MIC) Extension for Postgres C GPL-3.0 FUNC
@@ -32,14 +40,8 @@ Extensions to be included and extensions will not be included
 **Waiting on PostgreSQL 17 support**:
 
 - [plprql](https://github.com/kaspermarstal/plprql): wait on pg17
-- [timescaledb_toolkit](https://github.com/timescale/timescaledb-toolkit): [pg17 support](https://github.com/timescale/timescaledb-toolkit/issues/813), [ubuntu noble support](https://github.com/timescale/timescaledb-toolkit/issues/823)
-- [citus](https://github.com/citusdata/citus) / citus_columnar: 
 - [hydra](https://github.com/hydradatabase/hydra): waiting on citus_columnar pg17 support
-- [age](https://github.com/apache/age) missing EL
-- [pgml](https://github.com/postgresml/postgresml)
-- rdkit (u24 has this rdkit)
-- [pg_store_plans](https://github.com/ossc-db/pg_store_plans): wait on pg17
-- powa
+- [age](https://github.com/apache/age) missing EL packages
 - pg_tde
 - odbc_fdw
 - jdbc_fdw
@@ -47,17 +49,15 @@ Extensions to be included and extensions will not be included
 - mongo_fdw
 - kafka_fdw
 - wal2mongo
-- pg_bulkload
-- wiltondb
 - [upid](https://github.com/carderne/upid): wait on pg17 https://github.com/carderne/upid/issues
+- [pg_kaboom](https://github.com/pgguru/pg_kaboom/)
+- logfmt
+- wiltondb
 
+**Waiting on License Update**:
 
-**Waiting on missing Ubuntu 24.04 support**:
+- [jsonb_apply](https://github.com/Florents-Tselai/jsonb_apply) 0.1.0
 
-- pgml
-- topn
-- citus
-- timescaledb_toolkit
 
 **Porting missing RPMs from DEB**:
 
@@ -92,6 +92,8 @@ Extensions to be included and extensions will not be included
 
 ## Candidate
 
+- [dsef](https://github.com/ardentperf/dsef/)
+- [pg_mustach](https://github.com/RekGRpth/pg_mustach) 1.0.0
 - is_jsonb_valid https://github.com/furstenheim/is_jsonb_valid
 - pg_kafka https://github.com/xstevens/pg_kafka
 - pg_jieba https://github.com/jaiminpan/pg_jieba
@@ -109,6 +111,8 @@ Extensions to be included and extensions will not be included
 - pg_recall https://github.com/mreithub/pg_recall
 - pgfsm https://github.com/michelp/pgfsm
 - pg_trgm pro https://github.com/postgrespro/pg_trgm_pro
+- weighted_mean https://github.com/Kozea/weighted_mean
+- kmeans https://github.com/umitanuki/kmeans-postgresql
 
 Resource:
 
@@ -144,8 +148,6 @@ Resource:
 - pg_top: retired due to too much trouble
 - pg_timeit: retired due incompatible on arm64
 - vacuumlo & oid2name: binary command, actually they are not extensions
-- timescaledb_toolkit: remove due to not align with major distros (maybe added back later)
-- pg_mooncake: remove due to conflict with pg_duckdb and not actively maintained
 - pgdd: remove due to not actively maintained and legacy pgrx version
 
 
@@ -158,11 +160,11 @@ Resource:
 - pg_telemetry, we already have better observability
 - pgx_ulid, https://github.com/pksunkara/pgx_ulid, already covered by pg_idkit (MIT, but RUST)
 - embedding: obsolete
-- FEAT zson https://github.com/postgrespro/zson MIT C (too old)
-- GIS pghydro https://github.com/pghydro/pghydro C GPL-2.0 6.6 (no makefile)
-- https://github.com/Zeleo/pg_natural_sort_order (too old)
-- https://github.com/postgrespro/pg_query_state
-- https://github.com/no0p/pgsampler
+- zson https://github.com/postgrespro/zson MIT C (too old)
+- pghydro https://github.com/pghydro/pghydro C GPL-2.0 6.6 (no makefile)
+- pg_natural_sort_order https://github.com/Zeleo/pg_natural_sort_order (too old)
+- pg_query_state https://github.com/postgrespro/pg_query_state
+- pgsampler https://github.com/no0p/pgsampler
 - pg_lz4 https://github.com/zilder/pg_lz4
 - pg_amqp https://github.com/omniti-labs/pg_amqp
 - tinyint https://github.com/umitanuki/tinyint-postgresql
