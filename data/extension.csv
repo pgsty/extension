@@ -172,7 +172,7 @@ id,name,alias,category,lead,rpm_repo,rpm_pkg,rpm_pg,deb_repo,deb_pkg,deb_pg
 3720,pg_rational,pg_rational,TYPE,t,PIGSTY,pg_rational_$v*,"{17,16,15,14,13}",PGDG,postgresql-$v-rational,"{17,16,15,14,13}"
 3730,uint,pguint,TYPE,t,PIGSTY,pguint_$v*,"{17,16,15,14,13}",PIGSTY,postgresql-$v-pguint,"{17,16,15,14,13}"
 3740,uint128,pg_uint128,TYPE,t,PIGSTY,pg_uint128_$v*,"{17,16,15,14,13}",PIGSTY,postgresql-$v-pg-uint128,"{17,16,15,14,13}"
-3750,hashtypes,hashtypes,TYPE,t,PIGSTY,hashtypes_$v*,"{17,16,15,14,13}",PIGSTY,postgresql-$v-hashtypes,"{17,16,15,14,13}"
+3750,hashtypes,hashtypes,TYPE,t,PIGSTY,hashtypes_$v*,"{17,16,15,14}",PIGSTY,postgresql-$v-hashtypes,"{17,16,15,14}"
 3820,ip4r,ip4r,TYPE,t,PGDG,ip4r_$v*,"{17,16,15,14,13}",PGDG,postgresql-$v-ip4r,"{17,16,15,14,13}"
 3830,pg_duration,pg_duration,TYPE,t,PIGSTY,pg_duration_$v*,{17},PIGSTY,postgresql-$v-pg-duration,{17}
 3840,uri,pg_uri,TYPE,t,PIGSTY,pg_uri_$v*,"{17,16,15,14,13}",PIGSTY,postgresql-$v-pg-uri,"{17,16,15,14,13}"
@@ -194,7 +194,7 @@ id,name,alias,category,lead,rpm_repo,rpm_pkg,rpm_pg,deb_repo,deb_pkg,deb_pg
 4020,http,pg_http,UTIL,t,PGDG,pgsql_http_$v*,"{17,16,15,14,13}",PGDG,postgresql-$v-http,"{17,16,15,14,13}"
 4030,pg_net,pg_net,UTIL,t,PIGSTY,pg_net_$v*,"{17,16,15,14,13}",PIGSTY,postgresql-$v-pg-net,"{17,16,15,14,13}"
 4040,pg_curl,pg_curl,UTIL,t,PIGSTY,pg_curl_$v*,"{17,16,15,14,13}",PIGSTY,postgresql-$v-pg-curl,"{17,16,15,14,13}"
-4050,pgjq,pgjq,UTIL,t,PIGSTY,pgjq_$v*,"{17,16,15,14,13}",PIGSTY,postgresql-$v-pgjq,"{17,16,15,14,13}"
+4050,pgjq,pgjq,UTIL,t,PIGSTY,pgjq_$v*,"{17,16,15,14}",PIGSTY,postgresql-$v-pgjq,"{17,16,15,14}"
 4060,pgjwt,pgjwt,UTIL,t,PIGSTY,pgjwt_$v,"{17,16,15,14,13}",PIGSTY,postgresql-$v-pgjwt,"{17,16,15,14,13}"
 4070,pg_smtp_client,pg_smtp_client,UTIL,t,PIGSTY,pg_smtp_client_$v,"{17,16,15,14}",PIGSTY,postgresql-$v-pg-smtp-client,"{17,16,15,14}"
 4080,pg_html5_email_address,pg_html5_email_address,UTIL,t,PIGSTY,pg_html5_email_address_$v,"{17,16,15,14,13}",PIGSTY,postgresql-$v-pg-html5-email-address,"{17,16,15,14,13}"

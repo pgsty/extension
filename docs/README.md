@@ -12,8 +12,8 @@ Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS d
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 393 | 116 | 204 | 69 | 4 | 7 | 375 | 388 | 390 | 376 | 356 |
-| DEB Extension | 387 | 103 | 211 | 69 | 4 | 13 | 374 | 382 | 384 | 375 | 353 |
+| RPM Extension | 393 | 116 | 204 | 69 | 4 | 7 | 375 | 388 | 390 | 376 | 354 |
+| DEB Extension | 387 | 103 | 211 | 69 | 4 | 13 | 374 | 382 | 384 | 375 | 351 |
 
 
 
