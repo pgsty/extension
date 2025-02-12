@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pg_jobmon](https://github.com/omniti-labs/pg_jobmon) | 1.4.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
+| [pg_jobmon](https://github.com/omniti-labs/pg_jobmon) | 1.4.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
@@ -58,7 +58,7 @@ CREATE EXTENSION pg_jobmon CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.4.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_jobmon_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm) | 1.4.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_jobmon_$v` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 | [DEB](/deb) | 1.4.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-jobmon` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
@@ -80,11 +80,11 @@ Install `pg_jobmon` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pl
 Install `pg_jobmon` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pg_jobmon_17*;
-dnf install pg_jobmon_16*;
-dnf install pg_jobmon_15*;
-dnf install pg_jobmon_14*;
-dnf install pg_jobmon_13*;
+dnf install pg_jobmon_17;
+dnf install pg_jobmon_16;
+dnf install pg_jobmon_15;
+dnf install pg_jobmon_14;
+dnf install pg_jobmon_13;
 ```
 
 
@@ -103,8 +103,8 @@ apt install postgresql-13-pg-jobmon;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_jobmon_17*` | `pg_jobmon_16*` | `pg_jobmon_15*` | `pg_jobmon_14*` | `pg_jobmon_13*` |
-| `el9` | `pg_jobmon_17*` | `pg_jobmon_16*` | `pg_jobmon_15*` | `pg_jobmon_14*` | `pg_jobmon_13*` |
+| `el8` | `pg_jobmon_17` | `pg_jobmon_16` | `pg_jobmon_15` | `pg_jobmon_14` | `pg_jobmon_13` |
+| `el9` | `pg_jobmon_17` | `pg_jobmon_16` | `pg_jobmon_15` | `pg_jobmon_14` | `pg_jobmon_13` |
 | `d12` | `postgresql-17-pg-jobmon` | `postgresql-16-pg-jobmon` | `postgresql-15-pg-jobmon` | `postgresql-14-pg-jobmon` | `postgresql-13-pg-jobmon` |
 | `u22` | `postgresql-17-pg-jobmon` | `postgresql-16-pg-jobmon` | `postgresql-15-pg-jobmon` | `postgresql-14-pg-jobmon` | `postgresql-13-pg-jobmon` |
 | `u24` | `postgresql-17-pg-jobmon` | `postgresql-16-pg-jobmon` | `postgresql-15-pg-jobmon` | `postgresql-14-pg-jobmon` | `postgresql-13-pg-jobmon` |

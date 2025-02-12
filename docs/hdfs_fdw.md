@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [hdfs_fdw](https://github.com/EnterpriseDB/hdfs_fdw) | 2.0.5 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  |  |
+| [hdfs_fdw](https://github.com/EnterpriseDB/hdfs_fdw) | 2.0.5 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |
 
 
 

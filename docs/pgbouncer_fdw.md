@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pgbouncer_fdw](https://github.com/CrunchyData/pgbouncer_fdw) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |
+| [pgbouncer_fdw](https://github.com/CrunchyData/pgbouncer_fdw) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | `SQL` |
 
 
 
@@ -58,7 +58,7 @@ CREATE EXTENSION pgbouncer_fdw;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgbouncer_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pgbouncer_fdw_$v` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 
@@ -79,11 +79,11 @@ Install `pgbouncer_fdw` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/
 Install `pgbouncer_fdw` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pgbouncer_fdw_17*;
-dnf install pgbouncer_fdw_16*;
-dnf install pgbouncer_fdw_15*;
-dnf install pgbouncer_fdw_14*;
-dnf install pgbouncer_fdw_13*;
+dnf install pgbouncer_fdw_17;
+dnf install pgbouncer_fdw_16;
+dnf install pgbouncer_fdw_15;
+dnf install pgbouncer_fdw_14;
+dnf install pgbouncer_fdw_13;
 ```
 
 
@@ -91,8 +91,8 @@ dnf install pgbouncer_fdw_13*;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pgbouncer_fdw_17*` | `pgbouncer_fdw_16*` | `pgbouncer_fdw_15*` | `pgbouncer_fdw_14*` | `pgbouncer_fdw_13*` |
-| `el9` | `pgbouncer_fdw_17*` | `pgbouncer_fdw_16*` | `pgbouncer_fdw_15*` | `pgbouncer_fdw_14*` | `pgbouncer_fdw_13*` |
+| `el8` | `pgbouncer_fdw_17` | `pgbouncer_fdw_16` | `pgbouncer_fdw_15` | `pgbouncer_fdw_14` | `pgbouncer_fdw_13` |
+| `el9` | `pgbouncer_fdw_17` | `pgbouncer_fdw_16` | `pgbouncer_fdw_15` | `pgbouncer_fdw_14` | `pgbouncer_fdw_13` |
 | `d12` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `u22` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |
 | `u24` | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> | <span class="tcred">✘</span> |

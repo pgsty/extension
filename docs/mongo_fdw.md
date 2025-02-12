@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [mongo_fdw](https://github.com/EnterpriseDB/mongo_fdw) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** |  |  |
+| [mongo_fdw](https://github.com/EnterpriseDB/mongo_fdw) | 1.1 | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |
 
 
 

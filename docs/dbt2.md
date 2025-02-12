@@ -1,9 +1,9 @@
 # dbt2
 
 
-> [dbt2](https://github.com/nuodb/dbt2/tree/master): OSDL-DBT-2 test kit
+> [dbt2](https://github.com/osdldbt/dbt2): OSDL-DBT-2 test kit
 >
-> https://github.com/nuodb/dbt2/tree/master
+> https://github.com/osdldbt/dbt2
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [dbt2](https://github.com/nuodb/dbt2/tree/master) | 0.45.0 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** |  |  |
+| [dbt2](https://github.com/osdldbt/dbt2) | 0.45.0 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |
 
 
 

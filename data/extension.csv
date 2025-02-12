@@ -104,7 +104,7 @@ id,name,alias,category,lead,rpm_repo,rpm_pkg,rpm_pg,deb_repo,deb_pkg,deb_pg
 2731,omni_web,omnigres,FEAT,f,PIGSTY,omnigres_$v,"{17,16,15,14,13}",PIGSTY,postgresql-$v-omnigres,"{17,16,15,14,13}"
 2732,omni_xml,omnigres,FEAT,f,PIGSTY,omnigres_$v,"{17,16,15,14,13}",PIGSTY,postgresql-$v-omnigres,"{17,16,15,14,13}"
 2733,omni_yaml,omnigres,FEAT,f,PIGSTY,omnigres_$v,"{17,16,15,14,13}",PIGSTY,postgresql-$v-omnigres,"{17,16,15,14,13}"
-2740,documentdb_core,pg_documentdb_core,FEAT,t,PIGSTY,pg_documentdb_core_$v*,"{17,16,15}",PIGSTY,postgresql-$v-pg-documentdb-core,"{17,16,15}"
+2740,documentdb_core,pg_documentdb_core,FEAT,t,PIGSTY,pg_documentdb_core_$v*,"{17,16,15}",PIGSTY,postgresql-$v-documentdb-core,"{17,16,15}"
 2760,age,age,FEAT,t,PIGSTY,apache-age_$v*,"{16,15}",PGDG,postgresql-$v-age,"{17,16,15,14,13}"
 2770,hll,hll,FEAT,t,PGDG,hll_$v*,"{17,16,15,14,13}",PGDG,postgresql-$v-hll,"{17,16,15,14,13}"
 2780,rum,rum,FEAT,t,PGDG,rum_$v,"{17,16,15,14,13}",PGDG,postgresql-$v-rum,"{17,16,15,14,13}"

@@ -9,7 +9,7 @@
 
 
 
-[STAT](/stat) extensions: [`pg_profile`](/pg_profile), [`pg_show_plans`](/pg_show_plans), [`pg_stat_kcache`](/pg_stat_kcache), [`pg_stat_monitor`](/pg_stat_monitor), [`pg_qualstats`](/pg_qualstats), [`pg_store_plans`](/pg_store_plans), [`pg_track_settings`](/pg_track_settings), [`pg_wait_sampling`](/pg_wait_sampling), [`system_stats`](/system_stats), [`meta`](/meta), [`pgnodemx`](/pgnodemx), [`pg_proctab`](/pg_proctab), [`pg_sqlog`](/pg_sqlog), [`bgw_replstatus`](/bgw_replstatus), [`pgmeminfo`](/pgmeminfo), [`toastinfo`](/toastinfo), [`explain_ui`](/explain_ui), [`pg_relusage`](/pg_relusage), [`pagevis`](/pagevis), [`powa`](/powa), [`pageinspect`](/pageinspect), [`pgrowlocks`](/pgrowlocks), [`sslinfo`](/sslinfo), [`pg_buffercache`](/pg_buffercache), [`pg_walinspect`](/pg_walinspect), [`pg_freespacemap`](/pg_freespacemap), [`pg_visibility`](/pg_visibility), [`pgstattuple`](/pgstattuple), [`auto_explain`](/auto_explain), [`pg_stat_statements`](/pg_stat_statements)
+[STAT](/stat) extensions: [`pg_profile`](/pg_profile), [`pg_tracing`](/pg_tracing), [`pg_show_plans`](/pg_show_plans), [`pg_stat_kcache`](/pg_stat_kcache), [`pg_stat_monitor`](/pg_stat_monitor), [`pg_qualstats`](/pg_qualstats), [`pg_store_plans`](/pg_store_plans), [`pg_track_settings`](/pg_track_settings), [`pg_wait_sampling`](/pg_wait_sampling), [`system_stats`](/system_stats), [`meta`](/meta), [`pgnodemx`](/pgnodemx), [`pg_proctab`](/pg_proctab), [`pg_sqlog`](/pg_sqlog), [`bgw_replstatus`](/bgw_replstatus), [`pgmeminfo`](/pgmeminfo), [`toastinfo`](/toastinfo), [`explain_ui`](/explain_ui), [`pg_relusage`](/pg_relusage), [`pagevis`](/pagevis), [`powa`](/powa), [`pageinspect`](/pageinspect), [`pgrowlocks`](/pgrowlocks), [`sslinfo`](/sslinfo), [`pg_buffercache`](/pg_buffercache), [`pg_walinspect`](/pg_walinspect), [`pg_freespacemap`](/pg_freespacemap), [`pg_visibility`](/pg_visibility), [`pgstattuple`](/pgstattuple), [`auto_explain`](/auto_explain), [`pg_stat_statements`](/pg_stat_statements)
 
 
 -------
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pg_sqlog](https://github.com/kouber/pg_sqlog) | 1.6 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
+| [pg_sqlog](https://github.com/kouber/pg_sqlog) | 1.6 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
@@ -58,7 +58,7 @@ CREATE EXTENSION pg_sqlog CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.6 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_sqlog_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [RPM](/rpm) | 1.6 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_sqlog_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 | [DEB](/deb) | 1.6 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-sqlog` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
@@ -80,11 +80,11 @@ Install `pg_sqlog` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 Install `pg_sqlog` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install pg_sqlog_17*;
-dnf install pg_sqlog_16*;
-dnf install pg_sqlog_15*;
-dnf install pg_sqlog_14*;
-dnf install pg_sqlog_13*;
+dnf install pg_sqlog_17;
+dnf install pg_sqlog_16;
+dnf install pg_sqlog_15;
+dnf install pg_sqlog_14;
+dnf install pg_sqlog_13;
 ```
 
 
@@ -103,8 +103,8 @@ apt install postgresql-13-pg-sqlog;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `pg_sqlog_17*` | `pg_sqlog_16*` | `pg_sqlog_15*` | `pg_sqlog_14*` | `pg_sqlog_13*` |
-| `el9` | `pg_sqlog_17*` | `pg_sqlog_16*` | `pg_sqlog_15*` | `pg_sqlog_14*` | `pg_sqlog_13*` |
+| `el8` | `pg_sqlog_17` | `pg_sqlog_16` | `pg_sqlog_15` | `pg_sqlog_14` | `pg_sqlog_13` |
+| `el9` | `pg_sqlog_17` | `pg_sqlog_16` | `pg_sqlog_15` | `pg_sqlog_14` | `pg_sqlog_13` |
 | `d12` | `postgresql-17-pg-sqlog` | `postgresql-16-pg-sqlog` | `postgresql-15-pg-sqlog` | `postgresql-14-pg-sqlog` | `postgresql-13-pg-sqlog` |
 | `u22` | `postgresql-17-pg-sqlog` | `postgresql-16-pg-sqlog` | `postgresql-15-pg-sqlog` | `postgresql-14-pg-sqlog` | `postgresql-13-pg-sqlog` |
 | `u24` | `postgresql-17-pg-sqlog` | `postgresql-16-pg-sqlog` | `postgresql-15-pg-sqlog` | `postgresql-14-pg-sqlog` | `postgresql-13-pg-sqlog` |

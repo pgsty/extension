@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [geoip](https://github.com/tvondra/geoip) | 0.3.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** |  |
+| [geoip](https://github.com/tvondra/geoip) | 0.3.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
@@ -58,7 +58,7 @@ CREATE EXTENSION geoip CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 0.3.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `geoip_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [RPM](/rpm) | 0.3.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `geoip_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 | [DEB](/deb) | 0.3.0 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-geoip` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
@@ -80,11 +80,11 @@ Install `geoip` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 Install `geoip` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
-dnf install geoip_17*;
-dnf install geoip_16*;
-dnf install geoip_15*;
-dnf install geoip_14*;
-dnf install geoip_13*;
+dnf install geoip_17;
+dnf install geoip_16;
+dnf install geoip_15;
+dnf install geoip_14;
+dnf install geoip_13;
 ```
 
 
@@ -103,8 +103,8 @@ apt install postgresql-13-geoip;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `geoip_17*` | `geoip_16*` | `geoip_15*` | `geoip_14*` | `geoip_13*` |
-| `el9` | `geoip_17*` | `geoip_16*` | `geoip_15*` | `geoip_14*` | `geoip_13*` |
+| `el8` | `geoip_17` | `geoip_16` | `geoip_15` | `geoip_14` | `geoip_13` |
+| `el9` | `geoip_17` | `geoip_16` | `geoip_15` | `geoip_14` | `geoip_13` |
 | `d12` | `postgresql-17-geoip` | `postgresql-16-geoip` | `postgresql-15-geoip` | `postgresql-14-geoip` | `postgresql-13-geoip` |
 | `u22` | `postgresql-17-geoip` | `postgresql-16-geoip` | `postgresql-15-geoip` | `postgresql-14-geoip` | `postgresql-13-geoip` |
 | `u24` | `postgresql-17-geoip` | `postgresql-16-geoip` | `postgresql-15-geoip` | `postgresql-14-geoip` | `postgresql-13-geoip` |

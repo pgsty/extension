@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pg_dbms_job](https://github.com/MigOpsRepos/pg_dbms_job) | 1.5.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  |  |
+| [pg_dbms_job](https://github.com/MigOpsRepos/pg_dbms_job) | 1.5.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | `SQL` |
 
 
 
@@ -58,7 +58,7 @@ CREATE EXTENSION pg_dbms_job;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.5.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_dbms_job_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm) | 1.5.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_dbms_job_$v` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 
@@ -79,11 +79,11 @@ Install `pg_dbms_job` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) 
 Install `pg_dbms_job` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install pg_dbms_job_17*;
-dnf install pg_dbms_job_16*;
-dnf install pg_dbms_job_15*;
-dnf install pg_dbms_job_14*;
-dnf install pg_dbms_job_13*;
+dnf install pg_dbms_job_17;
+dnf install pg_dbms_job_16;
+dnf install pg_dbms_job_15;
+dnf install pg_dbms_job_14;
+dnf install pg_dbms_job_13;
 ```
 
 

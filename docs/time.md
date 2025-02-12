@@ -12,7 +12,7 @@ There are 11 available extensions in this category:
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
-| 1000 | [timescaledb](/timescaledb) | 2.17.2 | [timescaledb](/timescaledb) | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/timescaledb) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data |
+| 1000 | [timescaledb](/timescaledb) | 2.18.1 | [timescaledb](/timescaledb) | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/timescaledb) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Enables scalable inserts and complex queries for time-series data |
 | 1010 | [timescaledb_toolkit](/timescaledb_toolkit) | 1.19.0 | [timescaledb_toolkit](/timescaledb_toolkit) | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/timescale/timescaledb-toolkit) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Library of analytical hyperfunctions, time-series pipelining, and other SQL utilities |
 | 1020 | [timeseries](/timeseries) | 0.1.6 | [pg_timeseries](/timeseries) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pg_timeseries) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Convenience API for Tembo time series stack |
 | 1030 | [periods](/periods) | 1.2 | [periods](/periods) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/xocolatl/periods) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |
@@ -89,13 +89,13 @@ pg13: pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task p
 
 | Package | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
-| [timescaledb](/timescaledb) | 2.17.2 | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-tsl_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Enables scalable inserts and complex queries for time-series data |
+| [timescaledb](/timescaledb) | 2.18.0 | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-tsl_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Enables scalable inserts and complex queries for time-series data |
 | [timescaledb_toolkit](/timescaledb_toolkit) | 1.19.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | `timescaledb-toolkit_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Library of analytical hyperfunctions, time-series pipelining, and other SQL utilities |
 | [pg_timeseries](/timeseries) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_timeseries_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Convenience API for Tembo time series stack |
 | [periods](/periods) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `periods_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |
 | [temporal_tables](/temporal_tables) | 1.2.2 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `temporal_tables_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | temporal tables |
-| [emaj](/emaj) | 4.5.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `e-maj_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Enables fine-grained write logging and time travel on subsets of the database. |
-| [table_version](/table_version) | 1.11.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `table_version_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | PostgreSQL table versioning extension |
+| [emaj](/emaj) | 4.5.0 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `e-maj_$v` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Enables fine-grained write logging and time travel on subsets of the database. |
+| [table_version](/table_version) | 1.11.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `table_version_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | PostgreSQL table versioning extension |
 | [pg_cron](/pg_cron) | 1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_cron_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Job scheduler for PostgreSQL |
 | [pg_task](/pg_task) | 1.0.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pg_task_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | execute any sql command at any specific time at background |
 | [pg_later](/pg_later) | 0.3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_later_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | pg_later: Run queries now and get results later |
@@ -106,22 +106,22 @@ pg13: pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task p
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: timescaledb-tsl_17* timescaledb-toolkit_17 pg_timeseries_17 periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_task_17* pg_later_17 pg_background_17*
-pg16: timescaledb-tsl_16* timescaledb-toolkit_16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_task_16* pg_later_16 pg_background_16*
-pg15: timescaledb-tsl_15* timescaledb-toolkit_15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_task_15* pg_later_15 pg_background_15*
-pg14: timescaledb-tsl_14* timescaledb-toolkit_14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_task_14* pg_later_14 pg_background_14*
-pg13: pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_task_13* pg_later_13 pg_background_13* #timescaledb-tsl_13* #timescaledb-toolkit_13
+pg17: timescaledb-tsl_17* timescaledb-toolkit_17 pg_timeseries_17 periods_17* temporal_tables_17* e-maj_17 table_version_17 pg_cron_17* pg_task_17* pg_later_17 pg_background_17*
+pg16: timescaledb-tsl_16* timescaledb-toolkit_16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16 table_version_16 pg_cron_16* pg_task_16* pg_later_16 pg_background_16*
+pg15: timescaledb-tsl_15* timescaledb-toolkit_15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15 table_version_15 pg_cron_15* pg_task_15* pg_later_15 pg_background_15*
+pg14: timescaledb-tsl_14* timescaledb-toolkit_14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14 table_version_14 pg_cron_14* pg_task_14* pg_later_14 pg_background_14*
+pg13: pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13 table_version_13 pg_cron_13* pg_task_13* pg_later_13 pg_background_13* #timescaledb-tsl_13* #timescaledb-toolkit_13
 ```
 
 
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: timescaledb-tsl_17* timescaledb-toolkit_17 pg_timeseries_17 periods_17* temporal_tables_17* e-maj_17* table_version_17* pg_cron_17* pg_task_17* pg_later_17 pg_background_17*
-pg16: timescaledb-tsl_16* timescaledb-toolkit_16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16* table_version_16* pg_cron_16* pg_task_16* pg_later_16 pg_background_16*
-pg15: timescaledb-tsl_15* timescaledb-toolkit_15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15* table_version_15* pg_cron_15* pg_task_15* pg_later_15 pg_background_15*
-pg14: timescaledb-tsl_14* timescaledb-toolkit_14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14* table_version_14* pg_cron_14* pg_task_14* pg_later_14 pg_background_14*
-pg13: pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_13* pg_cron_13* pg_task_13* pg_later_13 pg_background_13* #timescaledb-tsl_13* #timescaledb-toolkit_13
+pg17: timescaledb-tsl_17* timescaledb-toolkit_17 pg_timeseries_17 periods_17* temporal_tables_17* e-maj_17 table_version_17 pg_cron_17* pg_task_17* pg_later_17 pg_background_17*
+pg16: timescaledb-tsl_16* timescaledb-toolkit_16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16 table_version_16 pg_cron_16* pg_task_16* pg_later_16 pg_background_16*
+pg15: timescaledb-tsl_15* timescaledb-toolkit_15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15 table_version_15 pg_cron_15* pg_task_15* pg_later_15 pg_background_15*
+pg14: timescaledb-tsl_14* timescaledb-toolkit_14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14 table_version_14 pg_cron_14* pg_task_14* pg_later_14 pg_background_14*
+pg13: pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13 table_version_13 pg_cron_13* pg_task_13* pg_later_13 pg_background_13* #timescaledb-tsl_13* #timescaledb-toolkit_13
 ```
 
 
@@ -133,7 +133,7 @@ pg13: pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13* table_version_1
 
 | Package | Version | License | DEB | DEB Package | 17 | 16 | 15 | 14 | 13 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
-| [timescaledb](/timescaledb) | 2.17.2 | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-timescaledb-tsl` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Enables scalable inserts and complex queries for time-series data |
+| [timescaledb](/timescaledb) | 2.18.0 | PIGSTY | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-timescaledb-tsl` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Enables scalable inserts and complex queries for time-series data |
 | [timescaledb_toolkit](/timescaledb_toolkit) | 1.19.0 | **<span class="tcwarn">Timescale</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-timescaledb-toolkit` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Library of analytical hyperfunctions, time-series pipelining, and other SQL utilities |
 | [pg_timeseries](/timeseries) | 0.1.6 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-timeseries` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Convenience API for Tembo time series stack |
 | [periods](/periods) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-periods` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING |

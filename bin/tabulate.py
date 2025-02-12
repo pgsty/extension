@@ -396,8 +396,12 @@ def process_ext(ver, distro, ext):
     if distro == 'u24' and name in ['pg_partman'] and ver in ['13']: # not pg_partman 12,13 for u24
         hide_pkg, hide_ext = True, True
 
+    # pg_documentdb does not support aarch64
+    # if arch == 'aarch64' and name in ['documentdb_core']:
+    #     hide_pkg, hide_ext = True, True
+
     # el8 bad case
-    if distro == 'el8' and name in ['h3', 'h3_postgis']:
+    if distro == 'el8' and name in ['h3', 'h3_postgis'] and ver == '17':
         hide_pkg, hide_ext = True, True
     if distro == 'el8' and name in ['pg_duckdb']:
         hide_pkg, hide_ext = True, True
