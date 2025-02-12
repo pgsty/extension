@@ -1,8 +1,10 @@
 # PostgreSQL Extension Repo
 
 [![Webite: ext.pigsty.io](https://img.shields.io/badge/website-ext.pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://ext.pigsty.io)
+[![CLI: pig v0.1.4](https://img.shields.io/badge/pig-v0.1.4-slategray?style=flat&logo=cilium&logoColor=white)](https://github.com/pgsty/pig)
 [![Extensions: %s](https://img.shields.io/badge/extensions-%s-%%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
 [![License: Apache-2.0](https://img.shields.io/github/license/pgsty/extension?logo=opensourceinitiative&logoColor=green&color=slategray)](https://github.com/pgsty/pig/blob/main/LICENSE)
+
 
 The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://www.pigsty.io)
 
@@ -117,12 +119,12 @@ Here are some bad cases and limitation for above distros:
 - [`h3`](https://ext.pigsty.io/#/h3): `el8.amd.pg17`
 - [`jdbc_fdw`](https://ext.pigsty.io/#/jdbc_fdw): `el:arm:*`
 - [`pg_partman`](https://ext.pigsty.io/#/pg_partman): `u24:*:13`
-- [`wiltondb`](https://ext.pigsty.io/#/babelfishpg): `d12:*:*`
+- [`wiltondb`](https://ext.pigsty.io/#/babelfishpg_common): `d12:*:*`
 - [`citus`](https://ext.pigsty.io/#/citus) and [`hydra`](https://ext.pigsty.io/#/hydra) are mutually exclusive
 - [`pg_duckdb`](https://ext.pigsty.io/#/pg_duckdb) and [`pg_mooncake`](https://ext.pigsty.io/#/pg_mooncake) are mutually exclusive
 - [`pg_duckdb`](https://ext.pigsty.io/#/pg_duckdb) will invalidate [`duckdb_fdw`](https://ext.pigsty.io/#/duckdb_fdw)
-- [`pg_documentdb_core`](https://ext.pigsty.io/#/documentdb_core) is not available on `arm` arch
-- [`vchord`](https://ext.pigsty.io/#/vchord) 0.2+ is not available on `d12/u22` (but 0.1 is available)
+- [`documentdb_core`](https://ext.pigsty.io/#/documentdb_core) is not available on `arm` arch
+- [`vchord`](https://ext.pigsty.io/#/vchord) 0.2+ is not available on `d12/u22` (0.1 available)
 
 ----------------
 
