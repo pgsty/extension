@@ -29,6 +29,9 @@ save-mini:
 save-cate:
 	psql $(PGURL) -c "COPY (select * FROM ext.category ORDER BY id) TO '/Users/vonng/pgsty/extension/data/category.csv' CSV HEADER;"
 
+save-repo:
+	psql $(PGURL) -c "COPY (select * FROM pgext.repo ORDER BY id) TO '/Users/vonng/pgsty/extension/data/repo.csv' CSV HEADER;"
+
 load:
 	psql $(PGURL) -c "TRUNCATE ext.pigsty; COPY ext.pigsty FROM '/Users/vonng/pgsty/extension/data/pigsty.csv' CSV HEADER;"
 
