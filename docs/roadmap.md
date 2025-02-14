@@ -8,6 +8,12 @@ Extensions to be included and extensions will not be included
 
 **TBD**:
 
+- pg_documentdb the proxy part
+- [pg_mooncake](https://github.com/Mooncake-Labs/pg_mooncake/releases/tag/v0.1.2) 0.1.2
+- increase citus release number to overwrite PGDG stuff
+- [pg_collection](https://github.com/aws/pgcollection) 0.9.0
+- [pg_duckdb](https://github.com/duckdb/pg_duckdb/releases/tag/v0.3.1) 0.2.0
+- [pg_bzip](https://github.com/steve-chavez/pg_bzip) v1.0.0
 - [pgai](https://github.com/timescale/pgai)
 - [pg-rag](https://github.com/nearform/pg-rag)
 - [onesparse](https://github.com/OneSparse/OneSparse)
