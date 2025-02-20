@@ -80,7 +80,7 @@ Install `pgml` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playboo
 ```
 
 
-Install `pgml` [DEB](/deb) from the  **APT** repo:
+Install `pgml` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-$v-pgml;

@@ -88,7 +88,7 @@ dnf install pg_roaringbitmap_13*;
 ```
 
 
-Install `roaringbitmap` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+Install `roaringbitmap` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-roaringbitmap;

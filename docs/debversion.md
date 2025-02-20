@@ -76,7 +76,7 @@ Install `debversion` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 ```
 
 
-Install `debversion` [DEB](/deb) from the  **APT** repo:
+Install `debversion` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
 apt install postgresql-$v-debversion;

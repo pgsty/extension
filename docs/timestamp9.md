@@ -88,7 +88,7 @@ dnf install timestamp9_13*;
 ```
 
 
-Install `timestamp9` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
+Install `timestamp9` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-timestamp9;

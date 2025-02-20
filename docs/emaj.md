@@ -88,7 +88,7 @@ dnf install e-maj_13;
 ```
 
 
-Install `emaj` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
+Install `emaj` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-emaj;

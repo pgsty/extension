@@ -88,7 +88,7 @@ dnf install sequential_uuids_13;
 ```
 
 
-Install `sequential_uuids` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
+Install `sequential_uuids` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-sequential-uuids;

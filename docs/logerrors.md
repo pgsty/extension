@@ -88,7 +88,7 @@ dnf install logerrors_13*;
 ```
 
 
-Install `logerrors` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
+Install `logerrors` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-logerrors;

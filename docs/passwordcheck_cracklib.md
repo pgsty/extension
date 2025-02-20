@@ -88,7 +88,7 @@ dnf install passwordcheck_cracklib_13*;
 ```
 
 
-Install `passwordcheck` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
+Install `passwordcheck` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-passwordcheck-cracklib;

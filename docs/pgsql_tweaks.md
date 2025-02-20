@@ -88,7 +88,7 @@ dnf install pgsql_tweaks_13;
 ```
 
 
-Install `pgsql_tweaks` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
+Install `pgsql_tweaks` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-pgsql-tweaks;

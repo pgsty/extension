@@ -88,7 +88,7 @@ dnf install preprepare_13*;
 ```
 
 
-Install `preprepare` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+Install `preprepare` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-preprepare;

@@ -88,7 +88,7 @@ dnf install pg_auth_mon_13*;
 ```
 
 
-Install `pg_auth_mon` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
+Install `pg_auth_mon` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-pg-auth-mon;

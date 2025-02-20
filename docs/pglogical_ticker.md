@@ -92,7 +92,7 @@ dnf install pglogical_ticker_13*;
 ```
 
 
-Install `pglogical_ticker` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+Install `pglogical_ticker` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-pglogical-ticker;

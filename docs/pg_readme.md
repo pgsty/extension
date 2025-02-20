@@ -88,7 +88,7 @@ dnf install pg_readme_13;
 ```
 
 
-Install `pg_readme` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
+Install `pg_readme` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-pg-readme;

@@ -76,7 +76,7 @@ Install `mobilitydb` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) p
 ```
 
 
-Install `mobilitydb` [DEB](/deb) from the  **APT** repo:
+Install `mobilitydb` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
 apt install postgresql-$v-mobilitydb;

@@ -88,7 +88,7 @@ dnf install icu_ext_13*;
 ```
 
 
-Install `icu_ext` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
+Install `icu_ext` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-icu-ext;

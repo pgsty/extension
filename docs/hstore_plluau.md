@@ -77,7 +77,7 @@ Install `pllua` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playbo
 ```
 
 
-Install `pllua` [DEB](/deb) from the  **APT** repo:
+Install `pllua` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
 apt install postgresql-$v-pllua;

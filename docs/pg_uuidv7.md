@@ -88,7 +88,7 @@ dnf install pg_uuidv7_13*;
 ```
 
 
-Install `pg_uuidv7` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
+Install `pg_uuidv7` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-pg-uuidv7;

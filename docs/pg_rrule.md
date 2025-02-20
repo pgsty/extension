@@ -76,7 +76,7 @@ Install `pg_rrule` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) pla
 ```
 
 
-Install `pg_rrule` [DEB](/deb) from the  **APT** repo:
+Install `pg_rrule` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
 
 ```bash
 apt install postgresql-$v-pg-rrule;

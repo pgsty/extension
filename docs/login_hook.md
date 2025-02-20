@@ -88,7 +88,7 @@ dnf install login_hook_13*;
 ```
 
 
-Install `login_hook` [DEB](/deb) from the **<span class="tccyan">PGDG</span>** **APT** repo:
+Install `login_hook` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install postgresql-17-login-hook;
