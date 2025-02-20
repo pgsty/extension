@@ -2,6 +2,7 @@
 
 import csv
 import os
+import json
 
 ##################################################
 # CONSTANT                                       #
@@ -10,6 +11,7 @@ import os
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'data', 'pigsty.csv'))
 CATE_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'data', 'category.csv'))
+STAT_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'data', 'stat.json'))
 DOCS_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'docs'))
 STUB_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, '..', 'stub'))
 
@@ -334,7 +336,13 @@ def stat_data(data):
     res["deb_pkg"]["pg16"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and '16' in i['deb_pg'] ]))
     res["deb_pkg"]["pg17"]   = len(set([i['deb_pkg'] for i in data if i['has_deb'] and '17' in i['deb_pg'] ]))
 
+
+    with open(STAT_PATH,'w') as dst:
+        stat_data = json.dumps(res)
+        dst.write(stat_data)
+        dst.close()
     return res
+
 
 
 DATA = load_data()
@@ -789,7 +797,7 @@ def generate_extension():
             pkgs = [ judge_ext(ver, 'el9', ext)[0] for ver in ext['rpm_pg'] ]
             yum_install_tmpl = """```bash\n%s\n```\n\n""" % '\n'.join([ 'dnf install ' + pkg + ';' for pkg in pkgs ])
 
-        apt_install_preface = '\nInstall `%s` [DEB](/deb) from the %s **APT** repo:\n\n' % (getcol("alias", ext), getcol("rpmrepo", ext))
+        apt_install_preface = '\nInstall `%s` [DEB](/deb) from the %s **APT** repo:\n\n' % (getcol("alias", ext), getcol("debrepo", ext))
         if '$v' not in ext['rpm_pkg']:
             apt_install_tmpl = """```bash\napt install %s;\n```\n\n""" % ext['deb_pkg']
         else:

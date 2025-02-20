@@ -27,7 +27,7 @@ save-data:
 save-mini:
 	psql $(PGURL) -c "COPY (select id,name,alias,category,lead,rpm_repo,rpm_pkg,rpm_pg,deb_repo,deb_pkg,deb_pg FROM ext.pigsty ORDER BY id) TO '/Users/vonng/pgsty/extension/data/extension.csv' CSV HEADER;"
 save-cate:
-	psql $(PGURL) -c "COPY (select * FROM ext.category ORDER BY id) TO '/Users/vonng/pgsty/extension/data/category.csv' CSV HEADER;"
+	psql $(PGURL) -c "COPY (select * FROM ext.cate ORDER BY id) TO '/Users/vonng/pgsty/extension/data/cate.csv' CSV HEADER;"
 
 save-repo:
 	psql $(PGURL) -c "COPY (select * FROM pgext.repo ORDER BY id) TO '/Users/vonng/pgsty/extension/data/repo.csv' CSV HEADER;"
