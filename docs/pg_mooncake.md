@@ -45,7 +45,7 @@
 
 
 
-> **Comment**: conflict on libduckdb with pg_duckdb/duckdb_fdw
+
 -----------
 
 
