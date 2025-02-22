@@ -12,10 +12,10 @@ Provide [404](/list) available extensions as [RPM](/rpm) / [DEB](/deb) for Postg
 
 Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS distros, and `x86_64` & `ARM64` architectures. 
 
-|Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 397 | 116 | 208 | 69 | 4 | 7 | 379 | 392 | 394 | 378 | 355 |
-| DEB Extension | 391 | 103 | 215 | 69 | 4 | 13 | 378 | 386 | 388 | 377 | 352 |
+| Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:--------------:|:---:|:----:|:------:|:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| RPM Extension  | 397 | 116  |  208   |   69    |  4   |  7   | 379  | 392  | 394  | 378  | 355  |
+| DEB Extension  | 391 | 103  |  215   |   69    |  4   |  13  | 378  | 386  | 388  | 377  | 352  |
 
 
 

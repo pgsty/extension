@@ -4,12 +4,12 @@
 
 ### [`ext.pigsty.io`](https://ext.pigsty.io)
 
-- 400 extensions!
+- 404 extensions!
 - As Binary Packages
-- For PostgreSQL 12 - 17
+- For PostgreSQL 13 - 17
 - On Ubuntu 22/24 / Debian 12
 - And RHEL 8/9 Compatible Distros
-- Available for Linux x86_64 & ARM64
+- Available for Linux x86_64 & Arm64
 
 [Extensions](/list)
 [Get Started](#get-started)
