@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [pg_anon](/anon) |  | `anon` |  |  |
+| [pg_anon](/anon) | `pgrx` | `anon` |  |  |
 
 
 

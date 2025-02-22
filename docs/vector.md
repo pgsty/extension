@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [pgvector](/vector) |  |  |  | [`vchord`](/vchord), [`vectorscale`](/vectorscale), [`vectorize`](/vectorize) |
+| [pgvector](/vector) |  |  |  | [`vchord`](/vchord), [`vectorscale`](/vectorscale), [`vectorize`](/vectorize), [`documentdb`](/documentdb) |
 
 
 

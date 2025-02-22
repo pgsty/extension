@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [timescaledb_toolkit](/timescaledb_toolkit) |  |  |  |  |
+| [timescaledb_toolkit](/timescaledb_toolkit) | `pgrx` |  |  |  |
 
 
 

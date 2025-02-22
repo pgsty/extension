@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [pg_bestmatch](/pg_bestmatch) |  | `bm_catalog` |  |  |
+| [pg_bestmatch](/pg_bestmatch) | `pgrx` | `bm_catalog` |  |  |
 
 
 

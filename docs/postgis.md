@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [postgis](/postgis) |  |  |  | [`postgis_topology`](/postgis_topology), [`postgis_raster`](/postgis_raster), [`postgis_sfcgal`](/postgis_sfcgal), [`postgis_tiger_geocoder`](/postgis_tiger_geocoder), [`pgrouting`](/pgrouting), [`pointcloud_postgis`](/pointcloud_postgis), [`h3_postgis`](/h3_postgis), [`mobilitydb`](/mobilitydb) |
+| [postgis](/postgis) |  |  |  | [`postgis_topology`](/postgis_topology), [`postgis_raster`](/postgis_raster), [`postgis_sfcgal`](/postgis_sfcgal), [`postgis_tiger_geocoder`](/postgis_tiger_geocoder), [`pgrouting`](/pgrouting), [`pointcloud_postgis`](/pointcloud_postgis), [`h3_postgis`](/h3_postgis), [`mobilitydb`](/mobilitydb), [`documentdb`](/documentdb) |
 
 
 

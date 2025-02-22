@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [tsm_system_rows](/tsm_system_rows) |  |  |  |  |
+| [tsm_system_rows](/tsm_system_rows) |  |  |  | [`documentdb`](/documentdb) |
 
 
 
