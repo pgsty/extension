@@ -59,7 +59,7 @@ CREATE EXTENSION zstd;
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
 | [RPM](/rpm) | 1.1.0 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_zstd_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
-| [DEB](/deb) | 1.1.0 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-zstd` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
+| [DEB](/deb) | 1.1.0 | **<span class="tcblue">ISC</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-zstd` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |
 
 
 
@@ -91,11 +91,11 @@ dnf install pg_zstd_13*;
 Install `pg_zstd` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
-apt install postgresql-17-pg-zstd;
-apt install postgresql-16-pg-zstd;
-apt install postgresql-15-pg-zstd;
-apt install postgresql-14-pg-zstd;
-apt install postgresql-13-pg-zstd;
+apt install postgresql-17-zstd;
+apt install postgresql-16-zstd;
+apt install postgresql-15-zstd;
+apt install postgresql-14-zstd;
+apt install postgresql-13-zstd;
 ```
 
 
@@ -105,9 +105,9 @@ apt install postgresql-13-pg-zstd;
 |:------------:|:----:|:----:|:----:|:----:|:----:|
 | `el8` | `pg_zstd_17*` | `pg_zstd_16*` | `pg_zstd_15*` | `pg_zstd_14*` | `pg_zstd_13*` |
 | `el9` | `pg_zstd_17*` | `pg_zstd_16*` | `pg_zstd_15*` | `pg_zstd_14*` | `pg_zstd_13*` |
-| `d12` | `postgresql-17-pg-zstd` | `postgresql-16-pg-zstd` | `postgresql-15-pg-zstd` | `postgresql-14-pg-zstd` | `postgresql-13-pg-zstd` |
-| `u22` | `postgresql-17-pg-zstd` | `postgresql-16-pg-zstd` | `postgresql-15-pg-zstd` | `postgresql-14-pg-zstd` | `postgresql-13-pg-zstd` |
-| `u24` | `postgresql-17-pg-zstd` | `postgresql-16-pg-zstd` | `postgresql-15-pg-zstd` | `postgresql-14-pg-zstd` | `postgresql-13-pg-zstd` |
+| `d12` | `postgresql-17-zstd` | `postgresql-16-zstd` | `postgresql-15-zstd` | `postgresql-14-zstd` | `postgresql-13-zstd` |
+| `u22` | `postgresql-17-zstd` | `postgresql-16-zstd` | `postgresql-15-zstd` | `postgresql-14-zstd` | `postgresql-13-zstd` |
+| `u24` | `postgresql-17-zstd` | `postgresql-16-zstd` | `postgresql-15-zstd` | `postgresql-14-zstd` | `postgresql-13-zstd` |
 
 
 
