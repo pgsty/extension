@@ -1,7 +1,7 @@
 # PostgreSQL Extension Repo
 
-[![Webite: ext.pigsty.io](https://img.shields.io/badge/website-ext.pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://ext.pigsty.io)
-[![CLI: pig v0.2.0](https://img.shields.io/badge/pig-v0.2.0-slategray?style=flat&logo=cilium&logoColor=white)](https://github.com/pgsty/pig)
+[![Webite: pigsty.io](https://img.shields.io/badge/website-pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://pigsty.io/ext)
+[![CLI: pig v0.2.2](https://img.shields.io/badge/pig-v0.2.2-slategray?style=flat&logo=cilium&logoColor=white)](https://github.com/pgsty/pig)
 [![Extensions: 404](https://img.shields.io/badge/extensions-404-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
 [![License: Apache-2.0](https://img.shields.io/github/license/pgsty/extension?logo=opensourceinitiative&logoColor=green&color=slategray)](https://github.com/pgsty/pig/blob/main/LICENSE)
 

@@ -2,7 +2,7 @@
 
 # PostgreSQL Extension Repo <small>by Pigsty</small>
 
-### [`ext.pigsty.io`](https://ext.pigsty.io)
+### [`ext.pigsty.io`](https://pigsty.io/ext/list)
 
 - 404 extensions!
 - As Binary Packages
@@ -11,5 +11,5 @@
 - And RHEL 8/9 Compatible Distros
 - Available for Linux x86_64 & Arm64
 
-[Extensions](/list)
-[Get Started](#get-started)
+[Extensions](https://pigsty.io/ext/list)
+[Get Started](https://pigsty.io/ext/pig/install/)

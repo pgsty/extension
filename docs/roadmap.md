@@ -8,12 +8,6 @@ Extensions to be included and extensions will not be included
 
 **TBD**:
 
-- pg_documentdb the proxy part
-- [pg_mooncake](https://github.com/Mooncake-Labs/pg_mooncake/releases/tag/v0.1.2) 0.1.2
-- increase citus release number to overwrite PGDG stuff
-- [pg_collection](https://github.com/aws/pgcollection) 0.9.0
-- [pg_duckdb](https://github.com/duckdb/pg_duckdb/releases/tag/v0.3.1) 0.2.0
-- [pg_bzip](https://github.com/steve-chavez/pg_bzip) v1.0.0
 - [pgai](https://github.com/timescale/pgai)
 - [pg-rag](https://github.com/nearform/pg-rag)
 - [onesparse](https://github.com/OneSparse/OneSparse)
@@ -22,6 +16,7 @@ Extensions to be included and extensions will not be included
 
 **Recently Added**:
 
+- documentdb
 - [omnigres](https://omnigres.com/)
 - [pg_documentdb_core](https://github.com/microsoft/documentdb/tree/main/pg_documentdb_core), and ferretdb
 - [pg_tracing](https://github.com/DataDog/pg_tracing) 0.1.2
@@ -42,6 +37,12 @@ Extensions to be included and extensions will not be included
 - [pg_upless](https://pgxn.org/dist/pg_upless/0.0.2/) PostgreSQL Extension to Detect Useless UPDATE
 - [floatfile](https://github.com/pjungwir/floatfile) 1.3.1 C MIT
 - [pg_duration](https://github.com/jkosh44/pg_duration/) 1.0.1 A PostgreSQL extension for a time based duration type.
+- [pg_mooncake](https://github.com/Mooncake-Labs/pg_mooncake/releases/tag/v0.1.2) 0.1.2
+- [pg_collection](https://github.com/aws/pgcollection) 0.9.0
+- [pg_duckdb](https://github.com/duckdb/pg_duckdb/releases/tag/v0.3.1) 0.2.0
+- [pg_bzip](https://github.com/steve-chavez/pg_bzip) v1.0.0
+- increase citus release number to overwrite PGDG stuff
+
 
 **Waiting on PostgreSQL 17 support**:
 
