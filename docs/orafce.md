@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION orafce;
 ```
-
+> **Comment**: el llvmjit deps break
 -----------
 
 
@@ -58,7 +58,7 @@ CREATE EXTENSION orafce;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 4.14 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | `orafce_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm) | 4.14 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | `orafce_$v` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 | [DEB](/deb) | 4.14 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-orafce` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
@@ -80,11 +80,11 @@ Install `orafce` via [Pigsty](https://pigsty.io/docs/pgext/usage/install/) playb
 Install `orafce` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
 
 ```bash
-dnf install orafce_17*;
-dnf install orafce_16*;
-dnf install orafce_15*;
-dnf install orafce_14*;
-dnf install orafce_13*;
+dnf install orafce_17;
+dnf install orafce_16;
+dnf install orafce_15;
+dnf install orafce_14;
+dnf install orafce_13;
 ```
 
 
@@ -103,8 +103,8 @@ apt install postgresql-13-orafce;
 
 | Distro / Ver | PG17 | PG16 | PG15 | PG14 | PG13 |
 |:------------:|:----:|:----:|:----:|:----:|:----:|
-| `el8` | `orafce_17*` | `orafce_16*` | `orafce_15*` | `orafce_14*` | `orafce_13*` |
-| `el9` | `orafce_17*` | `orafce_16*` | `orafce_15*` | `orafce_14*` | `orafce_13*` |
+| `el8` | `orafce_17` | `orafce_16` | `orafce_15` | `orafce_14` | `orafce_13` |
+| `el9` | `orafce_17` | `orafce_16` | `orafce_15` | `orafce_14` | `orafce_13` |
 | `d12` | `postgresql-17-orafce` | `postgresql-16-orafce` | `postgresql-15-orafce` | `postgresql-14-orafce` | `postgresql-13-orafce` |
 | `u22` | `postgresql-17-orafce` | `postgresql-16-orafce` | `postgresql-15-orafce` | `postgresql-14-orafce` | `postgresql-13-orafce` |
 | `u24` | `postgresql-17-orafce` | `postgresql-16-orafce` | `postgresql-15-orafce` | `postgresql-14-orafce` | `postgresql-13-orafce` |

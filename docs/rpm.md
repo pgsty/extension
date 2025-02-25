@@ -278,7 +278,7 @@ There are **392** extensions available in the current major version PostgreSQL 1
 | [FDW](/fdw) | [log_fdw](/log_fdw) | 1.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `log_fdw_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | foreign-data wrapper for Postgres log file access |
 | [UTIL](/util) | [pgsparql](/sparql) | 1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgsparql_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Query SPARQL datasource with SQL |
 | [SIM](/sim) | [documentdb](/documentdb) | 0.101-0 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `documentdb_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | API surface for DocumentDB for PostgreSQL |
-| [SIM](/sim) | [orafce](/orafce) | 4.14 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | `orafce_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Functions and operators that emulate a subset of functions and packages from the Oracle RDBMS |
+| [SIM](/sim) | [orafce](/orafce) | 4.14 | **<span class="tcblue">BSD-0</span>** | **<span class="tccyan">PGDG</span>** | `orafce_$v` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Functions and operators that emulate a subset of functions and packages from the Oracle RDBMS |
 | [SIM](/sim) | [pgtt](/pgtt) | 4.0.0 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `pgtt_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Extension to add Global Temporary Tables feature to PostgreSQL |
 | [SIM](/sim) | [session_variable](/session_variable) | 3.4 | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `session_variable_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Registration and manipulation of session variables and constants |
 | [SIM](/sim) | [pg_statement_rollback](/pg_statement_rollback) | 1.4 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `pg_statement_rollback_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Server side rollback at statement level for PostgreSQL like Oracle or DB2 |
@@ -329,7 +329,7 @@ There are **392** extensions available in the current major version PostgreSQL 1
 - pg_profile_17* pg_tracing_17* pg_show_plans_17* pg_stat_kcache_17* pg_stat_monitor_17* pg_qualstats_17* pg_store_plans_17* pg_track_settings_17 pg_wait_sampling_17* system_stats_17* pg_meta_17 pgnodemx_17 pg_sqlog_17 bgw_replstatus_17* pgmeminfo_17* toastinfo_17* pg_explain_ui_17 pg_relusage_17 pagevis_17 powa_17*
 - passwordcheck_cracklib_17* supautils_17* pgsodium_17* vault_17* pg_session_jwt_17 pg_anon_17 pgsmcrypto_17 pgaudit_17* pgauditlogtofile_17* pg_auth_mon_17* credcheck_17* pgcryptokey_17 pg_jobmon_17 logerrors_17* login_hook_17* set_user_17* pg_snakeoil_17* pgextwlist_17* pg_auditor_17 sslutils_17* noset_17* #pg_tde_17*
 - wrappers_17 multicorn2_17* odbc_fdw_17* mysql_fdw_17* tds_fdw_17* sqlite_fdw_17* pgbouncer_fdw_17 redis_fdw_17* pg_redis_pubsub_17* hdfs_fdw_17* firebird_fdw_17 aws_s3_17 log_fdw_17* #jdbc_fdw_17* #oracle_fdw_17* #db2_fdw_17* #mongo_fdw_17* #kafka_fdw_17
-- documentdb_17* orafce_17* pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17 pg_dbms_lock_17 pgmemcache_17* #pg_dbms_job_17 #wiltondb
+- documentdb_17* orafce_17 pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17 pg_dbms_lock_17 pgmemcache_17* #pg_dbms_job_17 #wiltondb
 - pglogical_17* pglogical_ticker_17* pgl_ddl_deploy_17* pg_failover_slots_17* db_migrator_17 wal2json_17* postgres-decoderbufs_17* decoder_raw_17* mimeo_17 pg_fact_loader_17* pg_bulkload_17* #wal2mongo_17* #repmgr_17*
 ```
 
@@ -351,7 +351,7 @@ There are **392** extensions available in the current major version PostgreSQL 1
 - pg_profile_17* pg_tracing_17* pg_show_plans_17* pg_stat_kcache_17* pg_stat_monitor_17* pg_qualstats_17* pg_store_plans_17* pg_track_settings_17 pg_wait_sampling_17* system_stats_17* pg_meta_17 pgnodemx_17 pg_sqlog_17 bgw_replstatus_17* pgmeminfo_17* toastinfo_17* pg_explain_ui_17 pg_relusage_17 pagevis_17 powa_17*
 - passwordcheck_cracklib_17* supautils_17* pgsodium_17* vault_17* pg_session_jwt_17 pg_anon_17 pgsmcrypto_17 pgaudit_17* pgauditlogtofile_17* pg_auth_mon_17* credcheck_17* pgcryptokey_17 pg_jobmon_17 logerrors_17* login_hook_17* set_user_17* pg_snakeoil_17* pgextwlist_17* pg_auditor_17 sslutils_17* noset_17* #pg_tde_17*
 - wrappers_17 multicorn2_17* odbc_fdw_17* mysql_fdw_17* tds_fdw_17* sqlite_fdw_17* pgbouncer_fdw_17 redis_fdw_17* pg_redis_pubsub_17* hdfs_fdw_17* firebird_fdw_17 aws_s3_17 log_fdw_17* #jdbc_fdw_17* #oracle_fdw_17* #db2_fdw_17* #mongo_fdw_17* #kafka_fdw_17
-- documentdb_17* orafce_17* pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17 pg_dbms_lock_17 pgmemcache_17* #pg_dbms_job_17 #wiltondb
+- documentdb_17* orafce_17 pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17 pg_dbms_lock_17 pgmemcache_17* #pg_dbms_job_17 #wiltondb
 - pglogical_17* pglogical_ticker_17* pgl_ddl_deploy_17* pg_failover_slots_17* db_migrator_17 wal2json_17* postgres-decoderbufs_17* decoder_raw_17* mimeo_17 pg_fact_loader_17* pg_bulkload_17* #wal2mongo_17* #repmgr_17*
 ```
 
@@ -378,7 +378,7 @@ There are **392** extensions available in the current major version PostgreSQL 1
 - pg_profile_16* pg_tracing_16* pg_show_plans_16* pg_stat_kcache_16* pg_stat_monitor_16* pg_qualstats_16* pg_store_plans_16* pg_track_settings_16 pg_wait_sampling_16* system_stats_16* pg_meta_16 pgnodemx_16 pg_sqlog_16 bgw_replstatus_16* pgmeminfo_16* toastinfo_16* pg_explain_ui_16 pg_relusage_16 pagevis_16 powa_16*
 - passwordcheck_cracklib_16* supautils_16* pgsodium_16* vault_16* pg_session_jwt_16 pg_anon_16 pg_tde_16* pgsmcrypto_16 pgaudit_16* pgauditlogtofile_16* pg_auth_mon_16* credcheck_16* pgcryptokey_16 pg_jobmon_16 logerrors_16* login_hook_16* set_user_16* pg_snakeoil_16* pgextwlist_16* pg_auditor_16 sslutils_16* noset_16*
 - wrappers_16 multicorn2_16* odbc_fdw_16* jdbc_fdw_16* mysql_fdw_16* tds_fdw_16* sqlite_fdw_16* pgbouncer_fdw_16 mongo_fdw_16* redis_fdw_16* pg_redis_pubsub_16* kafka_fdw_16 hdfs_fdw_16* firebird_fdw_16 aws_s3_16 log_fdw_16* #oracle_fdw_16* #db2_fdw_16*
-- documentdb_16* orafce_16* pgtt_16* session_variable_16* pg_statement_rollback_16* pg_dbms_metadata_16 pg_dbms_lock_16 pgmemcache_16* #pg_dbms_job_16 #wiltondb
+- documentdb_16* orafce_16 pgtt_16* session_variable_16* pg_statement_rollback_16* pg_dbms_metadata_16 pg_dbms_lock_16 pgmemcache_16* #pg_dbms_job_16 #wiltondb
 - pglogical_16* pglogical_ticker_16* pgl_ddl_deploy_16* pg_failover_slots_16* db_migrator_16 wal2json_16* wal2mongo_16* postgres-decoderbufs_16* decoder_raw_16* mimeo_16 pg_fact_loader_16* pg_bulkload_16* #repmgr_16*
 ```
 
@@ -400,7 +400,7 @@ There are **392** extensions available in the current major version PostgreSQL 1
 - pg_profile_16* pg_tracing_16* pg_show_plans_16* pg_stat_kcache_16* pg_stat_monitor_16* pg_qualstats_16* pg_store_plans_16* pg_track_settings_16 pg_wait_sampling_16* system_stats_16* pg_meta_16 pgnodemx_16 pg_sqlog_16 bgw_replstatus_16* pgmeminfo_16* toastinfo_16* pg_explain_ui_16 pg_relusage_16 pagevis_16 powa_16*
 - passwordcheck_cracklib_16* supautils_16* pgsodium_16* vault_16* pg_session_jwt_16 pg_anon_16 pg_tde_16* pgsmcrypto_16 pgaudit_16* pgauditlogtofile_16* pg_auth_mon_16* credcheck_16* pgcryptokey_16 pg_jobmon_16 logerrors_16* login_hook_16* set_user_16* pg_snakeoil_16* pgextwlist_16* pg_auditor_16 sslutils_16* noset_16*
 - wrappers_16 multicorn2_16* odbc_fdw_16* jdbc_fdw_16* mysql_fdw_16* tds_fdw_16* sqlite_fdw_16* pgbouncer_fdw_16 mongo_fdw_16* redis_fdw_16* pg_redis_pubsub_16* kafka_fdw_16 hdfs_fdw_16* firebird_fdw_16 aws_s3_16 log_fdw_16* #oracle_fdw_16* #db2_fdw_16*
-- documentdb_16* orafce_16* pgtt_16* session_variable_16* pg_statement_rollback_16* pg_dbms_metadata_16 pg_dbms_lock_16 pgmemcache_16* #pg_dbms_job_16 #wiltondb
+- documentdb_16* orafce_16 pgtt_16* session_variable_16* pg_statement_rollback_16* pg_dbms_metadata_16 pg_dbms_lock_16 pgmemcache_16* #pg_dbms_job_16 #wiltondb
 - pglogical_16* pglogical_ticker_16* pgl_ddl_deploy_16* pg_failover_slots_16* db_migrator_16 wal2json_16* wal2mongo_16* postgres-decoderbufs_16* decoder_raw_16* mimeo_16 pg_fact_loader_16* pg_bulkload_16* #repmgr_16*
 ```
 
@@ -427,7 +427,7 @@ There are **392** extensions available in the current major version PostgreSQL 1
 - pg_profile_15* pg_tracing_15* pg_show_plans_15* pg_stat_kcache_15* pg_stat_monitor_15* pg_qualstats_15* pg_store_plans_15* pg_track_settings_15 pg_wait_sampling_15* system_stats_15* pg_meta_15 pgnodemx_15 pg_sqlog_15 bgw_replstatus_15* pgmeminfo_15* toastinfo_15* pg_explain_ui_15 pg_relusage_15 pagevis_15 powa_15*
 - passwordcheck_cracklib_15* supautils_15* pgsodium_15* vault_15* pg_session_jwt_15 pg_anon_15 pgsmcrypto_15 pgaudit17_15* pgauditlogtofile_15* pg_auth_mon_15* credcheck_15* pgcryptokey_15 pg_jobmon_15 logerrors_15* login_hook_15* set_user_15* pg_snakeoil_15* pgextwlist_15* pg_auditor_15 sslutils_15* noset_15* #pg_tde_15*
 - wrappers_15 multicorn2_15* odbc_fdw_15* jdbc_fdw_15* mysql_fdw_15* tds_fdw_15* sqlite_fdw_15* pgbouncer_fdw_15 mongo_fdw_15* redis_fdw_15* pg_redis_pubsub_15* kafka_fdw_15 hdfs_fdw_15* firebird_fdw_15 aws_s3_15 log_fdw_15* #oracle_fdw_15* #db2_fdw_15*
-- documentdb_15* orafce_15* pgtt_15* session_variable_15* pg_statement_rollback_15* pg_dbms_metadata_15 pg_dbms_lock_15 pgmemcache_15* #pg_dbms_job_15 #wiltondb
+- documentdb_15* orafce_15 pgtt_15* session_variable_15* pg_statement_rollback_15* pg_dbms_metadata_15 pg_dbms_lock_15 pgmemcache_15* #pg_dbms_job_15 #wiltondb
 - pglogical_15* pglogical_ticker_15* pgl_ddl_deploy_15* pg_failover_slots_15* db_migrator_15 wal2json_15* wal2mongo_15* postgres-decoderbufs_15* decoder_raw_15* mimeo_15 pg_fact_loader_15* pg_bulkload_15* #repmgr_15*
 ```
 
@@ -449,7 +449,7 @@ There are **392** extensions available in the current major version PostgreSQL 1
 - pg_profile_15* pg_tracing_15* pg_show_plans_15* pg_stat_kcache_15* pg_stat_monitor_15* pg_qualstats_15* pg_store_plans_15* pg_track_settings_15 pg_wait_sampling_15* system_stats_15* pg_meta_15 pgnodemx_15 pg_sqlog_15 bgw_replstatus_15* pgmeminfo_15* toastinfo_15* pg_explain_ui_15 pg_relusage_15 pagevis_15 powa_15*
 - passwordcheck_cracklib_15* supautils_15* pgsodium_15* vault_15* pg_session_jwt_15 pg_anon_15 pgsmcrypto_15 pgaudit17_15* pgauditlogtofile_15* pg_auth_mon_15* credcheck_15* pgcryptokey_15 pg_jobmon_15 logerrors_15* login_hook_15* set_user_15* pg_snakeoil_15* pgextwlist_15* pg_auditor_15 sslutils_15* noset_15* #pg_tde_15*
 - wrappers_15 multicorn2_15* odbc_fdw_15* jdbc_fdw_15* mysql_fdw_15* tds_fdw_15* sqlite_fdw_15* pgbouncer_fdw_15 mongo_fdw_15* redis_fdw_15* pg_redis_pubsub_15* kafka_fdw_15 hdfs_fdw_15* firebird_fdw_15 aws_s3_15 log_fdw_15* #oracle_fdw_15* #db2_fdw_15*
-- documentdb_15* orafce_15* pgtt_15* session_variable_15* pg_statement_rollback_15* pg_dbms_metadata_15 pg_dbms_lock_15 pgmemcache_15* #pg_dbms_job_15 #wiltondb
+- documentdb_15* orafce_15 pgtt_15* session_variable_15* pg_statement_rollback_15* pg_dbms_metadata_15 pg_dbms_lock_15 pgmemcache_15* #pg_dbms_job_15 #wiltondb
 - pglogical_15* pglogical_ticker_15* pgl_ddl_deploy_15* pg_failover_slots_15* db_migrator_15 wal2json_15* wal2mongo_15* postgres-decoderbufs_15* decoder_raw_15* mimeo_15 pg_fact_loader_15* pg_bulkload_15* #repmgr_15*
 ```
 
@@ -476,7 +476,7 @@ There are **392** extensions available in the current major version PostgreSQL 1
 - pg_profile_14* pg_show_plans_14* pg_stat_kcache_14* pg_stat_monitor_14* pg_qualstats_14* pg_store_plans_14* pg_track_settings_14 pg_wait_sampling_14* system_stats_14* pg_meta_14 pgnodemx_14 pg_sqlog_14 bgw_replstatus_14* pgmeminfo_14* toastinfo_14* pg_explain_ui_14 pg_relusage_14 pagevis_14 powa_14* #pg_tracing_14*
 - passwordcheck_cracklib_14* supautils_14* pgsodium_14* vault_14* pg_session_jwt_14 pg_anon_14 pgsmcrypto_14 pgaudit16_14* pgauditlogtofile_14* pg_auth_mon_14* credcheck_14* pgcryptokey_14 pg_jobmon_14 logerrors_14* login_hook_14* set_user_14* pg_snakeoil_14* pgextwlist_14* pg_auditor_14 sslutils_14* noset_14* #pg_tde_14*
 - wrappers_14 multicorn2_14* odbc_fdw_14* jdbc_fdw_14* mysql_fdw_14* tds_fdw_14* sqlite_fdw_14* pgbouncer_fdw_14 mongo_fdw_14* redis_fdw_14* pg_redis_pubsub_14* kafka_fdw_14 hdfs_fdw_14* firebird_fdw_14 aws_s3_14 log_fdw_14* #oracle_fdw_14* #db2_fdw_14*
-- orafce_14* pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14 pg_dbms_lock_14 #documentdb_14* #pg_dbms_job_14 #wiltondb #pgmemcache_14*
+- orafce_14 pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14 pg_dbms_lock_14 #documentdb_14* #pg_dbms_job_14 #wiltondb #pgmemcache_14*
 - pglogical_14* pglogical_ticker_14* pgl_ddl_deploy_14* pg_failover_slots_14* db_migrator_14 wal2json_14* wal2mongo_14* postgres-decoderbufs_14* decoder_raw_14* mimeo_14 pg_fact_loader_14* pg_bulkload_14* #repmgr_14*
 ```
 
@@ -498,7 +498,7 @@ There are **392** extensions available in the current major version PostgreSQL 1
 - pg_profile_14* pg_show_plans_14* pg_stat_kcache_14* pg_stat_monitor_14* pg_qualstats_14* pg_store_plans_14* pg_track_settings_14 pg_wait_sampling_14* system_stats_14* pg_meta_14 pgnodemx_14 pg_sqlog_14 bgw_replstatus_14* pgmeminfo_14* toastinfo_14* pg_explain_ui_14 pg_relusage_14 pagevis_14 powa_14* #pg_tracing_14*
 - passwordcheck_cracklib_14* supautils_14* pgsodium_14* vault_14* pg_session_jwt_14 pg_anon_14 pgsmcrypto_14 pgaudit16_14* pgauditlogtofile_14* pg_auth_mon_14* credcheck_14* pgcryptokey_14 pg_jobmon_14 logerrors_14* login_hook_14* set_user_14* pg_snakeoil_14* pgextwlist_14* pg_auditor_14 sslutils_14* noset_14* #pg_tde_14*
 - wrappers_14 multicorn2_14* odbc_fdw_14* jdbc_fdw_14* mysql_fdw_14* tds_fdw_14* sqlite_fdw_14* pgbouncer_fdw_14 mongo_fdw_14* redis_fdw_14* pg_redis_pubsub_14* kafka_fdw_14 hdfs_fdw_14* firebird_fdw_14 aws_s3_14 log_fdw_14* #oracle_fdw_14* #db2_fdw_14*
-- orafce_14* pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14 pg_dbms_lock_14 #documentdb_14* #pg_dbms_job_14 #wiltondb #pgmemcache_14*
+- orafce_14 pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14 pg_dbms_lock_14 #documentdb_14* #pg_dbms_job_14 #wiltondb #pgmemcache_14*
 - pglogical_14* pglogical_ticker_14* pgl_ddl_deploy_14* pg_failover_slots_14* db_migrator_14 wal2json_14* wal2mongo_14* postgres-decoderbufs_14* decoder_raw_14* mimeo_14 pg_fact_loader_14* pg_bulkload_14* #repmgr_14*
 ```
 
@@ -525,7 +525,7 @@ There are **392** extensions available in the current major version PostgreSQL 1
 - pg_profile_13* pg_show_plans_13* pg_stat_kcache_13* pg_stat_monitor_13* pg_qualstats_13* pg_store_plans_13* pg_track_settings_13 pg_wait_sampling_13* system_stats_13* pg_meta_13 pgnodemx_13 pg_sqlog_13 bgw_replstatus_13* pgmeminfo_13* toastinfo_13* pg_explain_ui_13 pg_relusage_13 pagevis_13 powa_13* #pg_tracing_13*
 - passwordcheck_cracklib_13* supautils_13* pgsodium_13* vault_13* pg_anon_13 pgsmcrypto_13 pgaudit15_13* pgauditlogtofile_13* pg_auth_mon_13* credcheck_13* pgcryptokey_13 pg_jobmon_13 logerrors_13* login_hook_13* set_user_13* pg_snakeoil_13* pgextwlist_13* pg_auditor_13 sslutils_13* noset_13* #pg_session_jwt_13 #pg_tde_13*
 - multicorn2_13* odbc_fdw_13* jdbc_fdw_13* mysql_fdw_13* tds_fdw_13* sqlite_fdw_13* pgbouncer_fdw_13 mongo_fdw_13* redis_fdw_13* pg_redis_pubsub_13* kafka_fdw_13 hdfs_fdw_13* firebird_fdw_13 aws_s3_13 #wrappers_13 #oracle_fdw_13* #db2_fdw_13* #log_fdw_13*
-- orafce_13* pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13 pg_dbms_lock_13 #documentdb_13* #pg_dbms_job_13 #wiltondb #pgmemcache_13*
+- orafce_13 pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13 pg_dbms_lock_13 #documentdb_13* #pg_dbms_job_13 #wiltondb #pgmemcache_13*
 - pglogical_13* pglogical_ticker_13* pgl_ddl_deploy_13* pg_failover_slots_13* db_migrator_13 wal2json_13* wal2mongo_13* postgres-decoderbufs_13* decoder_raw_13* mimeo_13 pg_fact_loader_13* pg_bulkload_13* #repmgr_13*
 ```
 
@@ -547,7 +547,7 @@ There are **392** extensions available in the current major version PostgreSQL 1
 - pg_profile_13* pg_show_plans_13* pg_stat_kcache_13* pg_stat_monitor_13* pg_qualstats_13* pg_store_plans_13* pg_track_settings_13 pg_wait_sampling_13* system_stats_13* pg_meta_13 pgnodemx_13 pg_sqlog_13 bgw_replstatus_13* pgmeminfo_13* toastinfo_13* pg_explain_ui_13 pg_relusage_13 pagevis_13 powa_13* #pg_tracing_13*
 - passwordcheck_cracklib_13* supautils_13* pgsodium_13* vault_13* pg_anon_13 pgsmcrypto_13 pgaudit15_13* pgauditlogtofile_13* pg_auth_mon_13* credcheck_13* pgcryptokey_13 pg_jobmon_13 logerrors_13* login_hook_13* set_user_13* pg_snakeoil_13* pgextwlist_13* pg_auditor_13 sslutils_13* noset_13* #pg_session_jwt_13 #pg_tde_13*
 - multicorn2_13* odbc_fdw_13* jdbc_fdw_13* mysql_fdw_13* tds_fdw_13* sqlite_fdw_13* pgbouncer_fdw_13 mongo_fdw_13* redis_fdw_13* pg_redis_pubsub_13* kafka_fdw_13 hdfs_fdw_13* firebird_fdw_13 aws_s3_13 #wrappers_13 #oracle_fdw_13* #db2_fdw_13* #log_fdw_13*
-- orafce_13* pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13 pg_dbms_lock_13 #documentdb_13* #pg_dbms_job_13 #wiltondb #pgmemcache_13*
+- orafce_13 pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13 pg_dbms_lock_13 #documentdb_13* #pg_dbms_job_13 #wiltondb #pgmemcache_13*
 - pglogical_13* pglogical_ticker_13* pgl_ddl_deploy_13* pg_failover_slots_13* db_migrator_13 wal2json_13* wal2mongo_13* postgres-decoderbufs_13* decoder_raw_13* mimeo_13 pg_fact_loader_13* pg_bulkload_13* #repmgr_13*
 ```
 
