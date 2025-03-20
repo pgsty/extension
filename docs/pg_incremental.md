@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pg_incremental](https://github.com/CrunchyData/pg_incremental) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [pg_incremental](https://github.com/CrunchyData/pg_incremental) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
@@ -58,8 +58,8 @@ CREATE EXTENSION pg_incremental CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_incremental_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  | `pg_cron_$v` |
-| [DEB](/deb) | 1.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-incremental` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  |  | `postgresql-$v-cron` |
+| [RPM](/rpm) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_incremental_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  | `pg_cron_$v` |
+| [DEB](/deb) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-incremental` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  |  | `postgresql-$v-cron` |
 
 
 
@@ -77,7 +77,7 @@ Install `pg_incremental` via [Pigsty](https://pigsty.io/docs/pgext/usage/install
 ```
 
 
-Install `pg_incremental` [RPM](/rpm) from the **<span class="tccyan">PGDG</span>** **YUM** repo:
+Install `pg_incremental` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
 dnf install pg_incremental_17*;

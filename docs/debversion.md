@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [debversion](https://github.com/ATIX-AG/postgresql-debversion-evr) | 1.2 | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tccyan">PGDG</span>** | `SQL` |
+| [debversion](https://github.com/ATIX-AG/postgresql-debversion-evr) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** |  | **<span class="tccyan">PGDG</span>** | `SQL` |
 
 
 
@@ -58,7 +58,7 @@ CREATE EXTENSION debversion;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [DEB](/deb) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-debversion` |  |  |  |  |  |  |
+| [DEB](/deb) | 1.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-debversion` |  |  |  |  |  |  |
 
 
 

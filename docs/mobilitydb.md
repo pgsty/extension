@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [mobilitydb](https://github.com/MobilityDB/MobilityDB) | 1.1.1 | **<span class="tcwarn">GPLv3</span>** |  | **<span class="tccyan">PGDG</span>** | `C` |
+| [mobilitydb](https://github.com/MobilityDB/MobilityDB) | 1.2.0 | **<span class="tcwarn">GPLv3</span>** |  | **<span class="tccyan">PGDG</span>** | `C` |
 
 
 

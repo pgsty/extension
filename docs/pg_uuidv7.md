@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pg_uuidv7](https://github.com/fboulnois/pg_uuidv7) | 1.6 | **<span class="tccyan">MPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [pg_uuidv7](https://github.com/fboulnois/pg_uuidv7) | 1.6.0 | **<span class="tccyan">MPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
@@ -58,8 +58,8 @@ CREATE EXTENSION pg_uuidv7;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.6 | **<span class="tccyan">MPLv2</span>** | **<span class="tccyan">PGDG</span>** | `pg_uuidv7_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 1.6 | **<span class="tccyan">MPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-uuidv7` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm) | 1.6.0 | **<span class="tccyan">MPLv2</span>** | **<span class="tccyan">PGDG</span>** | `pg_uuidv7_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 1.6.0 | **<span class="tccyan">MPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-uuidv7` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

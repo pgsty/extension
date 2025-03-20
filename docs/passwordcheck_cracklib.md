@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [passwordcheck_cracklib](https://github.com/devrimgunduz/passwordcheck_cracklib) | 3.0.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
+| [passwordcheck_cracklib](https://github.com/devrimgunduz/passwordcheck_cracklib) | 3.1.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
@@ -58,8 +58,8 @@ shared_preload_libraries = 'passwordcheck_cracklib'; # add this extension to pos
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.0.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tccyan">PGDG</span>** | `passwordcheck_cracklib_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb) | 3.0.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-passwordcheck-cracklib` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm) | 3.1.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tccyan">PGDG</span>** | `passwordcheck_cracklib_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb) | 3.1.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-passwordcheck-cracklib` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

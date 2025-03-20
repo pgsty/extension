@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [hdfs_fdw](https://github.com/EnterpriseDB/hdfs_fdw) | 2.0.5 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |
+| [hdfs_fdw](https://github.com/EnterpriseDB/hdfs_fdw) | 2.3.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** |  | `C` |
 
 
 
@@ -58,7 +58,7 @@ CREATE EXTENSION hdfs_fdw;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 2.0.5 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `hdfs_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm) | 2.3.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `hdfs_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 

@@ -58,8 +58,8 @@ shared_preload_libraries = 'passwordcheck'; # add this extension to postgresql.c
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm)_cracklib | 3.0.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tccyan">PGDG</span>** | `passwordcheck_cracklib_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
-| [DEB](/deb)_cracklib | 3.0.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-passwordcheck-cracklib` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [RPM](/rpm)_cracklib | 3.1.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tccyan">PGDG</span>** | `passwordcheck_cracklib_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
+| [DEB](/deb)_cracklib | 3.1.0 | **<span class="tcwarn">LGPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-passwordcheck-cracklib` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |
 
 
 
