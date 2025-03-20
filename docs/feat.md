@@ -23,7 +23,7 @@ There are 51 available extensions in this category:
 | 2840 | [index_advisor](/index_advisor) | 0.2.0 | [index_advisor](/index_advisor) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/index_advisor) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Query index advisor |
 | 2850 | [plan_filter](/plan_filter) | 0.0.1 | [pg_plan_filter](/plan_filter) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgexperts/pg_plan_filter) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcwarn">✘</span> | filter statements by their execution plans. |
 | 2860 | [imgsmlr](/imgsmlr) | 1.0 | [imgsmlr](/imgsmlr) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/postgrespro/imgsmlr) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Image similarity with haar |
-| 2870 | [pg_ivm](/pg_ivm) | 1.9 | [pg_ivm](/pg_ivm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/sraoss/pg_ivm) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | incremental view maintenance on PostgreSQL |
+| 2870 | [pg_ivm](/pg_ivm) | 1.10 | [pg_ivm](/pg_ivm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/sraoss/pg_ivm) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | incremental view maintenance on PostgreSQL |
 | 2880 | [pg_incremental](/pg_incremental) | 1.1 | [pg_incremental](/pg_incremental) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/CrunchyData/pg_incremental) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Incremental Processing by Crunchy Data |
 | 2900 | [pgmq](/pgmq) | 1.5.0 | [pgmq](/pgmq) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/tembo-io/pgmq) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | A lightweight message queue. Like AWS SQS and RSMQ but on Postgres. |
 | 2910 | [pgq](/pgq) | 3.5.1 | [pgq](/pgq) | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/pgq/pgq) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Generic queue for PostgreSQL |
@@ -69,22 +69,22 @@ There are 51 available extensions in this category:
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pg_incremental pgmq pgq pg_cardano omnigres #age #rdkit
+pg17: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pg_incremental pgmq pgq pg_cardano omnigres #rdkit
 pg16: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pg_incremental pgmq pgq pg_cardano omnigres #rdkit
 pg15: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #pg_incremental #rdkit
-pg14: hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #age #pg_incremental #rdkit
-pg13: hll rum pg_jsonschema pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #age #pg_graphql #jsquery #pg_incremental #rdkit
+pg14: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #pg_incremental #rdkit
+pg13: age hll rum pg_jsonschema pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #pg_graphql #jsquery #pg_incremental #rdkit
 ```
 
 
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pg_incremental pgmq pgq pg_cardano omnigres #age #rdkit
+pg17: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pg_incremental pgmq pgq pg_cardano omnigres #rdkit
 pg16: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pg_incremental pgmq pgq pg_cardano omnigres #rdkit
 pg15: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #pg_incremental #rdkit
-pg14: hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #age #pg_incremental #rdkit
-pg13: hll rum pg_jsonschema pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #age #pg_graphql #jsquery #pg_incremental #rdkit
+pg14: age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #pg_incremental #rdkit
+pg13: age hll rum pg_jsonschema pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #pg_graphql #jsquery #pg_incremental #rdkit
 ```
 
 
@@ -129,7 +129,7 @@ pg13: age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_pla
 
 | Package | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
-| [age](/age) | 1.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `apache-age_$v*` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | AGE graph database extension |
+| [age](/age) | 1.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `apache-age_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | AGE graph database extension |
 | [hll](/hll) | 2.18 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `hll_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | type for storing hyperloglog data |
 | [rum](/rum) | 1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `rum_$v` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | RUM index access method |
 | [pg_graphql](/pg_graphql) | 1.5.11 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_graphql_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | pg_graphql: GraphQL support |
@@ -153,22 +153,22 @@ pg13: age hll rum pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_pla
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: hll_17* rum_17 pg_graphql_17 pg_jsonschema_17 jsquery_17* pg_hint_plan_17* hypopg_17* index_advisor_17 pg_plan_filter_17* imgsmlr_17* pg_ivm_17* pg_incremental_17* pgmq_17 pgq_17* pg_cardano_17 omnigres_17 #apache-age_17*
+pg17: apache-age_17* hll_17* rum_17 pg_graphql_17 pg_jsonschema_17 jsquery_17* pg_hint_plan_17* hypopg_17* index_advisor_17 pg_plan_filter_17* imgsmlr_17* pg_ivm_17* pg_incremental_17* pgmq_17 pgq_17* pg_cardano_17 omnigres_17
 pg16: apache-age_16* hll_16* rum_16 pg_graphql_16 pg_jsonschema_16 jsquery_16* pg_hint_plan_16* hypopg_16* index_advisor_16 pg_plan_filter_16* imgsmlr_16* pg_ivm_16* pg_incremental_16* pgmq_16 pgq_16* pg_cardano_16 omnigres_16
 pg15: apache-age_15* hll_15* rum_15 pg_graphql_15 pg_jsonschema_15 jsquery_15* pg_hint_plan_15* hypopg_15* index_advisor_15 pg_plan_filter_15* imgsmlr_15* pg_ivm_15* pgmq_15 pgq_15* pg_cardano_15 omnigres_15 #pg_incremental_15*
-pg14: hll_14* rum_14 pg_graphql_14 pg_jsonschema_14 jsquery_14* pg_hint_plan_14* hypopg_14* index_advisor_14 pg_plan_filter_14* imgsmlr_14* pg_ivm_14* pgmq_14 pgq_14* pg_cardano_14 omnigres_14 #apache-age_14* #pg_incremental_14*
-pg13: hll_13* rum_13 pg_jsonschema_13 pg_hint_plan_13* hypopg_13* index_advisor_13 pg_plan_filter_13* imgsmlr_13* pg_ivm_13* pgmq_13 pgq_13* pg_cardano_13 omnigres_13 #apache-age_13* #pg_graphql_13 #jsquery_13* #pg_incremental_13*
+pg14: apache-age_14* hll_14* rum_14 pg_graphql_14 pg_jsonschema_14 jsquery_14* pg_hint_plan_14* hypopg_14* index_advisor_14 pg_plan_filter_14* imgsmlr_14* pg_ivm_14* pgmq_14 pgq_14* pg_cardano_14 omnigres_14 #pg_incremental_14*
+pg13: apache-age_13* hll_13* rum_13 pg_jsonschema_13 pg_hint_plan_13* hypopg_13* index_advisor_13 pg_plan_filter_13* imgsmlr_13* pg_ivm_13* pgmq_13 pgq_13* pg_cardano_13 omnigres_13 #pg_graphql_13 #jsquery_13* #pg_incremental_13*
 ```
 
 
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: hll_17* rum_17 pg_graphql_17 pg_jsonschema_17 jsquery_17* pg_hint_plan_17* hypopg_17* index_advisor_17 pg_plan_filter_17* imgsmlr_17* pg_ivm_17* pg_incremental_17* pgmq_17 pgq_17* pg_cardano_17 omnigres_17 #apache-age_17*
+pg17: apache-age_17* hll_17* rum_17 pg_graphql_17 pg_jsonschema_17 jsquery_17* pg_hint_plan_17* hypopg_17* index_advisor_17 pg_plan_filter_17* imgsmlr_17* pg_ivm_17* pg_incremental_17* pgmq_17 pgq_17* pg_cardano_17 omnigres_17
 pg16: apache-age_16* hll_16* rum_16 pg_graphql_16 pg_jsonschema_16 jsquery_16* pg_hint_plan_16* hypopg_16* index_advisor_16 pg_plan_filter_16* imgsmlr_16* pg_ivm_16* pg_incremental_16* pgmq_16 pgq_16* pg_cardano_16 omnigres_16
 pg15: apache-age_15* hll_15* rum_15 pg_graphql_15 pg_jsonschema_15 jsquery_15* pg_hint_plan_15* hypopg_15* index_advisor_15 pg_plan_filter_15* imgsmlr_15* pg_ivm_15* pgmq_15 pgq_15* pg_cardano_15 omnigres_15 #pg_incremental_15*
-pg14: hll_14* rum_14 pg_graphql_14 pg_jsonschema_14 jsquery_14* pg_hint_plan_14* hypopg_14* index_advisor_14 pg_plan_filter_14* imgsmlr_14* pg_ivm_14* pgmq_14 pgq_14* pg_cardano_14 omnigres_14 #apache-age_14* #pg_incremental_14*
-pg13: hll_13* rum_13 pg_jsonschema_13 pg_hint_plan_13* hypopg_13* index_advisor_13 pg_plan_filter_13* imgsmlr_13* pg_ivm_13* pgmq_13 pgq_13* pg_cardano_13 omnigres_13 #apache-age_13* #pg_graphql_13 #jsquery_13* #pg_incremental_13*
+pg14: apache-age_14* hll_14* rum_14 pg_graphql_14 pg_jsonschema_14 jsquery_14* pg_hint_plan_14* hypopg_14* index_advisor_14 pg_plan_filter_14* imgsmlr_14* pg_ivm_14* pgmq_14 pgq_14* pg_cardano_14 omnigres_14 #pg_incremental_14*
+pg13: apache-age_13* hll_13* rum_13 pg_jsonschema_13 pg_hint_plan_13* hypopg_13* index_advisor_13 pg_plan_filter_13* imgsmlr_13* pg_ivm_13* pgmq_13 pgq_13* pg_cardano_13 omnigres_13 #pg_graphql_13 #jsquery_13* #pg_incremental_13*
 ```
 
 

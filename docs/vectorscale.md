@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [vectorscale](https://github.com/timescale/pgvectorscale) | 0.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
+| [vectorscale](https://github.com/timescale/pgvectorscale) | 0.6.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
 
 
 
@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION vectorscale CASCADE;
 ```
-
+> **Comment**: pgrx=v0.12.5
 -----------
 
 

@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pg_parquet](https://github.com/CrunchyData/pg_parquet/) | 0.2.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
+| [pg_parquet](https://github.com/CrunchyData/pg_parquet/) | 0.3.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
 
 
 
@@ -53,7 +53,7 @@ shared_preload_libraries = 'pg_parquet'; # add this extension to postgresql.conf
 ```sql
 CREATE EXTENSION pg_parquet;
 ```
-
+> **Comment**: pgrx=v0.13.1
 -----------
 
 

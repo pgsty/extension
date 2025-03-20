@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pg_session_jwt](https://github.com/neondatabase/pg_session_jwt) | 0.1.2 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
+| [pg_session_jwt](https://github.com/neondatabase/pg_session_jwt) | 0.2.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
 
 
 
@@ -30,7 +30,7 @@
 
 | Alias | Tags | Schemas | Requires | Required by |
 |-------|------|---------|----------|-------------|
-| [pg_session_jwt](/pg_session_jwt) | `neon` | `auth` |  |  |
+| [pg_session_jwt](/pg_session_jwt) | `neon`, `pgrx` | `auth` |  |  |
 
 
 
@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_session_jwt;
 ```
-
+> **Comment**: pgrx=v0.12.6
 -----------
 
 
