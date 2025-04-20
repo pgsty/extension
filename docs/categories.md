@@ -215,7 +215,7 @@ All PostgreSQL are divided into 15 categories, shown below:
 
 --------
 ## [**TYPE**](/type)
-> TYPE: Dedicate New Data Types Like: prefix, sember, uint, SIUnit, RoaringBitmap, Rational, Sphere, Hash, RRule, and more... (36 extensions)
+> TYPE: Dedicate New Data Types Like: prefix, sember, uint, SIUnit, RoaringBitmap, Rational, Sphere, Hash, RRule, and more... (37 extensions)
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | Description | Comment |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|-------------|---------|
@@ -231,6 +231,7 @@ All PostgreSQL are divided into 15 categories, shown below:
 | 3590 | [pg_sphere](/pg_sphere) | 1.5.1 | [pgsphere](/pg_sphere) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/postgrespro/pgsphere) | spherical objects with useful functions, operators and index support |  |
 | 3600 | [country](/country) | 0.0.3 | [pg_country](/country) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/pg-country) | Country data type, ISO 3166-1 |  |
 | 3610 | [pg_xenophile](/pg_xenophile) | 0.8.3 | [pg_xenophile](/pg_xenophile) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/bigsmoke/pg_xenophile) | More than the bare necessities for PostgreSQL i18n and l10n. |  |
+| 3611 | [l10n_table_dependent_extension](/l10n_table_dependent_extension) | 0.8.3 | [pg_xenophile](/l10n_table_dependent_extension) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/bigsmoke/pg_xenophile) | PostgreSQL l10n toolbox |  |
 | 3620 | [currency](/currency) | 0.0.3 | [pg_currency](/currency) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/pg-currency) | Custom PostgreSQL currency type in 1Byte |  |
 | 3630 | [collection](/collection) | 0.9.1 | [pg_collection](/collection) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/aws/pgcollection) | Memory optimized data type to be used inside of plpglsql func |  |
 | 3700 | [pgmp](/pgmp) | 1.0.5 | [pgmp](/pgmp) | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/dvarrazzo/pgmp/) | Multiple Precision Arithmetic extension | missing pg14,13,12 on el pgdg repo |

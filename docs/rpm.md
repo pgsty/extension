@@ -1,15 +1,15 @@
 # RPM Extension Packages
 
-There are **398** extensions available on EL compatible systems, **7** of them are EL exclusive, and missing **7** Debian exclusive extensions.
+There are **400** extensions available on EL compatible systems, **7** of them are EL exclusive, and missing **7** Debian exclusive extensions.
 
-There are **69** built-in [**contrib**](contrib) extensions, in addition to **116** rpm extensions provided by PGDG YUM repository, and **209** extensions provided by Pigsty.
+There are **69** built-in [**contrib**](contrib) extensions, in addition to **117** rpm extensions provided by PGDG YUM repository, and **210** extensions provided by Pigsty.
 
-There are **393** extensions available in the current major version PostgreSQL 16, and **381** ready for the latest PostgreSQL 17.
+There are **395** extensions available in the current major version PostgreSQL 16, and **383** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 398 | 116 | 209 | 69 | 4 | 7 | 381 | 393 | 395 | 379 | 356 |
+| RPM Extension | 400 | 117 | 210 | 69 | 4 | 7 | 383 | 395 | 397 | 381 | 358 |
 | RPM Package | 281 | 105 | 172 | 1 | 4 | 1 | 266 | 276 | 278 | 267 | 247 |
 
 

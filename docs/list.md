@@ -1,14 +1,14 @@
 # Extension List
 
-There are **405** available extensions, including **398** [**RPM**](/rpm) extensions available in EL, and **392** [**DEB**](/deb) available in Debian/Ubuntu.
+There are **407** available extensions, including **400** [**RPM**](/rpm) extensions available in EL, and **394** [**DEB**](/deb) available in Debian/Ubuntu.
 
-There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **336** additional third-party extensions provide by PGDG & Pigsty. 
+There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **338** additional third-party extensions provide by PGDG & Pigsty. 
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 398 | 116 | 209 | 69 | 4 | 7 | 381 | 393 | 395 | 379 | 356 |
-| DEB Extension | 392 | 103 | 216 | 69 | 4 | 13 | 379 | 387 | 389 | 377 | 352 |
+| RPM Extension | 400 | 117 | 210 | 69 | 4 | 7 | 383 | 395 | 397 | 381 | 358 |
+| DEB Extension | 394 | 103 | 218 | 69 | 4 | 13 | 381 | 389 | 391 | 379 | 354 |
 
 
 
@@ -188,6 +188,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [TYPE](/type) | 3590 | [pg_sphere](/pg_sphere) | 1.5.1 | [pgsphere](/pg_sphere) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/postgrespro/pgsphere) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | spherical objects with useful functions, operators and index support |
 | [TYPE](/type) | 3600 | [country](/country) | 0.0.3 | [pg_country](/country) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/pg-country) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Country data type, ISO 3166-1 |
 | [TYPE](/type) | 3610 | [pg_xenophile](/pg_xenophile) | 0.8.3 | [pg_xenophile](/pg_xenophile) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/bigsmoke/pg_xenophile) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | More than the bare necessities for PostgreSQL i18n and l10n. |
+| [TYPE](/type) | 3611 | [l10n_table_dependent_extension](/l10n_table_dependent_extension) | 0.8.3 | [pg_xenophile](/l10n_table_dependent_extension) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/bigsmoke/pg_xenophile) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | PostgreSQL l10n toolbox |
 | [TYPE](/type) | 3620 | [currency](/currency) | 0.0.3 | [pg_currency](/currency) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/adjust/pg-currency) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Custom PostgreSQL currency type in 1Byte |
 | [TYPE](/type) | 3630 | [collection](/collection) | 0.9.1 | [pg_collection](/collection) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/aws/pgcollection) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Memory optimized data type to be used inside of plpglsql func |
 | [TYPE](/type) | 3700 | [pgmp](/pgmp) | 1.0.5 | [pgmp](/pgmp) | **<span class="tcwarn">LGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/dvarrazzo/pgmp/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Multiple Precision Arithmetic extension |
@@ -232,6 +233,7 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [UTIL](/util) | 4270 | [envvar](/envvar) | 1.0.0 | [envvar](/envvar) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/theory/pg-envvar) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Fetch the value of an environment variable |
 | [UTIL](/util) | 4280 | [floatfile](/floatfile) | 1.3.1 | [floatfile](/floatfile) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pjungwir/floatfile) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Simple file storage for arrays of floats |
 | [UTIL](/util) | 4300 | [pg_readme](/pg_readme) | 0.7.0 | [pg_readme](/pg_readme) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/bigsmoke/pg_readme) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Generate a README.md document for a database extension or schema |
+| [UTIL](/util) | 4301 | [pg_readme_test_extension](/pg_readme_test_extension) | 0.7.0 | [pg_readme](/pg_readme_test_extension) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/bigsmoke/pg_readme) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Test generating a README.md document for extension or schema |
 | [UTIL](/util) | 4310 | [ddl_historization](/ddl_historization) | 0.0.7 | [ddl_historization](/ddl_historization) | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/rodo/pg_ddl_historization) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Historize the ddl changes inside PostgreSQL database |
 | [UTIL](/util) | 4320 | [data_historization](/data_historization) | 1.1.0 | [data_historization](/data_historization) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/rodo/postgresql-data-historization) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | PLPGSQL Script to historize data in partitionned table |
 | [UTIL](/util) | 4330 | [schedoc](/schedoc) | 0.0.1 | [pg_schedoc](/schedoc) | **<span class="tcwarn">GPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/ZeroGachis/pg_schedoc) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Cross documentation between Django and DBT projects |
