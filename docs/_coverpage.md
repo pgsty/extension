@@ -4,7 +4,7 @@
 
 ### [`ext.pigsty.io`](https://pigsty.io/ext/list)
 
-- 405 extensions!
+- 407 extensions!
 - As Binary Packages
 - For PostgreSQL 13 - 17
 - On Ubuntu 22/24 / Debian 12
