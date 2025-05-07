@@ -1,14 +1,14 @@
 # Extension List
 
-There are **411** available extensions, including **404** [**RPM**](/rpm) extensions available in EL, and **398** [**DEB**](/deb) available in Debian/Ubuntu.
+There are **412** available extensions, including **405** [**RPM**](/rpm) extensions available in EL, and **399** [**DEB**](/deb) available in Debian/Ubuntu.
 
-There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **342** additional third-party extensions provide by PGDG & Pigsty. 
+There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **343** additional third-party extensions provide by PGDG & Pigsty. 
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 404 | 117 | 214 | 69 | 4 | 7 | 387 | 399 | 401 | 385 | 362 |
-| DEB Extension | 398 | 103 | 222 | 69 | 4 | 13 | 385 | 393 | 395 | 383 | 358 |
+| RPM Extension | 405 | 117 | 215 | 69 | 4 | 7 | 388 | 400 | 402 | 386 | 363 |
+| DEB Extension | 399 | 103 | 223 | 69 | 4 | 13 | 386 | 394 | 396 | 384 | 359 |
 
 
 
@@ -116,8 +116,9 @@ There are **69** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [FEAT](/feat) | 2952 | [omni_auth](/omni_auth) | 0.1.3 | [omnigres](/omni_auth) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_auth/basics/) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Basic session management |
 | [FEAT](/feat) | 2953 | [omni_aws](/omni_aws) | 0.1.2 | [omnigres](/omni_aws) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_aws/s3/) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Amazon Web Services APIs (S3) |
 | [FEAT](/feat) | 2954 | [omni_cloudevents](/omni_cloudevents) | 0.1.0 | [omnigres](/omni_cloudevents) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_cloudevents/cloud_events/) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | CloudEvents support |
-| [FEAT](/feat) | 2957 | [omni_containers](/omni_containers) | 0.2.0 | [omnigres](/omni_containers) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_containers/intro/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Docker container management |
-| [FEAT](/feat) | 2958 | [omni_credentials](/omni_credentials) | 0.2.0 | [omnigres](/omni_credentials) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_credentials/credentials/) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Application credential management |
+| [FEAT](/feat) | 2955 | [omni_containers](/omni_containers) | 0.2.0 | [omnigres](/omni_containers) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_containers/intro/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Docker container management |
+| [FEAT](/feat) | 2956 | [omni_credentials](/omni_credentials) | 0.2.0 | [omnigres](/omni_credentials) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_credentials/credentials/) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Application credential management |
+| [FEAT](/feat) | 2958 | [omni_email](/omni_email) | 0 | [omnigres](/omni_email) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_email/reference/) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | E-mail framework |
 | [FEAT](/feat) | 2959 | [omni_http](/omni_http) | 0.1.0 | [omnigres](/omni_http) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_httpc/reference/) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Basic HTTP types |
 | [FEAT](/feat) | 2960 | [omni_httpc](/omni_httpc) | 0.1.5 | [omnigres](/omni_httpc) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_httpc/reference/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | HTTP client |
 | [FEAT](/feat) | 2961 | [omni_httpd](/omni_httpd) | 0.4.6 | [omnigres](/omni_httpd) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_httpd/intro/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | HTTP server |

@@ -118,7 +118,7 @@ All PostgreSQL are divided into 15 categories, shown below:
 
 --------
 ## [**FEAT**](/feat)
-> FEAT: OpenCypher with AGE, GraphQL, JsonSchema, Hints & Hypo Index, HLL, Rum, IVM, ChemRDKit, and Message Queues,... (54 extensions)
+> FEAT: OpenCypher with AGE, GraphQL, JsonSchema, Hints & Hypo Index, HLL, Rum, IVM, ChemRDKit, and Message Queues,... (55 extensions)
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | Description | Comment |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|-------------|---------|
@@ -143,8 +143,9 @@ All PostgreSQL are divided into 15 categories, shown below:
 | 2952 | [omni_auth](/omni_auth) | 0.1.3 | [omnigres](/omni_auth) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_auth/basics/) | Basic session management |  |
 | 2953 | [omni_aws](/omni_aws) | 0.1.2 | [omnigres](/omni_aws) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_aws/s3/) | Amazon Web Services APIs (S3) |  |
 | 2954 | [omni_cloudevents](/omni_cloudevents) | 0.1.0 | [omnigres](/omni_cloudevents) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_cloudevents/cloud_events/) | CloudEvents support |  |
-| 2957 | [omni_containers](/omni_containers) | 0.2.0 | [omnigres](/omni_containers) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_containers/intro/) | Docker container management |  |
-| 2958 | [omni_credentials](/omni_credentials) | 0.2.0 | [omnigres](/omni_credentials) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_credentials/credentials/) | Application credential management |  |
+| 2955 | [omni_containers](/omni_containers) | 0.2.0 | [omnigres](/omni_containers) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_containers/intro/) | Docker container management |  |
+| 2956 | [omni_credentials](/omni_credentials) | 0.2.0 | [omnigres](/omni_credentials) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_credentials/credentials/) | Application credential management |  |
+| 2958 | [omni_email](/omni_email) | 0 | [omnigres](/omni_email) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_email/reference/) | E-mail framework |  |
 | 2959 | [omni_http](/omni_http) | 0.1.0 | [omnigres](/omni_http) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_httpc/reference/) | Basic HTTP types |  |
 | 2960 | [omni_httpc](/omni_httpc) | 0.1.5 | [omnigres](/omni_httpc) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_httpc/reference/) | HTTP client |  |
 | 2961 | [omni_httpd](/omni_httpd) | 0.4.6 | [omnigres](/omni_httpd) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://docs.omnigres.org/omni_httpd/intro/) | HTTP server |  |

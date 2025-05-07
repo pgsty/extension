@@ -1,13 +1,13 @@
 # PostgreSQL Extension Repo
 
 [![Webite: pigsty.io](https://img.shields.io/badge/website-pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://pigsty.io/ext)
-[![CLI: pig v0.3.2](https://img.shields.io/badge/pig-v0.3.2-slategray?style=flat&logo=cilium&logoColor=white)](https://github.com/pgsty/pig)
-[![Extensions: 407](https://img.shields.io/badge/extensions-407-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/docs/pgext/list)
+[![CLI: pig v0.4.0](https://img.shields.io/badge/pig-v0.4.0-slategray?style=flat&logo=cilium&logoColor=white)](https://github.com/pgsty/pig)
+[![Extensions: 412](https://img.shields.io/badge/extensions-412-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/ext/list)
 [![License: Apache-2.0](https://img.shields.io/github/license/pgsty/extension?logo=opensourceinitiative&logoColor=green&color=slategray)](https://github.com/pgsty/pig/blob/main/LICENSE)
 
 The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://www.pigsty.io)
 
-Provide 407 available [Extensions](https://ext.pigsty.io/#/list) as [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **13** - **17** in addition to the official PGDG repo.
+Provide 412 available [Extensions](https://ext.pigsty.io/#/list) as [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **13** - **17** in addition to the official PGDG repo.
 
 Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS distros, and `x86_64` & `ARM64` architectures.
 
