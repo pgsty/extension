@@ -1,15 +1,15 @@
 # RPM Extension Packages
 
-There are **401** extensions available on EL compatible systems, **7** of them are EL exclusive, and missing **7** Debian exclusive extensions.
+There are **404** extensions available on EL compatible systems, **7** of them are EL exclusive, and missing **7** Debian exclusive extensions.
 
-There are **69** built-in [**contrib**](contrib) extensions, in addition to **117** rpm extensions provided by PGDG YUM repository, and **211** extensions provided by Pigsty.
+There are **69** built-in [**contrib**](contrib) extensions, in addition to **117** rpm extensions provided by PGDG YUM repository, and **214** extensions provided by Pigsty.
 
-There are **396** extensions available in the current major version PostgreSQL 16, and **384** ready for the latest PostgreSQL 17.
+There are **399** extensions available in the current major version PostgreSQL 16, and **387** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 401 | 117 | 211 | 69 | 4 | 7 | 384 | 396 | 398 | 382 | 359 |
+| RPM Extension | 404 | 117 | 214 | 69 | 4 | 7 | 387 | 399 | 401 | 385 | 362 |
 | RPM Package | 282 | 105 | 173 | 1 | 4 | 1 | 267 | 277 | 279 | 268 | 248 |
 
 
@@ -97,7 +97,7 @@ There are **396** extensions available in the current major version PostgreSQL 1
 | [FEAT](/feat) | [pgmq](/pgmq) | 1.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgmq_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | A lightweight message queue. Like AWS SQS and RSMQ but on Postgres. |
 | [FEAT](/feat) | [pgq](/pgq) | 3.5.1 | **<span class="tcblue">ISC</span>** | **<span class="tccyan">PGDG</span>** | `pgq_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Generic queue for PostgreSQL |
 | [FEAT](/feat) | [pg_cardano](/pg_cardano) | 1.0.5 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_cardano_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | A suite of Cardano-related tools |
-| [FEAT](/feat) | [omnigres](/omni) | 0.2.4 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `omnigres_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Advanced adapter for Postgres extensions |
+| [FEAT](/feat) | [omnigres](/omni) | 0.2.9 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `omnigres_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Advanced adapter for Postgres extensions |
 | [LANG](/lang) | [pg_tle](/pg_tle) | 1.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_tle_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Trusted Language Extensions for PostgreSQL |
 | [LANG](/lang) | [plv8](/plv8) | 3.2.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `plv8_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | PL/JavaScript (v8) trusted procedural language |
 | [LANG](/lang) | [pllua](/pllua) | 2.0.12 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pllua_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Lua as a procedural language |
