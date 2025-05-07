@@ -1,15 +1,15 @@
 # DEB Extension Packages
 
-There are **399** extensions available on Debian/Ubuntu compatible systems, **13** of them are Debian exclusive, and missing **13** EL exclusive extensions.
+There are **401** extensions available on Debian/Ubuntu compatible systems, **13** of them are Debian exclusive, and missing **13** EL exclusive extensions.
 
-There are **69** built-in [**contrib**](contrib) extensions, in addition to **103** deb extensions provided by PGDG YUM repository, and **223** extensions provided by Pigsty.
+There are **71** built-in [**contrib**](contrib) extensions, in addition to **103** deb extensions provided by PGDG YUM repository, and **223** extensions provided by Pigsty.
 
 There are **394** extensions available in the current major version PostgreSQL 16, and **386** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| DEB Extension | 399 | 103 | 223 | 69 | 4 | 13 | 386 | 394 | 396 | 384 | 359 |
+| DEB Extension | 401 | 103 | 223 | 71 | 4 | 13 | 386 | 394 | 396 | 384 | 359 |
 | DEB Package | 274 | 89 | 180 | 1 | 4 | 1 | 263 | 269 | 271 | 264 | 242 |
 
 
@@ -221,7 +221,7 @@ There are **394** extensions available in the current major version PostgreSQL 1
 | [ADMIN](/admin) | [pgpool](/pgpool_adm) | 4.6.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgpool2` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Administrative functions for pgPool |
 | [STAT](/stat) | [pg_profile](/pg_profile) | 4.7 | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-profile` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | PostgreSQL load profile repository and report builder |
 | [STAT](/stat) | [pg_tracing](/pg_tracing) | 0.1.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-tracing` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | Distributed Tracing for PostgreSQL |
-| [STAT](/stat) | [pg_show_plans](/pg_show_plans) | 2.1.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-show-plans` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | show query plans of all currently running SQL statements |
+| [STAT](/stat) | [pg_show_plans](/pg_show_plans) | 2.1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-show-plans` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | show query plans of all currently running SQL statements |
 | [STAT](/stat) | [pg_stat_kcache](/pg_stat_kcache) | 2.3.0 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-stat-kcache` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Kernel statistics gathering |
 | [STAT](/stat) | [pg_stat_monitor](/pg_stat_monitor) | 2.1.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-stat-monitor` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | The pg_stat_monitor is a PostgreSQL Query Performance Monitoring tool, based on PostgreSQL contrib module pg_stat_statements. pg_stat_monitor provides aggregated statistics, client information, plan details including plan, and histogram information. |
 | [STAT](/stat) | [pg_qualstats](/pg_qualstats) | 2.1.1 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pg-qualstats` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | An extension collecting statistics about quals |

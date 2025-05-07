@@ -1,15 +1,15 @@
 # RPM Extension Packages
 
-There are **405** extensions available on EL compatible systems, **7** of them are EL exclusive, and missing **7** Debian exclusive extensions.
+There are **407** extensions available on EL compatible systems, **7** of them are EL exclusive, and missing **7** Debian exclusive extensions.
 
-There are **69** built-in [**contrib**](contrib) extensions, in addition to **117** rpm extensions provided by PGDG YUM repository, and **215** extensions provided by Pigsty.
+There are **71** built-in [**contrib**](contrib) extensions, in addition to **117** rpm extensions provided by PGDG YUM repository, and **215** extensions provided by Pigsty.
 
 There are **400** extensions available in the current major version PostgreSQL 16, and **388** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 405 | 117 | 215 | 69 | 4 | 7 | 388 | 400 | 402 | 386 | 363 |
+| RPM Extension | 407 | 117 | 215 | 71 | 4 | 7 | 388 | 400 | 402 | 386 | 363 |
 | RPM Package | 282 | 105 | 173 | 1 | 4 | 1 | 267 | 277 | 279 | 268 | 248 |
 
 
@@ -36,7 +36,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 | [TIME](/time) | [pg_later](/pg_later) | 0.3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_later_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | pg_later: Run queries now and get results later |
 | [TIME](/time) | [pg_background](/pg_background) | 1.3 | **<span class="tcwarn">GPLv3</span>** | **<span class="tccyan">PGDG</span>** | `pg_background_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Run SQL queries in the background |
 | [GIS](/gis) | [postgis](/postgis) | 3.5.2 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `postgis35_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PostGIS geometry and geography spatial types and functions |
-| [GIS](/gis) | [pgrouting](/pgrouting) | 3.7.3 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `pgrouting_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | pgRouting Extension |
+| [GIS](/gis) | [pgrouting](/pgrouting) | 3.8.0 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `pgrouting_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | pgRouting Extension |
 | [GIS](/gis) | [pointcloud](/pointcloud) | 1.2.5 | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pointcloud_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | data type for lidar point clouds |
 | [GIS](/gis) | [pg_h3](/h3) | 4.1.3 | **<span class="tccyan">Apache-2</span>** | **<span class="tccyan">PGDG</span>** | `h3-pg_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | H3 bindings for PostgreSQL |
 | [GIS](/gis) | [q3c](/q3c) | 2.0.1 | **<span class="tcwarn">GPLv2</span>** | **<span class="tcwarn">PIGSTY</span>** | `q3c_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | q3c sky indexing plugin |
@@ -104,7 +104,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 | [LANG](/lang) | [plprql](/plprql) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `plprql_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Use PRQL in PostgreSQL - Pipelined Relational Query Language |
 | [LANG](/lang) | [pldebugger](/pldbgapi) | 1.8 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `pldebugger_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | server-side support for debugging PL/pgSQL functions |
 | [LANG](/lang) | [plpgsql_check](/plpgsql_check) | 2.8.1 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `plpgsql_check_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | extended check for plpgsql functions |
-| [LANG](/lang) | [plprofiler](/plprofiler) | 4.2.5 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `plprofiler_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | server-side support for profiling PL/pgSQL functions |
+| [LANG](/lang) | [plprofiler](/plprofiler) | 4.2.4 | **<span class="tccyan">Artistic</span>** | **<span class="tccyan">PGDG</span>** | `plprofiler_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | server-side support for profiling PL/pgSQL functions |
 | [LANG](/lang) | [plsh](/plsh) | 1.20220917 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `plsh_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PL/sh procedural language |
 | [LANG](/lang) | [pljava](/pljava) | 1.6.8 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `pljava_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | PL/Java procedural language (https://tada.github.io/pljava/) |
 | [LANG](/lang) | [plr](/plr) | 8.4.7 | **<span class="tcwarn">GPLv2</span>** | **<span class="tccyan">PGDG</span>** | `plr_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | load R interpreter and execute R script from within a database |
