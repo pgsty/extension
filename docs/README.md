@@ -1,7 +1,7 @@
 # PostgreSQL Extension Repo
 
 [![Webite: pigsty.io](https://img.shields.io/badge/website-pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://pigsty.io/ext)
-[![CLI: pig v0.3.2](https://img.shields.io/badge/pig-v0.3.2-slategray?style=flat&logo=cilium&logoColor=white)](https://pigsty.io/ext/pig)
+[![CLI: pig v0.4.1](https://img.shields.io/badge/pig-v0.4.1-slategray?style=flat&logo=cilium&logoColor=white)](https://pigsty.io/ext/pig)
 [![Extensions: 414](https://img.shields.io/badge/extensions-414-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/ext/list)
 [![License: Apache-2.0](https://img.shields.io/github/license/pgsty/extension?logo=opensourceinitiative&logoColor=green&color=slategray)](https://github.com/pgsty/pig/blob/main/LICENSE)
 
@@ -12,11 +12,10 @@ Provide [414](/list) available extensions as [RPM](/rpm) / [DEB](/deb) for Postg
 
 Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS distros, and `x86_64` & `ARM64` architectures. 
 
-|Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 407 | 117 | 215 | 71 | 4 | 7 | 388 | 400 | 402 | 386 | 363 |
-| DEB Extension | 401 | 103 | 223 | 71 | 4 | 13 | 386 | 394 | 396 | 384 | 359 |
-
+| Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:--------------:|:---:|:----:|:------:|:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| RPM Extension  | 407 | 117  |  215   |   71    |  4   |  7   | 388  | 400  | 402  | 386  | 363  |
+| DEB Extension  | 401 | 103  |  223   |   71    |  4   |  13  | 386  | 394  | 396  | 384  | 359  |
 
 
 > **Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"

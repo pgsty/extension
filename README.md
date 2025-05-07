@@ -12,10 +12,11 @@ Provide 412 available [Extensions](https://ext.pigsty.io/#/list) as [RPM](https:
 Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS distros, and `x86_64` & `ARM64` architectures.
 
 
-| Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 |
-|:--------------:|:---:|:----:|:------:|:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension  | 397 | 116  |  208   |   69    |  4   |  7   | 379  | 392  | 394  | 378  | 355  |
-| DEB Extension  | 391 | 103  |  215   |   69    |  4   |  13  | 378  | 386  | 388  | 377  | 352  |
+|Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| RPM Extension | 407 | 117 | 215 | 71 | 4 | 7 | 388 | 400 | 402 | 386 | 363 |
+| DEB Extension | 401 | 103 | 223 | 71 | 4 | 13 | 386 | 394 | 396 | 384 | 359 |
+
 
 
 **Why extension matters to PostgreSQL?** check the post: "[***PostgreSQL is eating the database world!***](https://medium.com/@fengruohang/postgres-is-eating-the-database-world-157c204dcfc4)"
