@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION timeseries CASCADE;
 ```
-> **Comment**: unmet deps: hydra17 not ready, pg_partman17/pg_ivm12 on el not ready
+> **Comment**: unmet deps: hydra17 not ready, pg_partman17/pg_ivm12 on el not ready, 0.1.7 break
 -----------
 
 

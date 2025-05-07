@@ -12,14 +12,16 @@ Extensions to be included and extensions will not be included
 - [pg-rag](https://github.com/nearform/pg-rag)
 - [onesparse](https://github.com/OneSparse/OneSparse)
 - [synchdb](https://github.com/Hornetlabs/synchdb) (break deb packages)
-- [orioledb](https://github.com/orioledb/orioledb)
 
 **Recently Added**:
 
+- tzf
+- openhalo
+- [orioledb](https://github.com/orioledb/orioledb)
 - documentdb
 - [omnigres](https://omnigres.com/)
 - [pg_documentdb_core](https://github.com/microsoft/documentdb/tree/main/pg_documentdb_core), and ferretdb
-- [pg_tracing](https://github.com/DataDog/pg_tracing) 0.1.2
+- [pg_tracing](https://github.com/DataDog/pg_tracing) 0.1.3
 - [pg_curl](https://github.com/RekGRpth/pg_curl) 2.4
 - [pgxicor](https://github.com/Florents-Tselai/pgxicor) 0.1.0
 - [sparql](https://github.com/lacanoid/pgsparql) 1.0
@@ -42,14 +44,13 @@ Extensions to be included and extensions will not be included
 - [pg_duckdb](https://github.com/duckdb/pg_duckdb/releases/tag/v0.3.1) 0.2.0
 - [pg_bzip](https://github.com/steve-chavez/pg_bzip) v1.0.0
 - increase citus release number to overwrite PGDG stuff
-
+- [age](https://github.com/apache/age) missing EL packages
+- pg_tde
 
 **Waiting on PostgreSQL 17 support**:
 
 - [plprql](https://github.com/kaspermarstal/plprql): wait on pg17
 - [hydra](https://github.com/hydradatabase/hydra): waiting on citus_columnar pg17 support
-- [age](https://github.com/apache/age) missing EL packages
-- pg_tde
 - odbc_fdw
 - jdbc_fdw
 - db2_fdw
