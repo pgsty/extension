@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_base58;
 ```
-
+> **Comment**: pgrx=0.12.1
 -----------
 
 

@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_idkit;
 ```
-
+> **Comment**: pgrx=0.13.1
 -----------
 
 

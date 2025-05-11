@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_later CASCADE;
 ```
-
+> **Comment**: pgrx=0.12.5
 -----------
 
 

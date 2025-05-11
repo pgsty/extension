@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_tiktoken;
 ```
-
+> **Comment**: pgrx=0.12.6
 -----------
 
 

@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_cardano;
 ```
-
+> **Comment**: pgrx=0.14.1 (0.12)
 -----------
 
 

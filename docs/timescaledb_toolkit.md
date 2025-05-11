@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION timescaledb_toolkit;
 ```
-
+> **Comment**: pgrx=0.12.9
 -----------
 
 

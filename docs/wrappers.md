@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION wrappers;
 ```
-
+> **Comment**: pgrx=0.12.9
 -----------
 
 

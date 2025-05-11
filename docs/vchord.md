@@ -53,7 +53,7 @@ shared_preload_libraries = 'vchord'; # add this extension to postgresql.conf
 ```sql
 CREATE EXTENSION vchord CASCADE;
 ```
-> **Comment**: v0.2 breaks on d12/u22
+> **Comment**: pgrx=0.13.1
 -----------
 
 

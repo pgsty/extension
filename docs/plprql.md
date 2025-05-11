@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION plprql;
 ```
-
+> **Comment**: pgrx=0.11.4
 -----------
 
 

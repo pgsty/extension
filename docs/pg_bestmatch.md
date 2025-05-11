@@ -53,7 +53,7 @@ shared_preload_libraries = 'pg_bestmatch'; # add this extension to postgresql.co
 ```sql
 CREATE EXTENSION pg_bestmatch;
 ```
-
+> **Comment**: pgrx=0.12.7
 -----------
 
 

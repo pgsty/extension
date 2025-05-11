@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_smtp_client;
 ```
-
+> **Comment**: pgrx=0.12.7
 -----------
 
 

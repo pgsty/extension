@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION explain_ui;
 ```
-
+> **Comment**: pgrx=0.12.4
 -----------
 
 

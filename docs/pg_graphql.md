@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_graphql;
 ```
-
+> **Comment**: pgrx=0.12.9
 -----------
 
 

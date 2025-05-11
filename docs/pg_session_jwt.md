@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_session_jwt;
 ```
-> **Comment**: pgrx=v0.12.6
+> **Comment**: pgrx=0.12.9 (0.12.6)
 -----------
 
 

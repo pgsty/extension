@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_jsonschema;
 ```
-
+> **Comment**: pgrx=0.12.9
 -----------
 
 

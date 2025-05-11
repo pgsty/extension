@@ -1,9 +1,9 @@
 # vectorize
 
 
-> [pg_vectorize](https://github.com/tembo-io/pg_vectorize): The simplest way to do vector search on Postgres
+> [pg_vectorize](https://github.com/ChuckHend/pg_vectorize): The simplest way to do vector search on Postgres
 >
-> https://github.com/tembo-io/pg_vectorize
+> https://github.com/ChuckHend/pg_vectorize
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [vectorize](https://github.com/tembo-io/pg_vectorize) | 0.22.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
+| [vectorize](https://github.com/ChuckHend/pg_vectorize) | 0.22.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
 
 
 
@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION vectorize CASCADE;
 ```
-
+> **Comment**: pgrx=0.13.1
 -----------
 
 

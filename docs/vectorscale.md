@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION vectorscale CASCADE;
 ```
-> **Comment**: pgrx=v0.12.5
+> **Comment**: pgrx=0.12.9
 -----------
 
 

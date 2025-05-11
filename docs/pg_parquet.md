@@ -53,7 +53,7 @@ shared_preload_libraries = 'pg_parquet'; # add this extension to postgresql.conf
 ```sql
 CREATE EXTENSION pg_parquet;
 ```
-> **Comment**: pgrx=v0.13.1
+> **Comment**: pgrx=0.14.1
 -----------
 
 

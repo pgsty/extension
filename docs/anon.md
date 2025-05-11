@@ -53,7 +53,7 @@ shared_preload_libraries = 'anon'; # add this extension to postgresql.conf
 ```sql
 CREATE EXTENSION anon;
 ```
-
+> **Comment**: pgrx=0.14.1
 -----------
 
 

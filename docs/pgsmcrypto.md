@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pgsmcrypto;
 ```
-> **Comment**: +pgrx 0.12.6
+> **Comment**: pgrx=0.12.6
 -----------
 
 

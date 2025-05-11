@@ -53,7 +53,7 @@ shared_preload_libraries = 'pglite_fusion'; # add this extension to postgresql.c
 ```sql
 CREATE EXTENSION pglite_fusion;
 ```
-
+> **Comment**: pgrx=0.14.1 (0.12.8)
 -----------
 
 

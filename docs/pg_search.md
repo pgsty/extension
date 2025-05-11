@@ -49,7 +49,7 @@
 ```sql
 CREATE EXTENSION pg_search;
 ```
-
+> **Comment**: pgrx=0.14.1
 -----------
 
 

@@ -53,7 +53,7 @@ shared_preload_libraries = 'pgml'; # add this extension to postgresql.conf
 ```sql
 CREATE EXTENSION pgml;
 ```
-
+> **Comment**: pgrx=0.12.9
 -----------
 
 
