@@ -1,16 +1,16 @@
 # RPM Extension Packages
 
-There are **407** extensions available on EL compatible systems, **7** of them are EL exclusive, and missing **7** Debian exclusive extensions.
+There are **408** extensions available on EL compatible systems, **6** of them are EL exclusive, and missing **6** Debian exclusive extensions.
 
-There are **71** built-in [**contrib**](contrib) extensions, in addition to **117** rpm extensions provided by PGDG YUM repository, and **215** extensions provided by Pigsty.
+There are **71** built-in [**contrib**](contrib) extensions, in addition to **117** rpm extensions provided by PGDG YUM repository, and **216** extensions provided by Pigsty.
 
-There are **400** extensions available in the current major version PostgreSQL 16, and **388** ready for the latest PostgreSQL 17.
+There are **401** extensions available in the current major version PostgreSQL 16, and **388** ready for the latest PostgreSQL 17.
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 407 | 117 | 215 | 71 | 4 | 7 | 388 | 400 | 402 | 386 | 363 |
-| RPM Package | 282 | 105 | 173 | 1 | 4 | 1 | 267 | 277 | 279 | 268 | 248 |
+| RPM Extension | 408 | 117 | 216 | 71 | 4 | 6 | 388 | 401 | 403 | 387 | 364 |
+| RPM Package | 283 | 105 | 174 | 1 | 4 | 1 | 267 | 278 | 280 | 269 | 249 |
 
 
 
@@ -54,6 +54,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 | [RAG](/rag) | [pg_summarize](/pg_summarize) | 0.0.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_summarize_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Text Summarization using LLMs. Built using pgrx |
 | [RAG](/rag) | [pg_tiktoken](/pg_tiktoken) | 0.0.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_tiktoken_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | pg_tictoken: tiktoken tokenizer for use with OpenAI models in postgres |
 | [RAG](/rag) | [pg4ml](/pg4ml) | 2.0 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg4ml_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Machine learning framework for PostgreSQL |
+| [RAG](/rag) | [pgml](/pgml) | 2.9.3 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgml_$v` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | PostgresML: Run AL/ML workloads with SQL interface |
 | [FTS](/fts) | [pg_search](/pg_search) | 0.15.18 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `pg_search_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | pg_search: Full text search for PostgreSQL using BM25 |
 | [FTS](/fts) | [pgroonga](/pgroonga) | 4.0.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `pgroonga_$v*` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Use Groonga as index, fast full text search platform for all languages! |
 | [FTS](/fts) | [pg_bigm](/pg_bigm) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `pg_bigm_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | create 2-gram (bigram) index for faster full text search. |
@@ -319,7 +320,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 - postgresql17*                                                                                                                                                   # PostgreSQL 17
 - timescaledb-tsl_17* timescaledb-toolkit_17 pg_timeseries_17 periods_17* temporal_tables_17* e-maj_17 table_version_17 pg_cron_17* pg_task_17* pg_later_17 pg_background_17*
 - postgis35_17* pgrouting_17* pointcloud_17* q3c_17* ogr_fdw_17* geoip_17 pg_polyline_17 pg_geohash_17* pg_tzf_17 #h3-pg_17*
-- pgvector_17* vchord_17 pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17
+- pgvector_17* vchord_17 pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pgml_17
 - pg_search_17 pgroonga_17* pg_bigm_17* zhparser_17* pg_bestmatch_17 vchord_bm25_17 hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
 - citus_17* pg_analytics_17 pg_mooncake_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17 pg_partman_17* plproxy_17* #hydra_17* #pg_duckdb_17* #pg_strom_17*
 - apache-age_17* hll_17* rum_17 pg_graphql_17 pg_jsonschema_17 jsquery_17* pg_hint_plan_17* hypopg_17* index_advisor_17 pg_plan_filter_17* imgsmlr_17* pg_ivm_17* pg_incremental_17* pgmq_17 pgq_17* pg_cardano_17 omnigres_17
@@ -341,7 +342,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 - postgresql17*                                                                                                                                                   # PostgreSQL 17
 - timescaledb-tsl_17* timescaledb-toolkit_17 pg_timeseries_17 periods_17* temporal_tables_17* e-maj_17 table_version_17 pg_cron_17* pg_task_17* pg_later_17 pg_background_17*
 - postgis35_17* pgrouting_17* pointcloud_17* h3-pg_17* q3c_17* ogr_fdw_17* geoip_17 pg_polyline_17 pg_geohash_17* pg_tzf_17
-- pgvector_17* vchord_17 pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17
+- pgvector_17* vchord_17 pgvectorscale_17 pg_vectorize_17 pg_similarity_17* smlar_17* pg_summarize_17 pg_tiktoken_17 pg4ml_17 #pgml_17
 - pg_search_17 pgroonga_17* pg_bigm_17* zhparser_17* pg_bestmatch_17 vchord_bm25_17 hunspell_cs_cz_17 hunspell_de_de_17 hunspell_en_us_17 hunspell_fr_17 hunspell_ne_np_17 hunspell_nl_nl_17 hunspell_nn_no_17 hunspell_pt_pt_17 hunspell_ru_ru_17 hunspell_ru_ru_aot_17
 - citus_17* pg_analytics_17 pg_duckdb_17* pg_mooncake_17* duckdb_fdw_17* pg_parquet_17 pg_fkpart_17 pg_partman_17* plproxy_17* #hydra_17* #pg_strom_17*
 - apache-age_17* hll_17* rum_17 pg_graphql_17 pg_jsonschema_17 jsquery_17* pg_hint_plan_17* hypopg_17* index_advisor_17 pg_plan_filter_17* imgsmlr_17* pg_ivm_17* pg_incremental_17* pgmq_17 pgq_17* pg_cardano_17 omnigres_17
@@ -368,7 +369,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 - postgresql16*                                                                                                                                                   # PostgreSQL 16
 - timescaledb-tsl_16* timescaledb-toolkit_16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16 table_version_16 pg_cron_16* pg_task_16* pg_later_16 pg_background_16*
 - postgis35_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* geoip_16 pg_polyline_16 pg_geohash_16* pg_tzf_16
-- pgvector_16* vchord_16 pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pg4ml_16
+- pgvector_16* vchord_16 pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pg4ml_16 pgml_16
 - pg_search_16 pgroonga_16* pg_bigm_16* zhparser_16* pg_bestmatch_16 vchord_bm25_16 hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
 - citus_16* hydra_16* pg_analytics_16 pg_mooncake_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16 pg_partman_16* plproxy_16* #pg_duckdb_16* #pg_strom_16*
 - apache-age_16* hll_16* rum_16 pg_graphql_16 pg_jsonschema_16 jsquery_16* pg_hint_plan_16* hypopg_16* index_advisor_16 pg_plan_filter_16* imgsmlr_16* pg_ivm_16* pg_incremental_16* pgmq_16 pgq_16* pg_cardano_16 omnigres_16
@@ -390,7 +391,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 - postgresql16*                                                                                                                                                   # PostgreSQL 16
 - timescaledb-tsl_16* timescaledb-toolkit_16 pg_timeseries_16 periods_16* temporal_tables_16* e-maj_16 table_version_16 pg_cron_16* pg_task_16* pg_later_16 pg_background_16*
 - postgis35_16* pgrouting_16* pointcloud_16* h3-pg_16* q3c_16* ogr_fdw_16* geoip_16 pg_polyline_16 pg_geohash_16* pg_tzf_16
-- pgvector_16* vchord_16 pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pg4ml_16
+- pgvector_16* vchord_16 pgvectorscale_16 pg_vectorize_16 pg_similarity_16* smlar_16* pg_summarize_16 pg_tiktoken_16 pg4ml_16 pgml_16
 - pg_search_16 pgroonga_16* pg_bigm_16* zhparser_16* pg_bestmatch_16 vchord_bm25_16 hunspell_cs_cz_16 hunspell_de_de_16 hunspell_en_us_16 hunspell_fr_16 hunspell_ne_np_16 hunspell_nl_nl_16 hunspell_nn_no_16 hunspell_pt_pt_16 hunspell_ru_ru_16 hunspell_ru_ru_aot_16
 - citus_16* hydra_16* pg_analytics_16 pg_duckdb_16* pg_mooncake_16* duckdb_fdw_16* pg_parquet_16 pg_fkpart_16 pg_partman_16* plproxy_16* #pg_strom_16*
 - apache-age_16* hll_16* rum_16 pg_graphql_16 pg_jsonschema_16 jsquery_16* pg_hint_plan_16* hypopg_16* index_advisor_16 pg_plan_filter_16* imgsmlr_16* pg_ivm_16* pg_incremental_16* pgmq_16 pgq_16* pg_cardano_16 omnigres_16
@@ -417,7 +418,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 - postgresql15*                                                                                                                                                   # PostgreSQL 15
 - timescaledb-tsl_15* timescaledb-toolkit_15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15 table_version_15 pg_cron_15* pg_task_15* pg_later_15 pg_background_15*
 - postgis35_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15 pg_polyline_15 pg_geohash_15* pg_tzf_15
-- pgvector_15* vchord_15 pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pg4ml_15
+- pgvector_15* vchord_15 pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pg4ml_15 pgml_15
 - pg_search_15 pgroonga_15* pg_bigm_15* zhparser_15* pg_bestmatch_15 vchord_bm25_15 hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
 - citus_15* hydra_15* pg_analytics_15 pg_mooncake_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15 pg_partman_15* plproxy_15* #pg_duckdb_15* #pg_strom_15*
 - apache-age_15* hll_15* rum_15 pg_graphql_15 pg_jsonschema_15 jsquery_15* pg_hint_plan_15* hypopg_15* index_advisor_15 pg_plan_filter_15* imgsmlr_15* pg_ivm_15* pgmq_15 pgq_15* pg_cardano_15 omnigres_15 #pg_incremental_15*
@@ -439,7 +440,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 - postgresql15*                                                                                                                                                   # PostgreSQL 15
 - timescaledb-tsl_15* timescaledb-toolkit_15 pg_timeseries_15 periods_15* temporal_tables_15* e-maj_15 table_version_15 pg_cron_15* pg_task_15* pg_later_15 pg_background_15*
 - postgis35_15* pgrouting_15* pointcloud_15* h3-pg_15* q3c_15* ogr_fdw_15* geoip_15 pg_polyline_15 pg_geohash_15* pg_tzf_15
-- pgvector_15* vchord_15 pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pg4ml_15
+- pgvector_15* vchord_15 pgvectorscale_15 pg_vectorize_15 pg_similarity_15* smlar_15* pg_summarize_15 pg_tiktoken_15 pg4ml_15 pgml_15
 - pg_search_15 pgroonga_15* pg_bigm_15* zhparser_15* pg_bestmatch_15 vchord_bm25_15 hunspell_cs_cz_15 hunspell_de_de_15 hunspell_en_us_15 hunspell_fr_15 hunspell_ne_np_15 hunspell_nl_nl_15 hunspell_nn_no_15 hunspell_pt_pt_15 hunspell_ru_ru_15 hunspell_ru_ru_aot_15
 - citus_15* hydra_15* pg_analytics_15 pg_duckdb_15* pg_mooncake_15* duckdb_fdw_15* pg_parquet_15 pg_fkpart_15 pg_partman_15* plproxy_15* #pg_strom_15*
 - apache-age_15* hll_15* rum_15 pg_graphql_15 pg_jsonschema_15 jsquery_15* pg_hint_plan_15* hypopg_15* index_advisor_15 pg_plan_filter_15* imgsmlr_15* pg_ivm_15* pgmq_15 pgq_15* pg_cardano_15 omnigres_15 #pg_incremental_15*
@@ -466,7 +467,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 - postgresql14*                                                                                                                                                   # PostgreSQL 14
 - timescaledb-tsl_14* timescaledb-toolkit_14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14 table_version_14 pg_cron_14* pg_task_14* pg_later_14 pg_background_14*
 - postgis35_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14 pg_polyline_14 pg_geohash_14* pg_tzf_14
-- pgvector_14* vchord_14 pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pg4ml_14
+- pgvector_14* vchord_14 pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pg4ml_14 pgml_14
 - pg_search_14 pgroonga_14* pg_bigm_14* zhparser_14* pg_bestmatch_14 vchord_bm25_14 hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14
 - citus_14* hydra_14* pg_analytics_14 pg_mooncake_14* duckdb_fdw_14* pg_parquet_14 pg_fkpart_14 pg_partman_14* plproxy_14* #pg_duckdb_14* #pg_strom_14*
 - apache-age_14* hll_14* rum_14 pg_graphql_14 pg_jsonschema_14 jsquery_14* pg_hint_plan_14* hypopg_14* index_advisor_14 pg_plan_filter_14* imgsmlr_14* pg_ivm_14* pgmq_14 pgq_14* pg_cardano_14 omnigres_14 #pg_incremental_14*
@@ -488,7 +489,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 - postgresql14*                                                                                                                                                   # PostgreSQL 14
 - timescaledb-tsl_14* timescaledb-toolkit_14 pg_timeseries_14 periods_14* temporal_tables_14* e-maj_14 table_version_14 pg_cron_14* pg_task_14* pg_later_14 pg_background_14*
 - postgis35_14* pgrouting_14* pointcloud_14* h3-pg_14* q3c_14* ogr_fdw_14* geoip_14 pg_polyline_14 pg_geohash_14* pg_tzf_14
-- pgvector_14* vchord_14 pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pg4ml_14
+- pgvector_14* vchord_14 pgvectorscale_14 pg_vectorize_14 pg_similarity_14* smlar_14* pg_summarize_14 pg_tiktoken_14 pg4ml_14 pgml_14
 - pg_search_14 pgroonga_14* pg_bigm_14* zhparser_14* pg_bestmatch_14 vchord_bm25_14 hunspell_cs_cz_14 hunspell_de_de_14 hunspell_en_us_14 hunspell_fr_14 hunspell_ne_np_14 hunspell_nl_nl_14 hunspell_nn_no_14 hunspell_pt_pt_14 hunspell_ru_ru_14 hunspell_ru_ru_aot_14
 - citus_14* hydra_14* pg_analytics_14 pg_duckdb_14* pg_mooncake_14* duckdb_fdw_14* pg_parquet_14 pg_fkpart_14 pg_partman_14* plproxy_14* #pg_strom_14*
 - apache-age_14* hll_14* rum_14 pg_graphql_14 pg_jsonschema_14 jsquery_14* pg_hint_plan_14* hypopg_14* index_advisor_14 pg_plan_filter_14* imgsmlr_14* pg_ivm_14* pgmq_14 pgq_14* pg_cardano_14 omnigres_14 #pg_incremental_14*
@@ -515,7 +516,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 - postgresql13*                                                                                                                                                   # PostgreSQL 13
 - pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13 table_version_13 pg_cron_13* pg_task_13* pg_later_13 pg_background_13* #timescaledb-tsl_13* #timescaledb-toolkit_13
 - postgis35_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13 pg_polyline_13 pg_geohash_13* pg_tzf_13
-- pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #vchord_13 #pg_vectorize_13
+- pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 pgml_13 #vchord_13 #pg_vectorize_13
 - pgroonga_13* pg_bigm_13* zhparser_13* pg_bestmatch_13 hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13 #vchord_bm25_13
 - hydra_13* duckdb_fdw_13* pg_fkpart_13 pg_partman_13* plproxy_13* #citus_13* #pg_analytics_13 #pg_duckdb_13* #pg_mooncake_13* #pg_parquet_13 #pg_strom_13*
 - apache-age_13* hll_13* rum_13 pg_jsonschema_13 pg_hint_plan_13* hypopg_13* index_advisor_13 pg_plan_filter_13* imgsmlr_13* pg_ivm_13* pgmq_13 pgq_13* pg_cardano_13 omnigres_13 #pg_graphql_13 #jsquery_13* #pg_incremental_13*
@@ -537,7 +538,7 @@ There are **400** extensions available in the current major version PostgreSQL 1
 - postgresql13*                                                                                                                                                   # PostgreSQL 13
 - pg_timeseries_13 periods_13* temporal_tables_13* e-maj_13 table_version_13 pg_cron_13* pg_task_13* pg_later_13 pg_background_13* #timescaledb-tsl_13* #timescaledb-toolkit_13
 - postgis35_13* pgrouting_13* pointcloud_13* h3-pg_13* q3c_13* ogr_fdw_13* geoip_13 pg_polyline_13 pg_geohash_13* pg_tzf_13
-- pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 #vchord_13 #pg_vectorize_13
+- pgvector_13* pgvectorscale_13 pg_similarity_13* smlar_13* pg_summarize_13 pg_tiktoken_13 pg4ml_13 pgml_13 #vchord_13 #pg_vectorize_13
 - pgroonga_13* pg_bigm_13* zhparser_13* pg_bestmatch_13 hunspell_cs_cz_13 hunspell_de_de_13 hunspell_en_us_13 hunspell_fr_13 hunspell_ne_np_13 hunspell_nl_nl_13 hunspell_nn_no_13 hunspell_pt_pt_13 hunspell_ru_ru_13 hunspell_ru_ru_aot_13 #pg_search_13 #vchord_bm25_13
 - hydra_13* duckdb_fdw_13* pg_fkpart_13 pg_partman_13* plproxy_13* #citus_13* #pg_analytics_13 #pg_duckdb_13* #pg_mooncake_13* #pg_parquet_13 #pg_strom_13*
 - apache-age_13* hll_13* rum_13 pg_jsonschema_13 pg_hint_plan_13* hypopg_13* index_advisor_13 pg_plan_filter_13* imgsmlr_13* pg_ivm_13* pgmq_13 pgq_13* pg_cardano_13 omnigres_13 #pg_graphql_13 #jsquery_13* #pg_incremental_13*

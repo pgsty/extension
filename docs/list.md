@@ -1,13 +1,13 @@
 # Extension List
 
-There are **414** available extensions, including **407** [**RPM**](/rpm) extensions available in EL, and **401** [**DEB**](/deb) available in Debian/Ubuntu.
+There are **414** available extensions, including **408** [**RPM**](/rpm) extensions available in EL, and **401** [**DEB**](/deb) available in Debian/Ubuntu.
 
 There are **71** [**Contrib**](contrib) extensions provided by PostgreSQL and **343** additional third-party extensions provide by PGDG & Pigsty. 
 
 
 |Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 407 | 117 | 215 | 71 | 4 | 7 | 388 | 400 | 402 | 386 | 363 |
+| RPM Extension | 408 | 117 | 216 | 71 | 4 | 6 | 388 | 401 | 403 | 387 | 364 |
 | DEB Extension | 401 | 103 | 223 | 71 | 4 | 13 | 386 | 394 | 396 | 384 | 359 |
 
 
@@ -62,7 +62,7 @@ There are **71** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 | [RAG](/rag) | 1860 | [pg_summarize](/pg_summarize) | 0.0.1 | [pg_summarize](/pg_summarize) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/HexaCluster/pg_summarize) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Text Summarization using LLMs. Built using pgrx |
 | [RAG](/rag) | 1870 | [pg_tiktoken](/pg_tiktoken) | 0.0.1 | [pg_tiktoken](/pg_tiktoken) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/kelvich/pg_tiktoken) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_tictoken: tiktoken tokenizer for use with OpenAI models in postgres |
 | [RAG](/rag) | 1880 | [pg4ml](/pg4ml) | 2.0 | [pg4ml](/pg4ml) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://gitee.com/guotiecheng/plpgsql_pg4ml) |  |  | <span class="tcwarn">✘</span> | <span class="tcblue">✔</span> | Machine learning framework for PostgreSQL |
-| [RAG](/rag) | 1890 | [pgml](/pgml) | 2.10.0 | [pgml](/pgml) | **<span class="tcblue">MIT</span>** |  | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/postgresml/postgresml) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgresML: Run AL/ML workloads with SQL interface |
+| [RAG](/rag) | 1890 | [pgml](/pgml) | 2.10.0 | [pgml](/pgml) | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/postgresml/postgresml) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PostgresML: Run AL/ML workloads with SQL interface |
 | [FTS](/fts) | 2100 | [pg_search](/pg_search) | 0.15.18 | [pg_search](/pg_search) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/paradedb/paradedb/tree/dev/pg_search) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | pg_search: Full text search for PostgreSQL using BM25 |
 | [FTS](/fts) | 2110 | [pgroonga](/pgroonga) | 4.0.0 | [pgroonga](/pgroonga) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgroonga/pgroonga) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Use Groonga as index, fast full text search platform for all languages! |
 | [FTS](/fts) | 2111 | [pgroonga_database](/pgroonga_database) | 4.0.0 | [pgroonga](/pgroonga_database) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgroonga/pgroonga) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | PGroonga database management module |
@@ -562,7 +562,7 @@ There are **71** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ```yaml
 - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash pg_tzf #mobilitydb
-- pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+- pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch vchord_bm25 hunspell
 - citus hydra pg_analytics pg_mooncake duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_duckdb #pg_strom
 - age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pg_incremental pgmq pgq pg_cardano omnigres #rdkit
@@ -583,7 +583,7 @@ There are **71** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ```yaml
 - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash pg_tzf #mobilitydb
-- pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+- pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch vchord_bm25 hunspell
 - citus hydra pg_analytics pg_duckdb pg_mooncake duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_strom
 - age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pg_incremental pgmq pgq pg_cardano omnigres #rdkit
@@ -672,7 +672,7 @@ There are **71** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ```yaml
 - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash pg_tzf #mobilitydb
-- pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+- pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch vchord_bm25 hunspell
 - citus hydra pg_analytics pg_mooncake duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_duckdb #pg_strom
 - age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #pg_incremental #rdkit
@@ -693,7 +693,7 @@ There are **71** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ```yaml
 - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash pg_tzf #mobilitydb
-- pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+- pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch vchord_bm25 hunspell
 - citus hydra pg_analytics pg_duckdb pg_mooncake duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_strom
 - age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #pg_incremental #rdkit
@@ -782,7 +782,7 @@ There are **71** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ```yaml
 - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash pg_tzf #mobilitydb
-- pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+- pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch vchord_bm25 hunspell
 - citus hydra pg_analytics pg_mooncake duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_duckdb #pg_strom
 - age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #pg_incremental #rdkit
@@ -803,7 +803,7 @@ There are **71** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ```yaml
 - timescaledb timescaledb_toolkit pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash pg_tzf #mobilitydb
-- pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml #pgml
+- pgvector vchord pgvectorscale pg_vectorize pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml
 - pg_search pgroonga pg_bigm zhparser pg_bestmatch vchord_bm25 hunspell
 - citus hydra pg_analytics pg_duckdb pg_mooncake duckdb_fdw pg_parquet pg_fkpart pg_partman plproxy #pg_strom
 - age hll rum pg_graphql pg_jsonschema jsquery pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #pg_incremental #rdkit
@@ -892,7 +892,7 @@ There are **71** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ```yaml
 - pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background #timescaledb #timescaledb_toolkit
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash pg_tzf #mobilitydb
-- pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
+- pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml #vchord #pg_vectorize
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search #vchord_bm25
 - hydra duckdb_fdw pg_fkpart pg_partman plproxy #citus #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
 - age hll rum pg_jsonschema pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #pg_graphql #jsquery #pg_incremental #rdkit
@@ -913,7 +913,7 @@ There are **71** [**Contrib**](contrib) extensions provided by PostgreSQL and **
 ```yaml
 - pg_timeseries periods temporal_tables emaj table_version pg_cron pg_task pg_later pg_background #timescaledb #timescaledb_toolkit
 - postgis pgrouting pointcloud pg_h3 q3c ogr_fdw geoip pg_polyline pg_geohash pg_tzf #mobilitydb
-- pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml #vchord #pg_vectorize #pgml
+- pgvector pgvectorscale pg_similarity smlar pg_summarize pg_tiktoken pg4ml pgml #vchord #pg_vectorize
 - pgroonga pg_bigm zhparser pg_bestmatch hunspell #pg_search #vchord_bm25
 - hydra duckdb_fdw pg_fkpart pg_partman plproxy #citus #pg_analytics #pg_duckdb #pg_mooncake #pg_parquet #pg_strom
 - age hll rum pg_jsonschema pg_hint_plan hypopg index_advisor pg_plan_filter imgsmlr pg_ivm pgmq pgq pg_cardano omnigres #pg_graphql #jsquery #pg_incremental #rdkit
