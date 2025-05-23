@@ -12,7 +12,7 @@ There are 22 available extensions in this category:
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|:-----:|:------:|:-------:|:-----:|-------------|
-| 8500 | [wrappers](/wrappers) | 0.4.6 | [wrappers](/wrappers) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/wrappers) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrappers developed by Supabase |
+| 8500 | [wrappers](/wrappers) | 0.5.0 | [wrappers](/wrappers) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/supabase/wrappers) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrappers developed by Supabase |
 | 8510 | [multicorn](/multicorn) | 3.0 | [multicorn](/multicorn) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/pgsql-io/multicorn2) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Fetch foreign data in Python in your PostgreSQL server. |
 | 8520 | [odbc_fdw](/odbc_fdw) | 0.5.1 | [odbc_fdw](/odbc_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/CartoDB/odbc_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Foreign data wrapper for accessing remote databases using ODBC |
 | 8530 | [jdbc_fdw](/jdbc_fdw) | 1.2 | [jdbc_fdw](/jdbc_fdw) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** |  | [LINK](https://github.com/pgspider/jdbc_fdw) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | foreign-data wrapper for remote servers available over JDBC |
@@ -62,7 +62,7 @@ pg13: multicorn odbc_fdw jdbc_fdw mysql_fdw tds_fdw sqlite_fdw pgbouncer_fdw mon
 ### Debian 12 bookworm Compatible (d12)
 
 ```yaml
-pg17: wrappers pgspider_ext mysql_fdw tds_fdw redis_fdw pg_redis_pubsub firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #kafka_fdw #hdfs_fdw
+pg17: wrappers pgspider_ext mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #kafka_fdw #hdfs_fdw
 pg16: wrappers pgspider_ext mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
 pg15: wrappers pgspider_ext mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
 pg14: wrappers mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #pgspider_ext #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
@@ -73,7 +73,7 @@ pg13: mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_
 ### Ubuntu 24.04 jammy Compatible (u22)
 
 ```yaml
-pg17: wrappers pgspider_ext mysql_fdw tds_fdw redis_fdw pg_redis_pubsub firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #kafka_fdw #hdfs_fdw
+pg17: wrappers pgspider_ext mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #kafka_fdw #hdfs_fdw
 pg16: wrappers pgspider_ext mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
 pg15: wrappers pgspider_ext mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
 pg14: wrappers mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #pgspider_ext #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
@@ -84,7 +84,7 @@ pg13: mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_
 ### Ubuntu 24.04 noble Compatible (u24)
 
 ```yaml
-pg17: wrappers pgspider_ext mysql_fdw tds_fdw redis_fdw pg_redis_pubsub firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #sqlite_fdw #pgbouncer_fdw #mongo_fdw #kafka_fdw #hdfs_fdw
+pg17: wrappers pgspider_ext mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #kafka_fdw #hdfs_fdw
 pg16: wrappers pgspider_ext mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
 pg15: wrappers pgspider_ext mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
 pg14: wrappers mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_fdw aws_s3 log_fdw #multicorn #odbc_fdw #jdbc_fdw #pgspider_ext #oracle_fdw #db2_fdw #pgbouncer_fdw #mongo_fdw #hdfs_fdw
@@ -100,7 +100,7 @@ pg13: mysql_fdw tds_fdw sqlite_fdw redis_fdw pg_redis_pubsub kafka_fdw firebird_
 
 | Package | Version | License | RPM | RPM Package | 17 | 16 | 15 | 14 | 13 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
-| [wrappers](/wrappers) | 0.4.6 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `wrappers_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Foreign data wrappers developed by Supabase |
+| [wrappers](/wrappers) | 0.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `wrappers_$v` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Foreign data wrappers developed by Supabase |
 | [multicorn](/multicorn) | 3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `multicorn2_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Fetch foreign data in Python in your PostgreSQL server. |
 | [odbc_fdw](/odbc_fdw) | 0.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `odbc_fdw_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Foreign data wrapper for accessing remote databases using ODBC |
 | [jdbc_fdw](/jdbc_fdw) | 1.2 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `jdbc_fdw_$v*` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | foreign-data wrapper for remote servers available over JDBC |
@@ -155,12 +155,12 @@ pg13: multicorn2_13* odbc_fdw_13* jdbc_fdw_13* mysql_fdw_13* tds_fdw_13* sqlite_
 
 | Package | Version | License | DEB | DEB Package | 17 | 16 | 15 | 14 | 13 | Description |
 |---------|---------|:-------:|:---:|-------------|:--:|:--:|:--:|:--:|:--:|-------------|
-| [wrappers](/wrappers) | 0.4.6 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-wrappers` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Foreign data wrappers developed by Supabase |
+| [wrappers](/wrappers) | 0.5.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-wrappers` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  | Foreign data wrappers developed by Supabase |
 | [pgspider_ext](/pgspider_ext) | 1.3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pgspider-ext` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** |  |  | foreign-data wrapper for remote PGSpider servers |
 | [mysql_fdw](/mysql_fdw) | 2.9.2 | **<span class="tcblue">BSD-3</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-mysql-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Foreign data wrapper for querying a MySQL server |
 | [oracle_fdw](/oracle_fdw) | 2.7.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-oracle-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | foreign data wrapper for Oracle access |
 | [tds_fdw](/tds_fdw) | 2.0.4 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-tds-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | Foreign data wrapper for querying a TDS database (Sybase or Microsoft SQL Server) |
-| [sqlite_fdw](/sqlite_fdw) | 2.5.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-sqlite-fdw` |  | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | SQLite Foreign Data Wrapper |
+| [sqlite_fdw](/sqlite_fdw) | 2.5.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-sqlite-fdw` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | SQLite Foreign Data Wrapper |
 | [redis_fdw](/redis_fdw) | 1.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-redis-fdw` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Foreign data wrapper for querying a Redis server |
 | [pg_redis_pubsub](/redis) | 0.0.1 | **<span class="tcblue">MIT</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-pg-redis-pubsub` | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | Send redis pub/sub messages to Redis from PostgreSQL Directly |
 | [kafka_fdw](/kafka_fdw) | 0.0.3 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-kafka-fdw` |  | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | **<span class="tcwarn">✔</span>** | kafka Foreign Data Wrapper for CSV formatted messages |
@@ -176,7 +176,7 @@ pg13: multicorn2_13* odbc_fdw_13* jdbc_fdw_13* mysql_fdw_13* tds_fdw_13* sqlite_
 ### Debian 12 bookworm Compatible (d12)
 
 ```yaml
-pg17: postgresql-17-wrappers postgresql-17-pgspider-ext postgresql-17-mysql-fdw postgresql-17-tds-fdw postgresql-17-redis-fdw postgresql-17-pg-redis-pubsub postgresql-17-firebird-fdw postgresql-17-aws-s3 postgresql-17-log-fdw # #postgresql-17-oracle-fdw #postgresql-17-sqlite-fdw #postgresql-17-kafka-fdw
+pg17: postgresql-17-wrappers postgresql-17-pgspider-ext postgresql-17-mysql-fdw postgresql-17-tds-fdw postgresql-17-sqlite-fdw postgresql-17-redis-fdw postgresql-17-pg-redis-pubsub postgresql-17-firebird-fdw postgresql-17-aws-s3 postgresql-17-log-fdw # #postgresql-17-oracle-fdw #postgresql-17-kafka-fdw
 pg16: postgresql-16-wrappers postgresql-16-pgspider-ext postgresql-16-mysql-fdw postgresql-16-tds-fdw postgresql-16-sqlite-fdw postgresql-16-redis-fdw postgresql-16-pg-redis-pubsub postgresql-16-kafka-fdw postgresql-16-firebird-fdw postgresql-16-aws-s3 postgresql-16-log-fdw # #postgresql-16-oracle-fdw
 pg15: postgresql-15-wrappers postgresql-15-pgspider-ext postgresql-15-mysql-fdw postgresql-15-tds-fdw postgresql-15-sqlite-fdw postgresql-15-redis-fdw postgresql-15-pg-redis-pubsub postgresql-15-kafka-fdw postgresql-15-firebird-fdw postgresql-15-aws-s3 postgresql-15-log-fdw # #postgresql-15-oracle-fdw
 pg14: postgresql-14-wrappers postgresql-14-mysql-fdw postgresql-14-tds-fdw postgresql-14-sqlite-fdw postgresql-14-redis-fdw postgresql-14-pg-redis-pubsub postgresql-14-kafka-fdw postgresql-14-firebird-fdw postgresql-14-aws-s3 postgresql-14-log-fdw # #postgresql-14-pgspider-ext #postgresql-14-oracle-fdw
@@ -187,7 +187,7 @@ pg13: postgresql-13-mysql-fdw postgresql-13-tds-fdw postgresql-13-sqlite-fdw pos
 ### Ubuntu 24.04 jammy Compatible (u22)
 
 ```yaml
-pg17: postgresql-17-wrappers postgresql-17-pgspider-ext postgresql-17-mysql-fdw postgresql-17-tds-fdw postgresql-17-redis-fdw postgresql-17-pg-redis-pubsub postgresql-17-firebird-fdw postgresql-17-aws-s3 postgresql-17-log-fdw # #postgresql-17-oracle-fdw #postgresql-17-sqlite-fdw #postgresql-17-kafka-fdw
+pg17: postgresql-17-wrappers postgresql-17-pgspider-ext postgresql-17-mysql-fdw postgresql-17-tds-fdw postgresql-17-sqlite-fdw postgresql-17-redis-fdw postgresql-17-pg-redis-pubsub postgresql-17-firebird-fdw postgresql-17-aws-s3 postgresql-17-log-fdw # #postgresql-17-oracle-fdw #postgresql-17-kafka-fdw
 pg16: postgresql-16-wrappers postgresql-16-pgspider-ext postgresql-16-mysql-fdw postgresql-16-tds-fdw postgresql-16-sqlite-fdw postgresql-16-redis-fdw postgresql-16-pg-redis-pubsub postgresql-16-kafka-fdw postgresql-16-firebird-fdw postgresql-16-aws-s3 postgresql-16-log-fdw # #postgresql-16-oracle-fdw
 pg15: postgresql-15-wrappers postgresql-15-pgspider-ext postgresql-15-mysql-fdw postgresql-15-tds-fdw postgresql-15-sqlite-fdw postgresql-15-redis-fdw postgresql-15-pg-redis-pubsub postgresql-15-kafka-fdw postgresql-15-firebird-fdw postgresql-15-aws-s3 postgresql-15-log-fdw # #postgresql-15-oracle-fdw
 pg14: postgresql-14-wrappers postgresql-14-mysql-fdw postgresql-14-tds-fdw postgresql-14-sqlite-fdw postgresql-14-redis-fdw postgresql-14-pg-redis-pubsub postgresql-14-kafka-fdw postgresql-14-firebird-fdw postgresql-14-aws-s3 postgresql-14-log-fdw # #postgresql-14-pgspider-ext #postgresql-14-oracle-fdw
@@ -198,7 +198,7 @@ pg13: postgresql-13-mysql-fdw postgresql-13-tds-fdw postgresql-13-sqlite-fdw pos
 ### Ubuntu 24.04 noble Compatible (u24)
 
 ```yaml
-pg17: postgresql-17-wrappers postgresql-17-pgspider-ext postgresql-17-mysql-fdw postgresql-17-tds-fdw postgresql-17-redis-fdw postgresql-17-pg-redis-pubsub postgresql-17-firebird-fdw postgresql-17-aws-s3 postgresql-17-log-fdw # #postgresql-17-oracle-fdw #postgresql-17-sqlite-fdw #postgresql-17-kafka-fdw
+pg17: postgresql-17-wrappers postgresql-17-pgspider-ext postgresql-17-mysql-fdw postgresql-17-tds-fdw postgresql-17-sqlite-fdw postgresql-17-redis-fdw postgresql-17-pg-redis-pubsub postgresql-17-firebird-fdw postgresql-17-aws-s3 postgresql-17-log-fdw # #postgresql-17-oracle-fdw #postgresql-17-kafka-fdw
 pg16: postgresql-16-wrappers postgresql-16-pgspider-ext postgresql-16-mysql-fdw postgresql-16-tds-fdw postgresql-16-sqlite-fdw postgresql-16-redis-fdw postgresql-16-pg-redis-pubsub postgresql-16-kafka-fdw postgresql-16-firebird-fdw postgresql-16-aws-s3 postgresql-16-log-fdw # #postgresql-16-oracle-fdw
 pg15: postgresql-15-wrappers postgresql-15-pgspider-ext postgresql-15-mysql-fdw postgresql-15-tds-fdw postgresql-15-sqlite-fdw postgresql-15-redis-fdw postgresql-15-pg-redis-pubsub postgresql-15-kafka-fdw postgresql-15-firebird-fdw postgresql-15-aws-s3 postgresql-15-log-fdw # #postgresql-15-oracle-fdw
 pg14: postgresql-14-wrappers postgresql-14-mysql-fdw postgresql-14-tds-fdw postgresql-14-sqlite-fdw postgresql-14-redis-fdw postgresql-14-pg-redis-pubsub postgresql-14-kafka-fdw postgresql-14-firebird-fdw postgresql-14-aws-s3 postgresql-14-log-fdw # #postgresql-14-pgspider-ext #postgresql-14-oracle-fdw
