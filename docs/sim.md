@@ -5,9 +5,9 @@
 ## Extensions
 
 
-There are 15 available extensions in this category:
+There are 16 available extensions in this category:
 
-[`documentdb`](/documentdb) [`documentdb_core`](/documentdb_core) [`documentdb_distributed`](/documentdb_distributed) [`orafce`](/orafce) [`pgtt`](/pgtt) [`session_variable`](/session_variable) [`pg_statement_rollback`](/pg_statement_rollback) [`pg_dbms_metadata`](/pg_dbms_metadata) [`pg_dbms_lock`](/pg_dbms_lock) [`pg_dbms_job`](/pg_dbms_job) [`babelfishpg_common`](/babelfishpg_common) [`babelfishpg_tsql`](/babelfishpg_tsql) [`babelfishpg_tds`](/babelfishpg_tds) [`babelfishpg_money`](/babelfishpg_money) [`pgmemcache`](/pgmemcache)
+[`documentdb`](/documentdb) [`documentdb_core`](/documentdb_core) [`documentdb_distributed`](/documentdb_distributed) [`orafce`](/orafce) [`pgtt`](/pgtt) [`session_variable`](/session_variable) [`pg_statement_rollback`](/pg_statement_rollback) [`pg_dbms_metadata`](/pg_dbms_metadata) [`pg_dbms_lock`](/pg_dbms_lock) [`pg_dbms_job`](/pg_dbms_job) [`babelfishpg_common`](/babelfishpg_common) [`babelfishpg_tsql`](/babelfishpg_tsql) [`babelfishpg_tds`](/babelfishpg_tds) [`babelfishpg_money`](/babelfishpg_money) [`spat`](/spat) [`pgmemcache`](/pgmemcache)
 
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | `Bin` | `LOAD` | `DYLIB` | `DDL` | Description |
@@ -26,62 +26,63 @@ There are 15 available extensions in this category:
 | 9310 | [babelfishpg_tsql](/babelfishpg_tsql) | 3.3.1 | [babelfishpg_tsql](/babelfishpg_tsql) | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | **<span class="tcpurple">WILTON</span>** | [LINK](https://babelfishpg.org/) |  | <span class="tcred">❗</span> | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL Server Transact SQL compatibility |
 | 9320 | [babelfishpg_tds](/babelfishpg_tds) | 1.0.0 | [babelfishpg_tds](/babelfishpg_tds) | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | **<span class="tcpurple">WILTON</span>** | [LINK](https://babelfishpg.org/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL Server TDS protocol extension |
 | 9330 | [babelfishpg_money](/babelfishpg_money) | 1.1.0 | [babelfishpg_money](/babelfishpg_money) | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | **<span class="tcpurple">WILTON</span>** | [LINK](https://babelfishpg.org/) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | SQL Server Money Data Type |
-| 9400 | [pgmemcache](/pgmemcache) | 2.3.0 | [pgmemcache](/pgmemcache) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ohmu/pgmemcache) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | memcached interface |
+| 9400 | [spat](/spat) | 0.1.0a4 | [spat](/spat) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/Florents-Tselai/spat) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | Redis-like In-Memory DB Embedded in Postgres |
+| 9410 | [pgmemcache](/pgmemcache) | 2.3.0 | [pgmemcache](/pgmemcache) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ohmu/pgmemcache) |  |  | <span class="tcblue">✔</span> | <span class="tcblue">✔</span> | memcached interface |
 
 
 
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: documentdb orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb
-pg16: documentdb orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb
-pg15: documentdb orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb
-pg14: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #documentdb #pg_dbms_job #wiltondb #pgmemcache
-pg13: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #documentdb #pg_dbms_job #wiltondb #pgmemcache
+pg17: documentdb orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock spat pgmemcache #pg_dbms_job #wiltondb
+pg16: documentdb orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb #spat
+pg15: documentdb orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb #spat
+pg14: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #documentdb #pg_dbms_job #wiltondb #spat #pgmemcache
+pg13: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #documentdb #pg_dbms_job #wiltondb #spat #pgmemcache
 ```
 
 
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: documentdb orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb
-pg16: documentdb orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb
-pg15: documentdb orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb
-pg14: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #documentdb #pg_dbms_job #wiltondb #pgmemcache
-pg13: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #documentdb #pg_dbms_job #wiltondb #pgmemcache
+pg17: documentdb orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock spat pgmemcache #pg_dbms_job #wiltondb
+pg16: documentdb orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb #spat
+pg15: documentdb orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock pgmemcache #pg_dbms_job #wiltondb #spat
+pg14: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #documentdb #pg_dbms_job #wiltondb #spat #pgmemcache
+pg13: orafce pgtt session_variable pg_statement_rollback pg_dbms_metadata pg_dbms_lock #documentdb #pg_dbms_job #wiltondb #spat #pgmemcache
 ```
 
 
 ### Debian 12 bookworm Compatible (d12)
 
 ```yaml
-pg17: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
-pg16: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
-pg15: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
-pg14: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
-pg13: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
+pg17: documentdb orafce pgtt session_variable pg_statement_rollback spat pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job
+pg16: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #spat
+pg15: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #spat
+pg14: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #spat
+pg13: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #spat
 ```
 
 
 ### Ubuntu 24.04 jammy Compatible (u22)
 
 ```yaml
-pg17: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
-pg16: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
-pg15: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
-pg14: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
-pg13: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+pg17: documentdb orafce pgtt session_variable pg_statement_rollback spat pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+pg16: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb #spat
+pg15: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb #spat
+pg14: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb #spat
+pg13: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb #spat
 ```
 
 
 ### Ubuntu 24.04 noble Compatible (u24)
 
 ```yaml
-pg17: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
-pg16: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
-pg15: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
-pg14: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
-pg13: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+pg17: documentdb orafce pgtt session_variable pg_statement_rollback spat pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb
+pg16: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb #spat
+pg15: documentdb orafce pgtt session_variable pg_statement_rollback pgmemcache #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb #spat
+pg14: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb #spat
+pg13: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb #pg_dbms_metadata #pg_dbms_lock #pg_dbms_job #wiltondb #spat
 ```
 
 
@@ -105,6 +106,7 @@ pg13: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb 
 | [babelfishpg_tsql](/babelfishpg_tsql) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tsql*` |  |  | **<span class="tcpurple">✔</span>** |  |  | SQL Server Transact SQL compatibility |
 | [babelfishpg_tds](/babelfishpg_tds) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tds*` |  |  | **<span class="tcpurple">✔</span>** |  |  | SQL Server TDS protocol extension |
 | [babelfishpg_money](/babelfishpg_money) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-money*` |  |  | **<span class="tcpurple">✔</span>** |  |  | SQL Server Money Data Type |
+| [spat](/spat) | 0.1.0a4 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | `spat_$v*` | **<span class="tccyan">✔</span>** |  |  |  |  | Redis-like In-Memory DB Embedded in Postgres |
 | [pgmemcache](/pgmemcache) | 2.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `pgmemcache_$v*` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** |  |  | memcached interface |
 
 
@@ -112,22 +114,22 @@ pg13: orafce pgtt session_variable pg_statement_rollback pgmemcache #documentdb 
 ### RHEL 8 Compatible (el8)
 
 ```yaml
-pg17: documentdb_17* orafce_17 pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17 pg_dbms_lock_17 pgmemcache_17* #pg_dbms_job_17 #wiltondb
-pg16: documentdb_16* orafce_16 pgtt_16* session_variable_16* pg_statement_rollback_16* pg_dbms_metadata_16 pg_dbms_lock_16 pgmemcache_16* #pg_dbms_job_16 #wiltondb
-pg15: documentdb_15* orafce_15 pgtt_15* session_variable_15* pg_statement_rollback_15* pg_dbms_metadata_15 pg_dbms_lock_15 pgmemcache_15* #pg_dbms_job_15 #wiltondb
-pg14: orafce_14 pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14 pg_dbms_lock_14 #documentdb_14* #pg_dbms_job_14 #wiltondb #pgmemcache_14*
-pg13: orafce_13 pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13 pg_dbms_lock_13 #documentdb_13* #pg_dbms_job_13 #wiltondb #pgmemcache_13*
+pg17: documentdb_17* orafce_17 pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17 pg_dbms_lock_17 spat_17* pgmemcache_17* #pg_dbms_job_17 #wiltondb
+pg16: documentdb_16* orafce_16 pgtt_16* session_variable_16* pg_statement_rollback_16* pg_dbms_metadata_16 pg_dbms_lock_16 pgmemcache_16* #pg_dbms_job_16 #wiltondb #spat_16*
+pg15: documentdb_15* orafce_15 pgtt_15* session_variable_15* pg_statement_rollback_15* pg_dbms_metadata_15 pg_dbms_lock_15 pgmemcache_15* #pg_dbms_job_15 #wiltondb #spat_15*
+pg14: orafce_14 pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14 pg_dbms_lock_14 #documentdb_14* #pg_dbms_job_14 #wiltondb #spat_14* #pgmemcache_14*
+pg13: orafce_13 pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13 pg_dbms_lock_13 #documentdb_13* #pg_dbms_job_13 #wiltondb #spat_13* #pgmemcache_13*
 ```
 
 
 ### RHEL 9 Compatible (el9)
 
 ```yaml
-pg17: documentdb_17* orafce_17 pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17 pg_dbms_lock_17 pgmemcache_17* #pg_dbms_job_17 #wiltondb
-pg16: documentdb_16* orafce_16 pgtt_16* session_variable_16* pg_statement_rollback_16* pg_dbms_metadata_16 pg_dbms_lock_16 pgmemcache_16* #pg_dbms_job_16 #wiltondb
-pg15: documentdb_15* orafce_15 pgtt_15* session_variable_15* pg_statement_rollback_15* pg_dbms_metadata_15 pg_dbms_lock_15 pgmemcache_15* #pg_dbms_job_15 #wiltondb
-pg14: orafce_14 pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14 pg_dbms_lock_14 #documentdb_14* #pg_dbms_job_14 #wiltondb #pgmemcache_14*
-pg13: orafce_13 pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13 pg_dbms_lock_13 #documentdb_13* #pg_dbms_job_13 #wiltondb #pgmemcache_13*
+pg17: documentdb_17* orafce_17 pgtt_17* session_variable_17* pg_statement_rollback_17* pg_dbms_metadata_17 pg_dbms_lock_17 spat_17* pgmemcache_17* #pg_dbms_job_17 #wiltondb
+pg16: documentdb_16* orafce_16 pgtt_16* session_variable_16* pg_statement_rollback_16* pg_dbms_metadata_16 pg_dbms_lock_16 pgmemcache_16* #pg_dbms_job_16 #wiltondb #spat_16*
+pg15: documentdb_15* orafce_15 pgtt_15* session_variable_15* pg_statement_rollback_15* pg_dbms_metadata_15 pg_dbms_lock_15 pgmemcache_15* #pg_dbms_job_15 #wiltondb #spat_15*
+pg14: orafce_14 pgtt_14* session_variable_14* pg_statement_rollback_14* pg_dbms_metadata_14 pg_dbms_lock_14 #documentdb_14* #pg_dbms_job_14 #wiltondb #spat_14* #pgmemcache_14*
+pg13: orafce_13 pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_metadata_13 pg_dbms_lock_13 #documentdb_13* #pg_dbms_job_13 #wiltondb #spat_13* #pgmemcache_13*
 ```
 
 
@@ -148,6 +150,7 @@ pg13: orafce_13 pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_
 | [babelfishpg_tsql](/babelfishpg_tsql) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tsql` |  |  | **<span class="tcpurple">✔</span>** |  |  | SQL Server Transact SQL compatibility |
 | [babelfishpg_tds](/babelfishpg_tds) | 1.0.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tds` |  |  | **<span class="tcpurple">✔</span>** |  |  | SQL Server TDS protocol extension |
 | [babelfishpg_money](/babelfishpg_money) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-money` |  |  | **<span class="tcpurple">✔</span>** |  |  | SQL Server Money Data Type |
+| [spat](/spat) | 0.1.0a4 | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | `postgresql-$v-spat` | **<span class="tcwarn">✔</span>** |  |  |  |  | Redis-like In-Memory DB Embedded in Postgres |
 | [pgmemcache](/pgmemcache) | 2.3.0 | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | `postgresql-$v-pgmemcache` | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | **<span class="tccyan">✔</span>** | memcached interface |
 
 
@@ -155,33 +158,33 @@ pg13: orafce_13 pgtt_13* session_variable_13* pg_statement_rollback_13* pg_dbms_
 ### Debian 12 bookworm Compatible (d12)
 
 ```yaml
-pg17: postgresql-17-documentdb postgresql-17-orafce postgresql-17-pgtt postgresql-17-session-variable postgresql-17-pg-statement-rollback postgresql-17-pgmemcache
-pg16: postgresql-16-documentdb postgresql-16-orafce postgresql-16-pgtt postgresql-16-session-variable postgresql-16-pg-statement-rollback postgresql-16-pgmemcache
-pg15: postgresql-15-documentdb postgresql-15-orafce postgresql-15-pgtt postgresql-15-session-variable postgresql-15-pg-statement-rollback postgresql-15-pgmemcache
-pg14: postgresql-14-orafce postgresql-14-pgtt postgresql-14-session-variable postgresql-14-pg-statement-rollback postgresql-14-pgmemcache #postgresql-14-documentdb
-pg13: postgresql-13-orafce postgresql-13-pgtt postgresql-13-session-variable postgresql-13-pg-statement-rollback postgresql-13-pgmemcache #postgresql-13-documentdb
+pg17: postgresql-17-documentdb postgresql-17-orafce postgresql-17-pgtt postgresql-17-session-variable postgresql-17-pg-statement-rollback postgresql-17-spat postgresql-17-pgmemcache
+pg16: postgresql-16-documentdb postgresql-16-orafce postgresql-16-pgtt postgresql-16-session-variable postgresql-16-pg-statement-rollback postgresql-16-pgmemcache # #postgresql-16-spat
+pg15: postgresql-15-documentdb postgresql-15-orafce postgresql-15-pgtt postgresql-15-session-variable postgresql-15-pg-statement-rollback postgresql-15-pgmemcache # #postgresql-15-spat
+pg14: postgresql-14-orafce postgresql-14-pgtt postgresql-14-session-variable postgresql-14-pg-statement-rollback postgresql-14-pgmemcache #postgresql-14-documentdb # #postgresql-14-spat
+pg13: postgresql-13-orafce postgresql-13-pgtt postgresql-13-session-variable postgresql-13-pg-statement-rollback postgresql-13-pgmemcache #postgresql-13-documentdb # #postgresql-13-spat
 ```
 
 
 ### Ubuntu 24.04 jammy Compatible (u22)
 
 ```yaml
-pg17: postgresql-17-documentdb postgresql-17-orafce postgresql-17-pgtt postgresql-17-session-variable postgresql-17-pg-statement-rollback postgresql-17-pgmemcache # #wiltondb
-pg16: postgresql-16-documentdb postgresql-16-orafce postgresql-16-pgtt postgresql-16-session-variable postgresql-16-pg-statement-rollback postgresql-16-pgmemcache # #wiltondb
-pg15: postgresql-15-documentdb postgresql-15-orafce postgresql-15-pgtt postgresql-15-session-variable postgresql-15-pg-statement-rollback postgresql-15-pgmemcache # #wiltondb
-pg14: postgresql-14-orafce postgresql-14-pgtt postgresql-14-session-variable postgresql-14-pg-statement-rollback postgresql-14-pgmemcache #postgresql-14-documentdb # #wiltondb
-pg13: postgresql-13-orafce postgresql-13-pgtt postgresql-13-session-variable postgresql-13-pg-statement-rollback postgresql-13-pgmemcache #postgresql-13-documentdb # #wiltondb
+pg17: postgresql-17-documentdb postgresql-17-orafce postgresql-17-pgtt postgresql-17-session-variable postgresql-17-pg-statement-rollback postgresql-17-spat postgresql-17-pgmemcache # #wiltondb
+pg16: postgresql-16-documentdb postgresql-16-orafce postgresql-16-pgtt postgresql-16-session-variable postgresql-16-pg-statement-rollback postgresql-16-pgmemcache # #wiltondb #postgresql-16-spat
+pg15: postgresql-15-documentdb postgresql-15-orafce postgresql-15-pgtt postgresql-15-session-variable postgresql-15-pg-statement-rollback postgresql-15-pgmemcache # #wiltondb #postgresql-15-spat
+pg14: postgresql-14-orafce postgresql-14-pgtt postgresql-14-session-variable postgresql-14-pg-statement-rollback postgresql-14-pgmemcache #postgresql-14-documentdb # #wiltondb #postgresql-14-spat
+pg13: postgresql-13-orafce postgresql-13-pgtt postgresql-13-session-variable postgresql-13-pg-statement-rollback postgresql-13-pgmemcache #postgresql-13-documentdb # #wiltondb #postgresql-13-spat
 ```
 
 
 ### Ubuntu 24.04 noble Compatible (u24)
 
 ```yaml
-pg17: postgresql-17-documentdb postgresql-17-orafce postgresql-17-pgtt postgresql-17-session-variable postgresql-17-pg-statement-rollback postgresql-17-pgmemcache # #wiltondb
-pg16: postgresql-16-documentdb postgresql-16-orafce postgresql-16-pgtt postgresql-16-session-variable postgresql-16-pg-statement-rollback postgresql-16-pgmemcache # #wiltondb
-pg15: postgresql-15-documentdb postgresql-15-orafce postgresql-15-pgtt postgresql-15-session-variable postgresql-15-pg-statement-rollback postgresql-15-pgmemcache # #wiltondb
-pg14: postgresql-14-orafce postgresql-14-pgtt postgresql-14-session-variable postgresql-14-pg-statement-rollback postgresql-14-pgmemcache #postgresql-14-documentdb # #wiltondb
-pg13: postgresql-13-orafce postgresql-13-pgtt postgresql-13-session-variable postgresql-13-pg-statement-rollback postgresql-13-pgmemcache #postgresql-13-documentdb # #wiltondb
+pg17: postgresql-17-documentdb postgresql-17-orafce postgresql-17-pgtt postgresql-17-session-variable postgresql-17-pg-statement-rollback postgresql-17-spat postgresql-17-pgmemcache # #wiltondb
+pg16: postgresql-16-documentdb postgresql-16-orafce postgresql-16-pgtt postgresql-16-session-variable postgresql-16-pg-statement-rollback postgresql-16-pgmemcache # #wiltondb #postgresql-16-spat
+pg15: postgresql-15-documentdb postgresql-15-orafce postgresql-15-pgtt postgresql-15-session-variable postgresql-15-pg-statement-rollback postgresql-15-pgmemcache # #wiltondb #postgresql-15-spat
+pg14: postgresql-14-orafce postgresql-14-pgtt postgresql-14-session-variable postgresql-14-pg-statement-rollback postgresql-14-pgmemcache #postgresql-14-documentdb # #wiltondb #postgresql-14-spat
+pg13: postgresql-13-orafce postgresql-13-pgtt postgresql-13-session-variable postgresql-13-pg-statement-rollback postgresql-13-pgmemcache #postgresql-13-documentdb # #wiltondb #postgresql-13-spat
 ```
 
 

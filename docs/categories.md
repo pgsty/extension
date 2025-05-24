@@ -74,7 +74,7 @@ All PostgreSQL are divided into 15 categories, shown below:
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | Description | Comment |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|-------------|---------|
-| 2100 | [pg_search](/pg_search) | 0.15.20 | [pg_search](/pg_search) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/paradedb/paradedb/tree/dev/pg_search) | pg_search: Full text search for PostgreSQL using BM25 | pgrx=0.14.1 |
+| 2100 | [pg_search](/pg_search) | 0.15.20 | [pg_search](/pg_search) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/paradedb/paradedb/tree/dev/pg_search) | pg_search: Full text search for PostgreSQL using BM25 | pgrx=0.14.1 0.15.19+ has broken libicu on el systems |
 | 2110 | [pgroonga](/pgroonga) | 4.0.0 | [pgroonga](/pgroonga) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgroonga/pgroonga) | Use Groonga as index, fast full text search platform for all languages! |  |
 | 2111 | [pgroonga_database](/pgroonga_database) | 4.0.0 | [pgroonga](/pgroonga_database) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgroonga/pgroonga) | PGroonga database management module |  |
 | 2120 | [pg_bigm](/pg_bigm) | 1.2 | [pg_bigm](/pg_bigm) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgbigm/pg_bigm) | create 2-gram (bigram) index for faster full text search. |  |
@@ -357,7 +357,7 @@ All PostgreSQL are divided into 15 categories, shown below:
 
 --------
 ## [**STAT**](/stat)
-> STAT: Observability Catalogs, Monitoring Metrics & Views, Statistics, Query Plans, WaitSampling, SlowLogs, and etc... (33 extensions)
+> STAT: Observability Catalogs, Monitoring Metrics & Views, Statistics, Query Plans, WaitSampling, SlowLogs, and etc... (34 extensions)
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | Description | Comment |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|-------------|---------|
@@ -370,9 +370,10 @@ All PostgreSQL are divided into 15 categories, shown below:
 | 6250 | [pg_store_plans](/pg_store_plans) | 1.8 | [pg_store_plans](/pg_store_plans) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/ossc-db/pg_store_plans) | track plan statistics of all SQL statements executed |  |
 | 6260 | [pg_track_settings](/pg_track_settings) | 2.1.2 | [pg_track_settings](/pg_track_settings) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/rjuju/pg_track_settings) | Track settings changes |  |
 | 6270 | [pg_wait_sampling](/pg_wait_sampling) | 1.1.8 | [pg_wait_sampling](/pg_wait_sampling) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/postgrespro/pg_wait_sampling) | sampling based statistics of wait events |  |
-| 6280 | [system_stats](/system_stats) | 3.2 | [system_stats](/system_stats) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/EnterpriseDB/system_stats) | EnterpriseDB system statistics for PostgreSQL |  |
-| 6290 | [meta](/meta) | 0.4.0 | [pg_meta](/meta) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/aquameta/meta) | Normalized, friendlier system catalog for PostgreSQL |  |
-| 6300 | [pgnodemx](/pgnodemx) | 1.7 | [pgnodemx](/pgnodemx) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/CrunchyData/pgnodemx) | Capture node OS metrics via SQL queries |  |
+| 6280 | [pgsentinel](/pgsentinel) | 1.1.0 | [pgsentinel](/pgsentinel) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/pgsentinel/pgsentinel) | active session history |  |
+| 6290 | [system_stats](/system_stats) | 3.2 | [system_stats](/system_stats) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/EnterpriseDB/system_stats) | EnterpriseDB system statistics for PostgreSQL |  |
+| 6300 | [meta](/meta) | 0.4.0 | [pg_meta](/meta) | **<span class="tcblue">BSD-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/aquameta/meta) | Normalized, friendlier system catalog for PostgreSQL |  |
+| 6310 | [pgnodemx](/pgnodemx) | 1.7 | [pgnodemx](/pgnodemx) | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/CrunchyData/pgnodemx) | Capture node OS metrics via SQL queries |  |
 | 6320 | [pg_proctab](/pg_proctab) | 1.7 | [pgnodemx](/pg_proctab) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/markwkm/pg_proctab) | PostgreSQL extension to access the OS process table | from pgnodemx |
 | 6330 | [pg_sqlog](/pg_sqlog) | 1.6 | [pg_sqlog](/pg_sqlog) | **<span class="tcblue">BSD-3</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/kouber/pg_sqlog) | Provide SQL interface to logs | require certain params |
 | 6340 | [bgw_replstatus](/bgw_replstatus) | 1.0.7 | [bgw_replstatus](/bgw_replstatus) | **<span class="tcblue">PostgreSQL</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/mhagander/bgw_replstatus) | Small PostgreSQL background worker to report whether a node is a replication master or standby |  |
@@ -462,7 +463,7 @@ All PostgreSQL are divided into 15 categories, shown below:
 
 --------
 ## [**SIM**](/sim)
-> SIM: Protocol Simulation & heterogeneous DBMS Compatibility: Oracle, MSSQL, DB2, MySQL, Memcached, and Babelfish! (15 extensions)
+> SIM: Protocol Simulation & heterogeneous DBMS Compatibility: Oracle, MSSQL, DB2, MySQL, Memcached, and Babelfish! (16 extensions)
 
 | ID | Extension | Version | Package | License | RPM | DEB | Website | Description | Comment |
 |:--:|-----------|:-------:|---------|:-------:|:---:|:---:|:-------:|-------------|---------|
@@ -480,7 +481,8 @@ All PostgreSQL are divided into 15 categories, shown below:
 | 9310 | [babelfishpg_tsql](/babelfishpg_tsql) | 3.3.1 | [babelfishpg_tsql](/babelfishpg_tsql) | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | **<span class="tcpurple">WILTON</span>** | [LINK](https://babelfishpg.org/) | SQL Server Transact SQL compatibility | works on wiltondb kernel fork |
 | 9320 | [babelfishpg_tds](/babelfishpg_tds) | 1.0.0 | [babelfishpg_tds](/babelfishpg_tds) | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | **<span class="tcpurple">WILTON</span>** | [LINK](https://babelfishpg.org/) | SQL Server TDS protocol extension | works on wiltondb kernel fork |
 | 9330 | [babelfishpg_money](/babelfishpg_money) | 1.1.0 | [babelfishpg_money](/babelfishpg_money) | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | **<span class="tcpurple">WILTON</span>** | [LINK](https://babelfishpg.org/) | SQL Server Money Data Type | works on wiltondb kernel fork |
-| 9400 | [pgmemcache](/pgmemcache) | 2.3.0 | [pgmemcache](/pgmemcache) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ohmu/pgmemcache) | memcached interface | missing pg12-14 on el.aarch64 |
+| 9400 | [spat](/spat) | 0.1.0a4 | [spat](/spat) | **<span class="tcwarn">AGPLv3</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tcwarn">PIGSTY</span>** | [LINK](https://github.com/Florents-Tselai/spat) | Redis-like In-Memory DB Embedded in Postgres | Alpha Stage! |
+| 9410 | [pgmemcache](/pgmemcache) | 2.3.0 | [pgmemcache](/pgmemcache) | **<span class="tcblue">MIT</span>** | **<span class="tccyan">PGDG</span>** | **<span class="tccyan">PGDG</span>** | [LINK](https://github.com/ohmu/pgmemcache) | memcached interface | missing pg12-14 on el.aarch64 |
 
 
 --------
