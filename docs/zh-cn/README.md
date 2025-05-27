@@ -1,8 +1,8 @@
 # PostgreSQL 扩展软件仓库
 
 [![Webite: pigsty.io](https://img.shields.io/badge/website-ext.pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://pigsty.io/ext)
-[![Extensions: 414](https://img.shields.io/badge/extensions-414-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/ext/list)
-[![Postgres: 12-17](https://img.shields.io/badge/PostgreSQL-12~17-%233E668F?style=flat&logo=postgresql&labelColor=3E668F&logoColor=white)](https://pigsty.io/docs/pgsql)
+[![Extensions: 421](https://img.shields.io/badge/extensions-414-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/ext/list)
+[![Postgres: 13-17](https://img.shields.io/badge/PostgreSQL-12~17-%233E668F?style=flat&logo=postgresql&labelColor=3E668F&logoColor=white)](https://pigsty.io/docs/pgsql)
 
 由 [Pigsty](https://pigsty.io) 所维护与使用的PostgreSQL软件补充源：[apt](#apt-repo) 与 [yum](#yum-repo) 仓库。
 
