@@ -1,9 +1,9 @@
 # pg_later
 
 
-> [pg_later](https://github.com/tembo-io/pg_later): pg_later: Run queries now and get results later
+> [pg_later](https://github.com/ChuckHend/pg_later): pg_later: Run queries now and get results later
 >
-> https://github.com/tembo-io/pg_later
+> https://github.com/ChuckHend/pg_later
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pg_later](https://github.com/tembo-io/pg_later) | 0.3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
+| [pg_later](https://github.com/ChuckHend/pg_later) | 0.3.0 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `Rust` |
 
 
 

@@ -1,9 +1,9 @@
 # pgmq
 
 
-> [pgmq](https://github.com/tembo-io/pgmq): A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.
+> [pgmq](https://github.com/pgmq/pgmq): A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.
 >
-> https://github.com/tembo-io/pgmq
+> https://github.com/pgmq/pgmq
 
 
 
@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [pgmq](https://github.com/tembo-io/pgmq) | 1.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
+| [pgmq](https://github.com/pgmq/pgmq) | 1.5.1 | **<span class="tcblue">PostgreSQL</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `SQL` |
 
 
 
