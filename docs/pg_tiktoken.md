@@ -1,7 +1,7 @@
 # pg_tiktoken
 
 
-> [pg_tiktoken](https://github.com/kelvich/pg_tiktoken): pg_tictoken: tiktoken tokenizer for use with OpenAI models in postgres
+> [pg_tiktoken](https://github.com/kelvich/pg_tiktoken): tiktoken tokenizer for use with OpenAI models in postgres
 >
 > https://github.com/kelvich/pg_tiktoken
 
