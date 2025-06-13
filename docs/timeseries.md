@@ -1,7 +1,7 @@
 # timeseries
 
 
-> [pg_timeseries](https://github.com/tembo-io/pg_timeseries): Convenience API for Tembo time series stack
+> [pg_timeseries](https://github.com/tembo-io/pg_timeseries): Convenience API for time series stack
 >
 > https://github.com/tembo-io/pg_timeseries
 
