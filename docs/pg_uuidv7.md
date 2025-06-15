@@ -1,7 +1,7 @@
 # pg_uuidv7
 
 
-> [pg_uuidv7](https://github.com/fboulnois/pg_uuidv7): pg_uuidv7: create UUIDv7 values in postgres
+> [pg_uuidv7](https://github.com/fboulnois/pg_uuidv7): Create UUIDv7 values in postgres
 >
 > https://github.com/fboulnois/pg_uuidv7
 

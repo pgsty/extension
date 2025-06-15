@@ -1,7 +1,7 @@
 # pg_search
 
 
-> [pg_search](https://github.com/paradedb/paradedb/tree/dev/pg_search): pg_search: Full text search for PostgreSQL using BM25
+> [pg_search](https://github.com/paradedb/paradedb/tree/dev/pg_search): Full text search for PostgreSQL using BM25
 >
 > https://github.com/paradedb/paradedb/tree/dev/pg_search
 

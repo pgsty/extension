@@ -1,7 +1,7 @@
 # pljava
 
 
-> [pljava](https://github.com/tada/pljava): PL/Java procedural language (https://tada.github.io/pljava/)
+> [pljava](https://github.com/tada/pljava): PL/Java procedural language
 >
 > https://github.com/tada/pljava
 

@@ -1,7 +1,7 @@
 # pg_graphql
 
 
-> [pg_graphql](https://github.com/supabase/pg_graphql): pg_graphql: GraphQL support
+> [pg_graphql](https://github.com/supabase/pg_graphql): Add in-database GraphQL support
 >
 > https://github.com/supabase/pg_graphql
 

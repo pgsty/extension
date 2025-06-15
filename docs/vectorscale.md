@@ -1,7 +1,7 @@
 # vectorscale
 
 
-> [pgvectorscale](https://github.com/timescale/pgvectorscale): pgvectorscale:  Advanced indexing for vector data
+> [pgvectorscale](https://github.com/timescale/pgvectorscale): Advanced indexing for vector data with DiskANN
 >
 > https://github.com/timescale/pgvectorscale
 

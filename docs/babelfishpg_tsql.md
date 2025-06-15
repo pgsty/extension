@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [babelfishpg_tsql](https://babelfishpg.org/) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | **<span class="tcpurple">WILTON</span>** | `C` |
+| [babelfishpg_tsql](https://babelfishpg.org/) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
@@ -62,8 +62,8 @@ CREATE EXTENSION babelfishpg_tsql CASCADE;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tsql*` |  |  | **<span class="tcpurple">✔</span>** |  |  | `babelfishpg-common`, `libantlr4-runtime` |
-| [DEB](/deb) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-tsql` |  |  | **<span class="tcpurple">✔</span>** |  |  | `babelfishpg-common`, `libantlr4-runtime4.9.3` |
+| [RPM](/rpm) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `babelfishpg-tsql*` |  |  | **<span class="tcwarn">✔</span>** |  |  | `babelfishpg-common`, `libantlr4-runtime` |
+| [DEB](/deb) | 3.3.1 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `babelfishpg-tsql` |  |  | **<span class="tcwarn">✔</span>** |  |  | `babelfishpg-common`, `libantlr4-runtime4.9.3` |
 
 
 
@@ -81,14 +81,14 @@ Install `babelfishpg_tsql` via [Pigsty](https://pigsty.io/docs/pgext/usage/insta
 ```
 
 
-Install `babelfishpg_tsql` [RPM](/rpm) from the **<span class="tcpurple">WILTON</span>** **YUM** repo:
+Install `babelfishpg_tsql` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
 dnf install babelfishpg-tsql*;
 ```
 
 
-Install `babelfishpg_tsql` [DEB](/deb) from the **<span class="tcpurple">WILTON</span>** **APT** repo:
+Install `babelfishpg_tsql` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install babelfishpg-tsql;

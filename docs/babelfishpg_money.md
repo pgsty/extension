@@ -18,7 +18,7 @@
 
 | Extension | Version | License | RPM | DEB | PL |
 |-----------|:-------:|:-------:|:---:|:---:|:--:|
-| [babelfishpg_money](https://babelfishpg.org/) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | **<span class="tcpurple">WILTON</span>** | `C` |
+| [babelfishpg_money](https://babelfishpg.org/) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | **<span class="tcwarn">PIGSTY</span>** | `C` |
 
 
 
@@ -58,8 +58,8 @@ CREATE EXTENSION babelfishpg_money;
 
 | OS | Version | License | REPO | Package Pattern | 17 | 16 | 15 | 14 | 13 | Dependency |
 |:--:|---------|:-------:|:----:|-----------------|:--:|:--:|:--:|:--:|:--:|------------|
-| [RPM](/rpm) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-money*` |  |  | **<span class="tcpurple">✔</span>** |  |  |  |
-| [DEB](/deb) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcpurple">WILTON</span>** | `babelfishpg-money` |  |  | **<span class="tcpurple">✔</span>** |  |  |  |
+| [RPM](/rpm) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `babelfishpg-money*` |  |  | **<span class="tcwarn">✔</span>** |  |  |  |
+| [DEB](/deb) | 1.1.0 | **<span class="tccyan">Apache-2</span>** | **<span class="tcwarn">PIGSTY</span>** | `babelfishpg-money` |  |  | **<span class="tcwarn">✔</span>** |  |  |  |
 
 
 
@@ -77,14 +77,14 @@ Install `babelfishpg_money` via [Pigsty](https://pigsty.io/docs/pgext/usage/inst
 ```
 
 
-Install `babelfishpg_money` [RPM](/rpm) from the **<span class="tcpurple">WILTON</span>** **YUM** repo:
+Install `babelfishpg_money` [RPM](/rpm) from the **<span class="tcwarn">PIGSTY</span>** **YUM** repo:
 
 ```bash
 dnf install babelfishpg-money*;
 ```
 
 
-Install `babelfishpg_money` [DEB](/deb) from the **<span class="tcpurple">WILTON</span>** **APT** repo:
+Install `babelfishpg_money` [DEB](/deb) from the **<span class="tcwarn">PIGSTY</span>** **APT** repo:
 
 ```bash
 apt install babelfishpg-money;

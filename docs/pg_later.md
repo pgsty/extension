@@ -1,7 +1,7 @@
 # pg_later
 
 
-> [pg_later](https://github.com/ChuckHend/pg_later): pg_later: Run queries now and get results later
+> [pg_later](https://github.com/ChuckHend/pg_later): Run queries now and get results later
 >
 > https://github.com/ChuckHend/pg_later
 

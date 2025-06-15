@@ -1,7 +1,7 @@
 # pgml
 
 
-> [pgml](https://github.com/postgresml/postgresml): PostgresML: Run AL/ML workloads with SQL interface
+> [pgml](https://github.com/postgresml/postgresml): Run AL/ML workloads with SQL interface
 >
 > https://github.com/postgresml/postgresml
 
