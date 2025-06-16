@@ -1,21 +1,21 @@
 # PostgreSQL Extension Repo
 
-[![Webite: pigsty.io](https://img.shields.io/badge/website-pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://pigsty.io/ext)
-[![CLI: pig v0.4.0](https://img.shields.io/badge/pig-v0.4.0-slategray?style=flat&logo=cilium&logoColor=white)](https://github.com/pgsty/pig)
+[![Webite: pgsty.com/ext](https://img.shields.io/badge/website-pigsty.io-slategray?style=flat&logo=cilium&logoColor=white)](https://pgsty.com/ext)
+[![CLI: pig v0.4.2](https://img.shields.io/badge/pig-v0.4.2-slategray?style=flat&logo=cilium&logoColor=white)](https://github.com/pgsty/pig)
 [![Extensions: 412](https://img.shields.io/badge/extensions-412-%233E668F?style=flat&logo=postgresql&logoColor=white&labelColor=3E668F)](https://pigsty.io/ext/list)
 [![License: Apache-2.0](https://img.shields.io/github/license/pgsty/extension?logo=opensourceinitiative&logoColor=green&color=slategray)](https://github.com/pgsty/pig/blob/main/LICENSE)
 
 The supplementary [APT](#apt-repo) and [YUM](#yum-repo) repo for PostgreSQL extensions, maintained and used by [Pigsty](https://www.pigsty.io)
 
-Provide 412 available [Extensions](https://ext.pigsty.io/#/list) as [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **13** - **17** in addition to the official PGDG repo.
+Provide 421 available [Extensions](https://ext.pigsty.io/#/list) as [RPM](https://ext.pigsty.io/#/rpm) / [DEB](https://ext.pigsty.io/#/deb) for PostgreSQL **13** - **17** in addition to the official PGDG repo.
 
 Available on Linux: Debian 12 / Ubuntu 24.04 / 22.04 / EL8 / EL9 compatible OS distros, and `x86_64` & `ARM64` architectures.
 
 
-|Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13|
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| RPM Extension | 407 | 117 | 215 | 71 | 4 | 7 | 388 | 400 | 402 | 386 | 363 |
-| DEB Extension | 401 | 103 | 223 | 71 | 4 | 13 | 386 | 394 | 396 | 384 | 359 |
+| Entry / Filter | All | PGDG | PIGSTY | CONTRIB | MISC | MISS | PG17 | PG16 | PG15 | PG14 | PG13 |
+|:--------------:|:---:|:----:|:------:|:-------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| RPM Extension  | 407 | 117  |  215   |   71    |  4   |  7   | 388  | 400  | 402  | 386  | 363  |
+| DEB Extension  | 401 | 103  |  223   |   71    |  4   |  13  | 386  | 394  | 396  | 384  | 359  |
 
 
 
@@ -118,7 +118,7 @@ request to update the metadata.
 | **u22** | Ubuntu 22.04 (`jammy`)         | PG 17 - 13 | PG 17 - 13 |
 | **d12** | Debian 12 (`bookworm`)         | PG 17 - 13 | PG 17 - 13 |
 
-Here are some bad cases and limitation for above distros:
+Here are some bad cases and limitations for the above distros:
 
 - [`pg_duckdb`](https://ext.pigsty.io/#/pg_duckdb) `el8:*:*`
 - [`pljava`](https://ext.pigsty.io/#/pljava): `el8:*:*`
